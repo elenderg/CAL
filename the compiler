@@ -1357,8 +1357,6 @@ To compile some monikettes and some parameters given a rider:
   If the rider's token is "the", compile the monikettes and the parameters given the rider (definite article); repeat.
   If the rider's token is "o", compile the monikettes and the parameters given the rider (definite article); repeat.
   If the rider's token is "os", compile the monikettes and the parameters given the rider (definite article); repeat.
-  \If the rider's token is "a", compile the monikettes and the parameters given the rider (definite article); repeat. \ não pode ainda porque a keyword "a" é um artigo indefinido em inglês
-  \If the rider's token is "as", compile the monikettes and the parameters given the rider (definite article); repeat. \ não pode ainda porque a keyword "as" é uma preposição em inglês
   If the rider's token is any indefinite article, compile the monikettes and the parameters given the rider (indefinite article); repeat.
   If the rider's token is any monikette string, compile the monikettes and the parameters given the rider (monikette string); repeat.
   Abort with "'" then the rider's token then "' is not valid in a routine header." and the rider.

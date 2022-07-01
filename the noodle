@@ -115,18 +115,18 @@ To add a string to some string things:
   Append the string thing to the string things.
 
 An addrinfo is a record with
-A number called ai_flags,
-A number called ai_family,
-A number called ai_sockettype,
-A number called ai_protocol,
-A number called ai_addrlen,
-A pchar called ai_canonname,
-A sockaddrptr called ai_addr,
-A addrinfoptr called ai_next.
+  A number called ai_flags,
+  A number called ai_family,
+  A number called ai_sockettype,
+  A number called ai_protocol,
+  A number called ai_addrlen,
+  A pchar called ai_canonname,
+  A sockaddrptr called ai_addr,
+  A addrinfoptr called ai_next.
   
 Some addrinfo routines is a record with
-A getaddrinfo pointer,
-A freeaddrinfo pointer.
+  A getaddrinfo pointer,
+  A freeaddrinfo pointer.
 
 An addrinfoptr is a pointer to an addrinfo.
 
@@ -208,9 +208,9 @@ To append a byte to a string:
 To append a byte to a string given a count:
   Privatize the count.
   Loop.
-  If the count is less than 1, exit.
-  Append the byte to the string.
-  Subtract 1 from the count.
+    If the count is less than 1, exit.
+    Append the byte to the string.
+    Subtract 1 from the count.
   Repeat.
 
 To append a flag to a string:
@@ -248,18 +248,18 @@ To append a string to another string (handling email transparency):
   If the string is blank, exit.
   Slap a rider on the string.
   Loop.
-  Move the rider (text file rules).
-  If the rider's token is blank, exit.
-  If the rider's token starts with ".", append "." to the other string.
-  Append the rider's token to the other string.
+    Move the rider (text file rules).
+    If the rider's token is blank, exit.
+    If the rider's token starts with ".", append "." to the other string.
+    Append the rider's token to the other string.
   Repeat.
 
 To append a string to another string given a count:
   Privatize the count.
   Loop.
-  If the count is less than 1, exit.
-  Append the string to the other string.
-  Subtract 1 from the count.
+    If the count is less than 1, exit.
+    Append the string to the other string.
+    Subtract 1 from the count.
   Repeat.
 
 To append a string to a pdf object: \ this guys adds CRLF
@@ -580,12 +580,12 @@ A binary string is a string.
 A bit is a unit.
   
 A bitmapdata is a record with
-A width,
-A height,
-A number called stride,
-A number called pixelformat,
-A pointer called scan0,
-A number called reserved.
+  A width,
+  A height,
+  A number called stride,
+  A number called pixelformat,
+  A pointer called scan0,
+  A number called reserved.
 
 To bitwise and a byte with another byte:
   Intel $8B850C000000. \ mov eax,[ebp+12] \ the other byte
@@ -713,28 +713,28 @@ A canvas is an hdc.
 To capitalize any selected rows in a text:
   If the text is nil, exit.
   Loop.
-  Get a row from the text's rows.
-  If the row is nil, exit.
-  If the row of the text is not selected, repeat.
-  If the row is blank, repeat.
-  Capitalize the row's string.
+    Get a row from the text's rows.
+    If the row is nil, exit.
+    If the row of the text is not selected, repeat.
+    If the row is blank, repeat.
+    Capitalize the row's string.
   Repeat.
 
 To capitalize a string:
   Slap a substring on the string.
   Loop.
-  If the substring is blank, exit.
-  If the substring's first's target is not noise, break.
-  Add 1 to the substring's first.
+    If the substring is blank, exit.
+    If the substring's first's target is not noise, break.
+    Add 1 to the substring's first.
   Repeat.
   Uppercase the substring's first's target.
 
 To capitalize a text:
   If the text is nil, exit.
   Loop.
-  Get a row from the text's rows.
-  If the row is nil, break.
-  Capitalize the row's string.
+    Get a row from the text's rows.
+    If the row is nil, break.
+    Capitalize the row's string.
   Repeat.
   Wrap the text.
   
@@ -1099,17 +1099,17 @@ To compatibly wait for a process pointer:
   Put 0 into eax. \ set return value of thread
   
 A console is a thing with 
-A box,
-A border color,
-A fill color,
-A text,
-A grid,
-A reply string.
+  A box,
+  A border color,
+  A fill color,
+  A text,
+  A grid,
+  A reply string.
   
 The context is a context.
   
 A context is a thing with a spot, a box, a heading, a letter height, a color, a number, \ pen width? ***
-And a letter size at the letter height, and a pen at the color.
+  And a letter size at the letter height, and a pen at the color.
   
 The context stack is some contexts.
 
@@ -1117,22 +1117,22 @@ To convert an absolute position to a position given a text:
   If the text is nil, clear the position; exit.
   Privatize the absolute position.
   Loop.
-  Get a row from the text's rows.
-  If the row is nil, clear the position; exit.
-  Put the row's row# into the position's row#.
-  Put the absolute position into the position's column#.
-  Subtract the row's string's length from the absolute position.
-  If the absolute position is less than 1, exit.
+    Get a row from the text's rows.
+    If the row is nil, clear the position; exit.
+    Put the row's row# into the position's row#.
+    Put the absolute position into the position's column#.
+    Subtract the row's string's length from the absolute position.
+    If the absolute position is less than 1, exit.
   Repeat.
 
 To convert a binary string into a number:
   Put 0 into the number.
   Put 1 into a value number.
   Loop.
-  If the binary string is blank, exit.
-  Get a character from the binary string (backwards). \ was backwards
-  If the character is "1", add the value to the number.
-  Double the value.
+    If the binary string is blank, exit.
+    Get a character from the binary string (backwards). \ was backwards
+    If the character is "1", add the value to the number.
+    Double the value.
   Repeat.
 
 To convert a box to a string:
@@ -1231,9 +1231,9 @@ To convert some font widths to pdf em units:
   Get an outlinetextmetric given the font widths' font.
   Put the font widths' data into a number pointer.
   Loop.
-  If a counter is past the font widths' count, break.
-  Convert the number pointer's target to pdf em units given the outlinetextmetric's otmemsquare and the font widths' font.
-  Add a number's magnitude to the number pointer.
+    If a counter is past the font widths' count, break.
+    Convert the number pointer's target to pdf em units given the outlinetextmetric's otmemsquare and the font widths' font.
+    Add a number's magnitude to the number pointer.
   Repeat.
 
 To convert a fraction to a hex string:
@@ -1267,12 +1267,12 @@ To convert a gpbitmap to a buffer (pdf style):
   Put 1 into a row#.
   Put 1 into a column#.
   Loop.
-  If the column# is greater than the bitmapdata's width, put 1 into the column#; add 1 to the row#.
-  If the row# is greater than the bitmapdata's height, break.
-  Get a rgb pointer from the bitmapdata at the row# and the column#.
-  Append the rgb pointer's red byte to the buffer.
-  Append the rgb pointer's green byte to the buffer.
-  Append the rgb pointer's blue byte to the buffer.
+    If the column# is greater than the bitmapdata's width, put 1 into the column#; add 1 to the row#.
+    If the row# is greater than the bitmapdata's height, break.
+    Get a rgb pointer from the bitmapdata at the row# and the column#.
+    Append the rgb pointer's red byte to the buffer.
+    Append the rgb pointer's green byte to the buffer.
+    Append the rgb pointer's blue byte to the buffer.
   Add 1 to the column#.
   Repeat.
   Unlock the gpbitmap given the bitmapdata.
@@ -1325,14 +1325,14 @@ To convert a nibble string to a hex string:
   If the nibble string's length is odd, prepend the zero byte to the nibble string.
   Slap a substring on the nibble string.
   Loop.
-  If the substring is blank, exit.
-  Convert the substring's first's target to a nibble.
-  Shift the nibble left 4 bits.
-  Add 1 to the substring's first.
-  Convert the substring's first's target to another nibble.
-  Bitwise or the nibble with the other nibble.
-  Append the nibble to the hex string.
-  Add 1 to the substring's first.
+    If the substring is blank, exit.
+    Convert the substring's first's target to a nibble.
+    Shift the nibble left 4 bits.
+    Add 1 to the substring's first.
+    Convert the substring's first's target to another nibble.
+    Bitwise or the nibble with the other nibble.
+    Append the nibble to the hex string.
+    Add 1 to the substring's first.
   Repeat.
 
 To convert a number to a byte:
@@ -1347,9 +1347,9 @@ To convert a pchar to a string:
   If the pchar is nil, exit.
   Privatize the pchar.
   Loop.
-  If the pchar's target is the null byte, exit.
-  Append the pchar's target to the string.
-  Add 1 to the pchar.
+    If the pchar's target is the null byte, exit.
+    Append the pchar's target to the string.
+    Add 1 to the pchar.
   Repeat.
 
 To convert a pointer and a length to a string:
@@ -1396,35 +1396,35 @@ To convert a query string to a string:
   If the query string is blank, exit.
   Slap a substring on the query string.
   Loop.
-  If the substring is blank, exit.
-  If the substring's first's target is the cross byte, append " " to the string; add 1 to the substring's first; repeat.
-  If the substring's first's target is not the percent-sign byte, append the substring's first's target to the string; add 1 to the substring's first; repeat.
-  If the substring's length is less than 3, exit.
-  Add 1 to the substring's first.
-  Convert the substring's first's target to a nibble.
-  Shift the nibble left 4 bits.
-  Add 1 to the substring's first.
-  Convert the substring's first's target to another nibble.
-  Bitwise or the nibble with the other nibble.
-  Add 1 to the substring's first.
-  Append the nibble to the string.
+    If the substring is blank, exit.
+    If the substring's first's target is the cross byte, append " " to the string; add 1 to the substring's first; repeat.
+    If the substring's first's target is not the percent-sign byte, append the substring's first's target to the string; add 1 to the substring's first; repeat.
+    If the substring's length is less than 3, exit.
+    Add 1 to the substring's first.
+    Convert the substring's first's target to a nibble.
+    Shift the nibble left 4 bits.
+    Add 1 to the substring's first.
+    Convert the substring's first's target to another nibble.
+    Bitwise or the nibble with the other nibble.
+    Add 1 to the substring's first.
+    Append the nibble to the string.
   Repeat.
 
 To convert some rows to a string:
   Clear the string.
   Loop.
-  Get a row from the rows.
-  If the row is nil, exit.
-  Append the row's string to the string.
-  If the string's last's target is the return byte, append the linefeed byte to the string; repeat.
+    Get a row from the rows.
+    If the row is nil, exit.
+    Append the row's string to the string.
+    If the string's last's target is the return byte, append the linefeed byte to the string; repeat.
   Repeat.
 
 To convert some rows to a string (no linefeed additions):
   Clear the string.
   Loop.
-  Get a row from the rows.
-  If the row is nil, exit.
-  Append the row's string to the string.
+    Get a row from the rows.
+    If the row is nil, exit.
+    Append the row's string to the string.
   Repeat.
 
 To convert a string and an actual font info and an original font info into a buffer for pdf output:
@@ -1432,17 +1432,17 @@ To convert a string and an actual font info and an original font info into a buf
   Put 0 into a current byte#.
   Slap a substring on the first byte of the string.
   Loop.
-  If the substring's first is greater than the string's last, break.
-  If the substring's last is the string's last, break.
-  Get a current width given the current byte# and the actual font info's font widths.
-  Get an original width given the substring's last's target and the original font info's font widths.
-  Put the original width minus the current width into an offset.
-  If the offset is 0, add 1 to the substring's last; add 1 to the current byte#; repeat.
-  Convert the substring to a pdf string.
-  Append the pdf string then " " then the offset then " " to the buffer.
-  Put the substring's last plus 1 into the substring's last.
-  Put the substring's last into the substring's first.
-  Add 1 to the current byte#.
+    If the substring's first is greater than the string's last, break.
+    If the substring's last is the string's last, break.
+    Get a current width given the current byte# and the actual font info's font widths.
+    Get an original width given the substring's last's target and the original font info's font widths.
+    Put the original width minus the current width into an offset.
+    If the offset is 0, add 1 to the substring's last; add 1 to the current byte#; repeat.
+    Convert the substring to a pdf string.
+    Append the pdf string then " " then the offset then " " to the buffer.
+    Put the substring's last plus 1 into the substring's last.
+    Put the substring's last into the substring's first.
+    Add 1 to the current byte#.
   Repeat.
   If the substring's first is greater than the string's last, exit.
   Convert the substring to another pdf string.
@@ -1479,10 +1479,10 @@ To convert a string to a nibble string:
   Clear the nibble string.
   Slap a substring on the string.
   Loop.
-  If the substring is blank, exit.
-  Convert the substring's first's target to another nibble string.
-  Append the other nibble string to the nibble string.
-  Add 1 to the substring's first.
+    If the substring is blank, exit.
+    Convert the substring's first's target to another nibble string.
+    Append the other nibble string to the nibble string.
+    Add 1 to the substring's first.
   Repeat.
 
 To convert a string to a number:
@@ -1491,12 +1491,12 @@ To convert a string to a number:
   If the substring is blank, exit.
   If the substring's first's target is any sign, add 1 to the substring's first.
   Loop.
-  If the substring is blank, break.
-  Multiply the number by 10.
-  Put the substring's first's target into another number.
-  Subtract 48 from the other number.
-  Add the other number to the number.
-  Add 1 to the substring's first.
+    If the substring is blank, break.
+    Multiply the number by 10.
+    Put the substring's first's target into another number.
+    Subtract 48 from the other number.
+    Add the other number to the number.
+    Add 1 to the substring's first.
   Repeat.
   If the string's first's target is the dash byte, negate the number.
 
@@ -1509,12 +1509,12 @@ To convert a string to a pdf string:
   Slap a substring on the string.
   Subtract 1 from the substring's first.
   Loop.
-  Add 1 to the substring's first.
-  If the substring is blank, break.
-  If the substring's first's target is the left-paren byte, append "\(" to the pdf string; repeat.
-  If the substring's first's target is the right-paren byte, append "\)" to the pdf string; repeat.
-  If the substring's first's target is the backslash byte, append "\\" to the pdf string; repeat.
-  Append the substring's first's target to the pdf string.
+    Add 1 to the substring's first.
+    If the substring is blank, break.
+    If the substring's first's target is the left-paren byte, append "\(" to the pdf string; repeat.
+    If the substring's first's target is the right-paren byte, append "\)" to the pdf string; repeat.
+    If the substring's first's target is the backslash byte, append "\\" to the pdf string; repeat.
+    Append the substring's first's target to the pdf string.
   Repeat.
   Append ")" to the pdf string.
 
@@ -1524,33 +1524,33 @@ To convert a string to a pointer: \ assumes pointer is in nibble format
   Slap a substring on the hex string.
   Put 24 into a shift count.
   Loop.
-  If the substring is blank, exit.
-  If the shift count is less than 0, exit.
-  Put the substring's first's target into a number.
-  Shift the number left the shift count.
-  Bitwise or the pointer as a number with the number.
-  Add 1 to the substring's first.
-  Subtract 8 from the shift count.
+    If the substring is blank, exit.
+    If the shift count is less than 0, exit.
+    Put the substring's first's target into a number.
+    Shift the number left the shift count.
+    Bitwise or the pointer as a number with the number.
+    Add 1 to the substring's first.
+    Subtract 8 from the shift count.
   Repeat.
 
 To convert a string to a query string:
   Clear the query string.
   Slap a substring on the string.
   Loop.
-  If the substring is blank, break.
-  Convert the substring's first's target to a query byte.
-  Append the query byte to the query string.
-  Add 1 to the substring's first.
+    If the substring is blank, break.
+    Convert the substring's first's target to a query byte.
+    Append the query byte to the query string.
+    Add 1 to the substring's first.
   Repeat.
 
 To convert a string to some rows:
   Slap a rider on the string.
   Loop.
-  Move the rider (text file rules).
-  If the rider's token is blank, break.
-  Create a row given the rider's token.
-  Append the row to the rows.
-  If the row's string's last's target is the linefeed byte, put the return byte into the row's string's last's target. \ *dahn new to handle lines terminated by just linefeed
+    Move the rider (text file rules).
+    If the rider's token is blank, break.
+    Create a row given the rider's token.
+    Append the row to the rows.
+    If the row's string's last's target is the linefeed byte, put the return byte into the row's string's last's target. \ *dahn new to handle lines terminated by just linefeed
   Repeat.
   Renumber the rows.
 
@@ -1647,7 +1647,7 @@ To copy an event into another event:
 To copy a gpbitmap into another gpbitmap:
   If the gpbitmap is nil, void the other gpbitmap; exit.
   Call "gdiplus.dll" "GdipCloneBitmapAreaI" with 0 and 0 and the gpbitmap's width and the gpbitmap's height and 0 [pixelformatdontcare] and
-The gpbitmap and the other gpbitmap's whereabouts.
+  The gpbitmap and the other gpbitmap's whereabouts.
 
 To copy the guts of a text into another text:
   If the text is nil, exit.
@@ -1695,10 +1695,10 @@ To copy a row into another row:
 To copy some rows into some other rows:
   Destroy the other rows.
   Loop.
-  Get a row from the rows.
-  If the row is nil, exit.
-  Copy the row into another row.
-  Append the other row to the other rows.
+    Get a row from the rows.
+    If the row is nil, exit.
+    Copy the row into another row.
+    Append the other row to the other rows.
   Repeat.
 
 To copy a text into another text:
@@ -1715,10 +1715,10 @@ To copy a vertex into another vertex:
 To copy some vertices into some other vertices:
   Destroy the other vertices.
   Loop.
-  Get a vertex from the vertices.
-  If the vertex is nil, exit.
-  Copy the vertex into another vertex.
-  Append the other vertex to the other vertices.
+    Get a vertex from the vertices.
+    If the vertex is nil, exit.
+    Copy the vertex into another vertex.
+    Append the other vertex to the other vertices.
   Repeat.
   
 The copyright byte is a byte equal to 169.
@@ -1732,9 +1732,9 @@ To create the connect handle of a winhttp request using  a url record:
   Convert the url record's host name into a wide string called wide host name and null terminate.
   Call "winhttp.dll" "WinHttpConnect"
   With the winhttp request's session
-And the wide host name's first
-And the url record's port
-And 0
+  And the wide host name's first
+  And the url record's port
+  And 0
   Returning the winhttp request's connection.
   If the winhttp request's connection is 0, put "Could not connect." into the i/o error; exit.
 
@@ -1836,7 +1836,7 @@ To create some font widths given a font and a string:
   Assign the gcpresults' lpdx given the string's length times a number's magnitude.
   Create the hfont of the memory canvas given the font.
   Call "gdi32.dll" "GetCharacterPlacementA" with the memory canvas and the string's first
-And the string's length and 0 and the gcpresults' whereabouts and 0.
+  And the string's length and 0 and the gcpresults' whereabouts and 0.
   Destroy the hfont of the memory canvas.
   Put the gcpresults' lpdx into the font widths' data.
 
@@ -1922,10 +1922,10 @@ To create the open handle of a winhttp request:
   Convert the module's name to a wide string called wide module name and null terminate.
   Call "winhttp.dll" "WinHttpOpen"
   With the wide module name's first
-And 0 [winhttp_access_type_default_proxy] 
-And 0 [winhttp_no_proxy_name] 
-And 0 [winhttp_no_proxy_bypass] 
-And 0 
+  And 0 [winhttp_access_type_default_proxy] 
+  And 0 [winhttp_no_proxy_name] 
+  And 0 [winhttp_no_proxy_bypass] 
+  And 0 
   Returning the winhttp request's session.
   If the winhttp request's session is 0, put "Could not open connection." into the i/o error; exit.
 
@@ -1998,12 +1998,12 @@ To create the request handle of a winhttp request using a url record:
   If the url record's scheme is "https", put 8388608 [winhttp_flag_secure] into a secure number.
   Call "winhttp.dll" "WinHttpOpenRequest"
   With the winhttp request's connection
-And the wide post string's first
-And the wide path's first
-And 0 [L"HTTP/1.1"] 
-And 0 [winhttp_no_referer]
-And 0 [winhttp_default_accept_types]
-And the secure number
+  And the wide post string's first
+  And the wide path's first
+  And 0 [L"HTTP/1.1"] 
+  And 0 [winhttp_no_referer]
+  And 0 [winhttp_default_accept_types]
+  And the secure number
   Returning the winhttp request's request.
   If the winhttp request's request is 0, put "Could not open request." into the i/o error; exit.
 
@@ -2070,10 +2070,10 @@ To create a vertex array given some vertices:
   Create the vertex array given the vertices' count.
   Put the vertex array's spot pointer into a spot pointer.
   Loop.
-  Get a vertex from the vertices.
-  If the vertex is nil, exit.
-  Put the vertex's spot into the spot pointer's target.
-  Add the vertex's spot's magnitude to the spot pointer.
+    Get a vertex from the vertices.
+    If the vertex is nil, exit.
+    Put the vertex's spot into the spot pointer's target.
+    Add the vertex's spot's magnitude to the spot pointer.
   Repeat.
 
 To create a vertex given a spot:
@@ -2100,9 +2100,9 @@ The crlf string is a string equal to $0D0A.
 The cross byte is a byte equal to 43.
   
 A crypt session is a thing with
-An hcryptprov pointer,
-An hcrypthash pointer,
-An hcryptkey pointer.
+  An hcryptprov pointer,
+  An hcrypthash pointer,
+  An hcryptkey pointer.
   
 The ctrl key is a key equal to 17.
   
@@ -2334,14 +2334,14 @@ The dash key is a key equal to 189.
 The data-link-escape byte is a byte equal to 16.
   
 A date/time has
-A year number,
-A month number,
-A week day number,
-A day number,
-An hour number,
-A minute number,
-A second number,
-A millisecond number.
+  A year number,
+  A month number,
+  A week day number,
+  A day number,
+  An hour number,
+  A minute number,
+  A second number,
+  A millisecond number.
 
 To de-sign a fraction:
   De-sign the fraction's numerator.
@@ -2598,11 +2598,11 @@ To decide if a byte is in a string:
   Lowercase the byte.
   Slap a substring on the string.
   Loop.
-  If the substring is blank, say no.
-  Put the substring's first's target into another byte.
-  Lowercase the other byte.
-  If the other byte is the byte, say yes.
-  Add 1 to the substring's first.
+    If the substring is blank, say no.
+    Put the substring's first's target into another byte.
+    Lowercase the other byte.
+    If the other byte is the byte, say yes.
+    Add 1 to the substring's first.
   Repeat.
 
 To decide if a byte is less than another byte:
@@ -3218,9 +3218,9 @@ To decide if a row is blank:
   If the row is nil, say yes.
   Slap a substring on the row's string.
   Loop.
-  If the substring is blank, say yes.
-  If the substring's first's target is not noise, say no.
-  Add 1 to the substring's first.
+    If the substring is blank, say yes.
+    If the substring's first's target is not noise, say no.
+    Add 1 to the substring's first.
   Repeat.
 
 To decide if a row of a text is selected:
@@ -3298,9 +3298,9 @@ To decide if a spot is in a polygon:
   Say yes.
 
 To decide if a spot is in some polygons:
-  Get a polygon from the polygons.
-  If the polygon is nil, say no.
-  If the spot is in the polygon, say yes.
+    Get a polygon from the polygons.
+    If the polygon is nil, say no.
+    If the spot is in the polygon, say yes.
   Repeat.
 
 To decide if a spot is in a roundy box:
@@ -3308,7 +3308,7 @@ To decide if a spot is in a roundy box:
   Add the tpp to the roundy box's right-bottom.
   Put the roundy box's radius times 2 into a diameter number.
   Call "gdi32.dll" "CreateRoundRectRgn" with the roundy box's left and the roundy box's top and the roundy box's right and the roundy box's bottom 
-And the diameter and the diameter returning an hrgn.
+  And the diameter and the diameter returning an hrgn.
   Call "gdi32.dll" "PtInRegion" with the hrgn and the spot's x and the spot's y returning a number.
   Call "gdi32.dll" "DeleteObject" with the hrgn.
   If the number is 0, say no.
@@ -3363,14 +3363,14 @@ To decide if a spot is on a line:
   Privatize the line.
   Put 3 times the tpp into a number.
   Loop.
-  Get a distance between the spot and the line's center (chessboard).
-  If the distance is less than or equal to the number, say yes.
-  Get the distance between the line's start and the line's end (chessboard).
-  If the distance is less than or equal to the tpp, say no.
-  Split the line into the line and another line.
-  Get the distance between the spot and the line's center (chessboard).
-  Get another distance between the spot and the other line's center (chessboard).
-  If the distance is greater than the other distance, put the other line into the line.
+    Get a distance between the spot and the line's center (chessboard).
+    If the distance is less than or equal to the number, say yes.
+    Get the distance between the line's start and the line's end (chessboard).
+    If the distance is less than or equal to the tpp, say no.
+    Split the line into the line and another line.
+    Get the distance between the spot and the line's center (chessboard).
+    Get another distance between the spot and the other line's center (chessboard).
+    If the distance is greater than the other distance, put the other line into the line.
   Repeat.
 
 To decide if a spot is on a picture:
@@ -3381,11 +3381,11 @@ To decide if a spot is on a picture:
 To decide if a spot is on a polygon:
   If the polygon is nil, say no.
   Loop.
-  Get a vertex from the polygon's vertices.
-  If the vertex is nil, say no.
-  If the vertex's next is nil, say no.
-  Put the vertex's spot and the vertex's next's spot into a line.
-  If the spot is on the line, say yes.
+    Get a vertex from the polygon's vertices.
+    If the vertex is nil, say no.
+    If the vertex's next is nil, say no.
+    Put the vertex's spot and the vertex's next's spot into a line.
+    If the spot is on the line, say yes.
   Repeat.
 
 To decide if a spot is on a roundy box:
@@ -3478,9 +3478,9 @@ To decide if a string is any integer:
   If the substring's first's target is any sign, add 1 to the substring's first.
   If the substring is blank, say no.
   Loop.
-  If the substring's first's target is not any digit, say no.
-  Add 1 to the substring's first.
-  If the substring is blank, say yes.
+    If the substring's first's target is not any digit, say no.
+    Add 1 to the substring's first.
+    If the substring is blank, say yes.
   Repeat.
 
 To decide if a string is any integer literal:
@@ -3489,9 +3489,9 @@ To decide if a string is any integer literal:
   If the substring's first's target is any sign, add 1 to the substring's first.
   If the substring is blank, say no.
   Loop.
-  If the substring's first's target is not any digit, say no.
-  Add 1 to the substring's first.
-  If the substring is blank, say yes.
+    If the substring's first's target is not any digit, say no.
+    Add 1 to the substring's first.
+    If the substring is blank, say yes.
   Repeat.
 
 To decide if a string is any mixed literal:
@@ -3522,10 +3522,10 @@ To decide if a string is any word:
   Slap a substring on the string.
   Subtract 1 from the substring's first.
   Loop.
-  Add 1 to the substring's first.
-  If the substring is blank, say yes.
-  If the substring's first's target is any letter, repeat.
-  If the substring's first's target is the single-quote byte, repeat.
+    Add 1 to the substring's first.
+    If the substring is blank, say yes.
+    If the substring's first's target is any letter, repeat.
+    If the substring's first's target is the single-quote byte, repeat.
   Say no.
 
 To decide if a string is blank:
@@ -3553,17 +3553,17 @@ To decide if a string is dos-compatible:
   If the string's first's target is the period byte, say no.
   Slap a substring on the string.
   Loop.
-  If the substring is blank, say yes.
-  If the substring's first's target is the slash byte, say no.
-  If the substring's first's target is the backslash byte, say no.
-  If the substring's first's target is the colon byte, say no.
-  If the substring's first's target is the asterisk byte, say no.
-  If the substring's first's target is the question-mark byte, say no.
-  If the substring's first's target is the double-quote byte, say no.
-  If the substring's first's target is the left-alligator byte, say no.
-  If the substring's first's target is the right-alligator byte, say no.
-  If the substring's first's target is the bar byte, say no.
-  Add 1 to the substring's first.
+    If the substring is blank, say yes.
+    If the substring's first's target is the slash byte, say no.
+    If the substring's first's target is the backslash byte, say no.
+    If the substring's first's target is the colon byte, say no.
+    If the substring's first's target is the asterisk byte, say no.
+    If the substring's first's target is the question-mark byte, say no.
+    If the substring's first's target is the double-quote byte, say no.
+    If the substring's first's target is the left-alligator byte, say no.
+    If the substring's first's target is the right-alligator byte, say no.
+    If the substring's first's target is the bar byte, say no.
+    Add 1 to the substring's first.
   Repeat.
 
 To decide if a string is greater than another string:
@@ -3580,9 +3580,9 @@ To decide if a string is in another string:
   Slap a substring on the other string.
   Put the substring's first plus the string's length minus 1 into the substring's last.
   Loop.
-  If the substring's last is greater than the other string's last, say no.
-  If the substring is the string, say yes.
-  Move the substring given 1.
+    If the substring's last is greater than the other string's last, say no.
+    If the substring is the string, say yes.
+    Move the substring given 1.
   Repeat.
 
 To decide if a string is in an index:
@@ -3674,9 +3674,9 @@ To decide if a token is numeric:
   Remove any leading noise from the token.
   If the token is blank, say no.
   Loop.
-  Get a byte from the token.
-  If the byte is not any digit, say no.
-  If the token is blank, say yes.
+    Get a byte from the token.
+    If the byte is not any digit, say no.
+    If the token is blank, say yes.
   Repeat.
 
 To decide if the user is clicking in some choices;
@@ -3688,10 +3688,10 @@ To decide if the user is clicking in some choices;
   To decide if the user clicked on some choices;
   To decide if the user clicks on some choices:
   Loop.
-  If the mouse's left button is not down, say no.
-  Find a choice given the mouse's spot.
-  If the choice can't be found, say no.
-  Say yes.
+    If the mouse's left button is not down, say no.
+    Find a choice given the mouse's spot.
+    If the choice can't be found, say no.
+    Say yes.
 
 To decide if we ca find a pointer: \ should be "can" not "ca", compiler bug
   If the pointer is nil, say no.
@@ -3785,7 +3785,7 @@ To decrypt a buffer given a passphrase string: \ sets i/o error if failure
   Convert the buffer as a nibble string to a hex string.
   Put the hex string's length into a length.
   Call "advapi32.dll" "CryptDecrypt" with the crypt session's hcryptkey and 0 and 1 and 0 and the hex string's first
-And the length's whereabouts returning a result number.
+  And the length's whereabouts returning a result number.
   If the result number is 0, put "Error decrypting data." into the i/o error; destroy the crypt session; exit.
   Destroy the crypt session.
   Put the hex string into the buffer.
@@ -3849,9 +3849,9 @@ To destroy an hrgn:
 To destroy an index:
   If the index is nil, exit.
   Loop.
-  Get a bucket given the index.
-  If the bucket is nil, break.
-  Destroy the bucket's refers.
+    Get a bucket given the index.
+    If the bucket is nil, break.
+    Destroy the bucket's refers.
   Repeat.
   Unassign the index's first bucket.
   Deallocate the index.
@@ -3863,12 +3863,12 @@ To destroy a path in the file system:
 
 To destroy a path in the file system (directory):
   Loop.
-  Get an item from the path.
-  If the item is not found, break.
-  Put the path into another path.
-  Append the item's designator to the other path.
-  Destroy the other path in the file system.
-  If the i/o error is not blank, exit.
+    Get an item from the path.
+    If the item is not found, break.
+    Put the path into another path.
+    Append the item's designator to the other path.
+    Destroy the other path in the file system.
+    If the i/o error is not blank, exit.
   Repeat.
   Privatize the path.
   Null terminate the path.
@@ -3916,38 +3916,38 @@ The device-control-three byte is a byte equal to 19.
 The device-control-two byte is a byte equal to 18.
   
 A devmode is a record with
-  32 bytes called dmdevicename,
-A wyrd called dmspecversion,
-A wyrd called dmdriverversion,
-A wyrd called dmsize,
-A wyrd called dmdriverextra,
-A number called dmfields,
-A wyrd called dmorientation,
-A wyrd called dmpapersize,
-A wyrd called paperlength,
-A wyrd called paperwidth,
-A wyrd called dmscale,
-A wyrd called dmcopies,
-A wyrd called dmdefaultsource,
-A wyrd called dmprintquality,
-A wyrd called dmcolor,
-A wyrd called dmduplex,
-A wyrd called ydmresolution,
-A wyrd called dmttoption,
-A wyrd called dmcollate,
-  32 bytes called dmformname,
-A wyrd called dmlogpixels,
-A number called dmbitsperpel,
-A number called dmpelswidth,
-A number called dmpelsheight,
-A number called dmdisplayflags,
-A number called dmdisplayfrequency,
-A number called dmicmmethod,
-A number called dmicmintent,
-A number called dmmediatype,
-A number called dmdithertype,
-A number called dmreserved1,
-A number called dmreserved2.
+    32 bytes called dmdevicename,
+  A wyrd called dmspecversion,
+  A wyrd called dmdriverversion,
+  A wyrd called dmsize,
+  A wyrd called dmdriverextra,
+  A number called dmfields,
+  A wyrd called dmorientation,
+  A wyrd called dmpapersize,
+  A wyrd called paperlength,
+  A wyrd called paperwidth,
+  A wyrd called dmscale,
+  A wyrd called dmcopies,
+  A wyrd called dmdefaultsource,
+  A wyrd called dmprintquality,
+  A wyrd called dmcolor,
+  A wyrd called dmduplex,
+  A wyrd called ydmresolution,
+  A wyrd called dmttoption,
+  A wyrd called dmcollate,
+    32 bytes called dmformname,
+  A wyrd called dmlogpixels,
+  A number called dmbitsperpel,
+  A number called dmpelswidth,
+  A number called dmpelsheight,
+  A number called dmdisplayflags,
+  A number called dmdisplayfrequency,
+  A number called dmicmmethod,
+  A number called dmicmintent,
+  A number called dmmediatype,
+  A number called dmdithertype,
+  A number called dmreserved1,
+  A number called dmreserved2.
   
 The diaeresis byte is a byte equal to 168.
   
@@ -4014,11 +4014,11 @@ To divide a pointer by a number giving a quotient and a remainder;
 The division-symbol byte is a byte equal to 247.
   
 A docinfo is a record with
-A number called cbsize,
-A pointer called lpszdocname,
-A pointer called lpszoutput,
-A pointer called lpszdatadtype,
-A number called fwtype.
+  A number called cbsize,
+  A pointer called lpszdocname,
+  A pointer called lpszoutput,
+  A pointer called lpszdatadtype,
+  A number called fwtype.
   
 The dollar-sign byte is a byte equal to 36.
   
@@ -4039,19 +4039,19 @@ To draw and fill a box with a color:
 To draw any visible rows of a text:
   If the text is nil, exit.
   Loop.
-  Get a row from the text's rows.
-  If the row is nil, exit.
-  If the row of the text is not visible, repeat.
-  Draw the row of the text.
+    Get a row from the text's rows.
+    If the row is nil, exit.
+    If the row of the text is not visible, repeat.
+    Draw the row of the text.
   Repeat.
 
 To draw any visible rows of a text (editing):
   If the text is nil, exit.
   Loop.
-  Get a row from the text's rows.
-  If the row is nil, exit.
-  If the row of the text is not visible, repeat.
-  Draw the row of the text (editing).
+    Get a row from the text's rows.
+    If the row is nil, exit.
+    If the row of the text is not visible, repeat.
+    Draw the row of the text (editing).
   Repeat.
 
 To draw a box:
@@ -4106,9 +4106,9 @@ To draw a circle about some twips wide;
   Put the twips times the pizza pie divided by 48 into a segment length.
   Add 1 to the segment length.
   Loop.
-  Stroke the segment length.
-  Turn right 1/48 of the way.
-  Add 1 to a count. If the count is 48, break.
+    Stroke the segment length.
+    Turn right 1/48 of the way.
+    Add 1 to a count. If the count is 48, break.
   Repeat.
 
 To draw a circle some twips wide (backwards);
@@ -4116,9 +4116,9 @@ To draw a circle some twips wide (backwards);
   Put the twips times the pizza pie divided by 48 into a segment length.
   Add 1 to the segment length.
   Loop.
-  Stroke the segment length.
-  Turn left 1/48 of the way.
-  Add 1 to a count. If the count is 48, break.
+    Stroke the segment length.
+    Turn left 1/48 of the way.
+    Add 1 to a count. If the count is 48, break.
   Repeat.
 
 To draw a console:
@@ -4198,18 +4198,18 @@ To draw a figure with some sides about some twips wide:
   Put the twips times the pizza pie divided by the sides into a segment length.
   If the sides are 4, put the twips times 7/8 into the segment length. \ what is this? ***
   Loop.
-  Stroke the segment length.
-  Turn the fraction.
-  Add 1 to a count. if the count is the sides, break.
+    Stroke the segment length.
+    Turn the fraction.
+    Add 1 to a count. if the count is the sides, break.
   Repeat.
 
 To draw a figure with some sides some twips long;
   To draw a figure with some sides and some twips:
   Put 1 and the sides into a fraction.
   Loop.
-  Stroke the twips.
-  Turn the fraction.
-  Add 1 to a count. If the count is the sides, break.
+    Stroke the twips.
+    Turn the fraction.
+    Add 1 to a count. If the count is the sides, break.
   Repeat.
 
 To draw a figure with some sides some twips long using a color;
@@ -4259,10 +4259,10 @@ To draw a half circle about some twips wide;
   Put the size times the pizza pie divided by 48 into a segment length.
   Add 1 to the segment length.
   Loop.
-  Stroke the segment length.
-  Turn right 1/48 of the way.
-  Add 1 to a count.
-  If the count is 24, exit.
+    Stroke the segment length.
+    Turn right 1/48 of the way.
+    Add 1 to a count.
+    If the count is 24, exit.
   Repeat.
 
 To draw a half circle given a size (backwards);
@@ -4270,16 +4270,16 @@ To draw a half circle given a size (backwards);
   Put the size times the pizza pie divided by 48 into a segment length.
   Add 1 to the segment length.
   Loop.
-  Stroke the segment length.
-  Turn left 1/48 of the way.
-  Add 1 to a count.
-  If the count is 24, exit.
+    Stroke the segment length.
+    Turn left 1/48 of the way.
+    Add 1 to a count.
+    If the count is 24, exit.
   Repeat.
 
-To draw a hexagon given a side length:
-  Stroke the side length.
-  Turn right 1/6 of the way.
-  Add 1 to a count. If the count is 6, break.
+  To draw a hexagon given a side length:
+    Stroke the side length.
+    Turn right 1/6 of the way.
+    Add 1 to a count. If the count is 6, break.
   Repeat.
 
 To draw a line:
@@ -4408,9 +4408,9 @@ To draw a picture (pdf style):
   Call "gdiplus.dll" "GdipGetImageGraphicsContext" with the gpbitmap and a gpgraphic's whereabouts.
   If the picture's grayscale flag is set, create a gpimageattributes (grayscale).
   Call "gdiplus.dll" "GdipDrawImageRectRectI" with the gpgraphic and the picture's gpbitmap
-And 0 and 0 and the width and the height
-And the x and the y and the width and the height
-And 2 [unitpixel] and the gpimageattributes and nil and 0.
+  And 0 and 0 and the width and the height
+  And the x and the y and the width and the height
+  And 2 [unitpixel] and the gpimageattributes and nil and 0.
   If the gpimageattributes is not nil, destroy the gpimageattributes.
   Call "gdiplus.dll" "GdipDeleteGraphics" with the gpgraphic.
   Draw the gpbitmap at the picture's box's left-top (pdf style).
@@ -4420,9 +4420,9 @@ To draw a picture on a gpgraphic at an x coord and a y coord:
   If the picture is nil, exit.
   If the picture's grayscale flag is set, create a gpimageattributes (grayscale).
   Call "gdiplus.dll" "GdipDrawImageRectRectI" with the gpgraphic and the picture's gpbitmap
-And the x and the y and the picture's uncropped box's width and the picture's uncropped box's height
-And 0 and 0 and the picture's gpbitmap's width and the picture's gpbitmap's height
-And 2 [unitpixel] and the gpimageattributes and nil and 0.
+  And the x and the y and the picture's uncropped box's width and the picture's uncropped box's height
+  And 0 and 0 and the picture's gpbitmap's width and the picture's gpbitmap's height
+  And 2 [unitpixel] and the gpimageattributes and nil and 0.
   If the gpimageattributes is not nil, destroy the gpimageattributes.
 
 To draw a polygon:
@@ -4442,9 +4442,9 @@ To draw a polygon with a border color and a fill color (pdf style):
   If the vertex is nil, exit.
   Output moveto given the vertex's spot.
   Loop.
-  Get the vertex from the polygon's vertices.
-  If the vertex is nil, break.
-  Output lineto given the vertex's spot.
+    Get the vertex from the polygon's vertices.
+    If the vertex is nil, break.
+    Output lineto given the vertex's spot.
   Repeat.
   Output stroke and fill given the border and the fill.
 
@@ -4459,9 +4459,9 @@ To draw a polygon with a color (border only):
   If the vertex is nil, exit.
   Call "gdi32.dll" "MoveToEx" with the current canvas and the vertex's x and the vertex's y and nil.
   Loop.
-  Get the vertex from the polygon's vertices.
-  If the vertex is nil, break.
-  Call "gdi32.dll" "LineTo" with the current canvas and the vertex's x and the vertex's y.
+    Get the vertex from the polygon's vertices.
+    If the vertex is nil, break.
+    Call "gdi32.dll" "LineTo" with the current canvas and the vertex's x and the vertex's y.
   Repeat.
   Destroy the hpen of the current canvas.
   If the polygon's vertices' first's spot is the polygon's vertices' last's spot, exit.
@@ -4485,10 +4485,10 @@ To draw a quarter circle about some twips wide;
   Put the size times the pizza pie divided by 48 into a segment length.
   Add 1 to the segment length.
   Loop.
-  Stroke the segment length.
-  Turn right 1/48 of the way.
-  Add 1 to a count.
-  If the count is 12, exit.
+    Stroke the segment length.
+    Turn right 1/48 of the way.
+    Add 1 to a count.
+    If the count is 12, exit.
   Repeat.
 
 To draw a quarter circle between some twips and some other twips wide:
@@ -4499,10 +4499,10 @@ To draw a quarter circle given a size (counterclockwise):
   Put the size times the pizza pie divided by 48 into a segment length.
   Add 1 to the segment length.
   Loop.
-  Stroke the segment length.
-  Turn left 1/48 of the way.
-  Add 1 to a count.
-  If the count is 12, exit.
+    Stroke the segment length.
+    Turn left 1/48 of the way.
+    Add 1 to a count.
+    If the count is 12, exit.
   Repeat.
 
 To draw a rectangle some twips by some other twips;
@@ -4587,19 +4587,19 @@ To draw a spiral backward given some twips;
   To draw a spiral given a size (backwards):
   Privatize the size.
   Loop.
-  Draw a half circle given the size (backwards).
-  Divide the size by 2.
-  Add 1 to a count.
-  If the count is 5, break.
+    Draw a half circle given the size (backwards).
+    Divide the size by 2.
+    Add 1 to a count.
+    If the count is 5, break.
   Repeat.
 
 To draw a spiral starting with some twips;
-  To draw a spiral given a size:
-  Privatize the size.
-  Loop.
-  Draw a half circle given the size.
-  Divide the size by 2.
-  Add 1 to a count. If the count is 5, break.
+    To draw a spiral given a size:
+    Privatize the size.
+    Loop.
+    Draw a half circle given the size.
+    Divide the size by 2.
+    Add 1 to a count. If the count is 5, break.
   Repeat.
 
 To draw a spot:
@@ -4612,15 +4612,15 @@ To draw a spot with a color:
 To draw a star given a point count and a size:
   Put 1 and the point count into a fraction.
   Loop.
-  Turn right 1/48 of the way.
-  Stroke the size.
-  Turn around.
-  Turn left 1/24 of the way.
-  Stroke the size.
-  Turn around.
-  Turn right 1/48 of the way.
-  Turn right the fraction of the way.
-  Add 1 to a count. If the count is the point count, break.
+    Turn right 1/48 of the way.
+    Stroke the size.
+    Turn around.
+    Turn left 1/24 of the way.
+    Stroke the size.
+    Turn around.
+    Turn right 1/48 of the way.
+    Turn right the fraction of the way.
+    Add 1 to a count. If the count is the point count, break.
   Repeat.
 
 To draw a string at the left of a box:
@@ -4659,12 +4659,12 @@ To draw a string at a spot with a color and a font:
   Put the substring's first plus the text cutoff minus 1 into the substring's last.
   Privatize the spot.
   Loop.
-  If the substring is blank, break.
-  If the substring's last is greater than the string's last, put the string's last into the substring's last.
-  Call "gdi32.dll" "TextOutA" with the current canvas and the spot's x and the spot's y and the substring's first and the substring's length.
-  Get a width given the substring and the current canvas.
-  Add the width to the spot's x.
-  Move the substring given the text cutoff.
+    If the substring is blank, break.
+    If the substring's last is greater than the string's last, put the string's last into the substring's last.
+    Call "gdi32.dll" "TextOutA" with the current canvas and the spot's x and the spot's y and the substring's first and the substring's length.
+    Get a width given the substring and the current canvas.
+    Add the width to the spot's x.
+    Move the substring given the text cutoff.
   Repeat.
   Destroy the hfont of the current canvas.
 
@@ -4768,13 +4768,13 @@ To duplicate a path to another path in the file system (directory):
   If the path is not in the file system, put "Error duplicating directory '" then the path then "'." into the i/o error; exit.
   If the other path is not in the file system, create the other path in the file system.
   Loop.
-  Get an item from the path.
-  If the item is not found, exit.
-  Put the path into a third path.
-  Append the item's designator to the third path.
-  Put the other path into a fourth path.
-  Append the item's designator to the fourth path.
-  Duplicate the third path to the fourth path in the file system.
+    Get an item from the path.
+    If the item is not found, exit.
+    Put the path into a third path.
+    Append the item's designator to the third path.
+    Put the other path into a fourth path.
+    Append the item's designator to the fourth path.
+    Duplicate the third path to the fourth path in the file system.
   Repeat.
 
 To duplicate a path to another path in the file system (file):
@@ -4804,11 +4804,11 @@ The ellipsis byte is a byte equal to 133.
 The em-dash byte is a byte equal to 151.
 
 An email has
-A smtp server,
-A sender,
-A recipient,
-A subject,
-A message.
+  A smtp server,
+  A sender,
+  A recipient,
+  A subject,
+  A message.
   
 The en-dash byte is a byte equal to 150.
 
@@ -4862,29 +4862,29 @@ To end printing a pdf (append header):
   Append the crlf string to the pdf.
 
 To end printing a pdf (append the outline entries - create the objects):
-  Get a pdf outline entry from the pdf state's outline entries.
-  If the pdf outline entry is nil, exit.
-  Add an entry pdf object given "outline entry".
-  Put the entry into the pdf outline entry's pdf object.
+    Get a pdf outline entry from the pdf state's outline entries.
+    If the pdf outline entry is nil, exit.
+    Add an entry pdf object given "outline entry".
+    Put the entry into the pdf outline entry's pdf object.
   Repeat.
 
 To end printing a pdf (append the outline entries):
   If the pdf state's outline entries are empty, exit.
   End printing the pdf (append the outline entries - create the objects).
   Loop.
-  Get a pdf outline entry from the pdf state's outline entries.
-  If the pdf outline entry is nil, exit.
-  Put the pdf outline entry's pdf object into an object pdf object.
-  Append the object's number then " 0 obj" to the object.
-  Append "<<" to the object.
-  Convert the pdf outline entry's title to a pdf string.
-  Append "/Title " then the pdf string to the object.
-  Append "/Parent " then the pdf state's outline's number then " 0 R" to the object.
-  If the pdf outline entry's next is not nil, append "/Next " then the pdf outline entry's next's pdf object's number then " 0 R" to the object.
-  If the pdf outline entry's previous is not nil, append "/Prev " then the pdf outline entry's previous' pdf object's number then " 0 R" to the object.
-  Append "/Dest [" then the pdf outline entry's destination then " 0 R /XYZ null " then the pdf outline entry's  page height then " null]" to the object.
-  Append ">>" to the object.
-  Append "endobj" to the object.
+    Get a pdf outline entry from the pdf state's outline entries.
+    If the pdf outline entry is nil, exit.
+    Put the pdf outline entry's pdf object into an object pdf object.
+    Append the object's number then " 0 obj" to the object.
+    Append "<<" to the object.
+    Convert the pdf outline entry's title to a pdf string.
+    Append "/Title " then the pdf string to the object.
+    Append "/Parent " then the pdf state's outline's number then " 0 R" to the object.
+    If the pdf outline entry's next is not nil, append "/Next " then the pdf outline entry's next's pdf object's number then " 0 R" to the object.
+    If the pdf outline entry's previous is not nil, append "/Prev " then the pdf outline entry's previous' pdf object's number then " 0 R" to the object.
+    Append "/Dest [" then the pdf outline entry's destination then " 0 R /XYZ null " then the pdf outline entry's  page height then " null]" to the object.
+    Append ">>" to the object.
+    Append "endobj" to the object.
   Repeat.
 
 To end printing a pdf (append the outline):
@@ -4918,10 +4918,10 @@ To end printing a pdf (append xref table):
   Append "0 " then the count then the crlf string to the pdf.
   Append "0000000000 65535 f" then the crlf string to the pdf.
   Loop.
-  Get a pdf object from the pdf state's objects.
-  If the pdf object is nil, break.
-  Zero fill the pdf object's offset given 10 and append it to the pdf.
-  Append " 00000 n" then the crlf string to the pdf.
+    Get a pdf object from the pdf state's objects.
+    If the pdf object is nil, break.
+    Zero fill the pdf object's offset given 10 and append it to the pdf.
+    Append " 00000 n" then the crlf string to the pdf.
   Repeat.
   Append the crlf string to the pdf.
 
@@ -4929,14 +4929,14 @@ To end printing a pdf (finish the parent):
   Put the pdf state's parent into a parent pdf object.
   Append "/Kids [" to the parent without advancing.
   Loop.
-  Get a pdf object from the pdf state's objects.
-  If the pdf object is nil, break.
-  If the pdf object's kind is not "page", repeat.
-  If a flag is set, append " " to the parent without advancing.
-  Append the pdf object's number then " 0 R" to the parent without advancing.
-  Set the flag.
-  Add 1 to a count.
-  If the count is evenly divisible by 20, append the crlf string then "  " to the parent without advancing.
+    Get a pdf object from the pdf state's objects.
+    If the pdf object is nil, break.
+    If the pdf object's kind is not "page", repeat.
+    If a flag is set, append " " to the parent without advancing.
+    Append the pdf object's number then " 0 R" to the parent without advancing.
+    Set the flag.
+    Add 1 to a count.
+    If the count is evenly divisible by 20, append the crlf string then "  " to the parent without advancing.
   Repeat.
   Append "]" to the parent.
   Append "/Count " then the count to the parent.
@@ -4954,11 +4954,11 @@ To end printing a pdf (finish the root):
   Append "endobj" to the root.
 
 To end printing a pdf (offset and append objects):
-  Get a pdf object from the pdf state's objects.
-  If the pdf object is nil, break.
-  Put the pdf's length into the pdf object's offset.
-  Append the pdf object's data to the pdf.
-  Append the crlf string to the pdf.
+    Get a pdf object from the pdf state's objects.
+    If the pdf object is nil, break.
+    Put the pdf's length into the pdf object's offset.
+    Append the pdf object's data to the pdf.
+    Append the crlf string to the pdf.
   Repeat.
 
 To end a sheet:
@@ -4984,11 +4984,11 @@ To end a sheet (pdf style - finish the current page - font resources):
   If the page's font strings are empty, exit.
   Append "/Font <<" to the page without advancing.
   Loop.
-  Get a string thing from the page's font strings.
-  If the string thing is nil, break.
-  If a flag is set, append " " to the page without advancing.
-  Append the string thing's string to the page without advancing.
-  Set the flag.
+    Get a string thing from the page's font strings.
+    If the string thing is nil, break.
+    If a flag is set, append " " to the page without advancing.
+    Append the string thing's string to the page without advancing.
+    Set the flag.
   Repeat.
   Append ">>" to the page.
 
@@ -4997,11 +4997,11 @@ To end a sheet (pdf style - finish the current page - image resources):
   If the page's image strings are empty, exit.
   Append "/XObject <<" to the page without advancing.
   Loop.
-  Get a string thing from the page's image strings.
-  If the string thing is nil, break.
-  If a flag is set, append " " to the page without advancing.
-  Append the string thing's string to the page without advancing.
-  Set the flag.
+    Get a string thing from the page's image strings.
+    If the string thing is nil, break.
+    If a flag is set, append " " to the page without advancing.
+    Append the string thing's string to the page without advancing.
+    Set the flag.
   Repeat.
   Append ">>" to the page.
 
@@ -5110,9 +5110,9 @@ To extract a designator from a path:
   Slap a substring on the last byte of the path substring.
   If the substring's first's target is the backslash byte, subtract 1 from the substring's first.
   Loop.
-  If the substring's first is less than the path substring's first, break.
-  If the substring's first's target is the backslash byte, break.
-  Subtract 1 from the substring's first.
+    If the substring's first is less than the path substring's first, break.
+    If the substring's first's target is the backslash byte, break.
+    Subtract 1 from the substring's first.
   Repeat.
   Add 1 to the substring's first.
   Put the substring into the designator.
@@ -5126,9 +5126,9 @@ To extract a directory from a path:
   If the substring is blank, exit.
   If the substring's last's target is the backslash byte, subtract 1 from the substring's last.
   Loop.
-  If the substring is blank, break.
-  If the substring's last's target is the backslash byte, break.
-  Subtract 1 from the substring's last.
+    If the substring is blank, break.
+    If the substring's last's target is the backslash byte, break.
+    Subtract 1 from the substring's last.
   Repeat.
   Put the drive then the substring into the directory.
 
@@ -5151,10 +5151,10 @@ To extract a drive from a path:
   If the substring does not start with "\\", exit.
   Slap the substring on the first byte of the path.
   Loop.
-  If the substring's last is greater than the path's last, exit.
-  If the substring's last's target is the backslash byte, add 1 to a count.
-  If the count is 4, break. \ "\\computer\share\"
-  Add 1 to the substring's last.
+    If the substring's last is greater than the path's last, exit.
+    If the substring's last's target is the backslash byte, add 1 to a count.
+    If the count is 4, break. \ "\\computer\share\"
+    Add 1 to the substring's last.
   Repeat.
   Put the substring into the drive.
 
@@ -5163,11 +5163,11 @@ To extract an extension from a path:
   If the path is blank, exit.
   Slap a substring on the last byte of the path.
   Loop.
-  If the substring's first is less than the path's first, exit.
-  If the substring's first's target is the colon byte, exit.
-  If the substring's first's target is the backslash byte, exit.
-  If the substring's first's target is the period byte, break.
-  Subtract 1 from the substring's first.
+    If the substring's first is less than the path's first, exit.
+    If the substring's first's target is the colon byte, exit.
+    If the substring's first's target is the backslash byte, exit.
+    If the substring's first's target is the period byte, break.
+    Subtract 1 from the substring's first.
   Repeat.
   Put the substring into the extension.
 
@@ -5211,12 +5211,12 @@ To extract a string from a text (selected bytes):
   Clear the string.
   If the text is nil, exit.
   Loop.
-  Get a row from the text's rows.
-  If the row is nil, exit.
-  Slap a substring on any selected bytes in the row of the text.
-  If the substring is blank, repeat.
-  Append the substring to the string.
-  If the substring's last's target is the return byte, append the linefeed byte to the string.
+    Get a row from the text's rows.
+    If the row is nil, exit.
+    Slap a substring on any selected bytes in the row of the text.
+    If the substring is blank, repeat.
+    Append the substring to the string.
+    If the substring's last's target is the return byte, append the linefeed byte to the string.
   Repeat.
   
 The f-key is a key equal to 70.
@@ -5359,10 +5359,10 @@ To finalize a talker:
 To finalize the window:
   Call "user32.dll" "DestroyWindow" with the main window.
   Loop.
-  Call "user32.dll" "GetMessageA" with an msg's whereabouts and 0 and 0 and 0 returning a number.
-  If the number is less than 1, break.
-  Call "user32.dll" "TranslateMessage" with the msg's whereabouts.
-  Call "user32.dll" "DispatchMessageA" with the msg's whereabouts.
+    Call "user32.dll" "GetMessageA" with an msg's whereabouts and 0 and 0 and 0 returning a number.
+    If the number is less than 1, break.
+    Call "user32.dll" "TranslateMessage" with the msg's whereabouts.
+    Call "user32.dll" "DispatchMessageA" with the msg's whereabouts.
   Repeat.
   Flush the event queue.
   Destroy the current event.
@@ -5375,17 +5375,17 @@ The find anchor is an anchor.
 To find a choice given a spot:
   Start with nothing in the choice.
   Loop.
-  Get the [first/next] choice from the choices.
-  If the choice is missing, exit.
-  If the spot is in the choice's box, break.
+    Get the [first/next] choice from the choices.
+    If the choice is missing, exit.
+    If the spot is in the choice's box, break.
   Repeat.
 
 To find a dyad given some dyads and a name:
   Void the dyad.
   Loop.
-  Get the dyad from the dyads.
-  If the dyad is nil, exit.
-  If the dyad's name is the name, exit.
+    Get the dyad from the dyads.
+    If the dyad is nil, exit.
+    If the dyad's name is the name, exit.
   Repeat.
 
 To find next given a row and a text and a flag:
@@ -5396,9 +5396,9 @@ To find next given a row and a text and a flag:
   Put the substring's first plus the find string's length minus 1 into the substring's last.
   If the row's row# is the find anchor's row#, move the substring given the find anchor's column# minus 1.
   Loop.
-  If the substring's last is greater than or equal to the row's string's last, exit.
-  If the substring is the find string, break.
-  Move the substring given 1.
+    If the substring's last is greater than or equal to the row's string's last, exit.
+    If the substring is the find string, break.
+    Move the substring given 1.
   Repeat.
   Set the flag.
   Put the substring's first minus the row's string's first plus 1 into the text's anchor column#.
@@ -5412,11 +5412,11 @@ To find next given a text and a flag:
   If the text is nil, exit.
   If the find string's length is 0, exit.
   Loop.
-  Get a row from the text's rows.
-  If the row is nil, exit.
-  If the row's row# is less than the find anchor's row#, repeat.
-  Find next given the row and the text and the flag.
-  If the flag is set, exit.
+    Get a row from the text's rows.
+    If the row is nil, exit.
+    If the row's row# is less than the find anchor's row#, repeat.
+    Find next given the row and the text and the flag.
+    If the flag is set, exit.
   Repeat.
 
 To find next given a text and a flag (wrapped text):
@@ -5427,9 +5427,9 @@ To find next given a text and a flag (wrapped text):
   Put the string's first plus the offset minus 1 into a substring's first.
   Put the substring's first plus the find string's length minus 1 into the substring's last.
   Loop.
-  If the substring's last is greater than the string's last, exit.
-  If the substring is the find string, break.
-  Move the substring given 1.
+    If the substring's last is greater than the string's last, exit.
+    If the substring is the find string, break.
+    Move the substring given 1.
   Repeat.
   Set the flag.
   Put the substring's first minus the string's first plus 1 into an anchor absolute position.
@@ -5445,8 +5445,8 @@ To find the next misspelling given a row and a text and a flag:
   If the row's row# is the find anchor's row#, add the find anchor's column# minus 1 to the rider's source's first.
   If the rider's source's first is not the row's string's first, skip word characters in the rider's source.
   Loop.
-  Move the rider (spell checking rules).
-  If the rider's token is blank, exit.
+    Move the rider (spell checking rules).
+    If the rider's token is blank, exit.
   If the rider's token is not misspelled, repeat.
   Set the flag.
   Put the rider's token's first minus the row's string's first plus 1 into the text's anchor column#.
@@ -5458,19 +5458,19 @@ To find the next misspelling in a text given a flag:
   Clear the flag.
   If the text is nil, exit.
   Loop.
-  Get a row from the text's rows.
-  If the row is nil, exit.
-  If the row's row# is less than the find anchor's row#, repeat.
-  Find the next misspelling given the row and the text and the flag.
-  If the flag is set, exit.
+    Get a row from the text's rows.
+    If the row is nil, exit.
+    If the row's row# is less than the find anchor's row#, repeat.
+    Find the next misspelling given the row and the text and the flag.
+    If the flag is set, exit.
   Repeat.
 
 To find a pdf object given a kind:
   Void the pdf object.
   Loop.
-  Get the pdf object given the pdf state's objects.
-  If the pdf object is nil, break.
-  If the pdf object's kind is the kind, break.
+    Get the pdf object given the pdf state's objects.
+    If the pdf object is nil, break.
+    If the pdf object's kind is the kind, break.
   Repeat.
 
 To find a pointer given a string and an index:
@@ -5487,9 +5487,9 @@ To find a refer given a string and an index:
 To find a refer given a string and some refers:
   Void the refer.
   Loop.
-  Get the refer from the refers.
-  If the refer is nil, exit.
-  If the string is the refer's string, exit.
+    Get the refer from the refers.
+    If the refer is nil, exit.
+    If the string is the refer's string, exit.
   Repeat.
 
 To find a sector given a grid and a spot:
@@ -5504,19 +5504,19 @@ To find a square root of a number: \ rounds down
   Put 1 into a square number.
   Put 3 into a delta number.
   Loop.
-  If the square is greater than the number, break.
-  Add the delta to the square.
-  Add 2 to the delta.
+    If the square is greater than the number, break.
+    Add the delta to the square.
+    Add 2 to the delta.
   Repeat.
   Put the delta divided by 2 minus 1 into the square root.
 
 To find a string given some string things and a string#:
   Clear the string.
   Loop.
-  Get a string thing from the string things.
-  If the string thing is nil, exit.
-  Add 1 to a count.
-  If the count is not the string#, repeat.
+    Get a string thing from the string things.
+    If the string thing is nil, exit.
+    Add 1 to a count.
+    If the count is not the string#, repeat.
   Put the string thing's string into the string.
   
 The find string is a string.
@@ -5524,17 +5524,17 @@ The find string is a string.
 To find a string thing given a string and some string things:
   Void the string thing.
   Loop.
-  Get the string thing given the string things.
-  If the string thing is nil, break.
-  If the string thing's string is the string, break.
+    Get the string thing given the string things.
+    If the string thing is nil, break.
+    If the string thing's string is the string, break.
   Repeat.
 
 To find a substring in a string given another string:
   Slap the substring on the string.
   Loop.
-  If the substring is blank, exit.
-  If the substring starts with the other string, break.
-  Add 1 to the substring's first.
+    If the substring is blank, exit.
+    If the substring starts with the other string, break.
+    Add 1 to the substring's first.
   Repeat.
   Put the substring's first plus the other string's length minus 1 into the substring's last.
 
@@ -5583,10 +5583,10 @@ To flip a polygon:
   If the polygon is nil, exit.
   Put the polygon's box into a box.
   Loop.
-  Get a vertex from the polygon's vertices.
-  If the vertex is nil, exit.
-  Subtract the box's top from the vertex's y.
-  Put the box's bottom minus the vertex's y into the vertex's y.
+    Get a vertex from the polygon's vertices.
+    If the vertex is nil, exit.
+    Subtract the box's top from the vertex's y.
+    Put the box's bottom minus the vertex's y into the vertex's y.
   Repeat.
 
 To flush all input;
@@ -5596,16 +5596,16 @@ To flush all input;
   Flush the event queue.
 
 To flush any messages:
-  Call "user32.dll" "PeekMessageA" with an msg's whereabouts and 0 and 0 and 0 and 1 [pm_remove] returning a number.
-  If the number is 0, exit.
-  If the msg's message is 15 [wm_paint], call "user32.dll" "ValidateRect" with the main window and 0.
+    Call "user32.dll" "PeekMessageA" with an msg's whereabouts and 0 and 0 and 0 and 1 [pm_remove] returning a number.
+    If the number is 0, exit.
+    If the msg's message is 15 [wm_paint], call "user32.dll" "ValidateRect" with the main window and 0.
   Repeat.
 
 To flush an event queue:
-  Get an event from the event queue.
-  If the event is nil, exit.
-  Remove the event from the event queue.
-  Destroy the event.
+    Get an event from the event queue.
+    If the event is nil, exit.
+    Remove the event from the event queue.
+    Destroy the event.
   Repeat.
   
 A font has a name and a height.
@@ -5613,17 +5613,17 @@ A font has a name and a height.
 A font height is some twips. \ indicates line height - the letters will fit nicely in a box of this height
   
 A font info is a thing with \ used for pdf conversion
-A font,
-An emsquare number,
-An internal leading number,
-A flags number,
-An ascent number,
-A descent number,
-A capheight number,
-An italicangle number,
-A stemv number,
-A font box,
-Some font widths.
+  A font,
+  An emsquare number,
+  An internal leading number,
+  A flags number,
+  An ascent number,
+  A descent number,
+  A capheight number,
+  An italicangle number,
+  A stemv number,
+  A font box,
+  Some font widths.
   
 A font resource is a handle.
   
@@ -5655,21 +5655,21 @@ The g-key is a key equal to 71.
 A gcd is a number.
   
 A gcpresults is a record with
-A number called lstructsize,
-A pchar called lpoutstring,
-A number pointer called lporder,
-A number pointer called lpdx,
-A number pointer called lpcaretpos,
-A pointer called lpclass,
-A pointer called lpglyphs,
-A number called nglyphs,
-A number called maxfit.
+  A number called lstructsize,
+  A pchar called lpoutstring,
+  A number pointer called lporder,
+  A number pointer called lpdx,
+  A number pointer called lpcaretpos,
+  A pointer called lpclass,
+  A pointer called lpglyphs,
+  A number called nglyphs,
+  A number called maxfit.
   
 A gdiplusstartupinput is a record with
-A number called gdiplusversion,
-A pointer called debugeventcallback,
-A number called suppressbackgroundthread,
-A number called suppressexternalcodecs.
+  A number called gdiplusversion,
+  A pointer called debugeventcallback,
+  A number called suppressbackgroundthread,
+  A number called suppressexternalcodecs.
   
 A geometric figure is a figure.
 
@@ -5747,14 +5747,14 @@ To get a bucket# given a string and an index: \ based on the djb2 algorithm
   Add 5381 to the bucket#.
   Slap a substring on the string.
   Loop.
-  Put the substring's first's target into a byte.
-  Lowercase the byte.
-  Put the bucket# into a number.
-  Shift the bucket# left 5 bits.
-  Add the number to the bucket#.
-  Add the byte to the bucket#.
-  Add 3 to the substring's first.
-  If the substring is blank, break.
+    Put the substring's first's target into a byte.
+    Lowercase the byte.
+    Put the bucket# into a number.
+    Shift the bucket# left 5 bits.
+    Add the number to the bucket#.
+    Add the byte to the bucket#.
+    Add 3 to the substring's first.
+    If the substring is blank, break.
   Repeat.
   Bitwise and the bucket# with the largest number.
   Divide the bucket# by the index's bucket count giving a quotient and the bucket#.
@@ -5786,14 +5786,14 @@ To get a column# given a row and a spot and a text:
   Create the hfont of the memory canvas given the text's font.
   Get a start width and a substring given the row and the spot and the text (for "get a column# given a row...").
   Loop.
-  If the substring's last is the row's string's last, break.
-  Get a width given the substring and the memory canvas.
-  Add the start width to the width.
-  Get another width given the substring's last's target and the memory canvas.
-  Divide the other width by 2.
-  Subtract the other width from the width.
-  If the spot's x is less than the width, break.
-  Add 1 to the substring's last.
+    If the substring's last is the row's string's last, break.
+    Get a width given the substring and the memory canvas.
+    Add the start width to the width.
+    Get another width given the substring's last's target and the memory canvas.
+    Divide the other width by 2.
+    Subtract the other width from the width.
+    If the spot's x is less than the width, break.
+    Add 1 to the substring's last.
   Repeat.
   Put the substring's last minus the row's string's first plus 1 into the column#.
   Destroy the hfont of the memory canvas.
@@ -5801,9 +5801,9 @@ To get a column# given a row and a spot and a text:
 To get a count of items in a path in the file system:
   Put 0 into the count.
   Loop.
-  Get an item from the path.
-  If the item is not found, exit.
-  Add 1 to the count.
+    Get an item from the path.
+    If the item is not found, exit.
+    Add 1 to the count.
   Repeat.
 
 To get a description for a path:
@@ -5868,8 +5868,8 @@ To get the first-eighth equivalent of a heading:
   De-sign the heading.
 
 To get the first-quarter equivalent of a heading:
-  If the heading is less than 960, exit.
-  Subtract 960 from the heading.
+    If the heading is less than 960, exit.
+    Subtract 960 from the heading.
   Repeat.
 
 To get fresh random numbers;
@@ -5885,10 +5885,10 @@ To get a gcd given a number and another number:
   If the dividend is less than the gcd, swap the dividend with the gcd.
   If the gcd is 0, put 1 into the gcd; exit.
   Loop.
-  Divide the dividend by the gcd giving a quotient and a remainder.
-  If the remainder is 0, exit.
-  Put the gcd into the dividend.
-  Put the remainder into the gcd.
+    Divide the dividend by the gcd giving a quotient and a remainder.
+    If the remainder is 0, exit.
+    Put the gcd into the dividend.
+    Put the remainder into the gcd.
   Repeat.
 
 To get an ip address given a host string:
@@ -5973,43 +5973,43 @@ To get a rgb pointer from a bitmapdata at a row# and a column#: \ 1 based
   Add the column# minus 1 times a rgb's magnitude to the rgb pointer.
 
 To get a rise and a run given a heading: \ see Madhava's Numbers
-  Privatize the heading.
-  Normalize the heading.
-  Normalize the original heading.
-  If the heading is not evenly divisible by 20, estimate the rise and the run given the heading; exit.
-  \ special cases
-  If the heading is 0, put -10000 in the rise; put -0 in the run; exit. \ 0 degrees
-  If the heading is 960, put 10000 in the run; put -0 in the rise; exit. \ 90 degrees
-  If the heading is 1920, put 10000 in the rise; put 0 in the run; exit. \ 180 degrees
-  If the heading is 2880, put -10000 in the run; put 0 in the rise; exit. \ 270 degrees
-  If the heading is 3840, debug "invalid heading"; debug the heading; debug the original heading.
-  \ force it into the first eighth of the circle
-  Get the first-eighth equivalent of the heading.
-  \ find the first eighth of the circle unsigned values
-  If the heading is 20, put 0327 in the run; put 9995 in the rise; break. \ 1.875 degrees
-  If the heading is 40, put 0654 in the run; put 9979 in the rise; break. \ 3.75 degrees
-  If the heading is 60, put 0980 in the run; put 9952 in the rise; break. \ 5.625 degrees = 1/64 of the way
-  If the heading is 80, put 1305 in the run; put 9914 in the rise; break. \7.5 degrees
-  If the heading is 100, put 1629 in the run; put 9866 in the rise; break. \ 9.375 degrees
-  If the heading is 120, put 1951 in the run; put 9808 in the rise; break. \ 11.25 degrees = 2/64 of the way
-  If the heading is 140, put 2271 in the run; put 9739 in the rise; break. \ 13.125 degrees
-  If the heading is 160, put 2588 in the run; put 9659 in the rise; break. \ 15 degrees
-  If the heading is 180, put 2903 in the run; put 9569 in the rise; break. \ 16.875 degrees = 3/64 of the way
-  If the heading is 200, put 3214 in the run; put 9469 in the rise; break. \ 18.75 degrees
-  If the heading is 220, put 3523 in the run; put 9359 in the rise; break. \ 20.625 degrees
-  If the heading is 240, put 3827 in the run; put 9239 in the rise; break. \ 22.5 degrees = 4/64 of the way
-  If the heading is 260, put 4127 in the run; put 9109 in the rise; break. \ 24.375 degrees
-  If the heading is 280, put 4423 in the run; put 8969 in the rise; break. \ 26.25 degrees
-  If the heading is 300, put 4714 in the run; put 8819 in the rise; break. \ 28.125 degrees = 5/64 of the way
-  If the heading is 320, put 5000 in the run; put 8660 in the rise; break. \ 30 degrees
-  If the heading is 340, put 5281 in the run; put 8492 in the rise; break. \ 31.875 degrees
-  If the heading is 360, put 5556 in the run; put 8315 in the rise; break. \ 33.75 degrees = 6/64 of the way
-  If the heading is 380, put 5825 in the run; put 8128 in the rise; break. \ 35.625 degrees
-  If the heading is 400, put 6088 in the run; put 7934 in the rise; break. \ 37.5 degrees
-  If the heading is 420, put 6344 in the run; put 7730 in the rise; break. \ 39.375 degrees = 7/64 of the way
-  If the heading is 440, put 6593 in the run; put 7518 in the rise; break. \ 41.25 degrees
-  If the heading is 460, put 6836 in the run; put 7299 in the rise; break. \ 43.125 degrees
-  If the heading is 480, put 7071 in the run; put 7071 in the rise; break. \ 45 degrees = 8/64 of the way
+    Privatize the heading.
+    Normalize the heading.
+    Normalize the original heading.
+    If the heading is not evenly divisible by 20, estimate the rise and the run given the heading; exit.
+    \ special cases
+    If the heading is 0, put -10000 in the rise; put -0 in the run; exit. \ 0 degrees
+    If the heading is 960, put 10000 in the run; put -0 in the rise; exit. \ 90 degrees
+    If the heading is 1920, put 10000 in the rise; put 0 in the run; exit. \ 180 degrees
+    If the heading is 2880, put -10000 in the run; put 0 in the rise; exit. \ 270 degrees
+    If the heading is 3840, debug "invalid heading"; debug the heading; debug the original heading.
+    \ force it into the first eighth of the circle
+    Get the first-eighth equivalent of the heading.
+    \ find the first eighth of the circle unsigned values
+    If the heading is 20, put 0327 in the run; put 9995 in the rise; break. \ 1.875 degrees
+    If the heading is 40, put 0654 in the run; put 9979 in the rise; break. \ 3.75 degrees
+    If the heading is 60, put 0980 in the run; put 9952 in the rise; break. \ 5.625 degrees = 1/64 of the way
+    If the heading is 80, put 1305 in the run; put 9914 in the rise; break. \7.5 degrees
+    If the heading is 100, put 1629 in the run; put 9866 in the rise; break. \ 9.375 degrees
+    If the heading is 120, put 1951 in the run; put 9808 in the rise; break. \ 11.25 degrees = 2/64 of the way
+    If the heading is 140, put 2271 in the run; put 9739 in the rise; break. \ 13.125 degrees
+    If the heading is 160, put 2588 in the run; put 9659 in the rise; break. \ 15 degrees
+    If the heading is 180, put 2903 in the run; put 9569 in the rise; break. \ 16.875 degrees = 3/64 of the way
+    If the heading is 200, put 3214 in the run; put 9469 in the rise; break. \ 18.75 degrees
+    If the heading is 220, put 3523 in the run; put 9359 in the rise; break. \ 20.625 degrees
+    If the heading is 240, put 3827 in the run; put 9239 in the rise; break. \ 22.5 degrees = 4/64 of the way
+    If the heading is 260, put 4127 in the run; put 9109 in the rise; break. \ 24.375 degrees
+    If the heading is 280, put 4423 in the run; put 8969 in the rise; break. \ 26.25 degrees
+    If the heading is 300, put 4714 in the run; put 8819 in the rise; break. \ 28.125 degrees = 5/64 of the way
+    If the heading is 320, put 5000 in the run; put 8660 in the rise; break. \ 30 degrees
+    If the heading is 340, put 5281 in the run; put 8492 in the rise; break. \ 31.875 degrees
+    If the heading is 360, put 5556 in the run; put 8315 in the rise; break. \ 33.75 degrees = 6/64 of the way
+    If the heading is 380, put 5825 in the run; put 8128 in the rise; break. \ 35.625 degrees
+    If the heading is 400, put 6088 in the run; put 7934 in the rise; break. \ 37.5 degrees
+    If the heading is 420, put 6344 in the run; put 7730 in the rise; break. \ 39.375 degrees = 7/64 of the way
+    If the heading is 440, put 6593 in the run; put 7518 in the rise; break. \ 41.25 degrees
+    If the heading is 460, put 6836 in the run; put 7299 in the rise; break. \ 43.125 degrees
+    If the heading is 480, put 7071 in the run; put 7071 in the rise; break. \ 45 degrees = 8/64 of the way
   Repeat. \ not really a repeat, just a label for the above breaks.
   \ adjust for other eighths of the circle
   If the original heading is between 0 and 480, negate the rise; exit. \ 1st eighth (12:00 to 1:30)
@@ -6025,9 +6025,9 @@ To get a row given a row# and a text:
   Void the row.
   If the text is nil, exit.
   Loop.
-  Get the row from the text's rows.
-  If the row is nil, exit.
-  If the row's row# is the row#, exit.
+    Get the row from the text's rows.
+    If the row is nil, exit.
+    If the row's row# is the row#, exit.
   Repeat.
 
 To get a row given a spot and a text:
@@ -6066,13 +6066,13 @@ To get a size given a path in the file system:
 To get a size given a path in the file system (directory):
   Put 0 into the size.
   Loop.
-  Get an item from the path.
-  If the item is not found, exit.
-  If the item's kind is "file", add the item's size to the size; repeat.
-  Put the path into another path.
-  Append the item's designator to the other path.
-  Get another size given the other path in the file system.
-  Add the other size to the size.
+    Get an item from the path.
+    If the item is not found, exit.
+    If the item's kind is "file", add the item's size to the size; repeat.
+    Put the path into another path.
+    Append the item's designator to the other path.
+    Get another size given the other path in the file system.
+    Add the other size to the size.
   Repeat.
 
 To get a size given a path in the file system (file):
@@ -6123,12 +6123,12 @@ To get a start width and a substring given a row and a spot and a text (for "get
   Put the text's globalized origin's x plus the offset pair's x into the start width.
   Put the substring's first plus the text cutoff minus 1 into the substring's last.
   Loop.
-  If the substring's last is greater than or equal to the row's string's last, break.
-  Get a width given the substring and the memory canvas.
-  Put the start width plus the width into another width.
-  If the spot's x is less than or equal to the other width, break.
-  Add the width to the start width.
-  Move the substring given the text cutoff.
+    If the substring's last is greater than or equal to the row's string's last, break.
+    Get a width given the substring and the memory canvas.
+    Put the start width plus the width into another width.
+    If the spot's x is less than or equal to the other width, break.
+    Add the width to the start width.
+    Move the substring given the text cutoff.
   Repeat.
   Put the substring's first into the substring's last.
 
@@ -6164,10 +6164,10 @@ To get a token from a reply:
   Remove any leading noise from the reply.
   Clear the token.
   Loop.
-  If the reply is blank, exit.
-  Get a byte from the reply.
-  If the byte is the space byte, exit.
-  Append the byte to the token.
+    If the reply is blank, exit.
+    Get a byte from the reply.
+    If the byte is the space byte, exit.
+    Append the byte to the token.
   Repeat.
 
 To get a width given a byte and a canvas:
@@ -6236,10 +6236,10 @@ A gpimage is a pointer.
 A gpimageattributes is a pointer.
   
 A gprect is a record with
-A number called x,
-A number called y,
-A number called width,
-A number called height.
+  A number called x,
+  A number called y,
+  A number called width,
+  A number called height.
   
 The gptoken is a gptoken.
   
@@ -6620,17 +6620,17 @@ To handle an event given a text (up-arrow key):
 To handle events given a console:
   If the console is nil, exit.
   Loop.
-  Deque an event.
-  If the event is nil, exit.
-  Handle the event given the console.
+    Deque an event.
+    If the event is nil, exit.
+    Handle the event given the console.
   Repeat.
 
 To handle events given a terminal:
   If the terminal is nil, exit.
   Loop.
-  Deque an event.
-  If the event is nil, exit.
-  Handle the event given the terminal.
+    Deque an event.
+    If the event is nil, exit.
+    Handle the event given the terminal.
   Repeat.
 
 To handle font height given a text and a box and a font height:
@@ -6763,8 +6763,8 @@ An hfont is a handle.
 An hicon is a handle.
 
 To hide the cursor:
-  Call "user32.dll" "ShowCursor" with 0 returning a number.
-  If the number is less than 0, exit.
+    Call "user32.dll" "ShowCursor" with 0 returning a number.
+    If the number is less than 0, exit.
   Repeat.
   
 The hilite color is a color.
@@ -6865,18 +6865,18 @@ To imagine a figure using a string and a spot;
   Lowercase the string.
   Slap a substring on the string.
   Loop.
-  Skip any leading noise in the substring.
-  If the substring's length is less than 2, exit.
-  Put the substring's first's target into a byte.
-  Put the byte minus the little-a byte into a spot's y.
-  Add 1 to the substring's first.
-  Put the substring's first's target into the byte.
-  Put the byte minus the little-a byte into the spot's x.
-  Multiply the spot by 1/4 inch.
-  Add the center spot's x minus 3-1/8 inches plus 1 pixel to the spot's x.
-  Add the center spot's y minus 3-1/8 inches plus 1 pixel to the spot's y.
-  Append the spot to the figure.
-  Add 1 to the substring's first.
+    Skip any leading noise in the substring.
+    If the substring's length is less than 2, exit.
+    Put the substring's first's target into a byte.
+    Put the byte minus the little-a byte into a spot's y.
+    Add 1 to the substring's first.
+    Put the substring's first's target into the byte.
+    Put the byte minus the little-a byte into the spot's x.
+    Multiply the spot by 1/4 inch.
+    Add the center spot's x minus 3-1/8 inches plus 1 pixel to the spot's x.
+    Add the center spot's y minus 3-1/8 inches plus 1 pixel to the spot's y.
+    Append the spot to the figure.
+    Add 1 to the substring's first.
   Repeat.
 
 To imagine a horizontal line a fraction of the way up from the bottom of a box;
@@ -7028,12 +7028,12 @@ To include a font in a pdf object:
 To indent any selected rows in a text:
   If the text is nil, exit.
   Loop.
-  Get a row from the text's rows.
-  If the row is nil, exit.
-  If the row of the text is not selected, repeat.
-  If the row is blank, repeat.
-  Prepend the space byte to the row's string.
-  Prepend the space byte to the row's string.
+    Get a row from the text's rows.
+    If the row is nil, exit.
+    If the row of the text is not selected, repeat.
+    If the row is blank, repeat.
+    Prepend the space byte to the row's string.
+    Prepend the space byte to the row's string.
   Repeat.
 
 An indent is an count. \ *** a count?
@@ -7528,10 +7528,10 @@ To insert some things into some other things after a thing:
 To insert some things into some other things before a thing:
   Privatize the thing.
   Loop.
-  Put the things' first into another thing.
-  If the other thing is nil, exit.
-  Remove the other thing from the things.
-  Insert the other thing into the other things before the thing.
+    Put the things' first into another thing.
+    If the other thing is nil, exit.
+    Remove the other thing from the things.
+    Insert the other thing into the other things before the thing.
   Repeat.
 
 To insert a vertex into a polygon after another vertex:
@@ -7543,11 +7543,11 @@ To insert a vertex into a polygon at a spot:
   If the polygon is nil, exit.
   If the vertex is nil, exit.
   Loop.
-  Get another vertex from the polygon's vertices.
-  If the other vertex is nil, exit.
-  If the other vertex's next is nil, exit.
-  Put the other vertex's spot and the other vertex's next's spot into a line.
-  If the spot is not on the line, repeat.
+    Get another vertex from the polygon's vertices.
+    If the other vertex is nil, exit.
+    If the other vertex's next is nil, exit.
+    Put the other vertex's spot and the other vertex's next's spot into a line.
+    If the spot is not on the line, repeat.
   Insert the vertex into the polygon's vertices after the other vertex.
 
 To insert a vertex into a polygon before another vertex:
@@ -7578,13 +7578,13 @@ The inverted-exclamation-mark byte is a byte equal to 161.
 The inverted-question-mark byte is a byte equal to 191.
   
 A in_addr is a record with
-A byte called s_b1,
-A byte called s_b2,
-A byte called s_b3,
-A byte called s_b4,
-A wyrd [unsigned] called  s_w1 at the s_b1,
-A wyrd [unsigned] called s_w2 at the s_b3,
-A number called s_addr at the s_b1.
+  A byte called s_b1,
+  A byte called s_b2,
+  A byte called s_b3,
+  A byte called s_b4,
+  A wyrd [unsigned] called  s_w1 at the s_b1,
+  A wyrd [unsigned] called s_w2 at the s_b3,
+  A number called s_addr at the s_b1.
 
 An ip address has
 A number,
@@ -7597,22 +7597,22 @@ An istream object is a record with an istream vtable called vtable.
 An istream vtable is a pointer to an istream vtable record.
 
 An istream vtable record is a record with
-  \ iunknown
-A pointer called queryinterface,
-A pointer called addref,
-A pointer called release, \ function(this:istream):number; stdcall;
-  \ istream
-A pointer called read,
-A pointer called write,
-A pointer called seek,
-A pointer called setsize,
-A pointer called copyto,
-A pointer called commit,
-A pointer called revert,
-A pointer called lockregion,
-A pointer called unlockregion,
-A pointer called stat,
-A pointer called clone.
+    \ iunknown
+  A pointer called queryinterface,
+  A pointer called addref,
+  A pointer called release, \ function(this:istream):number; stdcall;
+    \ istream
+  A pointer called read,
+  A pointer called write,
+  A pointer called seek,
+  A pointer called setsize,
+  A pointer called copyto,
+  A pointer called commit,
+  A pointer called revert,
+  A pointer called lockregion,
+  A pointer called unlockregion,
+  A pointer called stat,
+  A pointer called clone.
 
 An item has
 A kind,
@@ -7925,11 +7925,11 @@ To limit a spot to a box:
 To limit some texts to a count:
   Put the texts' count into another count.
   Loop.
-  If the other count is less than or equal to the count, exit.
-  Put the texts' first into a text.
-  Remove the text from the texts.
-  Destroy the text.
-  Subtract 1 from the other count.
+    If the other count is less than or equal to the count, exit.
+    Put the texts' first into a text.
+    Remove the text from the texts.
+    Destroy the text.
+    Subtract 1 from the other count.
   Repeat.
   
 A line has a start spot and an end spot.
@@ -7937,17 +7937,17 @@ A line has a start spot and an end spot.
 The linefeed byte is a byte equal to 10.
 
 To list some choices in a box;
-  To draw some choices in a box:
-  \Draw really fast. ***
-  Get a [first/next] choice from the choices.
-  If the choice is missing [because we've drawn them all], exit.
-  Put the box's left plus 1/4 inch into the choice's left.
-  Put the box's right minus 1/4 inch into the choice's right.
-  If the choice is the choices' first, put the box's top plus 1/4 inch into the choice's top.
-  If the choice is not the choices' first, put the choice's previous' bottom into the choice's top.
-  Put the choice's top plus 1/4 inch into the choice's bottom.
-  \Draw the choice's box with the purple color. \ temp ***
-  Stroke the choice's name in the choice's box with the context's color.
+    To draw some choices in a box:
+    \Draw really fast. ***
+    Get a [first/next] choice from the choices.
+    If the choice is missing [because we've drawn them all], exit.
+    Put the box's left plus 1/4 inch into the choice's left.
+    Put the box's right minus 1/4 inch into the choice's right.
+    If the choice is the choices' first, put the box's top plus 1/4 inch into the choice's top.
+    If the choice is not the choices' first, put the choice's previous' bottom into the choice's top.
+    Put the choice's top plus 1/4 inch into the choice's bottom.
+    \Draw the choice's box with the purple color. \ temp ***
+    Stroke the choice's name in the choice's box with the context's color.
   Repeat.
 
 To list some choices in a box with a color;
@@ -8083,28 +8083,28 @@ To load the lexicon:
   If the lexicon is not nil, exit.
   Extract a directory from the module's path.
   Loop.
-  If the directory is blank, exit.
-  Put the directory then "lexicon\" into a path.
-  If the path is in the file system, load the lexicon given the path; exit.
-  Extract the directory from the directory.
+    If the directory is blank, exit.
+    Put the directory then "lexicon\" into a path.
+    If the path is in the file system, load the lexicon given the path; exit.
+    Extract the directory from the directory.
   Repeat.
 
 To load the lexicon given a buffer:
   If the lexicon is nil, create the lexicon.
   Slap a rider on the buffer.
   Loop.
-  Move the rider (index lexicon rules).
-  If the rider's token is blank, exit.
-  Index the rider's token in the lexicon's index.
+    Move the rider (index lexicon rules).
+    If the rider's token is blank, exit.
+    Index the rider's token in the lexicon's index.
   Repeat.
 
 To load the lexicon given a path:
-  Get an item from the path.
-  If the item is not found, exit.
-  If the item's kind is not "file", repeat.
-  Read the item's path into a buffer.
-  If the i/o error is not blank, repeat.
-  Load the lexicon given the buffer.
+    Get an item from the path.
+    If the item is not found, exit.
+    If the item's kind is not "file", repeat.
+    Read the item's path into a buffer.
+    If the i/o error is not blank, repeat.
+    Load the lexicon given the buffer.
   Repeat.
 
 To localize a box given a pair:
@@ -8123,9 +8123,9 @@ To lock a gpbitmap given a bitmapdata (24-bit rgb):
 And 137224 [pixelformat24bpprgb] and the bitmapdata's whereabouts.
   
 A logbrush has
-A number called lbstyle,
-A colorref called lbcolor,
-A number called lbhatch.
+  A number called lbstyle,
+  A colorref called lbcolor,
+  A number called lbhatch.
   
 The lower-double-quote byte is a byte equal to 132.
   
@@ -8166,9 +8166,9 @@ To lowercase a string:
 To lowercase a text:
   If the text is nil, exit.
   Loop.
-  Get a row from the text's rows.
-  If the row is nil, break.
-  Lowercase the row's string.
+    Get a row from the text's rows.
+    If the row is nil, break.
+    Lowercase the row's string.
   Repeat.
   Wrap the text.
   
@@ -8319,33 +8319,33 @@ To mirror a polygon:
   If the polygon is nil, exit.
   Put the polygon's box into a box.
   Loop.
-  Get a vertex from the polygon's vertices.
-  If the vertex is nil, exit.
-  Subtract the box's left from the vertex's x.
-  Put the box's right minus the vertex's x into the vertex's x.
+    Get a vertex from the polygon's vertices.
+    If the vertex is nil, exit.
+    Subtract the box's left from the vertex's x.
+    Put the box's right minus the vertex's x into the vertex's x.
   Repeat.
   
 A mixed has a whole number and a ratio and a fraction at the ratio.
   
 The module has
-A handle,
-A path,
-A directory,
-A root directory, \ one up from the directory that exe is run from
-A file name w/o extension called name.
+  A handle,
+  A path,
+  A directory,
+  A root directory, \ one up from the directory that exe is run from
+  A file name w/o extension called name.
   
 The mouse has
-A key called left button,
-A key called right button.
+  A key called left button,
+  A key called right button.
 
 To move the anchor left to any non-alphanumeric byte in a text:
   If the text is nil, exit.
   Get a row given the text's anchor row# and the text.
   Loop.
-  If the text's anchor column# is 1, exit.
-  Put the row's string's first plus the text's anchor column# minus 2 into a byte pointer.
-  If the byte pointer's target is not alphanumeric, exit.
-  Subtract 1 from the text's anchor column#.
+    If the text's anchor column# is 1, exit.
+    Put the row's string's first plus the text's anchor column# minus 2 into a byte pointer.
+    If the byte pointer's target is not alphanumeric, exit.
+    Subtract 1 from the text's anchor column#.
   Repeat.
 
 To move back some twips:
@@ -8446,30 +8446,30 @@ To move the caret left to any non-alphanumeric byte in a text:
   If the text is nil, exit.
   Get a row given the text's caret row# and the text.
   Loop.
-  If the text's caret column# is 1, exit.
-  Put the row's string's first plus the text's caret column# minus 2 into a byte pointer.
-  If the byte pointer's target is not alphanumeric, exit.
-  Subtract 1 from the text's caret column#.
+    If the text's caret column# is 1, exit.
+    Put the row's string's first plus the text's caret column# minus 2 into a byte pointer.
+    If the byte pointer's target is not alphanumeric, exit.
+    Subtract 1 from the text's caret column#.
   Repeat.
 
 To move the caret left to any non-noise byte in a text:
   If the text is nil, exit.
   Get a row given the text's caret row# and the text.
   Loop.
-  If the text's caret column# is 1, exit.
-  Put the row's string's first plus the text's caret column# minus 2 into a byte pointer.
-  If the byte pointer's target is not noise, exit.
-  Subtract 1 from the text's caret column#.
+    If the text's caret column# is 1, exit.
+    Put the row's string's first plus the text's caret column# minus 2 into a byte pointer.
+    If the byte pointer's target is not noise, exit.
+    Subtract 1 from the text's caret column#.
   Repeat.
 
 To move the caret left to any non-symbolic byte in a text:
   If the text is nil, exit.
   Get a row given the text's caret row# and the text.
   Loop.
-  If the text's caret column# is 1, exit.
-  Put the row's string's first plus the text's caret column# minus 2 into a byte pointer.
-  If the byte pointer's target is not symbolic, exit.
-  Subtract 1 from the text's caret column#.
+    If the text's caret column# is 1, exit.
+    Put the row's string's first plus the text's caret column# minus 2 into a byte pointer.
+    If the byte pointer's target is not symbolic, exit.
+    Subtract 1 from the text's caret column#.
   Repeat.
 
 To move the caret left in a text:
@@ -8481,30 +8481,30 @@ To move the caret right to any non-alphanumeric byte in a text:
   If the text is nil, exit.
   Get a row given the text's caret row# and the text.
   Loop.
-  If the text's caret column# is the row's string's length, exit.
-  Put the row's string's first plus the text's caret column# minus 1 into a byte pointer.
-  If the byte pointer's target is not alphanumeric, exit.
-  Add 1 to the text's caret column#.
+    If the text's caret column# is the row's string's length, exit.
+    Put the row's string's first plus the text's caret column# minus 1 into a byte pointer.
+    If the byte pointer's target is not alphanumeric, exit.
+    Add 1 to the text's caret column#.
   Repeat.
 
 To move the caret right to any non-noise byte in a text:
   If the text is nil, exit.
   Get a row given the text's caret row# and the text.
   Loop.
-  If the text's caret column# is the row's string's length, exit.
-  Put the row's string's first plus the text's caret column# minus 1 into a byte pointer.
-  If the byte pointer's target is not noise, exit.
-  Add 1 to the text's caret column#.
+    If the text's caret column# is the row's string's length, exit.
+    Put the row's string's first plus the text's caret column# minus 1 into a byte pointer.
+    If the byte pointer's target is not noise, exit.
+    Add 1 to the text's caret column#.
   Repeat.
 
 To move the caret right to any non-symbolic byte in a text:
   If the text is nil, exit.
   Get a row given the text's caret row# and the text.
   Loop.
-  If the text's caret column# is the row's string's length, exit.
-  Put the row's string's first plus the text's caret column# minus 1 into a byte pointer.
-  If the byte pointer's target is not symbolic, exit.
-  Add 1 to the text's caret column#.
+    If the text's caret column# is the row's string's length, exit.
+    Put the row's string's first plus the text's caret column# minus 1 into a byte pointer.
+    If the byte pointer's target is not symbolic, exit.
+    Add 1 to the text's caret column#.
   Repeat.
 
 To move the caret right in a text:
@@ -8635,9 +8635,9 @@ To move a polygon given a pair:
 To move a polygon given some x twips and some y twips:
   If the polygon is nil, exit.
   Loop.
-  Get a vertex from the polygon's vertices.
-  If the vertex is nil, exit.
-  Move the vertex given the x twips and the y twips.
+    Get a vertex from the polygon's vertices.
+    If the vertex is nil, exit.
+    Move the vertex given the x twips and the y twips.
   Repeat.
 
 To move a polygon left some twips:
@@ -8674,37 +8674,37 @@ To move a rider (index lexicon rules):
   Skip any leading noise in the rider's source.
   Position the rider's token on the rider's source.
   Loop.
-  If the rider's source is blank, exit.
-  Bump the rider.
-  If the rider's source's first's target is noise, exit.
+    If the rider's source is blank, exit.
+    Bump the rider.
+    If the rider's source's first's target is noise, exit.
   Repeat.
 
 To move a rider (quoted string rules):
-  Bump the rider.
-  If the rider's source is blank, exit.
-  If the rider's source's first's target is not the double-quote byte, repeat.
-  If the rider's source's first is the rider's source's last, bump the rider; exit.
-  Bump the rider.
-  If the rider's source's first's target is not the double-quote byte, exit.
+    Bump the rider.
+    If the rider's source is blank, exit.
+    If the rider's source's first's target is not the double-quote byte, repeat.
+    If the rider's source's first is the rider's source's last, bump the rider; exit.
+    Bump the rider.
+    If the rider's source's first's target is not the double-quote byte, exit.
   Repeat.
 
 To move a rider (spell checking rules):
   Skip any non-alphanumeric bytes in the rider's source.
   Position the rider's token on the rider's source.
   Loop.
-  If the rider's source is blank, exit.
-  Bump the rider.
-  If the rider's source is on any contraction, bump the rider; repeat.
-  If the rider's source's first's target is not alphanumeric, exit.
+    If the rider's source is blank, exit.
+    Bump the rider.
+    If the rider's source is on any contraction, bump the rider; repeat.
+    If the rider's source's first's target is not alphanumeric, exit.
   Repeat.
 
 To move a rider (text file rules):
   Position the rider's token on the rider's source.
   Loop.
-  If the rider's source is blank, exit.
-  If the rider's source's first's target is the return byte, bump the rider; break.
-  If the rider's source's first's target is the linefeed byte, bump the rider; exit. \ *dahn new to handle lines terminated by just linefeed
-  Bump the rider.
+    If the rider's source is blank, exit.
+    If the rider's source's first's target is the return byte, bump the rider; break.
+    If the rider's source's first's target is the linefeed byte, bump the rider; exit. \ *dahn new to handle lines terminated by just linefeed
+    Bump the rider.
   Repeat.
   If the rider's source is blank, exit.
   If the rider's source's first's target is the linefeed byte, add 1 to the rider's source's first.
@@ -8714,9 +8714,9 @@ To move a rider (word wrapping rules):
   If the rider's source is blank, exit.
   If the rider's source's first's target is the return byte, bump the rider; exit.
   Loop.
-  If the rider's source is blank, exit.
-  If the rider's source's first's target is the return byte, exit.
-  If the rider's token is blank, bump the rider; repeat.
+    If the rider's source is blank, exit.
+    If the rider's source's first's target is the return byte, exit.
+    If the rider's token is blank, bump the rider; repeat.
   If the rider's source's first's target is like the rider's token's last's target, bump the rider; repeat.
 
 To move a rider given a box (word wrapping rules):
@@ -8725,22 +8725,22 @@ To move a rider given a box (word wrapping rules):
   If the rider's source is blank, exit.
   Slap another rider on the rider.
   Loop.
-  If the rider's source is blank, exit.
-  Move the other rider (word wrapping rules).
-  If the other rider's token is blank, exit.
-  If the other rider's token's first's target is the return byte, bump the rider; exit.
-  If the other rider's token's first's target is whitespace, bump the rider by the other rider's token's length; repeat.
-  If the rider's token is blank, bump the rider by the other rider's token's length; repeat.
-  If the rider's token then the other rider's token is wider than the box, exit.
-  Bump the rider by the other rider's token's length.
+    If the rider's source is blank, exit.
+    Move the other rider (word wrapping rules).
+    If the other rider's token is blank, exit.
+    If the other rider's token's first's target is the return byte, bump the rider; exit.
+    If the other rider's token's first's target is whitespace, bump the rider by the other rider's token's length; repeat.
+    If the rider's token is blank, bump the rider by the other rider's token's length; repeat.
+    If the rider's token then the other rider's token is wider than the box, exit.
+    Bump the rider by the other rider's token's length.
   Repeat.
 
 To move a rider given a separator byte:
   Position the rider's token on the rider's source.
   Loop.
-  If the rider's source is blank, exit.
-  If the rider's source's first's target is the separator byte, add 1 to the rider's source's first; exit.
-  Bump the rider.
+    If the rider's source is blank, exit.
+    If the rider's source's first's target is the separator byte, add 1 to the rider's source's first; exit.
+    Bump the rider.
   Repeat.
 
 To move to the right some twips and down some other twips;
@@ -8907,12 +8907,12 @@ To move a window right:
 A ms is 1 millisecond.
   
 A msg is a record with
-A window called hwnd,
-A number called message,
-A w-param called wparam,
-A l-param called lparam,
-A number called time,
-A spot called pt.
+  A window called hwnd,
+  A number called message,
+  A w-param called wparam,
+  A l-param called lparam,
+  A number called time,
+  A spot called pt.
   
 A multiple is a number.
   
@@ -9072,12 +9072,12 @@ To null terminate a wide string:
   Put the wide string's first plus the saved length minus 1 into the wide string's last.
   
 A number has
-A first byte,
-A second byte,
-A third byte,
-A fourth byte,
-A low wyrd at the first byte,
-A high wyrd at the third byte.
+  A first byte,
+  A second byte,
+  A third byte,
+  A fourth byte,
+  A low wyrd at the first byte,
+  A high wyrd at the third byte.
   
 A number pointer is a pointer to a number.
   
@@ -9181,40 +9181,40 @@ To outline a box with a color:
   Draw the box with the color and the clear color.
   
 A outlinetextmetric is a record with
-A number called otmsize,
-A textmetric called otmtextmetrics,
-  3 bytes, \ needed to align structure
-A byte called otmfiller,
-A panose called otmpanosenumber,
-  1 bytes, \ needed to align structure
-A number called otmfsselection,
-A number called otmfstype,
-A number called otmscharsloperise,
-A number called otmscharsloperun,
-A number called otmitalicangle,
-A number called otmemsquare,
-A number called otmascent,
-A number called otmdescent,
-A number called otmlinegap,
-A number called otmscapemheight,
-A number called otmsxheight,
-A box called otmrcfontbox,
-A number called otmmacascent,
-A number called otmmacdescent,
-A number called otmmaclinegap,
-A number called otmusminiumppem,
-A spot called otmptsubscriptsize,
-A spot called otmptsubscriptoffset,
-A spot called otmptsuperscriptsize,
-A spot called otmptsuperscriptoffset,
-A number called otmsstrikeoutsize,
-A number called otmsstrikeoutposition,
-A number called otmsunderscoresize,
-A number called otmsunderscoreposition,
-A pointer called otmpfamilyname,
-A pointer called otmpfacename,
-A pointer called otmpstylename,
-A pointer called otmpfullname.
+  A number called otmsize,
+  A textmetric called otmtextmetrics,
+    3 bytes, \ needed to align structure
+  A byte called otmfiller,
+  A panose called otmpanosenumber,
+    1 bytes, \ needed to align structure
+  A number called otmfsselection,
+  A number called otmfstype,
+  A number called otmscharsloperise,
+  A number called otmscharsloperun,
+  A number called otmitalicangle,
+  A number called otmemsquare,
+  A number called otmascent,
+  A number called otmdescent,
+  A number called otmlinegap,
+  A number called otmscapemheight,
+  A number called otmsxheight,
+  A box called otmrcfontbox,
+  A number called otmmacascent,
+  A number called otmmacdescent,
+  A number called otmmaclinegap,
+  A number called otmusminiumppem,
+  A spot called otmptsubscriptsize,
+  A spot called otmptsubscriptoffset,
+  A spot called otmptsuperscriptsize,
+  A spot called otmptsuperscriptoffset,
+  A number called otmsstrikeoutsize,
+  A number called otmsstrikeoutposition,
+  A number called otmsunderscoresize,
+  A number called otmsunderscoreposition,
+  A pointer called otmpfamilyname,
+  A pointer called otmpfacename,
+  A pointer called otmpstylename,
+  A pointer called otmpfullname.
 
 To output the arc of an ellipse given a string:
   Put 2761/10000 into a fraction. \ 2/3*(sqrt(2)-1)
@@ -9316,26 +9316,26 @@ The page-down key is a key equal to 34.
 The page-up key is a key equal to 33.
   
 A paintstruct is a record with
-An hdc called hdc,
-A number called ferase,
-A box called rcpaint,
-A number called frestore,
-A number called fincupdate,
-  32 bytes.
+  An hdc called hdc,
+  A number called ferase,
+  A box called rcpaint,
+  A number called frestore,
+  A number called fincupdate,
+    32 bytes.
   
 A pair has an x number and a y number.
   
 A panose is a record with
-A byte called bfamilytype,
-A byte called bserifstyle,
-A byte called bweight,
-A byte called bproportion,
-A byte called bcontrast,
-A byte called bstrokevariation,
-A byte called barmstyle,
-A byte called bletterform,
-A byte called bmidline,
-A byte called bxheight.
+  A byte called bfamilytype,
+  A byte called bserifstyle,
+  A byte called bweight,
+  A byte called bproportion,
+  A byte called bcontrast,
+  A byte called bstrokevariation,
+  A byte called barmstyle,
+  A byte called bletterform,
+  A byte called bmidline,
+  A byte called bxheight.
   
 The paragraph byte is a byte equal to 182.
   
@@ -9352,40 +9352,40 @@ A pdevmode is a pointer to a devmode.
 A pdf is a buffer.
   
 A pdf object is a thing with
-A kind [contents, font definition, font descriptor, font streamoutline, image object, outline entry, page, parent, root],
-A number,
-An offset,
-A data buffer,
-A font name [font definition],
-A font info [font definition],
-Some string things called font strings [page],
-Some string things called image strings [page].
+  A kind [contents, font definition, font descriptor, font streamoutline, image object, outline entry, page, parent, root],
+  A number,
+  An offset,
+  A data buffer,
+  A font name [font definition],
+  A font info [font definition],
+  Some string things called font strings [page],
+  Some string things called image strings [page].
   
 A pdf outline entry is a thing with
-A pdf object (reference),
-A title string,
-A page height,
-A destination number.
+  A pdf object (reference),
+  A title string,
+  A page height,
+  A destination number.
   
 A pdf pointer is a pointer to a pdf.
   
 A pdf state has
-A pdf pointer,
-A document flag,
-A page flag,
-An object number,
-Some pdf objects called objects,
-An xref offset,
-An outline pdf object (reference),
-Some pdf outline entries called outline entries,
-A root pdf object (reference),
-A parent pdf object (reference),
-A current contents pdf object (reference),
-A current page pdf object (reference),
-A current height,
-A current border color,
-A current fill color,
-A font index.
+  A pdf pointer,
+  A document flag,
+  A page flag,
+  An object number,
+  Some pdf objects called objects,
+  An xref offset,
+  An outline pdf object (reference),
+  Some pdf outline entries called outline entries,
+  A root pdf object (reference),
+  A parent pdf object (reference),
+  A current contents pdf object (reference),
+  A current page pdf object (reference),
+  A current height,
+  A current border color,
+  A current fill color,
+  A font index.
   
 The pdf state is a pdf state.
   
@@ -9649,14 +9649,14 @@ To pick a very very light color;
   Put the really really light color into the context's color.
   
 A picture is a thing with
-  \ all boxes are in twits
-A box [location of cropped picture on the page],
-A uncropped box [location of entire picture on the page],
-A grayscale flag,
-A mirror flag,
-A rotate angle, \ rotation is clockwise
-A hex string called data [original bytes in original format],
-A gpbitmap.
+    \ all boxes are in twits
+  A box [location of cropped picture on the page],
+  A uncropped box [location of entire picture on the page],
+  A grayscale flag,
+  A mirror flag,
+  A rotate angle, \ rotation is clockwise
+  A hex string called data [original bytes in original format],
+  A gpbitmap.
   
 The pink color is a color.
   
@@ -9753,36 +9753,36 @@ To prepend a thing to some things:
   Put the thing into the things' first.
 
 To prepend some things to some other things:
-  Get a thing from the things (backwards).
-  If the thing is nil, exit.
-  Remove the thing from the things.
-  Prepend the thing to the other things.
+    Get a thing from the things (backwards).
+    If the thing is nil, exit.
+    Remove the thing from the things.
+    Prepend the thing to the other things.
   Repeat.
   
 The print-screen key is a key equal to 44.
   
 A printdlgex is a record with
-A number called lstructsize,
-A window called hwndowner,
-A handle called hdevmode,
-A handle called hdevnames,
-A canvas called hdc,
-A number called flags,
-A number called flags2,
-A number called exclusionflags,
-A number called npageranges,
-A number called nmaxpageranges,
-A pointer called lppageranges,
-A number called nminpage,
-A number called nmaxpage,
-A number called ncopies,
-A handle called hinstance,
-A pointer called lpprinttemplatename,
-A pointer called lpcallback,
-A number called npropertypages,
-A pointer called lphpropertypages,
-A number called nstartpage,
-A number called dwresultaction.
+  A number called lstructsize,
+  A window called hwndowner,
+  A handle called hdevmode,
+  A handle called hdevnames,
+  A canvas called hdc,
+  A number called flags,
+  A number called flags2,
+  A number called exclusionflags,
+  A number called npageranges,
+  A number called nmaxpageranges,
+  A pointer called lppageranges,
+  A number called nminpage,
+  A number called nmaxpage,
+  A number called ncopies,
+  A handle called hinstance,
+  A pointer called lpprinttemplatename,
+  A pointer called lpcallback,
+  A number called npropertypages,
+  A pointer called lphpropertypages,
+  A number called nstartpage,
+  A number called dwresultaction.
   
 The printer canvas is a canvas.
   
@@ -9793,10 +9793,10 @@ A process is a handle.
 A process pointer is a pointer to a process.
   
 A processinfo is a record with
-A handle called hprocess,
-A handle called hthread,
-A number called dwprocessid,
-A number called dwthreadid.
+  A handle called hprocess,
+  A handle called hthread,
+  A number called dwprocessid,
+  A number called dwthreadid.
   
 A punch line is a string.
   
@@ -10053,11 +10053,11 @@ To put some font widths into a buffer: \ used for pdf conversion
   If the font widths are nil, exit.
   Put the font widths' data into a number pointer.
   Loop.
-  If a counter is past the font widths' count, break.
-  Append the number pointer's target then " " to the buffer.
-  Add 1 to a count.
-  If the count is evenly divisible by 16, append the crlf string to the buffer.
-  Add a number's magnitude to the number pointer.
+    If a counter is past the font widths' count, break.
+    Append the number pointer's target then " " to the buffer.
+    Add 1 to a count.
+    If the count is evenly divisible by 16, append the crlf string to the buffer.
+    Add a number's magnitude to the number pointer.
   Repeat.
 
 To put a font's adjusted height into a height:
@@ -10120,19 +10120,19 @@ To put an index's count into a count:
   Put 0 into the count.
   If the index is nil, exit.
   Loop.
-  Get a bucket given the index.
-  If the bucket is nil, exit.
-  Add the bucket's refers' count to the count.
+    Get a bucket given the index.
+    If the bucket is nil, exit.
+    Add the bucket's refers' count to the count.
   Repeat.
 
 To put an index's used bucket count into a count:
   Put 0 into the count.
   If the index is nil, exit.
   Loop.
-  Get a bucket given the index.
-  If the bucket is nil, exit.
-  If the bucket's refers are empty, repeat.
-  Add 1 to the count.
+    Get a bucket given the index.
+    If the bucket is nil, exit.
+    If the bucket's refers are empty, repeat.
+    Add 1 to the count.
   Repeat.
 
 To put a left coord and a top coord and a right coord and a bottom coord and a radius into a roundy box:
@@ -10254,12 +10254,12 @@ To put a number into a string;
   Privatize the number.
   De-sign the number.
   Loop.
-  Divide the number by 10 giving a quotient and a remainder.
-  Add 48 to the remainder.
-  Put the remainder into a byte.
-  Prepend the byte to the string.
-  If the quotient is 0, break.
-  Put the quotient into the number.
+    Divide the number by 10 giving a quotient and a remainder.
+    Add 48 to the remainder.
+    Put the remainder into a byte.
+    Prepend the byte to the string.
+    If the quotient is 0, break.
+    Put the quotient into the number.
   Repeat.
   If the original number is less than 0, prepend the dash byte to the string.
 
@@ -10328,12 +10328,12 @@ To put a polygon's box into a box:
   If the polygon's vertices are empty, zero the box; exit.
   Put the largest number and the largest number and the smallest number and the smallest number into the box.
   Loop.
-  Get a vertex from the polygon's vertices.
-  If the vertex is nil, break.
-  If the vertex's x is less than the box's left, put the vertex's x into the box's left.
-  If the vertex's y is less than the box's top, put the vertex's y into the box's top.
-  If the vertex's x is greater than the box's right, put the vertex's x into the box's right.
-  If the vertex's y is greater than the box's bottom, put the vertex's y into the box's bottom.
+    Get a vertex from the polygon's vertices.
+    If the vertex is nil, break.
+    If the vertex's x is less than the box's left, put the vertex's x into the box's left.
+    If the vertex's y is less than the box's top, put the vertex's y into the box's top.
+    If the vertex's x is greater than the box's right, put the vertex's x into the box's right.
+    If the vertex's y is greater than the box's bottom, put the vertex's y into the box's bottom.
   Repeat.
 
 To put a polygon's center into a spot:
@@ -10545,12 +10545,12 @@ To put a text's first non-blank line into a string: \ *** new
   Clear the string.
   If the text is nil, exit.
   Loop.
-  Get a row from the text's rows.
-  If the row is nil, exit.
-  Put the row's string into the string.
-  Remove the last byte from the string. \ cr or space (see text rules)
-  Remove any leading noise from the string.
-  Remove any trailing noise from the string.
+    Get a row from the text's rows.
+    If the row is nil, exit.
+    Put the row's string into the string.
+    Remove the last byte from the string. \ cr or space (see text rules)
+    Remove any leading noise from the string.
+    Remove any trailing noise from the string.
   If the string is blank, repeat.
 
 To put a text's globalized origin into a spot:
@@ -10586,10 +10586,10 @@ To put a text's selected byte count into a count:
   If the text is nil, exit.
   If nothing is selected in the text, exit.
   Loop.
-  Get a row from the text's rows.
-  If the row is nil, exit.
-  Slap a substring on any selected bytes in the row of the text.
-  Add the substring's length to the count.
+    Get a row from the text's rows.
+    If the row is nil, exit.
+    Slap a substring on any selected bytes in the row of the text.
+    Add the substring's length to the count.
   Repeat.
 
 To put a text's selected row count into a count:
@@ -10626,9 +10626,9 @@ To put some things into some other things:
 To put some things' count into a count:
   Put 0 into the count.
   Loop.
-  Get a thing from the things.
-  If the thing is nil, exit.
-  Add 1 to the count.
+    Get a thing from the things.
+    If the thing is nil, exit.
+    Add 1 to the count.
   Repeat.
 
 To put a timer into a string;
@@ -10716,10 +10716,10 @@ To quote a string: \ inserts leading, trailing and nested double-quotes
   Put the double-quote byte into another string.
   Slap a substring on the string.
   Loop.
-  If the substring is blank, break.
-  Append the substring's first's target to the other string.
-  If the substring's first's target is the double-quote byte, append the double-quote byte to the other string.
-  Add 1 to the substring's first.
+    If the substring is blank, break.
+    Append the substring's first's target to the other string.
+    If the substring's first's target is the double-quote byte, append the double-quote byte to the other string.
+    Add 1 to the substring's first.
   Repeat.
   Append the double-quote byte to the other string.
   Put the other string into the string.
@@ -10737,8 +10737,8 @@ To raise a number to another number:
   If the other number is less than 0, put 0 into the number; exit. \ should be 1/the raised result, but always comes out 0 with numbers
   Put 1 into a result number.
   Loop.
-  If a counter is past the other number, break.
-  Multiply the result by the number.
+    If a counter is past the other number, break.
+    Multiply the result by the number.
   Repeat.
   Put the result into the number.
   
@@ -10752,10 +10752,10 @@ To read the bible:
   If the bible is not nil, exit.
   Extract a directory from the module's path.
   Loop.
-  If the directory is blank, exit.
-  Put the directory then "bible.txt" into a path.
-  If the path is in the file system, read the bible given the path; exit.
-  Extract the directory from the directory.
+    If the directory is blank, exit.
+    Put the directory then "bible.txt" into a path.
+    If the path is in the file system, read the bible given the path; exit.
+    Extract the directory from the directory.
   Repeat.
 
 To read the bible given a path:
@@ -10765,12 +10765,12 @@ To read the bible given a path:
   Allocate memory for the Bible.
   Slap a rider on the buffer.
   Loop.
-  If the rider's source is blank, exit.
-  Allocate memory for a verse. Append the verse to the Bible's verses.
-  Move the rider (text file rules).
-  Put the rider's token into the verse's string.
-  Remove any leading noise from the verse's string. 
-  Remove any trailing noise from the verse's string.
+    If the rider's source is blank, exit.
+    Allocate memory for a verse. Append the verse to the Bible's verses.
+    Move the rider (text file rules).
+    Put the rider's token into the verse's string.
+    Remove any leading noise from the verse's string. 
+    Remove any trailing noise from the verse's string.
   Repeat.
 
 To read a byte from a console:
@@ -10858,18 +10858,18 @@ To read a response string from a winhttp request:
   Clear the response.
   Put 8 kilobytes into a buffer size.
   Loop.
-  Put 0 into a size.  
-  Call "winhttp.dll" "WinHttpQueryDataAvailable"
-  With the winhttp request's request and the size's whereabouts returning a result number.
-  If the result is 0, put "Unable to query data available." into the i/o error; clear the response; break.
-  Put the response's length into a saved length.
-  Reassign the response's first given the saved length plus the buffer size.
-  Put the response's first plus the saved length into a pointer.
-  Call "winhttp.dll" "WinHttpReadData" with the winhttp request's request and the pointer
-And the buffer size and a count's whereabouts returning the result number.
-  If the result number is 0, put "Error reading data." into the i/o error; clear the response; break.
-  Put the pointer plus the count minus 1 into the response's last.
-  If the count is 0, break.
+    Put 0 into a size.  
+    Call "winhttp.dll" "WinHttpQueryDataAvailable"
+    With the winhttp request's request and the size's whereabouts returning a result number.
+    If the result is 0, put "Unable to query data available." into the i/o error; clear the response; break.
+    Put the response's length into a saved length.
+    Reassign the response's first given the saved length plus the buffer size.
+    Put the response's first plus the saved length into a pointer.
+    Call "winhttp.dll" "WinHttpReadData" with the winhttp request's request and the pointer
+  And the buffer size and a count's whereabouts returning the result number.
+    If the result number is 0, put "Error reading data." into the i/o error; clear the response; break.
+    Put the pointer plus the count minus 1 into the response's last.
+    If the count is 0, break.
   Repeat.
 
 To read stdin into a buffer:
@@ -10902,13 +10902,13 @@ To read a url into a buffer:
   \ read the file
   Put 64 kilobytes into a buffer size.
   Loop.
-  Put the buffer's length into a saved length.
-  Reassign the buffer's first given the saved length plus the buffer size.
-  Put the buffer's first plus the saved length into a  pointer.
-  Call "wininet.dll" "InternetReadFile" with the url handle and the pointer and the buffer size and a count's whereabouts returning a result number.
-  If the result number is 0, put "Error reading url '" then the url then "'." into the i/o error; break.
-  Put the pointer plus the count minus 1 into the buffer's last.
-  If the count is 0, break.
+    Put the buffer's length into a saved length.
+    Reassign the buffer's first given the saved length plus the buffer size.
+    Put the buffer's first plus the saved length into a  pointer.
+    Call "wininet.dll" "InternetReadFile" with the url handle and the pointer and the buffer size and a count's whereabouts returning a result number.
+    If the result number is 0, put "Error reading url '" then the url then "'." into the i/o error; break.
+    Put the pointer plus the count minus 1 into the buffer's last.
+    If the count is 0, break.
   Repeat.
   \ clean up
   Call "wininet.dll" "InternetCloseHandle" with the url handle.
@@ -10934,14 +10934,14 @@ To receive a buffer from a socket:
   Clear the buffer.
   Put 8 kilobytes into a buffer size.
   Loop.
-  Put 0 into a size.  
-  Put the buffer's length into a saved length.
-  Reassign the buffer's first given the saved length plus the buffer size.
-  Put the buffer's first plus the saved length into a  pointer.
-  Call "ws2_32.dll" "recv" with the socket and the pointer and the buffer size and 0 returning a count.
-  If the count is not -1 [socket_error], put the pointer plus the count minus 1 into the buffer's last; exit.
-  If the system's last winsock error is not 10040 [wsamsgsize], put "Error receiving data." into the i/o error; clear the buffer; exit.
-  Put the pointer plus the count minus 1 into the buffer's last.
+    Put 0 into a size.  
+    Put the buffer's length into a saved length.
+    Reassign the buffer's first given the saved length plus the buffer size.
+    Put the buffer's first plus the saved length into a  pointer.
+    Call "ws2_32.dll" "recv" with the socket and the pointer and the buffer size and 0 returning a count.
+    If the count is not -1 [socket_error], put the pointer plus the count minus 1 into the buffer's last; exit.
+    If the system's last winsock error is not 10040 [wsamsgsize], put "Error receiving data." into the i/o error; clear the buffer; exit.
+    Put the pointer plus the count minus 1 into the buffer's last.
   Repeat.
 
 To receive the response from a winhttp request:
@@ -11011,7 +11011,7 @@ To refresh the cursor:
 
 To refresh the screen given a box:
   Call "gdi32.dll" "BitBlt" with the screen canvas and the box's left and the box's top and the box's width and the box's height 
-And the current canvas and the box's left and the box's top and 13369376 [srccopy].
+  And the current canvas and the box's left and the box's top and 13369376 [srccopy].
   
 The registered byte is a byte equal to 174.
   
@@ -11146,10 +11146,10 @@ To remove leading bytes from a string given a count:
   Remove bytes from the string given the substring.
 
 To remove leading noise from a string;
-  To remove any leading noise from a string:
-  If the string is blank, exit.
-  If the string's first's target is not noise, exit.
-  Remove the first byte from the string.
+    To remove any leading noise from a string:
+    If the string is blank, exit.
+    If the string's first's target is not noise, exit.
+    Remove the first byte from the string.
   Repeat.
 
 To remove the rows of a text between a row and another row:
@@ -11160,11 +11160,11 @@ To remove the rows of a text between a row and another row:
   Privatize the row.
   Put the other row's next into a stop row.
   Loop.
-  If the row is the stop row, break.
-  Put the row's next into a next row.
-  Remove the row from the text's rows.
-  Destroy the row.
-  Put the next row into the row.
+    If the row is the stop row, break.
+    Put the row's next into a next row.
+    Remove the row from the text's rows.
+    Destroy the row.
+    Put the next row into the row.
   Repeat.
   Renumber the text's rows.
 
@@ -11213,10 +11213,10 @@ To renumber some rows:
 To replace a byte with another byte in a string:
   Slap a substring on the string.
   Loop.
-  If the substring is blank, exit.
-  If the substring's first's target is not the byte, add 1 to the substring's first; repeat.
-  Put the other byte into the substring's first's target.
-  Add 1 to the substring's first.
+    If the substring is blank, exit.
+    If the substring's first's target is not the byte, add 1 to the substring's first; repeat.
+    Put the other byte into the substring's first's target.
+    Add 1 to the substring's first.
   Repeat.
   
 The reply is a reply.
@@ -11310,9 +11310,9 @@ To resize a picture to a width by a height:
   Call "gdiplus.dll" "GdipCreateBitmapFromScan0" with the pixel width and the pixel height and 0 and 137224 [pixelformat24bpprgb] and 0 and a gpbitmap's whereabouts.
   Call "gdiplus.dll" "GdipGetImageGraphicsContext" with the gpbitmap and a gpgraphic's whereabouts.
   Call "gdiplus.dll" "GdipDrawImageRectRectI" with the gpgraphic and the picture's gpbitmap
-And 0 and 0 and the pixel width and the pixel height
-And 0 and 0 and the picture's gpbitmap's width minus 1 and the picture's gpbitmap's height minus 1
-And 2 [unitpixel] and nil and nil and 0.
+    And 0 and 0 and the pixel width and the pixel height
+    And 0 and 0 and the picture's gpbitmap's width minus 1 and the picture's gpbitmap's height minus 1
+    And 2 [unitpixel] and nil and nil and 0.
   Call "gdiplus.dll" "GdipDeleteGraphics" with the gpgraphic.
   Destroy the picture's gpbitmap.
   Put the gpbitmap into the picture's gpbitmap.
@@ -11324,11 +11324,11 @@ To resize a polygon given a ratio pair;
   If the polygon is nil, exit.
   Put the polygon's box into a box.
   Loop.
-  Get a vertex from the polygon's vertices.
-  If the vertex is nil, exit.
-  Subtract the box's left-top from the vertex's spot.
-  Scale the vertex's spot given the fraction pair.
-  Add the box's left-top to the vertex's spot.
+    Get a vertex from the polygon's vertices.
+    If the vertex is nil, exit.
+    Subtract the box's left-top from the vertex's spot.
+    Scale the vertex's spot given the fraction pair.
+    Add the box's left-top to the vertex's spot.
   Repeat.
 
 To resize a polygon given a twip pair:
@@ -11498,9 +11498,9 @@ To rotate a polygon:
   If the polygon is nil, exit.
   Put the polygon's center into a center spot.
   Loop.
-  Get a vertex from the polygon's vertices.
-  If the vertex is nil, exit.
-  Rotate the vertex's spot around the center.
+    Get a vertex from the polygon's vertices.
+    If the vertex is nil, exit.
+    Rotate the vertex's spot around the center.
   Repeat.
 
 To rotate a spot around a center spot:
@@ -11685,9 +11685,9 @@ To scale a polygon given a ratio;
   If the polygon is nil, exit.
   If the fraction is 1/1, exit.
   Loop.
-  Get a vertex from the polygon's vertices.
-  If the vertex is nil, exit.
-  Scale the vertex given the fraction.
+    Get a vertex from the polygon's vertices.
+    If the vertex is nil, exit.
+    Scale the vertex given the fraction.
   Repeat.
 
 To scale a polygon to a percent:
@@ -11741,13 +11741,13 @@ To scroll a console given an event:
   If the console is nil, exit.
   Find a sector given the console's grid and the event's spot.
   Loop.
-  If the mouse's right button is up, exit.
-  Find another sector given the console's grid and the mouse's spot.
-  Get a difference between the other sector and the sector.
-  If the difference is 0, repeat.
-  Scroll the console's text given the difference.
-  Show the console.
-  Add the difference to the sector.
+    If the mouse's right button is up, exit.
+    Find another sector given the console's grid and the mouse's spot.
+    Get a difference between the other sector and the sector.
+    If the difference is 0, repeat.
+    Scroll the console's text given the difference.
+    Show the console.
+    Add the difference to the sector.
   Repeat.
 
 To scroll a text to the bottom:
@@ -11864,24 +11864,24 @@ To send a buffer to a socket:
   Put the buffer's first into a pointer.
   Put the buffer's length into a length.
   Loop.
-  If the length is 0, break.
-  Call "ws2_32.dll" "send" with the socket and the pointer and the length and 0 returning a number.
-  If the number is -1 [socket_error], put "Error sending data." into the i/o error; exit.
-  Subtract the number from the length.
-  Add the number to the pointer.
+    If the length is 0, break.
+    Call "ws2_32.dll" "send" with the socket and the pointer and the length and 0 returning a number.
+    If the number is -1 [socket_error], put "Error sending data." into the i/o error; exit.
+    Subtract the number from the length.
+    Add the number to the pointer.
   Repeat.
 
 To send a data string to a winhttp request:
   If the winhttp request is nil, exit.
   Call "winhttp.dll" "WinHttpSendRequest"
-  With the winhttp request's request
-And 0 [winhttp_no_additional_headers]
-And 0 
-And the data's first
-And the data's length
-And the data's length
-And 0
-  Returning a result number.
+    With the winhttp request's request
+    And 0 [winhttp_no_additional_headers]
+    And 0 
+    And the data's first
+    And the data's length
+    And the data's length
+    And 0
+    Returning a result number.
   If the result is 0, put "Could not send request." into the i/o error; exit.
 
 To send an email:
@@ -12058,9 +12058,9 @@ To show a console:
   Restore the current canvas.
 
 To show a cursor:
-  Call "user32.dll" "SetCursor" with the cursor.
-  Call "user32.dll" "ShowCursor" with 1 returning a number.
-  If the number is greater than 0, exit.
+    Call "user32.dll" "SetCursor" with the cursor.
+    Call "user32.dll" "ShowCursor" with 1 returning a number.
+    If the number is greater than 0, exit.
   Repeat.
 
 To show a terminal:
@@ -12110,10 +12110,10 @@ A side is 1 unit.
 The silent flag is a flag.
 
 To simplify a reply:
-  If the reply is blank, break.
-  Get a byte  from the reply.
-  If the byte is any punctuation mark, repeat.
-  Append the byte to a string.
+    If the reply is blank, break.
+    Get a byte  from the reply.
+    If the byte is any punctuation mark, repeat.
+    Append the byte to a string.
   Repeat.
   Put the string into the reply.
   
@@ -12131,25 +12131,25 @@ To skip any leading linefeed byte in a substring:
   Add 1 to the substring's first.
 
 To skip any leading noise in a substring:
-  If the substring is blank, exit.
-  If the substring's first's target is not noise, exit.
-  Add 1 to the substring's first.
+    If the substring is blank, exit.
+    If the substring's first's target is not noise, exit.
+    Add 1 to the substring's first.
   Repeat.
 
 To skip any non-alphanumeric bytes in a substring:
-  If the substring is blank, exit.
-  If the substring's first's target is alphanumeric, exit.
-  Add 1 to the substring's first.
+    If the substring is blank, exit.
+    If the substring's first's target is alphanumeric, exit.
+    Add 1 to the substring's first.
   Repeat.
 
 To skip a line on the terminal:
   Write "" on the terminal.
 
 To skip word characters in a substring:
-  If the substring is blank, exit.
-  If the substring is on any contraction, add 1 to the substring's first; repeat.
-  If the substring's first's target is not alphanumeric, exit.
-  Add 1 to the substring's first.
+    If the substring is blank, exit.
+    If the substring is on any contraction, add 1 to the substring's first; repeat.
+    If the substring's first's target is not alphanumeric, exit.
+    Add 1 to the substring's first.
   Repeat.
   
 The sky blue color is a color.
@@ -12212,17 +12212,17 @@ To smooth a polygon:
   If the polygon is closed, append the polygon's first vertex's next's spot to the polygon; set a flag.
   Put the polygon's first vertex into a left vertex.
   Loop.
-  If the left vertex's next is nil, break.
-  Put the left vertex's next into a right vertex.
-  Get a center spot given the left vertex's spot and the right vertex's spot.
-  Insert the center into the polygon after the left vertex.
-  Put the left vertex's next into a new vertex.
-  If the left vertex's previous is nil, put the right vertex into the left vertex; repeat.
-  Get another center spot given the left vertex's previous' spot and the new vertex's spot.
-  Get a difference between the other center and the left vertex's spot.
-  Divide the difference by 2.
-  Add the difference to the left vertex's spot.
-  Put the right vertex into the left vertex.
+    If the left vertex's next is nil, break.
+    Put the left vertex's next into a right vertex.
+    Get a center spot given the left vertex's spot and the right vertex's spot.
+    Insert the center into the polygon after the left vertex.
+    Put the left vertex's next into a new vertex.
+    If the left vertex's previous is nil, put the right vertex into the left vertex; repeat.
+    Get another center spot given the left vertex's previous' spot and the new vertex's spot.
+    Get a difference between the other center and the left vertex's spot.
+    Divide the difference by 2.
+    Add the difference to the left vertex's spot.
+    Put the right vertex into the left vertex.
   Repeat.
   If the flag is not set, exit.
   Destroy the polygon's first vertex given the polygon.
@@ -12231,18 +12231,18 @@ To smooth a polygon:
 To smooth a polygon some times: \ this use to "times" is a fluke, I think -- see "some times is a number"
   Privatize the times.
   Loop.
-  If the times is 0, exit.
-  Smooth the polygon.
-  Subtract 1 from the times.
+    If the times is 0, exit.
+    Smooth the polygon.
+    Subtract 1 from the times.
   Repeat.
 
 An smtp server is a string.
   
 A sockaddr is a record with
-A wyrd called sin_family,
-A big-endian unsigned wyrd called sin_port,
-A in_addr called sin_addr,
-  8 bytes called sin_zero.
+  A wyrd called sin_family,
+  A big-endian unsigned wyrd called sin_port,
+  A in_addr called sin_addr,
+    8 bytes called sin_zero.
   
 A sockaddrptr is a pointer to a sockaddr.
   
@@ -12267,12 +12267,12 @@ To sort some rows:
   Sort the left rows.
   Sort the right rows.
   Loop.
-  Put the left rows' first into a left row.
-  Put the right rows' first into a right row.
-  If the left row is nil, append the right rows to the rows; exit.
-  If the right row is nil, append the left rows to the rows; exit.
-  If the left row's string is greater than the right row's string, move the right row from the right rows to the rows; repeat.
-  Move the left row from the left rows to the rows.
+    Put the left rows' first into a left row.
+    Put the right rows' first into a right row.
+    If the left row is nil, append the right rows to the rows; exit.
+    If the right row is nil, append the left rows to the rows; exit.
+    If the left row's string is greater than the right row's string, move the right row from the right rows to the rows; repeat.
+    Move the left row from the left rows to the rows.
   Repeat.
 
 To space between glyphs:
@@ -12289,13 +12289,13 @@ To split a buffer into some dyads:
   If the buffer is blank, exit.
   Slap a rider on the buffer.
   Loop.
-  Move the rider given the ampersand byte.
-  If the rider's token is blank, exit.
-  Create a dyad. 
-  Append the dyad to the dyads.
-  Split the rider's token into a name substring and a query substring given the equal-sign byte.
-  Put the name substring into the dyad's name.
-  Convert the query substring as a query string into the dyad's value.
+    Move the rider given the ampersand byte.
+    If the rider's token is blank, exit.
+    Create a dyad. 
+    Append the dyad to the dyads.
+    Split the rider's token into a name substring and a query substring given the equal-sign byte.
+    Put the name substring into the dyad's name.
+    Convert the query substring as a query string into the dyad's value.
   Repeat.
 
 To split a byte into a nibble and another nibble:
@@ -12319,12 +12319,12 @@ To split a number into a wyrd and another wyrd:
 To split the rows of a text into some rows and some selected rows and some other rows:
   If the text is nil, clear the rows; clear the selected rows; clear the other rows; exit.
   Loop.
-  Put the text's rows' first into a row.
-  If the row is nil, exit.
-  Remove the row from the text's rows.
-  If the row of the text is selected, set a flag; append the row to the selected rows; repeat.
-  If the flag is set, append the row to the other rows; repeat.
-  Append the row to the rows.
+    Put the text's rows' first into a row.
+    If the row is nil, exit.
+    Remove the row from the text's rows.
+    If the row of the text is selected, set a flag; append the row to the selected rows; repeat.
+    If the flag is set, append the row to the other rows; repeat.
+    Append the row to the rows.
   Repeat.
 
 To split a string into a left substring and a right substring given a separator byte:
@@ -12334,9 +12334,9 @@ To split a string into a left substring and a right substring given a separator 
   Put the string's first into a substring's first.
   Put the substring's first minus 1 into the substring's last.
   Loop.
-  If the substring's last is greater than the string's last, exit.
-  Add 1 to the substring's last.
-  If the substring's last's target is the separator byte, break.
+    If the substring's last is greater than the string's last, exit.
+    Add 1 to the substring's last.
+    If the substring's last's target is the separator byte, break.
   Repeat.
   Put the substring's first into the left's first.
   Put the substring's last minus 1 into the left's last.
@@ -12348,9 +12348,9 @@ To split a string into some string things given a separator byte:
   If the string is blank, exit.
   Slap a rider on the string.
   Loop.
-  Move the rider given the separator byte.
-  Add the rider's token to the string things.
-  If the rider's source is blank, break.
+    Move the rider given the separator byte.
+    Add the rider's token to the string things.
+    If the rider's source is blank, break.
   Repeat.
   If the string's last's target is not the separator byte, exit.
   Add "" to the string things.
@@ -12359,9 +12359,9 @@ To split some things into some left things and some right things:
   If the things are empty, clear the left things; clear the right things; exit.
   Put the things' count divided by 2 into a count.
   Loop.
-  Get a thing from the things.
-  If the count is 0, break.
-  Subtract 1 from the count.
+    Get a thing from the things.
+    If the count is 0, break.
+    Subtract 1 from the count.
   Repeat.
   Split the things into the left things and the right things at the thing. 
 
@@ -12805,24 +12805,24 @@ The start-of-heading byte is a byte equal to 1.
 The start-of-text byte is a byte equal to 2.
   
 A startupinfo is a record with
-A number called cb,
-A pointer called lpreserved,
-A pointer called lpdesktop,
-A pointer called lptitle,
-A number called dwx,
-A number called dwy,
-A number called dwxsize,
-A number called dwysize,
-A number called dwxcountchars,
-A number called cwycountchars,
-A number called dwfillattribute,
-A number called dwflags,
-A wyrd called wshowwindow,
-A wyrd called cbreserved2,
-A pointer called lpreserved2,
-A handle called hstdinput,
-A handle called hstdoutput,
-A handle called hstderror.
+  A number called cb,
+  A pointer called lpreserved,
+  A pointer called lpdesktop,
+  A pointer called lptitle,
+  A number called dwx,
+  A number called dwy,
+  A number called dwxsize,
+  A number called dwysize,
+  A number called dwxcountchars,
+  A number called cwycountchars,
+  A number called dwfillattribute,
+  A number called dwflags,
+  A wyrd called wshowwindow,
+  A wyrd called cbreserved2,
+  A pointer called lpreserved2,
+  A handle called hstdinput,
+  A handle called hstdoutput,
+  A handle called hstderror.
   
 The stdin handle is a handle.
   
@@ -14437,14 +14437,14 @@ To swap some things with some other things:
 The synchronous-idle byte is a byte equal to 22.
   
 A systemtime is a record with
-A wyrd called wyear,
-A wyrd called wmonth,
-A wyrd called wdayofweek,
-A wyrd called wday,
-A wyrd called whour,
-A wyrd called wminute,
-A wyrd called wsecond,
-A wyrd called wmilliseconds.
+  A wyrd called wyear,
+  A wyrd called wmonth,
+  A wyrd called wdayofweek,
+  A wyrd called wday,
+  A wyrd called whour,
+  A wyrd called wminute,
+  A wyrd called wsecond,
+  A wyrd called wmilliseconds.
   
 The t-key is a key equal to 84.
   
@@ -14465,46 +14465,46 @@ A talker object is a record with a talker vtable called vtable.
 A talker vtable is a pointer to a talker vtable record.
   
 A talker vtable record is a record with
-  \ iunknown
-A pointer called queryinterface,
-A pointer called addref,
-A pointer called release, \ in this:pspvoice out number
-  \ italker
-A pointer called setnotifysink,
-A pointer called setnotifywindowmessage,
-A pointer called setnotifycallbackfunction,
-A pointer called setnotifycallbackinterface,
-A pointer called setnotifywin32event,
-A pointer called waitfornotifyevent,
-A pointer called getnotifyeventhandle,
-A pointer called setinterest,
-A pointer called getevents,
-A pointer called getinfo,
-A pointer called setoutput,
-A pointer called getoutputobjecttoken,
-A pointer called getoutputstream,
-A pointer called pause,
-A pointer called resume,
-A pointer called setvoice,
-A pointer called getvoice,
-A pointer called speak, \ in this:pspvoice; pwcs:pwchar; dwflags:number; pulstreamnumber:pnumber out number
-A pointer called speakstream,
-A pointer called getstatus,
-A pointer called skip,
-A pointer called setpriority,
-A pointer called getpriority,
-A pointer called setalertboundary,
-A pointer called getalertboundary,
-A pointer called setrate,
-A pointer called getrate,
-A pointer called setvolume,
-A pointer called getvolume,
-A pointer called waituntildone,
-A pointer called setsyncspeaktimeout,
-A pointer called getsyncspeaktimeout,
-A pointer called speakcompleteevent,
-A pointer called isuisupported,
-A pointer called displayui.
+    \ iunknown
+  A pointer called queryinterface,
+  A pointer called addref,
+  A pointer called release, \ in this:pspvoice out number
+    \ italker
+  A pointer called setnotifysink,
+  A pointer called setnotifywindowmessage,
+  A pointer called setnotifycallbackfunction,
+  A pointer called setnotifycallbackinterface,
+  A pointer called setnotifywin32event,
+  A pointer called waitfornotifyevent,
+  A pointer called getnotifyeventhandle,
+  A pointer called setinterest,
+  A pointer called getevents,
+  A pointer called getinfo,
+  A pointer called setoutput,
+  A pointer called getoutputobjecttoken,
+  A pointer called getoutputstream,
+  A pointer called pause,
+  A pointer called resume,
+  A pointer called setvoice,
+  A pointer called getvoice,
+  A pointer called speak, \ in this:pspvoice; pwcs:pwchar; dwflags:number; pulstreamnumber:pnumber out number
+  A pointer called speakstream,
+  A pointer called getstatus,
+  A pointer called skip,
+  A pointer called setpriority,
+  A pointer called getpriority,
+  A pointer called setalertboundary,
+  A pointer called getalertboundary,
+  A pointer called setrate,
+  A pointer called getrate,
+  A pointer called setvolume,
+  A pointer called getvolume,
+  A pointer called waituntildone,
+  A pointer called setsyncspeaktimeout,
+  A pointer called getsyncspeaktimeout,
+  A pointer called speakcompleteevent,
+  A pointer called isuisupported,
+  A pointer called displayui.
   
 The tan color is a color.
   
@@ -14523,44 +14523,44 @@ A terminal is a thing with  a box, some quoras, an output color, an input color,
 The text cutoff is a number equal to 500.
   
 A text is a thing with 
-A box,
-An origin,
-A pen color,
-A font,
-An alignment,
-Some rows,
-A margin,
-A scale fraction,
-A wrap flag,
-A horizontal scroll flag,
-A vertical scroll flag,
-A selection,
-A modified flag,
-A last operation,
-Some texts called undos,
-Some texts called redos.
+  A box,
+  An origin,
+  A pen color,
+  A font,
+  An alignment,
+  Some rows,
+  A margin,
+  A scale fraction,
+  A wrap flag,
+  A horizontal scroll flag,
+  A vertical scroll flag,
+  A selection,
+  A modified flag,
+  A last operation,
+  Some texts called undos,
+  Some texts called redos.
   
 A textmetric is a record with
-A number called tmheight,
-A number called tmascent,
-A number called tmdescent,
-A number called tminternalleading,
-A number called tmexternalleading,
-A number called tmavecharwidth,
-A number called tmmaxcharwidth,
-A number called tmweight,
-A number called tmoverhang,
-A number called tmdigitizedaspectx,
-A number called tmdigitizedaspecty,
-A byte called tmfirstchar,
-A byte called tmlastchar,
-A byte called tmdefaultchar,
-A byte called tmbreakchar,
-A byte called tmitalic,
-A byte called tmunderlined,
-A byte called tmstruckout,
-A byte called tmpitchandfamily,
-A byte called tmcharset.
+  A number called tmheight,
+  A number called tmascent,
+  A number called tmdescent,
+  A number called tminternalleading,
+  A number called tmexternalleading,
+  A number called tmavecharwidth,
+  A number called tmmaxcharwidth,
+  A number called tmweight,
+  A number called tmoverhang,
+  A number called tmdigitizedaspectx,
+  A number called tmdigitizedaspecty,
+  A byte called tmfirstchar,
+  A byte called tmlastchar,
+  A byte called tmdefaultchar,
+  A byte called tmbreakchar,
+  A byte called tmitalic,
+  A byte called tmunderlined,
+  A byte called tmstruckout,
+  A byte called tmpitchandfamily,
+  A byte called tmcharset.
   
 A thing is a pointer to a thing record.
   
@@ -14746,11 +14746,11 @@ To unquote a string:
   If the substring's first's target is not the double-quote byte, exit.
   Add 1 to the substring's first.
   Loop.
-  If the substring is blank, break.
-  If the substring's first is the substring's last, break.
-  Append the substring's first's target to another string.
-  If the substring's first's target is the double-quote byte, add 1 to the substring's first.
-  Add 1 to the substring's first.
+    If the substring is blank, break.
+    If the substring's first is the substring's last, break.
+    Append the substring's first's target to another string.
+    If the substring's first's target is the double-quote byte, add 1 to the substring's first.
+    Add 1 to the substring's first.
   Repeat.
   Put the other string into the string.
   
@@ -14766,11 +14766,11 @@ To update the screen;
 To uppercase any selected bytes in a text:
   If the text is nil, exit.
   Loop.
-  Get a row from the text's rows.
-  If the row is nil, exit.
-  If the row of the text is not selected, repeat.
-  Slap a substring on any selected bytes in the row of the text.  
-  Uppercase the substring.
+    Get a row from the text's rows.
+    If the row is nil, exit.
+    If the row of the text is not selected, repeat.
+    Slap a substring on any selected bytes in the row of the text.  
+    Uppercase the substring.
   Repeat.
 
 To uppercase a byte:
@@ -14790,17 +14790,17 @@ To uppercase the character under a finger and put it into a string:
 To uppercase a string:
   Slap a substring on the string.
   Loop.
-  If the substring is blank, exit.
-  Uppercase the substring's first's target.
-  Add 1 to the substring's first.
+    If the substring is blank, exit.
+    Uppercase the substring's first's target.
+    Add 1 to the substring's first.
   Repeat.
 
 To uppercase a text:
   If the text is nil, exit.
   Loop.
-  Get a row from the text's rows.
-  If the row is nil, break.
-  Uppercase the row's string.
+    Get a row from the text's rows.
+    If the row is nil, break.
+    Uppercase the row's string.
   Repeat.
   Wrap the text.
   
@@ -14990,10 +14990,10 @@ To wrap a text:
   Slap a rider on the string.
   Create the hfont of the memory canvas given the text's font.
   Loop.
-  Move the rider given the text's box (word wrapping rules).
-  If the rider's token is blank, break.
-  Create a row given the rider's token.
-  Append the row to the text's rows.
+    Move the rider given the text's box (word wrapping rules).
+    If the rider's token is blank, break.
+    Create a row given the rider's token.
+    Append the row to the text's rows.
   Repeat.
   Destroy the hfont of the memory canvas.
   Renumber the text's rows.
@@ -15066,12 +15066,12 @@ To write some quoras in a box:
   Put the box into a quora box.
   Put the quora box's top plus 1/4 inch into the quora box's bottom.
   Loop.
-  Get a quora from the quoras.
-  If the quora is nil, break.
-  \draw really fast. ***
-  \ Draw the quora box with the yellow color. \ temp ***
-  Write the quora's string in the quora box with the quora's color.
-  Move the quora box down 1/4 inch.
+    Get a quora from the quoras.
+    If the quora is nil, break.
+    \draw really fast. ***
+    \ Draw the quora box with the yellow color. \ temp ***
+    Write the quora's string in the quora box with the quora's color.
+    Move the quora box down 1/4 inch.
   Repeat.
 
 To write a string;
@@ -15091,12 +15091,12 @@ To write a string around a center spot at a radius;
   Privatize the string.
   Put 1 and the string's length into a fraction.
   Loop.
-  If the string is blank, exit.
-  Get a byte from the string.
-  Start at the center spot.
-  Move the radius.
-  Stroke the byte.
-  Turn the fraction.
+    If the string is blank, exit.
+    Get a byte from the string.
+    Start at the center spot.
+    Move the radius.
+    Stroke the byte.
+    Turn the fraction.
   Repeat.
 
 To write a string at a spot with a color;
@@ -15190,11 +15190,11 @@ To write a string while turning a fraction of the way;
   To stroke a string while turning a fraction:
   Privatize the string.
   Loop.
-  If the string is blank, exit.
-  Get a byte from the string.
-  Stroke the byte.
-  Turn the fraction.
-  If the string is not blank, space between glyphs.
+    If the string is blank, exit.
+    Get a byte from the string.
+    Stroke the byte.
+    Turn the fraction.
+    If the string is not blank, space between glyphs.
   Repeat.
 
 To write a string with a color;
