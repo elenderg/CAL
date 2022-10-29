@@ -1,0 +1,5 @@
+To debug a flag:
+  Convert the flag to a string.
+  Debug the string.
+  
+  

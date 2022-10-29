@@ -1,0 +1,6 @@
+A winhttp request is a thing with
+  A session handle,
+  A connection handle,
+  A request handle.
+  
+  

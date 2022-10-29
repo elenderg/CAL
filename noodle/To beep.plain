@@ -1,0 +1,4 @@
+To beep: 
+  Call "user32.dll" "MessageBeep" with 0.
+  
+  

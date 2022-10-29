@@ -1,0 +1,4 @@
+To enque an event:
+  Append the event to the event queue.
+  
+  

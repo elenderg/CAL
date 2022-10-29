@@ -1,0 +1,7 @@
+To list some types in a buffer:
+  Get a type from the types.
+  If the type is nil, exit.
+  List the type in the buffer.
+  Repeat.
+  
+  

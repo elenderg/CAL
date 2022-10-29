@@ -1,0 +1,5 @@
+Some addrinfo routines is a record with
+  A getaddrinfo pointer,
+  A freeaddrinfo pointer.
+  
+  

@@ -1,0 +1,37 @@
+A outlinetextmetric is a record with
+  A number called otmsize,
+  A textmetric called otmtextmetrics,
+  3 bytes, \ needed to align structure
+  A byte called otmfiller,
+  A panose called otmpanosenumber,
+  1 bytes, \ needed to align structure
+  A number called otmfsselection,
+  A number called otmfstype,
+  A number called otmscharsloperise,
+  A number called otmscharsloperun,
+  A number called otmitalicangle,
+  A number called otmemsquare,
+  A number called otmascent,
+  A number called otmdescent,
+  A number called otmlinegap,
+  A number called otmscapemheight,
+  A number called otmsxheight,
+  A box called otmrcfontbox,
+  A number called otmmacascent,
+  A number called otmmacdescent,
+  A number called otmmaclinegap,
+  A number called otmusminiumppem,
+  A spot called otmptsubscriptsize,
+  A spot called otmptsubscriptoffset,
+  A spot called otmptsuperscriptsize,
+  A spot called otmptsuperscriptoffset,
+  A number called otmsstrikeoutsize,
+  A number called otmsstrikeoutposition,
+  A number called otmsunderscoresize,
+  A number called otmsunderscoreposition,
+  A pointer called otmpfamilyname,
+  A pointer called otmpfacename,
+  A pointer called otmpstylename,
+  A pointer called otmpfullname.
+  
+  

@@ -1,0 +1,3 @@
+An istream vtable is a pointer to an istream vtable record.
+  
+  

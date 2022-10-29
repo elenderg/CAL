@@ -1,0 +1,4 @@
+To handle any wm-destroy:
+  Call "user32.dll" "PostQuitMessage" with 0.
+  
+  

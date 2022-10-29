@@ -1,0 +1,5 @@
+To put a box's y-extent into a height:
+  Put the box's bottom into the height.
+  Subtract the box's top from the height.
+  
+  

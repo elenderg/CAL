@@ -1,0 +1,7 @@
+A field term has
+  A dereference flag,
+  A field (reference),
+  A function routine (reference),
+  A push flag.
+  
+  

@@ -1,0 +1,6 @@
+A crypt session is a thing with
+  An hcryptprov pointer,
+  An hcrypthash pointer,
+  An hcryptkey pointer.
+  
+  

@@ -1,0 +1,5 @@
+To handle an event given a text (escape key):
+  If the text is nil, exit.
+  Deselect the text.
+  
+  

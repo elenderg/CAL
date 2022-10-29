@@ -1,0 +1,5 @@
+To debug a number:
+  Convert the number to a string.
+  Debug the string.
+  
+  

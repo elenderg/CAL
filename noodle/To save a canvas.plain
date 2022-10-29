@@ -1,0 +1,4 @@
+To save a canvas:
+  Call "gdi32.dll" "SaveDC" with the canvas.
+  
+  

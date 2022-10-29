@@ -1,0 +1,5 @@
+A filetime is a record with
+  A number called dwlowdatetime,
+  A number called dwhighdatetime.
+  
+  

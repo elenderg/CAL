@@ -1,0 +1,11 @@
+To output a color without advancing:
+  Convert the color to a rgb.
+  Put the rgb's red byte / 255 into a fraction.
+  Convert the fraction to a red string given 4.
+  Put the rgb's green byte / 255 into the fraction.
+  Convert the fraction to a green string given 4.
+  Put the rgb's blue byte / 255 into the fraction.
+  Convert the fraction to a blue string given 4.
+  Output the red string then " " then the green string then " " then the blue string without advancing.
+  
+  
