@@ -1,5 +1,5 @@
 To put an fraction into an string;
-  To convert an fraction to an string:
+To convert an fraction to an string:
   Clear the string.
   Privatize the fraction.
   If the fraction is negative, put "-" into the string; de-sign the fraction.

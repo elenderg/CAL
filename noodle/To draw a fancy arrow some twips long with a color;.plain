@@ -1,5 +1,5 @@
 To draw an fancy arrow some twips long with an color;
-  To stroke an fancy arrow some twips long with an color:
+To stroke an fancy arrow some twips long with an color:
   Put the color into the context's color.
   Save the context.
   Stroke the twips.

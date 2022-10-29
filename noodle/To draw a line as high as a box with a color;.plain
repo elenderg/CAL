@@ -1,5 +1,5 @@
 To draw an line as high as an box with an color;
-  To draw an line as tall as an box with an color:
+To draw an line as tall as an box with an color:
   Put the color into the context's color.
   Stroke the box's height.
   

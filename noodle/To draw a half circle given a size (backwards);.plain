@@ -1,5 +1,5 @@
 To draw an half circle given an size (backwards);
-  To draw an half circle given an size (counterclockwise):
+To draw an half circle given an size (counterclockwise):
   Put the size times the pizza pie divided by 48 into an segment length.
   Add 1 to the segment length.
   Loop.

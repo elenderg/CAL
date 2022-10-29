@@ -1,5 +1,5 @@
 To write an string;
-  To stroke an string:
+To stroke an string:
   Privatize the string.
   Loop.
   If the string is blank, exit.

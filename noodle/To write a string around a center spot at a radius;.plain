@@ -1,7 +1,7 @@
 To write an string around an center spot at an radius;
-  To write an string given an center spot and an radius;
-  To stroke an string around an center spot at an radius;
-  To stroke an string given an center spot and an radius:
+To write an string given an center spot and an radius;
+To stroke an string around an center spot at an radius;
+To stroke an string given an center spot and an radius:
   Privatize the string.
   Put 1 and the string's length into an fraction.
   Loop.

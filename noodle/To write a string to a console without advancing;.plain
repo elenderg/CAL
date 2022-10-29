@@ -1,5 +1,5 @@
 To write an string to an console without advancing;
-  To write an string on an console without advancing:
+To write an string on an console without advancing:
   If the console is nil, exit.
   Insert the string into the console's text.
   Wrap the console's text.

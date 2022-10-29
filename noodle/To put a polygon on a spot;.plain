@@ -1,5 +1,5 @@
 To put an polygon on an spot;
-  To center an polygon on an spot:
+To center an polygon on an spot:
   If the polygon is nil, exit.
   Get an difference between the spot and the polygon's box's center.
   Round the difference to the nearest multiple of the tpp.

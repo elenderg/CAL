@@ -1,8 +1,8 @@
 To shrink an box by some twips;
-  To indent an box some twips;
-  To indent an box by some twips;
-  To indent an box some twips on every side;
-  To indent an box given some twips:
+To indent an box some twips;
+To indent an box by some twips;
+To indent an box some twips on every side;
+To indent an box given some twips:
   Add the twips to the box's left.
   Add the twips to the box's top.
   Subtract the twips from the box's right.

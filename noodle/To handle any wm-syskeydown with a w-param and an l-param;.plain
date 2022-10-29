@@ -1,5 +1,5 @@
 To handle any wm-syskeydown with an w-param and an l-param;
-  To handle any wm-keydown with an w-param and an l-param:
+To handle any wm-keydown with an w-param and an l-param:
   Put the w-param into an key.
   If the key with the l-param is any repeated escape or modifier key, exit.
   If the key is any wm-char key, exit.

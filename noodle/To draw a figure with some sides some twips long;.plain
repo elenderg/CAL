@@ -1,5 +1,5 @@
 To draw an figure with some sides some twips long;
-  To draw an figure with some sides and some twips:
+To draw an figure with some sides and some twips:
   Put 1 and the sides into an fraction.
   Loop.
   Stroke the twips.

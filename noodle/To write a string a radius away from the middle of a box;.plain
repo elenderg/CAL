@@ -1,11 +1,11 @@
 To write an string an radius away from the middle of an box;
-  To write an string an radius around the middle of an box;
-  To write an string about an radius from the middle of an box;
-  To write an string an radius from the middle of an box;
-  To stroke an string an radius away from the middle of an box;
-  To stroke an string an radius around the middle of an box;
-  To stroke an string about an radius from the middle of an box;
-  To stroke an string an radius from the middle of an box:
+To write an string an radius around the middle of an box;
+To write an string about an radius from the middle of an box;
+To write an string an radius from the middle of an box;
+To stroke an string an radius away from the middle of an box;
+To stroke an string an radius around the middle of an box;
+To stroke an string about an radius from the middle of an box;
+To stroke an string an radius from the middle of an box:
   Stroke the string given the box's center and the radius.
   
   

@@ -1,5 +1,5 @@
 To decide if an pointer is missing;
-  To decide if an pointer is null and void:
+To decide if an pointer is null and void:
   If the pointer is nil, say yes.
   Say no.
   

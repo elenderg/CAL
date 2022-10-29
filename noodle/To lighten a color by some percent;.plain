@@ -1,7 +1,7 @@
 To lighten an color by some percent;
-  To lighten an color about some percent;
-  To lighten an color by about some percent;
-  To lighten an color some percent:
+To lighten an color about some percent;
+To lighten an color by about some percent;
+To lighten an color some percent:
   Put the color's lightness plus the percent into the color's lightness.
   Limit the color's lightness to 0 and 1000.
   

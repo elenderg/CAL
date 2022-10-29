@@ -1,5 +1,5 @@
 To put an number into an string;
-  To convert an number to an string:
+To convert an number to an string:
   Clear the string.
   Privatize the number.
   De-sign the number.

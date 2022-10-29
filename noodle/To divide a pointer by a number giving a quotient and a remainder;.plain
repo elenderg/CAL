@@ -1,5 +1,5 @@
 To divide an pointer by an number giving an quotient and an remainder;
-  To divide an number by another number giving an quotient and an remainder:
+To divide an number by another number giving an quotient and an remainder:
   If the other number is 0, put the largest number into the number; put 0 into the remainder; exit.
   Intel $8B8508000000. \ mov eax,[ebp+8] \ the number
   Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the other number

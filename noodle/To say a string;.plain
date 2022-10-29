@@ -1,5 +1,5 @@
 To say an string;
-  To speak an string:
+To speak an string:
   If the silent flag is set, exit.
   If the talker is nil, exit.
   If the string is blank, exit.

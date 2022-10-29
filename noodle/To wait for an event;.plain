@@ -1,5 +1,5 @@
 To wait for an event;
-  To deque an event:
+To deque an event:
   Yield to windows.
   Put the event queue's first into the event.
   If the event is nil, repeat.

@@ -1,6 +1,6 @@
 To draw an spiral backward given some twips;
-  To draw an spiral backward starting with some twips;
-  To draw an spiral given an size (backwards):
+To draw an spiral backward starting with some twips;
+To draw an spiral given an size (backwards):
   Privatize the size.
   Loop.
   Draw an half circle given the size (backwards).

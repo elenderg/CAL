@@ -1,5 +1,5 @@
 To resize an box given an ratio pair;
-  To resize an box given an fraction pair:
+To resize an box given an fraction pair:
   Put the box's x-extent into an width.
   Put the box's y-extent into an height.
   Scale the width given the fraction pair's fraction.

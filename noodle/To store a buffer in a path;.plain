@@ -1,5 +1,5 @@
 To store an buffer in an path;
-  To write an buffer to an path:
+To write an buffer to an path:
   Clear the i/o error.
   Extract an directory from the path.
   If the directory is not in the file system, put "Directory '" then the directory then "' doesn't exist." into the i/o error; exit.

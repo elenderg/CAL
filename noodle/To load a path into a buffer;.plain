@@ -1,5 +1,5 @@
 To load an path into an buffer;
-  To read an path into an buffer:
+To read an path into an buffer:
   Clear the i/o error.
   Privatize the path.
   Null terminate the path.

@@ -1,7 +1,7 @@
 To draw an circle about some twips wide;
-  To draw an circle given an width;
-  To draw an circle some twips in width;
-  To draw an circle some twips wide:
+To draw an circle given an width;
+To draw an circle some twips in width;
+To draw an circle some twips wide:
   Put the twips times the pizza pie divided by 48 into an segment length.
   Add 1 to the segment length.
   Loop.

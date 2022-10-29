@@ -1,5 +1,5 @@
 To write an string with an color;
-  To stroke an string with an color:
+To stroke an string with an color:
   Put the color into the context's color.
   Stroke the string.
   

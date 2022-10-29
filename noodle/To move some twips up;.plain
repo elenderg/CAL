@@ -1,5 +1,5 @@
 To move some twips up;
-  To move up some twips: 
+To move up some twips: 
   Subtract the twips from the context's y.
   
   

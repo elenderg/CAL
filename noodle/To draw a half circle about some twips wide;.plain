@@ -1,5 +1,5 @@
 To draw an half circle about some twips wide;
-  To draw an half circle given an size:
+To draw an half circle given an size:
   Put the size times the pizza pie divided by 48 into an segment length.
   Add 1 to the segment length.
   Loop.

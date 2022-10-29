@@ -1,5 +1,5 @@
 To decide if an string does start with any definition starter;
-  To decide if an string starts with any definition starter:
+To decide if an string starts with any definition starter:
   If the string starts with "an ", say yes.
   If the string starts with "an ", say yes.
   If the string starts with "some ", say yes.

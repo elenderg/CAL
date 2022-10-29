@@ -1,5 +1,5 @@
 To put an timer into an string;
-  To convert an timer to an string:
+To convert an timer to an string:
   Convert the timer's ticks to the string.
   
   

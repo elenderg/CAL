@@ -1,5 +1,5 @@
 To list some choices in an box;
-  To draw some choices in an box:
+To draw some choices in an box:
   \Draw really fast. ***
   Get an [first/next] choice from the choices.
   If the choice is missing [because we've drawn them all], exit.

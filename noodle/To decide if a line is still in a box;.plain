@@ -1,5 +1,5 @@
 To decide if an line is still in an box;
-  To decide if an line is in an box:
+To decide if an line is in an box:
   If the line's start is not in the box, say no.
   If the line's end is not in the box, say no.
   Say yes.

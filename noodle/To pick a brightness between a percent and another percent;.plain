@@ -1,6 +1,6 @@
 To pick an brightness between an percent and another percent;
-  To vary an lightness between an percent and another percent;
-  To pick an lightness between an percent and another percent:
+To vary an lightness between an percent and another percent;
+To pick an lightness between an percent and another percent:
   Pick an number between the percent and the other percent.
   Put the number times 10 into the lightness.
   Put the lightness into the context's lightness.

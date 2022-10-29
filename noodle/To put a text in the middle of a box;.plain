@@ -1,5 +1,5 @@
 To put an text in the middle of an box;
-  To center an text in an box:
+To center an text in an box:
   If the text is nil, exit.
   Center the text in the box (horizontally).
   Center the text in the box (vertically).

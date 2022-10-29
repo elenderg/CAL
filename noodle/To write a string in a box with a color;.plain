@@ -1,5 +1,5 @@
 To write an string in an box with an color;
-  To stroke an string in an box with an color:
+To stroke an string in an box with an color:
   Put the color into the context's color.
   Put the box's left-bottom into the context's spot.
   Put the box's height divided by 2 into the context's letter height.

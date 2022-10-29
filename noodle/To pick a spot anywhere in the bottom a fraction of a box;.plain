@@ -1,5 +1,5 @@
 To pick an spot anywhere in the bottom an fraction of an box;
-  To pick an spot in the bottom an fraction of an box:
+To pick an spot in the bottom an fraction of an box:
   Privatize the box.
   Put the box's height times the fraction into some twips.
   Put the box's bottom minus the twips into the box's top.

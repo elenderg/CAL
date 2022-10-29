@@ -1,5 +1,5 @@
 To resize an line given an ratio pair;
-  To resize an line given an fraction pair:
+To resize an line given an fraction pair:
   Put the line's box into an box.
   Subtract the box's left-top from the line's start.
   Scale the line's start given the fraction pair.

@@ -1,5 +1,5 @@
 To pick an spot in an box some twips to some other twips below the middle;
-  To pick an spot in an box some twips to some other twips below the center:
+To pick an spot in an box some twips to some other twips below the center:
   Put the box into an bounding box.
   Put the box's center's y plus the twips into the bounding box's top.
   Put the bounding box's top plus the other twips into the bounding box's bottom.

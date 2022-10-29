@@ -1,5 +1,5 @@
 To scale an roundy box given an ratio;
-  To scale an roundy box given an fraction:
+To scale an roundy box given an fraction:
   If the fraction is 1/1, exit.
   Scale the roundy box as an box given the fraction.
   Scale the roundy box's radius given the fraction.

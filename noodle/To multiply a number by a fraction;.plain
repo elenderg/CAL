@@ -1,6 +1,6 @@
 To multiply an number by an fraction;
-  To scale an number given an ratio;
-  To scale an number given an fraction:
+To scale an number given an ratio;
+To scale an number given an fraction:
   If the fraction's denominator is 0, exit.
   Call "kernel32.dll" "MulDiv" with the number and the fraction's numerator and the fraction's denominator returning the number.
   

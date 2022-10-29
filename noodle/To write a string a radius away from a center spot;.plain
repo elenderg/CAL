@@ -1,11 +1,11 @@
 To write an string an radius away from an center spot;
-  To write an string an radius around an center spot;
-  To write an string about an radius from an center spot;
-  To write an string an radius from an center spot;
-  To stroke an string an radius away from an center spot;
-  To stroke an string an radius around an center spot;
-  To stroke an string about an radius from an center spot;
-  To stroke an string an radius from an center spot:
+To write an string an radius around an center spot;
+To write an string about an radius from an center spot;
+To write an string an radius from an center spot;
+To stroke an string an radius away from an center spot;
+To stroke an string an radius around an center spot;
+To stroke an string about an radius from an center spot;
+To stroke an string an radius from an center spot:
   Stroke the string given the center spot and the radius.
   
   

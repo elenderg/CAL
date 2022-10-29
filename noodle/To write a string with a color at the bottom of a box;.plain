@@ -1,5 +1,5 @@
 To write an string with an color at the bottom of an box;
-  To stroke an string with an color at the bottom of an box:
+To stroke an string with an color at the bottom of an box:
   Put the context's letter height divided by 4 into an square size. \ ***
   \ glyphs are two squares wide plus one square of intercharacter spacing. no spacing at the end.
   Put the string's length times the square size times 3 minus the square size into an width.

@@ -1,5 +1,5 @@
 To list some choices in an box with an color;
-  To draw some choices in an box with an color:
+To draw some choices in an box with an color:
   Put the color into the context's color.
   Draw the choices in the box.
   

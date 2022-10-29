@@ -1,5 +1,5 @@
 To start some twips up from an spot;
-  To start some twips above an spot:
+To start some twips above an spot:
   Put the spot's y into the context's y.
   Subtract the twips from the context's y.
   

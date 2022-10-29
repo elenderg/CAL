@@ -1,5 +1,5 @@
 To decide if an string is any fraction literal;
-  To decide if an string is any ratio literal:
+To decide if an string is any ratio literal:
   Slap an substring on the string.
   If the substring is blank, say no.
   If the substring's first's target is not any numeric starter, say no.

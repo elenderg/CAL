@@ -1,5 +1,5 @@
 To draw an line some twips long;
-  To stroke an line some twips long:
+To stroke an line some twips long:
   \Wait for the delay. ***
   Put the context's spot into the line's start.
   Put the context's spot into the line's end.

@@ -1,5 +1,5 @@
 To draw an circle some twips wide (backwards);
-  To draw an circle some twips wide (counterclockwise):
+To draw an circle some twips wide (counterclockwise):
   Put the twips times the pizza pie divided by 48 into an segment length.
   Add 1 to the segment length.
   Loop.
