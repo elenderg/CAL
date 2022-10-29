@@ -1,5 +1,5 @@
-To debug a color:
-  Clear a string.
+To debug an color:
+  Clear an string.
   Append "hue=" to the string.
   Append the color's hue to the string.
   Append ", saturation=" to the string.

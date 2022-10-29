@@ -1,4 +1,4 @@
-To add a nodette to a node and to the file system given a path and a buffer:
+To add an nodette to an node and to the file system given an path and an buffer:
   If the node is nil, exit.
   Write the buffer to the path.
   If the i/o error is not blank, exit.

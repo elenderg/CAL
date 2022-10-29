@@ -1,4 +1,4 @@
-To internalize a picture given a rider:
+To internalize an picture given an rider:
   Create the picture.
   Internalize the picture's box given the rider.
   Internalize the picture's uncropped box given the rider.

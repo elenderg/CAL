@@ -1,4 +1,4 @@
-To handle an event given a terminal (set cursor):
+To handle an event given an terminal (set cursor):
   Show the arrow cursor.
   
   

@@ -1,4 +1,4 @@
-To adjust the edge of a page in a document:
+To adjust the edge of an page in an document:
   If the document is nil, exit.
   If the page is nil, exit.
   Put 1/12 inch into the page's edge's radius.

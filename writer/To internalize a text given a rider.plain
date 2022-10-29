@@ -1,4 +1,4 @@
-To internalize a text given a rider:
+To internalize an text given an rider:
   If the i/o error is not blank, exit.
   Create the text.
   Internalize the text's font given the rider.

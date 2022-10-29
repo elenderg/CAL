@@ -1,4 +1,4 @@
-To fill bytes with a byte starting at a pointer for a byte count:
+To fill bytes with an byte starting at an pointer for an byte count:
   Intel $8BBD0C000000. \ mov edi,[ebp+12] \ the pointer
   Intel $8B3F. \ mov edi,[edi]
   Intel $8B8D10000000. \ mov ecx,[ebp+16] \ the count

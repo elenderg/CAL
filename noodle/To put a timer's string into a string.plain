@@ -1,4 +1,4 @@
-To put a timer's string into a string:
+To put an timer's string into an string:
   Convert the timer's ticks to the string.
   
   

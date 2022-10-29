@@ -1,4 +1,4 @@
-To externalize a rect given a buffer and an indent:
+To externalize an rect given an buffer and an indent:
   Externalize the rect's left given the buffer and the indent.
   Externalize the rect's top given the buffer and the indent.
   Externalize the rect's right given the buffer and the indent.

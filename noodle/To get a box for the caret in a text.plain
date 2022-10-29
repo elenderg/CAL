@@ -1,6 +1,6 @@
-To get a box for the caret in a text:
+To get an box for the caret in an text:
   If the text is nil, zero the box; exit.
-  Get a spot given the text's caret and the text.
+  Get an spot given the text's caret and the text.
   Put the spot and the spot into the box.
   Add the text's row height to the box's bottom.
   Adjust the box given 0 and the tpp and 0 and - the tpp.

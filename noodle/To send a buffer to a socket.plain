@@ -1,10 +1,10 @@
-To send a buffer to a socket:
+To send an buffer to an socket:
   Clear the i/o error.
-  Put the buffer's first into a pointer.
-  Put the buffer's length into a length.
+  Put the buffer's first into an pointer.
+  Put the buffer's length into an length.
   Loop.
   If the length is 0, break.
-  Call "ws2_32.dll" "send" with the socket and the pointer and the length and 0 returning a number.
+  Call "ws2_32.dll" "send" with the socket and the pointer and the length and 0 returning an number.
   If the number is -1 [socket_error], put "Error sending data." into the i/o error; exit.
   Subtract the number from the length.
   Add the number to the pointer.

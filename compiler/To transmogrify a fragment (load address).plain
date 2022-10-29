@@ -1,4 +1,4 @@
-To transmogrify a fragment (load address):
+To transmogrify an fragment (load address):
   Attach address loading code to the fragment's code given the fragment's variable. \ put address into edx
   Attach $8995 and the fragment's other variable's offset to the fragment's code. \ mov [ebp+the fragment's variable's offset],edx
   

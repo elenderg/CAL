@@ -1,5 +1,5 @@
-To index a routine given a moniker and an index (special):
-  Find a refer given the moniker and the index.
+To index an routine given an moniker and an index (special):
+  Find an refer given the moniker and the index.
   If the refer is not nil, put the routine into the refer's pointer; exit.
   Index the routine given the moniker and the index.
   

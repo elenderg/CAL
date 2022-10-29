@@ -1,4 +1,4 @@
-To get an address given a routine:
+To get an address given an routine:
   If the routine's address is not 0, put the routine's address into the address; exit.
   Put -1 into the routine's address.
   Find another routine given the routine's employs moniker and the routine index.

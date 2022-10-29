@@ -1,4 +1,4 @@
-To add a type to some types given a locus:
+To add an type to some types given an locus:
   Create the type.
   Append the type to the types.
   Put the locus into the type's locus.

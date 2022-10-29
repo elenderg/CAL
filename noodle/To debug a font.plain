@@ -1,5 +1,5 @@
-To debug a font:
-  Clear a string.
+To debug an font:
+  Clear an string.
   Append "name='" to the string then "'".
   Append the font's name to the string.
   Append ", height=" to the string.

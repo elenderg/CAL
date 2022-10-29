@@ -1,4 +1,4 @@
-To switch the bar to a mode:
+To switch the bar to an mode:
   Put the mode into the bar's mode.
   Clear the status' string.
   Show the desktop.

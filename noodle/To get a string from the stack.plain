@@ -1,4 +1,4 @@
-To get a string from the stack:
+To get an string from the stack:
   Clear the string.
   Get an stack entry from the stack.
   If the stack entry is nil, put "ERROR" into the string; exit.

@@ -1,4 +1,4 @@
-To split a byte into a nibble and another nibble:
+To split an byte into an nibble and another nibble:
   Put the byte into the nibble.
   Shift the nibble right 4 bits.
   Put the byte into the other nibble.

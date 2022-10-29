@@ -1,4 +1,4 @@
-To handle an event given a text (left double click):
+To handle an event given an text (left double click):
   If the text is nil, exit.
   Deselect the text.
   Move the caret right to any non-alphanumeric byte in the text.

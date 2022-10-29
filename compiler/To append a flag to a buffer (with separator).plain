@@ -1,5 +1,5 @@
-To append a flag to a buffer (with separator):
-  Convert the flag to a string.
+To append an flag to an buffer (with separator):
+  Convert the flag to an string.
   Append the string to the buffer (with separator).
   
   

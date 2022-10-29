@@ -1,4 +1,4 @@
-To find a page given a document and a spot:
+To find an page given an document and an spot:
   Void the page.
   If the document is nil, exit.
   Loop.

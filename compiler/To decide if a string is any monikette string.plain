@@ -1,4 +1,4 @@
-To decide if a string is any monikette string:
+To decide if an string is any monikette string:
   If the string is blank, say no.
   If the string is "the", say no.
   If the string is any indefinite article, say no.

@@ -1,4 +1,4 @@
-To normalize a picture:
+To normalize an picture:
   If the picture is nil, exit.
   Normalize the picture's box.
   Normalize the picture's uncropped box.

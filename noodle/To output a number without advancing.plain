@@ -1,5 +1,5 @@
-To output a number without advancing:
-  Convert the number to a string.
+To output an number without advancing:
+  Convert the number to an string.
   Output the string without advancing.
   Output " " without advancing.
   

@@ -1,5 +1,5 @@
-To handle a command (e):
-  Create a submenu.
+To handle an command (e):
+  Create an submenu.
   If the current tab's mode is "writer", add "Enlarge" and "E" and "handle enlarge" to the submenu.
   If the current tab's mode is "editor", add "Encrypt..." and "handle encrypt" to the submenu.
   If the current tab's mode is "editor", add "Extract Types" and "handle extract types" to the submenu.

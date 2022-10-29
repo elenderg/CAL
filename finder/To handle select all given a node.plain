@@ -1,4 +1,4 @@
-To handle select all given a node:
+To handle select all given an node:
   If the node is root-level, cluck; exit.
   Deselect the nodettes in the node.
   Select the node's nodettes.

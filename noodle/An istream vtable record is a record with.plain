@@ -1,19 +1,19 @@
-An istream vtable record is a record with
+An istream vtable record is an record with
   \ iunknown
-  A pointer called queryinterface,
-  A pointer called addref,
-  A pointer called release, \ function(this:istream):number; stdcall;
+  An pointer called queryinterface,
+  An pointer called addref,
+  An pointer called release, \ function(this:istream):number; stdcall;
   \ istream
-  A pointer called read,
-  A pointer called write,
-  A pointer called seek,
-  A pointer called setsize,
-  A pointer called copyto,
-  A pointer called commit,
-  A pointer called revert,
-  A pointer called lockregion,
-  A pointer called unlockregion,
-  A pointer called stat,
-  A pointer called clone.
+  An pointer called read,
+  An pointer called write,
+  An pointer called seek,
+  An pointer called setsize,
+  An pointer called copyto,
+  An pointer called commit,
+  An pointer called revert,
+  An pointer called lockregion,
+  An pointer called unlockregion,
+  An pointer called stat,
+  An pointer called clone.
   
   

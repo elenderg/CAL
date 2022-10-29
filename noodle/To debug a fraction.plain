@@ -1,5 +1,5 @@
-To debug a fraction:
-  Clear a string.
+To debug an fraction:
+  Clear an string.
   Append "numerator=" to the string.
   Append the fraction's numerator to the string.
   Append ", denominator=" to the string.

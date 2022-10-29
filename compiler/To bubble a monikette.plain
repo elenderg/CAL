@@ -1,4 +1,4 @@
-To bubble a monikette:
+To bubble an monikette:
   If the monikette is nil, exit.
   If the monikette's current substring is not blank, clear the monikette's current substring; exit.
   If the monikette's current type is nil, exit.

@@ -1,5 +1,5 @@
-To handle a command (p):
-  Create a submenu.
+To handle an command (p):
+  Create an submenu.
   Add "Paste" and "V" and "handle paste" to the submenu.
   If the current tab's mode is "writer", add "Pen..." and "pen..." to the submenu.
   If the current tab's mode is "editor", add "Print..." and "P" and "handle print" to the submenu.

@@ -1,4 +1,4 @@
-To compatibly handle any message with a window a message number a w-param and an l-param:
+To compatibly handle any message with an window an message number an w-param and an l-param:
   If the message is 006, handle any wm-activate with the w-param; put 0 into eax; exit.
   If the message is 258, handle any wm-char with the w-param and the l-param; put 0 into eax; exit.
   If the message is 001, handle any wm-create with the window; put 0 into eax; exit.

@@ -1,5 +1,5 @@
-To get a distance between a spot and another spot (chessboard):
-  Put the spot's x minus the other spot's x into a number.
+To get an distance between an spot and another spot (chessboard):
+  Put the spot's x minus the other spot's x into an number.
   De-sign the number.
   Put the spot's y minus the other spot's y into another number.
   De-sign the other number.

@@ -1,4 +1,4 @@
-To draw a console:
+To draw an console:
   If the console is nil, exit.
   Save the current canvas.
   Mask only outside the console's box.

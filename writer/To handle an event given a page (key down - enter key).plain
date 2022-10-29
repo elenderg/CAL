@@ -1,4 +1,4 @@
-To handle an event given a page (key down - enter key):
+To handle an event given an page (key down - enter key):
   If the page is not being edited, cluck; exit.
   Hide the cursor.
   Set the current tab's node's document's modified flag.

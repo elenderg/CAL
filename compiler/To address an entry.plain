@@ -1,6 +1,6 @@
 To address an entry:
   Put the current name address into the entry's name address.
-  Put the entry's name's length plus 3 into a number.
+  Put the entry's name's length plus 3 into an number.
   Round the number up to the nearest multiple of 2.
   Add the number to the current name address.
   Put the current thunk address into the entry's thunk address.

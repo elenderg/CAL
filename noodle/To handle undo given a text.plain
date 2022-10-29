@@ -1,9 +1,9 @@
-To handle undo given a text:
+To handle undo given an text:
   If the text is nil, exit.
   If the text's undos' last is nil, exit.
   Copy the text into another text.
   Append the other text to the text's redos.
-  Put the text's undos' last into a third text.
+  Put the text's undos' last into an third text.
   Remove the third text from the text's undos.
   Copy the guts of the third text into the text.
   Destroy the third text.

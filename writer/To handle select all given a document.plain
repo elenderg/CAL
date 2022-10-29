@@ -1,4 +1,4 @@
-To handle select all given a document:
+To handle select all given an document:
   Deselect the pages in the document.
   Select the document's pages.
   Put the document's first page into the document's anchor.

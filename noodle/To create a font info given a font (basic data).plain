@@ -1,8 +1,8 @@
-To create a font info given a font (basic data):
+To create an font info given an font (basic data):
   Allocate memory for the font info.
   Put the font into the font info's font.
   Get an outlinetextmetric given the font.
-  Put 32 into the font info's flags. \ could be updated with a more information
+  Put 32 into the font info's flags. \ could be updated with an more information
   Put the outlinetextmetric's otmtextmetrics' tminternalleading into the font info's internal leading.
   Put the outlinetextmetric's otmemsquare into the font info's emsquare.
   Put the outlinetextmetric's otmtextmetrics' tmascent into the font info's ascent.

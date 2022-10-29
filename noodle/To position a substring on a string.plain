@@ -1,4 +1,4 @@
-To position a substring on a string:
+To position an substring on an string:
   Intel $8B8508000000. \ mov eax,[ebp+8] \ the substring
   Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the string
   \ put the string's first into the substring's first

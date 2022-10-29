@@ -1,4 +1,4 @@
-To internalize a paragraph given a rider:
+To internalize an paragraph given an rider:
   If the i/o error is not blank, exit.
   Create the paragraph.
   Internalize the paragraph's string given the rider.

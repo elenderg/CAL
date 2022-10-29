@@ -1,4 +1,4 @@
-To decide if we're outside a box:
+To decide if we're outside an box:
   If the context's spot is outside the box, say yes.
   Say no.
   

@@ -1,4 +1,4 @@
-To put a box's center-bottom into a spot:
+To put an box's center-bottom into an spot:
   Put the box's center's x into the spot's x.
   Put the box's bottom into the spot's y.
   

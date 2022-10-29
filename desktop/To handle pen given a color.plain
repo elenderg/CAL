@@ -1,4 +1,4 @@
-To handle pen given a color:
+To handle pen given an color:
   If the current tab's mode is "writer", handle pen given the current tab's node's page and the color; exit.
   Cluck.
   

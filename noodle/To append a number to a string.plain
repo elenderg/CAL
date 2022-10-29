@@ -1,4 +1,4 @@
-To append a number to a string:
+To append an number to an string:
   Convert the number to another string.
   Append the other string to the string.
   

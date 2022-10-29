@@ -1,4 +1,4 @@
-To find a tab given a spot:
+To find an tab given an spot:
   Void the tab.
   Loop.
   Get the tab from the tabs.

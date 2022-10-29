@@ -1,4 +1,4 @@
-To find an import given a string:
+To find an import given an string:
   Void the import.
   Loop.
   Get the import from the imports.

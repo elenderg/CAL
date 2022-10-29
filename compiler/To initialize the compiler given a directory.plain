@@ -1,4 +1,4 @@
-To initialize the compiler given a directory:
+To initialize the compiler given an directory:
   Put the directory into the compiler's directory.
   Put 0 into the compiler's name count.
   Clear the compiler's abort flag.

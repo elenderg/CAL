@@ -1,12 +1,12 @@
-To include a font in the current pdf: 
-  Find a pdf object given the font's name and the pdf state's font index.
+To include an font in the current pdf: 
+  Find an pdf object given the font's name and the pdf state's font index.
   If the pdf object is not nil, exit.
-  Create a font info given the font.
+  Create an font info given the font.
   Convert the font info to pdf em units.
   \ stream
-  Put the actual data of the font into a buffer.
-  Convert the buffer to a nibble string.
-  Add a stream pdf object given "font stream".
+  Put the actual data of the font into an buffer.
+  Convert the buffer to an nibble string.
+  Add an stream pdf object given "font stream".
   Append the stream's number then " 0 obj" to the stream.
   Append "<<" to the stream without advancing.
   Append "/Filter /ASCIIHexDecode" to the stream without advancing.
@@ -18,9 +18,9 @@ To include a font in the current pdf:
   Append "endstream" to the stream.
   Append "endobj" to the stream.
   \ descriptor
-  Add a descriptor pdf object given "font descriptor".
-  Put "F" then the descriptor's number into a font name.
-  Put the font's name into a font base name.
+  Add an descriptor pdf object given "font descriptor".
+  Put "F" then the descriptor's number into an font name.
+  Put the font's name into an font base name.
   Replace the space byte with the underscore byte in the font base name.
   Append the descriptor's number then " 0 obj" to the descriptor.
   Append "<<" to the descriptor.
@@ -37,7 +37,7 @@ To include a font in the current pdf:
   Append ">>" to the descriptor.
   Append "endobj" to the descriptor.
   \ definition
-  Add a definition pdf object given "font definition".
+  Add an definition pdf object given "font definition".
   Put the font name into the definition's font name.
   Append the definition's number then " 0 obj" to the definition.
   Append "<<" to the definition.

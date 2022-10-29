@@ -1,6 +1,6 @@
-To append a spot to a polygon:
+To append an spot to an polygon:
   If the polygon is nil, exit.
-  Create a vertex given the spot.
+  Create an vertex given the spot.
   Append the vertex to the polygon's vertices.
   
   

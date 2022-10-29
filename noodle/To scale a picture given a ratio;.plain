@@ -1,5 +1,5 @@
-To scale a picture given a ratio;
-  To scale a picture given a fraction:
+To scale an picture given an ratio;
+  To scale an picture given an fraction:
   If the picture is nil, exit.
   If the fraction is 1/1, exit.
   Scale the picture's box given the fraction.

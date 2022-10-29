@@ -1,7 +1,7 @@
 To destroy an index:
   If the index is nil, exit.
   Loop.
-  Get a bucket given the index.
+  Get an bucket given the index.
   If the bucket is nil, break.
   Destroy the bucket's refers.
   Repeat.

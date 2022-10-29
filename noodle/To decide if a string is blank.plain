@@ -1,4 +1,4 @@
-To decide if a string is blank:
+To decide if an string is blank:
   \ assume true
   Intel $B801000000. \ mov eax,1
   Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the string

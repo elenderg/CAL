@@ -1,3 +1,3 @@
-A talker vtable is a pointer to a talker vtable record.
+An talker vtable is an pointer to an talker vtable record.
   
   

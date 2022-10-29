@@ -1,4 +1,4 @@
-To adjust a picture (extract boxes from gpbitmap):
+To adjust an picture (extract boxes from gpbitmap):
   If the picture is nil, exit.
   Put 0 into the picture's box's left.
   Put 0 into the picture's box's top.

@@ -1,4 +1,4 @@
-To move a rider (text file rules):
+To move an rider (text file rules):
   Position the rider's token on the rider's source.
   Loop.
   If the rider's source is blank, exit.

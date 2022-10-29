@@ -1,4 +1,4 @@
-To copy a row into another row:
+To copy an row into another row:
   If the row is nil, void the other row; exit.
   Allocate memory for the other row.
   Put the row's row# into the other row's row#.

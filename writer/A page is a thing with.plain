@@ -1,19 +1,19 @@
-A page is a thing with
+An page is an thing with
   \ page stuff
-  a width, a height,
+  an width, an height,
   some shapes,
   \ runtime
   an origin,
-  a grid,
-  a superduper,
-  a scale ratio,
-  a measure,
+  an grid,
+  an superduper,
+  an scale ratio,
+  an measure,
   an edit shape (reference),
   some shape refers,
   \ edge stuff - all runtime
   an edge roundy box,
-  a selected flag, a previously selected flag,
-  a title string,
-  a page number string.
+  an selected flag, an previously selected flag,
+  an title string,
+  an page number string.
   
   

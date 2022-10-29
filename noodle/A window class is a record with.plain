@@ -1,15 +1,15 @@
-A window class is a record with
-  A number called cbsize,
-  A number called style,
-  A pointer called lpfnwndproc,
-  A number called cbclsextra,
-  A number called cbwndextra,
-  A handle called hinstance,
-  A hicon called hicon,
-  A cursor called hcursor,
+An window class is an record with
+  An number called cbsize,
+  An number called style,
+  An pointer called lpfnwndproc,
+  An number called cbclsextra,
+  An number called cbwndextra,
+  An handle called hinstance,
+  An hicon called hicon,
+  An cursor called hcursor,
   An hbrush called hbrbackground,
-  A pointer called lpszmenuname,
-  A pointer called lpszclassname,
-  A hicon called hiconsm.
+  An pointer called lpszmenuname,
+  An pointer called lpszclassname,
+  An hicon called hiconsm.
   
   

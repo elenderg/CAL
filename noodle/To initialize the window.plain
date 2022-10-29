@@ -1,7 +1,7 @@
 To initialize the window:
-  Put a window class's magnitude into the window class' cbsize.
+  Put an window class's magnitude into the window class' cbsize.
   Put 40 [cs_owndc + cs_dblclks] into the window class' style.
-  Point the window class' lpfnwndproc to routine handle any message with a window a message number a w-param and a l-param.
+  Point the window class' lpfnwndproc to routine handle any message with an window an message number an w-param and an l-param.
   Put the module's handle into the window class' hinstance.
   Put the module's name's first into the window class' lpszclassname.
   Call "user32.dll" "RegisterClassExA" with the window class's whereabouts.

@@ -1,4 +1,4 @@
-To handle grayscale given a flag:
+To handle grayscale given an flag:
   If the current tab's mode is "writer", handle grayscale given the current tab's node's page and the flag; exit.
   Cluck.
   

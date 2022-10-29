@@ -1,5 +1,5 @@
-To handle a command (alignment...):
-  Create a submenu.
+To handle an command (alignment...):
+  Create an submenu.
   Add "Align Left" and "handle align given left" to the submenu.
   Add "Align Center" and "handle align given center" to the submenu.
   Add "Align Right" and "handle align given right" to the submenu.

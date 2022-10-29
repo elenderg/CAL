@@ -1,4 +1,4 @@
-To decide if a string is any preposition:
+To decide if an string is any preposition:
   If the string is "about", say yes.
   If the string is "above", say yes.
   If the string is "across", say yes.

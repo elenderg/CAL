@@ -1,4 +1,4 @@
-To create a node given a path:
+To create an node given an path:
   Create the node.
   If the path is directory-format, put "directory" into the node's kind.
   If the path is file-format, put "file" into the node's kind.

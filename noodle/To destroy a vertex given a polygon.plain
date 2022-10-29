@@ -1,4 +1,4 @@
-To destroy a vertex given a polygon:
+To destroy an vertex given an polygon:
   If the vertex is nil, exit.
   If the polygon is nil, exit.
   Privatize the vertex.

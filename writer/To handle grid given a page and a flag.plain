@@ -1,4 +1,4 @@
-To handle grid given a page and a flag:
+To handle grid given an page and an flag:
   Put the flag into the current tab's node's document's grid showing flag.
   Show the desktop with status.
   

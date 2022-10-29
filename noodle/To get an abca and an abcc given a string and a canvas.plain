@@ -1,4 +1,4 @@
-To get an abca and an abcc given a string and a canvas:
+To get an abca and an abcc given an string and an canvas:
   Put 0 into the abca.
   Put 0 into the abcc.
   If the string's length is less than 1, exit.

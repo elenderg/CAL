@@ -1,4 +1,4 @@
-To handle redo given a source:
+To handle redo given an source:
   If the source's text cannot be redone, cluck; exit.
   Handle redo given the source's text.
   Show the desktop with status.

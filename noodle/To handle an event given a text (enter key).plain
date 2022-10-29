@@ -1,4 +1,4 @@
-To handle an event given a text (enter key):
+To handle an event given an text (enter key):
   If the text is nil, exit.
   Remember the text with "insert return".
   Remove any selected bytes in the text.

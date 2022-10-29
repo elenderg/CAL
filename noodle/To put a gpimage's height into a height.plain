@@ -1,4 +1,4 @@
-To put a gpimage's height into a height:
+To put an gpimage's height into an height:
   If the gpimage is nil, put 0 into the height; exit.
   Call "gdiplus.dll" "GdipGetImageHeight" with the gpimage and the height's whereabouts.
   

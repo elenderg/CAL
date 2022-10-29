@@ -1,4 +1,4 @@
-To handle an event given a page (right click):
+To handle an event given an page (right click):
   If the event's spot is not in the pad, exit.
   If the event's spot is not in the page, exit.
   Show the hand cursor.

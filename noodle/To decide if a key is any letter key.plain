@@ -1,4 +1,4 @@
-To decide if a key is any letter key:
+To decide if an key is any letter key:
   If the key is between 65 and 90, say yes.
   Say no.
   

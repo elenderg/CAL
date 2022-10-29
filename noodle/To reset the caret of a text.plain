@@ -1,4 +1,4 @@
-To reset the caret of a text:
+To reset the caret of an text:
   If the text is nil, exit.
   Put 1 and 1 into the text's caret.
   

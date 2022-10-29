@@ -1,4 +1,4 @@
-To handle lowercase given a page (editing):
+To handle lowercase given an page (editing):
   If nothing is selected in the page's edit shape's text, cluck; exit.
   Show status "Lowercasing...".
   Set the current tab's node's document's modified flag.

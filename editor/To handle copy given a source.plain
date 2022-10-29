@@ -1,4 +1,4 @@
-To handle copy given a source:
+To handle copy given an source:
   If nothing is selected in the source, cluck; exit.
   Show status "Copying...".
   Handle copy given the source's text.

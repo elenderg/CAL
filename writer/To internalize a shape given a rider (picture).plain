@@ -1,4 +1,4 @@
-To internalize a shape given a rider (picture):
+To internalize an shape given an rider (picture):
   Create the shape.
   Put the rider's token into the shape's kind.
   Move the rider (document rules).

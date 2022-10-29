@@ -1,4 +1,4 @@
-To decide if a byte is any symbol:
+To decide if an byte is any symbol:
   If the byte is the caret byte, say yes.
   If the byte is the bar byte, say yes.
   If the byte is the asterisk byte, say yes.

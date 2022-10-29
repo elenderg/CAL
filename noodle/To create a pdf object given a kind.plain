@@ -1,4 +1,4 @@
-To create a pdf object given a kind:
+To create an pdf object given an kind:
   Allocate memory for the pdf object.
   Put the kind into the pdf object's kind.
   

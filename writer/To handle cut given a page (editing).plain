@@ -1,4 +1,4 @@
-To handle cut given a page (editing):
+To handle cut given an page (editing):
   If nothing is selected in the page's edit shape's text, cluck; exit.
   Show status "Cutting...".
   Set the current tab's node's document's modified flag.

@@ -1,5 +1,5 @@
-To put the system's date/time into a date/time:
-  Call "kernel32.dll" "GetLocalTime" with a systemtime's whereabouts.
+To put the system's date/time into an date/time:
+  Call "kernel32.dll" "GetLocalTime" with an systemtime's whereabouts.
   Put the systemtime's wyear into the date/time's year.
   Put the systemtime's wmonth into the date/time's month.
   Put the systemtime's wdayofweek into the date/time's week day.

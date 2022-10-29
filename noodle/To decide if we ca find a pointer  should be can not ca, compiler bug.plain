@@ -1,4 +1,4 @@
-To decide if we ca find a pointer: \ should be "can" not "ca", compiler bug
+To decide if we ca find an pointer: \ should be "can" not "ca", compiler bug
   If the pointer is nil, say no.
   Say yes.
   

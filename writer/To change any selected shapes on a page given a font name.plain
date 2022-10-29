@@ -1,7 +1,7 @@
-To change any selected shapes on a page given a font name:
+To change any selected shapes on an page given an font name:
   If the page is nil, exit.
   Loop.
-  Get a shape from the page's shapes.
+  Get an shape from the page's shapes.
   If the shape is nil, exit.
   If the shape is not selected, repeat.
   Change the shape given the font name.

@@ -1,4 +1,4 @@
-To handle rotate page given a page:
+To handle rotate page given an page:
   If the page is being edited, end edit on the page.
   Show status "Rotating...".
   Remember the page.

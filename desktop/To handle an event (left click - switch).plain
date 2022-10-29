@@ -1,7 +1,7 @@
 To handle an event (left click - switch):
-  Find a tab given the event's spot.
+  Find an tab given the event's spot.
   If the tab is nil, exit.
-  If the tab is the current tab, set a flag.
+  If the tab is the current tab, set an flag.
   Switch to the tab.
   Show the desktop with status.
   Track the tab returning another flag.

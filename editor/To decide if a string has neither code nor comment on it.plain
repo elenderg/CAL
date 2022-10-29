@@ -1,4 +1,4 @@
-To decide if a string has neither code nor comment on it:
+To decide if an string has neither code nor comment on it:
   Privatize the string.
   Remove any leading noise from the string.
   Remove any trailing noise from the string.

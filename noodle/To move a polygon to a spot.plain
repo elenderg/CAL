@@ -1,6 +1,6 @@
-To move a polygon to a spot:
+To move an polygon to an spot:
   If the polygon is nil, exit.
-  Get a difference between the spot and the polygon's box's left-top.
+  Get an difference between the spot and the polygon's box's left-top.
   Move the polygon given the difference.
   
   

@@ -1,4 +1,4 @@
-To create a shape given a kind (default - polygon):
+To create an shape given an kind (default - polygon):
   Create the shape.
   Put the kind into the shape's kind.
   Create the shape's polygon.

@@ -1,4 +1,4 @@
-To show a terminal:
+To show an terminal:
   If the terminal is nil, exit.
   Save the current canvas.
   Draw the terminal.

@@ -1,8 +1,8 @@
-To calculate the redefinition offsets in a type:
+To calculate the redefinition offsets in an type:
   If the type is nil, exit.
   Loop.
   If the compiler's abort flag is set, exit.
-  Get a field from the type's fields.
+  Get an field from the type's fields.
   If the field is nil, exit.
   If the field's redefinition target name is blank, repeat.
   Find another field given the field's redefinition target name and the type's fields.

@@ -1,7 +1,7 @@
-To find a type and a nickname given a name:
+To find an type and an nickname given an name:
   Void the type.
   Clear the nickname.
-  Slap a substring on the name.
+  Slap an substring on the name.
   Loop.
   If the substring is blank, exit.
   Find the type given the substring and the type index.

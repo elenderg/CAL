@@ -1,5 +1,5 @@
 To handle an event (left click - menu):
-  Find a command given the menu and the event's spot.
+  Find an command given the menu and the event's spot.
   Handle the command.
   
   

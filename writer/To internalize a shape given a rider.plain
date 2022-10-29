@@ -1,4 +1,4 @@
-To internalize a shape given a rider:
+To internalize an shape given an rider:
   Void the shape.
   If the i/o error is not blank, exit.
   If the rider's token is "ellipse", internalize the shape given the rider (ellipse); exit.

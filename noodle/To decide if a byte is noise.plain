@@ -1,4 +1,4 @@
-To decide if a byte is noise:
+To decide if an byte is noise:
   If the byte is less than or equal to the space byte, say yes.
   If the byte is the delete byte, say yes.
   If the byte is the non-breaking-space byte, say yes.

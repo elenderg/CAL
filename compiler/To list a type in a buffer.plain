@@ -1,4 +1,4 @@
-To list a type in a buffer:
+To list an type in an buffer:
   If the type is nil, exit.
   Append "/type" to the buffer (with separator).
   Append the type's name to the buffer (with separator).

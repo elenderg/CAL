@@ -1,7 +1,7 @@
-To handle an event given a page (finding - key down - printable key):
+To handle an event given an page (finding - key down - printable key):
   Append the event's byte to the find string.
   Put the find anchor into an anchor.
-  Find given the page and a flag.
+  Find given the page and an flag.
   Put the anchor into the find anchor.
   If the flag is not set, cluck; remove the last byte from the find string; exit.
   Show the desktop with "Finding...".

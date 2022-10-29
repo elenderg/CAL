@@ -1,4 +1,4 @@
-To mask outside a roundy box:
+To mask outside an roundy box:
   Create an hrgn given the roundy box.
   Mask outside the hrgn.
   Destroy the hrgn.

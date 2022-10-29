@@ -1,4 +1,4 @@
-To decide if we're below a box:
+To decide if we're below an box:
   If the context's y is greater than the box's bottom, say yes.
   Say no.
   

@@ -1,6 +1,6 @@
-To add a name and a shortcut and a handler to a submenu:
+To add an name and an shortcut and an handler to an submenu:
   If the submenu is nil, exit.
-  Create a command.
+  Create an command.
   Append the command to the submenu's commands.
   Put the submenu width into the command's width.
   Put the name into the command's name.

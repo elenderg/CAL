@@ -1,4 +1,4 @@
-To destroy a tab:
+To destroy an tab:
   If the tab is nil, exit.
   Destroy the tab's node's root node.
   Deallocate the tab.

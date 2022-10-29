@@ -1,5 +1,5 @@
-To write a flag:
-  Convert the flag to a string.
+To write an flag:
+  Convert the flag to an string.
   Write the string.
   
   

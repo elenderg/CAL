@@ -1,4 +1,4 @@
-To clear a box:
+To clear an box:
   \ Draw the box with the black color. \ like "Clear the screen"
   Put 0 and 0 and 0 and 0 into the box. \ writer depends on this
   

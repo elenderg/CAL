@@ -1,6 +1,6 @@
-To draw a vertex:
+To draw an vertex:
   If the vertex is nil, exit.
-  Make a knob given the vertex's spot.
+  Make an knob given the vertex's spot.
   Put the white color into the knob's fill.
   Draw the knob.
   

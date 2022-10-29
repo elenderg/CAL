@@ -1,5 +1,5 @@
-To write a byte:
-  Put the byte into a string.
+To write an byte:
+  Put the byte into an string.
   Write the string.
   
   

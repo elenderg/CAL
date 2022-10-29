@@ -1,4 +1,4 @@
-To handle reverse given a text:
+To handle reverse given an text:
   If the text is nil, exit.
   If nothing is selected in the text, exit.
   Remember the text with "reverse".

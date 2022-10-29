@@ -1,7 +1,7 @@
-An entry is a thing with
-  A name address,
-  A thunk address,
-  A name,
+An entry is an thing with
+  An name address,
+  An thunk address,
+  An name,
   An address.
   
   

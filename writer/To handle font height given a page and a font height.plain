@@ -1,4 +1,4 @@
-To handle font height given a page and a font height:
+To handle font height given an page and an font height:
   If the page is being edited, handle font height given the page and the font height (editing); exit.
   If nothing is selected on the page, cluck; exit.
   Show status "Changing...".

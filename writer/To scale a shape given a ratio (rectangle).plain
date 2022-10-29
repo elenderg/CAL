@@ -1,4 +1,4 @@
-To scale a shape given a ratio (rectangle):
+To scale an shape given an ratio (rectangle):
   Scale the shape's rect given the ratio.
   Adjust the shape.
   

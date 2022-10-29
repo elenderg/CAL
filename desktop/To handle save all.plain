@@ -1,9 +1,9 @@
 To handle save all:
   Show status "Saving...".
-  Put 0 into a count.
+  Put 0 into an count.
   Clear the i/o error.
   Loop.
-  Get a tab from the tabs.
+  Get an tab from the tabs.
   If the tab is nil, show status the count and "file saved" or "files saved"; exit.
   If the tab's node is not savable, repeat.
   Save the tab's node.

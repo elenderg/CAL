@@ -1,4 +1,4 @@
-To put a string's length into a length:
+To put an string's length into an length:
   Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the string
   \ load default result
   Intel $B900000000. \ mov ecx,0

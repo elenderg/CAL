@@ -1,4 +1,4 @@
-To handle an event given a page (key down - left-arrow key):
+To handle an event given an page (key down - left-arrow key):
   If the page is not being edited, cluck; exit.
   Hide the cursor.
   Handle the event given the page's edit shape's text (left-arrow key).

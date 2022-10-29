@@ -1,4 +1,4 @@
-To capitalize a shape:
+To capitalize an shape:
   If the shape is nil, exit.
   If the shape's kind is "group", capitalize the shape's shapes; exit.
   If the shape's kind is not "text", exit.

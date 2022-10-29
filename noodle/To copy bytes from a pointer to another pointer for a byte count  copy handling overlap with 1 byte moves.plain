@@ -1,4 +1,4 @@
-To copy bytes from a pointer to another pointer for a byte count: \ copy handling overlap with 1 byte moves
+To copy bytes from an pointer to another pointer for an byte count: \ copy handling overlap with 1 byte moves
   Intel $8BB508000000. \ mov esi,[ebp+8] \ the pointer
   Intel $8B36. \ mov esi,[esi]
   Intel $8BBD0C000000. \ mov edi,[ebp+12] \ the other pointer

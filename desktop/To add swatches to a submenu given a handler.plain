@@ -1,4 +1,4 @@
-To add swatches to a submenu given a handler:
+To add swatches to an submenu given an handler:
   If the submenu is nil, exit.
   Add the clear color and the handler to the submenu.
   Put the palette width divided by 3 into the submenu's commands' last's width.

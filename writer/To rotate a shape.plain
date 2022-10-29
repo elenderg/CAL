@@ -1,4 +1,4 @@
-To rotate a shape:
+To rotate an shape:
   If the shape is nil, exit.
   If the shape's kind is "ellipse", rotate the shape (ellipse); exit.
   If the shape's kind is "group", rotate the shape (group); exit.
@@ -6,6 +6,6 @@ To rotate a shape:
   If the shape's kind is "polygon", rotate the shape (polygon); exit.
   If the shape's kind is "rectangle", rotate the shape (rectangle); exit.
   If the shape's kind is "text", rotate the shape (text); exit.
-  Debug "rotate a shape: " then the shape's kind.
+  Debug "rotate an shape: " then the shape's kind.
   
   

@@ -1,7 +1,7 @@
-To draw the edges of any visible pages in a document:
+To draw the edges of any visible pages in an document:
   If the document is nil, exit.
   Loop.
-  Get a page from the document's pages.
+  Get an page from the document's pages.
   If the page is nil, exit.
   If the edge of the page is not visible in the document, repeat.
   Draw the edge of the page in the document.

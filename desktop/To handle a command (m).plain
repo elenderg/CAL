@@ -1,5 +1,5 @@
-To handle a command (m):
-  Create a submenu.
+To handle an command (m):
+  Create an submenu.
   Add "Minimize" and "handle minimize" to the submenu.
   If the current tab's mode is "writer", add "Measure..." and "handle measure" to the submenu.
   If the current tab's mode is "writer", add "Mirror" and "handle mirror" to the submenu.

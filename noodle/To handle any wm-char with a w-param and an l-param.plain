@@ -1,7 +1,7 @@
-To handle any wm-char with a w-param and an l-param:
+To handle any wm-char with an w-param and an l-param:
   If the alt key was down, exit.
   If the ctrl key was down, exit.
-  Put the w-param into a byte.
+  Put the w-param into an byte.
   If the byte is not printable, exit.
   Create an event.
   Put "key down" into the event's kind.

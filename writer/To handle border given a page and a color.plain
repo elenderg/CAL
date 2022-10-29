@@ -1,4 +1,4 @@
-To handle border given a page and a color:
+To handle border given an page and an color:
   If the page is being edited, end edit on the page.
   If nothing is selected on the page, cluck; exit.
   Remember the page.

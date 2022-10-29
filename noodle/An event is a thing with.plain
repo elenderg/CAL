@@ -1,9 +1,9 @@
-An event is a thing with
-  A kind,
-  A shift flag,
-  A ctrl flag,
+An event is an thing with
+  An kind,
+  An shift flag,
+  An ctrl flag,
   An alt flag,
-  A spot,
-  A key, a byte.
+  An spot,
+  An key, an byte.
   
   

@@ -1,4 +1,4 @@
-To rename a nodette in a node and in the file system given a path:
+To rename an nodette in an node and in the file system given an path:
   If the node is nil, exit.
   If the nodette is nil, exit.
   Rename the nodette's path to the path in the file system.

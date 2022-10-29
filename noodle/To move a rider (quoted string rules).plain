@@ -1,4 +1,4 @@
-To move a rider (quoted string rules):
+To move an rider (quoted string rules):
   Bump the rider.
   If the rider's source is blank, exit.
   If the rider's source's first's target is not the double-quote byte, repeat.

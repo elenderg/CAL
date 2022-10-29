@@ -1,4 +1,4 @@
-To dump a substring of a buffer into another buffer:
+To dump an substring of an buffer into another buffer:
   Dump the substring of the buffer into the other buffer (address bytes).
   Dump the substring of the buffer into the other buffer (hex bytes).
   Dump the substring of the buffer into the other buffer (ascii bytes).

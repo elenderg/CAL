@@ -1,4 +1,4 @@
-To destroy the hbrush of a canvas:
+To destroy the hbrush of an canvas:
   Call "gdi32.dll" "SelectObject" with the canvas and the null hbrush returning an hbrush.
   Call "gdi32.dll" "DeleteObject" with the hbrush.
   

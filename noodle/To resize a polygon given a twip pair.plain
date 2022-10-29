@@ -1,9 +1,9 @@
-To resize a polygon given a twip pair:
+To resize an polygon given an twip pair:
   If the polygon is nil, exit.
-  Put the polygon's box into a box.
+  Put the polygon's box into an box.
   Put the box into another box.
   Resize the other box given the twip pair.
-  Make a fraction pair given the other box and the box.
+  Make an fraction pair given the other box and the box.
   Resize the polygon given the fraction pair.
   
   

@@ -1,9 +1,9 @@
-To convert a string to a query string:
+To convert an string to an query string:
   Clear the query string.
-  Slap a substring on the string.
+  Slap an substring on the string.
   Loop.
   If the substring is blank, break.
-  Convert the substring's first's target to a query byte.
+  Convert the substring's first's target to an query byte.
   Append the query byte to the query string.
   Add 1 to the substring's first.
   Repeat.

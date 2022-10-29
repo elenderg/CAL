@@ -1,4 +1,4 @@
-To initialize a pe header (import section):
+To initialize an pe header (import section):
   Copy bytes from "idata "'s first to the pe header's idata section's name's whereabouts for 6.
   Put the import borough's length into the pe header's idata section's sizeinbytes.
   Put the import borough's base into the pe header's idata section's addressinmemory.

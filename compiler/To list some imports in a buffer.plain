@@ -1,4 +1,4 @@
-To list some imports in a buffer:
+To list some imports in an buffer:
   Get an import from the imports.
   If the import is nil, exit.
   List the import in the buffer.

@@ -1,4 +1,4 @@
-To move a rider (index lexicon rules):
+To move an rider (index lexicon rules):
   Skip any leading noise in the rider's source.
   Position the rider's token on the rider's source.
   Loop.

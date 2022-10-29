@@ -1,4 +1,4 @@
-To handle redo given a page (editing):
+To handle redo given an page (editing):
   If the page's edit shape's text cannot be redone, cluck; exit.
   Set the current tab's node's document's modified flag.
   Scale the page's edit shape to 1/1.

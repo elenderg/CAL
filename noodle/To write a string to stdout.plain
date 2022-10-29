@@ -1,4 +1,4 @@
-To write a string to stdout:
-  Call "kernel32.dll" "WriteFile" with the stdout handle and the string's first and the string's length and a number's whereabouts and nil.
+To write an string to stdout:
+  Call "kernel32.dll" "WriteFile" with the stdout handle and the string's first and the string's length and an number's whereabouts and nil.
   
   

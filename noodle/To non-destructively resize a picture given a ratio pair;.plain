@@ -1,5 +1,5 @@
-To non-destructively resize a picture given a ratio pair;
-  To non-destructively resize a picture given a fraction pair:
+To non-destructively resize an picture given an ratio pair;
+  To non-destructively resize an picture given an fraction pair:
   If the picture is nil, exit.
   Move the picture's uncropped box given the fraction pair and the picture's box's left-top.
   Resize the picture's uncropped box given the fraction pair.

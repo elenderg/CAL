@@ -1,4 +1,4 @@
-To decide if a number is prime:
+To decide if an number is prime:
   If the number is less than 2, say no.
   If the number is 2, say yes.
   Put the number minus 1 into another number.

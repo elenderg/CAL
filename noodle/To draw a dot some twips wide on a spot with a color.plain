@@ -1,4 +1,4 @@
-To draw a dot some twips wide on a spot with a color:
+To draw an dot some twips wide on an spot with an color:
   Make the dot the twips wide.
   Center the dot on the spot.
   Draw the dot with the color.

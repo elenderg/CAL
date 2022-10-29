@@ -1,6 +1,6 @@
-To load a path into a picture:
-  To read a path into a picture:
-  Read the path into a buffer.
+To load an path into an picture:
+  To read an path into an picture:
+  Read the path into an buffer.
   If the i/o error is not blank, void the picture; exit.
   Create the picture given the buffer.
   

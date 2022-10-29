@@ -1,4 +1,4 @@
-To decide if a spot is in a shape:
+To decide if an spot is in an shape:
   If the shape is nil, say no.
   If the spot is on the shape, say yes.
   If the spot is in the shape (picture), say yes.

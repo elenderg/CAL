@@ -2,7 +2,7 @@ To handle list:
   If the current tab's mode is not "editor", cluck; exit.
   Handle save all.
   If the i/o error is not blank, exit.
-  Find a directory to compile.
+  Find an directory to compile.
   If the directory is blank, show error "I'm not sure what to compile and list"; exit.
   Compile the directory.
   Show status "Listing...".

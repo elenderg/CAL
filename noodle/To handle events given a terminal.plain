@@ -1,4 +1,4 @@
-To handle events given a terminal:
+To handle events given an terminal:
   If the terminal is nil, exit.
   Loop.
   Deque an event.

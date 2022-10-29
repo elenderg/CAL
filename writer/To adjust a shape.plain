@@ -1,4 +1,4 @@
-To adjust a shape:
+To adjust an shape:
   If the shape is nil, exit.
   If the shape's kind is "ellipse", put the shape's ellipse's box into the shape's box; exit.
   If the shape's kind is "group", put the shape's shapes' box into the shape's box; exit.
@@ -6,6 +6,6 @@ To adjust a shape:
   If the shape's kind is "polygon", put the shape's polygon's box into the shape's box; exit.
   If the shape's kind is "rectangle", put the shape's rect into the shape's box; exit.
   If the shape's kind is "text", put the shape's text rect into the shape's box; exit.
-  Debug "adjust a shape: " then the shape's kind.
+  Debug "adjust an shape: " then the shape's kind.
   
   

@@ -1,4 +1,4 @@
-To decide if a spot is in the pad:
+To decide if an spot is in the pad:
   If the spot is in the pad's box, say yes.
   Say no.
   

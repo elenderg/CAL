@@ -1,5 +1,5 @@
-To handle a command given a submenu and a width:
-  Put the command's left and the bar's display's bottom into a spot.
+To handle an command given an submenu and an width:
+  Put the command's left and the bar's display's bottom into an spot.
   Adjust the submenu given the spot and the width.
   Flush all events.
   Void the selected command.

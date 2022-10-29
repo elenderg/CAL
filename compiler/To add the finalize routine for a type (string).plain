@@ -1,8 +1,8 @@
-To add the finalize routine for a type (string):
+To add the finalize routine for an type (string):
   If the type is nil, exit.
   If the compiler's abort flag is set, exit.
-  Add a routine to the routines given nil.
-  Append "~finalize a " then the type's name to the routine's header string.
+  Add an routine to the routines given nil.
+  Append "~finalize an " then the type's name to the routine's header string.
   Append "intel $50. " to the routine's body string. \ push eax
   Append "unassign the string's first. " to the routine's body string.
   Append "intel $58." to the routine's body string. \ pop eax

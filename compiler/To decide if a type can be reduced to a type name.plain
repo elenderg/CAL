@@ -1,4 +1,4 @@
-To decide if a type can be reduced to a type name:
+To decide if an type can be reduced to an type name:
   If the type is nil, say no.
   Privatize the type.
   Loop.

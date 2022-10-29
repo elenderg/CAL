@@ -1,4 +1,4 @@
-To internalize a page given a rider:
+To internalize an page given an rider:
   If the i/o error is not blank, exit.
   If the rider's token is not "page", fail with "Invalid document - ""page"" not found"; exit.
   Move the rider (document rules).

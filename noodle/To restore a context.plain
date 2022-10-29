@@ -1,5 +1,5 @@
-To restore a context:
-  Get a saved context from the context stack.
+To restore an context:
+  Get an saved context from the context stack.
   If the saved context is nil, exit.
   Put the saved context's spot into the context's spot.
   Put the saved context's heading into the context's heading.

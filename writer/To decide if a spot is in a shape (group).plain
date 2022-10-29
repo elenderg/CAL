@@ -1,4 +1,4 @@
-To decide if a spot is in a shape (group):
+To decide if an spot is in an shape (group):
   If the shape's kind is not "group", say no.
   If the spot is not in the shape's box, say no.
   Loop.

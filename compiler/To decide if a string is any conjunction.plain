@@ -1,4 +1,4 @@
-To decide if a string is any conjunction:
+To decide if an string is any conjunction:
   If the string is "and", say yes.
   If the string is "both", say yes.
   If the string is "but", say yes.

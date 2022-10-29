@@ -1,4 +1,4 @@
-To focus on a page in a document:
+To focus on an page in an document:
   If the document is nil, exit.
   If the page is nil, exit.
   Deselect the pages in the document.

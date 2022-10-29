@@ -1,4 +1,4 @@
-To append a byte to a string given a count:
+To append an byte to an string given an count:
   Privatize the count.
   Loop.
   If the count is less than 1, exit.

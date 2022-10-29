@@ -1,7 +1,7 @@
-To lowercase a text:
+To lowercase an text:
   If the text is nil, exit.
   Loop.
-  Get a row from the text's rows.
+  Get an row from the text's rows.
   If the row is nil, break.
   Lowercase the row's string.
   Repeat.

@@ -1,4 +1,4 @@
-To draw a string at a spot with a color:
+To draw an string at an spot with an color:
   Draw the string at the spot with the color and the default font.
   
   

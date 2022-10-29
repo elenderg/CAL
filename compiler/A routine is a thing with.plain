@@ -1,15 +1,15 @@
-A routine is a thing with
-  A locus (reference),
-  A callback flag,
-  A decider flag,
-  A function flag,
-  A compiled flag,
-  A nickname index,
-  A moniker, some monikettes, some parameters, a parameter size,
+An routine is an thing with
+  An locus (reference),
+  An callback flag,
+  An decider flag,
+  An function flag,
+  An compiled flag,
+  An nickname index,
+  An moniker, some monikettes, some parameters, an parameter size,
   An employs moniker,
-  Some locals, a local size,
-  A routine header, a header string,
-  A routine body, a body string,
+  Some locals, an local size,
+  An routine header, an header string,
+  An routine body, an body string,
   Some fragments,
   An address.
   

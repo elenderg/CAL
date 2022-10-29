@@ -1,4 +1,4 @@
-To externalize a text given a buffer and an indent:
+To externalize an text given an buffer and an indent:
   If the text is nil, exit.
   Externalize the text's font given the buffer and the indent.
   Externalize the text's alignment given the buffer and the indent.

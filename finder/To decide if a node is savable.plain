@@ -1,4 +1,4 @@
-To decide if a node is savable:
+To decide if an node is savable:
   If the node is nil, say no.
   If the node's kind is not "file", say no.
   If the node's source is read-only, say no.

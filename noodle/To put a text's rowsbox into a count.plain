@@ -1,4 +1,4 @@
-To put a text's rows/box into a count:
+To put an text's rows/box into an count:
   If the text is nil, put 0 into the count; exit.
   Put the text's box's height divided by the text's row height into the count.
   

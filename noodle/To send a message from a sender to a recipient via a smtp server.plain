@@ -1,4 +1,4 @@
-To send a message from a sender to a recipient via a smtp server:
+To send an message from an sender to an recipient via an smtp server:
   Send the message to the recipient from the sender via the smtp server.
   
   

@@ -1,4 +1,4 @@
-To assign a pointer given a byte count:
+To assign an pointer given an byte count:
   If the byte count is 0, void the pointer; exit.
   Privatize the byte count.
   Round the byte count up to the nearest power of two.

@@ -1,4 +1,4 @@
-To handle an event given a source (key down - page-up key):
+To handle an event given an source (key down - page-up key):
   Hide the cursor.
   Handle the event given the source's text (page-up key).
   Show the desktop with status.

@@ -1,7 +1,7 @@
-A processinfo is a record with
-  A handle called hprocess,
-  A handle called hthread,
-  A number called dwprocessid,
-  A number called dwthreadid.
+An processinfo is an record with
+  An handle called hprocess,
+  An handle called hthread,
+  An number called dwprocessid,
+  An number called dwthreadid.
   
   

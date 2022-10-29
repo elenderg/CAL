@@ -1,4 +1,4 @@
-To initialize a pe header:
+To initialize an pe header:
   Initialize the pe header (standard header).
   Initialize the pe header (optional header).
   Initialize the pe header (version information).

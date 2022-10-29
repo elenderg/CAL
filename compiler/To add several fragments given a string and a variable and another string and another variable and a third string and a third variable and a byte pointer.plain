@@ -1,17 +1,17 @@
-To add several fragments given a string and a variable and another string and another variable and a third string and a third variable and a byte pointer:
-  Add a fragment given the push address tag and the third variable.
+To add several fragments given an string and an variable and another string and another variable and an third string and an third variable and an byte pointer:
+  Add an fragment given the push address tag and the third variable.
   Add another fragment given the push address tag and the other variable.
-  Add a third fragment given the push address tag and the variable.
-  Add a monikette to some monikettes given the string.
+  Add an third fragment given the push address tag and the variable.
+  Add an monikette to some monikettes given the string.
   Add another monikette to the monikettes given the variable's type.
-  Add a third monikette to the monikettes given the other string.
-  Add a fourth monikette to the monikettes given the other variable's type.
-  Add a fifth monikette to the monikettes given the third string.
-  Add a sixth monikette to the monikettes given the third variable's type.
-  Find a routine given the monikettes.
-  If the routine is nil, convert the monikettes to a moniker.
+  Add an third monikette to the monikettes given the other string.
+  Add an fourth monikette to the monikettes given the other variable's type.
+  Add an fifth monikette to the monikettes given the third string.
+  Add an sixth monikette to the monikettes given the third variable's type.
+  Find an routine given the monikettes.
+  If the routine is nil, convert the monikettes to an moniker.
   Destroy the monikettes.
   If the routine is nil, abort with "I don't know how to '" then the moniker then "'." and the byte pointer; exit.
-  Add a fourth fragment given the call internal tag and the routine.
+  Add an fourth fragment given the call internal tag and the routine.
   
   

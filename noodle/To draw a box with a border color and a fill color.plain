@@ -1,4 +1,4 @@
-To draw a box with a border color and a fill color:
+To draw an box with an border color and an fill color:
   If the pdf state's page flag is set, draw the box with the border and the fill (pdf style); exit.
   Privatize the box.
   Create the hpen of the current canvas given the border.

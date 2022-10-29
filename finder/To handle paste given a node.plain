@@ -1,9 +1,9 @@
-To handle paste given a node:
+To handle paste given an node:
   If the node is root-level, cluck; exit.
   If the finder's clipboard is empty in the file system, cluck; exit.
   If the node's path is read-only, show error "I'm sorry, but this directory is read only."; exit.
   Show status "Pasting...".
-  Paste any copied items into the node and into the file system returning a count.
+  Paste any copied items into the node and into the file system returning an count.
   Set the caret and anchor in the node using the selected nodettes.
   Scroll to the node's caret given the node.
   Show the desktop.

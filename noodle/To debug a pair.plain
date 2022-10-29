@@ -1,5 +1,5 @@
-To debug a pair:
-  Clear a string.
+To debug an pair:
+  Clear an string.
   Append "x=" to the string.
   Append the pair's x to the string.
   Append ", y=" to the string.

@@ -1,4 +1,4 @@
-To draw a box with a border color and a fill color (pdf style):
+To draw an box with an border color and an fill color (pdf style):
   If the border and the fill are clear, exit.
   Output setcolor given the border and the fill.
   Output the box's left-bottom without advancing.

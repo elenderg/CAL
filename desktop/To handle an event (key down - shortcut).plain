@@ -1,5 +1,5 @@
 To handle an event (key down - shortcut):
-  If the event's key is the a-key, handle select all; exit.
+  If the event's key is the an-key, handle select all; exit.
   If the event's key is the c-key, handle copy; exit.
   If the event's key is the d-key, handle duplicate; exit.
   If the event's key is the e-key, handle enlarge; exit.

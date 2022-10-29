@@ -1,4 +1,4 @@
-To switch a tab to a node:
+To switch an tab to an node:
   If the tab is nil, exit.
   If the node is nil, exit.
   Put the node into the tab's node.

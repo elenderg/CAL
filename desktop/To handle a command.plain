@@ -1,7 +1,7 @@
-To handle a command:
+To handle an command:
   If the command is nil, exit.
   \ offer it dispatchers
-  If the command's handler is "a", handle the command (a); exit.
+  If the command's handler is "an", handle the command (an); exit.
   If the command's handler is "alignment...", handle the command (alignment...); exit.
   If the command's handler is "b", handle the command (b); exit.
   If the command's handler is "border...", handle the command (border...); exit.

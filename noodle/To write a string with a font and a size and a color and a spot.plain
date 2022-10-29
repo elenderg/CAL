@@ -1,7 +1,7 @@
-To write a string with a font and a size and a color and a spot:
+To write an string with an font and an size and an color and an spot:
   Put the size into the font's height.
-  Put the string's width into a width.
-  Put the spot and the spot into a box.
+  Put the string's width into an width.
+  Put the spot and the spot into an box.
   Subtract the width divided by 2 from the box's left.
   Add the width divided by 2 to the box's right.
   Subtract the size divided by 2 from the box's top.

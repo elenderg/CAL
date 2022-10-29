@@ -1,4 +1,4 @@
-To handle an event given a document (key down - escape key):
+To handle an event given an document (key down - escape key):
   If nothing is selected in the document, handle close; exit.
   If the document is empty, exit.
   Deselect the pages in the document.

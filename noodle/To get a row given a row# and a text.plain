@@ -1,4 +1,4 @@
-To get a row given a row# and a text:
+To get an row given an row# and an text:
   Void the row.
   If the text is nil, exit.
   Loop.

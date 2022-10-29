@@ -1,4 +1,4 @@
-To advance a buffer:
+To advance an buffer:
   Append the return byte to the buffer.
   Append the linefeed byte to the buffer.
   

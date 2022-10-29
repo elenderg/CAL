@@ -1,4 +1,4 @@
-To de-sign a number:
+To de-sign an number:
   If the number is the smallest number, put the largest number into the number; exit.
   If the number is less than 0, negate the number.
   

@@ -1,4 +1,4 @@
-To decide if a spot is on a shape (text):
+To decide if an spot is on an shape (text):
   If the shape's kind is not "text", say no.
   If the spot is on the shape's text rect, say yes. \ text's box may be indented
   Say no.

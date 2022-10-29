@@ -1,6 +1,6 @@
-To center a polygon in a box (horizontally):
+To center an polygon in an box (horizontally):
   If the polygon is nil, exit.
-  Put the box's center's x minus the polygon's box's center's x into a number.
+  Put the box's center's x minus the polygon's box's center's x into an number.
   Round the number to the nearest multiple of the tpp.
   Move the polygon given the number and 0.
   

@@ -1,7 +1,7 @@
-To decide if a flag is another flag;
-  To decide if a pointer is a number;
-  To decide if a pointer is another pointer;
-  To decide if a number is another number:
+To decide if an flag is another flag;
+  To decide if an pointer is an number;
+  To decide if an pointer is another pointer;
+  To decide if an number is another number:
   Intel $C7C001000000. \ mov eax,1 \ assume true
   Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the number
   Intel $8B1B. \ mov ebx,[ebx]

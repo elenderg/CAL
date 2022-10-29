@@ -1,4 +1,4 @@
-To find a command given a menu and a spot:
+To find an command given an menu and an spot:
   Void the command.
   If the menu is nil, exit.
   Loop.

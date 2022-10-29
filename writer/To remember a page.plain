@@ -1,4 +1,4 @@
-To remember a page:
+To remember an page:
   If the page is nil, exit.
   Destroy the current tab's node's document's page redos.
   Limit the undos in the current tab's node's document.

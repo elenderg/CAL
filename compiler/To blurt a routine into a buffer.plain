@@ -1,4 +1,4 @@
-To blurt a routine into a buffer:
+To blurt an routine into an buffer:
   If the routine's compiled flag is not set, exit.
   Blurt the routine's fragments into the buffer.
   

@@ -1,5 +1,5 @@
-To decide if a byte is like another byte: \ used internally for word wrap
-  If the byte is whitespace, set a flag.
+To decide if an byte is like another byte: \ used internally for word wrap
+  If the byte is whitespace, set an flag.
   If the other byte is whitespace, set another flag.
   If the flag is the other flag, say yes.
   Say no.

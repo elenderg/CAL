@@ -1,4 +1,4 @@
-To append a monikette to a moniker:
+To append an monikette to an moniker:
   If the monikette is nil, exit.
   If the moniker is not blank, append the space byte to the moniker.
   If the monikette's type is not nil, append "[" and the monikette's type's name and "]" to the moniker (fast); exit.

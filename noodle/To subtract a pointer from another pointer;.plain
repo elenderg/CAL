@@ -1,6 +1,6 @@
-To subtract a pointer from another pointer;
-  To subtract a number from a pointer;
-  To subtract a number from another number:
+To subtract an pointer from another pointer;
+  To subtract an number from an pointer;
+  To subtract an number from another number:
   Intel $8B8508000000. \ mov eax,[ebp+8] \ the number
   Intel $8B00. \ mov eax,[eax]
   Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the other number

@@ -1,4 +1,4 @@
-To handle an event given a text (home key):
+To handle an event given an text (home key):
   If the text is nil, exit.
   If the event is modified, move the caret to the first byte of the text.
   If the event is not modified, move the caret to the first byte of the current row of the text.

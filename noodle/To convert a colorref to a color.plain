@@ -1,5 +1,5 @@
-To convert a colorref to a color:
-  Call "shlwapi.dll" "ColorRGBToHLS" with the colorref and a wyrd's whereabouts and another wyrd's whereabouts and a third wyrd's whereabouts.
+To convert an colorref to an color:
+  Call "shlwapi.dll" "ColorRGBToHLS" with the colorref and an wyrd's whereabouts and another wyrd's whereabouts and an third wyrd's whereabouts.
   Put the wyrd into the color's hue.
   Put the other wyrd into the color's  lightness.
   Put the third wyrd into the color's saturation.

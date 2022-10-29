@@ -1,4 +1,4 @@
-To round a number up to the nearest power of two:
+To round an number up to the nearest power of two:
   Intel $8B8D08000000. \ mov ecx,[ebp+8] \ the number
   Intel $8B09. \ mov ecx,[ecx]
   Intel $49. \ dec ecx

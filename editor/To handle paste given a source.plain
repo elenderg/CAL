@@ -1,4 +1,4 @@
-To handle paste given a source:
+To handle paste given an source:
   If there is not text on the windows clipboard, cluck; exit.
   Show status "Pasting...".
   Handle paste given the source's text.

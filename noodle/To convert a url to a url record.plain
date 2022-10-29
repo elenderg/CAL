@@ -1,12 +1,12 @@
-To convert a url to a url record:
+To convert an url to an url record:
   Privatize the url.
   Null terminate the url.
-  Put a urlcomponents' magnitude into the urlcomponents' dwstructsize.
+  Put an urlcomponents' magnitude into the urlcomponents' dwstructsize.
   Put 1 into the urlcomponents' dwschemelength.
   Put 1 into the urlcomponents' dwhostnamelength.
   Put 1 into the urlcomponents' dwurlpathlength.
   Put 1 into the urlcomponents' dwextrainfolength.
-  Call "wininet.dll" "InternetCrackUrlA" with the url's first and 0 and 0 and the urlcomponents' whereabouts returning a number.
+  Call "wininet.dll" "InternetCrackUrlA" with the url's first and 0 and 0 and the urlcomponents' whereabouts returning an number.
   Convert the urlcomponents' lpszscheme and the urlcomponents' dwschemelength to the url record's scheme.
   Convert the urlcomponents' lpszhostname and the urlcomponents' dwhostnamelength to the url record's host name.
   Convert the urlcomponents' lpszurlpath and the urlcomponents' dwurlpathlength to the url record's path.

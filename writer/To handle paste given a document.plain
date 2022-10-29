@@ -1,7 +1,7 @@
-To handle paste given a document:
+To handle paste given an document:
   If the page clipboard is empty, cluck; exit.
   Show status "Pasting...".
-  Paste any pages on the page clipboard into the document returning a count.
+  Paste any pages on the page clipboard into the document returning an count.
   Set the caret and anchor in the document using the selected pages.
   Scroll to the edge of the document's last selected page given the document.
   Show the desktop.

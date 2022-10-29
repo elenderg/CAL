@@ -1,4 +1,4 @@
-To decide if a tab is free:
+To decide if an tab is free:
   If the tab is nil, say no.
   If the tab's node is nil, say no.
   If the tab's node's kind is not "root", say no.

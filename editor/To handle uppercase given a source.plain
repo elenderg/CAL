@@ -1,4 +1,4 @@
-To handle uppercase given a source:
+To handle uppercase given an source:
   If nothing is selected in the source, cluck; exit.
   Handle uppercase given the source's text.
   Show the desktop with status.

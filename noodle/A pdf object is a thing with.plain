@@ -1,10 +1,10 @@
-A pdf object is a thing with
-  A kind [contents, font definition, font descriptor, font streamoutline, image object, outline entry, page, parent, root],
-  A number,
+An pdf object is an thing with
+  An kind [contents, font definition, font descriptor, font streamoutline, image object, outline entry, page, parent, root],
+  An number,
   An offset,
-  A data buffer,
-  A font name [font definition],
-  A font info [font definition],
+  An data buffer,
+  An font name [font definition],
+  An font info [font definition],
   Some string things called font strings [page],
   Some string things called image strings [page].
   

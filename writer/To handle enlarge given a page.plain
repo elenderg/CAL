@@ -1,4 +1,4 @@
-To handle enlarge given a page:
+To handle enlarge given an page:
   If the current tab's node's document's scale is 4/1, cluck; exit.
   Remember the page.
   Multiply the current tab's node's document's scale by 2.

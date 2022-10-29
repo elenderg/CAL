@@ -1,4 +1,4 @@
-To decide if a spot is in a shape (rectangle):
+To decide if an spot is in an shape (rectangle):
   If the shape's kind is not "rectangle", say no.
   If the shape is clear, say no.
   If the spot is not in the shape's rect, say no.

@@ -1,4 +1,4 @@
-To create a command:
+To create an command:
   Allocate memory for the command.
   Put the clear color into the command's color.
   Put the default font into the command's font.

@@ -1,4 +1,4 @@
-To decide if a type is value pushable:
+To decide if an type is value pushable:
   If the type is nil, say no.
   If the type is nil, say no.
   If the type's length is 4, say yes.

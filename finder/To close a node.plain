@@ -1,4 +1,4 @@
-To close a node:
+To close an node:
   If the node is nil, exit.
   Destroy the node's nodettes.
   Destroy the node's source.

@@ -1,4 +1,4 @@
-To copy a field into another field:
+To copy an field into another field:
   If the field is nil, void the other field; exit.
   Allocate memory for the other field.
   Put the field's locus into the other field's locus.

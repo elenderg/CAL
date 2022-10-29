@@ -1,4 +1,4 @@
-To decide if the current spot is left or right of a box:
+To decide if the current spot is left or right of an box:
   If the context's spot is left or right of the box, say yes.
   Say no.
   

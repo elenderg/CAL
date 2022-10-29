@@ -1,4 +1,4 @@
-To externalize a string given a buffer and an indent:
+To externalize an string given an buffer and an indent:
   Append the space byte to the buffer.
   Privatize the string.
   Quote the string.

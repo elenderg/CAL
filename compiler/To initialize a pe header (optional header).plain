@@ -1,9 +1,9 @@
-To initialize a pe header (optional header):
+To initialize an pe header (optional header):
   Put 267 [$010B] into the pe header's magicnumber.
   Put the code borough's length into the pe header's sizeofcodeinfile.
   Put the data borough's length into the pe header's sizeofinitializeddatainfile.
   Put 0 into the pe header's sizeofuninitializeddatainfile.
-  Find a routine given "~initialize before run and run and finalize after run" and the routine index.
+  Find an routine given "~initialize before run and run and finalize after run" and the routine index.
   If the routine is nil, abort with "Internal error: could not find the startup routine"; exit.
   Put the routine's address minus the image base into the pe header's addressofentrypointinmemory.
   Put the code borough's base into the pe header's addressofcodeinmemory.

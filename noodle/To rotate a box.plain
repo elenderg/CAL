@@ -1,5 +1,5 @@
-To rotate a box:
-  Put the box's center into a center spot.
+To rotate an box:
+  Put the box's center into an center spot.
   Put the box into another box.
   Put the center's y minus the other box's top plus the center's x into the box's right.
   Put the other box's left minus the center's x plus the center's y into the box's top.

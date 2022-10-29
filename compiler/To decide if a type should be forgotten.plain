@@ -1,4 +1,4 @@
-To decide if a type should be forgotten:
+To decide if an type should be forgotten:
   If the type is nil, say no.
   If the type's name is "thing", say no.
   If the type's name is "things", say no.

@@ -1,4 +1,4 @@
-To lighten a color by an amount:
+To lighten an color by an amount:
   Add the amount to the color's lightness.
   Limit the color's lightness to 0 and 1000.
   

@@ -1,4 +1,4 @@
-To append a routine to a buffer (with separator):
+To append an routine to an buffer (with separator):
   If the routine is nil, append "" to the buffer (with separator); exit.
   Append the routine's moniker to the buffer (with separator).
   

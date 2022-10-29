@@ -1,4 +1,4 @@
-To bump a rider by a number:
+To bump an rider by an number:
   Add the number to the rider's token's last.
   Add the number to the rider's source's first.  
   

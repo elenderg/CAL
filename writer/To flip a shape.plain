@@ -1,4 +1,4 @@
-To flip a shape:
+To flip an shape:
   If the shape is nil, exit.
   If the shape's kind is "ellipse", exit.
   If the shape's kind is "group", flip the shape (group); exit.
@@ -6,6 +6,6 @@ To flip a shape:
   If the shape's kind is "polygon", flip the shape (polygon); exit.
   If the shape's kind is "rectangle", exit.
   If the shape's kind is "text", exit.
-  Debug "flip a shape: " then the shape's kind.
+  Debug "flip an shape: " then the shape's kind.
   
   

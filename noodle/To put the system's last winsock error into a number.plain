@@ -1,4 +1,4 @@
-To put the system's last winsock error into a number:
+To put the system's last winsock error into an number:
   Call "ws2_32.dll" "WSAGetLastError" returning the number.
   
   

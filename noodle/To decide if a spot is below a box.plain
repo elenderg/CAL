@@ -1,4 +1,4 @@
-To decide if a spot is below a box:
+To decide if an spot is below an box:
   If the spot's y is greater than the box's bottom, say yes.
   Say no.
   

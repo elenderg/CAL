@@ -1,4 +1,4 @@
-To get a count of items in a path in the file system:
+To get an count of items in an path in the file system:
   Put 0 into the count.
   Loop.
   Get an item from the path.

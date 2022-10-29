@@ -1,4 +1,4 @@
-To copy a page into another page:
+To copy an page into another page:
   If the page is nil, void the other page; exit.
   Allocate memory for the other page.
   Put the page's width into the other page's width.

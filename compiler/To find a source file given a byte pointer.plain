@@ -1,4 +1,4 @@
-To find a source file given a byte pointer:
+To find an source file given an byte pointer:
   If the byte pointer is nil, void the source file; exit.
   Loop.
   Get the source file from the source files.

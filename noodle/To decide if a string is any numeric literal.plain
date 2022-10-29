@@ -1,4 +1,4 @@
-To decide if a string is any numeric literal:
+To decide if an string is any numeric literal:
   If the string is blank, say no.
   If the string's first's target is not any numeric starter, say no.
   If the string is any integer literal, say yes.

@@ -1,5 +1,5 @@
-To handle a command (g):
-  Create a submenu.
+To handle an command (g):
+  Create an submenu.
   If the current tab's mode is "finder", add "Get Size" and "handle get size" to the submenu.
   If the current tab's mode is "writer", add "Grayscale" and "handle grayscale" to the submenu.
   If the current tab's mode is "writer", add "Grid..." and "grid..." to the submenu.

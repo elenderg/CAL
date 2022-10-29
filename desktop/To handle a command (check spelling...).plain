@@ -1,5 +1,5 @@
-To handle a command (check spelling...):
-  Create a submenu.
+To handle an command (check spelling...):
+  Create an submenu.
   Add "Current Page Only" and "handle check spelling (current page only)" to the submenu.
   Add "Entire Document" and "handle check spelling (entire document)" to the submenu.
   Handle the command given the submenu.

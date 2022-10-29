@@ -1,5 +1,5 @@
-To handle a command (u):
-  Create a submenu.
+To handle an command (u):
+  Create an submenu.
   If the current tab's mode is "editor", add "Uncomment" and "U" and "handle uncomment" to the submenu.
   If the current tab's mode is "editor", add "Undo" and "Z" and "handle undo" to the submenu.
   If the current tab's mode is "writer", add "Undo" and "Z" and "handle undo" to the submenu.

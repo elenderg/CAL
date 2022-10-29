@@ -1,8 +1,8 @@
-To handle font height other given a page:
+To handle font height other given an page:
   If nothing is selected on the page, cluck; exit.
-  Get a font height given the page.
-  Put the font height and 1 inch into a ratio.
-  Convert the ratio to a ratio string.
+  Get an font height given the page.
+  Put the font height and 1 inch into an ratio.
+  Convert the ratio to an ratio string.
   Ask "Height (inches)?" with the ratio string.
   If the answer is blank, exit.
   Show the desktop.

@@ -1,4 +1,4 @@
-To de-sign a string:
+To de-sign an string:
   If the string is blank, exit.
   If the string's first's target is any sign, remove the first byte from the string.
   

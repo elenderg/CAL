@@ -1,4 +1,4 @@
-To decide if a byte is any consonant:
+To decide if an byte is any consonant:
   If the byte is in "bcdfghjklmnpqrstvwxyz", say yes.
   Say no.
   

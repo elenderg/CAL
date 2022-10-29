@@ -1,10 +1,10 @@
-To put a fraction into a string;
-  To convert a fraction to a string:
+To put an fraction into an string;
+  To convert an fraction to an string:
   Clear the string.
   Privatize the fraction.
   If the fraction is negative, put "-" into the string; de-sign the fraction.
   Reduce the fraction.
-  Convert the fraction to a mixed.
+  Convert the fraction to an mixed.
   If the mixed is 0, append "0" to the string; exit.
   If the mixed's whole number is not 0, append the mixed's whole number to the string.
   If the mixed's fraction is 0, exit.

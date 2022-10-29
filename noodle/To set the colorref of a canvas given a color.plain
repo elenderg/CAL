@@ -1,5 +1,5 @@
-To set the colorref of a canvas given a color:
-  Convert the color to a colorref.
+To set the colorref of an canvas given an color:
+  Convert the color to an colorref.
   Call "gdi32.dll" "SetTextColor" with the canvas and the colorref.
   
   

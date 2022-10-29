@@ -1,4 +1,4 @@
-To remove a nodette in a node and in the file system:
+To remove an nodette in an node and in the file system:
   If the node is nil, exit.
   If the nodette is nil, exit.
   Destroy the nodette's path in the file system.

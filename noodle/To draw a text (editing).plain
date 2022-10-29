@@ -1,4 +1,4 @@
-To draw a text (editing):
+To draw an text (editing):
   If the text is nil, exit.
   Save the current canvas.
   Mask outside the text's box.

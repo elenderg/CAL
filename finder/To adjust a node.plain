@@ -1,4 +1,4 @@
-To adjust a node:
+To adjust an node:
   If the node is nil, exit.
   Put the finder's left plus the finder's margin into the node's origin's x.
   Put the finder's top into the node's origin's y.

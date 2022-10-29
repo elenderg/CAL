@@ -1,4 +1,4 @@
-To append a fraction to a string:
+To append an fraction to an string:
   Convert the fraction to another string.
   Append the other string to the string.
   

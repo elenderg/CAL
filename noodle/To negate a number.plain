@@ -1,4 +1,4 @@
-To negate a number:
+To negate an number:
   Intel $8B8508000000. \ mov eax,[ebp+8] \ the number
   Intel $F718.\ neg [eax]
   

@@ -1,7 +1,7 @@
-To post a data string to a url and receive a response string: \ only works with http and https
+To post an data string to an url and receive an response string: \ only works with http and https
   Clear the response.
   Clear the i/o error.
-  Create a winhttp request for posting to the url.
+  Create an winhttp request for posting to the url.
   If the i/o error is not blank, exit.
   Send the data to the winhttp request.
   If the i/o error is not blank, destroy the winhttp request; exit.

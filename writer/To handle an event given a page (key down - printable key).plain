@@ -1,6 +1,6 @@
-To handle an event given a page (key down - printable key):
+To handle an event given an page (key down - printable key):
   If the page is being edited, handle the event given the page (key down - printable key - editing); exit.
-  Put the page's shape refers' first selected shape into a shape.
+  Put the page's shape refers' first selected shape into an shape.
   If the shape is nil, cluck; exit.
   If the shape's kind is not "text", cluck; exit.
   Begin edit on the page given the shape.

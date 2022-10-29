@@ -1,4 +1,4 @@
-To externalize a spot given a buffer and an indent:
+To externalize an spot given an buffer and an indent:
   Externalize the spot's x given the buffer and the indent.
   Externalize the spot's y given the buffer and the indent.
   

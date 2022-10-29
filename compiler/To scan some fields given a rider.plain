@@ -1,6 +1,6 @@
-To scan some fields given a rider:
+To scan some fields given an rider:
   If the compiler's abort flag is set, exit.
-  Add a field to the fields given "field" and the rider's token's first.
+  Add an field to the fields given "field" and the rider's token's first.
   Scan the field given the rider.
   If the rider's token is not any pause, exit.
   Scan any pauses given the rider.

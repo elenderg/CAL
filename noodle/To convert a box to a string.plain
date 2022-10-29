@@ -1,4 +1,4 @@
-To convert a box to a string:
+To convert an box to an string:
   Clear the string.
   Append the box's left to the string.
   Append " " to the string.

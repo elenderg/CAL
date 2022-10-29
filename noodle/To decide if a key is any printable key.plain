@@ -1,4 +1,4 @@
-To decide if a key is any printable key:
+To decide if an key is any printable key:
   If the key is the space key, say yes.
   If the key is any digit key, say yes.
   If the key is any letter key, say yes.

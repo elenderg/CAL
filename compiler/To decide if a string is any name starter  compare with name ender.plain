@@ -1,4 +1,4 @@
-To decide if a string is any name starter: \ compare with name ender
+To decide if an string is any name starter: \ compare with name ender
   If the string is any mark, say no.
   If the string is any symbol, say no.
   If the string is any article, say no.

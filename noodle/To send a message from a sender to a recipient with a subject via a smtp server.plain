@@ -1,4 +1,4 @@
-To send a message from a sender to a recipient with a subject via a smtp server:
+To send an message from an sender to an recipient with an subject via an smtp server:
   Send the message to the recipient from the sender with the subject via the smtp server.
   
   

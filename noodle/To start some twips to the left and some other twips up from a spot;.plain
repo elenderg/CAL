@@ -1,6 +1,6 @@
-To start some twips to the left and some other twips up from a spot;
-  To start some twips to the left of a spot;
-  To start some twips left of a spot:
+To start some twips to the left and some other twips up from an spot;
+  To start some twips to the left of an spot;
+  To start some twips left of an spot:
   Put the spot's x minus the twips into the context's x.
   
   

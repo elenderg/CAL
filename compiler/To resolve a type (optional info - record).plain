@@ -1,9 +1,9 @@
-To resolve a type (optional info - record):
+To resolve an type (optional info - record):
   If the compiler's abort flag is set, exit.
   If the type's fields are empty, copy the type's base type's fields into the type's fields; exit.
   Loop.
   If the compiler's abort flag is set, exit.
-  Get a field from the type's fields (backwards).
+  Get an field from the type's fields (backwards).
   If the field is nil, break.
   If the field is duplicated in the type's fields, abort with "The '" then the field's name then "' field is defined more than once." and the field's locus; exit.
   Resolve the field.

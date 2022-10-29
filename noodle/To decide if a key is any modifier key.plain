@@ -1,4 +1,4 @@
-To decide if a key is any modifier key:
+To decide if an key is any modifier key:
   If the key is the alt key, say yes.
   If the key is the ctrl key, say yes.
   If the key is the shift key ,say yes.

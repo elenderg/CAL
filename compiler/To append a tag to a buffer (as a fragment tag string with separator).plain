@@ -1,4 +1,4 @@
-To append a tag to a buffer (as a fragment tag string with separator):
+To append an tag to an buffer (as an fragment tag string with separator):
   If the tag is the break tag, append "break" to the buffer (with separator); exit.
   If the tag is the call external tag, append "call external" to the buffer (with separator); exit.
   If the tag is the call indirect tag, append "call indirect" to the buffer (with separator); exit.

@@ -1,4 +1,4 @@
-To begin printing a pdf:
+To begin printing an pdf:
   Set the pdf state's document flag.
   Put 0 into the pdf state's object number.
   Create the pdf state's font index given 113.

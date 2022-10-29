@@ -1,4 +1,4 @@
-To put a node's first visible nodette into a nodette:
+To put an node's first visible nodette into an nodette:
   Void the nodette.
   If the node is nil, exit.
   Loop.

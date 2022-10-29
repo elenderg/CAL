@@ -1,4 +1,4 @@
-To put a left coord and a top coord and a right coord and a bottom coord into an ellipse:
+To put an left coord and an top coord and an right coord and an bottom coord into an ellipse:
   Put the left into the ellipse's left.
   Put the top into the ellipse's top.
   Put the right into the ellipse's right.

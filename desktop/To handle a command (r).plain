@@ -1,5 +1,5 @@
-To handle a command (r):
-  Create a submenu.
+To handle an command (r):
+  Create an submenu.
   If the current tab's mode is "writer", add "Radius..." and "handle radius" to the submenu.
   If the current tab's mode is "editor", add "Redo" and "Y" and "handle redo" to the submenu.
   If the current tab's mode is "writer", add "Redo" and "Y" and "handle redo" to the submenu.

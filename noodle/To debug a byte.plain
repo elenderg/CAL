@@ -1,6 +1,6 @@
-To debug a byte:
-  Put the byte into a number.
-  Convert the number to a string.
+To debug an byte:
+  Put the byte into an number.
+  Convert the number to an string.
   Debug the string.
   
   

@@ -1,5 +1,5 @@
-To list some types in a buffer:
-  Get a type from the types.
+To list some types in an buffer:
+  Get an type from the types.
   If the type is nil, exit.
   List the type in the buffer.
   Repeat.

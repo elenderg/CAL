@@ -1,7 +1,7 @@
-To prepend a string to another string:
-  Put the other string's length plus the string's length into a combined length.
-  Reassign a pointer given the combined length.
-  Put the pointer into a substring's first.
+To prepend an string to another string:
+  Put the other string's length plus the string's length into an combined length.
+  Reassign an pointer given the combined length.
+  Put the pointer into an substring's first.
   Copy bytes from the string's first to the substring's first for the string's length.
   Add the string's length to the substring's first.
   Copy bytes from the other string's first to the substring's first for the other string's length.

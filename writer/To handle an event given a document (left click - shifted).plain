@@ -1,4 +1,4 @@
-To handle an event given a document (left click - shifted):
+To handle an event given an document (left click - shifted):
   Track the document given the event.
   
   

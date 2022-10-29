@@ -1,4 +1,4 @@
-To open a node:
+To open an node:
   If the node is nil, exit.
   If the node's kind is "root", open the node (root); exit.
   If the node's kind is "disk", open the node (disk or directory); exit.

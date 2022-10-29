@@ -1,7 +1,7 @@
-To list some choices in a box;
-  To draw some choices in a box:
+To list some choices in an box;
+  To draw some choices in an box:
   \Draw really fast. ***
-  Get a [first/next] choice from the choices.
+  Get an [first/next] choice from the choices.
   If the choice is missing [because we've drawn them all], exit.
   Put the box's left plus 1/4 inch into the choice's left.
   Put the box's right minus 1/4 inch into the choice's right.

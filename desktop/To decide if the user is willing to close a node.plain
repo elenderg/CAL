@@ -1,4 +1,4 @@
-To decide if the user is willing to close a node:
+To decide if the user is willing to close an node:
   If the node is nil, say yes.
   If the node is not modified, say yes.
   Ask "Save?" with choices "Yes" and "No" and "Cancel".

@@ -1,4 +1,4 @@
-To pick a solid color:
+To pick an solid color:
   Pick the solid color's hue between 0 and 3599.
   Put 1000 into the solid color's saturation.
   Put 500 into the solid color's lightness.

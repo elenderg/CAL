@@ -1,4 +1,4 @@
-To handle an event given a page (left click - blank area):
+To handle an event given an page (left click - blank area):
   If the event's spot is not in the pad, exit.
   Reset the superduper given the page.
   Track the rubberband on the page given the event.

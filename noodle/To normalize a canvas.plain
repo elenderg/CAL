@@ -1,4 +1,4 @@
-To normalize a canvas:
+To normalize an canvas:
   Call "gdi32.dll" "SetGraphicsMode" with the canvas and 2 [gm_advanced].
   Call "gdi32.dll" "SetBkMode" with the canvas and 1 [transparent].
   Call "gdi32.dll" "SetMapMode" with the canvas and 8 [mm_anisotropic].

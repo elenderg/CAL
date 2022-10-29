@@ -1,6 +1,6 @@
-A box has
-  A left coord, a top coord, a right coord, a bottom coord,
-  A left-top spot at the left, and a right-bottom spot at the right,
-  A top-left spot at the left, and a bottom-right spot at the right.
+An box has
+  An left coord, an top coord, an right coord, an bottom coord,
+  An left-top spot at the left, and an right-bottom spot at the right,
+  An top-left spot at the left, and an bottom-right spot at the right.
   
   

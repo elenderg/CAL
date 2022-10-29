@@ -1,4 +1,4 @@
-To handle an event given a console (key down):
+To handle an event given an console (key down):
   If the event's key is the backspace key, handle the event given the console (backspace key); exit.
   If the event's key is the down-arrow key, handle the event given the console (down-arrow key); exit.
   If the event's key is the end key, handle the event given the console (end key); exit.

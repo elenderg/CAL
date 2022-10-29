@@ -1,5 +1,5 @@
-To end a sheet (pdf style - finish the current page):
-  Put the pdf state's current page into a page pdf object.
+To end an sheet (pdf style - finish the current page):
+  Put the pdf state's current page into an page pdf object.
   Append "/Resources" to the page.
   Append "<<" to the page.
   Append "/ProcSet [/PDF /Text /ImageC]" to the page.

@@ -1,4 +1,4 @@
-To get an anchor with which to start finding given a shape refer and a page:
+To get an anchor with which to start finding given an shape refer and an page:
   Put 1 and 1 into the anchor.
   If the page is nil, exit.
   If the shape refer is nil, exit.

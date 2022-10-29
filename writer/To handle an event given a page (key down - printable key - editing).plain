@@ -1,4 +1,4 @@
-To handle an event given a page (key down - printable key - editing):
+To handle an event given an page (key down - printable key - editing):
   Hide the cursor.
   Set the current tab's node's document's modified flag.
   Handle the event given the page's edit shape's text (printable key).

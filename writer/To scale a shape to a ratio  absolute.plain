@@ -1,4 +1,4 @@
-To scale a shape to a ratio: \ absolute
+To scale an shape to an ratio: \ absolute
   If the shape is nil, exit.
   Put the shape's scale into another ratio.
   Flip the other ratio.

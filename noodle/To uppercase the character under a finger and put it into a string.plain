@@ -1,4 +1,4 @@
-To uppercase the character under a finger and put it into a string:
+To uppercase the character under an finger and put it into an string:
   If the finger is nil, exit.
   Put the finger's target into the string.
   Uppercase the string.

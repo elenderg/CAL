@@ -1,6 +1,6 @@
-To open a file given a path:
+To open an file given an path:
   Clear the i/o error.
-  Extract a directory from the path.
+  Extract an directory from the path.
   If the directory is not in the file system, put "Directory '" then the directory then "' doesn't exist." into the i/o error; exit.
   Set the path to read-write mode.
   Privatize the path.

@@ -1,6 +1,6 @@
-To move a box given a ratio pair and a spot;
-  To move a box given a fraction pair and a spot:
-  Get a difference between the box's left-top and the spot.
+To move an box given an ratio pair and an spot;
+  To move an box given an fraction pair and an spot:
+  Get an difference between the box's left-top and the spot.
   Put the difference into another difference.
   Scale the other difference given the fraction pair.
   Subtract the difference from the other difference.

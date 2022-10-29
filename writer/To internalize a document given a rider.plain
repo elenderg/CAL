@@ -1,4 +1,4 @@
-To internalize a document given a rider:
+To internalize an document given an rider:
   If the i/o error is not blank, exit.
   If the rider's token is not "ream", fail with "Invalid document - ""ream"" not found"; exit.
   Move the rider (document rules).

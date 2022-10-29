@@ -1,4 +1,4 @@
-To draw an ellipse with a border color and a fill color:
+To draw an ellipse with an border color and an fill color:
   If the pdf state's page flag is set, draw the ellipse with the border and the fill (pdf style); exit.
   Privatize the ellipse.
   Create the hpen of the current canvas given the border.

@@ -1,5 +1,5 @@
-To wait until we hit a key;
-  To wait for a key:
+To wait until we hit an key;
+  To wait for an key:
   Wait for the key to go down.
   Wait for the key to come up.
   Flush all events.

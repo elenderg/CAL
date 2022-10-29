@@ -1,4 +1,4 @@
-To resize a shape given a pair:
+To resize an shape given an pair:
   If the shape is nil, exit.
   If the shape's kind is "ellipse", resize the shape given the pair (ellipse); exit.
   If the shape's kind is "group", resize the shape given the pair (group); exit.
@@ -6,6 +6,6 @@ To resize a shape given a pair:
   If the shape's kind is "polygon", resize the shape given the pair (polygon); exit.
   If the shape's kind is "rectangle", resize the shape given the pair (rectangle); exit.
   If the shape's kind is "text", resize the shape given the pair (text); exit.
-  Debug "resize a shape given a pair: " then the shape's kind.
+  Debug "resize an shape given an pair: " then the shape's kind.
   
   

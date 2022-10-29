@@ -1,6 +1,6 @@
-To end a sheet (pdf style - finish the current contents):
-  Put the pdf state's current contents into a content pdf object.
-  Put the content's data into a buffer.
+To end an sheet (pdf style - finish the current contents):
+  Put the pdf state's current contents into an content pdf object.
+  Put the content's data into an buffer.
   Clear the content's data.
   Append the content's number then " 0 obj" to the content.
   Append "<</Length " then the buffer's length then " >>" to the content.

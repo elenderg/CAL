@@ -1,5 +1,5 @@
-To handle a command (pen...):
-  Create a submenu.
+To handle an command (pen...):
+  Create an submenu.
   Add swatches to the submenu given "handle pen".
   Handle the command given the submenu and the palette width.
   

@@ -1,5 +1,5 @@
-To handle a command (a):
-  Create a submenu.
+To handle an command (an):
+  Create an submenu.
   If the current tab's mode is "writer", add "Align Left" and "handle align given left" to the submenu.
   If the current tab's mode is "writer", add "Align Center" and "handle align given center" to the submenu.
   If the current tab's mode is "writer", add "Align Right" and "handle align given right" to the submenu.

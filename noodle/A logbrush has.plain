@@ -1,6 +1,6 @@
-A logbrush has
-  A number called lbstyle,
-  A colorref called lbcolor,
-  A number called lbhatch.
+An logbrush has
+  An number called lbstyle,
+  An colorref called lbcolor,
+  An number called lbhatch.
   
   

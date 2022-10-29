@@ -1,4 +1,4 @@
-To clear the screen to a color:
+To clear the screen to an color:
   Unmask everything.
   Draw the screen's box with the color and the color.
   Refresh the screen.

@@ -1,4 +1,4 @@
-To round a number down to the nearest multiple of another number:
+To round an number down to the nearest multiple of another number:
   Divide the number by the other number.
   Multiply the number by the other number.
   

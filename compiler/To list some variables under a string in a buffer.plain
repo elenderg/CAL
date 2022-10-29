@@ -1,4 +1,4 @@
-To list some variables under a string in a buffer:
+To list some variables under an string in an buffer:
   Append the string to the buffer.
   Advance the buffer (twice).
   If the variables are empty, exit.

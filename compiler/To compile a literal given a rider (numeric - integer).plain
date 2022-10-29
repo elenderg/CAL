@@ -1,6 +1,6 @@
-To compile a literal given a rider (numeric - integer):
+To compile an literal given an rider (numeric - integer):
   If the compiler's abort flag is set, exit.
-  Convert the rider's token to a number.
+  Convert the rider's token to an number.
   Convert the number to the literal's data.
   Move the rider (compiler rules).
   Put "number" into the literal's type name.

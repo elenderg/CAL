@@ -1,4 +1,4 @@
-To sort definitions given a source:
+To sort definitions given an source:
   If the source is nil, exit.
   Create some blocks given the source's text's rows.
   Scrub the blocks.

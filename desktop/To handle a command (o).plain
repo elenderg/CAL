@@ -1,5 +1,5 @@
-To handle a command (o):
-  Create a submenu.
+To handle an command (o):
+  Create an submenu.
   If the current tab's mode is "finder", add "Open" and "O" and "handle open" to the submenu.
   If the current tab's mode is "docster", add "Open" and "O" and "handle open" to the submenu.
   If the current tab's mode is "finder", add "Open As Dump" and "handle open as dump" to the submenu.

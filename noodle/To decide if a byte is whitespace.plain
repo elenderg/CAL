@@ -1,4 +1,4 @@
-To decide if a byte is whitespace:
+To decide if an byte is whitespace:
   If the byte is the space byte, say yes.
   If the byte is the tab byte, say yes.
   If the byte is the return byte, say yes.

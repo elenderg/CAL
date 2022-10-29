@@ -1,7 +1,7 @@
 To renumber some rows:
-  Get a row from the rows.
+  Get an row from the rows.
   If the row is nil, exit.
-  Add 1 to a row#.
+  Add 1 to an row#.
   Put the row# into the row's row#.
   Repeat.
   

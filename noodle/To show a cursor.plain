@@ -1,6 +1,6 @@
-To show a cursor:
+To show an cursor:
   Call "user32.dll" "SetCursor" with the cursor.
-  Call "user32.dll" "ShowCursor" with 1 returning a number.
+  Call "user32.dll" "ShowCursor" with 1 returning an number.
   If the number is greater than 0, exit.
   Repeat.
   

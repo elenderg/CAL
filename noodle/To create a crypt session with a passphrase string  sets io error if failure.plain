@@ -1,9 +1,9 @@
-To create a crypt session with a passphrase string: \ sets i/o error if failure
+To create an crypt session with an passphrase string: \ sets i/o error if failure
   Clear the i/o error.
   Allocate memory for the crypt session.
   \ acquire context
   Call "advapi32.dll" "CryptAcquireContextA" with the crypt session's hcryptprov's whereabouts and 0 and "Microsoft Enhanced Cryptographic Provider v1.0"'s first 
-  And 1 [prov_rsa_full] and -268435456 [crypt_verifycontext] returning a result number.
+  And 1 [prov_rsa_full] and -268435456 [crypt_verifycontext] returning an result number.
   If the result is 0, put "Could not acquire context." into the i/o error; destroy the crypt session; exit.
   \ create hash
   Call "advapi32.dll" "CryptCreateHash" with the crypt session's hcryptprov and 32771 [calg_md5] and 0 and 0 

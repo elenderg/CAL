@@ -1,10 +1,10 @@
-A pe section header is a record with
+An pe section header is an record with
   8 bytes called name,
-  A number called sizeinbytes,
-  A number called addressinmemory,
-  A number called sizeinfile,
-  A number called addressinfile,
+  An number called sizeinbytes,
+  An number called addressinmemory,
+  An number called sizeinfile,
+  An number called addressinfile,
   12 bytes called reserved,
-  A number called characteristics.
+  An number called characteristics.
   
   

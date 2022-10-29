@@ -1,5 +1,5 @@
-To decide if a spot is within some twips of another spot:
-  Put the twips and the twips into a grid.
+To decide if an spot is within some twips of another spot:
+  Put the twips and the twips into an grid.
   If the spot is within the grid of the other spot, say yes.
   Say no.
   

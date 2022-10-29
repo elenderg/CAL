@@ -1,9 +1,9 @@
-To read a file into a buffer:
+To read an file into an buffer:
   Clear the i/o error.
-  Call "kernel32.dll" "GetFileSize" with the file and nil returning a size.
+  Call "kernel32.dll" "GetFileSize" with the file and nil returning an size.
   Reassign the buffer's first given the size.
   Put the buffer's first plus the size minus 1 into the buffer's last.
-  Call "kernel32.dll" "ReadFile" with the file and the buffer's first and the size and a number's whereabouts and 0 returning a result number.
+  Call "kernel32.dll" "ReadFile" with the file and the buffer's first and the size and an number's whereabouts and 0 returning an result number.
   If the result number is 0, put "Error reading file." into the i/o error; exit.
   
   

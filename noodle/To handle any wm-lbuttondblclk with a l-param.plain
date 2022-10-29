@@ -1,4 +1,4 @@
-To handle any wm-lbuttondblclk with a l-param:
+To handle any wm-lbuttondblclk with an l-param:
   Create an event.
   Put "left double click" into the event's kind.
   If the alt key was down, set the event's alt flag.

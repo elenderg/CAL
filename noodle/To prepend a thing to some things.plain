@@ -1,4 +1,4 @@
-To prepend a thing to some things:
+To prepend an thing to some things:
   If the thing is nil, exit.
   Put the things' first into the thing's next.
   If the things is not empty, put the thing into the things' first's previous.

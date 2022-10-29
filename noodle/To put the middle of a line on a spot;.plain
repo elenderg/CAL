@@ -1,6 +1,6 @@
-To put the middle of a line on a spot;
-  To center a line on a spot:
-  Get a difference between the spot and the line's center.
+To put the middle of an line on an spot;
+  To center an line on an spot:
+  Get an difference between the spot and the line's center.
   Round the difference to the nearest multiple of the tpp.
   Move the line given the difference.
   

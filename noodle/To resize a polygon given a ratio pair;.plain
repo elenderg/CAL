@@ -1,9 +1,9 @@
-To resize a polygon given a ratio pair;
-  To resize a polygon given a fraction pair:
+To resize an polygon given an ratio pair;
+  To resize an polygon given an fraction pair:
   If the polygon is nil, exit.
-  Put the polygon's box into a box.
+  Put the polygon's box into an box.
   Loop.
-  Get a vertex from the polygon's vertices.
+  Get an vertex from the polygon's vertices.
   If the vertex is nil, exit.
   Subtract the box's left-top from the vertex's spot.
   Scale the vertex's spot given the fraction pair.

@@ -1,4 +1,4 @@
-To add a type to some types given a name and a plural name and a base name:
+To add an type to some types given an name and an plural name and an base name:
   Add the type to the types given the name and the plural name and the base name and nil.
   
   

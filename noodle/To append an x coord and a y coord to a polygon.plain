@@ -1,6 +1,6 @@
-To append an x coord and a y coord to a polygon:
+To append an x coord and an y coord to an polygon:
   If the polygon is nil, exit.
-  Create a vertex given the x and the y.
+  Create an vertex given the x and the y.
   Append the vertex to the polygon's vertices.
   
   

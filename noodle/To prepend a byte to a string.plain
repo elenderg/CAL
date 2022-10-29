@@ -1,5 +1,5 @@
-To prepend a byte to a string:
-  Put the string's length into a saved length.
+To prepend an byte to an string:
+  Put the string's length into an saved length.
   Reassign the string's first given the string's length plus 1.
   Copy bytes from the string's first to the string's first plus 1 for the saved length.
   Put the string's first plus the saved length into the string's last.

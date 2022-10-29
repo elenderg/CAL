@@ -1,6 +1,6 @@
-To compile an expression given a rider:
+To compile an expression given an rider:
   If the compiler's abort flag is set, exit.
-  Compile a term given the rider.
+  Compile an term given the rider.
   Put the term into the expression.
   Loop.
   If the compiler's abort flag is set, exit.

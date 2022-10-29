@@ -1,4 +1,4 @@
-To list a variable in a buffer:
+To list an variable in an buffer:
   If the variable is nil, exit.
   Append "/variable" to the buffer (with separator).
   Append the variable's kind to the buffer (with separator).
@@ -13,7 +13,7 @@ To list a variable in a buffer:
   Append the variable's reference flag to the buffer (with separator).
   Append the variable's redefinition target name to the buffer (with separator).
   Append the variable's literal to the buffer (with separator).
-  Convert the variable's data to a nibble string.
+  Convert the variable's data to an nibble string.
   Append the nibble string to the buffer (with separator).
   Advance the buffer.
   

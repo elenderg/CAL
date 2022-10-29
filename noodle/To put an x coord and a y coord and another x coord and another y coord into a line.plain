@@ -1,4 +1,4 @@
-To put an x coord and a y coord and another x coord and another y coord into a line:
+To put an x coord and an y coord and another x coord and another y coord into an line:
   Put the x into the line's start's x.
   Put the y into the line's start's y.
   Put the other x into the line's end's x.

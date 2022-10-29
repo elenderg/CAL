@@ -1,9 +1,9 @@
-To handle measure given a page:
+To handle measure given an page:
   If the page is being edited, end edit on the page.
   Ask "Measure Ratio?" with the page's measure.
   If the answer is blank, exit.
-  Convert the answer to a ratio.
-  If the ratio is 0, show error "That is not a valid measure."; exit.
+  Convert the answer to an ratio.
+  If the ratio is 0, show error "That is not an valid measure."; exit.
   Show the desktop with "Changing...".
   Remember the page.
   Reduce the ratio.

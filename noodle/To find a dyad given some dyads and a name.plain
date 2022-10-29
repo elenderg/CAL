@@ -1,4 +1,4 @@
-To find a dyad given some dyads and a name:
+To find an dyad given some dyads and an name:
   Void the dyad.
   Loop.
   Get the dyad from the dyads.

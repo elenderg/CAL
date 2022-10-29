@@ -1,8 +1,8 @@
-To save a node (source):
+To save an node (source):
   Clear the i/o error.
   If the node's source is not modified, exit.
   Remember the node's source's text with "save".
-  Convert the node's source to a buffer.
+  Convert the node's source to an buffer.
   Write the buffer to the node's path.
   If the i/o error is blank, clear the node's source's text's modified flag.
   

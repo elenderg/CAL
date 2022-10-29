@@ -1,4 +1,4 @@
-To move a text given some x twips and some y twips:
+To move an text given some x twips and some y twips:
   If the text is nil, exit.
   Move the text's box given the x twips and the y twips.
   

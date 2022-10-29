@@ -1,5 +1,5 @@
-To append a ratio to a buffer (with separator):
-  Convert the ratio to a string.
+To append an ratio to an buffer (with separator):
+  Convert the ratio to an string.
   Append the string to the buffer (with separator).
   
   

@@ -1,11 +1,11 @@
-A date/time has
-  A year number,
-  A month number,
-  A week day number,
-  A day number,
+An date/time has
+  An year number,
+  An month number,
+  An week day number,
+  An day number,
   An hour number,
-  A minute number,
-  A second number,
-  A millisecond number.
+  An minute number,
+  An second number,
+  An millisecond number.
   
   

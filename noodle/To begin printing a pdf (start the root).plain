@@ -1,5 +1,5 @@
-To begin printing a pdf (start the root):
-  Add a root pdf object given "root".
+To begin printing an pdf (start the root):
+  Add an root pdf object given "root".
   Put the root into the pdf state's root.
   Append the root's number then " 0 obj" to the root.
   Append "<<" to the root.

@@ -1,4 +1,4 @@
-To get a rise and a run given a heading: \ see Madhava's Numbers
+To get an rise and an run given an heading: \ see Madhava's Numbers
   Privatize the heading.
   Normalize the heading.
   Normalize the original heading.
@@ -36,7 +36,7 @@ To get a rise and a run given a heading: \ see Madhava's Numbers
   If the heading is 440, put 6593 in the run; put 7518 in the rise; break. \ 41.25 degrees
   If the heading is 460, put 6836 in the run; put 7299 in the rise; break. \ 43.125 degrees
   If the heading is 480, put 7071 in the run; put 7071 in the rise; break. \ 45 degrees = 8/64 of the way
-  Repeat. \ not really a repeat, just a label for the above breaks.
+  Repeat. \ not really an repeat, just an label for the above breaks.
   \ adjust for other eighths of the circle
   If the original heading is between 0 and 480, negate the rise; exit. \ 1st eighth (12:00 to 1:30)
   If the original heading is between 480 and 960, swap the run with the rise; negate the rise; exit. \ 2nd eighth (1:30 to 3:00)

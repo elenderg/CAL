@@ -1,4 +1,4 @@
-To round a pair to the nearest multiple of a number:
+To round an pair to the nearest multiple of an number:
   Round the pair's x to the nearest multiple of the number.
   Round the pair's y to the nearest multiple of the number.
   

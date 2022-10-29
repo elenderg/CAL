@@ -1,6 +1,6 @@
-To handle undo given a page:
+To handle undo given an page:
   If the page is being edited, handle undo given the page (editing); exit.
-  Put the current tab's node's document into a document.
+  Put the current tab's node's document into an document.
   If the document's page undos are empty, cluck; exit.
   Put the document's page undos' last into another page.
   Remove the other page from the document's page undos.

@@ -1,4 +1,4 @@
-To put a node's root node into another node:
+To put an node's root node into another node:
   Privatize the node.
   Loop.
   If the node is nil, break.

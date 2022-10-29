@@ -1,4 +1,4 @@
-To compile a directory (index the routines for utility use):
+To compile an directory (index the routines for utility use):
   If the compiler's abort flag is set, exit.
   Show status "Utilitizing...".
   Start the indexing utilities timer.

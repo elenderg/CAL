@@ -1,5 +1,5 @@
-To put a number on the stack:
-  Convert the number to a token.
+To put an number on the stack:
+  Convert the number to an token.
   Put the token on the stack.
   
   

@@ -1,4 +1,4 @@
-To move a rider (spell checking rules):
+To move an rider (spell checking rules):
   Skip any non-alphanumeric bytes in the rider's source.
   Position the rider's token on the rider's source.
   Loop.

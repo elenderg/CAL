@@ -1,4 +1,4 @@
-To handle border given a color:
+To handle border given an color:
   If the current tab's mode is "writer", handle border given the current tab's node's page and the color; exit.
   Cluck.
   

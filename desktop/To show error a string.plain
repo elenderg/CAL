@@ -1,9 +1,9 @@
-To show error a string:
+To show error an string:
   Create the dialog.
   Put "error" into the dialog's kind.
   Put the red color into the dialog's pen.
   Put the string into the dialog's prompt.
-  Add a button to the dialog given "M'kay".
+  Add an button to the dialog given "M'kay".
   Cluck.
   Handle the dialog.
   Destroy the dialog.

@@ -1,4 +1,4 @@
-To make a knob given a shape and a string and a fill color:
+To make an knob given an shape and an string and an fill color:
   If the shape is nil, clear the knob; exit.
   Put the string into the knob's kind.
   Put the fill into the knob's fill.

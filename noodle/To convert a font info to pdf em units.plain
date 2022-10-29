@@ -1,4 +1,4 @@
-To convert a font info to pdf em units:
+To convert an font info to pdf em units:
   If the font info is nil, exit.
   Convert the font info's internal leading to pdf em units given the font info's emsquare and the font info's font.
   Convert the font info's ascent to pdf em units given the font info's emsquare and the font info's font.

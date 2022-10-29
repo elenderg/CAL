@@ -1,4 +1,4 @@
-To decide if a rider is on any possessive (type 1 - single-quote, s, non-glom-byte):
+To decide if an rider is on any possessive (type 1 - single-quote, s, non-glom-byte):
   If the rider's source does not start with "'s", say no.
   Privatize the rider.
   Add 2 to the rider's source's first.

@@ -1,4 +1,4 @@
-To handle any wm-activate with a w-param (activate):
+To handle any wm-activate with an w-param (activate):
   Call "user32.dll" "SetFocus" with the main window.
   Call "user32.dll" "ClipCursor" with 0.
   \  seterrormode(sem_failcriticalerrors) \ keeps certain disk errors from appearing

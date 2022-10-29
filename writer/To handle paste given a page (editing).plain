@@ -1,4 +1,4 @@
-To handle paste given a page (editing):
+To handle paste given an page (editing):
   If there is not text on the windows clipboard, cluck; exit.
   Show status "Pasting...".
   Set the current tab's node's document's modified flag.

@@ -1,4 +1,4 @@
-To find a nodette given some nodettes and a designator:
+To find an nodette given some nodettes and an designator:
   Void the nodette.
   Loop.
   Get the nodette from the nodettes.

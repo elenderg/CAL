@@ -1,4 +1,4 @@
-To transmogrify a fragment (call indirect):
+To transmogrify an fragment (call indirect):
   Attach address loading code to the fragment's code given the fragment's variable. \ put address into edx
   Attach $FF12 to the fragment's code. \ call [edx]
   

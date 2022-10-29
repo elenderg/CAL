@@ -1,4 +1,4 @@
-To focus on a nodette in a node:
+To focus on an nodette in an node:
   If the node is nil, exit.
   If the nodette is nil, exit.
   Deselect the nodettes in the node.

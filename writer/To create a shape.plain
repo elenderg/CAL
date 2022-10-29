@@ -1,4 +1,4 @@
-To create a shape:
+To create an shape:
   Allocate memory for the shape.
   Put the black color into the shape's border.
   Put the clear color into the shape's fill.

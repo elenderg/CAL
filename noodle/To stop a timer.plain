@@ -1,4 +1,4 @@
-To stop a timer:
+To stop an timer:
   If the timer's count is 0, exit.
   Subtract 1 from the timer's count.  
   If the timer's count is not 0, exit.

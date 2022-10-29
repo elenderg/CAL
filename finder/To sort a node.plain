@@ -1,4 +1,4 @@
-To sort a node:
+To sort an node:
   If the node is nil, exit.
   Sort the node by extension.
   Sort the node by designator.

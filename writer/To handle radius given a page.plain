@@ -1,8 +1,8 @@
-To handle radius given a page:
+To handle radius given an page:
   If the page is being edited, end edit on the page.
   If nothing is selected on the page, cluck; exit.
-  Get a radius given the page.
-  Convert the radius / 1 inch to a ratio string.
+  Get an radius given the page.
+  Convert the radius / 1 inch to an ratio string.
   Ask "Radius (inches)?" with the ratio string.
   If the answer is blank, exit.
   If the answer is not any numeric literal, show error "Invalid radius."; exit.

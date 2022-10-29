@@ -1,4 +1,4 @@
-To initialize a pe header (data section):
+To initialize an pe header (data section):
   Copy bytes from "data  "'s first to the pe header's data section's name's whereabouts for 6.
   Put the data borough's length into the pe header's data section's sizeinbytes.
   Put the data borough's base into the pe header's data section's addressinmemory.

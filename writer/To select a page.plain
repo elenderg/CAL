@@ -1,4 +1,4 @@
-To select a page:
+To select an page:
   If the page is nil, exit.
   Set the page's selected flag.
   

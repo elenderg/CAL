@@ -1,4 +1,4 @@
-To draw a line with a color (pdf style):
+To draw an line with an color (pdf style):
   If the color is clear, exit.
   Output setcolor given the color and the clear color.
   Output moveto given the line's start.

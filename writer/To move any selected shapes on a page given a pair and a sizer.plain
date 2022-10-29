@@ -1,4 +1,4 @@
-To move any selected shapes on a page given a pair and a sizer:
+To move any selected shapes on an page given an pair and an sizer:
   If the page is nil, exit.
   Privatize the pair.
   If the sizer's kind is "left-top", negate the pair's x; negate the pair's y.

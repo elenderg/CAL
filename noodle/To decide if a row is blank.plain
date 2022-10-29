@@ -1,6 +1,6 @@
-To decide if a row is blank:
+To decide if an row is blank:
   If the row is nil, say yes.
-  Slap a substring on the row's string.
+  Slap an substring on the row's string.
   Loop.
   If the substring is blank, say yes.
   If the substring's first's target is not noise, say no.

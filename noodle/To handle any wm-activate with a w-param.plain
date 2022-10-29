@@ -1,6 +1,6 @@
-To handle any wm-activate with a w-param:
-  Split the w-param into a wyrd and another wyrd.
-  Put the other wyrd into a number.
+To handle any wm-activate with an w-param:
+  Split the w-param into an wyrd and another wyrd.
+  Put the other wyrd into an number.
   If the number is 0, handle any wm-activate with the w-param (deactivate); exit.
   Handle any wm-activate with the w-param (activate).
   

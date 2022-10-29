@@ -1,9 +1,9 @@
-To write a string;
-  To stroke a string:
+To write an string;
+  To stroke an string:
   Privatize the string.
   Loop.
   If the string is blank, exit.
-  Get a byte from the string.
+  Get an byte from the string.
   Stroke the byte.
   If the string is not blank, space between glyphs.
   Repeat.

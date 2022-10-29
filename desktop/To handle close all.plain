@@ -1,6 +1,6 @@
 To handle close all:
   Show status "Closing...".
-  Get a tab from the tabs (backwards).
+  Get an tab from the tabs (backwards).
   If the tab is nil, break.
   Switch to the tab.
   If the tab's node is modified, show the desktop.

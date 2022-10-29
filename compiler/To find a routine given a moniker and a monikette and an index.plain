@@ -1,4 +1,4 @@
-To find a routine given a moniker and a monikette and an index:
+To find an routine given an moniker and an monikette and an index:
   If the monikette is nil, exit.
   Void the routine.
   Privatize the moniker.
@@ -6,7 +6,7 @@ To find a routine given a moniker and a monikette and an index:
   Slap the monikette's current substring on the monikette's string.
   Loop.
   Append the monikette to the moniker (while bubbling).
-  Find a refer given the moniker and the index.
+  Find an refer given the moniker and the index.
   If the refer is not nil, put the refer's pointer into the routine.
   If the refer is not nil, find the routine given the moniker and the monikette's next and the index.
   If the routine is not nil, break.

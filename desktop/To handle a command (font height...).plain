@@ -1,5 +1,5 @@
-To handle a command (font height...):
-  Create a submenu.
+To handle an command (font height...):
+  Create an submenu.
   Add "1 Inch" and "handle font height given 1 inch" to the submenu.
   Add "1/2 Inch" and "handle font height given 1/2 inch" to the submenu.
   Add "1/3 Inch" and "handle font height given 1/3 inch" to the submenu.

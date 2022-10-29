@@ -1,4 +1,4 @@
-To read a console into a string:
+To read an console into an string:
   If the console is nil, clear the string; exit.
   Flush all events.
   Clear the console's reply.

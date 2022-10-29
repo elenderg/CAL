@@ -1,4 +1,4 @@
-To put a hue and a saturation and a lightness into a color:
+To put an hue and an saturation and an lightness into an color:
   Put the hue into the color's hue.
   If the color's hue is not -1, limit the color's hue to 0 and 3599. \ -1 is clear
   Put the saturation into the color's saturation.

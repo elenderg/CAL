@@ -1,4 +1,4 @@
-To externalize a box given a buffer and an indent:
+To externalize an box given an buffer and an indent:
   Externalize the box's left given the buffer and the indent.
   Externalize the box's top given the buffer and the indent.
   Externalize the box's right given the buffer and the indent.

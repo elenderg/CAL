@@ -6,7 +6,7 @@ To load some source files:
   If the item's kind is not "file", repeat.
   If the item's extension is not blank, repeat.
   If the item looks reamish, repeat.
-  Add a source file to the source files given the item's path.
+  Add an source file to the source files given the item's path.
   Load the source file.
   Repeat.
   

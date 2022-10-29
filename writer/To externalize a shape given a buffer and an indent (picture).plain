@@ -1,4 +1,4 @@
-To externalize a shape given a buffer and an indent (picture):
+To externalize an shape given an buffer and an indent (picture):
   Append the space byte to the buffer given the indent.
   Append "picture" to the buffer.
   Externalize the shape's border given the buffer and the indent.

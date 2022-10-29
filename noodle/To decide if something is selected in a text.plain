@@ -1,4 +1,4 @@
-To decide if something is selected in a text:
+To decide if something is selected in an text:
   If the text's anchor is the text's caret, say no.
   Say yes.
   

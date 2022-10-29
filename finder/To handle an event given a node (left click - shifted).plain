@@ -1,4 +1,4 @@
-To handle an event given a node (left click - shifted):
+To handle an event given an node (left click - shifted):
   Track the node given the event.
   
   

@@ -1,4 +1,4 @@
-To put a document's first selected page into a page:
+To put an document's first selected page into an page:
   Void the page.
   If the document is nil, exit.
   Loop.

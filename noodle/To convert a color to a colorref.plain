@@ -1,4 +1,4 @@
-To convert a color to a colorref:
+To convert an color to an colorref:
   If the color is clear, put 16777215 [$00FFFFFF] into the colorref; exit. \ clear pen becomes white
   Privatize the color.
   Scale the color's saturation given 240/1000.

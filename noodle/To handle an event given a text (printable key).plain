@@ -1,4 +1,4 @@
-To handle an event given a text (printable key):
+To handle an event given an text (printable key):
   Remember the text with "insert".
   Remove any selected bytes in the text.
   Insert the event's byte into the text.

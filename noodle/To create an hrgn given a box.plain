@@ -1,4 +1,4 @@
-To create an hrgn given a box:
+To create an hrgn given an box:
   Privatize the box.
   Add the tpp to the box's right-bottom.
   Call "gdi32.dll" "BeginPath" with the current canvas.

@@ -1,4 +1,4 @@
-To initialize a pe header (version information):
+To initialize an pe header (version information):
   Put 0 into the pe header's majorlinkerversion.
   Put 0 into the pe header's minorlinkerversion.
   Put 4 [$0004] into the pe header's osmajorversion.

@@ -1,4 +1,4 @@
-To convert an l-param to a key: \ assumes l-param from wm_char message
+To convert an l-param to an key: \ assumes l-param from wm_char message
   Put the l-param into the key.
   Shift the key right 16 bits.
   Bitwise and the key with 255.

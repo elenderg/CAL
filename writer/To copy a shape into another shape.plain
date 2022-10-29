@@ -1,4 +1,4 @@
-To copy a shape into another shape:
+To copy an shape into another shape:
   If the shape is nil, void the other shape; exit.
   Allocate memory for the other shape.
   Put the shape's kind into the other shape's kind.

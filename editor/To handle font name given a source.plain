@@ -1,4 +1,4 @@
-To handle font name given a source:
+To handle font name given an source:
   Ask "Name?" with the source's text's font's name.
   If the answer is blank, exit.
   Show the desktop.

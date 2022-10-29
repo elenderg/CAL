@@ -1,8 +1,8 @@
-To autoscroll a text given a spot and a flag:
+To autoscroll an text given an spot and an flag:
   If the text is nil, clear the flag; exit.
-  Put the text's font's height into a number.
-  Clear a difference.
-  Put the text's box into a box.
+  Put the text's font's height into an number.
+  Clear an difference.
+  Put the text's box into an box.
   Indent the box given the tpp.
   If the spot's y is less than the box's top, put the number into the difference's y.
   If the spot's y is greater than the box's bottom, put the number into the difference's y; negate the difference's y.

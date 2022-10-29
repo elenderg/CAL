@@ -1,4 +1,4 @@
-To find a free tab starting with a tab:
+To find an free tab starting with an tab:
   Privatize the tab.
   Loop.
   If the tab is nil, break.

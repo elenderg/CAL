@@ -1,4 +1,4 @@
-To move the caret down in a text:
+To move the caret down in an text:
   If the text is nil, exit.
   Add 1 to the text's caret row#.
   Limit the caret in the text.

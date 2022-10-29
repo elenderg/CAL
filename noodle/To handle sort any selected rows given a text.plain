@@ -1,4 +1,4 @@
-To handle sort any selected rows given a text:
+To handle sort any selected rows given an text:
   If the text is nil, exit.
   If nothing is selected in the text, exit.
   Remember the text with "sort selected rows".

@@ -1,4 +1,4 @@
-To draw a shape on a page (text - editing):
+To draw an shape on an page (text - editing):
   Draw the shape's text rect with the shape's border and the shape's fill.
   Save the current canvas.
   Mask outside the shape's text rect.

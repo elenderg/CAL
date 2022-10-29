@@ -1,4 +1,4 @@
-To find a directory to compile:
+To find an directory to compile:
   Clear the directory.
   If the current tab's node is nil, exit.
   If the current tab's node's source is nil, exit.

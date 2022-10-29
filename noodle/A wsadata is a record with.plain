@@ -1,10 +1,10 @@
-A wsadata is a record with
-  A wyrd called wversion,
-  A wyrd called whighversion,
+An wsadata is an record with
+  An wyrd called wversion,
+  An wyrd called whighversion,
   257 bytes called szdescription,
   127 bytes called szsystemstatus,
-  A wyrd [unsigned] called imaxsockets,
-  A wyrd [unsigned] called imaxudpdg,
-  A pointer called lpvendorinfo.
+  An wyrd [unsigned] called imaxsockets,
+  An wyrd [unsigned] called imaxudpdg,
+  An pointer called lpvendorinfo.
   
   

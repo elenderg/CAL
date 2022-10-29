@@ -1,4 +1,4 @@
-To handle indent given a source:
+To handle indent given an source:
   If nothing is selected in the source, cluck; exit.
   Handle indent given the source's text.
   Show the desktop with status.

@@ -1,5 +1,5 @@
-To resize an ellipse given a ratio pair;
-  To resize an ellipse given a fraction pair:
+To resize an ellipse given an ratio pair;
+  To resize an ellipse given an fraction pair:
   Resize the ellipse's box given the fraction pair.
   
   

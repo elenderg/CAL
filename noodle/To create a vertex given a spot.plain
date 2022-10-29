@@ -1,4 +1,4 @@
-To create a vertex given a spot:
+To create an vertex given an spot:
   Allocate memory for the vertex.
   Put the spot into the vertex's spot.
   

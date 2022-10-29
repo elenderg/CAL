@@ -1,4 +1,4 @@
-To duplicate a nodette in a node and in the file system given a path returning a new nodette:
+To duplicate an nodette in an node and in the file system given an path returning an new nodette:
   Void the new nodette.
   If the node is nil, exit.
   If the nodette is nil, exit.

@@ -1,7 +1,7 @@
-To find given a page and a flag (shapes):
+To find given an page and an flag (shapes):
   Clear the flag.
   If the page is nil, exit.
-  Put the page's shape refers' first into a shape refer.
+  Put the page's shape refers' first into an shape refer.
   If the page is not the find page, put 1 and 1 into the find anchor.
   If the page is the find page, find the shape refer given the page's shape refers and the find shape.
   Loop.

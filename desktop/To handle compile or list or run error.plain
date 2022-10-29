@@ -1,7 +1,7 @@
 To handle compile or list or run error:
   If the compiler's abort path is blank, show error the compiler's abort message; exit.
   Loop.
-  Get a tab from the tabs.
+  Get an tab from the tabs.
   If the tab is nil, show error the compiler's abort message; exit.
   If the compiler's abort path is not the tab's node's path, repeat.
   If the tab's node's source is nil, show error the compiler's abort message; exit.

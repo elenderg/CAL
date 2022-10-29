@@ -1,4 +1,4 @@
-To create a text:
+To create an text:
   Allocate memory for the text.
   Put the black color into the text's pen.
   Put the default font into the text's font.

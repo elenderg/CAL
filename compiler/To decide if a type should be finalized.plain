@@ -1,4 +1,4 @@
-To decide if a type should be finalized:
+To decide if an type should be finalized:
   If the type is nil, say no.
   If the type can be reduced to "substring", say no.
   If the type can be reduced to "string", say yes.

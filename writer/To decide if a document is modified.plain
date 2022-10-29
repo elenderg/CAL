@@ -1,4 +1,4 @@
-To decide if a document is modified:
+To decide if an document is modified:
   If the document is nil, say no.
   If the document's read-only flag is set, say no.
   If the document's modified flag is set, say yes.

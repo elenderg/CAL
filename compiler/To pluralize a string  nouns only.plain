@@ -1,4 +1,4 @@
-To pluralize a string: \ nouns only
+To pluralize an string: \ nouns only
   If the string is "alumnus", put "alumni" into the string; exit.
   If the string is "auto", put "autos" into the string; exit.
   If the string is "cello", put "cellos" into the string; exit.

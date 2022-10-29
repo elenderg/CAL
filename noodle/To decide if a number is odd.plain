@@ -1,4 +1,4 @@
-To decide if a number is odd:
+To decide if an number is odd:
   Privatize the number.
   Bitwise and the number with 1.
   If the number is 0, say no.

@@ -1,5 +1,5 @@
-To remove the first byte from a string:
-  Slap a substring on the first byte of the string.
+To remove the first byte from an string:
+  Slap an substring on the first byte of the string.
   Remove bytes from the string given the substring.
   
   

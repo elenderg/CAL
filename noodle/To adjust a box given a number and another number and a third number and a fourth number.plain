@@ -1,4 +1,4 @@
-To adjust a box given a number and another number and a third number and a fourth number:
+To adjust an box given an number and another number and an third number and an fourth number:
   Add the number to the box's left.
   Add the other number to the box's top.
   Add the third number to the box's right.

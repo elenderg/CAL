@@ -1,4 +1,4 @@
-To handle an event given a text (right-arrow key):
+To handle an event given an text (right-arrow key):
   If the text is nil, exit.
   If the event is modified, jump the caret right in the text.
   If the event is not modified, move the caret right in the text.

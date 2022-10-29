@@ -1,4 +1,4 @@
-To find a shape given some shapes and a spot:
+To find an shape given some shapes and an spot:
   Get the shape from the shapes (backwards).
   If the shape is nil, exit.
   If the spot is in the shape, exit.

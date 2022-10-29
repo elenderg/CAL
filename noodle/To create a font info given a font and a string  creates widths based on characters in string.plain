@@ -1,4 +1,4 @@
-To create a font info given a font and a string: \ creates widths based on characters in string
+To create an font info given an font and an string: \ creates widths based on characters in string
   Create the font info given the font (basic data).
   Create the font info's font widths given the font and the string.
   

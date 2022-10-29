@@ -1,4 +1,4 @@
-To output a string:
+To output an string:
   Append the string to the pdf state's current contents.
   
   

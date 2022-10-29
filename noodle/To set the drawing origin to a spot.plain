@@ -1,5 +1,5 @@
-To set the drawing origin to a spot:
-  Call "gdi32.dll" "GetDeviceCaps" with the current canvas and 112 [physicaloffsetx] returning a pair's x.
+To set the drawing origin to an spot:
+  Call "gdi32.dll" "GetDeviceCaps" with the current canvas and 112 [physicaloffsetx] returning an pair's x.
   Call "gdi32.dll" "GetDeviceCaps" with the current canvas and 113 [physicaloffsety] returning the pair's y.
   Negate the pair.
   If the current canvas is not the printer canvas, clear the pair.

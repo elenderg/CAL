@@ -1,4 +1,4 @@
-To deselect the pages in a document:
+To deselect the pages in an document:
   If the document is nil, exit.
   Deselect the document's pages.
   Void the document's caret.

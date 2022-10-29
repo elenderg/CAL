@@ -1,4 +1,4 @@
-To find a choice given a spot:
+To find an choice given an spot:
   Start with nothing in the choice.
   Loop.
   Get the [first/next] choice from the choices.

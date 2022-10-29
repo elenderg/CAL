@@ -1,4 +1,4 @@
-To remove the last two bytes from a string:
+To remove the last two bytes from an string:
   Remove trailing bytes from the string given 2.
   
   

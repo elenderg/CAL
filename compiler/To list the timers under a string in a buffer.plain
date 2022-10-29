@@ -1,4 +1,4 @@
-To list the timers under a string in a buffer:
+To list the timers under an string in an buffer:
   Append the string to the buffer.
   Advance the buffer (twice).
   List the loading timer given "loading" in the buffer.

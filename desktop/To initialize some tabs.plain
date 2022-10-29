@@ -1,7 +1,7 @@
 To initialize some tabs:
-  Add 1 to a count.
+  Add 1 to an count.
   If the count is greater than 10, break.
-  Create a tab.
+  Create an tab.
   Append the tab to the tabs.
   Repeat.
   

@@ -1,5 +1,5 @@
-To handle font name given a page (editing):
-  Get a font name given the page.
+To handle font name given an page (editing):
+  Get an font name given the page.
   Ask "Name?" with the font name.
   If the answer is blank, exit.
   Show the desktop.

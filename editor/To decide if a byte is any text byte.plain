@@ -1,4 +1,4 @@
-To decide if a byte is any text byte:
+To decide if an byte is any text byte:
   If the byte is printable, say yes.
   If the byte is the tab byte, say yes.
   If the byte is the linefeed byte, say yes.

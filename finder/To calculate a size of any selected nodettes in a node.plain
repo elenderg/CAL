@@ -1,10 +1,10 @@
-To calculate a size of any selected nodettes in a node:
+To calculate an size of any selected nodettes in an node:
   If the node is nil, put 0 into the size; exit.
   Put 0 into the size.
-  Put 0 into a current count.
-  Put the node's selected nodette count into a total count.
+  Put 0 into an current count.
+  Put the node's selected nodette count into an total count.
   Loop.
-  Get a nodette from the node's nodettes.
+  Get an nodette from the node's nodettes.
   If the nodette is nil, exit.
   If the nodette is not selected, repeat.
   Add 1 to the current count.

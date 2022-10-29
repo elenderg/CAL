@@ -1,9 +1,9 @@
 To pick some twips between some min twips and some other twips; \ are all these necessary? ***
-  To pick a number between some min twips and some other twips;
-  To pick a number between a min number and a max number;
-  To pick a number from a min number to a max number;
-  To set a number to something between another number and a third number;
-  To pick a random number between a min number and a max number:
+  To pick an number between some min twips and some other twips;
+  To pick an number between an min number and an max number;
+  To pick an number from an min number to an max number;
+  To set an number to something between another number and an third number;
+  To pick an random number between an min number and an max number:
   Put the seed's whereabouts into eax.
   \ put address of randseed into ecx
   Intel $8BC8. \ mov ecx,eax

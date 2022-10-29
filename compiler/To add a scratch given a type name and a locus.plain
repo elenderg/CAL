@@ -1,4 +1,4 @@
-To add a scratch given a type name and a locus:
+To add an scratch given an type name and an locus:
   If the current routine is nil, void the scratch; exit.
   Add the scratch to the current routine's locals given "scratch" and the locus.
   Generate the scratch's name given "~S".

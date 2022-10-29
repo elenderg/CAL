@@ -1,7 +1,7 @@
-To insert a string into a text:
+To insert an string into an text:
   If the text is nil, exit.
-  Get a row given the text's caret row# and the text.
-  Put the row's string's length minus the text's caret column# into a number.
+  Get an row given the text's caret row# and the text.
+  Put the row's string's length minus the text's caret column# into an number.
   Put the row's string into another string.
   Insert the string into the other string before the text's caret column#.
   Convert the other string to some rows.

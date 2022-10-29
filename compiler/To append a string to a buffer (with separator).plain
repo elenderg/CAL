@@ -1,4 +1,4 @@
-To append a string to a buffer (with separator):
+To append an string to an buffer (with separator):
   Append the string to the buffer.
   Append "/" to the buffer.
   

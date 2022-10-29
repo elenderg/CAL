@@ -1,4 +1,4 @@
-To draw a document:
+To draw an document:
   If the document is nil, exit.
   Mask only outside the document's box.
   Draw the document's box with the desktop color and the desktop color.

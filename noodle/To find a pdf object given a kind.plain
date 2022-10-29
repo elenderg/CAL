@@ -1,4 +1,4 @@
-To find a pdf object given a kind:
+To find an pdf object given an kind:
   Void the pdf object.
   Loop.
   Get the pdf object given the pdf state's objects.

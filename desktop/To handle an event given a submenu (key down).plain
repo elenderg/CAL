@@ -1,4 +1,4 @@
-To handle an event given a submenu (key down):
+To handle an event given an submenu (key down):
   If the event's key is the escape key, relinquish control.
   
   

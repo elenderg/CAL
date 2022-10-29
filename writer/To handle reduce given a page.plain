@@ -1,4 +1,4 @@
-To handle reduce given a page:
+To handle reduce given an page:
   If the current tab's node's document's scale is 1/2, cluck; exit.
   Remember the page.
   Divide the current tab's node's document's scale by 2.

@@ -1,4 +1,4 @@
-To put a page's yank into a grid:
+To put an page's yank into an grid:
   If the page is nil, clear the grid; exit.
   If the current tab is nil, clear the grid; exit.
   If the current tab's node is nil, clear the grid; exit.

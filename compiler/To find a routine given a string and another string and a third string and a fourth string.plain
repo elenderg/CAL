@@ -1,8 +1,8 @@
-To find a routine given a string and another string and a third string and a fourth string:
-  Add a monikette to some monikettes given the string.
+To find an routine given an string and another string and an third string and an fourth string:
+  Add an monikette to some monikettes given the string.
   Add another monikette to the monikettes given the other string.
-  Add a third monikette to the monikettes given the third string.
-  Add a fourth monikette to the monikettes given the fourth string.
+  Add an third monikette to the monikettes given the third string.
+  Add an fourth monikette to the monikettes given the fourth string.
   Find the routine given the monikettes.
   Destroy the monikettes.
   

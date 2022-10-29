@@ -1,4 +1,4 @@
-To draw a tab:
+To draw an tab:
   If the tab is nil, exit.
   Mask only outside the tab's box.
   Draw the tab's box with the desktop color and the desktop color and 1/8 inch (rounding the bottom).

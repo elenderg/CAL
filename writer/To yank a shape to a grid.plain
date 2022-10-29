@@ -1,7 +1,7 @@
-To yank a shape to a grid:
+To yank an shape to an grid:
   If the shape is nil, exit.
-  Put the shape's left-top into a spot.
+  Put the shape's left-top into an spot.
   Round the spot to the grid.
-  Get a difference between the spot and the shape's left-top.
+  Get an difference between the spot and the shape's left-top.
   Move the shape given the difference.
   

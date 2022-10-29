@@ -1,11 +1,11 @@
-To create a gpbitmap given a buffer:
+To create an gpbitmap given an buffer:
   Clear the i/o error.
-  Call "kernel32.dll" "GlobalAlloc" with 2 [gmem_moveable] and the buffer's length returning a handle.
-  Call "kernel32.dll" "GlobalLock" with the handle returning a pointer.
+  Call "kernel32.dll" "GlobalAlloc" with 2 [gmem_moveable] and the buffer's length returning an handle.
+  Call "kernel32.dll" "GlobalLock" with the handle returning an pointer.
   Copy bytes from the buffer's first to the pointer for the buffer's length.
   Call "kernel32.dll" "GlobalUnlock" with the handle.
   Call "ole32.dll" "CreateStreamOnHGlobal" with the handle and 1 [true] and an istream's whereabouts.
-  Call "gdiplus.dll" "GdipCreateBitmapFromStream" with the istream and the gpbitmap's whereabouts returning a number.
+  Call "gdiplus.dll" "GdipCreateBitmapFromStream" with the istream and the gpbitmap's whereabouts returning an number.
   If the number is not 0, put "I don't know how to process this kind of picture." into the i/o error; void the gpbitmap.
   Call the istream's vtable's release with the istream.
   

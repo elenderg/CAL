@@ -1,4 +1,4 @@
-To internalize a spot given a rider:
+To internalize an spot given an rider:
   If the i/o error is not blank, exit.
   Internalize the spot's x given the rider.
   Internalize the spot's y given the rider.

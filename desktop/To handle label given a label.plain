@@ -1,4 +1,4 @@
-To handle label given a label:
+To handle label given an label:
   If the current tab's mode is "writer", handle label given the current tab's node's page and the label; exit.
   Cluck.
   

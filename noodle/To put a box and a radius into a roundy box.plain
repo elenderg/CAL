@@ -1,4 +1,4 @@
-To put a box and a radius into a roundy box:
+To put an box and an radius into an roundy box:
   Put the box's left into the roundy box's left.
   Put the box's top into the roundy box's top.
   Put the box's right into the roundy box's right.

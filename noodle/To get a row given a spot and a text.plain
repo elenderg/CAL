@@ -1,8 +1,8 @@
-To get a row given a spot and a text:
+To get an row given an spot and an text:
   If the text is nil, void the row; exit.
-  Put the spot's y into a y coord.
+  Put the spot's y into an y coord.
   Limit the y to the text's top and the text's bottom.
-  Put the y minus the text's globalized origin's y divided by the text's row height plus 1 into a row#.
+  Put the y minus the text's globalized origin's y divided by the text's row height plus 1 into an row#.
   Limit the row# to 1 and the text's row count.
   Get the row given the row# and the text.
   

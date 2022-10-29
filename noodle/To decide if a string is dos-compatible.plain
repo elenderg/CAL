@@ -1,7 +1,7 @@
-To decide if a string is dos-compatible:
+To decide if an string is dos-compatible:
   If the string is blank, say no.
   If the string's first's target is the period byte, say no.
-  Slap a substring on the string.
+  Slap an substring on the string.
   Loop.
   If the substring is blank, say yes.
   If the substring's first's target is the slash byte, say no.

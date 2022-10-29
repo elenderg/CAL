@@ -1,4 +1,4 @@
-To handle an event given a page and a shape and a vertex (left double click):
+To handle an event given an page and an shape and an vertex (left double click):
   If the shape's polygon's vertices' count is 2, cluck; exit.
   Remember the page.
   Reset the superduper given the page.

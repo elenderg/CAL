@@ -1,4 +1,4 @@
-To put a wyrd into a big-endian unsigned wyrd:
+To put an wyrd into an big-endian unsigned wyrd:
   Intel $8B8508000000. \ mov eax,[ebp+8] \ the wyrd
   Intel $668B00. \ mov ax,word ptr [eax]
   Intel $86E0. \ xchg al,ah

@@ -1,4 +1,4 @@
-To handle an event given a node (right click):
+To handle an event given an node (right click):
   If the event's spot is not in the pad, exit.
   If the node is empty, exit.
   Show the hand cursor.

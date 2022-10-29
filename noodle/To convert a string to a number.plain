@@ -1,6 +1,6 @@
-To convert a string to a number:
+To convert an string to an number:
   Put 0 into the number.
-  Slap a substring on the string.
+  Slap an substring on the string.
   If the substring is blank, exit.
   If the substring's first's target is any sign, add 1 to the substring's first.
   Loop.

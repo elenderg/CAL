@@ -1,4 +1,4 @@
-To list a source file in a buffer:
+To list an source file in an buffer:
   If the source file is nil, exit.
   Append "/source file" to the buffer (with separator).
   Append the source file's path to the buffer (with separator).

@@ -1,4 +1,4 @@
-To find a button given a spot:
+To find an button given an spot:
   Void the button.
   If the dialog is nil, exit.
   Loop.

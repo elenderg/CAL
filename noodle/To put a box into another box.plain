@@ -1,4 +1,4 @@
-To put a box into another box:
+To put an box into another box:
   Put the box's left into the other box's left.
   Put the box's top into the other box's top.
   Put the box's right into the other box's right.

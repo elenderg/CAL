@@ -1,11 +1,11 @@
-To draw a string at a spot with a color and a font (pdf style):
+To draw an string at an spot with an color and an font (pdf style):
   If the string is blank, exit.
   Privatize the spot.  
   Include the font in the current pdf.
   Include the font in the pdf state's current page.
-  Find a definition pdf object given the font's name and the pdf state's font index.
+  Find an definition pdf object given the font's name and the pdf state's font index.
   If the definition is nil, exit. \ error
-  Create a font info given the font and the string.
+  Create an font info given the font and the string.
   Output the pdf border given the color.
   Output the pdf fill given the color.
   Output "BT".
@@ -16,7 +16,7 @@ To draw a string at a spot with a color and a font (pdf style):
   Output "Td".
   Output "[" without advancing.
   Convert the font info to pdf em units.
-  Convert the string and the font info and the definition's font info into a buffer for pdf output.
+  Convert the string and the font info and the definition's font info into an buffer for pdf output.
   Output the buffer without advancing.
   Output "]" without advancing.
   Output " TJ".

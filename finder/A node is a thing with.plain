@@ -1,13 +1,13 @@
-A node is a thing with
-  a parent node (reference),
-  a box,
+An node is an thing with
+  an parent node (reference),
+  an box,
   an origin,
-  a node selection called selection,
-  a kind,
-  a path, a directory, a designator, a designator called designator w/o backslash, an extension,
-  a selected flag, a previously selected flag,
+  an node selection called selection,
+  an kind,
+  an path, an directory, an designator, an designator called designator w/o backslash, an extension,
+  an selected flag, an previously selected flag,
   some nodettes,
-  a source, or 
-  a document and a page (reference).
+  an source, or 
+  an document and an page (reference).
   
   

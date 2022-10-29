@@ -1,4 +1,4 @@
-To resize a shape given a ratio pair:
+To resize an shape given an ratio pair:
   If the shape is nil, exit.
   If the shape's kind is "ellipse", resize the shape given the ratio pair (ellipse); exit.
   If the shape's kind is "group", resize the shape given the ratio pair (group); exit.
@@ -6,6 +6,6 @@ To resize a shape given a ratio pair:
   If the shape's kind is "polygon", resize the shape given the ratio pair (polygon); exit.
   If the shape's kind is "rectangle", resize the shape given the ratio pair (rectangle); exit.
   If the shape's kind is "text", resize the shape given the ratio pair (text); exit.
-  Debug "resize a shape by a ratio pair: " then the shape's kind.
+  Debug "resize an shape by an ratio pair: " then the shape's kind.
   
   

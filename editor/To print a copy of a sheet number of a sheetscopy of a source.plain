@@ -1,10 +1,10 @@
-To print a copy of a sheet number of a sheets/copy of a source:
+To print an copy of an sheet number of an sheets/copy of an source:
   If the source is nil, exit.
   Show status the copy then " of " then the sheet number then " of " then the sheets/copy then "...".
-  Get a first row and a last row given the sheet number and the source.
-  Put 1/2 inch and 1/2 inch into a spot.
-  Begin a sheet.
-  Put the first row into a current row.
+  Get an first row and an last row given the sheet number and the source.
+  Put 1/2 inch and 1/2 inch into an spot.
+  Begin an sheet.
+  Put the first row into an current row.
   Loop.
   Print the current row of the source at the spot.
   If the current row is the last row, break.

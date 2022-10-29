@@ -1,4 +1,4 @@
-To handle an event given a node (key down - backspace key):
+To handle an event given an node (key down - backspace key):
   Handle the event given the node (key down - delete key).
   
   

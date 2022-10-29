@@ -1,4 +1,4 @@
-To handle an event given a document (right click):
+To handle an event given an document (right click):
   If the event's spot is not in the document, exit.
   If the document is empty, exit.
   Show the hand cursor.

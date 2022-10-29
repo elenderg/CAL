@@ -1,11 +1,11 @@
-To find a button given a key:
+To find an button given an key:
   Void the button.
   If the dialog is nil, exit.
   Loop.
   Get the button from the dialog's buttons.
   If the button is nil, exit.
   If the button's name is blank, repeat.
-  Put the button's name's first's target into a byte.
+  Put the button's name's first's target into an byte.
   Uppercase the byte.
   If the byte is the key, exit.
   Repeat.

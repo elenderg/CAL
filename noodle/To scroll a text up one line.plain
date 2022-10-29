@@ -1,7 +1,7 @@
-To scroll a text up one line:
+To scroll an text up one line:
   If the text is nil, exit.
   If the text's vertical scroll flag is not set, exit.
-  Put the text's row height into a difference's y.
+  Put the text's row height into an difference's y.
   Scroll the text given the difference.
   
   

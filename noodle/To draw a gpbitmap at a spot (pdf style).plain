@@ -1,11 +1,11 @@
-To draw a gpbitmap at a spot (pdf style):
+To draw an gpbitmap at an spot (pdf style):
   If the gpbitmap is nil, exit.
   \ add xobject
   Add an xobject pdf object given "image object".
-  Put "I" then the xobject's number into a name.
+  Put "I" then the xobject's number into an name.
   \  add to image resources in current page
-  Put "/" then the name then " " then the xobject's number then " 0 R" into a string.
-  Create a new string thing given the string.
+  Put "/" then the name then " " then the xobject's number then " 0 R" into an string.
+  Create an new string thing given the string.
   Append the new string thing to the pdf state's current page's image strings.
   \ finish setting up xobject
   Append the xobject's number then " 0 obj" to the xobject.
@@ -16,8 +16,8 @@ To draw a gpbitmap at a spot (pdf style):
   Append "/Width " then the gpbitmap's width to the xobject.
   Append "/Height " then the gpbitmap's height to the xobject.
   Append "/BitsPerComponent 8" to the xobject.
-  Convert the gpbitmap to a buffer (pdf style).
-  Convert the buffer to a nibble string.
+  Convert the gpbitmap to an buffer (pdf style).
+  Convert the buffer to an nibble string.
   Append "/Filter /ASCIIHexDecode" to the xobject.
   Append "/Length " then the nibble string's length to the xobject.
   Append ">>" to the xobject.
@@ -26,10 +26,10 @@ To draw a gpbitmap at a spot (pdf style):
   Append "endstream" to the xobject.
   Append "endobj" to the xobject.
   \ draw the image in the current contents
-  Put the gpbitmap's width times the tpp into a width.
-  Put the gpbitmap's height times the tpp into a height.
+  Put the gpbitmap's width times the tpp into an width.
+  Put the gpbitmap's height times the tpp into an height.
   Put the spot's x into an x number.
-  Put the pdf state's current height minus the spot's y minus the height into a y number.
+  Put the pdf state's current height minus the spot's y minus the height into an y number.
   Output "q".
   Output the width then " 0 0 " then the height then " " then the x then " " then the y then " cm".
   Output "/" then the name then " Do".

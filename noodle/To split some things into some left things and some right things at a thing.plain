@@ -1,4 +1,4 @@
-To split some things into some left things and some right things at a thing:
+To split some things into some left things and some right things at an thing:
   Clear the left things.
   Clear the right things.
   If the thing is nil, swap the things with the left things; exit.

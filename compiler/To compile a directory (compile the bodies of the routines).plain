@@ -1,4 +1,4 @@
-To compile a directory (compile the bodies of the routines):
+To compile an directory (compile the bodies of the routines):
   If the compiler's abort flag is set, exit.
   Show status "Compiling...".
   Start the compiling routine bodies timer.

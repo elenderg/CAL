@@ -1,6 +1,6 @@
-To blurt a variable into a buffer:
+To blurt an variable into an buffer:
   If the variable's compiled flag is not set, exit.
-  If the variable's type can be reduced to "string", blurt the variable into the buffer (as a string); exit.
+  If the variable's type can be reduced to "string", blurt the variable into the buffer (as an string); exit.
   Put the variable's address minus the image base into an address.
   Blurt the variable's data into the buffer at the address.
   

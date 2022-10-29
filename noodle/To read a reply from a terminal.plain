@@ -1,8 +1,8 @@
-To read a reply from a terminal:
+To read an reply from an terminal:
   If the terminal is nil, clear the reply; exit.
   Flush all events.
   Clear the terminal's reply.
-  Add a quora to the terminal.
+  Add an quora to the terminal.
   Put "> " into the quora's string.
   Put the terminal's input color into the quora's color.
   Show the terminal.

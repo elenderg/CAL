@@ -1,4 +1,4 @@
-To put a gprect into another gprect:
+To put an gprect into another gprect:
   Put the gprect's x into the other gprect's x.
   Put the gprect's y into the other gprect's y.
   Put the gprect's width into the other gprect's width.

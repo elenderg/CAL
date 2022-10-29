@@ -1,4 +1,4 @@
-To put a polygon's height into a height:
+To put an polygon's height into an height:
   If the polygon is nil, clear the height; exit.
   Put the polygon's box's height into the height.
   

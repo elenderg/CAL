@@ -1,4 +1,4 @@
-To decide if a difference is within a grid:
+To decide if an difference is within an grid:
   Privatize the difference.
   De-sign the difference.
   If the difference's x is greater than or equal to the grid's x, say no.

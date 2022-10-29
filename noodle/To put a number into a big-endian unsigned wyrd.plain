@@ -1,5 +1,5 @@
-To put a number into a big-endian unsigned wyrd:
-  Put the number into a wyrd.
+To put an number into an big-endian unsigned wyrd:
+  Put the number into an wyrd.
   Put the wyrd into the big-endian unsigned wyrd.
   
   

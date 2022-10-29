@@ -1,5 +1,5 @@
 To draw some buttons:
-  Get a button from the buttons.
+  Get an button from the buttons.
   If the button is nil, exit.
   Draw the button.
   Repeat.

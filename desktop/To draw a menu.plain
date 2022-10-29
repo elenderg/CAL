@@ -1,4 +1,4 @@
-To draw a menu:
+To draw an menu:
   If the menu is nil, exit.
   Draw the menu's commands.
   

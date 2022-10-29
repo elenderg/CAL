@@ -1,8 +1,8 @@
-To find a routine given a string and a type and another string and another type:
-  Add a monikette to some monikettes given the string.
+To find an routine given an string and an type and another string and another type:
+  Add an monikette to some monikettes given the string.
   Add another monikette to the monikettes given the type.
-  Add a third monikette to the monikettes given the other string.
-  Add a fourth monikette to the monikettes given the other type.
+  Add an third monikette to the monikettes given the other string.
+  Add an fourth monikette to the monikettes given the other type.
   Find the routine given the monikettes.
   Destroy the monikettes.
   

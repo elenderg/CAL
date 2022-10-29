@@ -1,4 +1,4 @@
-To smooth a shape:
+To smooth an shape:
   If the shape is nil, exit.
   If the shape's kind is "group", smooth the shape's shapes; exit.
   If the shape's kind is not "polygon", exit.

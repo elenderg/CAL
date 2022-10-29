@@ -1,4 +1,4 @@
-To compile a literal given a rider (pointer):
+To compile an literal given an rider (pointer):
   If the compiler's abort flag is set, exit.
   Convert nil to the literal's data.
   Move the rider (compiler rules).

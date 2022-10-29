@@ -1,4 +1,4 @@
-To insert a spot into a polygon after a vertex:
+To insert an spot into an polygon after an vertex:
   If the polygon is nil, exit.
   Create another vertex given the spot.
   Insert the other vertex into the polygon's vertices after the vertex.

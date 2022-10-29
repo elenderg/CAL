@@ -1,4 +1,4 @@
-To draw a string in a box over a number with a color and a font and an alignment:
+To draw an string in an box over an number with an color and an font and an alignment:
   Privatize the box.
   If the alignment is "left", add the number to the box's left.
   If the alignment is "right", subtract the number from the box's right.

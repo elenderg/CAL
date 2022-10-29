@@ -1,4 +1,4 @@
-To convert a colorref to a rgb:
+To convert an colorref to an rgb:
   Privatize the colorref.
   Shift the colorref right 0 bits.
   Put the colorref into the rgb's red byte.

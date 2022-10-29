@@ -1,4 +1,4 @@
-To handle ungroup given a page:
+To handle ungroup given an page:
   If the page is being edited, end edit on the page.
   If nothing is selected on the page, cluck; exit.
   Remember the page.

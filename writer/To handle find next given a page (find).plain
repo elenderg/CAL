@@ -1,6 +1,6 @@
-To handle find next given a page (find):
+To handle find next given an page (find):
   Show status "Finding...".
-  Find next given the page and a flag.
+  Find next given the page and an flag.
   If the flag is set, show the desktop with "Found"; exit.
   Cluck.
   Show the desktop with "Not Found".

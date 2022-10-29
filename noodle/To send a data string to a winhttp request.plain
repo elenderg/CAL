@@ -1,4 +1,4 @@
-To send a data string to a winhttp request:
+To send an data string to an winhttp request:
   If the winhttp request is nil, exit.
   Call "winhttp.dll" "WinHttpSendRequest"
   With the winhttp request's request
@@ -8,7 +8,7 @@ To send a data string to a winhttp request:
   And the data's length
   And the data's length
   And 0
-  Returning a result number.
+  Returning an result number.
   If the result is 0, put "Could not send request." into the i/o error; exit.
   
   

@@ -1,4 +1,4 @@
-To decide if a variable is duplicated in some variables:
+To decide if an variable is duplicated in some variables:
   Get another variable from the variables.
   If the other variable is nil, say no.
   If the other variable's name is blank, repeat.

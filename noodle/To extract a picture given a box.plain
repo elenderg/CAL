@@ -1,9 +1,9 @@
-To extract a picture given a box:
-  Put the box's width divided by the tpp into a width.
-  Put the box's height divided by the tpp into a height.
-  Call "gdiplus.dll" "GdipCreateBitmapFromScan0" with the width and the height and 0 and 137224 [pixelformat24bpprgb] and 0 and a gpbitmap's whereabouts.
-  Call "gdiplus.dll" "GdipGetImageGraphicsContext" with the gpbitmap and a gpgraphic's whereabouts.
-  Call "gdiplus.dll" "GdipGetDC" with the gpgraphic and a bitmap canvas' whereabouts.
+To extract an picture given an box:
+  Put the box's width divided by the tpp into an width.
+  Put the box's height divided by the tpp into an height.
+  Call "gdiplus.dll" "GdipCreateBitmapFromScan0" with the width and the height and 0 and 137224 [pixelformat24bpprgb] and 0 and an gpbitmap's whereabouts.
+  Call "gdiplus.dll" "GdipGetImageGraphicsContext" with the gpbitmap and an gpgraphic's whereabouts.
+  Call "gdiplus.dll" "GdipGetDC" with the gpgraphic and an bitmap canvas' whereabouts.
   Normalize the bitmap canvas.
   Call "gdi32.dll" "BitBlt" with the bitmap canvas and 0 and 0 and the box's width and the box's height
   And the current canvas and the box's left and the box's top and 13369376 [srccopy].

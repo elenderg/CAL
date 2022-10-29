@@ -1,4 +1,4 @@
-To append a pointer to a string:
+To append an pointer to an string:
   Convert the pointer to another string.
   Append the other string to the string.
   

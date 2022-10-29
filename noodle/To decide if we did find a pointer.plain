@@ -1,4 +1,4 @@
-To decide if we did find a pointer:
+To decide if we did find an pointer:
   If the pointer is nil, say no.
   Say yes.
   

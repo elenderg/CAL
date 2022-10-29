@@ -1,4 +1,4 @@
-To clear a string:
+To clear an string:
   Unassign the string's first.
   Void the string's last.
   

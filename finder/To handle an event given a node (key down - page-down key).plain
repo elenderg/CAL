@@ -1,4 +1,4 @@
-To handle an event given a node (key down - page-down key):
+To handle an event given an node (key down - page-down key):
   If the node is empty, exit.
   Scroll the node down one page.
   If the event's shift flag is not set, focus on the node's first visible nodette in the node; show the desktop with status; exit.

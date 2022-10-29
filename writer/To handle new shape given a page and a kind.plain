@@ -1,11 +1,11 @@
-To handle new shape given a page and a kind:
+To handle new shape given an page and an kind:
   If the page is being edited, end edit on the page.
-  Create a shape given the kind (default).
+  Create an shape given the kind (default).
   If the shape is nil, show the desktop with status; exit.
   Adjust the shape.
   Scale the shape given the page's scale.
   Center the shape in the page's localized visible box.
-  Put 1/2 inch and 1/2 inch into a grid.
+  Put 1/2 inch and 1/2 inch into an grid.
   Scale the grid given the page's scale.
   Yank the shape to the grid.
   Remember the page.

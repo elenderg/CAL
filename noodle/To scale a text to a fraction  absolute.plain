@@ -1,4 +1,4 @@
-To scale a text to a fraction: \ absolute
+To scale an text to an fraction: \ absolute
   If the text is nil, exit.
   Put the text's scale into another fraction.
   Flip the other fraction.

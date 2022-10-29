@@ -1,5 +1,5 @@
-To handle a command (y):
-  Create a submenu.
+To handle an command (y):
+  Create an submenu.
   If the current tab's mode is "writer", add "Yank 1/8"  and "handle yank given 1/8 inch" to the submenu.
   If the current tab's mode is "writer", add "Yank 1/12"  and "handle yank given 1/12 inch" to the submenu.
   If the current tab's mode is "writer", add "Yank 1/16"  and "handle yank given 1/16 inch" to the submenu.

@@ -1,6 +1,6 @@
-To load the lexicon given a buffer:
+To load the lexicon given an buffer:
   If the lexicon is nil, create the lexicon.
-  Slap a rider on the buffer.
+  Slap an rider on the buffer.
   Loop.
   Move the rider (index lexicon rules).
   If the rider's token is blank, exit.

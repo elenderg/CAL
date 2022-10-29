@@ -1,4 +1,4 @@
-To handle any wm-create with a window:
+To handle any wm-create with an window:
   Put the window into the main window.
   
   

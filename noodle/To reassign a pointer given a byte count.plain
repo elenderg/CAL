@@ -1,4 +1,4 @@
-To reassign a pointer given a byte count:
+To reassign an pointer given an byte count:
   If the pointer is nil, assign the pointer given the byte count; exit.
   If the byte count is 0, unassign the pointer; exit.
   Privatize the byte count.

@@ -1,7 +1,7 @@
 To scrub some refers:
   Swap the refers with some other refers.
   Loop.
-  Put the other refers' first into a refer.
+  Put the other refers' first into an refer.
   If the refer is nil, exit.
   Remove the refer from the other refers.
   If the refer's pointer is nil, destroy the refer; repeat.

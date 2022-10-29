@@ -1,10 +1,10 @@
-To pdfify a document to a pdf:
+To pdfify an document to an pdf:
   If the document is nil, exit.
-  Put 0 into a current count.
-  Put the document's selected page count into a total count.
+  Put 0 into an current count.
+  Put the document's selected page count into an total count.
   Begin printing the pdf.
   Loop.
-  Get a page from the document's pages.
+  Get an page from the document's pages.
   If the page is nil, break.
   If the page is not selected, repeat.
   Add 1 to the current count.

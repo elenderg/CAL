@@ -1,8 +1,8 @@
-To blurt a variable into a buffer (as a string):
+To blurt an variable into an buffer (as an string):
   Put the variable's address minus the image base into an address.
-  Put the variable's data's length into a length.
+  Put the variable's data's length into an length.
   Put the address into another address.
-  Add a prototype string's magnitude to the other address.
+  Add an prototype string's magnitude to the other address.
   Add the image base to the other address.
   Put 0 into the prototype string's first.
   Put -1 into the prototype string's last.

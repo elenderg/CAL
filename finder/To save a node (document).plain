@@ -1,7 +1,7 @@
-To save a node (document):
+To save an node (document):
   Clear the i/o error.
   If the node's document is not modified, exit.
-  Externalize the node's document into a buffer.
+  Externalize the node's document into an buffer.
   Write the buffer to the node's path.
   If the i/o error is blank, clear the node's document's modified flag.
   

@@ -1,4 +1,4 @@
-To destroy a path in the file system (directory):
+To destroy an path in the file system (directory):
   Loop.
   Get an item from the path.
   If the item is not found, break.
@@ -9,7 +9,7 @@ To destroy a path in the file system (directory):
   Repeat.
   Privatize the path.
   Null terminate the path.
-  Call "kernel32.dll" "RemoveDirectoryA" with the path's first returning a number.
+  Call "kernel32.dll" "RemoveDirectoryA" with the path's first returning an number.
   Clear the i/o error.
   If the number is not 0, exit.
   Put "Error deleting directory '" then the path then "'." into the i/o error.

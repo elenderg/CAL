@@ -1,4 +1,4 @@
-To get a focus shape given a shape and a spot:
+To get an focus shape given an shape and an spot:
   If the shape is nil, void the focus shape; exit.
   If the shape's kind is not "group", put the shape into the focus shape; exit.
   Loop.

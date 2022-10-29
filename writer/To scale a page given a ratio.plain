@@ -1,4 +1,4 @@
-To scale a page given a ratio:
+To scale an page given an ratio:
   If the page is nil, exit.
   If the ratio is 1/1, exit.
   Scale the page's scale given the ratio.

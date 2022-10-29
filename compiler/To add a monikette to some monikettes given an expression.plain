@@ -1,4 +1,4 @@
-To add a monikette to some monikettes given an expression:
+To add an monikette to some monikettes given an expression:
   Create the monikette.
   Append the monikette to the monikettes.
   Put the expression's phrase into the monikette's string.

@@ -1,4 +1,4 @@
-To decide if a byte is symbolic:
+To decide if an byte is symbolic:
   If the byte is between the exclamation byte and the slash byte, say yes.
   If the byte is between the colon byte and the at-sign byte, say yes.
   If the byte is between the left-bracket byte and the accent byte, say yes.

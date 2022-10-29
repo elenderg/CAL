@@ -1,4 +1,4 @@
-To scale a shape given a ratio:
+To scale an shape given an ratio:
   If the shape is nil, exit.
   If the ratio is 1/1, exit.
   Scale the shape's scale given the ratio.
@@ -8,6 +8,6 @@ To scale a shape given a ratio:
   If the shape's kind is "polygon", scale the shape given the ratio (polygon); exit.
   If the shape's kind is "rectangle", scale the shape given the ratio (rectangle); exit.
   If the shape's kind is "text", scale the shape given the ratio (text); exit.
-  Debug "scale a shape by a scale: " then the shape's kind.
+  Debug "scale an shape by an scale: " then the shape's kind.
   
   

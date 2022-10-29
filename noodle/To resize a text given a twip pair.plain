@@ -1,4 +1,4 @@
-To resize a text given a twip pair:
+To resize an text given an twip pair:
   If the text is nil, exit.
   Resize the text's box given the twip pair.
   Wrap the text.

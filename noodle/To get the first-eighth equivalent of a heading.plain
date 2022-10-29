@@ -1,4 +1,4 @@
-To get the first-eighth equivalent of a heading:
+To get the first-eighth equivalent of an heading:
   Get the first-quarter equivalent of the heading.
   If the heading is less than 480, exit.
   Subtract 960 from the heading.

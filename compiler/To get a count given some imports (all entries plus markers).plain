@@ -1,4 +1,4 @@
-To get a count given some imports (all entries plus markers):
+To get an count given some imports (all entries plus markers):
   Put 0 into the count.
   Loop.
   Get an import from the imports.

@@ -1,8 +1,8 @@
-To split a string into a left substring and a right substring given a separator byte:
+To split an string into an left substring and an right substring given an separator byte:
   Clear the left.
   Clear the right.
   If the string is blank, exit.
-  Put the string's first into a substring's first.
+  Put the string's first into an substring's first.
   Put the substring's first minus 1 into the substring's last.
   Loop.
   If the substring's last is greater than the string's last, exit.

@@ -1,5 +1,5 @@
-To handle a command (c):
-  Create a submenu.
+To handle an command (c):
+  Create an submenu.
   If the current tab's mode is "editor", add "Capitalize" and "handle capitalize" to the submenu.
   If the current tab's mode is "writer", add "Capitalize" and "handle capitalize" to the submenu.
   If the current tab's mode is "editor", add "Check Spelling" and "handle check spelling" to the submenu.

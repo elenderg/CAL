@@ -1,4 +1,4 @@
-To pick a rainbow color:
+To pick an rainbow color:
   Add 1 to the current rainbow color number.
   If the current rainbow color number is greater than 6, put 1 into the current rainbow color number.
   If the current rainbow color number is 1, put the red color into the rainbow color.

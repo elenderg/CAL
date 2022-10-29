@@ -1,4 +1,4 @@
-To draw a line as wide as a box with a color:
+To draw an line as wide as an box with an color:
   Put the color into the context's color.
   Stroke the box's width.
   

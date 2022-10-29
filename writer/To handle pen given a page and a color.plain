@@ -1,4 +1,4 @@
-To handle pen given a page and a color:
+To handle pen given an page and an color:
   If the page is being edited, handle pen given the page and the color (editing); exit.
   If nothing is selected on the page, cluck; exit.
   Remember the page.

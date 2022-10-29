@@ -1,6 +1,6 @@
-To reset a pointer;
-  To reset a pointer for the next time around;
-  To void a pointer:
+To reset an pointer;
+  To reset an pointer for the next time around;
+  To void an pointer:
   Intel $8B8508000000. \ mov eax,[ebp+8] \ the pointer
   Intel $C70000000000. \ mov [eax],0
   

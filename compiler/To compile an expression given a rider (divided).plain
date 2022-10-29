@@ -1,10 +1,10 @@
-To compile an expression given a rider (divided):
+To compile an expression given an rider (divided):
   If the compiler's abort flag is set, exit.
   Move the rider (compiler rules).
   If the rider's token is not "by", abort with "I really prefer the phrase 'divided BY'." and the rider; exit.
   If the expression's variable is nil, abort with "Invalid 'divided by', I don't understand the variable '" then the expression's phrase then "'." and the rider; exit.
   Move the rider (compiler rules).
-  Compile a term given the rider.
+  Compile an term given the rider.
   If the compiler's abort flag is set, exit.
   If the term's variable is nil, abort with "Invalid 'divided by', I don't understand the variable '" then the term's phrase then "'." and the rider; exit.
   Add an intermediate given the expression's type name and the rider's token's first.

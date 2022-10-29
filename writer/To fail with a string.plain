@@ -1,4 +1,4 @@
-To fail with a string:
+To fail with an string:
   If the i/o error is not blank, exit.
   Put the string into the i/o error.
   

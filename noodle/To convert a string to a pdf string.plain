@@ -1,6 +1,6 @@
-To convert a string to a pdf string:
+To convert an string to an pdf string:
   Put "(" into the pdf string.
-  Slap a substring on the string.
+  Slap an substring on the string.
   Subtract 1 from the substring's first.
   Loop.
   Add 1 to the substring's first.

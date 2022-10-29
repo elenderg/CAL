@@ -1,4 +1,4 @@
-To decide if a byte is a string:
+To decide if an byte is an string:
   If the string's length is not 1, say no.
   Privatize the byte.
   Lowercase the byte.

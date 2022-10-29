@@ -1,6 +1,6 @@
-To scroll a document up one page:
+To scroll an document up one page:
   If the document is nil, exit.
-  Put the document's box's y-extent minus the edge height into a difference's y.
+  Put the document's box's y-extent minus the edge height into an difference's y.
   Scroll the document given the difference.
   
   

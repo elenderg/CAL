@@ -1,4 +1,4 @@
-To draw a button:
+To draw an button:
   If the button is nil, exit.
   Unmask everything.
   Draw the button's roundy box with the black color and the white color.

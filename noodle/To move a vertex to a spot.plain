@@ -1,4 +1,4 @@
-To move a vertex to a spot:
+To move an vertex to an spot:
   If the vertex is nil, exit.
   Put the spot into the vertex's spot.
   

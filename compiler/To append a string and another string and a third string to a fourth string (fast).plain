@@ -1,10 +1,10 @@
-To append a string and another string and a third string to a fourth string (fast):
-  Put the fourth string's length into a length.
+To append an string and another string and an third string to an fourth string (fast):
+  Put the fourth string's length into an length.
   Add the string's length to the length.
   Add the other string's length to the length.
   Add the third string's length to the length.
-  Reassign a pointer given the length.
-  Put the pointer into a byte pointer.
+  Reassign an pointer given the length.
+  Put the pointer into an byte pointer.
   Copy bytes from the fourth string's first to the byte pointer for the fourth string's length.
   Add the fourth string's length to the byte pointer.
   Copy bytes from the string's first to the byte pointer for the string's length.

@@ -1,9 +1,9 @@
-To paste any copied items into a node and into the file system returning a count:
+To paste any copied items into an node and into the file system returning an count:
   Put 0 into the count.
   If the node is nil, exit.
-  Put 0 into a current count.
-  Get a total count of items in the finder's clipboard in the file system.
-  Put the node's first selected nodette into a first selected nodette.
+  Put 0 into an current count.
+  Get an total count of items in the finder's clipboard in the file system.
+  Put the node's first selected nodette into an first selected nodette.
   Deselect the nodettes in the node.
   Loop.
   Get an item from the finder's clipboard.

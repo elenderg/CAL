@@ -1,8 +1,8 @@
-To non-destructively resize a picture given a twip pair:
+To non-destructively resize an picture given an twip pair:
   If the picture is nil, exit.
-  Put the picture's box into a box.
+  Put the picture's box into an box.
   Resize the box given the twip pair.
-  Make a fraction pair given the box and the picture's box.
+  Make an fraction pair given the box and the picture's box.
   Non-destructively resize the picture given the fraction pair.
   
   

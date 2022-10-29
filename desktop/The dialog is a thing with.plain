@@ -1,9 +1,9 @@
-The dialog is a thing with
-  a kind [choice, error, input],
-  a roundy box,
-  a prompt box, a prompt,
-  a pen color,
-  a text,
+The dialog is an thing with
+  an kind [choice, error, input],
+  an roundy box,
+  an prompt box, an prompt,
+  an pen color,
+  an text,
   some buttons.
   
   

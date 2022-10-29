@@ -1,7 +1,7 @@
-To debug a rgb:
-  Clear a string.
+To debug an rgb:
+  Clear an string.
   Append "red=" to the string.
-  Put the rgb's red byte into a number.
+  Put the rgb's red byte into an number.
   Append the number to the string.
   Append ", green=" to the string.
   Put the rgb's green byte into the number.

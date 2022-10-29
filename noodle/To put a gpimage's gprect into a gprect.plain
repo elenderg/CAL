@@ -1,4 +1,4 @@
-To put a gpimage's gprect into a gprect:
+To put an gpimage's gprect into an gprect:
   Put 0 into the gprect's x.
   Put 0 into the gprect's y.
   Put the gpimage's width into the gprect's width.

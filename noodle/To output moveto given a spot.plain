@@ -1,4 +1,4 @@
-To output moveto given a spot:
+To output moveto given an spot:
   Output the spot without advancing.
   Output "m".
   

@@ -1,7 +1,7 @@
-A gprect is a record with
-  A number called x,
-  A number called y,
-  A number called width,
-  A number called height.
+An gprect is an record with
+  An number called x,
+  An number called y,
+  An number called width,
+  An number called height.
   
   

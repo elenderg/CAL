@@ -1,9 +1,9 @@
-To convert a binary string into a number:
+To convert an binary string into an number:
   Put 0 into the number.
-  Put 1 into a value number.
+  Put 1 into an value number.
   Loop.
   If the binary string is blank, exit.
-  Get a character from the binary string (backwards). \ was backwards
+  Get an character from the binary string (backwards). \ was backwards
   If the character is "1", add the value to the number.
   Double the value.
   Repeat.

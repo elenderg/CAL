@@ -1,5 +1,5 @@
-To center a spot in a box (horizontally):
-  Put the box's center's x minus the spot's x into a number.
+To center an spot in an box (horizontally):
+  Put the box's center's x minus the spot's x into an number.
   Round the number to the nearest multiple of the tpp.
   Move the spot given the number and 0.
   

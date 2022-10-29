@@ -1,4 +1,4 @@
-To clear a byte:
+To clear an byte:
   Put the null byte into the byte.
   
   

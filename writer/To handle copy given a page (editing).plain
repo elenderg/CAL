@@ -1,4 +1,4 @@
-To handle copy given a page (editing):
+To handle copy given an page (editing):
   If nothing is selected in the page's edit shape's text, cluck; exit.
   Show status "Copying...".
   Handle copy given the page's edit shape's text.

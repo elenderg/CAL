@@ -1,7 +1,7 @@
-To check spelling given a page and a flag (shapes):
+To check spelling given an page and an flag (shapes):
   Clear the flag.
   If the page is nil, exit.
-  Get a shape refer with which to start finding given the page.
+  Get an shape refer with which to start finding given the page.
   Get the find anchor with which to start finding given the shape refer and the page.
   Loop.
   If the shape refer is nil, exit.

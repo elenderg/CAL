@@ -1,4 +1,4 @@
-To copy a picture into another picture:
+To copy an picture into another picture:
   If the picture is nil, void the other picture; exit.
   Allocate memory for the other picture.
   Put the picture's box into the other picture's box.

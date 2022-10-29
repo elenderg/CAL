@@ -1,4 +1,4 @@
-To extract a string from a text:
+To extract an string from an text:
   If the text is nil, clear the string; exit.
   Convert the text's rows to the string.
   Remove any trailing linefeed byte from the string.

@@ -1,4 +1,4 @@
-To put a date/time's string into a string:
+To put an date/time's string into an string:
   Clear the string.
   Append the date/time's year to the string.
   Append "/" to the string.

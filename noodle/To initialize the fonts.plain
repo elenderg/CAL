@@ -1,6 +1,6 @@
 To initialize the fonts:
   Call "gdi32.dll" "GetStockObject" with 11 [ansi_fixed_font] returning the null hfont.
-  Call "gdi32.dll" "AddFontMemResourceEx" with the osmosian font source's first and the osmosian font source's length and 0 and a number's whereabouts
+  Call "gdi32.dll" "AddFontMemResourceEx" with the osmosian font source's first and the osmosian font source's length and 0 and an number's whereabouts
   Returning the osmosian font resource.
   Put "osmosian" and 1/4 inch into the default font.
   \ stroked fonts below

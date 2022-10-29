@@ -1,5 +1,5 @@
-To open a file given a path and some milliseconds:
-  Start a timer.
+To open an file given an path and some milliseconds:
+  Start an timer.
   Loop.
   Open the file given the path.
   If the i/o error is blank, exit.

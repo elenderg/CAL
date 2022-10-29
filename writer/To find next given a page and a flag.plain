@@ -1,4 +1,4 @@
-To find next given a page and a flag:
+To find next given an page and an flag:
   Clear the flag.
   If the page is nil, exit.
   Privatize the page.

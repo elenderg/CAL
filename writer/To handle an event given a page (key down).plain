@@ -1,4 +1,4 @@
-To handle an event given a page (key down):
+To handle an event given an page (key down):
   If the event's byte is printable, handle the event given the page (key down - printable key); exit.
   If the event's key is the backspace key, handle the event given the page (key down - backspace key); exit.
   If the event's key is the delete key, handle the event given the page (key down - delete key); exit.

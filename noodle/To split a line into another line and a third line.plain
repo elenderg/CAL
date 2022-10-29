@@ -1,6 +1,6 @@
-To split a line into another line and a third line:
+To split an line into another line and an third line:
   Privatize the line.
-  Put the line's center into a center spot.
+  Put the line's center into an center spot.
   Put the line's start and the center into the other line.
   Put the center and the line's end into the third line. 
   

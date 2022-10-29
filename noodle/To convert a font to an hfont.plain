@@ -1,4 +1,4 @@
-To convert a font to an hfont:
+To convert an font to an hfont:
   Privatize the font.
   Null terminate the font's name.
   Call "gdi32.dll" "CreateFontA" with - the font's height times 3 divided by 4 and 0 and 0 and 0 and 0 and 0 and 0 and 0 

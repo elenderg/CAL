@@ -1,5 +1,5 @@
 To fill some tabs:
-  Get a tab from the tabs.
+  Get an tab from the tabs.
   If the tab is nil, exit.
   Put "finder" into the tab's mode.
   Create the tab's node.

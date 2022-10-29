@@ -1,4 +1,4 @@
-To mask outside a box:
+To mask outside an box:
   Create an hrgn given the box.
   Mask outside the hrgn.
   Destroy the hrgn.

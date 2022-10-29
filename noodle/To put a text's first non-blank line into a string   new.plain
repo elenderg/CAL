@@ -1,8 +1,8 @@
-To put a text's first non-blank line into a string: \ *** new
+To put an text's first non-blank line into an string: \ *** new
   Clear the string.
   If the text is nil, exit.
   Loop.
-  Get a row from the text's rows.
+  Get an row from the text's rows.
   If the row is nil, exit.
   Put the row's string into the string.
   Remove the last byte from the string. \ cr or space (see text rules)

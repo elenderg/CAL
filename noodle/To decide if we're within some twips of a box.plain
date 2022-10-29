@@ -1,4 +1,4 @@
-To decide if we're within some twips of a box:
+To decide if we're within some twips of an box:
   If the context's spot is within the twips of the box, say yes.
   Say no.
   

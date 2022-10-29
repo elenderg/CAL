@@ -1,4 +1,4 @@
-To move a rider (code rules):
+To move an rider (code rules):
   Position the rider's token on the rider's source.
   If the rider's source is blank, exit.
   If the rider's source's first's target is noise, move the rider (code rules - noise); exit.

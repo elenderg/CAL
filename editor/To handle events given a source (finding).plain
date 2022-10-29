@@ -1,4 +1,4 @@
-To handle events given a source (finding):
+To handle events given an source (finding):
   Deque an event.
   If the event is nil, exit.
   Handle the event given the source (finding).

@@ -1,4 +1,4 @@
-To wait for a key to go down:
+To wait for an key to go down:
   If the key is not down, repeat.
   
   

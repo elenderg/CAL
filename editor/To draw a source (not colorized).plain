@@ -1,4 +1,4 @@
-To draw a source (not colorized):
+To draw an source (not colorized):
   If the source is nil, exit.
   Draw the source's text (editing).
   

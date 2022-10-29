@@ -1,4 +1,4 @@
-To reduce a type to another type for utility use:
+To reduce an type to another type for utility use:
   Put the type into the other type.
   Loop.
   If the other type is nil, exit.

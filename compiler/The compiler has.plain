@@ -1,12 +1,12 @@
 The compiler has
-  A directory,
-  A timer,
+  An directory,
+  An timer,
   An abort flag,
   An abort message,
   An abort path,
   An abort row#,
-  A name count,
-  A exe buffer,
-  A listing buffer.
+  An name count,
+  An exe buffer,
+  An listing buffer.
   
   

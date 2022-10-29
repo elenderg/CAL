@@ -1,6 +1,6 @@
 To initialize the module:
   \ temp path
-  Put 512 into a length.
+  Put 512 into an length.
   Reassign the temp path's first given the length.
   Call "kernel32.dll" "GetTempPathA" with the length and the temp path's first returning the length.
   Put the temp path's first plus the length minus 1 into the temp path's last.

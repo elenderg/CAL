@@ -1,7 +1,7 @@
 To finalize after run:
   If the heap count is 0, exit.
-  Put the heap count into a count.
-  Put the count then " drip(s)." into a string.
+  Put the heap count into an count.
+  Put the count then " drip(s)." into an string.
   Debug the string.
   
   

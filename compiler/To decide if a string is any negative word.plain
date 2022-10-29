@@ -1,4 +1,4 @@
-To decide if a string is any negative word:
+To decide if an string is any negative word:
   If the string is "not", say yes.
   If the string is "cannot", say yes.
   If the string is "nothing", say yes.

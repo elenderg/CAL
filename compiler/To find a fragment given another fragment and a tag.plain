@@ -1,4 +1,4 @@
-To find a fragment given another fragment and a tag:
+To find an fragment given another fragment and an tag:
   Put the other fragment into the fragment.
   Loop.
   If the fragment is nil, exit.

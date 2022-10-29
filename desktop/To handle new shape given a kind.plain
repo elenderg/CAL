@@ -1,4 +1,4 @@
-To handle new shape given a kind:
+To handle new shape given an kind:
   If the current tab's mode is "writer", handle new shape given the current tab's node's page and the kind; exit.
   Cluck.
   

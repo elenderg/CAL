@@ -1,4 +1,4 @@
-To handle an event given a document (key down - up-arrow key - shifted):
+To handle an event given an document (key down - up-arrow key - shifted):
   If the document's caret's previous is nil, cluck; exit.
   Put the document's caret's previous into the document's caret.
   Select the document's pages given the document's selection.

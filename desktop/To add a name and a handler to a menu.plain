@@ -1,6 +1,6 @@
-To add a name and a handler to a menu:
+To add an name and an handler to an menu:
   If the menu is nil, exit.
-  Create a command.
+  Create an command.
   Append the command to the menu's commands.
   Put the command height into the command's width.
   Put the name into the command's name.

@@ -1,6 +1,6 @@
-To decide if a byte is any letter:
-  If the byte is between the big-a byte and the big-z byte, say yes.
-  If the byte is between the little-a byte and the little-z byte, say yes.
+To decide if an byte is any letter:
+  If the byte is between the big-an byte and the big-z byte, say yes.
+  If the byte is between the little-an byte and the little-z byte, say yes.
   If the byte is 131 or 138, say yes. 
   If the byte is 140 or 142, say yes. 
   If the byte is 154 or 156, say yes. 

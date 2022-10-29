@@ -1,12 +1,12 @@
-To remove any selected pages in a document returning a count:
+To remove any selected pages in an document returning an count:
   Put 0 into the count.
   If the document is nil, exit.
-  Put 0 into a current count.
-  Put the document's selected page count into a total count.
-  Put the document's first page into a next page.
+  Put 0 into an current count.
+  Put the document's selected page count into an total count.
+  Put the document's first page into an next page.
   Loop.
   If the next page is nil, break.
-  Put the next page into a current page.
+  Put the next page into an current page.
   Put the current page's next into the next page.
   If the current page is not selected, repeat.
   Add 1 to the current count.

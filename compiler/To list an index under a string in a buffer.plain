@@ -1,4 +1,4 @@
-To list an index under a string in a buffer:
+To list an index under an string in an buffer:
   Append the string to the buffer.
   Advance the buffer (twice).
   If the index is empty, exit.

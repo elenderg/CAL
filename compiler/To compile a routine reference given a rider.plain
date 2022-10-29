@@ -1,4 +1,4 @@
-To compile a routine reference given a rider:
+To compile an routine reference given an rider:
   If the rider's token is "to", move the rider (compiler rules).
   If the rider is the start of any function, compile the routine reference given the rider (function); exit.
   If the rider's token is "decide", compile the routine reference given the rider (decide).

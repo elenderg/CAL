@@ -1,11 +1,11 @@
-A systemtime is a record with
-  A wyrd called wyear,
-  A wyrd called wmonth,
-  A wyrd called wdayofweek,
-  A wyrd called wday,
-  A wyrd called whour,
-  A wyrd called wminute,
-  A wyrd called wsecond,
-  A wyrd called wmilliseconds.
+An systemtime is an record with
+  An wyrd called wyear,
+  An wyrd called wmonth,
+  An wyrd called wdayofweek,
+  An wyrd called wday,
+  An wyrd called whour,
+  An wyrd called wminute,
+  An wyrd called wsecond,
+  An wyrd called wmilliseconds.
   
   

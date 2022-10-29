@@ -1,5 +1,5 @@
-To lowercase a string:
-  Slap a substring on the string.
+To lowercase an string:
+  Slap an substring on the string.
   Loop.
   If the substring is blank, exit.
   Lowercase the substring's first's target.

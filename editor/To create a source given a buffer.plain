@@ -1,7 +1,7 @@
-To create a source given a buffer:
+To create an source given an buffer:
   Allocate memory for the source.
-  Put the pad's box into a box.
-  Put the box's height divided by the default font's height times the default font's height into a height.
+  Put the pad's box into an box.
+  Put the box's height divided by the default font's height times the default font's height into an height.
   Put the box's top plus the height into the box's bottom.
   Center the box in the pad's box (vertically).
   Create the source's text.

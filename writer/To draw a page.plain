@@ -1,4 +1,4 @@
-To draw a page:
+To draw an page:
   If the page is nil, exit.
   Mask only outside the pad's box.
   Draw the pad's box with the desktop color and the desktop color.

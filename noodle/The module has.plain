@@ -1,8 +1,8 @@
 The module has
-  A handle,
-  A path,
-  A directory,
-  A root directory, \ one up from the directory that exe is run from
-  A file name w/o extension called name.
+  An handle,
+  An path,
+  An directory,
+  An root directory, \ one up from the directory that exe is run from
+  An file name w/o extension called name.
   
   

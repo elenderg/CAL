@@ -1,5 +1,5 @@
-To decide if a buffer is document-format:
-  Slap a rider on the buffer.
+To decide if an buffer is document-format:
+  Slap an rider on the buffer.
   Move the rider (document rules).
   If the rider's token is not "ream", say no.
   Move the rider (document rules).

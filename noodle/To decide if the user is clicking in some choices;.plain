@@ -8,7 +8,7 @@ To decide if the user is clicking in some choices;
   To decide if the user clicks on some choices:
   Loop.
   If the mouse's left button is not down, say no.
-  Find a choice given the mouse's spot.
+  Find an choice given the mouse's spot.
   If the choice can't be found, say no.
   Say yes.
   

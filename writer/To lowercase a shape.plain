@@ -1,4 +1,4 @@
-To lowercase a shape:
+To lowercase an shape:
   If the shape is nil, exit.
   If the shape's kind is "group", lowercase the shape's shapes; exit.
   If the shape's kind is not "text", exit.

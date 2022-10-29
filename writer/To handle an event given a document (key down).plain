@@ -1,4 +1,4 @@
-To handle an event given a document (key down):
+To handle an event given an document (key down):
   If the event's key is the backspace key, handle the event given the document (key down - backspace key); exit.
   If the event's key is the delete key, handle the event given the document (key down - delete key); exit.
   If the event's key is the enter key, handle the event given the document (key down - enter key); exit.

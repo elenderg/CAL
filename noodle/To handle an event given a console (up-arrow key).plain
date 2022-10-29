@@ -1,4 +1,4 @@
-To handle an event given a console (up-arrow key):
+To handle an event given an console (up-arrow key):
   Scroll the console's text up one line.
   Show the console.
   

@@ -1,4 +1,4 @@
-To decide if the mouse is in a box:
+To decide if the mouse is in an box:
   If the mouse's spot is in the box, say yes.
   Say no.
   

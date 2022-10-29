@@ -1,4 +1,4 @@
-To convert a pointer and a length to a string:
+To convert an pointer and an length to an string:
   Clear the string.
   If the pointer is nil, exit.
   If the length is 0, exit.

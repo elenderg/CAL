@@ -1,7 +1,7 @@
-To decide if a byte is any valid drive:
-  Put the byte into a path.
+To decide if an byte is any valid drive:
+  Put the byte into an path.
   Append ":\" to the path.
-  Get a drive kind for the path.
+  Get an drive kind for the path.
   If the drive kind is "", say no.
   Say yes.
   

@@ -1,9 +1,9 @@
-A monikette is a thing with
-  a string,
-  a type (reference),
-  a variable (reference),
+An monikette is an thing with
+  an string,
+  an type (reference),
+  an variable (reference),
   \ for bubbling
-  a current type (reference),
-  a current substring.
+  an current type (reference),
+  an current substring.
   
   

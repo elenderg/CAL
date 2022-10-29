@@ -1,4 +1,4 @@
-To compile a directory (resolve the types):
+To compile an directory (resolve the types):
   If the compiler's abort flag is set, exit.
   Show status "Resolving...".
   Start the resolving types timer.

@@ -1,4 +1,4 @@
-To localize a box given a pair:
+To localize an box given an pair:
   Privatize the pair.
   Negate the pair.
   Move the box given the pair.

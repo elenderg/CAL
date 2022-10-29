@@ -1,4 +1,4 @@
-To crop a picture given a cropper and a spot:
+To crop an picture given an cropper and an spot:
   If the picture is nil, exit.
   If the cropper's kind is "left", limit the spot's x to the picture's uncropped box's left and the picture's box's right.
   If the cropper's kind is "top", limit the spot's y to the picture's uncropped box's top and the picture's box's bottom.

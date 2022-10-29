@@ -1,6 +1,6 @@
-To handle an event given a text (down-arrow key):
+To handle an event given an text (down-arrow key):
   If the text is nil, exit.
-  If the caret of the text is on the last line, set a flag.
+  If the caret of the text is on the last line, set an flag.
   If the flag is set, move the caret to the last byte of the text.
   If the flag is not set, move the caret down in the text.
   If the event's shift flag is not set, deselect the text.

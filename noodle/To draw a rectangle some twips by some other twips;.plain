@@ -1,5 +1,5 @@
-To draw a rectangle some twips by some other twips;
-  To draw a rectangle some twips wide by some other twips high:
+To draw an rectangle some twips by some other twips;
+  To draw an rectangle some twips wide by some other twips high:
   Stroke the other twips.
   Turn right.
   Stroke the twips.

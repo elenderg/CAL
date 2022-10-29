@@ -1,4 +1,4 @@
-To resize a shape given a ratio pair (text):
+To resize an shape given an ratio pair (text):
   Resize the shape's text rect given the ratio pair.
   Normalize the shape's text rect.
   Adjust the text in the shape.

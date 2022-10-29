@@ -1,7 +1,7 @@
-To darken a color by some percent;
-  To darken a color about some percent;
-  To darken a color by about some percent;
-  To darken a color some percent:
+To darken an color by some percent;
+  To darken an color about some percent;
+  To darken an color by about some percent;
+  To darken an color some percent:
   Put the color's lightness minus the percent into the color's lightness.
   Limit the color's lightness to 0 and 1000.
   

@@ -1,4 +1,4 @@
-To decide if a color is very very light:
+To decide if an color is very very light:
   If the color's lightness is greater than or equal to 875, say yes.
   Say no.
   

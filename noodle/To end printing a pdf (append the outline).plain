@@ -1,4 +1,4 @@
-To end printing a pdf (append the outline):
+To end printing an pdf (append the outline):
   Void the pdf state's outline.
   If the pdf state's outline entries are empty, exit.
   Add an outline pdf object given "outline".

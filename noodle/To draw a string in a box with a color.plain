@@ -1,4 +1,4 @@
-To draw a string in a box with a color:
+To draw an string in an box with an color:
   Draw the string in the box with the color and the default font and "left".
   
   

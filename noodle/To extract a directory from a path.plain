@@ -1,8 +1,8 @@
-To extract a directory from a path:
+To extract an directory from an path:
   Clear the directory.
-  Extract a drive from the path.
+  Extract an drive from the path.
   If the drive is blank, exit.
-  Slap a substring on the path.
+  Slap an substring on the path.
   Add the drive's length to the substring's first.
   If the substring is blank, exit.
   If the substring's last's target is the backslash byte, subtract 1 from the substring's last.

@@ -1,4 +1,4 @@
-To find a substring in a string given another string:
+To find an substring in an string given another string:
   Slap the substring on the string.
   Loop.
   If the substring is blank, exit.

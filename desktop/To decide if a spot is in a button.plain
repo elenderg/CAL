@@ -1,4 +1,4 @@
-To decide if a spot is in a button:
+To decide if an spot is in an button:
   If the button is nil, say no.
   If the spot is in the button's roundy box, say yes.
   Say no.

@@ -1,4 +1,4 @@
-To handle an event given a console (page-down key):
+To handle an event given an console (page-down key):
   Scroll the console's text down one page.
   Show the console.
   

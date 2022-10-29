@@ -1,4 +1,4 @@
-To initialize a pe header (code section):
+To initialize an pe header (code section):
   Copy bytes from "code  "'s first to the pe header's code section's name's whereabouts for 6.
   Put the code borough's length into the pe header's code section's sizeinbytes.
   Put the code borough's base into the pe header's code section's addressinmemory.

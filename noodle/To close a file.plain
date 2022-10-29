@@ -1,4 +1,4 @@
-To close a file:
+To close an file:
   Call "kernel32.dll" "CloseHandle" with the file.
   
   

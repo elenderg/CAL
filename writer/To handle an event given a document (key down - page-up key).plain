@@ -1,4 +1,4 @@
-To handle an event given a document (key down - page-up key):
+To handle an event given an document (key down - page-up key):
   If the document is empty, exit.
   Scroll the document up one page.
   If the event's shift flag is not set, focus on the document's first visible page in the document; show the desktop with status; exit.

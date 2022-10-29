@@ -1,4 +1,4 @@
-To zero fill a number given a count and append it to a string:
+To zero fill an number given an count and append it to an string:
   Convert the number to another string.
   Zero fill the other string given the count.
   Append the other string to the string.

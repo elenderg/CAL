@@ -1,4 +1,4 @@
-To adjust a nodette in a node:
+To adjust an nodette in an node:
   If the node is nil, exit.
   If the nodette is nil, exit.
   Put 0 into the nodette's left.

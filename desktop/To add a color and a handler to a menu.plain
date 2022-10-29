@@ -1,6 +1,6 @@
-To add a color and a handler to a menu:
+To add an color and an handler to an menu:
   If the menu is nil, exit.
-  Create a command.
+  Create an command.
   Append the command to the menu's commands.
   Put the swatch width into the command's width.
   Put the handler into the command's handler.

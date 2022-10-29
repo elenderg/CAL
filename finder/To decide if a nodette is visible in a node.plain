@@ -1,6 +1,6 @@
-To decide if a nodette is visible in a node:
+To decide if an nodette is visible in an node:
   If the nodette is nil, say no.
-  Put the nodette's box into a box.
+  Put the nodette's box into an box.
   Globalize the box given the node's origin.
   If the box's top is less than the finder's top, say no.
   If the box's bottom is greater than the finder's bottom, say no.

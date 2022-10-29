@@ -1,4 +1,4 @@
-To handle undo given a page (editing):
+To handle undo given an page (editing):
   If the page's edit shape's text cannot be undone, cluck; exit.
   Set the current tab's node's document's modified flag.
   Scale the page's edit shape to 1/1.

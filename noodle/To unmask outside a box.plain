@@ -1,4 +1,4 @@
-To unmask outside a box:
+To unmask outside an box:
   Create an hrgn given the box.
   Unmask outside the hrgn.
   Destroy the hrgn.

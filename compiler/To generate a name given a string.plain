@@ -1,4 +1,4 @@
-To generate a name given a string:
+To generate an name given an string:
   Put the string into the name.
   Add 1 to the compiler's name count.
   Convert the compiler's name count to another string.

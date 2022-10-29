@@ -1,4 +1,4 @@
-To compile a directory (add the built-in memory routines):
+To compile an directory (add the built-in memory routines):
   If the compiler's abort flag is set, exit.
   Show status "Adding...".
   Start the adding built-in memory routines timer.

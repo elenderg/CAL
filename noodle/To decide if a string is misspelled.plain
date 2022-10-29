@@ -1,4 +1,4 @@
-To decide if a string is misspelled:
+To decide if an string is misspelled:
   If the lexicon is nil, say no.
   If the string is not any word, say no.
   Privatize the string.

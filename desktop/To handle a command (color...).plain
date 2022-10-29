@@ -1,5 +1,5 @@
-To handle a command (color...):
-  Create a submenu.
+To handle an command (color...):
+  Create an submenu.
   Add "Border..." and "border..." to the submenu.
   Add "Fill..." and "fill..." to the submenu.
   Add "Pen..." and "pen..." to the submenu.

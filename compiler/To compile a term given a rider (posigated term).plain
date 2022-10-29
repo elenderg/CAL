@@ -1,4 +1,4 @@
-To compile a term given a rider (posigated term):
+To compile an term given an rider (posigated term):
   If the compiler's abort flag is set, exit.
   Move the rider (compiler rules).
   Compile the term given the rider.

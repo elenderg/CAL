@@ -1,4 +1,4 @@
-To get a box given a row and a text:
+To get an box given an row and an text:
   If the text is nil, zero the box; exit.
   If the row is nil, zero the box; exit.
   Put the text's globalized origin into the box's left-top.

@@ -1,4 +1,4 @@
-To decide if a string is any verb:
+To decide if an string is any verb:
   If the string is "are", say yes. \ are not \ aren't
   If the string is "be", say yes. \
   If the string is "can", say yes. \ cannot \ can't

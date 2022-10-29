@@ -1,4 +1,4 @@
-To normalize a text:
+To normalize an text:
   If the text is nil, exit.
   Normalize the text's box.
   

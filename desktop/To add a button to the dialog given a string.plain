@@ -1,4 +1,4 @@
-To add a button to the dialog given a string:
+To add an button to the dialog given an string:
   If the string is blank, void the button; exit.
   If the dialog is nil, exit.
   Create the button.

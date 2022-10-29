@@ -1,4 +1,4 @@
-To output lineto given a spot:
+To output lineto given an spot:
   Output the spot without advancing.
   Output "l".
   

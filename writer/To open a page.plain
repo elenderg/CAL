@@ -1,4 +1,4 @@
-To open a page:
+To open an page:
   If the page is nil, exit.
   If the current tab's node's page's scale is not 1/1, debug "internal error: current page scale is incorrect".
   If the page's scale is not 1/1, debug "internal error: page scale is incorrect".

@@ -1,4 +1,4 @@
-To scan a global given a rider:
+To scan an global given an rider:
   If the compiler's abort flag is set, exit.
   Add the global to the globals given "global" and the rider's token's first.
   Move the rider (compiler rules).
@@ -11,7 +11,7 @@ To scan a global given a rider:
   Scan the global's type name given the rider.  
   If the rider's token is the start of any optional info, scan the global given the rider (optional info); exit.
   If the rider's token is "equal", scan the global given the rider (data part); exit.
-  If the rider's token is not the period byte, abort with "All global definitions must end with a period. Including this one." and the rider; exit. 
+  If the rider's token is not the period byte, abort with "All global definitions must end with an period. Including this one." and the rider; exit. 
   Move the rider (compiler rules).
   Index the global.
   

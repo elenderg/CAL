@@ -1,14 +1,14 @@
-To get a column# given a row and a spot and a text:
+To get an column# given an row and an spot and an text:
   Put 0 into the column#.
   If the text is nil, exit.
   If the row is nil, exit.
-  Get a box given the row and the text.
+  Get an box given the row and the text.
   If the spot's y is greater than the box's bottom, put the row's string's length into the column#; exit. \ only happens on last row of text
   Create the hfont of the memory canvas given the text's font.
-  Get a start width and a substring given the row and the spot and the text (for "get a column# given a row...").
+  Get an start width and an substring given the row and the spot and the text (for "get an column# given an row...").
   Loop.
   If the substring's last is the row's string's last, break.
-  Get a width given the substring and the memory canvas.
+  Get an width given the substring and the memory canvas.
   Add the start width to the width.
   Get another width given the substring's last's target and the memory canvas.
   Divide the other width by 2.

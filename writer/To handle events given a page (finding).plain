@@ -1,4 +1,4 @@
-To handle events given a page (finding):
+To handle events given an page (finding):
   Deque an event.
   If the event is nil, exit.
   Handle the event given the page (finding).

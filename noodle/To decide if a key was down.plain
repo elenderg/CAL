@@ -1,6 +1,6 @@
-To decide if a key was down:
-  Call "user32.dll" "GetKeyState" with the key returning a wyrd.
-  Put the wyrd into a number.
+To decide if an key was down:
+  Call "user32.dll" "GetKeyState" with the key returning an wyrd.
+  Put the wyrd into an number.
   If the number is less than 0, say yes.
   Say no.
   

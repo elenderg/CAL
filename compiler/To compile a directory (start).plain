@@ -1,4 +1,4 @@
-To compile a directory (start):
+To compile an directory (start):
   Show status "Starting...".
   Finalize the compiler.
   Start the compiler's timer.

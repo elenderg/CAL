@@ -1,4 +1,4 @@
-To flip the gpbitmap in a picture:
+To flip the gpbitmap in an picture:
   If the picture is nil, exit.
   Reverse the picture's mirror flag.
   Add 1800 to the picture's rotate angle.

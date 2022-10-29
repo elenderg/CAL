@@ -1,4 +1,4 @@
-To calculate the length of a type:
+To calculate the length of an type:
   If the type is nil, exit.
   If the type's length is not -1, exit.
   Calculate the length of the type's base type.
@@ -6,7 +6,7 @@ To calculate the length of a type:
   Put 0 into the type's length.
   Loop.
   If the compiler's abort flag is set, exit.
-  Get a field from the type's fields.
+  Get an field from the type's fields.
   If the field is nil, exit.
   If the field's redefinition target name is not blank, repeat.
   Calculate the length of the field's type.

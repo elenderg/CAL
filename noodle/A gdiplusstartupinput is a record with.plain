@@ -1,7 +1,7 @@
-A gdiplusstartupinput is a record with
-  A number called gdiplusversion,
-  A pointer called debugeventcallback,
-  A number called suppressbackgroundthread,
-  A number called suppressexternalcodecs.
+An gdiplusstartupinput is an record with
+  An number called gdiplusversion,
+  An pointer called debugeventcallback,
+  An number called suppressbackgroundthread,
+  An number called suppressexternalcodecs.
   
   

@@ -1,11 +1,11 @@
-To convert a nibble string to a hex string:
+To convert an nibble string to an hex string:
   Privatize the nibble string.
   Clear the hex string.
   If the nibble string's length is odd, prepend the zero byte to the nibble string.
-  Slap a substring on the nibble string.
+  Slap an substring on the nibble string.
   Loop.
   If the substring is blank, exit.
-  Convert the substring's first's target to a nibble.
+  Convert the substring's first's target to an nibble.
   Shift the nibble left 4 bits.
   Add 1 to the substring's first.
   Convert the substring's first's target to another nibble.

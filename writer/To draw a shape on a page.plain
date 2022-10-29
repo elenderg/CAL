@@ -1,4 +1,4 @@
-To draw a shape on a page:
+To draw an shape on an page:
   If the shape is nil, exit.
   If the shape's kind is "ellipse", draw the shape on the page (ellipse); exit.
   If the shape's kind is "group", draw the shape on the page (group); exit.

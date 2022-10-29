@@ -1,5 +1,5 @@
 To name some blocks:
-  Get a block from the blocks.
+  Get an block from the blocks.
   If the block is nil, exit.
   Name the block.
   Repeat.

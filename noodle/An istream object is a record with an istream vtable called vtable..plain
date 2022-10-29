@@ -1,3 +1,3 @@
-An istream object is a record with an istream vtable called vtable.
+An istream object is an record with an istream vtable called vtable.
   
   

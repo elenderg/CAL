@@ -1,4 +1,4 @@
-To copy a monikette into another monikette:
+To copy an monikette into another monikette:
   If the monikette is nil, void the other monikette; exit.
   Allocate memory for the other monikette.
   Put the monikette's string into the other monikette's string.

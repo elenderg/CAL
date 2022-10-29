@@ -1,4 +1,4 @@
-To move a rider (compiler rules):
+To move an rider (compiler rules):
   If the compiler's abort flag is set, clear the rider's token; exit.
   Move the rider returning an error string (code rules).
   If the error string is not blank, abort with the error string and the rider's token's first; exit.

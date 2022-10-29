@@ -1,16 +1,16 @@
-To convert a string to a fraction:
+To convert an string to an fraction:
   Clear the fraction.
   If the string is blank, exit.
   If the string is any integer, convert the string to the fraction's numerator; exit.
-  Slap a substring on the string.
+  Slap an substring on the string.
   If the substring's first's target is any sign, add 1 to the substring's first.
   If the substring is blank, exit.
-  Split the substring into an integer substring and a fraction substring given the dash byte.
+  Split the substring into an integer substring and an fraction substring given the dash byte.
   If the integer substring is blank, put the substring into the fraction substring.
-  Split the fraction substring into a numerator substring and a denominator substring given the slash byte.
-  Convert the integer substring to a whole number.
-  Convert the numerator substring to a numerator number.
-  Convert the denominator substring to a denominator number.
+  Split the fraction substring into an numerator substring and an denominator substring given the slash byte.
+  Convert the integer substring to an whole number.
+  Convert the numerator substring to an numerator number.
+  Convert the denominator substring to an denominator number.
   If the whole number is negative, exit.
   If the numerator number is negative, exit.
   If the denominator number is negative, exit.

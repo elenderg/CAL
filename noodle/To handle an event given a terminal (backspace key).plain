@@ -1,4 +1,4 @@
-To handle an event given a terminal (backspace key):
+To handle an event given an terminal (backspace key):
   If the terminal's reply is blank, exit.
   If the event is modified, exit.
   Remove the last byte from the terminal's reply.

@@ -1,4 +1,4 @@
-To compile a directory (resolve the globals):
+To compile an directory (resolve the globals):
   If the compiler's abort flag is set, exit.
   Show status "Resolving...".
   Start the resolving globals timer.

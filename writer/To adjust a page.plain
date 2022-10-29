@@ -1,4 +1,4 @@
-To adjust a page:
+To adjust an page:
   If the page is nil, exit.
   Adjust the shape refers given the page.
   Adjust the title of the page.

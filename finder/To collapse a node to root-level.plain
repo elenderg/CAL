@@ -1,4 +1,4 @@
-To collapse a node to root-level:
+To collapse an node to root-level:
   If the node is nil, exit.
   If the node's kind is "root", exit.
   Close the node.

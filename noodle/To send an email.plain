@@ -1,10 +1,10 @@
 To send an email:
   Clear the i/o error.
   \ create socket
-  Create a socket given the email's smtp server and 25.
+  Create an socket given the email's smtp server and 25.
   If the i/o error is not blank, exit.
   \ initial receive here for date/time stuff from server
-  Receive a response string from the socket.
+  Receive an response string from the socket.
   If the i/o error is not blank, destroy the socket; exit.
   If the response starts with "5", put the response into the i/o error; trim the i/o error; destroy the socket; exit.
   \ send HELO
@@ -24,7 +24,7 @@ To send an email:
   If the i/o error is not blank, destroy the socket; exit.
   If the response starts with "5", put the response into the i/o error; trim the i/o error; destroy the socket; exit.
   \ send From: xxx crlf To: xxx crlf Subject: xxx crlf Reply-To: xxx crlf message crlf . crlf
-  Clear a temp string.
+  Clear an temp string.
   Append "From: " then the email's sender then the crlf string to the temp string.
   Append "To: " then the email's recipient then the crlf string to the temp string.
   Append "Subject: " then the email's subject then the crlf string into the temp string.

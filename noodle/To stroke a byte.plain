@@ -1,10 +1,10 @@
-To stroke a byte:
+To stroke an byte:
   Put the context's letter height divided by 4 into the square size. \ ***
   If the byte is the accent byte, stroke the accent glyph.
   If the byte is the asterisk byte, stroke the asterisk glyph.
   If the byte is the at-sign byte, stroke the at-sign glyph.
   If the byte is the backslash byte, stroke the backslash glyph.
-  If the byte is the big-a byte, stroke the big-a glyph.
+  If the byte is the big-an byte, stroke the big-an glyph.
   If the byte is the big-b byte, stroke the big-b glyph.
   If the byte is the big-c byte, stroke the big-c glyph.
   If the byte is the big-d byte, stroke the big-d glyph.
@@ -44,7 +44,7 @@ To stroke a byte:
   If the byte is the left-brace byte, stroke the left-brace glyph.
   If the byte is the left-bracket byte, stroke the left-bracket glyph.
   If the byte is the left-paren byte, stroke the left-paren glyph.
-  If the byte is the little-a byte, stroke the little-a glyph.
+  If the byte is the little-an byte, stroke the little-an glyph.
   If the byte is the little-b byte, stroke the little-b glyph.
   If the byte is the little-c byte, stroke the little-c glyph.
   If the byte is the little-d byte, stroke the little-d glyph.

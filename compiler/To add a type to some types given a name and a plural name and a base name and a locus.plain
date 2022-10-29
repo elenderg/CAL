@@ -1,4 +1,4 @@
-To add a type to some types given a name and a plural name and a base name and a locus:
+To add an type to some types given an name and an plural name and an base name and an locus:
   Create the type.
   Append the type to the types.
   Put the locus into the type's locus.

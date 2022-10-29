@@ -1,4 +1,4 @@
-To send a message to a recipient from a sender with a subject:
+To send an message to an recipient from an sender with an subject:
   Put the default smtp server into an email's smtp server.
   Put the recipient into the email's recipient.
   Put the sender into the email's sender.

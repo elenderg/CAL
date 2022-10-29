@@ -1,4 +1,4 @@
-To externalize a ratio given a buffer and an indent:
+To externalize an ratio given an buffer and an indent:
   Externalize the ratio's numerator given the buffer and the indent.
   Externalize the ratio's denominator given the buffer and the indent.
   

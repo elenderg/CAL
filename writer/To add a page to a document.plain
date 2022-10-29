@@ -1,4 +1,4 @@
-To add a page to a document:
+To add an page to an document:
   If the document is nil, exit.
   Create the page.
   Insert the page into the document's pages before the document's first selected page.

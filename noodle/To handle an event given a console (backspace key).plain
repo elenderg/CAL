@@ -1,4 +1,4 @@
-To handle an event given a console (backspace key):
+To handle an event given an console (backspace key):
   If the console's reply is blank, exit.
   If the event is modified, exit.
   Handle the event given the console's text (backspace key).

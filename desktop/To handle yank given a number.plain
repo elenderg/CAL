@@ -1,4 +1,4 @@
-To handle yank given a number:
+To handle yank given an number:
   If the current tab's mode is "writer", handle yank given the current tab's node's page and the number; exit.
   Cluck.
   

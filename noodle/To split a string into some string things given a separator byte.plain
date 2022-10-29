@@ -1,7 +1,7 @@
-To split a string into some string things given a separator byte:
+To split an string into some string things given an separator byte:
   Destroy the string things.
   If the string is blank, exit.
-  Slap a rider on the string.
+  Slap an rider on the string.
   Loop.
   Move the rider given the separator byte.
   Add the rider's token to the string things.

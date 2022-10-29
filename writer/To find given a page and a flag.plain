@@ -1,4 +1,4 @@
-To find given a page and a flag:
+To find given an page and an flag:
   Clear the flag.
   If the page is nil, exit.
   Privatize the page.

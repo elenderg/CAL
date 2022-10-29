@@ -1,5 +1,5 @@
-To decide if a spot is in the switch:
-  Find a tab given the spot.
+To decide if an spot is in the switch:
+  Find an tab given the spot.
   If the tab is nil, say no.
   Say yes.
   

@@ -1,4 +1,4 @@
-To create a document:
+To create an document:
   Allocate memory for the document.
   Put yes into the document's grid showing flag.
   Put 1/16 inch and 1/16 inch into the document's yank.

@@ -1,4 +1,4 @@
-To convert a nibble to a nibble string:
+To convert an nibble to an nibble string:
   Privatize the nibble.
   If the nibble is greater than 9, add 7 to the nibble.
   Add 48 to the nibble.

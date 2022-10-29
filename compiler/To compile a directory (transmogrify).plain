@@ -1,4 +1,4 @@
-To compile a directory (transmogrify):
+To compile an directory (transmogrify):
   If the compiler's abort flag is set, exit.
   Show status "Mogrifying...".
   Start the transmogrifying timer.

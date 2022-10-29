@@ -1,4 +1,4 @@
-To draw a terminal:
+To draw an terminal:
   If the terminal is nil, exit.
   Save the current canvas.
   Mask only outside the terminal's box.

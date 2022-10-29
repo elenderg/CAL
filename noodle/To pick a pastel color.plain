@@ -1,4 +1,4 @@
-To pick a pastel color:
+To pick an pastel color:
   Pick the pastel color's hue between 0 and 3599.
   Put 1000 into the pastel color's saturation.
   Put 875 into the pastel color's lightness.

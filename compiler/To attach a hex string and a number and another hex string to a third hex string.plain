@@ -1,6 +1,6 @@
-To attach a hex string and a number and another hex string to a third hex string:
+To attach an hex string and an number and another hex string to an third hex string:
   Append the hex string to the third hex string.
-  Convert the number to a fourth hex string.
+  Convert the number to an fourth hex string.
   Append the fourth hex string to the third hex string.
   Append the other hex string to the third hex string.
   

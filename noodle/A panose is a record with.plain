@@ -1,13 +1,13 @@
-A panose is a record with
-  A byte called bfamilytype,
-  A byte called bserifstyle,
-  A byte called bweight,
-  A byte called bproportion,
-  A byte called bcontrast,
-  A byte called bstrokevariation,
-  A byte called barmstyle,
-  A byte called bletterform,
-  A byte called bmidline,
-  A byte called bxheight.
+An panose is an record with
+  An byte called bfamilytype,
+  An byte called bserifstyle,
+  An byte called bweight,
+  An byte called bproportion,
+  An byte called bcontrast,
+  An byte called bstrokevariation,
+  An byte called barmstyle,
+  An byte called bletterform,
+  An byte called bmidline,
+  An byte called bxheight.
   
   

@@ -1,4 +1,4 @@
-To end edit on a page:
+To end edit on an page:
   If the page is nil, exit.
   If the page is not being edited, exit.
   Destroy the page's edit shape's text's undos.

@@ -1,4 +1,4 @@
-To handle an event given a text (up-arrow key):
+To handle an event given an text (up-arrow key):
   If the text is nil, exit.
   Move the caret up in the text.
   If the event's shift flag is not set, deselect the text.

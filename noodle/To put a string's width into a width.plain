@@ -1,4 +1,4 @@
-To put a string's width into a width:
+To put an string's width into an width:
   Get the width given the string and the memory canvas and the default font.
   
   

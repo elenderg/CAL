@@ -1,4 +1,4 @@
-To handle an event given a source (key down):
+To handle an event given an source (key down):
   If the event's byte is printable, handle the event given the source (key down - printable key); exit.
   If the event's key is the backspace key, handle the event given the source (key down - backspace key); exit.
   If the event's key is the delete key, handle the event given the source (key down - delete key); exit.

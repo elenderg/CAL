@@ -1,4 +1,4 @@
-To mask only inside a polygon:
+To mask only inside an polygon:
   Unmask everything.
   Mask inside the polygon.
   

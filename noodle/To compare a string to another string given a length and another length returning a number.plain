@@ -1,4 +1,4 @@
-To compare a string to another string given a length and another length returning a number:
+To compare an string to another string given an length and another length returning an number:
   Intel $8BB508000000. \ mov esi,[ebp+8] \ the string
   Intel $8B36. \ mov esi,[esi] \ the string's first
   Intel $8BBD0C000000. \ mov edi,[ebp+12] \ the other string
@@ -17,14 +17,14 @@ To compare a string to another string given a length and another length returnin
   Intel $0F8444000000. \ jz L6
   \ uppercase current byte in the string
   Intel $8A1E. \ mov bl,[esi]
-  Intel $80FB61. \ cmp bl,'a'
+  Intel $80FB61. \ cmp bl,'an'
   Intel $0F820C000000. \ jb L4
   Intel $80FB7A. \ cmp bl,'z'
   Intel $0F8703000000. \ ja L4
   Intel $80EB20. \ sub bl,$20
   \L4: \ uppercase current byte in the other string
   Intel $8A3F. \ mov bh,[edi]
-  Intel $80FF61. \ cmp bh,'a'
+  Intel $80FF61. \ cmp bh,'an'
   Intel $0F820C000000. \ jb L5
   Intel $80FF7A. \ cmp bh,'z'
   Intel $0F8703000000. \ ja L5

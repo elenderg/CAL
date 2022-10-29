@@ -1,14 +1,14 @@
-A font info is a thing with \ used for pdf conversion
-  A font,
+An font info is an thing with \ used for pdf conversion
+  An font,
   An emsquare number,
   An internal leading number,
-  A flags number,
+  An flags number,
   An ascent number,
-  A descent number,
-  A capheight number,
+  An descent number,
+  An capheight number,
   An italicangle number,
-  A stemv number,
-  A font box,
+  An stemv number,
+  An font box,
   Some font widths.
   
   

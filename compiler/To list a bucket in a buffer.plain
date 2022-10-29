@@ -1,4 +1,4 @@
-To list a bucket in a buffer:
+To list an bucket in an buffer:
   If the bucket's refers are empty, exit.
   Append "/bucket" to the buffer (with separator).
   Advance the buffer.

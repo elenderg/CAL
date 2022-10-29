@@ -1,4 +1,4 @@
-To initialize a context:
+To initialize an context:
   Allocate memory for the context.
   Put the screen's center into the context's spot.
   Put 0 into the context's heading.

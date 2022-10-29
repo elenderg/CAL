@@ -1,4 +1,4 @@
-To put a string into a text:
+To put an string into an text:
   If the text is nil, exit.
   Destroy the text's rows.
   Reset the origin of the text.

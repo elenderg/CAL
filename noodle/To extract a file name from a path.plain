@@ -1,6 +1,6 @@
-To extract a file name from a path:
+To extract an file name from an path:
   Clear the file name.
   If the path is not file-format, exit.
-  Extract the file name as a designator from the path.
+  Extract the file name as an designator from the path.
   
   

@@ -1,4 +1,4 @@
-To put a box's left-bottom into a spot:
+To put an box's left-bottom into an spot:
   Put the box's left into the spot's x.
   Put the box's bottom into the spot's y.
   

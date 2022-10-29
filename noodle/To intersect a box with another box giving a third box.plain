@@ -1,4 +1,4 @@
-To intersect a box with another box giving a third box:
+To intersect an box with another box giving an third box:
   \ boxes do not touch
   Clear the third box.
   If the box's left is greater than the other box's right, exit.

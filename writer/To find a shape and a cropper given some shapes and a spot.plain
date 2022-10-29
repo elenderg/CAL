@@ -1,4 +1,4 @@
-To find a shape and a cropper given some shapes and a spot:
+To find an shape and an cropper given some shapes and an spot:
   Get the shape from the shapes (backwards).
   If the shape is nil, break.
   If the shape is not selected, repeat.

@@ -1,5 +1,5 @@
-To handle a command (f):
-  Create a submenu.
+To handle an command (f):
+  Create an submenu.
   If the current tab's mode is "editor", add "Find" and "F" and "handle find" to the submenu.
   If the current tab's mode is "writer", add "Find" and "F" and "handle find" to the submenu.
   If the current tab's mode is "editor", add "Find Next" and "N" and "handle find next" to the submenu.

@@ -1,7 +1,7 @@
 An item has
-  A kind,
-  A path, a directory, a designator, an extension,
-  A size,
-  A win32finddata and a handle.
+  An kind,
+  An path, an directory, an designator, an extension,
+  An size,
+  An win32finddata and an handle.
   
   

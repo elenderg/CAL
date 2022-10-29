@@ -1,6 +1,6 @@
-To find a row# given a source file and a byte pointer:
+To find an row# given an source file and an byte pointer:
   If the byte pointer is nil, put 0 into the row#; exit.
-  Slap a substring on the source file's buffer.
+  Slap an substring on the source file's buffer.
   Put 1 into the row#.
   Loop.
   If the substring is blank, exit.

@@ -1,4 +1,4 @@
-To decide if a byte is greater than another byte:
+To decide if an byte is greater than another byte:
   Intel $C7C001000000. \ mov eax,1 \ assume true
   Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the byte
   Intel $8A1B. \ mov bl,[ebx]

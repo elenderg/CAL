@@ -1,4 +1,4 @@
-To put a polygon's left-bottom into a spot:
+To put an polygon's left-bottom into an spot:
   If the polygon is nil, clear the spot; exit.
   Put the polygon's box's left-bottom into the spot.
   

@@ -1,5 +1,5 @@
-To decide if a string is any integer literal:
-  Slap a substring on the string.
+To decide if an string is any integer literal:
+  Slap an substring on the string.
   If the substring is blank, say no.
   If the substring's first's target is any sign, add 1 to the substring's first.
   If the substring is blank, say no.

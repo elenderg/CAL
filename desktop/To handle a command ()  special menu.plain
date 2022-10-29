@@ -1,5 +1,5 @@
-To handle a command (*): \ special menu
-  Create a submenu. \ special menu
+To handle an command (*): \ special menu
+  Create an submenu. \ special menu
   Add swatches to the submenu given "handle border and fill". \ special menu
   Handle the command given the submenu and the palette width. \ special menu
   

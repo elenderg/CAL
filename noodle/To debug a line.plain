@@ -1,5 +1,5 @@
-To debug a line:
-  Clear a string.
+To debug an line:
+  Clear an string.
   Append "start=" to the string.
   Append the line's start's x to the string.
   Append "," to the string.

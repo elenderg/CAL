@@ -1,5 +1,5 @@
-To debug a box:
-  Clear a string.
+To debug an box:
+  Clear an string.
   Append "left=" to the string.
   Append the box's left to the string.
   Append ", top=" to the string.

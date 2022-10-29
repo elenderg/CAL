@@ -1,5 +1,5 @@
-To save a context:
-  Allocate memory for a saved context.
+To save an context:
+  Allocate memory for an saved context.
   Put the context's spot into the saved context's spot.
   Put the context's heading into the saved context's heading.
   Put the context's letter height into the saved context's letter height.

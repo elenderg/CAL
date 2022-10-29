@@ -1,10 +1,10 @@
-To copy any selected nodettes in a node returning a count:
+To copy any selected nodettes in an node returning an count:
   Put 0 into the count.
   If the node is nil, exit.
-  Put 0 into a current count.
-  Put the node's selected nodette count into a total count.
+  Put 0 into an current count.
+  Put the node's selected nodette count into an total count.
   Loop.
-  Get a nodette from the node's nodettes.
+  Get an nodette from the node's nodettes.
   If the nodette is nil, exit.
   If the nodette is not selected, repeat.
   Add 1 to the current count.

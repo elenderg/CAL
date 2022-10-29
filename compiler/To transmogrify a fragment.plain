@@ -1,4 +1,4 @@
-To transmogrify a fragment:
+To transmogrify an fragment:
   If the compiler's abort flag is set, exit.
   If the fragment is nil, exit.
   If the fragment's tag is the push address tag, transmogrify the fragment (push address); exit.

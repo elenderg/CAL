@@ -1,4 +1,4 @@
-To scale a shape given a ratio (ellipse):
+To scale an shape given an ratio (ellipse):
   Scale the shape's ellipse's box given the ratio.
   Adjust the shape.
   

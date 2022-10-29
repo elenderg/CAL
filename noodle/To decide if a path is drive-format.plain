@@ -1,4 +1,4 @@
-To decide if a path is drive-format:
+To decide if an path is drive-format:
   If the path starts with "\\", say yes.
   If the path's length is not 3, say no.
   If the path ends with ":\", say yes.

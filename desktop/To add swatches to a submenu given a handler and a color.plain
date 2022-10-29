@@ -1,4 +1,4 @@
-To add swatches to a submenu given a handler and a color:
+To add swatches to an submenu given an handler and an color:
   If the submenu is nil, exit.
   Privatize the color.
   Put 875 into the color's lightness.

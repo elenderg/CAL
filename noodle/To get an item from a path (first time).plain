@@ -1,4 +1,4 @@
-To get an item from a path (first time):
+To get an item from an path (first time):
   Clear the i/o error.
   Privatize the path.
   Append "*.*" to the path.

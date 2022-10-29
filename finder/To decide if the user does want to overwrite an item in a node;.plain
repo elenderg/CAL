@@ -1,7 +1,7 @@
-To decide if the user does want to overwrite an item in a node;
-  To decide if the user wants to overwrite an item in a node:
+To decide if the user does want to overwrite an item in an node;
+  To decide if the user wants to overwrite an item in an node:
   If the node is nil, say no.
-  Put the node's path into a path.
+  Put the node's path into an path.
   Append the item's designator to the path.
   If the user wants to overwrite the path, say yes.
   Say no.

@@ -1,4 +1,4 @@
-To find a nodette given a node and a spot:
+To find an nodette given an node and an spot:
   Void the nodette.
   If the node is nil, exit.
   Loop.
