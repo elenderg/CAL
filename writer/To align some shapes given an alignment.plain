@@ -1,7 +1,7 @@
 To align some shapes given an alignment:
-  Get an shape from the shapes.
-  If the shape is nil, exit.
-  Align the shape given the alignment.
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Align the shape given the alignment.
   Repeat.
   
   

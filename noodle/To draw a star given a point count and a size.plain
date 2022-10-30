@@ -1,15 +1,15 @@
 To draw an star given an point count and an size:
   Put 1 and the point count into an fraction.
   Loop.
-  Turn right 1/48 of the way.
-  Stroke the size.
-  Turn around.
-  Turn left 1/24 of the way.
-  Stroke the size.
-  Turn around.
-  Turn right 1/48 of the way.
-  Turn right the fraction of the way.
-  Add 1 to an count. If the count is the point count, break.
+    Turn right 1/48 of the way.
+    Stroke the size.
+    Turn around.
+    Turn left 1/24 of the way.
+    Stroke the size.
+    Turn around.
+    Turn right 1/48 of the way.
+    Turn right the fraction of the way.
+    Add 1 to an count. If the count is the point count, break.
   Repeat.
   
   

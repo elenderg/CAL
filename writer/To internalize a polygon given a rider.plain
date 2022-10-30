@@ -3,11 +3,11 @@ To internalize an polygon given an rider:
   Create the polygon.
   Internalize an count given the rider.
   Loop.
-  If the i/o error is not blank, exit.
-  If the count is 0, exit.
-  Internalize an spot given the rider.
-  Append the spot to the polygon.
-  Subtract 1 from the count.
+    If the i/o error is not blank, exit.
+    If the count is 0, exit.
+    Internalize an spot given the rider.
+    Append the spot to the polygon.
+    Subtract 1 from the count.
   Repeat.
   
   

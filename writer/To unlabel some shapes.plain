@@ -1,7 +1,7 @@
 To unlabel some shapes:
-  Get an shape from the shapes.
-  If the shape is nil, exit.
-  Unlabel the shape.
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Unlabel the shape.
   Repeat.
   
   

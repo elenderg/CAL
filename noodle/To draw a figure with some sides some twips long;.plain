@@ -2,9 +2,9 @@ To draw an figure with some sides some twips long;
 To draw an figure with some sides and some twips:
   Put 1 and the sides into an fraction.
   Loop.
-  Stroke the twips.
-  Turn the fraction.
-  Add 1 to an count. If the count is the sides, break.
+    Stroke the twips.
+    Turn the fraction.
+    Add 1 to an count. If the count is the sides, break.
   Repeat.
   
   

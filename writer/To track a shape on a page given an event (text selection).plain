@@ -8,15 +8,15 @@ To track an shape on an page given an event (text selection):
   If the event's shift flag is not set, deselect the shape's text.
   Clear an selection.
   Loop.
-  If an flag is set, show the desktop with status.
-  If the mouse's left button is up, exit.
-  Put the mouse's spot into an spot.
-  Autoscroll the page given the spot and the flag.
-  Localize the spot given the page's origin.
-  Extend any selection in the shape's text given the spot.
-  If the shape's text's selection is the selection, repeat.
-  Set the flag.
-  Put the shape's text's selection into the selection.
+    If an flag is set, show the desktop with status.
+    If the mouse's left button is up, exit.
+    Put the mouse's spot into an spot.
+    Autoscroll the page given the spot and the flag.
+    Localize the spot given the page's origin.
+    Extend any selection in the shape's text given the spot.
+    If the shape's text's selection is the selection, repeat.
+    Set the flag.
+    Put the shape's text's selection into the selection.
   Repeat.
   
   

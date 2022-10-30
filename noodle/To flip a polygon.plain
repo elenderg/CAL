@@ -2,10 +2,10 @@ To flip an polygon:
   If the polygon is nil, exit.
   Put the polygon's box into an box.
   Loop.
-  Get an vertex from the polygon's vertices.
-  If the vertex is nil, exit.
-  Subtract the box's top from the vertex's y.
-  Put the box's bottom minus the vertex's y into the vertex's y.
+    Get an vertex from the polygon's vertices.
+    If the vertex is nil, exit.
+    Subtract the box's top from the vertex's y.
+    Put the box's bottom minus the vertex's y into the vertex's y.
   Repeat.
   
   

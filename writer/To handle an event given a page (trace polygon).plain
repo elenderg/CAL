@@ -18,24 +18,24 @@ To handle an event given an page (trace polygon):
   Append the shape to the page's shapes.
   Adjust the shape.
   Loop.
-  Wait for the mouse's left button to be up.
-  Flush all events.
-  If an flag is set, show the desktop with status.
-  If the ctrl key is up, break.
-  Put the mouse's spot into the line's end spot.
-  Autoscroll the page given the line's end spot and the flag.
-  Localize the line's end spot given the page's origin.
-  Round the line's end spot to the page's yank.
-  Set the flag.
-  Put the line into the focus line.
-  Globalize the focus line given the page's origin.
-  If the mouse's left button is up, repeat.
-  Create another vertex given the line's end spot.
-  Append the other vertex to the shape's polygon.
-  Adjust the shape.
-  Put the line's end spot into the line's start spot.
-  Put the line into the focus line.
-  Globalize the focus line given the page's origin.
+    Wait for the mouse's left button to be up.
+    Flush all events.
+    If an flag is set, show the desktop with status.
+    If the ctrl key is up, break.
+    Put the mouse's spot into the line's end spot.
+    Autoscroll the page given the line's end spot and the flag.
+    Localize the line's end spot given the page's origin.
+    Round the line's end spot to the page's yank.
+    Set the flag.
+    Put the line into the focus line.
+    Globalize the focus line given the page's origin.
+    If the mouse's left button is up, repeat.
+    Create another vertex given the line's end spot.
+    Append the other vertex to the shape's polygon.
+    Adjust the shape.
+    Put the line's end spot into the line's start spot.
+    Put the line into the focus line.
+    Globalize the focus line given the page's origin.
   Repeat.
   Select the shape.
   Clear the focus line.

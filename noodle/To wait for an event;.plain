@@ -1,7 +1,7 @@
 To wait for an event;
 To deque an event:
-  Yield to windows.
-  Put the event queue's first into the event.
+    Yield to windows.
+    Put the event queue's first into the event.
   If the event is nil, repeat.
   Remove the event from the event queue.
   If the event's kind is "done", destroy the event; exit.

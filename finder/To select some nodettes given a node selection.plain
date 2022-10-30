@@ -6,11 +6,11 @@ To select some nodettes given an node selection:
   Subtract the tpp from the box's bottom.
   Normalize the box.
   Loop.
-  Get an nodette from the nodettes.
-  If the nodette is nil, exit.
-  Put the nodette's previously selected flag into the nodette's selected flag.
-  If the nodette's box is not touching the box, repeat.
-  Reverse the nodette's selected flag.
+    Get an nodette from the nodettes.
+    If the nodette is nil, exit.
+    Put the nodette's previously selected flag into the nodette's selected flag.
+    If the nodette's box is not touching the box, repeat.
+    Reverse the nodette's selected flag.
   Repeat.
   
   

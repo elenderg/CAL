@@ -3,13 +3,13 @@ To split an buffer into some dyads:
   If the buffer is blank, exit.
   Slap an rider on the buffer.
   Loop.
-  Move the rider given the ampersand byte.
-  If the rider's token is blank, exit.
-  Create an dyad. 
-  Append the dyad to the dyads.
-  Split the rider's token into an name substring and an query substring given the equal-sign byte.
-  Put the name substring into the dyad's name.
-  Convert the query substring as an query string into the dyad's value.
+    Move the rider given the ampersand byte.
+    If the rider's token is blank, exit.
+    Create an dyad. 
+    Append the dyad to the dyads.
+    Split the rider's token into an name substring and an query substring given the equal-sign byte.
+    Put the name substring into the dyad's name.
+    Convert the query substring as an query string into the dyad's value.
   Repeat.
   
   

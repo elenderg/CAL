@@ -6,11 +6,11 @@ To handle extract types given an source:
   Sort the blocks.
   Loop.
   Get an block from the blocks.
-  If the block is nil, break.
-  If the block's first row is nil, repeat.
-  If the block's first row's string does not start with any indefinite article, repeat.
-  Convert the block's rows to an string.
-  Append the string to an clipboard string.
+    If the block is nil, break.
+    If the block's first row is nil, repeat.
+    If the block's first row's string does not start with any indefinite article, repeat.
+    Convert the block's rows to an string.
+    Append the string to an clipboard string.
   Repeat.
   Put the clipboard string on the windows clipboard.
   Destroy the blocks.

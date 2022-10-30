@@ -3,9 +3,9 @@ To list an index in an buffer:
   Append the index's count then " refers" to the buffer (with separator).
   Advance the buffer (twice).
   Loop.
-  Get an bucket given the index.
-  If the bucket is nil, exit.
-  List the bucket in the buffer.
+    Get an bucket given the index.
+    If the bucket is nil, exit.
+    List the bucket in the buffer.
   Repeat.
   
   

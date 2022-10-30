@@ -11,10 +11,10 @@ To wrap an text:
   Slap an rider on the string.
   Create the hfont of the memory canvas given the text's font.
   Loop.
-  Move the rider given the text's box (word wrapping rules).
-  If the rider's token is blank, break.
-  Create an row given the rider's token.
-  Append the row to the text's rows.
+    Move the rider given the text's box (word wrapping rules).
+    If the rider's token is blank, break.
+    Create an row given the rider's token.
+    Append the row to the text's rows.
   Repeat.
   Destroy the hfont of the memory canvas.
   Renumber the text's rows.

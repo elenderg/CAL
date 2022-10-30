@@ -1,8 +1,8 @@
 To append some things to some other things:
-  Put the things' first into an thing.
-  If the thing is nil, exit.
-  Remove the thing from the things.
-  Append the thing to the other things.
+    Put the things' first into an thing.
+    If the thing is nil, exit.
+    Remove the thing from the things.
+    Append the thing to the other things.
   Repeat.
   
   

@@ -5,14 +5,14 @@ To track an source given an event:
   If the event's shift flag is not set, deselect the source's text.
   Clear an selection.
   Loop.
-  If an flag is set, show the desktop with status.
-  If the mouse's left button is up, exit.
-  Put the mouse's spot into an spot.
-  Autoscroll the source's text given the spot and the flag.
-  Extend any selection in the source's text given the spot.
-  If the source's text's selection is the selection, repeat.
-  Set the flag.
-  Put the source's text's selection into the selection.
+    If an flag is set, show the desktop with status.
+    If the mouse's left button is up, exit.
+    Put the mouse's spot into an spot.
+    Autoscroll the source's text given the spot and the flag.
+    Extend any selection in the source's text given the spot.
+    If the source's text's selection is the selection, repeat.
+    Set the flag.
+    Put the source's text's selection into the selection.
   Repeat.
   
   

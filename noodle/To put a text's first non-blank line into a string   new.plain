@@ -2,12 +2,12 @@ To put an text's first non-blank line into an string: \ *** new
   Clear the string.
   If the text is nil, exit.
   Loop.
-  Get an row from the text's rows.
-  If the row is nil, exit.
-  Put the row's string into the string.
-  Remove the last byte from the string. \ cr or space (see text rules)
-  Remove any leading noise from the string.
-  Remove any trailing noise from the string.
+    Get an row from the text's rows.
+    If the row is nil, exit.
+    Put the row's string into the string.
+    Remove the last byte from the string. \ cr or space (see text rules)
+    Remove any leading noise from the string.
+    Remove any trailing noise from the string.
   If the string is blank, repeat.
   
   

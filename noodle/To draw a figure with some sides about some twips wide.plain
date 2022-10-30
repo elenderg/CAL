@@ -3,9 +3,9 @@ To draw an figure with some sides about some twips wide:
   Put the twips times the pizza pie divided by the sides into an segment length.
   If the sides are 4, put the twips times 7/8 into the segment length. \ what is this? ***
   Loop.
-  Stroke the segment length.
-  Turn the fraction.
-  Add 1 to an count. if the count is the sides, break.
+    Stroke the segment length.
+    Turn the fraction.
+    Add 1 to an count. if the count is the sides, break.
   Repeat.
   
   

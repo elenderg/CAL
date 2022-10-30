@@ -1,9 +1,9 @@
 To convert some rows to an string (no linefeed additions):
   Clear the string.
   Loop.
-  Get an row from the rows.
-  If the row is nil, exit.
-  Append the row's string to the string.
+    Get an row from the rows.
+    If the row is nil, exit.
+    Append the row's string to the string.
   Repeat.
   
   

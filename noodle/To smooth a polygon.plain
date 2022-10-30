@@ -4,17 +4,17 @@ To smooth an polygon:
   If the polygon is closed, append the polygon's first vertex's next's spot to the polygon; set an flag.
   Put the polygon's first vertex into an left vertex.
   Loop.
-  If the left vertex's next is nil, break.
-  Put the left vertex's next into an right vertex.
-  Get an center spot given the left vertex's spot and the right vertex's spot.
-  Insert the center into the polygon after the left vertex.
-  Put the left vertex's next into an new vertex.
-  If the left vertex's previous is nil, put the right vertex into the left vertex; repeat.
-  Get another center spot given the left vertex's previous' spot and the new vertex's spot.
-  Get an difference between the other center and the left vertex's spot.
-  Divide the difference by 2.
-  Add the difference to the left vertex's spot.
-  Put the right vertex into the left vertex.
+    If the left vertex's next is nil, break.
+    Put the left vertex's next into an right vertex.
+    Get an center spot given the left vertex's spot and the right vertex's spot.
+    Insert the center into the polygon after the left vertex.
+    Put the left vertex's next into an new vertex.
+    If the left vertex's previous is nil, put the right vertex into the left vertex; repeat.
+    Get another center spot given the left vertex's previous' spot and the new vertex's spot.
+    Get an difference between the other center and the left vertex's spot.
+    Divide the difference by 2.
+    Add the difference to the left vertex's spot.
+    Put the right vertex into the left vertex.
   Repeat.
   If the flag is not set, exit.
   Destroy the polygon's first vertex given the polygon.

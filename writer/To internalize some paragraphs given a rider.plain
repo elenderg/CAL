@@ -1,8 +1,8 @@
 To internalize some paragraphs given an rider:
-  If the i/o error is not blank, exit.
-  If the rider's token is "end", exit.
-  Internalize an paragraph given the rider.
-  Append the paragraph to the paragraphs.
+    If the i/o error is not blank, exit.
+    If the rider's token is "end", exit.
+    Internalize an paragraph given the rider.
+    Append the paragraph to the paragraphs.
   Repeat.
   
   

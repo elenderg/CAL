@@ -9,22 +9,22 @@ To track an sizer on an shape on an page given an event:
   Put the shape's box into an box. \ for status
   Copy the page's shapes into some original shapes.
   Loop.
-  If an flag is set, show the desktop.
-  If the mouse's left button is up, break.
-  Put the mouse's spot into an spot.
-  Autoscroll the page given the spot and the flag.
-  Localize the spot given the page's origin.
-  Get an difference between the spot and the current spot given the page's yank.
-  If the difference is 0, repeat.
-  Set the flag.
-  Move the current spot given the difference.
-  Get another difference between the current spot and the start spot given the sizer.
-  Copy the original shapes into the page's shapes.
-  Resize any selected shapes on the page given the other difference.
-  Move any selected shapes on the page given the other difference and the sizer.
-  Put the box into another box.
-  Resize the other box given the other difference.
-  Get the status for the other box given the page's measure.
+    If an flag is set, show the desktop.
+    If the mouse's left button is up, break.
+    Put the mouse's spot into an spot.
+    Autoscroll the page given the spot and the flag.
+    Localize the spot given the page's origin.
+    Get an difference between the spot and the current spot given the page's yank.
+    If the difference is 0, repeat.
+    Set the flag.
+    Move the current spot given the difference.
+    Get another difference between the current spot and the start spot given the sizer.
+    Copy the original shapes into the page's shapes.
+    Resize any selected shapes on the page given the other difference.
+    Move any selected shapes on the page given the other difference and the sizer.
+    Put the box into another box.
+    Resize the other box given the other difference.
+    Get the status for the other box given the page's measure.
   Repeat.
   Destroy the original shapes.
   Show the desktop with status.

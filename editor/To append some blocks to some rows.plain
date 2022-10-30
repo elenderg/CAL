@@ -1,7 +1,7 @@
 To append some blocks to some rows:
-  Get an block from the blocks.
-  If the block is nil, exit.
-  Append the block's rows to the rows.
+    Get an block from the blocks.
+    If the block is nil, exit.
+    Append the block's rows to the rows.
   Repeat.
   
   

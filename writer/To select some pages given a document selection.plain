@@ -6,11 +6,11 @@ To select some pages given an document selection:
   Subtract the tpp from the box's bottom.
   Normalize the box.
   Loop.
-  Get an page from the pages.
-  If the page is nil, exit.
-  Put the page's previously selected flag into the page's selected flag.
-  If the page's edge is not touching the box, repeat.
-  Reverse the page's selected flag.
+    Get an page from the pages.
+    If the page is nil, exit.
+    Put the page's previously selected flag into the page's selected flag.
+    If the page's edge is not touching the box, repeat.
+    Reverse the page's selected flag.
   Repeat.
   
   

@@ -1,7 +1,7 @@
 To list some source files in an buffer:
-  Get an source file from the source files.
-  If the source file is nil, exit.
-  List the source file in the buffer.
+    Get an source file from the source files.
+    If the source file is nil, exit.
+    List the source file in the buffer.
   Repeat.
   
   

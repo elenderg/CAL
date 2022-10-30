@@ -2,9 +2,9 @@ To get an row given an row# and an text:
   Void the row.
   If the text is nil, exit.
   Loop.
-  Get the row from the text's rows.
-  If the row is nil, exit.
-  If the row's row# is the row#, exit.
+    Get the row from the text's rows.
+    If the row is nil, exit.
+    If the row's row# is the row#, exit.
   Repeat.
   
   

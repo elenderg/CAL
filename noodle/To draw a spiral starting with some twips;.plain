@@ -2,9 +2,9 @@ To draw an spiral starting with some twips;
 To draw an spiral given an size:
   Privatize the size.
   Loop.
-  Draw an half circle given the size.
-  Divide the size by 2.
-  Add 1 to an count. If the count is 5, break.
+    Draw an half circle given the size.
+    Divide the size by 2.
+    Add 1 to an count. If the count is 5, break.
   Repeat.
   
   

@@ -1,7 +1,7 @@
 To resize some shapes given an ratio pair:
-  Get an shape from the shapes.
-  If the shape is nil, exit.
-  Resize the shape given the ratio pair.
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Resize the shape given the ratio pair.
   Repeat.
   
   

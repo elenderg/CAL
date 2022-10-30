@@ -6,9 +6,9 @@ To draw an polygon with an border color and an fill color (pdf style):
   If the vertex is nil, exit.
   Output moveto given the vertex's spot.
   Loop.
-  Get the vertex from the polygon's vertices.
-  If the vertex is nil, break.
-  Output lineto given the vertex's spot.
+    Get the vertex from the polygon's vertices.
+    If the vertex is nil, break.
+    Output lineto given the vertex's spot.
   Repeat.
   Output stroke and fill given the border and the fill.
   

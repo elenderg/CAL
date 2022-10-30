@@ -4,10 +4,10 @@ To dump an buffer into another buffer:
   Slap an substring on the buffer.
   Put the substring's first plus 16 minus 1 into the substring's last.
   Loop.
-  If the substring's first is greater than the buffer's last, break.
-  If the substring's last is greater than the buffer's last, put the buffer's last into the substring's last.
-  Dump the substring of the buffer into the other buffer.
-  Move the substring given 16.
+    If the substring's first is greater than the buffer's last, break.
+    If the substring's last is greater than the buffer's last, put the buffer's last into the substring's last.
+    Dump the substring of the buffer into the other buffer.
+    Move the substring given 16.
   Repeat.
   
   

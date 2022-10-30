@@ -1,7 +1,7 @@
 To blurt some variables into an buffer:
-  Get an variable from the variables.
-  If the variable is nil, exit.
-  Blurt the variable into the buffer.
+    Get an variable from the variables.
+    If the variable is nil, exit.
+    Blurt the variable into the buffer.
   Repeat.
   
   

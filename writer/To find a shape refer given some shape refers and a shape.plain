@@ -1,9 +1,9 @@
 To find an shape refer given some shape refers and an shape:
   Void the shape refer.
   Loop.
-  Get the shape refer from the shape refers.
-  If the shape refer is nil, exit.
-  If the shape refer's shape is the shape, exit.
+    Get the shape refer from the shape refers.
+    If the shape refer is nil, exit.
+    If the shape refer's shape is the shape, exit.
   Repeat.
   
   

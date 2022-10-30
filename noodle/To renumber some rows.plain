@@ -1,8 +1,8 @@
 To renumber some rows:
-  Get an row from the rows.
-  If the row is nil, exit.
-  Add 1 to an row#.
-  Put the row# into the row's row#.
+    Get an row from the rows.
+    If the row is nil, exit.
+    Add 1 to an row#.
+    Put the row# into the row's row#.
   Repeat.
   
   

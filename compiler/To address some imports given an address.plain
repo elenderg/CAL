@@ -8,9 +8,9 @@ To address some imports given an address:
   Multiply the other count by 4.
   Put the current thunk address plus the other count into the current name address.
   Loop.
-  Get an import from the imports.
-  If the import is nil, break.
-  Address the import.
+    Get an import from the imports.
+    If the import is nil, break.
+    Address the import.
   Repeat.
   Put the current name address minus the address into an number.
   Add the number to the address.

@@ -7,10 +7,10 @@ To extract an drive from an path:
   If the substring does not start with "\\", exit.
   Slap the substring on the first byte of the path.
   Loop.
-  If the substring's last is greater than the path's last, exit.
-  If the substring's last's target is the backslash byte, add 1 to an count.
-  If the count is 4, break. \ "\\computer\share\"
-  Add 1 to the substring's last.
+    If the substring's last is greater than the path's last, exit.
+    If the substring's last's target is the backslash byte, add 1 to an count.
+    If the count is 4, break. \ "\\computer\share\"
+    Add 1 to the substring's last.
   Repeat.
   Put the substring into the drive.
   

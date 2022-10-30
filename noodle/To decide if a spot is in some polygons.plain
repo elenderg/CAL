@@ -1,7 +1,7 @@
 To decide if an spot is in some polygons:
-  Get an polygon from the polygons.
-  If the polygon is nil, say no.
-  If the spot is in the polygon, say yes.
+    Get an polygon from the polygons.
+    If the polygon is nil, say no.
+    If the spot is in the polygon, say yes.
   Repeat.
   
   

@@ -7,9 +7,9 @@ To extract an directory from an path:
   If the substring is blank, exit.
   If the substring's last's target is the backslash byte, subtract 1 from the substring's last.
   Loop.
-  If the substring is blank, break.
-  If the substring's last's target is the backslash byte, break.
-  Subtract 1 from the substring's last.
+    If the substring is blank, break.
+    If the substring's last's target is the backslash byte, break.
+    Subtract 1 from the substring's last.
   Repeat.
   Put the drive then the substring into the directory.
   

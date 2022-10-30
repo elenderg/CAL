@@ -1,10 +1,10 @@
 To find an string given some string things and an string#:
   Clear the string.
   Loop.
-  Get an string thing from the string things.
-  If the string thing is nil, exit.
-  Add 1 to an count.
-  If the count is not the string#, repeat.
+    Get an string thing from the string things.
+    If the string thing is nil, exit.
+    Add 1 to an count.
+    If the count is not the string#, repeat.
   Put the string thing's string into the string.
   
   

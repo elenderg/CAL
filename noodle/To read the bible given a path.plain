@@ -5,12 +5,12 @@ To read the bible given an path:
   Allocate memory for the Bible.
   Slap an rider on the buffer.
   Loop.
-  If the rider's source is blank, exit.
-  Allocate memory for an verse. Append the verse to the Bible's verses.
-  Move the rider (text file rules).
-  Put the rider's token into the verse's string.
-  Remove any leading noise from the verse's string. 
-  Remove any trailing noise from the verse's string.
+    If the rider's source is blank, exit.
+    Allocate memory for an verse. Append the verse to the Bible's verses.
+    Move the rider (text file rules).
+    Put the rider's token into the verse's string.
+    Remove any leading noise from the verse's string. 
+    Remove any trailing noise from the verse's string.
   Repeat.
   
   

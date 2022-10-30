@@ -1,9 +1,9 @@
 To internalize some shapes given an rider:
-  If the i/o error is not blank, exit.
-  If the rider's token is blank, exit.
-  If the rider's token is "end", exit.
-  Internalize an shape given the rider.
-  Append the shape to the shapes.
+    If the i/o error is not blank, exit.
+    If the rider's token is blank, exit.
+    If the rider's token is "end", exit.
+    Internalize an shape given the rider.
+    Append the shape to the shapes.
   Repeat.
   
   

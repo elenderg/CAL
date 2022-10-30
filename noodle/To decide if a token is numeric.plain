@@ -3,9 +3,9 @@ To decide if an token is numeric:
   Remove any leading noise from the token.
   If the token is blank, say no.
   Loop.
-  Get an byte from the token.
-  If the byte is not any digit, say no.
-  If the token is blank, say yes.
+    Get an byte from the token.
+    If the byte is not any digit, say no.
+    If the token is blank, say yes.
   Repeat.
   
   

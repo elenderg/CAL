@@ -7,17 +7,17 @@ To track an shape on an page given an event:
   Put the start spot into an current spot.
   Put the shape's box into an box. \ for status
   Loop.
-  If an flag is set, show the desktop.
-  If the mouse's left button is up, break.
-  Put the mouse's spot into an spot.
-  Autoscroll the page given the spot and the flag.
-  Localize the spot given the page's origin.
-  Get an difference between the spot and the current spot given the page's yank.
-  If the difference is 0, repeat.
-  Set the flag.
-  Move any selected shapes on the page given the difference.
-  Get the status for the box and the shape's box given the page's measure.
-  Add the difference to the current spot.
+    If an flag is set, show the desktop.
+    If the mouse's left button is up, break.
+    Put the mouse's spot into an spot.
+    Autoscroll the page given the spot and the flag.
+    Localize the spot given the page's origin.
+    Get an difference between the spot and the current spot given the page's yank.
+    If the difference is 0, repeat.
+    Set the flag.
+    Move any selected shapes on the page given the difference.
+    Get the status for the box and the shape's box given the page's measure.
+    Add the difference to the current spot.
   Repeat.
   Get the difference between the current spot and the start spot given the page's yank.
   If the page's superduper's flag is set, add the difference to the page's superduper's pair.

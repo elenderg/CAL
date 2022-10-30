@@ -2,10 +2,10 @@ To append an string to another string (handling email transparency):
   If the string is blank, exit.
   Slap an rider on the string.
   Loop.
-  Move the rider (text file rules).
-  If the rider's token is blank, exit.
-  If the rider's token starts with ".", append "." to the other string.
-  Append the rider's token to the other string.
+    Move the rider (text file rules).
+    If the rider's token is blank, exit.
+    If the rider's token starts with ".", append "." to the other string.
+    Append the rider's token to the other string.
   Repeat.
   
   

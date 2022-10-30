@@ -1,9 +1,9 @@
 To uppercase an string:
   Slap an substring on the string.
   Loop.
-  If the substring is blank, exit.
-  Uppercase the substring's first's target.
-  Add 1 to the substring's first.
+    If the substring is blank, exit.
+    Uppercase the substring's first's target.
+    Add 1 to the substring's first.
   Repeat.
   
   

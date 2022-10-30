@@ -4,14 +4,14 @@ To convert an nibble string to an hex string:
   If the nibble string's length is odd, prepend the zero byte to the nibble string.
   Slap an substring on the nibble string.
   Loop.
-  If the substring is blank, exit.
-  Convert the substring's first's target to an nibble.
-  Shift the nibble left 4 bits.
-  Add 1 to the substring's first.
-  Convert the substring's first's target to another nibble.
-  Bitwise or the nibble with the other nibble.
-  Append the nibble to the hex string.
-  Add 1 to the substring's first.
+    If the substring is blank, exit.
+    Convert the substring's first's target to an nibble.
+    Shift the nibble left 4 bits.
+    Add 1 to the substring's first.
+    Convert the substring's first's target to another nibble.
+    Bitwise or the nibble with the other nibble.
+    Append the nibble to the hex string.
+    Add 1 to the substring's first.
   Repeat.
   
   

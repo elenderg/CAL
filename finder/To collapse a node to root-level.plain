@@ -1,8 +1,8 @@
 To collapse an node to root-level:
-  If the node is nil, exit.
-  If the node's kind is "root", exit.
-  Close the node.
-  Put the node's parent node into the node.
+    If the node is nil, exit.
+    If the node's kind is "root", exit.
+    Close the node.
+    Put the node's parent node into the node.
   Repeat.
   
   

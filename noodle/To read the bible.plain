@@ -2,10 +2,10 @@ To read the bible:
   If the bible is not nil, exit.
   Extract an directory from the module's path.
   Loop.
-  If the directory is blank, exit.
-  Put the directory then "bible.txt" into an path.
-  If the path is in the file system, read the bible given the path; exit.
-  Extract the directory from the directory.
+    If the directory is blank, exit.
+    Put the directory then "bible.txt" into an path.
+    If the path is in the file system, read the bible given the path; exit.
+    Extract the directory from the directory.
   Repeat.
   
   

@@ -7,11 +7,11 @@ To compile an term given an rider and an name (possessive - field):
   If the type can be reduced to "pointer", put the type's target type into the type.
   If the type is nil, abort with "There's no '" then the name then "' field in an '" then the term's type's name then "'." and the rider; exit.
   Loop.
-  If the compiler's abort flag is set, exit.
-  Get an field from the type's fields.
-  If the field is nil, abort with "There's no '" then the name then "' field in an '" then the term's type's name then "'." and the rider; exit.
-  Find an deep field term given "" and the field's type and the name.
-  If the deep field term is empty, repeat.
+    If the compiler's abort flag is set, exit.
+    Get an field from the type's fields.
+    If the field is nil, abort with "There's no '" then the name then "' field in an '" then the term's type's name then "'." and the rider; exit.
+    Find an deep field term given "" and the field's type and the name.
+    If the deep field term is empty, repeat.
   Put the field into an first field term's field.
   If the term's type can be reduced to "pointer", set the first field term's dereference flag.
   Compile the term given the rider and the first field term.

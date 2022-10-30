@@ -6,17 +6,17 @@ To track an vertex on an shape on an page given an event:
   Put the event's spot into an current spot.
   Localize the current spot given the page's origin.
   Loop.
-  If an flag is set, show the desktop with status.
-  If the mouse's left button is up, break.
-  Put the mouse's spot into an spot.
-  Autoscroll the page given the spot and the flag.
-  Localize the spot given the page's origin.
-  Get an difference between the spot and the current spot given the page's yank.
-  If the difference is 0, repeat.
-  Set the flag.
-  Move the current spot given the difference.
-  Move the vertex given the difference.
-  Adjust the shape.
+    If an flag is set, show the desktop with status.
+    If the mouse's left button is up, break.
+    Put the mouse's spot into an spot.
+    Autoscroll the page given the spot and the flag.
+    Localize the spot given the page's origin.
+    Get an difference between the spot and the current spot given the page's yank.
+    If the difference is 0, repeat.
+    Set the flag.
+    Move the current spot given the difference.
+    Move the vertex given the difference.
+    Adjust the shape.
   Repeat.
   Show the desktop with status.
   

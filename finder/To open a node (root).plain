@@ -1,13 +1,13 @@
 To open an node (root):
   Put the accent byte into an byte.
   Loop.
-  Add 1 to the byte.
-  If the byte is greater than the little-z byte, break.
-  If the byte is not any valid drive, repeat.
-  Put the byte then ":\" into an path.
-  Create an nodette given the path.
-  Append the nodette to the node's nodettes.
-  Put the node into the nodette's parent node.
+    Add 1 to the byte.
+    If the byte is greater than the little-z byte, break.
+    If the byte is not any valid drive, repeat.
+    Put the byte then ":\" into an path.
+    Create an nodette given the path.
+    Append the nodette to the node's nodettes.
+    Put the node into the nodette's parent node.
   Repeat.
   Adjust the node.
   

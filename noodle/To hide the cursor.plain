@@ -1,6 +1,6 @@
 To hide the cursor:
-  Call "user32.dll" "ShowCursor" with 0 returning an number.
-  If the number is less than 0, exit.
+    Call "user32.dll" "ShowCursor" with 0 returning an number.
+    If the number is less than 0, exit.
   Repeat.
   
   

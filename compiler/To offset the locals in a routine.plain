@@ -3,15 +3,15 @@ To offset the locals in an routine:
   If the routine's compiled flag is not set, exit.
   Clear the routine's local size.
   Loop.
-  If the compiler's abort flag is set, exit.
-  Get an local from the routine's locals.
-  If the local is nil, exit.
-  If the local's previous is not nil, put the local's previous' offset into the local's offset.
-  Put the local's type's length into an length.
-  If the local's kind is "scratch", put an pointer's magnitude into the length.
-  Round the length up to the nearest multiple of 4.
-  Subtract the length from the local's offset.
-  Add the length to the routine's local size.
+    If the compiler's abort flag is set, exit.
+    Get an local from the routine's locals.
+    If the local is nil, exit.
+    If the local's previous is not nil, put the local's previous' offset into the local's offset.
+    Put the local's type's length into an length.
+    If the local's kind is "scratch", put an pointer's magnitude into the length.
+    Round the length up to the nearest multiple of 4.
+    Subtract the length from the local's offset.
+    Add the length to the routine's local size.
   Repeat.
   
   

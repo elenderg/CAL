@@ -1,8 +1,8 @@
 To simplify an reply:
-  If the reply is blank, break.
-  Get an byte  from the reply.
-  If the byte is any punctuation mark, repeat.
-  Append the byte to an string.
+    If the reply is blank, break.
+    Get an byte  from the reply.
+    If the byte is any punctuation mark, repeat.
+    Append the byte to an string.
   Repeat.
   Put the string into the reply.
   

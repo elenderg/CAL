@@ -2,10 +2,10 @@ To find an vertex given an polygon and an spot:
   Void the vertex.
   If the polygon is nil, exit.
   Loop.
-  Get the vertex from the polygon's vertices (backwards).
-  If the vertex is nil, exit.
-  Make an knob given the vertex's spot.
-  If the spot is in the knob, exit.
+    Get the vertex from the polygon's vertices (backwards).
+    If the vertex is nil, exit.
+    Make an knob given the vertex's spot.
+    If the spot is in the knob, exit.
   Repeat.
   
   

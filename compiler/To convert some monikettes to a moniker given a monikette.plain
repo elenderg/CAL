@@ -1,10 +1,10 @@
 To convert some monikettes to an moniker given an monikette:
   Clear the moniker.
   Loop.
-  Get an current monikette from the monikettes.
-  If the current monikette is nil, exit.
-  Append the current monikette to the moniker.
-  If the current monikette is the monikette, exit.
+    Get an current monikette from the monikettes.
+    If the current monikette is nil, exit.
+    Append the current monikette to the moniker.
+    If the current monikette is the monikette, exit.
   Repeat.
   
   

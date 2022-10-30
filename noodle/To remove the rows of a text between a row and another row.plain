@@ -6,11 +6,11 @@ To remove the rows of an text between an row and another row:
   Privatize the row.
   Put the other row's next into an stop row.
   Loop.
-  If the row is the stop row, break.
-  Put the row's next into an next row.
-  Remove the row from the text's rows.
-  Destroy the row.
-  Put the next row into the row.
+    If the row is the stop row, break.
+    Put the row's next into an next row.
+    Remove the row from the text's rows.
+    Destroy the row.
+    Put the next row into the row.
   Repeat.
   Renumber the text's rows.
   

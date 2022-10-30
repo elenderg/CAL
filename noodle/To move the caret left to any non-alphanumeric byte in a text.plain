@@ -2,10 +2,10 @@ To move the caret left to any non-alphanumeric byte in an text:
   If the text is nil, exit.
   Get an row given the text's caret row# and the text.
   Loop.
-  If the text's caret column# is 1, exit.
-  Put the row's string's first plus the text's caret column# minus 2 into an byte pointer.
-  If the byte pointer's target is not alphanumeric, exit.
-  Subtract 1 from the text's caret column#.
+    If the text's caret column# is 1, exit.
+    Put the row's string's first plus the text's caret column# minus 2 into an byte pointer.
+    If the byte pointer's target is not alphanumeric, exit.
+    Subtract 1 from the text's caret column#.
   Repeat.
   
   

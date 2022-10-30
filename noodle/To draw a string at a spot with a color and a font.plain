@@ -7,12 +7,12 @@ To draw an string at an spot with an color and an font:
   Put the substring's first plus the text cutoff minus 1 into the substring's last.
   Privatize the spot.
   Loop.
-  If the substring is blank, break.
-  If the substring's last is greater than the string's last, put the string's last into the substring's last.
-  Call "gdi32.dll" "TextOutA" with the current canvas and the spot's x and the spot's y and the substring's first and the substring's length.
-  Get an width given the substring and the current canvas.
-  Add the width to the spot's x.
-  Move the substring given the text cutoff.
+    If the substring is blank, break.
+    If the substring's last is greater than the string's last, put the string's last into the substring's last.
+    Call "gdi32.dll" "TextOutA" with the current canvas and the spot's x and the spot's y and the substring's first and the substring's length.
+    Get an width given the substring and the current canvas.
+    Add the width to the spot's x.
+    Move the substring given the text cutoff.
   Repeat.
   Destroy the hfont of the current canvas.
   

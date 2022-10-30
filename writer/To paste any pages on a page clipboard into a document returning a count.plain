@@ -5,12 +5,12 @@ To paste any pages on an page clipboard into an document returning an count:
   Put the document's first selected page into an first selected page.
   Deselect the document's pages.
   Loop.
-  Get an copied page from the page clipboard.
-  If the copied page is nil, break.
-  Add 1 to the count.
-  Show status the count then " of " then the total count then "...".
-  Copy the copied page into another copied page.
-  Insert the other copied page into the document's pages before the first selected page.
+    Get an copied page from the page clipboard.
+    If the copied page is nil, break.
+    Add 1 to the count.
+    Show status the count then " of " then the total count then "...".
+    Copy the copied page into another copied page.
+    Insert the other copied page into the document's pages before the first selected page.
   Select the other copied page.
   Repeat.
   Set the document's modified flag.

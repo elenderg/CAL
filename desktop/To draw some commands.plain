@@ -1,7 +1,7 @@
 To draw some commands:
-  Get an command from the commands.
-  If the command is nil, exit.
-  Draw the command.
+    Get an command from the commands.
+    If the command is nil, exit.
+    Draw the command.
   Repeat.
   
   

@@ -7,18 +7,18 @@ To create an figure using an string and an center spot:
   Lowercase the string.
   Slap an substring on the string.
   Loop.
-  Skip any leading noise in the substring.
-  If the substring's length is less than 2, exit.
-  Put the substring's first's target into an byte.
-  Put the byte minus the little-an byte into an spot's y.
-  Add 1 to the substring's first.
-  Put the substring's first's target into the byte.
-  Put the byte minus the little-an byte into the spot's x.
-  Multiply the spot by 1/4 inch.
-  Add the center spot's x minus 3-1/8 inches plus 1 pixel to the spot's x.
-  Add the center spot's y minus 3-1/8 inches plus 1 pixel to the spot's y.
-  Append the spot to the figure.
-  Add 1 to the substring's first.
+    Skip any leading noise in the substring.
+    If the substring's length is less than 2, exit.
+    Put the substring's first's target into an byte.
+    Put the byte minus the little-an byte into an spot's y.
+    Add 1 to the substring's first.
+    Put the substring's first's target into the byte.
+    Put the byte minus the little-an byte into the spot's x.
+    Multiply the spot by 1/4 inch.
+    Add the center spot's x minus 3-1/8 inches plus 1 pixel to the spot's x.
+    Add the center spot's y minus 3-1/8 inches plus 1 pixel to the spot's y.
+    Append the spot to the figure.
+    Add 1 to the substring's first.
   Repeat.
   
   

@@ -3,10 +3,10 @@ To find an type and an nickname given an name:
   Clear the nickname.
   Slap an substring on the name.
   Loop.
-  If the substring is blank, exit.
-  Find the type given the substring and the type index.
-  If the type is not nil, break.
-  Skip to the next word in the substring.
+    If the substring is blank, exit.
+    Find the type given the substring and the type index.
+    If the type is not nil, break.
+    Skip to the next word in the substring.
   Repeat.
   Put the name's first into another substring's first.
   Put the substring's first minus 2 into the other substring's last.

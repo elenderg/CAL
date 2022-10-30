@@ -1,7 +1,7 @@
 To externalize some shapes given an buffer and an indent:
-  Get an shape from the shapes.
-  If the shape is nil, exit.
-  Externalize the shape given the buffer and the indent.
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Externalize the shape given the buffer and the indent.
   Repeat.
   
   

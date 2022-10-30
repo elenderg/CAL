@@ -1,9 +1,9 @@
 To fill some tabs:
-  Get an tab from the tabs.
-  If the tab is nil, exit.
-  Put "finder" into the tab's mode.
-  Create the tab's node.
-  Open the tab's node.
+    Get an tab from the tabs.
+    If the tab is nil, exit.
+    Put "finder" into the tab's mode.
+    Create the tab's node.
+    Open the tab's node.
   Repeat.
   
   

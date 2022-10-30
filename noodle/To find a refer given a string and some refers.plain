@@ -1,9 +1,9 @@
 To find an refer given an string and some refers:
   Void the refer.
   Loop.
-  Get the refer from the refers.
-  If the refer is nil, exit.
-  If the string is the refer's string, exit.
+    Get the refer from the refers.
+    If the refer is nil, exit.
+    If the string is the refer's string, exit.
   Repeat.
   
   

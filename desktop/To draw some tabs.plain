@@ -1,7 +1,7 @@
 To draw some tabs:
-  Get an tab from the tabs.
-  If the tab is nil, exit.
-  Draw the tab.
+    Get an tab from the tabs.
+    If the tab is nil, exit.
+    Draw the tab.
   Repeat.
   
   

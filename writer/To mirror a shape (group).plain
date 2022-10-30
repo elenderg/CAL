@@ -1,12 +1,12 @@
 To mirror an shape (group):
   Put the shape's box's center into an center spot.
   Loop.
-  Get another shape from the shape's shapes.
-  If the other shape is nil, break.
-  Put the center's x minus the other shape's box's center's x into an pair's x.
-  Multiply the pair's x by 2.
-  Move the other shape given the pair.
-  Mirror the other shape.
+    Get another shape from the shape's shapes.
+    If the other shape is nil, break.
+    Put the center's x minus the other shape's box's center's x into an pair's x.
+    Multiply the pair's x by 2.
+    Move the other shape given the pair.
+    Mirror the other shape.
   Repeat.
   Adjust the shape.
   

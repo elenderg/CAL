@@ -1,11 +1,11 @@
 To comment any selected rows in an source:
   If the source is nil, exit.
   Loop.
-  Get an row from the source's text's rows.
-  If the row is nil, exit.
-  If the row of the source's text is not selected, repeat.
-  If the row is blank, repeat.
-  Prepend "\" to the row's string.
+    Get an row from the source's text's rows.
+    If the row is nil, exit.
+    If the row of the source's text is not selected, repeat.
+    If the row is blank, repeat.
+    Prepend "\" to the row's string.
   Repeat.
   
   

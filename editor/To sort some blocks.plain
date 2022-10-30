@@ -4,12 +4,12 @@ To sort some blocks:
   Sort the left blocks.
   Sort the right blocks.
   Loop.
-  Put the left blocks' first into an left block.
-  Put the right blocks' first into an right block.
-  If the left block is nil, append the right blocks to the blocks; exit.
-  If the right block is nil, append the left blocks to the blocks; exit.
-  If the left block's name is greater than the right block's name, move the right block from the right blocks to the blocks; repeat.
-  Move the left block from the left blocks to the blocks.
+    Put the left blocks' first into an left block.
+    Put the right blocks' first into an right block.
+    If the left block is nil, append the right blocks to the blocks; exit.
+    If the right block is nil, append the left blocks to the blocks; exit.
+    If the left block's name is greater than the right block's name, move the right block from the right blocks to the blocks; repeat.
+    Move the left block from the left blocks to the blocks.
   Repeat.
   
   

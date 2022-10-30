@@ -1,7 +1,7 @@
 To deselect some shapes:
-  Get an shape from the shapes.
-  If the shape is nil, exit.
-  Deselect the shape.
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Deselect the shape.
   Repeat.
   
   

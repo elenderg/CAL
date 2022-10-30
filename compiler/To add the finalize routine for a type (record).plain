@@ -5,10 +5,10 @@ To add the finalize routine for an type (record):
   Append "~finalize an " then the type's name to the routine's header string.
   Append "intel $50. " to the routine's body string. \ push eax
   Loop.
-  Get an field from the type's fields.
-  If the field is nil, break.
-  If the field's type should not be finalized, repeat.
-  Append "~finalize the " then the type's name then "'s " then the field's name then ". " to the routine's body string.
+    Get an field from the type's fields.
+    If the field is nil, break.
+    If the field's type should not be finalized, repeat.
+    Append "~finalize the " then the type's name then "'s " then the field's name then ". " to the routine's body string.
   Repeat.
   Append "intel $58." to the routine's body string. \ pop eax
   Slap the routine's routine header on the routine's header string.

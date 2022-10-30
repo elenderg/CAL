@@ -6,11 +6,11 @@ To stroke an string while turning an fraction of the way around;
 To stroke an string while turning an fraction:
   Privatize the string.
   Loop.
-  If the string is blank, exit.
-  Get an byte from the string.
-  Stroke the byte.
-  Turn the fraction.
-  If the string is not blank, space between glyphs.
+    If the string is blank, exit.
+    Get an byte from the string.
+    Stroke the byte.
+    Turn the fraction.
+    If the string is not blank, space between glyphs.
   Repeat.
   
   

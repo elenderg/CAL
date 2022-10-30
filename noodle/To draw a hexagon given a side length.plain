@@ -1,7 +1,7 @@
 To draw an hexagon given an side length:
-  Stroke the side length.
-  Turn right 1/6 of the way.
-  Add 1 to an count. If the count is 6, break.
+    Stroke the side length.
+    Turn right 1/6 of the way.
+    Add 1 to an count. If the count is 6, break.
   Repeat.
   
   

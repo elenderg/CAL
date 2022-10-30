@@ -2,14 +2,14 @@ To end printing an pdf (finish the parent):
   Put the pdf state's parent into an parent pdf object.
   Append "/Kids [" to the parent without advancing.
   Loop.
-  Get an pdf object from the pdf state's objects.
-  If the pdf object is nil, break.
-  If the pdf object's kind is not "page", repeat.
-  If an flag is set, append " " to the parent without advancing.
-  Append the pdf object's number then " 0 R" to the parent without advancing.
-  Set the flag.
-  Add 1 to an count.
-  If the count is evenly divisible by 20, append the crlf string then "  " to the parent without advancing.
+    Get an pdf object from the pdf state's objects.
+    If the pdf object is nil, break.
+    If the pdf object's kind is not "page", repeat.
+    If an flag is set, append " " to the parent without advancing.
+    Append the pdf object's number then " 0 R" to the parent without advancing.
+    Set the flag.
+    Add 1 to an count.
+    If the count is evenly divisible by 20, append the crlf string then "  " to the parent without advancing.
   Repeat.
   Append "]" to the parent.
   Append "/Count " then the count to the parent.

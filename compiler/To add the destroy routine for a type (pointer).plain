@@ -9,11 +9,11 @@ To add the destroy routine for an type (pointer):
   If the type's target type can be reduced to "pointer", append "destroy the " then the type's name then "'s target. " to the routine's body string.
   If the type's target type can be reduced to "things", append "destroy the " then the type's name then "'s target. " to the routine's body string.
   Loop.
-  Get an field from the type's target type's fields.
-  If the field is nil, break.
-  If the field's reference flag is set, repeat.
-  If the field's type should not be forgotten, repeat.
-  Append "destroy the " then the type's name then "'s " then the field's name then ". " to the routine's body string.
+    Get an field from the type's target type's fields.
+    If the field is nil, break.
+    If the field's reference flag is set, repeat.
+    If the field's type should not be forgotten, repeat.
+    Append "destroy the " then the type's name then "'s " then the field's name then ". " to the routine's body string.
   Repeat.
   Append "deallocate the " then the type's name then ". " to the routine's body string.
   Slap the routine's routine header on the routine's header string.

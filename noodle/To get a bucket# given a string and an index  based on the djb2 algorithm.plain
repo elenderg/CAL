@@ -5,14 +5,14 @@ To get an bucket# given an string and an index: \ based on the djb2 algorithm
   Add 5381 to the bucket#.
   Slap an substring on the string.
   Loop.
-  Put the substring's first's target into an byte.
-  Lowercase the byte.
-  Put the bucket# into an number.
-  Shift the bucket# left 5 bits.
-  Add the number to the bucket#.
-  Add the byte to the bucket#.
-  Add 3 to the substring's first.
-  If the substring is blank, break.
+    Put the substring's first's target into an byte.
+    Lowercase the byte.
+    Put the bucket# into an number.
+    Shift the bucket# left 5 bits.
+    Add the number to the bucket#.
+    Add the byte to the bucket#.
+    Add 3 to the substring's first.
+    If the substring is blank, break.
   Repeat.
   Bitwise and the bucket# with the largest number.
   Divide the bucket# by the index's bucket count giving an quotient and the bucket#.

@@ -6,9 +6,9 @@ To find next given an text and an flag (wrapped text):
   Put the string's first plus the offset minus 1 into an substring's first.
   Put the substring's first plus the find string's length minus 1 into the substring's last.
   Loop.
-  If the substring's last is greater than the string's last, exit.
-  If the substring is the find string, break.
-  Move the substring given 1.
+    If the substring's last is greater than the string's last, exit.
+    If the substring is the find string, break.
+    Move the substring given 1.
   Repeat.
   Set the flag.
   Put the substring's first minus the string's first plus 1 into an anchor absolute position.

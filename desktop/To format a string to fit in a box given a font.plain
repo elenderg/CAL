@@ -1,12 +1,12 @@
 To format an string to fit in an box given an font:
   Put the box's width minus 180 into an width.
   Loop.
-  If the string's length is less than 2, exit.
-  Get another width given the string and the memory canvas and the font.
-  If the other width is less than the width, exit.
-  Remove the last byte from the string.
-  Remove the last byte from the string.
-  Append "…" to the string.
+    If the string's length is less than 2, exit.
+    Get another width given the string and the memory canvas and the font.
+    If the other width is less than the width, exit.
+    Remove the last byte from the string.
+    Remove the last byte from the string.
+    Append "…" to the string.
   Repeat.
   
   

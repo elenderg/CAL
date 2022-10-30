@@ -5,12 +5,12 @@ To stroke an string given an center spot and an radius:
   Privatize the string.
   Put 1 and the string's length into an fraction.
   Loop.
-  If the string is blank, exit.
-  Get an byte from the string.
-  Start at the center spot.
-  Move the radius.
-  Stroke the byte.
-  Turn the fraction.
+    If the string is blank, exit.
+    Get an byte from the string.
+    Start at the center spot.
+    Move the radius.
+    Stroke the byte.
+    Turn the fraction.
   Repeat.
   
   

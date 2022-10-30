@@ -4,12 +4,12 @@ To sort some rows:
   Sort the left rows.
   Sort the right rows.
   Loop.
-  Put the left rows' first into an left row.
-  Put the right rows' first into an right row.
-  If the left row is nil, append the right rows to the rows; exit.
-  If the right row is nil, append the left rows to the rows; exit.
-  If the left row's string is greater than the right row's string, move the right row from the right rows to the rows; repeat.
-  Move the left row from the left rows to the rows.
+    Put the left rows' first into an left row.
+    Put the right rows' first into an right row.
+    If the left row is nil, append the right rows to the rows; exit.
+    If the right row is nil, append the left rows to the rows; exit.
+    If the left row's string is greater than the right row's string, move the right row from the right rows to the rows; repeat.
+    Move the left row from the left rows to the rows.
   Repeat.
   
   

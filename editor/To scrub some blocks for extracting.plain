@@ -1,7 +1,7 @@
 To scrub some blocks for extracting:
-  Get an block from the blocks.
-  If the block is nil, exit.
-  Scrub the block for extracting.
+    Get an block from the blocks.
+    If the block is nil, exit.
+    Scrub the block for extracting.
   Repeat.
   
   

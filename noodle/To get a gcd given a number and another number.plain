@@ -6,10 +6,10 @@ To get an gcd given an number and another number:
   If the dividend is less than the gcd, swap the dividend with the gcd.
   If the gcd is 0, put 1 into the gcd; exit.
   Loop.
-  Divide the dividend by the gcd giving an quotient and an remainder.
-  If the remainder is 0, exit.
-  Put the gcd into the dividend.
-  Put the remainder into the gcd.
+    Divide the dividend by the gcd giving an quotient and an remainder.
+    If the remainder is 0, exit.
+    Put the gcd into the dividend.
+    Put the remainder into the gcd.
   Repeat.
   
   

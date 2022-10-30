@@ -1,7 +1,7 @@
 To decide if any of some monikettes are negative words:
-  Get an monikette from the monikettes.
-  If the monikette is nil, say no.
-  If the monikette's string is any negative word, say yes.
+    Get an monikette from the monikettes.
+    If the monikette is nil, say no.
+    If the monikette's string is any negative word, say yes.
   Repeat.
   
   

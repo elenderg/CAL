@@ -1,7 +1,7 @@
 To handle events given an submenu:
-  Deque an event.
-  If the event is nil, exit.
-  Handle the event given the submenu.
+    Deque an event.
+    If the event is nil, exit.
+    Handle the event given the submenu.
   Repeat.
   
   

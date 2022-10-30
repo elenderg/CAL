@@ -2,9 +2,9 @@ To rotate an polygon:
   If the polygon is nil, exit.
   Put the polygon's center into an center spot.
   Loop.
-  Get an vertex from the polygon's vertices.
-  If the vertex is nil, exit.
-  Rotate the vertex's spot around the center.
+    Get an vertex from the polygon's vertices.
+    If the vertex is nil, exit.
+    Rotate the vertex's spot around the center.
   Repeat.
   
   

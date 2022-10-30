@@ -1,9 +1,9 @@
 To find an nodette given some nodettes and an designator:
   Void the nodette.
   Loop.
-  Get the nodette from the nodettes.
-  If the nodette is nil, exit.
-  If the nodette's designator is the designator, exit.
+    Get the nodette from the nodettes.
+    If the nodette is nil, exit.
+    If the nodette's designator is the designator, exit.
   Repeat.
   
   

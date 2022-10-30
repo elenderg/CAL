@@ -3,8 +3,8 @@ To raise an number to another number:
   If the other number is less than 0, put 0 into the number; exit. \ should be 1/the raised result, but always comes out 0 with numbers
   Put 1 into an result number.
   Loop.
-  If an counter is past the other number, break.
-  Multiply the result by the number.
+    If an counter is past the other number, break.
+    Multiply the result by the number.
   Repeat.
   Put the result into the number.
   
