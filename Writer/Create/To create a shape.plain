@@ -1,7 +1,0 @@
-To create an shape:
-  Allocate memory for the shape.
-  Put the black color into the shape's border.
-  Put the clear color into the shape's fill.
-  Put 1/1 into the shape's scale.
-  
-  

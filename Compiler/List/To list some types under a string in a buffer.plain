@@ -1,7 +1,0 @@
-To list some types under an string in an buffer:
-  Append the string to the buffer.
-  Advance the buffer (twice).
-  If the types are empty, exit.
-  List the types in the buffer.
-  
-  

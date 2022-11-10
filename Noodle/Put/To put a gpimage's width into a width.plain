@@ -1,5 +1,0 @@
-To put an gpimage's width into an width:
-  If the gpimage is nil, put 0 into the width; exit.
-  Call "gdiplus.dll" "GdipGetImageWidth" with the gpimage and the width's whereabouts.
-  
-  

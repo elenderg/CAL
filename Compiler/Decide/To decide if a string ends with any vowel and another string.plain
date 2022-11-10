@@ -1,9 +1,0 @@
-To decide if an string ends with any vowel and another string:
-  Slap an substring on the string.
-  Subtract the other string's length from the substring's last.
-  If the substring is blank, say no.
-  If the substring's last's target is not any vowel, say no.
-  If the string does not end with the other string, say no.
-  Say yes.
-  
-  

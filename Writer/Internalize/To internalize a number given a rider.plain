@@ -1,7 +1,0 @@
-To internalize an number given an rider:
-  If the i/o error is not blank, exit.
-  If the rider's token is not any integer literal, fail with "Invalid document - expected number"; exit.
-  Convert the rider's token to the number.
-  Move the rider (document rules).
-  
-  

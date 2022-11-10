@@ -1,0 +1,122 @@
+To debug an box:
+  Clear an string.
+  Append "left=" to the string.
+  Append the box's left to the string.
+  Append ", top=" to the string.
+  Append the box's top to the string.
+  Append ", right=" to the string.
+  Append the box's right to the string.
+  Append ", bottom=" to the string.
+  Append the box's bottom to the string.
+  Debug the string.
+  
+  
+To debug an byte:
+  Put the byte into an number.
+  Convert the number to an string.
+  Debug the string.
+  
+  
+To debug an color:
+  Clear an string.
+  Append "hue=" to the string.
+  Append the color's hue to the string.
+  Append ", saturation=" to the string.
+  Append the color's saturation to the string.
+  Append ", lightness=" to the string.
+  Append the color's lightness to the string.
+  Debug the string.
+  
+  
+To debug an flag:
+  Convert the flag to an string.
+  Debug the string.
+  
+  
+To debug an font:
+  Clear an string.
+  Append "name='" to the string then "'".
+  Append the font's name to the string.
+  Append ", height=" to the string.
+  Append the font's height to the string.
+  Debug the string.
+  
+  
+To debug an fraction:
+  Clear an string.
+  Append "numerator=" to the string.
+  Append the fraction's numerator to the string.
+  Append ", denominator=" to the string.
+  Append the fraction's denominator to the string.
+  Debug the string.
+  
+  
+To debug an line:
+  Clear an string.
+  Append "start=" to the string.
+  Append the line's start's x to the string.
+  Append "," to the string.
+  Append the line's start's y to the string.
+  Append " end=" to the string.
+  Append the line's end's x to the string.
+  Append "," to the string.
+  Append the line's end's y to the string.
+  Debug the string.
+  
+  
+To debug an number and another number:
+  Debug the number then ", " then the other number.
+  
+  
+To debug an number:
+  Convert the number to an string.
+  Debug the string.
+  
+  
+To debug an pair:
+  Clear an string.
+  Append "x=" to the string.
+  Append the pair's x to the string.
+  Append ", y=" to the string.
+  Append the pair's y to the string.
+  Debug the string.
+  
+  
+To debug an pointer:
+  Convert the pointer to an nibble string.
+  Debug "$" then the nibble string.
+  
+  
+To debug an rgb:
+  Clear an string.
+  Append "red=" to the string.
+  Put the rgb's red byte into an number.
+  Append the number to the string.
+  Append ", green=" to the string.
+  Put the rgb's green byte into the number.
+  Append the number to the string.
+  Append ", blue=" to the string.
+  Put the rgb's blue byte into the number.
+  Append the number to the string.
+  Debug the string.
+  
+  
+To debug an string (quoted):
+  Privatize the string.
+  Prepend the double-quote byte to the string.
+  Append the double-quote byte to the string.
+  Debug the string.
+  
+  
+To debug an string:
+  Privatize the string.
+  Null terminate the string.
+  Call "user32.dll" "MessageBoxA" with 0 and the string's first and "debug"'s first and 0.
+  
+  
+To debug an wyrd:
+  Put the wyrd into an number.
+  Convert the number to an string.
+  Debug the string.
+  
+  

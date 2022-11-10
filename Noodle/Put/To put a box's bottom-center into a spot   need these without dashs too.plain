@@ -1,5 +1,0 @@
-To put an box's bottom-center into an spot: \ *** need these without dashs too
-  Put the box's center's x into the spot's x.
-  Put the box's bottom into the spot's y.
-  
-  

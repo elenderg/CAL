@@ -1,0 +1,23 @@
+To show an console:
+  If the console is nil, exit.
+  Save the current canvas.
+  Draw the console.
+  Refresh the screen given the console's box.
+  Restore the current canvas.
+  
+  
+To show an cursor:
+    Call "user32.dll" "SetCursor" with the cursor.
+    Call "user32.dll" "ShowCursor" with 1 returning an number.
+    If the number is greater than 0, exit.
+  Repeat.
+  
+  
+To show an terminal:
+  If the terminal is nil, exit.
+  Save the current canvas.
+  Draw the terminal.
+  Refresh the screen given the terminal's box.
+  Restore the current canvas.
+  
+  

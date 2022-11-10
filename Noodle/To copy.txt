@@ -1,0 +1,135 @@
+To copy an gpbitmap into another gpbitmap:
+  If the gpbitmap is nil, void the other gpbitmap; exit.
+  Call "gdiplus.dll" "GdipCloneBitmapAreaI" with 0 and 0 and the gpbitmap's width and the gpbitmap's height and 0 [pixelformatdontcare] and
+  The gpbitmap and the other gpbitmap's whereabouts.
+  
+  
+To copy an picture into another picture:
+  If the picture is nil, void the other picture; exit.
+  Allocate memory for the other picture.
+  Put the picture's box into the other picture's box.
+  Put the picture's uncropped box into the other picture's uncropped box.
+  Put the picture's grayscale flag into the other picture's grayscale flag.
+  Put the picture's mirror flag into the other picture's mirror flag.
+  Put the picture's rotate angle into the other picture's rotate angle.
+  Put the picture's data into the other picture's data.
+  Copy the picture's gpbitmap into the other picture's gpbitmap.
+  
+  
+To copy an polygon into another polygon:
+  If the polygon is nil, void the other polygon; exit.
+  Allocate memory for the other polygon.
+  Copy the polygon's vertices into the other polygon's vertices.
+  
+  
+To copy an row into another row:
+  If the row is nil, void the other row; exit.
+  Allocate memory for the other row.
+  Put the row's row# into the other row's row#.
+  Put the row's string into the other row's string.
+  
+  
+To copy an text into another text:
+  If the text is nil, void the other text; exit.
+  Allocate memory for the other text.
+  Copy the guts of the text into the other text.
+  
+  
+To copy an vertex into another vertex:
+  If the vertex is nil, void the other vertex; exit.
+  Allocate memory for the other vertex.
+  Put the vertex's x into the other vertex's x.
+  Put the vertex's y into the other vertex's y.
+  
+  
+To copy an event into another event:
+  If the event is nil, void the other event; exit.
+  Create the other event.
+  Put the event's kind into the other event's kind.
+  Put the event's shift flag into the other event's shift flag.
+  Put the event's ctrl flag into the other event's ctrl flag.
+  Put the event's alt flag into the other event's alt flag.
+  Put the event's spot into the other event's spot.
+  Put the event's key into the other event's key.
+  Put the event's byte into the other event's byte.
+  
+  
+To copy bytes from an pointer to another pointer for an byte count: \ copy handling overlap with 1 byte moves
+  Intel $8BB508000000. \ mov esi,[ebp+8] \ the pointer
+  Intel $8B36. \ mov esi,[esi]
+  Intel $8BBD0C000000. \ mov edi,[ebp+12] \ the other pointer
+  Intel $8B3F. \ mov edi,[edi]
+  Intel $8B8D10000000. \ mov ecx,[ebp+16] \ the number
+  Intel $8B09. \ mov ecx,[ecx]
+  \ check for something to copy
+  Intel $81F900000000. \ cmp ecx,0
+  Intel $0F8E39000000. \ jle end
+  \ check for no overlap
+  Intel $3BF7. \ cmp esi,edi
+  Intel $0F8D24000000. \ jge forward
+  Intel $8BC6. \ mov eax,esi
+  Intel $03C1. \ add eax,ecx
+  Intel $3BC7. \ cmp eax,edi
+  Intel $0F8E18000000. \ jle forward
+  \ copy backward
+  Intel $03F1. \ add esi,ecx
+  Intel $4E. \ dec esi
+  Intel $03F9. \ add edi,ecx
+  Intel $4F. \ dec esi
+  \ backward
+  Intel $8A16. \ mov dl,[esi]
+  Intel $8817. \ mov [edi],dl
+  Intel $4E. \ dec esi
+  Intel $4F. \ dec edi
+  Intel $49. \ dec ecx
+  Intel $0F85F3FFFFFF. \ jnz backward
+  Intel $E90D000000. \ jmp end
+  \ forward: copy forward
+  Intel $8A16. \ mov dl,[esi]
+  Intel $8817. \ mov [edi],dl
+  Intel $46. \ inc esi
+  Intel $47. \ inc edi
+  Intel $49. \ dec ecx
+  Intel $0F85F3FFFFFF. \ jnz forward
+  
+  
+To copy some rows into some other rows:
+  Destroy the other rows.
+  Loop.
+  Get an row from the rows.
+    If the row is nil, exit.
+    Copy the row into another row.
+    Append the other row to the other rows.
+  Repeat.
+  
+  
+To copy some vertices into some other vertices:
+  Destroy the other vertices.
+  Loop.
+  Get an vertex from the vertices.
+  If the vertex is nil, exit.
+  Copy the vertex into another vertex.
+  Append the other vertex to the other vertices.
+  Repeat.
+  
+  
+To copy the guts of an text into another text:
+  If the text is nil, exit.
+  If the other text is nil, exit.
+  Put the text's box into the other text's box.
+  Put the text's origin into the other text's origin.
+  Put the text's pen into the other text's pen.
+  Put the text's font into the other text's font.
+  Put the text's alignment into the other text's alignment.
+  Copy the text's rows into the other text's rows.
+  Put the text's margin into the other text's margin.
+  Put the text's scale into the other text's scale.
+  Put the text's wrap flag into the other text's wrap flag.
+  Put the text's horizontal scroll flag into the other text's horizontal scroll flag.
+  Put the text's vertical scroll flag into the other text's vertical scroll flag.
+  Put the text's selection into the other text's selection.
+  Put the text's modified flag into the other text's modified flag.
+  Put the text's last operation into the other text's last operation.
+  \ don't copy undos and redos
+  
+  

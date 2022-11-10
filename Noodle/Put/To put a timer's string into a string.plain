@@ -1,4 +1,0 @@
-To put an timer's string into an string:
-  Convert the timer's ticks to the string.
-  
-  

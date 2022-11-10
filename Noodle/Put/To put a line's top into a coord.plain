@@ -1,5 +1,0 @@
-To put an line's top into an coord:
-  Put the line's start's y into the coord.
-  If the line's end's y is less than the line's start's y, put the line's end's y into the coord.
-  
-  

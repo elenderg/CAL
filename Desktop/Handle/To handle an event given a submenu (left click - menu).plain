@@ -1,7 +1,0 @@
-To handle an event given an submenu (left click - menu):
-  Find an command given the submenu and the event's spot.
-  If the command is nil, exit.
-  Put the command into the selected command.
-  Relinquish control.
-  
-  

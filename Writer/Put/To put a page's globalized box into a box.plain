@@ -1,6 +1,0 @@
-To put an page's globalized box into an box:
-  If the page is nil, clear the box; exit.
-  Put the page's box into the box.
-  Globalize the box given the page's origin.
-  
-  

@@ -1,0 +1,44 @@
+To mirror an shape (group):
+  Put the shape's box's center into an center spot.
+  Loop.
+    Get another shape from the shape's shapes.
+    If the other shape is nil, break.
+    Put the center's x minus the other shape's box's center's x into an pair's x.
+    Multiply the pair's x by 2.
+    Move the other shape given the pair.
+    Mirror the other shape.
+  Repeat.
+  Adjust the shape.
+  
+  
+To mirror an shape (picture):
+  Mirror the shape's picture.
+  Adjust the shape.
+  
+  
+To mirror an shape (polygon):
+  Mirror the shape's polygon.
+  Adjust the shape.
+  
+  
+To mirror an shape:
+  If the shape is nil, exit.
+  If the shape's kind is "ellipse", exit.
+  If the shape's kind is "group", mirror the shape (group); exit.
+  If the shape's kind is "picture", mirror the shape (picture); exit.
+  If the shape's kind is "polygon", mirror the shape (polygon); exit.
+  If the shape's kind is "rectangle", exit.
+  If the shape's kind is "text", exit.
+  Debug "mirror an shape: " then the shape's kind.
+  
+  
+To mirror any selected shapes on an page:
+  If the page is nil, exit.
+  Loop.
+    Get an shape from the page's shapes.
+    If the shape is nil, exit.
+    If the shape is not selected, repeat.
+    Mirror the shape.
+  Repeat.
+  
+  

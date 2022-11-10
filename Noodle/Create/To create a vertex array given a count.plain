@@ -1,8 +1,0 @@
-To create an vertex array given an count:
-  Privatize the count.
-  Allocate memory for the vertex array.
-  Put the count into the vertex array's count.
-  Multiply the count by an spot's magnitude.
-  Assign the vertex array's spot pointer given the count.
-  
-  

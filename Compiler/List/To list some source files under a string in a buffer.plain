@@ -1,8 +1,0 @@
-To list some source files under an string in an buffer:
-  Append the string to the buffer.
-  Advance the buffer (twice).
-  If the source files are empty, exit.
-  List the source files in the buffer.
-  Advance the buffer.
-  
-  

@@ -1,8 +1,0 @@
-To put an left coord and an top coord and an right coord and an bottom coord and an radius into an roundy box:
-  Put the left into the roundy box's left.
-  Put the top into the roundy box's top.
-  Put the right into the roundy box's right.
-  Put the bottom into the roundy box's bottom.
-  Put the radius into the roundy box's radius.
-  
-  

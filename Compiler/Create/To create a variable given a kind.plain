@@ -1,6 +1,0 @@
-To create an variable given an kind:
-  Allocate memory for the variable.
-  Put the kind into the variable's kind.
-  Put 1 into the variable's count.
-  
-  

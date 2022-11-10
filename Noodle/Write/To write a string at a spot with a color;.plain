@@ -1,7 +1,0 @@
-To write an string at an spot with an color;
-To stroke an string at an spot with an color:
-  Start at the spot.
-  Put the color into the context's color.
-  Stroke the string.
-  
-  

@@ -1,7 +1,0 @@
-To decide if an spot is in an menu:
-  If the menu is nil, say no.
-  Find an command given the menu and the spot.
-  If the command is nil, say no.
-  Say yes.
-  
-  

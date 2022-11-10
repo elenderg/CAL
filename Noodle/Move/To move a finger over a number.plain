@@ -1,5 +1,0 @@
-To move an finger over an number:
-  If the finger is nil, exit.
-  Add 1 to the finger.
-  
-  

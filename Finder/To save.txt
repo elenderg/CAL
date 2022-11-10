@@ -1,0 +1,23 @@
+To save an node (document):
+  Clear the i/o error.
+  If the node's document is not modified, exit.
+  Externalize the node's document into an buffer.
+  Write the buffer to the node's path.
+  If the i/o error is blank, clear the node's document's modified flag.
+  
+  
+To save an node (source):
+  Clear the i/o error.
+  If the node's source is not modified, exit.
+  Remember the node's source's text with "save".
+  Convert the node's source to an buffer.
+  Write the buffer to the node's path.
+  If the i/o error is blank, clear the node's source's text's modified flag.
+  
+  
+To save an node:
+  If the node is nil, exit.
+  If the node's source is not nil, save the node (source).
+  If the node's document is not nil, save the node (document).
+  
+  

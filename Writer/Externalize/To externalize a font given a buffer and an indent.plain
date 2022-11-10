@@ -1,5 +1,0 @@
-To externalize an font given an buffer and an indent:
-  Externalize the font's name given the buffer and the indent.
-  Externalize the font's height given the buffer and the indent.
-  
-  

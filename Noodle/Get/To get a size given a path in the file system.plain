@@ -1,5 +1,0 @@
-To get an size given an path in the file system:
-  If the path is directory-format, get the size given the path in the file system (directory).
-  If the path is file-format, get the size given the path in the file system (file).
-  
-  

@@ -1,0 +1,89 @@
+To finalize an context:
+  Destroy the choices.
+  Destroy the figures.
+  Destroy the context stack.
+  Destroy the context.
+  
+  
+To finalize an talker:
+  If the talker is nil, exit.
+  Call the talker's vtable's release with the talker.
+  Put nil into the talker.
+  
+  
+To finalize after run:
+  If the heap count is 0, exit.
+  Put the heap count into an count.
+  Put the count then " drip(s)." into an string.
+  Debug the string.
+  
+  
+To finalize com:
+  Call "ole32.dll" "CoUninitialize".
+  
+  
+To finalize gdi+:
+  Call "gdiplus.dll" "GdiplusShutdown" with the gptoken.
+  
+  
+To finalize the canvases:
+  Finalize the memory canvas.
+  Finalize the screen canvas.
+  
+  
+To finalize the cgi:
+  Call "kernel32.dll" "FreeConsole".
+  
+  
+To finalize the colors:
+  
+  
+To finalize the cursors:
+  Call "user32.dll" "DestroyCursor" with the i-beam cursor.
+  Call "user32.dll" "DestroyCursor" with the hand cursor.
+  Call "user32.dll" "DestroyCursor" with the arrow cursor.
+  
+  
+To finalize the fonts:
+  Call "gdi32.dll" "RemoveFontMemResourceEx" with the osmosian font resource.
+  
+  
+To finalize the memory canvas:
+  Call "gdi32.dll" "SelectObject" with the memory canvas and the saved memory hbitmap returning an hbitmap.
+  Call "gdi32.dll" "DeleteObject" with the hbitmap.
+  Call "gdi32.dll" "DeleteDC" with the memory canvas.
+  
+  
+To finalize the module:
+  
+  
+To finalize the mouse:
+  
+  
+To finalize the printer canvas:
+  Call "kernel32.dll" "GlobalFree" with the printer device mode handle.
+  Put 0 into the printer canvas.
+  
+  
+To finalize the screen canvas:
+  
+  
+To finalize the screen:
+  
+  
+To finalize the window:
+  Call "user32.dll" "DestroyWindow" with the main window.
+  Loop.
+    Call "user32.dll" "GetMessageA" with an msg's whereabouts and 0 and 0 and 0 returning an number.
+    If the number is less than 1, break.
+    Call "user32.dll" "TranslateMessage" with the msg's whereabouts.
+    Call "user32.dll" "DispatchMessageA" with the msg's whereabouts.
+  Repeat.
+  Flush the event queue.
+  Destroy the current event.
+  
+  
+To finalize winsock:
+  Call "ws2_32.dll" "WSACleanup".
+  
+  

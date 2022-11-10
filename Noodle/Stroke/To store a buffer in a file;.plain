@@ -1,9 +1,0 @@
-To store an buffer in an file;
-To write an buffer to an file:
-  Clear the i/o error.
-  Call "kernel32.dll" "SetFilePointer" with the file and 0 and 0 and 0 [file_begin] returning an result number.
-  If the result number is -1, put "Error positioning file pointer." into the i/o error; exit.
-  Call "kernel32.dll" "WriteFile" with the file and the buffer's first and the buffer's length and an number's whereabouts and 0 returning the result number.
-  If the result number is 0, put "Error writing file." into the i/o error; exit.
-  
-  

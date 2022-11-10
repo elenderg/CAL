@@ -1,6 +1,0 @@
-To decide if an spot is in the edge of an page:
-  If the page is nil, say no.
-  If the spot is in the page's edge, say yes.
-  Say no.
-  
-  

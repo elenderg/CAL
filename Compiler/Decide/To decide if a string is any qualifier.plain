@@ -1,6 +1,0 @@
-To decide if an string is any qualifier:
-  If the string is blank, say no.
-  If the string's first's target is the left-paren byte, say yes.
-  Say no.
-  
-  

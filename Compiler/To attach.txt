@@ -1,0 +1,44 @@
+To attach an hex string and an number and another hex string to an third hex string:
+  Append the hex string to the third hex string.
+  Convert the number to an fourth hex string.
+  Append the fourth hex string to the third hex string.
+  Append the other hex string to the third hex string.
+  
+  
+To attach an hex string and an number and another number to another hex string:
+  Append the hex string to the other hex string.
+  Convert the number to an third hex string.
+  Append the third hex string to the other hex string.
+  Convert the other number to an fourth hex string.
+  Append the fourth hex string to the other hex string.
+  
+  
+To attach an hex string and an number to another hex string:
+  Append the hex string to the other hex string.
+  Convert the number to an third hex string.
+  Append the third hex string to the other hex string.
+  
+  
+To attach an hex string to another hex string: employ append an string to another string.
+  
+  
+To attach address loading code to an hex string given an variable: \ loads into edx
+  If the variable is nil, attach $C7C200000000 to the hex string; exit. \ mov edx,0
+  If the variable's kind is "global", attach $C7C2 and the variable's address to the hex string; exit. \ mov edx,the variable's address
+  If the variable's kind is "literal", attach $C7C2 and the variable's address to the hex string; exit. \ mov edx,the variable's address
+  If the variable's kind is "local", attach $8D95 and the variable's offset to the hex string; exit. \ lea edx,[ebp+the variable's offset]
+  If the variable's kind is "scratch", attach $8B95 and the variable's offset to the hex string; exit. \ mov edx,[ebp+the variable's offset]
+  If the variable's kind is not "parameter", abort with "Internal error - attach address loading code to an hex string given an variable"; exit.
+  If the variable's by-value flag is set, attach $8D95 and the variable's offset to the hex string; exit. \ lea edx,[ebp+the variable's offset]
+  Attach $8B95 and the variable's offset to the hex string. \ mov edx,[ebp+the variable's offset]
+  
+  
+To attach an hex string and an address to an fragment: \ call or jump
+  Put the address into an number.
+  Subtract the fragment's address from the number.
+  Subtract the fragment's code's length from the number.
+  Subtract the hex string's length from the number.
+  Subtract 4 from the number.
+  Attach the hex string and the number to the fragment's code.
+  
+  

@@ -1,6 +1,0 @@
-To attach an hex string and an number to another hex string:
-  Append the hex string to the other hex string.
-  Convert the number to an third hex string.
-  Append the third hex string to the other hex string.
-  
-  

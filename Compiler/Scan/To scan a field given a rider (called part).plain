@@ -1,7 +1,0 @@
-To scan an field given an rider (called part):
-  If the compiler's abort flag is set, exit.
-  Move the rider (compiler rules).
-  If the field's type name is blank, put the field's name into the field's type name. \ byte array type name already filled in
-  Scan the field's name given the rider.
-  
-  

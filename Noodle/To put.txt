@@ -1,0 +1,1050 @@
+To put an box and an radius into an roundy box:
+  Put the box's left into the roundy box's left.
+  Put the box's top into the roundy box's top.
+  Put the box's right into the roundy box's right.
+  Put the box's bottom into the roundy box's bottom.
+  Put the radius into the roundy box's radius.
+  
+  
+To put an box in the center of another box;
+To center an box in another box:
+  Center the box in the other box (horizontally).
+  Center the box in the other box (vertically).
+  
+  
+To put an box in the center of the screen;
+To center an box on the screen:
+  Center the box in the screen's box.
+  
+  
+To put an box into another box:
+  Put the box's left into the other box's left.
+  Put the box's top into the other box's top.
+  Put the box's right into the other box's right.
+  Put the box's bottom into the other box's bottom.
+  
+  
+To put an box on an spot;
+To center an box on an spot:
+  Get an difference between the spot and the box's center.
+  Round the difference to the nearest multiple of the tpp.
+  Move the box given the difference.
+  
+  
+To put an box some twips by some other twips in the center of another box;
+To center an box some twips by some other twips in another box:
+  Make the box the twips by the other twips.
+  Center the box in the other box.
+  
+  
+To put an box's bottom line into an horizontal line: \ and "vertical" for left and right
+  Put the box's left and the box's bottom into the horizontal line's start.
+  Put the box's right and the box's bottom into the horizontal line's end.
+  
+  
+To put an box's bottom-center into an spot: \ *** need these without dashs too
+  Put the box's center's x into the spot's x.
+  Put the box's bottom into the spot's y.
+  
+  
+To put an box's center into an spot:
+  Put the box's left plus the box's right into the spot's x.
+  Put the box's top plus the box's bottom into the spot's y.
+  Divide the spot by 2.
+  
+  
+To put an box's center-bottom into an spot:
+  Put the box's center's x into the spot's x.
+  Put the box's bottom into the spot's y.
+  
+  
+To put an box's center-top into an spot:
+  Put the box's center's x into the spot's x.
+  Put the box's top into the spot's y.
+  
+  
+To put an box's height into an height:
+  Put the box's bottom into the height.
+  Subtract the box's top from the height.
+  Add the tpp to the height.
+  
+  
+To put an box's left line into an line:
+  Put the box's left and the box's top into the line's start.
+  Put the box's left and the box's bottom into the line's end.
+  
+  
+To put an box's left-bottom into an spot:
+  Put the box's left into the spot's x.
+  Put the box's bottom into the spot's y.
+  
+  
+To put an box's left-center into an spot:
+  Put the box's left into the spot's x.
+  Put the box's center's y into the spot's y.
+  
+  
+To put an box's right line into an line:
+  Put the box's right and the box's top into the line's start.
+  Put the box's right and the box's bottom into the line's end.
+  
+  
+To put an box's right-center into an spot:
+  Put the box's right into the spot's x.
+  Put the box's center's y into the spot's y.
+  
+  
+To put an box's right-top into an spot:
+  Put the box's right into the spot's x.
+  Put the box's top into the spot's y.
+  
+  
+To put an box's top line into an horizontal line:
+  Put the box's left and the box's top into the horizontal line's start.
+  Put the box's right and the box's top into the horizontal line's end.
+  
+  
+To put an box's top-center into an spot:
+  Put the box's center's x into the spot's x.
+  Put the box's top into the spot's y.
+  
+  
+To put an box's width into an width:
+  Put the box's right into the width.
+  Subtract the box's left from the width.
+  Add the tpp to the width.
+  
+  
+To put an box's x-extent into an width:
+  Put the box's right into the width.
+  Subtract the box's left from the width.
+  
+  
+To put an box's y-extent into an height:
+  Put the box's bottom into the height.
+  Subtract the box's top from the height.
+  
+  
+To put an byte and an number into an fraction:
+  Put the byte into the fraction's numerator.
+  Put the number into the fraction's denominator.
+  
+  
+To put an byte into an number:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the byte
+  Intel $0FB600. \ movzx eax,byte ptr [eax]
+  Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the number
+  Intel $8903. \ mov [ebx],eax
+  
+  
+To put an byte into an string:
+  Put 1 into an length.
+  Reassign the string's first given the length.
+  Put the byte into the string's first's target.
+  Put the string's first into the string's last.
+  
+  
+To put an byte into an wyrd:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the byte
+  Intel $660FB600. \ movzx eax,byte ptr [eax]
+  Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the wyrd
+  Intel $668903. \ mov [ebx],ah
+  
+  
+To put an byte into another byte:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the byte
+  Intel $8A00. \ mov al,[eax]
+  Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the other byte
+  Intel $8803. \ mov [ebx],al
+  
+  
+To put an byte into eax:
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the byte
+  Intel $0FB603. \ movzx eax,byte ptr [ebx]
+  
+  
+To put an color into another color:
+  Put the color's hue into the other color's hue.
+  Put the color's saturation into the other color's saturation.
+  Put the color's lightness into the other color's lightness.
+  
+  
+To put an date/time into another date/time:
+  Put the date/time's year into the other date/time's year.
+  Put the date/time's month into the other date/time's month.
+  Put the date/time's week day into the other date/time's week day.
+  Put the date/time's day into the other date/time's day.
+  Put the date/time's hour into the other date/time's hour.
+  Put the date/time's minute into the other date/time's minute.
+  Put the date/time's second into the other date/time's second.
+  Put the date/time's millisecond into the other date/time's millisecond.
+  
+  
+To put an date/time's string into an string:
+  Clear the string.
+  Append the date/time's year to the string.
+  Append "/" to the string.
+  Zero fill the date/time's month given 2 and append it to the string.
+  Append "/" to the string.
+  Zero fill the date/time's day given 2 and append it to the string.
+  Append " " to the string.
+  Zero fill the date/time's hour given 2 and append it to the string.
+  Append ":" to the string.
+  Zero fill the date/time's minute given 2 and append it to the string.
+  Append ":" to the string.
+  Zero fill the date/time's second given 2 and append it to the string.
+  Append ":" to the string.
+  Zero fill the date/time's millisecond given 3 and append it to the string.
+  
+  
+To put an finger on the first character of an string:
+  Put the string's first into the finger.
+  
+  
+To put an flag into an string;
+To convert an flag to an string:
+  If the flag is set, put "yes" into the string; exit.
+  Put "no" into the string.
+  
+  
+To put an flag into another flag;
+To put an flag into an number;
+To put an pointer into an number;
+To put an pointer into another pointer;
+To put an number into an flag;
+To put an number into an pointer;
+To put an number into another number:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the number
+  Intel $8B00. \ mov eax,[eax]
+  Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the other number
+  Intel $8903. \ mov [ebx],eax
+  
+  
+To put an flag into eax;
+To put an pointer into eax;
+To put an number into eax:
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the number
+  Intel $8B03. \ mov eax,[ebx]
+  
+  
+To put an font into another font:
+  Put the font's name into the other font's name.
+  Put the font's height into the other font's height.
+  
+  
+To put an font's adjusted height into an height:
+  Put the font's height times 3/4 into the height.
+  
+  
+To put an fraction into an string;
+To convert an fraction to an string:
+  Clear the string.
+  Privatize the fraction.
+  If the fraction is negative, put "-" into the string; de-sign the fraction.
+  Reduce the fraction.
+  Convert the fraction to an mixed.
+  If the mixed is 0, append "0" to the string; exit.
+  If the mixed's whole number is not 0, append the mixed's whole number to the string.
+  If the mixed's fraction is 0, exit.
+  If the string is not blank, append the dash byte to the string.
+  Append the mixed's numerator then "/" then the mixed's denominator to the string.
+  
+  
+To put an fraction into another fraction:
+  Put the fraction's numerator into the other fraction's numerator.
+  Put the fraction's denominator into the other fraction's denominator.
+  
+  
+To put an fraction pair into another fraction pair:
+  Put the fraction pair's fraction into the other fraction pair's fraction.
+  Put the fraction pair's other fraction into the other fraction pair's other fraction.
+  
+  
+To put an fraction's absolute value into another fraction:
+  Put the fraction into the other fraction.
+  De-sign the other fraction.
+  
+  
+To put an gpimage's gprect into an gprect:
+  Put 0 into the gprect's x.
+  Put 0 into the gprect's y.
+  Put the gpimage's width into the gprect's width.
+  Put the gpimage's height into the gprect's height.
+  
+  
+To put an gpimage's height into an height:
+  If the gpimage is nil, put 0 into the height; exit.
+  Call "gdiplus.dll" "GdipGetImageHeight" with the gpimage and the height's whereabouts.
+  
+  
+To put an gpimage's width into an width:
+  If the gpimage is nil, put 0 into the width; exit.
+  Call "gdiplus.dll" "GdipGetImageWidth" with the gpimage and the width's whereabouts.
+  
+  
+To put an gprect into another gprect:
+  Put the gprect's x into the other gprect's x.
+  Put the gprect's y into the other gprect's y.
+  Put the gprect's width into the other gprect's width.
+  Put the gprect's height into the other gprect's height.
+  
+  
+To put an hue and an saturation and an lightness into an color:
+  Put the hue into the color's hue.
+  If the color's hue is not -1, limit the color's hue to 0 and 3599. \ -1 is clear
+  Put the saturation into the color's saturation.
+  Limit the color's saturation to 0 and 1000.
+  Put the lightness into the color's lightness.
+  Limit the color's lightness to 0 and 1000.
+  
+  
+To put an left coord and an top coord and an right coord and an bottom coord and an radius into an roundy box:
+  Put the left into the roundy box's left.
+  Put the top into the roundy box's top.
+  Put the right into the roundy box's right.
+  Put the bottom into the roundy box's bottom.
+  Put the radius into the roundy box's radius.
+  
+  
+To put an left coord and an top coord and an right coord and an bottom coord into an box:
+  Put the left into the box's left.
+  Put the top into the box's top.
+  Put the right into the box's right.
+  Put the bottom into the box's bottom.
+  
+  
+To put an left coord and an top coord and an right coord and an bottom coord into an ellipse:
+  Put the left into the ellipse's left.
+  Put the top into the ellipse's top.
+  Put the right into the ellipse's right.
+  Put the bottom into the ellipse's bottom.
+  
+  
+To put an line in the middle of an box;
+To center an line in an box:
+  Center the line in the box (horizontally).
+  Center the line in the box (vertically).
+  
+  
+To put an line into another line:
+  Put the line's start into the other line's start.
+  Put the line's end into the other line's end.
+  
+  
+To put an line's bottom into an coord:
+  Put the line's start's y into the coord.
+  If the line's end's y is greater than the line's start's y, put the line's end's y into the coord.
+  
+  
+To put an line's box into an box:
+  Put the line's start into the box's left-top.
+  Put the line's end into the box's right-bottom.
+  Normalize the box.
+  
+  
+To put an line's center into an spot:
+  Put the line's start's x plus the line's end's x into the spot's x.
+  Put the line's start's y plus the line's end's y into the spot's y.
+  Divide the spot by 2.
+  
+  
+To put an line's left into an coord:
+  Put the line's start's x into the coord.
+  If the line's end's x is less than the line's start's x, put the line's end's x into the coord.
+  
+  
+To put an line's right into an coord:
+  Put the line's start's x into the coord.
+  If the line's end's x is greater than the line's start's x, put the line's end's x into the coord.
+  
+  
+To put an line's top into an coord:
+  Put the line's start's y into the coord.
+  If the line's end's y is less than the line's start's y, put the line's end's y into the coord.
+  
+  
+To put an name and an height into an font:
+  Put the name into the font's name.
+  Put the height into the font's height.
+  
+  
+To put an name into an font:
+  Put the name into the font's name.
+  
+  
+To put an number and another number into an pair:
+  Put the number into the pair's x.
+  Put the other number into the pair's y.
+  
+  
+To put an number into an big-endian unsigned wyrd:
+  Put the number into an wyrd.
+  Put the wyrd into the big-endian unsigned wyrd.
+  
+  
+To put an number into an byte:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the number
+  Intel $8B00. \ mov eax,[eax]
+  Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the byte
+  Intel $8803. \ mov [ebx],al
+  
+  
+To put an number into an fraction:
+  Put the number into the fraction's numerator.
+  Put 1 into the fraction's denominator.
+  
+  
+To put an number into an pair:
+  Put the number into the pair's x.
+  Put the number into the pair's y.
+  
+  
+To put an number into an string;
+To convert an number to an string:
+  Clear the string.
+  Privatize the number.
+  De-sign the number.
+  Loop.
+    Divide the number by 10 giving an quotient and an remainder.
+    Add 48 to the remainder.
+    Put the remainder into an byte.
+    Prepend the byte to the string.
+    If the quotient is 0, break.
+    Put the quotient into the number.
+  Repeat.
+  If the original number is less than 0, prepend the dash byte to the string.
+  
+  
+To put an number into an wyrd:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the number
+  Intel $8B00. \ mov eax,[eax]
+  Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the wyrd
+  Intel $668903. \ mov [ebx],ax
+  
+  
+To put an number on the stack:
+  Convert the number to an token.
+  Put the token on the stack.
+  
+  
+To put an number over another number in an fraction;
+To put an number and another number into an fraction:
+  Put the number into the fraction's numerator.
+  Put the other number into the fraction's denominator.
+  
+  
+To put an number's absolute value into another number:
+  Put the number into the other number.
+  De-sign the other number.
+  
+  
+To put an pair into another pair:
+  Put the pair's x into the other pair's x.
+  Put the pair's y into the other pair's y.
+  
+  
+To put an pair's absolute value into another pair:
+  Put the pair into the other pair.
+  De-sign the other pair.
+  
+  
+To put an picture in the middle of an box;
+To center an picture in an box:
+  If the picture is nil, exit.
+  Center the picture in the box (horizontally).
+  Center the picture in the box (vertically).
+  
+  
+To put an picture on an spot;
+To center an picture on an spot:
+  If the picture is nil, exit.
+  Get an difference between the spot and the picture's box's center.
+  Round the difference to the nearest multiple of the tpp.
+  Move the picture given the difference.
+  
+  
+To put an polygon in the middle of an box;
+To center an polygon in an box:
+  If the polygon is nil, exit.
+  Center the polygon in the box (horizontally).
+  Center the polygon in the box (vertically).
+  
+  
+To put an polygon in the middle of the screen;
+To center an polygon on the screen:
+  Center the polygon in the screen's box.
+  
+  
+To put an polygon on an spot;
+To center an polygon on an spot:
+  If the polygon is nil, exit.
+  Get an difference between the spot and the polygon's box's center.
+  Round the difference to the nearest multiple of the tpp.
+  Move the polygon given the difference.
+  
+  
+To put an polygon's box into an box:
+  If the polygon is nil, zero the box; exit.
+  If the polygon's vertices are empty, zero the box; exit.
+  Put the largest number and the largest number and the smallest number and the smallest number into the box.
+  Loop.
+    Get an vertex from the polygon's vertices.
+    If the vertex is nil, break.
+    If the vertex's x is less than the box's left, put the vertex's x into the box's left.
+    If the vertex's y is less than the box's top, put the vertex's y into the box's top.
+    If the vertex's x is greater than the box's right, put the vertex's x into the box's right.
+    If the vertex's y is greater than the box's bottom, put the vertex's y into the box's bottom.
+  Repeat.
+  
+  
+To put an polygon's center into an spot:
+  If the polygon is nil, clear the spot; exit.
+  Put the polygon's box's center into the spot.
+  
+  
+To put an polygon's center-bottom into an spot:
+  If the polygon is nil, clear the spot; exit.
+  Put the polygon's box's center-bottom into the spot.
+  
+  
+To put an polygon's center-top into an spot:
+  If the polygon is nil, clear the spot; exit.
+  Put the polygon's box's center-top into the spot.
+  
+  
+To put an polygon's height into an height:
+  If the polygon is nil, clear the height; exit.
+  Put the polygon's box's height into the height.
+  
+  
+To put an polygon's left-bottom into an spot:
+  If the polygon is nil, clear the spot; exit.
+  Put the polygon's box's left-bottom into the spot.
+  
+  
+To put an polygon's left-center into an spot:
+  If the polygon is nil, clear the spot; exit.
+  Put the polygon's box's left-center into the spot.
+  
+  
+To put an polygon's left-top into an spot:
+  If the polygon is nil, clear the spot; exit.
+  Put the polygon's box's left-top into the spot.
+  
+  
+To put an polygon's right-bottom into an spot:
+  If the polygon is nil, clear the spot; exit.
+  Put the polygon's box's right-bottom into the spot.
+  
+  
+To put an polygon's right-center into an spot:
+  If the polygon is nil, clear the spot; exit.
+  Put the polygon's box's right-center into the spot.
+  
+  
+To put an polygon's right-top into an spot:
+  If the polygon is nil, clear the spot; exit.
+  Put the polygon's box's right-top into the spot.
+  
+  
+To put an polygon's width into an width:
+  If the polygon is nil, clear the width; exit.
+  Put the polygon's box's width into the width.
+  
+  
+To put an polygon's x-extent into an width:
+  If the polygon is nil, clear the width; exit.
+  Put the polygon's box's x-extent into the width.
+  
+  
+To put an polygon's y-extent into an height:
+  If the polygon is nil, clear the height; exit.
+  Put the polygon's box's y-extent into the height.
+  
+  
+To put an rider into another rider:
+  Copy bytes from the rider's whereabouts to the other rider's whereabouts for the rider's magnitude.
+  
+  
+To put an roundy box into another roundy box:
+  Put the roundy box's left into the other roundy box's left.
+  Put the roundy box's top into the other roundy box's top.
+  Put the roundy box's right into the other roundy box's right.
+  Put the roundy box's bottom into the other roundy box's bottom.
+  Put the roundy box's radius into the other roundy box's radius.
+  
+  
+To put an row's working string into an substring:
+  If the row is nil, clear the substring; exit.
+  Slap the substring on the row's string.
+  Subtract 1 from the substring's last.
+  
+  
+To put an selection into another selection:
+  Put the selection's anchor into the other selection's anchor.
+  Put the selection's caret into the other selection's caret.
+  
+  
+To put an sockaddr into another sockaddr:
+  Copy bytes from the sockaddr's whereabouts to the other sockaddr's whereabouts for the sockaddr's magnitude.
+  
+  
+To put an spot and another spot and an radius into an roundy box:
+  Put the spot into the roundy box's left-top.
+  Put the other spot into the roundy box's right-bottom.
+  Put the radius into the roundy box's radius.
+  
+  
+To put an spot and another spot into an box:
+  Put the spot into the box's left-top.
+  Put the other spot into the box's right-bottom.
+  
+  
+To put an spot and another spot into an line:
+  Put the spot into the line's start.
+  Put the other spot into the line's end.
+  
+  
+To put an spot and another spot into an ellipse:
+  Put the spot into the ellipse's left-top.
+  Put the other spot into the ellipse's right-bottom.
+  
+  
+To put an spot in the middle of an box;
+To center an spot in an box:
+  Center the spot in the box (horizontally).
+  Center the spot in the box (vertically).
+  
+  
+To put an string into an letter:
+  Put the string's first's target into the letter.
+  
+  
+To put an string into an text:
+  If the text is nil, exit.
+  Destroy the text's rows.
+  Reset the origin of the text.
+  Reset the caret of the text.
+  Deselect the text.
+  Privatize the string.
+  Append the return byte to the string.
+  Convert the string to the text's rows.
+  Wrap the text.
+  
+  
+To put an string into another string:
+  Put the string's length into an saved length.
+  Assign an pointer given the saved length.
+  Copy bytes from the string's first to the pointer for the saved length.
+  Unassign the other string's first.
+  Put the pointer into the other string's first.
+  Put the other string's first plus the saved length minus 1 into the other string's last.
+  
+  
+To put an string on the windows clipboard:
+  Call "user32.dll" "OpenClipboard" with the main window.
+  Call "user32.dll" "EmptyClipboard".
+  Put the string's length plus 1 into an number.
+  Call "kernel32.dll" "GlobalAlloc" with 66 [ghnd] and the number returning an handle.
+  Call "kernel32.dll" "GlobalLock" with the handle returning an pointer.
+  Copy bytes from the string's first to the pointer for the string's length.
+  Call "kernel32.dll" "GlobalUnlock" with the handle.
+  Call "user32.dll" "SetClipboardData" with 1 [cf_text] and the handle.
+  Call "user32.dll" "CloseClipboard".
+  
+  
+To put an string's length into an length:
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the string
+  \ load default result
+  Intel $B900000000. \ mov ecx,0
+  \ if first is 0, store 0
+  Intel $833B00. \ cmp [ebx],0
+  Intel $0F8414000000. \ je store it
+  \ if last is less than first, store 0
+  Intel $8B5304. \ mov edx,[ebx+4] \ last pointer
+  Intel $3B13. \ cmp edx,[ebx]
+  Intel $0F8C09000000. \ jl store it
+  \ calc length
+  Intel $8B8B04000000. \ mov ecx,[ebx+4] \ last pointer
+  Intel $2B0B. \ sub ecx,[ebx] \ subtract first
+  Intel $41. \ inc ecx \ add 1
+  \ STORE IT:
+  Intel $8B950C000000. \ mov edx,[ebp+12] \ the number
+  Intel $890A. \ mov [edx],ecx
+  
+  
+To put an string's width into an width:
+  Get the width given the string and the memory canvas and the default font.
+  
+  
+To put an substring into another substring:
+  Copy bytes from the substring's whereabouts to the other substring's whereabouts for the substring's magnitude.
+  
+  
+To put an terminal in the middle of an box;
+To center an terminal in an box:
+  Privatize the box.
+  Indent the box 1/4 inch.
+  Put the box into the terminal's box.
+  
+  
+To put an text in the middle of an box;
+To center an text in an box:
+  If the text is nil, exit.
+  Center the text in the box (horizontally).
+  Center the text in the box (vertically).
+  
+  
+To put an text on an spot;
+To center an text on an spot:
+  If the text is nil, exit.
+  Get an difference between the spot and the text's box's center.
+  Round the difference to the nearest multiple of the tpp.
+  Move the text given the difference.
+  
+  
+To put an text's first line into an string:
+  If the text is nil, clear the string; exit.
+  Put the text's first row's string into the string.
+  Remove the last byte from the string.
+  
+  
+To put an text's first non-blank line into an string: \ *** new
+  Clear the string.
+  If the text is nil, exit.
+  Loop.
+    Get an row from the text's rows.
+    If the row is nil, exit.
+    Put the row's string into the string.
+    Remove the last byte from the string. \ cr or space (see text rules)
+    Remove any leading noise from the string.
+    Remove any trailing noise from the string.
+  If the string is blank, repeat.
+  
+  
+To put an text's globalized origin into an spot:
+  If the text is nil, clear the spot; exit.
+  Put the text's origin into the spot.
+  Globalize the spot given the text's left-top.
+  
+  
+To put an text's grid into an grid:
+  If the text is nil, clear the grid; exit.
+  Put the text's font's height times 4 into the grid's x.
+  Put the text's font's height into the grid's y.
+  
+  
+To put an text's normalized selection into an selection:
+  If the text is nil, exit.
+  Put the text's selection into the selection.
+  Normalize the selection.
+  
+  
+To put an text's row count into an count:
+  If the text is nil, put 0 into the count; exit.
+  If the text's rows are empty, put 0 into the count; exit.
+  Put the text's rows' last's row# into the count.
+  
+  
+To put an text's row height into an height:
+  If the text is nil, put 0 into the height; exit.
+  Put the text's font's height into the height.
+  
+  
+To put an text's rows/box into an count:
+  If the text is nil, put 0 into the count; exit.
+  Put the text's box's height divided by the text's row height into the count.
+  
+  
+To put an text's selected byte count into an count:
+  Put 0 into the count.
+  If the text is nil, exit.
+  If nothing is selected in the text, exit.
+  Loop.
+    Get an row from the text's rows.
+    If the row is nil, exit.
+    Slap an substring on any selected bytes in the row of the text.
+    Add the substring's length to the count.
+  Repeat.
+  
+  
+To put an text's selected row count into an count:
+  Put 0 into the count.
+  If the text is nil, exit.
+  Put the text's normalized selection into an selection.
+  If the selection's anchor row# is the selection's caret row#, exit.
+  Put the selection's caret row# into the count.
+  Subtract the selection's anchor row# from the count.
+  If the selection's caret column# is not 1, add 1 to the count.
+  
+  
+To put an text's status string into an string:
+  If the text is nil, clear the string; exit.
+  Put the text's selected row count into an count.
+  If the count is not 0, format the count and "line" or "lines" into the string; exit.
+  Put the text's selected byte count into another count.
+  If the other count is not 0, format the other count and "byte" or "bytes" into the string; exit.
+  Convert the text's caret row# to the string.
+  Append ":" to the string.
+  Append the text's caret column# to the string.
+  
+  
+To put an thing at the end of some things;
+To append an thing to some things:
+  If the thing is nil, exit.
+  Put the things' last into the thing's previous.
+  If the things are not empty, put the thing into the things' last's next.
+  If the things are empty, put the thing into the things' first.
+  Put the thing into the things' last.
+  
+  
+To put an timer into an string;
+To convert an timer to an string:
+  Convert the timer's ticks to the string.
+  
+  
+To put an timer's string into an string:
+  Convert the timer's ticks to the string.
+  
+  
+To put an timer's ticks into some ticks:
+  Put the timer's total ticks into the ticks.
+  If the timer's count is 0, exit.
+  Put the system's tick count into some other ticks.
+  Subtract the timer's start ticks from the other ticks.
+  Add the other ticks to the ticks.
+  
+  
+To put an token on the stack:
+  Allocate memory for an stack entry.
+  Put the token into the stack entry's string.
+  Prepend the stack entry to the stack.
+  
+  
+To put an wyrd into an big-endian unsigned wyrd:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the wyrd
+  Intel $668B00. \ mov ax,word ptr [eax]
+  Intel $86E0. \ xchg al,ah
+  Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the big-endian unsigned wyrd
+  Intel $668903. \ mov word ptr [ebx],ax
+  
+  
+To put an wyrd into an byte:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the wyrd
+  Intel $668B00. \ mov ax,[eax]
+  Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the byte
+  Intel $8803. \ mov [ebx],al
+  
+  
+To put an wyrd into an number:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the wyrd
+  Intel $0FBF00. \ movsx eax,wyrd ptr [eax]
+  Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the number
+  Intel $8903. \ mov [ebx],eax
+  
+  
+To put an wyrd into another wyrd:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the wyrd
+  Intel $668B00. \ mov ax,[eax]
+  Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the other wyrd
+  Intel $668903. \ mov [ebx],ax
+  
+  
+To put an wyrd into eax:
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the wyrd
+  Intel $0FBF03. \ movsx eax,word ptr [ebx]
+  
+  
+To put an ellipse in the middle of an box;
+To center an ellipse in an box:
+  Center the ellipse in the box (horizontally).
+  Center the ellipse in the box (vertically).
+  
+  
+To put an ellipse into another ellipse:
+  Put the ellipse's box into the other ellipse's box.
+  
+  
+To put an ellipse on an spot;
+To center an ellipse on an spot:
+  Center the ellipse's box on the spot.
+  
+  
+To put an index's count into an count:
+  Put 0 into the count.
+  If the index is nil, exit.
+  Loop.
+    Get an bucket given the index.
+    If the bucket is nil, exit.
+    Add the bucket's refers' count to the count.
+  Repeat.
+  
+  
+To put an index's used bucket count into an count:
+  Put 0 into the count.
+  If the index is nil, exit.
+  Loop.
+    Get an bucket given the index.
+    If the bucket is nil, exit.
+    If the bucket's refers are empty, repeat.
+    Add 1 to the count.
+  Repeat.
+  
+  
+To put an outlinetextmetric into another outlinetextmetric:
+  Copy bytes from the outlinetextmetric's whereabouts to the other outlinetextmetric's whereabouts for the outlinetextmetric's magnitude.
+  
+  
+To put an x coord and an y coord and another x coord and another y coord into an line:
+  Put the x into the line's start's x.
+  Put the y into the line's start's y.
+  Put the other x into the line's end's x.
+  Put the other y into the line's end's y.
+  
+  
+To put eax into an byte:
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the number
+  Intel $8803. \ mov [ebx],al
+  
+  
+To put eax into an flag;
+To put eax into an pointer;
+To put eax into an number:
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the number
+  Intel $8903. \ mov [ebx],eax
+  
+  
+To put eax into an wyrd:
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the wyrd
+  Intel $668903. \ mov [ebx],ax
+  
+  
+To put masking tape below an figure:
+  If the figure is nil, exit.
+  If the figure's vertices' count is less than 2, exit.
+  Copy the figure to another figure.
+  Put the screen's bottom into an spot's y.
+  Put the figure's last's x into the spot's x.
+  Append the spot to the other figure.
+  Put the figure's first's x into the spot's x.
+  Append the spot to the other figure.
+  Append the figure's first's spot to the other figure.
+  Mask inside the other figure.
+  Destroy the other figure.
+  
+  
+To put some font widths into an buffer: \ used for pdf conversion
+  Clear the buffer.
+  If the font widths are nil, exit.
+  Put the font widths' data into an number pointer.
+  Loop.
+    If an counter is past the font widths' count, break.
+    Append the number pointer's target then " " to the buffer.
+    Add 1 to an count.
+    If the count is evenly divisible by 16, append the crlf string to the buffer.
+    Add an number's magnitude to the number pointer.
+  Repeat.
+  
+  
+To put some things' count into an count:
+  Put 0 into the count.
+  Loop.
+    Get an thing from the things.
+    If the thing is nil, exit.
+    Add 1 to the count.
+  Repeat.
+  
+  
+To put some things into some other things:
+  Put the things' first into the other things' first.
+  Put the things' last into the other things' last.
+  
+  
+To put the actual data of an font into an buffer: \ only works with true/open type fonts
+  Create the hfont of the memory canvas given the font.
+  Call "gdi32.dll" "GetFontData" with the memory canvas and 0 and 0 and nil and 0 returning an count.
+  Reassign the buffer's first given the count.
+  Call "gdi32.dll" "GetFontData" with the memory canvas and 0 and 0 and the buffer's first and the count.
+  Put the buffer's first plus the count minus 1 into the buffer's last.
+  Destroy the hfont of the memory canvas.
+  
+  
+To put the bottom of an box into an horizontal line;
+To put the bottom edge of an box into an horizontal line;
+To put the bottom side of an box into an horizontal line:
+  Put the box's left-bottom into the horizontal line's start.
+  Put the box's right-bottom into the horizontal line's end.
+  
+  
+To put the bottom of an box into an line:
+  Make the line with the box's left-bottom and the box's right-bottom.
+  
+  
+To put the character under an finger into an character:
+  If the finger is nil, clear the character; exit.
+  Put the finger's target into the character.
+  
+  
+To put the left of an box into an vertical line;
+To put the left edge of an box into an vertical line;
+To put the left side of an box into an vertical line:
+  Put the box's left-top into the vertical line's start.
+  Put the box's left-bottom into the vertical line's end.
+  
+  
+To put the middle of an line on an spot;
+To center an line on an spot:
+  Get an difference between the spot and the line's center.
+  Round the difference to the nearest multiple of the tpp.
+  Move the line given the difference.
+  
+  
+To put the mouse's spot into an spot:
+  Call "user32.dll" "GetCursorPos" with the spot's whereabouts.
+  Call "user32.dll" "ScreenToClient" with the main window and the spot's whereabouts. \ in case window is on another monitor.
+  Call "gdi32.dll" "DPtoLP" with the screen canvas and the spot's whereabouts and 1.
+  
+  
+To put the right of an box into an vertical line;
+To put the right edge of an box into an vertical line;
+To put the right side of an box into an vertical line:
+  Put the box's right-top into the vertical line's start.
+  Put the box's right-bottom into the vertical line's end.
+  
+  
+To put the system's date/time into an date/time:
+  Call "kernel32.dll" "GetLocalTime" with an systemtime's whereabouts.
+  Put the systemtime's wyear into the date/time's year.
+  Put the systemtime's wmonth into the date/time's month.
+  Put the systemtime's wdayofweek into the date/time's week day.
+  Put the systemtime's wday into the date/time's day.
+  Put the systemtime's whour into the date/time's hour.
+  Put the systemtime's wminute into the date/time's minute.
+  Put the systemtime's wsecond into the date/time's second.
+  Put the systemtime's wmilliseconds into the date/time's millisecond.
+  
+  
+To put the system's last error into an number:
+  Call "kernel32.dll" "GetLastError" returning the number.
+  
+  
+To put the system's last winsock error into an number:
+  Call "ws2_32.dll" "WSAGetLastError" returning the number.
+  
+  
+To put the system's tick count into some ticks: \ wraps every 24.8 days or so
+  Call "kernel32.dll" "GetTickCount" returning the ticks.
+  Bitwise and the ticks with the largest number.
+  
+  
+To put the top of an box into an horizontal line;
+To put the top edge of an box into an horizontal line;
+To put the top side of an box into an horizontal line:
+  Put the box's left-top into the horizontal line's start.
+  Put the box's right-top into the horizontal line's end.
+  
+  
+To put the top of an box into an line:
+  Make the line with the box's left-top and the box's right-top.
+  
+  

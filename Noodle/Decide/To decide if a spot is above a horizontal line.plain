@@ -1,5 +1,0 @@
-To decide if an spot is above an horizontal line:
-  If the spot's y is less than the horizontal line's start's y, say yes.
-  Say no.
-  
-  

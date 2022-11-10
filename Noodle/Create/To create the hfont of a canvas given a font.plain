@@ -1,5 +1,0 @@
-To create the hfont of an canvas given an font:
-  Convert the font to an hfont.
-  Call "gdi32.dll" "SelectObject" with the canvas and the hfont.
-  
-  

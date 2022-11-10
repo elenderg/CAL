@@ -1,9 +1,0 @@
-To decide if an string is the start of any definition:
-  If the string is "to", say yes.
-  If the string is "an", say yes.
-  If the string is "an", say yes.
-  If the string is "the", say yes.
-  If the string is "some", say yes.
-  Say no.
-  
-  

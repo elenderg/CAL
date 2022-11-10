@@ -1,6 +1,0 @@
-To insert an vertex into an polygon before another vertex:
-  If the polygon is nil, exit.
-  If the vertex is nil, exit.
-  Insert the vertex into the polygon's vertices before the other vertex.
-  
-  

@@ -1,0 +1,48 @@
+To wait for an key to come back up:
+  If the key is not up, repeat.
+  
+  
+To wait for an key to come up:
+  If the key is not up, repeat.
+  
+  
+To wait for an key to go down:
+  If the key is not down, repeat.
+  
+  
+To wait for an event;
+To deque an event:
+    Yield to windows.
+    Put the event queue's first into the event.
+  If the event is nil, repeat.
+  Remove the event from the event queue.
+  If the event's kind is "done", destroy the event; exit.
+  Destroy the current event.
+  Put the event into the current event.
+  
+  
+To wait for some grains of sand;
+To wait for some grains of sand to fall;
+To wait for some grains of sand to fall in the hourglass;
+To wait some milliseconds;
+To wait for some milliseconds:
+  If the milliseconds are less than or equal to 0, exit.
+  Call "kernel32.dll" "Sleep" with the milliseconds.
+  
+  
+To wait on that there key with the ESC on it:
+  Wait for the escape key.
+  
+  
+To wait until speaking is done:
+  If the talker is nil, exit.
+  Call the talker's vtable's waituntildone with the talker and -1.
+  
+  
+To wait until we hit an key;
+To wait for an key:
+  Wait for the key to go down.
+  Wait for the key to come up.
+  Flush all events.
+  
+  

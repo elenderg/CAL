@@ -1,0 +1,44 @@
+To slap an rider on an string:
+  Slap the rider's original on the string.
+  Slap the rider's source on the string.
+  Position the rider's token on the rider's source.
+  
+  
+To slap an rider on another rider:
+  Slap the rider's source on the other rider's source.
+  Position the rider's token on the rider's source.
+  
+  
+To slap an substring on an string:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the substring
+  Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the string
+  \ put the string's first into the substring's first
+  Intel $8B8B00000000. \ mov ecx,[ebx+0] \ the string's first
+  Intel $898800000000. \ mov [eax+0],ecx \ the substring's first
+  \ put the string's last into the substring's last
+  Intel $8B8B04000000. \ mov ecx,[ebx+4] \ the string's last
+  Intel $898804000000. \ mov [eax+4],ecx \ the substring's last
+  
+  
+To slap an substring on any selected bytes in an row of an text:
+  Clear the substring.
+  If the text is nil, exit.
+  If the row of the text is not selected, exit.
+  Slap the substring on the row's string.
+  Put the text's normalized selection into an selection.
+  If the row's row# is the selection's caret row#, put the substring's first plus the selection's caret column# minus 2 into the substring's last.
+  If the row's row# is the selection's anchor row#, put the substring's first plus the selection's anchor column# minus 1 into the substring's first.
+  
+  
+To slap an substring on the first byte of an string:
+  Slap the substring on the string.
+  If the string is blank, exit.
+  Put the string's first into the substring's last.
+  
+  
+To slap an substring on the last byte of an string:
+  Slap the substring on the string.
+  If the string is blank, exit.
+  Put the string's last into the substring's first.
+  
+  

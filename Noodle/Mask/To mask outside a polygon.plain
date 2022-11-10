@@ -1,6 +1,0 @@
-To mask outside an polygon:
-  Create an hrgn given the polygon.
-  Mask outside the hrgn.
-  Destroy the hrgn.
-  
-  

@@ -1,7 +1,0 @@
-To append an byte to an string:
-  Put the string's length into an saved length.
-  Reassign the string's first given the string's length plus 1.
-  Put the string's first plus the saved length into the string's last.
-  Put the byte into the string's last's target.
-  
-  

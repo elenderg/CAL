@@ -1,0 +1,23 @@
+To fill an shape given an color:
+  If the shape is nil, exit.
+  If the shape's kind is "group", fill the shape's shapes given the color; exit.
+  Put the color into the shape's fill.
+  
+  
+To fill any selected shapes on an page given an color:
+  If the page is nil, exit.
+  Loop.
+    Get an shape from the page's shapes.
+    If the shape is nil, exit.
+    If the shape is not selected, repeat.
+    Fill the shape given the color.
+  Repeat.
+  
+  
+To fill some shapes given an color:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Fill the shape given the color.
+  Repeat.
+  
+  

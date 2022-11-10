@@ -1,6 +1,0 @@
-To decide if an input is an left click:
-  Void the left click.
-  If the input's kind is not "left click", say no.
-  Put the input into the left click.
-  
-  

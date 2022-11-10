@@ -1,7 +1,0 @@
-To convert an l-param to an spot:
-  Split the l-param into an wyrd and another wyrd.
-  Put the wyrd into the spot's y.
-  Put the other wyrd into the spot's x.
-  Multiply the spot by the tpp.
-  
-  

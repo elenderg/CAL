@@ -1,9 +1,0 @@
-To handle an command (label...):
-  Create an submenu.
-  Add "Title"  and "handle label given title" to the submenu.
-  Add "Page Number"  and "handle label given page number" to the submenu.
-  Add "Page Number (Even)"  and "handle label given page number (even)" to the submenu.
-  Add "Page Number (Odd)"  and "handle label given page number (odd)" to the submenu.
-  Handle the command given the submenu.
-  
-  

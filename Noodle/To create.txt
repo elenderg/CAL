@@ -1,0 +1,415 @@
+To create an console:
+  Allocate memory for the console.
+  Put the lighter gray color into the console's border.
+  Put the lighter gray color into the console's fill.
+  Put the screen's box into the console's box.
+  Put the screen's box into an box.
+  Subtract the default font's height from the box's bottom.
+  Put the box's height divided by the default font's height times the default font's height into an height.
+  Put the box's top plus the height into the box's bottom.
+  Center the box in the screen's box (vertically).
+  Put the box's top into the box's left.
+  Subtract the box's top from the box's right.
+  Create the console's text.
+  Put the box into the console's text's box.
+  Set the console's text's wrap flag.
+  Clear the console's text's horizontal scroll flag.
+  Set the console's text's vertical scroll flag.
+  Put the default font's height into the console's grid.
+  Multiply the console's grid's x by 2.
+  
+  
+To create an crypt session with an passphrase string: \ sets i/o error if failure
+  Clear the i/o error.
+  Allocate memory for the crypt session.
+  \ acquire context
+  Call "advapi32.dll" "CryptAcquireContextA" with the crypt session's hcryptprov's whereabouts and 0 and "Microsoft Enhanced Cryptographic Provider v1.0"'s first 
+  And 1 [prov_rsa_full] and -268435456 [crypt_verifycontext] returning an result number.
+  If the result is 0, put "Could not acquire context." into the i/o error; destroy the crypt session; exit.
+  \ create hash
+  Call "advapi32.dll" "CryptCreateHash" with the crypt session's hcryptprov and 32771 [calg_md5] and 0 and 0 
+  And the crypt session's hcrypthash's whereabouts returning the result number.
+  If the result is 0, put "Could not create hash." into the i/o error; destroy the crypt session; exit.
+  \ hash passphrase
+  Call "advapi32.dll" "CryptHashData" with the crypt session's hcrypthash and the passphrase's first and the passphrase's length and 0 returning the result number.
+  If the result is 0, put "Could not hash password." into the i/o error; destroy the crypt session; exit.
+  \ derive session key
+  Call "advapi32.dll" "CryptDeriveKey" with the crypt session's hcryptprov and 26625 [calg_rc4 stream cipher] and the crypt session's hcrypthash 
+  And 8388608 [128 bit] and the crypt session's hcryptkey's whereabouts returning the result number.
+  If the result is 0, put "Could not derive session key." into the i/o error; destroy the crypt session; exit.
+  
+  
+To create an dyad:
+  Allocate memory for the dyad.
+  
+  
+To create an font info given an font (basic data):
+  Allocate memory for the font info.
+  Put the font into the font info's font.
+  Get an outlinetextmetric given the font.
+  Put 32 into the font info's flags. \ could be updated with an more information
+  Put the outlinetextmetric's otmtextmetrics' tminternalleading into the font info's internal leading.
+  Put the outlinetextmetric's otmemsquare into the font info's emsquare.
+  Put the outlinetextmetric's otmtextmetrics' tmascent into the font info's ascent.
+  Put - the outlinetextmetric's otmtextmetrics' tmdescent into the font info's descent.
+  Put the outlinetextmetric's otmscapemheight into the font info's capheight.
+  Put the outlinetextmetric's otmitalicangle into the font info's italicangle.
+  Put 0 into the font info's stemv. \ don't know where to get this from
+  Put the outlinetextmetric's otmrcfontbox into the font info's font box.
+  
+  
+To create an font info given an font and an string: \ creates widths based on characters in string
+  Create the font info given the font (basic data).
+  Create the font info's font widths given the font and the string.
+  
+  
+To create an font info given an font:
+  Create the font info given the font (basic data).
+  Create the font info's font widths given the font.
+  
+  
+To create an gpbitmap given an buffer:
+  Clear the i/o error.
+  Call "kernel32.dll" "GlobalAlloc" with 2 [gmem_moveable] and the buffer's length returning an handle.
+  Call "kernel32.dll" "GlobalLock" with the handle returning an pointer.
+  Copy bytes from the buffer's first to the pointer for the buffer's length.
+  Call "kernel32.dll" "GlobalUnlock" with the handle.
+  Call "ole32.dll" "CreateStreamOnHGlobal" with the handle and 1 [true] and an istream's whereabouts.
+  Call "gdiplus.dll" "GdipCreateBitmapFromStream" with the istream and the gpbitmap's whereabouts returning an number.
+  If the number is not 0, put "I don't know how to process this kind of picture." into the i/o error; void the gpbitmap.
+  Call the istream's vtable's release with the istream.
+  
+  
+To create an gpimageattributes (grayscale):
+  Call "gdiplus.dll" "GdipCreateImageAttributes" with the gpimageattributes' whereabouts.
+  Call "gdiplus.dll" "GdipSetImageAttributesColorMatrix" with the gpimageattributes and 0 [coloradjusttypedefault] and 1 
+  And the grayscale color matrix's first and 0 and 0 [colormatrixflagsdefault].
+  
+  
+To create an path in the file system (directory):
+  Privatize the path.
+  Remove any trailing backslash from the path.
+  Null terminate the path.
+  Call "kernel32.dll" "CreateDirectoryA" with the path's first and 0 returning an number.
+  Clear the i/o error.
+  If the number is not 0, exit.
+  Put "Error creating directory '" then the path then "'." into the i/o error.
+  
+  
+To create an path in the file system (file):
+  Privatize the path.
+  Null terminate the path.
+  Call "kernel32.dll" "CreateFileA" with the path's first and 1073741824 [generic_write] and 0 and 0 and 1 [create_new] and 128 [file_attribute_normal] and 0 returning an handle.
+  Call "kernel32.dll" "CloseHandle" with the handle.
+  Clear the i/o error.
+  If the handle is not -1 [invalid_handle_value], exit.
+  Put "Error creating file '" then the path then "'." into the i/o error.
+  
+  
+To create an path in the file system:
+  If the path is directory-format, create the path in the file system (directory); exit.
+  If the path is file-format, create the path in the file system (file); exit.
+  
+  
+To create an pdf object given an kind:
+  Allocate memory for the pdf object.
+  Put the kind into the pdf object's kind.
+  
+  
+To create an pdf outline entry given an title string and an page height and an destination number:
+  Allocate memory for the pdf outline entry.
+  Put the title string into the pdf outline entry's title.
+  Put the page height into the pdf outline entry's page height.
+  Put the destination into the pdf outline entry's destination.
+  
+  
+To create an picture given an buffer:
+  Create an gpbitmap given the buffer.
+  If the gpbitmap is nil, void the picture; exit.
+  Allocate memory for the picture.
+  Put the buffer into the picture's data.
+  Put the gpbitmap into the picture's gpbitmap.
+  Adjust the picture (extract boxes from gpbitmap).
+  
+  
+To create an picture given an gpbitmap:
+  If the gpbitmap is nil, void the picture; exit.
+  Allocate memory for the picture.
+  Put the gpbitmap into the picture's gpbitmap.
+  Adjust the picture (extract boxes from gpbitmap).
+  
+  
+To create an picture given an url:
+  Read the url into an buffer.
+  Create the picture given the buffer.
+  
+  
+To create an picture:
+  Allocate memory for the picture.
+  
+  
+To create an polygon:
+  Allocate memory for the polygon.
+  
+  
+To create an quora:
+  Allocate memory for the quora.
+  
+  
+To create an refer:
+  Allocate memory for the refer.
+  
+  
+To create an row given an byte:
+  Allocate memory for the row.
+  Put the byte into the row's string.
+  
+  
+To create an row given an string:
+  Allocate memory for the row.
+  Put the string into the row's string.
+  
+  
+To create an socket given an host string and an port number: \ this guy creates and connects, sets i/o error if there is an problem
+  Clear the i/o error.
+  \ get sockaddr
+  Get an sockaddr given the host.
+  If the i/o error is not blank, exit.
+  Put 2 [af_inet] into the sockaddr's sin_family.
+  Put the port into the sockaddr's sin_port.
+  \ create socket  
+  Call "ws2_32.dll" "socket" with 2 [af_inet] and 1 [sock_stream] and 0 [ipproto_ip] returning the socket.
+  If the socket is -1, put "Could not create socket." into the i/o error; exit.
+  \ connect socket
+  Call "ws2_32.dll" "connect" with the socket and the sockaddr's whereabouts and the sockaddr's magnitude returning an result number.
+  If the result is not 0, put "Could not connect to socket." into the i/o error; exit.
+  \ set send timeout 30 seconds
+  Call "ws2_32.dll" "setsockopt" with the socket and 65535 and 4101 [so_sndtimo] and 30 seconds' whereabouts and 4 returning the result number.
+  If the result is not 0, put "Could not set receive timeout." into the i/o error; exit.
+  \ set receive timeout 30 seconds
+  Call "ws2_32.dll" "setsockopt" with the socket and 65535 and 4102 [so_rcvtimeo] and 30 seconds' whereabouts and 4 returning the result number.
+  If the result is not 0, put "Could not set receive timeout." into the i/o error; exit.
+  
+  
+To create an string thing given an string:
+  Allocate memory for the string thing.
+  Put the string into the string thing's string.
+  
+  
+To create an terminal in an box:
+  Allocate memory for the terminal.
+  Put the box into the terminal's box.
+  Put the green color into the terminal's output color.
+  Put the lightest green color into the terminal's input color.
+  
+  
+To create an text:
+  Allocate memory for the text.
+  Put the black color into the text's pen.
+  Put the default font into the text's font.
+  Put "left" into the text's alignment.
+  Put 1/1 into the text's scale.
+  Guarantee one row in the text.
+  Reset the origin of the text.
+  Reset the caret of the text.
+  Deselect the text.
+  
+  
+To create an vertex array given an count:
+  Privatize the count.
+  Allocate memory for the vertex array.
+  Put the count into the vertex array's count.
+  Multiply the count by an spot's magnitude.
+  Assign the vertex array's spot pointer given the count.
+  
+  
+To create an vertex array given some vertices:
+  Create the vertex array given the vertices' count.
+  Put the vertex array's spot pointer into an spot pointer.
+  Loop.
+    Get an vertex from the vertices.
+    If the vertex is nil, exit.
+    Put the vertex's spot into the spot pointer's target.
+    Add the vertex's spot's magnitude to the spot pointer.
+  Repeat.
+  
+  
+To create an vertex given an spot:
+  Allocate memory for the vertex.
+  Put the spot into the vertex's spot.
+  
+  
+To create an vertex given an x coord and an y coord:
+  Allocate memory for the vertex.
+  Put the x into the vertex's x.
+  Put the y into the vertex's y.
+  
+  
+To create an vertex:
+  Allocate memory for the vertex.
+  
+  
+To create an winhttp request for posting to an url:
+  Allocate memory for the winhttp request.
+  Convert the url to an url record.
+  Create the open handle of the winhttp request.
+  If the i/o error is not blank, destroy the winhttp request; exit.
+  Create the connect handle of the winhttp request using the url record.
+  If the i/o error is not blank, destroy the winhttp request; exit.
+  Create the request handle of the winhttp request using the url record.
+  If the i/o error is not blank, destroy the winhttp request; exit.
+  
+  
+To create an event:
+  Allocate memory for the event.
+  
+  
+To create an hrgn given an box:
+  Privatize the box.
+  Add the tpp to the box's right-bottom.
+  Call "gdi32.dll" "BeginPath" with the current canvas.
+  Call "gdi32.dll" "Rectangle" with the current canvas and the box's left and the box's top and the box's right and the box's bottom.
+  Call "gdi32.dll" "EndPath" with the current canvas.
+  Call "gdi32.dll" "PathToRegion" with the current canvas returning the hrgn.
+  
+  
+To create an hrgn given an polygon:
+  If the polygon is nil, put 0 into the hrgn; exit.
+  Create an vertex array given the polygon's vertices.
+  Call "gdi32.dll" "LPtoDP" with the current canvas and the vertex array's spot pointer and the vertex array's count.
+  Call "gdi32.dll" "CreatePolygonRgn" with the vertex array's spot pointer and the vertex array's count and 2 [winding] returning the hrgn.
+  Destroy the vertex array.
+  
+  
+To create an hrgn given an roundy box:
+  If the roundy box's radius is 0, create the hrgn given the roundy box as an box; exit.
+  Put the roundy box into an box.
+  Put the roundy box's radius times 2 into an diameter number.
+  Call "gdi32.dll" "BeginPath" with the current canvas.
+  Call "gdi32.dll" "RoundRect" with the current canvas and the box's left and the box's top and the box's right and the box's bottom and the diameter and the diameter.
+  Call "gdi32.dll" "EndPath" with the current canvas.
+  Call "gdi32.dll" "PathToRegion" with the current canvas returning the hrgn.
+  
+  
+To create an hrgn given an ellipse:
+  Put the ellipse's box into an box.
+  Call "gdi32.dll" "BeginPath" with the current canvas.
+  Call "gdi32.dll" "Ellipse" with the current canvas and the box's left and the box's top and the box's right and the box's bottom.
+  Call "gdi32.dll" "EndPath" with the current canvas.
+  Call "gdi32.dll" "PathToRegion" with the current canvas returning the hrgn.
+  
+  
+To create an index given an bucket count:
+  Allocate memory for the index.
+  Put the bucket count into the index's bucket count.
+  Put an bucket record's magnitude into an width.
+  Put the index's bucket count times the width into an number.
+  Assign the index's first bucket given the number.
+  Put the index's first bucket plus the number minus the width into the index's last bucket.
+  
+  
+To create some font widths given an font and an string:
+  Allocate memory for the font widths.
+  Put the font into the font widths' font.
+  Put the string's length into the font widths' count.
+  If the string is blank, exit.
+  Put an gcpresults' magnitude into the gcpresults' lstructsize.
+  Put the string's length into the gcpresults' nglyphs.
+  Assign the gcpresults' lpdx given the string's length times an number's magnitude.
+  Create the hfont of the memory canvas given the font.
+  Call "gdi32.dll" "GetCharacterPlacementA" with the memory canvas and the string's first
+  And the string's length and 0 and the gcpresults' whereabouts and 0.
+  Destroy the hfont of the memory canvas.
+  Put the gcpresults' lpdx into the font widths' data.
+  
+  
+To create some font widths given an font:
+  Allocate memory for the font widths.
+  Put the font into the font widths' font.
+  Put 256 into the font widths' count.
+  Assign the font widths' data given the font widths' count times an number's magnitude.
+  Create the hfont of the memory canvas given the font.
+  Assign an original abc pointer given 256 times an abc's magnitude.
+  Call "gdi32.dll" "GetCharABCWidthsA" with the memory canvas and 0 and 255 and the original abc pointer.
+  Destroy the hfont of the memory canvas.
+  Put the original abc pointer into an abc pointer.
+  Put the font widths' data into an number pointer.
+  Loop.
+    If an counter is past 256, break.
+    Put the abc pointer's abca into the number pointer's target.
+    Add the abc pointer's abcb to the number pointer's target.
+    Add the abc pointer's abcc to the number pointer's target.
+    Add the abc's magnitude to the abc pointer.
+    Add the number's magnitude to the number pointer.
+  Repeat.
+  Unassign the original abc pointer.
+  
+  
+To create the connect handle of an winhttp request using  an url record:
+  If the winhttp request is nil, exit.
+  Convert the url record's host name into an wide string called wide host name and null terminate.
+  Call "winhttp.dll" "WinHttpConnect"
+  With the winhttp request's session
+  And the wide host name's first
+  And the url record's port
+  And 0
+  Returning the winhttp request's connection.
+  If the winhttp request's connection is 0, put "Could not connect." into the i/o error; exit.
+  
+  
+To create the hbrush of an canvas given an color:
+  Convert the color to an colorref.
+  If the color is clear, put the null hbrush into an hbrush. 
+  If the color is not clear, call "gdi32.dll" "CreateSolidBrush" with the colorref returning the hbrush.
+  Call "gdi32.dll" "SelectObject" with the canvas and the hbrush.
+  
+  
+To create the hfont of an canvas given an font:
+  Convert the font to an hfont.
+  Call "gdi32.dll" "SelectObject" with the canvas and the hfont.
+  
+  
+To create the hpen of an canvas given an color:
+  Convert the color to an colorref.
+  If the color is clear, put the null hpen into an hpen.
+  Put the tpp times the pen size into an number.
+  If the canvas is the printer canvas, put 1/96 inch times the pen size into the number.
+  If the color is not clear, call "gdi32.dll" "CreatePen" with 0 [ps_solid] and the number and the colorref returning the hpen. 
+  Call "gdi32.dll" "SelectObject" with the canvas and the hpen.
+  
+  
+To create the lexicon:
+  Allocate memory for the lexicon.
+  Create the lexicon's index given 4027.
+  
+  
+To create the open handle of an winhttp request:
+  If the winhttp request is nil, exit.
+  Convert the module's name to an wide string called wide module name and null terminate.
+  Call "winhttp.dll" "WinHttpOpen"
+  With the wide module name's first
+  And 0 [winhttp_access_type_default_proxy] 
+  And 0 [winhttp_no_proxy_name] 
+  And 0 [winhttp_no_proxy_bypass] 
+  And 0 
+  Returning the winhttp request's session.
+  If the winhttp request's session is 0, put "Could not open connection." into the i/o error; exit.
+  
+  
+To create the request handle of an winhttp request using an url record:
+  If the winhttp request is nil, exit.
+  Convert the url record's path into an wide string called wide path and null terminate.
+  Convert "POST" to an wide string called wide post string and null terminate.
+  If the url record's scheme is "https", put 8388608 [winhttp_flag_secure] into an secure number.
+  Call "winhttp.dll" "WinHttpOpenRequest"
+  With the winhttp request's connection
+  And the wide post string's first
+  And the wide path's first
+  And 0 [L"HTTP/1.1"] 
+  And 0 [winhttp_no_referer]
+  And 0 [winhttp_default_accept_types]
+  And the secure number
+  Returning the winhttp request's request.
+  If the winhttp request's request is 0, put "Could not open request." into the i/o error; exit.
+  
+  

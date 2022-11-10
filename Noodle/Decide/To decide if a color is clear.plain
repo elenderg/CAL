@@ -1,5 +1,0 @@
-To decide if an color is clear:
-  If the color's hue is less than 0, say yes.
-  Say no.
-  
-  

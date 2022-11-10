@@ -1,4 +1,0 @@
-To blurt an pe header into an buffer:
-  Blurt bytes given the pe header's whereabouts and the pe header's magnitude and the buffer and 256.
-  
-  

@@ -1,8 +1,0 @@
-To adjust the shape refers given an page:
-  If the page is nil, exit.
-  Destroy the page's shape refers.
-  Create the page's shape refers given the page's shapes.
-  Sort the page's shape refers (horizontally).
-  Sort the page's shape refers (vertically).
-  
-  

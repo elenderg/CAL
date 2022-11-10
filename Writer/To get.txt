@@ -1,0 +1,131 @@
+To get an box of the selected shapes on an page:
+  If the page is nil, clear the box; exit.
+  If nothing is selected on the page, clear the box; exit.
+  Put the largest number and the largest number and the smallest number and the smallest number into the box.
+  Loop.
+    Get an shape from the page's shapes.
+    If the shape is nil, exit.
+    If the shape is not selected, repeat.
+    If the shape's left is less than the box's left, put the shape's left into the box's left.
+    If the shape's top is less than the box's top, put the shape's top into the box's top.
+    If the shape's right is greater than the box's right, put the shape's right into the box's right.
+    If the shape's bottom is greater than the box's bottom, put the shape's bottom into the box's bottom.
+  Repeat.
+  
+  
+To get an difference between an spot and another spot given an sizer:
+  Get the difference between the spot and the other spot.
+  If the sizer's kind starts with "left-", negate the difference's x.
+  If the sizer's kind ends with "-top", negate the difference's y.
+  
+  
+To get an focus shape given an shape and an spot:
+  If the shape is nil, void the focus shape; exit.
+  If the shape's kind is not "group", put the shape into the focus shape; exit.
+  Loop.
+    Get the focus shape from the shape's shapes (backwards).
+    If the focus shape is nil, exit.
+    If the spot is not in the focus shape, repeat.
+  Get another focus shape given the focus shape and the spot.
+  Put the other focus shape into the focus shape.
+  
+  
+To get an font height given an page:
+  Put the default font's height into the font height.
+  Put the page's shape refers' first selected shape into an shape.
+  If the shape is nil, exit.
+  If the shape's kind is not "text", exit.
+  Put the shape's text's font's height into the font height.
+  Divide the font height by the page's scale.
+  
+  
+To get an font name given an page:
+  Put the default font's name into the font name.
+  Put the page's shape refers' first selected shape into an shape.
+  If the shape is nil, exit.
+  If the shape's kind is not "text", exit.
+  Put the shape's text's font's name into the font name.
+  
+  
+To get an page number given some pages and an page:
+  Put 0 into the page number.
+  Loop.
+    Get another page from the pages.
+    If the other page is nil, exit.
+    Add 1 to the page number.
+    If the other page is the page, exit.
+  Repeat.
+  
+  
+To get an radius given an page:
+  Put 0 into the radius.
+  Put the page's first selected shape into an shape.
+  If the shape is nil, exit.
+  If the shape's kind is "rectangle", put the shape's rect's radius into the radius.
+  If the shape's kind is "text", put the shape's text rect's radius into the radius.
+  Divide the radius by the page's scale.
+  
+  
+To get an shape refer with which to start finding given an page:
+  If the page is nil, void the shape refer; exit.
+  If the page is being edited, find the shape refer given the page's shape refers and the page's edit shape; exit.
+  Put the page's shape refers' first selected shape refer into the shape refer.
+  If the shape refer is not nil, exit.
+  Put the page's shape refers' first into the shape refer.
+  
+  
+To get an anchor with which to start finding given an shape refer and an page:
+  Put 1 and 1 into the anchor.
+  If the page is nil, exit.
+  If the shape refer is nil, exit.
+  If the shape refer's shape is not the page's edit shape, exit.
+  Put the shape refer's shape's text's caret into the anchor.
+  
+  
+To get the status for an box and another box given an measure:
+  Get an difference between the other box's left-top and the box's left-top.
+  Put " R" into an label.
+  If the difference's x is less than 0, put " L" into the label.
+  Put " D" into another label.
+  If the difference's y is less than 0, put " U" into the other label.
+  De-sign the difference.
+  Convert the measure times the difference's x to an string.
+  Append the label to the string.
+  Convert the measure times the difference's y to another string.
+  Append the other label to the other string.
+  Put the string then "  " then the other string into the status' string.
+  
+  
+To get the status for an box given an measure:
+  Convert the measure times the box's x-extent to an string.
+  Append " W" to the string.
+  Convert the measure times the box's y-extent to another string.
+  Append " H" to the other string.
+  Put the string then "  " then the other string into the status' string.
+  
+  
+To get the status for an document:
+  If the document is nil, clear the status' string; exit.
+  Put the document's selected page count into an count.
+  If the count is 0, format the document's pages' count and "page" or "pages" into the status' string.
+  If the count is not 0, format the count and "page selected" or "pages selected" into the status' string.
+  If the document's read-only flag is set, append " (r)" to the status' string.
+  
+  
+To get the status for an page:
+  If the page is nil, clear the status' string; exit.
+  Get an page number given the current tab's node's document's pages and the page.
+  Put "Page " then the page number then " of " then the current tab's node's document's pages' count into the status' string.
+  If the current tab's node's document's read-only flag is set, append " (r)" to the status' string.
+  If the page's selected shape count is not 1, exit.
+  Get the status for the page's first selected shape given the page's measure.
+  
+  
+To get the status for an shape given an measure:
+  If the shape is nil, clear the status' string; exit.
+  Get the status for the shape's box given the measure.
+  If the shape's kind is not "text", exit.
+  If the shape's label is blank, exit.
+  Put the shape's label into the status' string.
+  
+  

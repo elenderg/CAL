@@ -1,0 +1,34 @@
+To paste an item into an node and into the file system before an nodette:
+  If the node is nil, exit.
+  Put the node's path into an path.
+  Append the item's designator to the path.
+  Duplicate the item's path to the path in the file system.
+  If the i/o error is not blank, exit.
+  Find another nodette given the node's nodettes and the item's designator.
+  If the other nodette is not nil, select the other nodette; exit.
+  Create an third nodette given the path.
+  Insert the third nodette into the node's nodettes before the nodette.
+  Put the node into the third nodette's parent node.
+  Select the third nodette.
+  Adjust every nodette in the node.
+  
+  
+To paste any copied items into an node and into the file system returning an count:
+  Put 0 into the count.
+  If the node is nil, exit.
+  Put 0 into an current count.
+  Get an total count of items in the finder's clipboard in the file system.
+  Put the node's first selected nodette into an first selected nodette.
+  Deselect the nodettes in the node.
+  Loop.
+    Get an item from the finder's clipboard.
+    If the item is not found, exit.
+    Add 1 to the current count.
+    If the user does not want to overwrite the item in the node, repeat.
+    Show status the current count then " of " then the total count then "...".
+    Paste the item into the node and into the file system before the first selected nodette.
+    If the i/o error is not blank, repeat.
+    Add 1 to the count.
+  Repeat.
+  
+  

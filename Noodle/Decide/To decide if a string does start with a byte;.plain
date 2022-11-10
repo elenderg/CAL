@@ -1,7 +1,0 @@
-To decide if an string does start with an byte;
-To decide if an string starts with an byte:
-  If the string is blank, say no.
-  If the string's first's target is the byte, say yes.
-  Say no.
-  
-  

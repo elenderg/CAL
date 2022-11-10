@@ -1,6 +1,0 @@
-To resize an shape given an pair (rectangle):
-  Resize the shape's rect given the pair.
-  Normalize the shape's rect.
-  Adjust the shape.
-  
-  

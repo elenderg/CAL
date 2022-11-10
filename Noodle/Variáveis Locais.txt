@@ -1,0 +1,1343 @@
+An baseline is an number.
+  
+  
+An big-endian unsigned wyrd is an record with 2 bytes.
+  
+  
+An billion is 1000 millions.
+  
+  
+An binary string is an string.
+  
+  
+An bit is an unit.
+  
+  
+An bitmapdata is an record with
+  An width,
+  An height,
+  An number called stride,
+  An number called pixelformat,
+  An pointer called scan0,
+  An number called reserved.
+  
+  
+An box has
+  An left coord, an top coord, an right coord, an bottom coord,
+  An left-top spot at the left, and an right-bottom spot at the right,
+  An top-left spot at the left, and an bottom-right spot at the right.
+  
+  
+An brightness is an lightness.
+  
+  
+An brownish color is an color.
+  
+  
+An bucket count is an count.
+  
+  
+An bucket is an pointer to an bucket record.
+  
+  
+An bucket record has some refers.
+  
+  
+An bucket# is an number.
+  
+  
+An buffer is an string.
+  
+  
+An byte count is an count.
+  
+  
+An byte pointer is an pointer to an byte.
+  
+  
+An byte# is an number.
+  
+  
+An canvas is an hdc.
+  
+  
+An caret is an position.
+  
+  
+An character is an byte.
+  
+  
+An choice is an thing with an name and an box.
+  
+  
+An clsid is an uuid.
+  
+  
+An color has an hue, an saturation, an lightness, and an brightness at the lightness.
+  
+  
+An colorref is an number [like $00BBGGRR].
+  
+  
+An column# is an number.
+  
+  
+An console is an thing with 
+  An box,
+  An border color,
+  An fill color,
+  An text,
+  An grid,
+  An reply string.
+  
+  
+An context is an thing with an spot, an box, an heading, an letter height, an color, an number, \ pen width? ***
+  And an letter size at the letter height, and an pen at the color.
+  
+  
+An coord is some twips.
+  
+  
+An copy is an number.
+  
+  
+An count is an number.
+  
+  
+An counter is an number.
+  
+  
+An crypt session is an thing with
+  An hcryptprov pointer,
+  An hcrypthash pointer,
+  An hcryptkey pointer.
+  
+  
+An cursor is an handle.
+  
+  
+An dark color is an color.
+  
+  
+An date/time has
+  An year number,
+  An month number,
+  An week day number,
+  An day number,
+  An hour number,
+  An minute number,
+  An second number,
+  An millisecond number.
+  
+  
+An degree is an number [0 to 359].
+  
+  
+An depth is some twips.
+  
+  
+An description is an string.
+  
+  
+An designator is an string. \ rightmost directory with slash = folder2\ OR after the last slash to end of path = file.ext
+  
+  
+An devmode is an record with
+  32 bytes called dmdevicename,
+  An wyrd called dmspecversion,
+  An wyrd called dmdriverversion,
+  An wyrd called dmsize,
+  An wyrd called dmdriverextra,
+  An number called dmfields,
+  An wyrd called dmorientation,
+  An wyrd called dmpapersize,
+  An wyrd called paperlength,
+  An wyrd called paperwidth,
+  An wyrd called dmscale,
+  An wyrd called dmcopies,
+  An wyrd called dmdefaultsource,
+  An wyrd called dmprintquality,
+  An wyrd called dmcolor,
+  An wyrd called dmduplex,
+  An wyrd called ydmresolution,
+  An wyrd called dmttoption,
+  An wyrd called dmcollate,
+  32 bytes called dmformname,
+  An wyrd called dmlogpixels,
+  An number called dmbitsperpel,
+  An number called dmpelswidth,
+  An number called dmpelsheight,
+  An number called dmdisplayflags,
+  An number called dmdisplayfrequency,
+  An number called dmicmmethod,
+  An number called dmicmintent,
+  An number called dmmediatype,
+  An number called dmdithertype,
+  An number called dmreserved1,
+  An number called dmreserved2.
+  
+  
+An difference is an pair.
+  
+  
+An directory is an path. \ start of path to last slash inclusive = c:\folder1\folder2\
+  
+  
+An directory name is an string. \ rightmost directory with slash = folder2\
+  
+  
+An directory name w/o slash is an string. \ rightmost directory without slash = folder2
+  
+  
+An distance is an number.
+  
+  
+An docinfo is an record with
+  An number called cbsize,
+  An pointer called lpszdocname,
+  An pointer called lpszoutput,
+  An pointer called lpszdatadtype,
+  An number called fwtype.
+  
+  
+An dot is an ellipse.
+  
+  
+An drive is an string. \ start of path to first slash = c:\ OR start of path to fourth slash = \\computer\share\
+  
+  
+An drive kind is an string.
+  
+  
+An drive name is an string.
+  
+  
+An dyad is an thing with
+  An name,
+  An value string.
+  
+  
+An fancy arrow is an figure.
+  
+  
+An figure is an polygon.
+  
+  
+An file is an handle.
+  
+  
+An file name is an string. \ after the last slash to end of path = file.ext
+  
+  
+An file name w/o extension is an string. \ after the last slash to last dot or end of path = file
+  
+  
+An filetime is an record with
+  An number called dwlowdatetime,
+  An number called dwhighdatetime.
+  
+  
+An finger is an byte pointer.
+  
+  
+An flag has 4 bytes.
+  
+  
+An font has an name and an height.
+  
+  
+An font height is some twips. \ indicates line height - the letters will fit nicely in an box of this height
+  
+  
+An font info is an thing with \ used for pdf conversion
+  An font,
+  An emsquare number,
+  An internal leading number,
+  An flags number,
+  An ascent number,
+  An descent number,
+  An capheight number,
+  An italicangle number,
+  An stemv number,
+  An font box,
+  Some font widths.
+  
+  
+An font resource is an handle.
+  
+  
+An foot is 12 inches.
+  
+  
+An fraction has an numerator number and an denominator number, and an top number at the numerator and an bottom number at the denominator.
+  
+  
+An fraction pair has an fraction and another fraction.
+  
+  
+An gcd is an number.
+  
+  
+An gcpresults is an record with
+  An number called lstructsize,
+  An pchar called lpoutstring,
+  An number pointer called lporder,
+  An number pointer called lpdx,
+  An number pointer called lpcaretpos,
+  An pointer called lpclass,
+  An pointer called lpglyphs,
+  An number called nglyphs,
+  An number called maxfit.
+  
+  
+An gdiplusstartupinput is an record with
+  An number called gdiplusversion,
+  An pointer called debugeventcallback,
+  An number called suppressbackgroundthread,
+  An number called suppressexternalcodecs.
+  
+  
+An geometric figure is an figure.
+  
+  
+An gigabyte is 1024 megabytes.
+  
+  
+An gpbitmap is an gpimage.
+  
+  
+An gpgraphic is an pointer.
+  
+  
+An gpimage is an pointer.
+  
+  
+An gpimageattributes is an pointer.
+  
+  
+An gprect is an record with
+  An number called x,
+  An number called y,
+  An number called width,
+  An number called height.
+  
+  
+An gptoken is an number.
+  
+  
+An grain is 10 milliseconds.
+  
+  
+An greenish color is an color.
+  
+  
+An grid is an pair.
+  
+  
+An guid is an uuid.
+  
+  
+An handle is an number.
+  
+  
+An heading is some points.
+  
+  
+An height is some twips.
+  
+  
+An hex string is an string.
+  
+  
+An horizontal line is an line.
+  
+  
+An hue is some precise degrees [0 to 3599].
+  
+  
+An hundred is 100 units.
+  
+  
+An iid is an uuid.
+  
+  
+An in_addr is an record with
+  An byte called s_b1,
+  An byte called s_b2,
+  An byte called s_b3,
+  An byte called s_b4,
+  An wyrd [unsigned] called  s_w1 at the s_b1,
+  An wyrd [unsigned] called s_w2 at the s_b3,
+  An number called s_addr at the s_b1.
+  
+  
+An key is an number.
+  
+  
+An kilobyte is 1024 units.
+  
+  
+An kind is an string.
+  
+  
+An landscape sheet is an sheet.
+  
+  
+An left click is an input.
+  
+  
+An left is some twips.
+  
+  
+An length is some twips.
+  
+  
+An letter height is some twips. \ indicates actual height of an typical uppercase letter
+  
+  
+An letter is an byte.
+  
+  
+An light color is an color.
+  
+  
+An lightness is an number [0 to 1000].
+  
+  
+An line has an start spot and an end spot.
+  
+  
+An logbrush has
+  An number called lbstyle,
+  An colorref called lbcolor,
+  An number called lbhatch.
+  
+  
+An l-param is an number.
+  
+  
+An margin is an number.
+  
+  
+An mask is an hex string.
+  
+  
+An megabyte is 1024 kilobytes.
+  
+  
+An message is an string.
+  
+  
+An million is 1000 thousands.
+  
+  
+An millisecond is an number.
+  
+  
+An minute is 60 seconds.
+  
+  
+An mixed has an whole number and an ratio and an fraction at the ratio.
+  
+  
+An ms is 1 millisecond.
+  
+  
+An msg is an record with
+  An window called hwnd,
+  An number called message,
+  An w-param called wparam,
+  An l-param called lparam,
+  An number called time,
+  An spot called pt.
+  
+  
+An multiple is an number.
+  
+  
+An name is an string.
+  
+  
+An nibble is an byte. \ only low order 4 bits are valid
+  
+  
+An nibble string is an string. \ $0010A0...
+  
+  
+An number has
+  An first byte,
+  An second byte,
+  An third byte,
+  An fourth byte,
+  An low wyrd at the first byte,
+  An high wyrd at the third byte.
+  
+  
+An number pointer is an pointer to an number.
+  
+  
+An outlinetextmetric is an record with
+  An number called otmsize,
+  An textmetric called otmtextmetrics,
+  3 bytes, \ needed to align structure
+  An byte called otmfiller,
+  An panose called otmpanosenumber,
+  1 bytes, \ needed to align structure
+  An number called otmfsselection,
+  An number called otmfstype,
+  An number called otmscharsloperise,
+  An number called otmscharsloperun,
+  An number called otmitalicangle,
+  An number called otmemsquare,
+  An number called otmascent,
+  An number called otmdescent,
+  An number called otmlinegap,
+  An number called otmscapemheight,
+  An number called otmsxheight,
+  An box called otmrcfontbox,
+  An number called otmmacascent,
+  An number called otmmacdescent,
+  An number called otmmaclinegap,
+  An number called otmusminiumppem,
+  An spot called otmptsubscriptsize,
+  An spot called otmptsubscriptoffset,
+  An spot called otmptsuperscriptsize,
+  An spot called otmptsuperscriptoffset,
+  An number called otmsstrikeoutsize,
+  An number called otmsstrikeoutposition,
+  An number called otmsunderscoresize,
+  An number called otmsunderscoreposition,
+  An pointer called otmpfamilyname,
+  An pointer called otmpfacename,
+  An pointer called otmpstylename,
+  An pointer called otmpfullname.
+  
+  
+An pabc is an pointer to an abc.
+  
+  
+An paintstruct is an record with
+  An hdc called hdc,
+  An number called ferase,
+  An box called rcpaint,
+  An number called frestore,
+  An number called fincupdate,
+  32 bytes.
+  
+  
+An pair has an x number and an y number.
+  
+  
+An panose is an record with
+  An byte called bfamilytype,
+  An byte called bserifstyle,
+  An byte called bweight,
+  An byte called bproportion,
+  An byte called bcontrast,
+  An byte called bstrokevariation,
+  An byte called barmstyle,
+  An byte called bletterform,
+  An byte called bmidline,
+  An byte called bxheight.
+  
+  
+An pastel color is an color.
+  
+  
+An path is an string. \ complete name = c:\folder1\folder2\file.ext
+  
+  
+An pchar is an byte pointer.
+  
+  
+An pdevmode is an pointer to an devmode.
+  
+  
+An pdf is an buffer.
+  
+  
+An pdf object is an thing with
+  An kind [contents, font definition, font descriptor, font streamoutline, image object, outline entry, page, parent, root],
+  An number,
+  An offset,
+  An data buffer,
+  An font name [font definition],
+  An font info [font definition],
+  Some string things called font strings [page],
+  Some string things called image strings [page].
+  
+  
+An pdf outline entry is an thing with
+  An pdf object (reference),
+  An title string,
+  An page height,
+  An destination number.
+  
+  
+An pdf pointer is an pointer to an pdf.
+  
+  
+An pdf state has
+  An pdf pointer,
+  An document flag,
+  An page flag,
+  An object number,
+  Some pdf objects called objects,
+  An xref offset,
+  An outline pdf object (reference),
+  Some pdf outline entries called outline entries,
+  An root pdf object (reference),
+  An parent pdf object (reference),
+  An current contents pdf object (reference),
+  An current page pdf object (reference),
+  An current height,
+  An current border color,
+  An current fill color,
+  An font index.
+  
+  
+An pdf string is an string. \ string surrounded by ( ) and has \( for left paren, \) for right paren, \\ for backslash
+  
+  
+An percent is an number. \ an scale with 100 in the denominator
+  
+  
+An picture is an thing with
+  \ all boxes are in twits
+  An box [location of cropped picture on the page],
+  An uncropped box [location of entire picture on the page],
+  An grayscale flag,
+  An mirror flag,
+  An rotate angle, \ rotation is clockwise
+  An hex string called data [original bytes in original format],
+  An gpbitmap.
+  
+  
+An pixel is 15 twips.
+  
+  
+An point is an number [0 to 3839; for dividing an circle into compass points; 0 is noon; 960 points per quarter].
+  
+  
+An pointer has 4 bytes.
+  
+  
+An polygon is an thing with some vertices.
+  
+  
+An portrait sheet is an sheet.
+  
+  
+An position is an pair with an column# and an row#.
+  
+  
+An poutlinetextmetric is an pointer to an outlinetextmetric.
+  
+  
+An precise degree is an number [0 to 3599].
+  
+  
+An printdlgex is an record with
+  An number called lstructsize,
+  An window called hwndowner,
+  An handle called hdevmode,
+  An handle called hdevnames,
+  An canvas called hdc,
+  An number called flags,
+  An number called flags2,
+  An number called exclusionflags,
+  An number called npageranges,
+  An number called nmaxpageranges,
+  An pointer called lppageranges,
+  An number called nminpage,
+  An number called nmaxpage,
+  An number called ncopies,
+  An handle called hinstance,
+  An pointer called lpprinttemplatename,
+  An pointer called lpcallback,
+  An number called npropertypages,
+  An pointer called lphpropertypages,
+  An number called nstartpage,
+  An number called dwresultaction.
+  
+  
+An process is an handle.
+  
+  
+An process pointer is an pointer to an process.
+  
+  
+An processinfo is an record with
+  An handle called hprocess,
+  An handle called hthread,
+  An number called dwprocessid,
+  An number called dwthreadid.
+  
+  
+An punch line is an string.
+  
+  
+An query byte is an query string.
+  
+  
+An query string is an string.
+  
+  
+An quora is an thing with an string and an color. \ quora is short for "question or answer"
+  
+  
+An quotient is an number.
+  
+  
+An radius is some twips.
+  
+  
+An rainbow color is an color.
+  
+  
+An random number is an number.
+  
+  
+An ratio is an fraction.
+  
+  
+An ratio pair is an pair.
+  
+  
+An really dark color is an color.
+  
+  
+An really light color is an color.
+  
+  
+An really really dark color is an color.
+  
+  
+An really really light color is an color.
+  
+  
+An recipient is an string.
+  
+  
+An rectangle is an figure.
+  An skinny rectangle is an rectangle.
+  An diamond is an figure.
+  An desert landscape is an thing.
+  An octagon is an figure.
+  An arc is an  figure.
+  An circle is an  figure.
+  An fractal forest is an thing.
+  An joke is an thing.
+  An triangle is an  figure.
+  An heptagon is an figure. \ 7 sides
+  An nonagon is an figure. \ 9 sides
+  An decagon is an figure. \ 10 sides
+  An hexagon is an figure.
+  An koch curve is an figure.
+  An twelve-sided figure is an figure.
+  An half circle is an figure.
+  An half circle flower is an figure.
+  An quarter circle is an figure.
+  An spiral is an figure.
+  An leaf is an figure.
+  An half leaf is an figure.
+  An five pointed star is an figure.
+  An six pointed star is an figure.
+  An left crescent is an figure.
+  An right crescent is an figure.
+  An pentagon is an figure.
+  An solid is an figure.
+  An star is an thing.
+  An cube is an figure.
+  An yew tree is an figure.
+  An tree is an figure.
+  
+  
+An refer is an thing with an string and an pointer (reference).
+  
+  
+An remainder is an number.
+  
+  
+An reply is an string.
+  
+  
+An rgb is an record with
+  An byte called blue byte,
+  An byte called green byte,
+  An byte called red byte.
+  
+  
+An rgb pointer is an pointer to an rgb.
+  
+  
+An rider has \ fix "bump an rider" if you change me
+  An original substring,
+  An source substring and 
+  An token substring.
+  
+  
+An rise is an number.
+  An run is an number.
+  
+  
+An roundy box is an box with
+  An left coord, an top coord, an right coord, an bottom coord,
+  An left-top spot at the left, an right-bottom spot at the right, and 
+  An radius.
+  
+  
+An row is an thing with an row# and an string.
+  
+  
+An row# is an number.
+  
+  
+An saturation is an number [0 to 1000].
+  
+  
+An second is 1000 milliseconds.
+  
+  
+An sector is an pair with an x coord and an y coord [indicating the left-top of the sector].
+  
+  
+An selection box is an box.
+  
+  
+An selection has 
+  An anchor column#, an anchor row#, an anchor at the anchor column#,
+  An caret column#, an caret row#, an caret at the caret column#.
+  
+  
+An sender is an string.
+  
+  
+An sheet is an box.
+  
+  
+An side is 1 unit.
+  
+  
+An size is some twips.
+  
+  
+An sockaddr is an record with
+  An wyrd called sin_family,
+  An big-endian unsigned wyrd called sin_port,
+  An in_addr called sin_addr,
+  8 bytes called sin_zero.
+  
+  
+An sockaddrptr is an pointer to an sockaddr.
+  
+  
+An socket is an pointer.
+  
+  
+An solid color is an color.
+  
+  
+An spot is an pair with an x coord and an y coord and an left at the x coord and an top at the y coord.
+  
+  
+An spot pointer is an pointer to an spot.
+  
+  
+An square is 1440 units. \ arbitrary number high enough for precision divides
+  
+  
+An square root is an number.
+  
+  
+An stack entry is an thing with an string.
+  
+  
+An startupinfo is an record with
+  An number called cb,
+  An pointer called lpreserved,
+  An pointer called lpdesktop,
+  An pointer called lptitle,
+  An number called dwx,
+  An number called dwy,
+  An number called dwxsize,
+  An number called dwysize,
+  An number called dwxcountchars,
+  An number called cwycountchars,
+  An number called dwfillattribute,
+  An number called dwflags,
+  An wyrd called wshowwindow,
+  An wyrd called cbreserved2,
+  An pointer called lpreserved2,
+  An handle called hstdinput,
+  An handle called hstdoutput,
+  An handle called hstderror.
+  
+  
+An string has an first byte pointer and an last byte pointer.
+  
+  
+An string thing is an thing with an string.
+  
+  
+An string# is an number.
+  
+  
+An subject is an string.
+  
+  
+An substring is an string.
+  
+  
+An systemtime is an record with
+  An wyrd called wyear,
+  An wyrd called wmonth,
+  An wyrd called wdayofweek,
+  An wyrd called wday,
+  An wyrd called whour,
+  An wyrd called wminute,
+  An wyrd called wsecond,
+  An wyrd called wmilliseconds.
+  
+  
+An talker is an pointer to an talker object.
+  
+  
+An talker object is an record with an talker vtable called vtable.
+  
+  
+An talker vtable is an pointer to an talker vtable record.
+  
+  
+An talker vtable record is an record with
+  \ iunknown
+  An pointer called queryinterface,
+  An pointer called addref,
+  An pointer called release, \ in this:pspvoice out number
+  \ italker
+  An pointer called setnotifysink,
+  An pointer called setnotifywindowmessage,
+  An pointer called setnotifycallbackfunction,
+  An pointer called setnotifycallbackinterface,
+  An pointer called setnotifywin32event,
+  An pointer called waitfornotifyevent,
+  An pointer called getnotifyeventhandle,
+  An pointer called setinterest,
+  An pointer called getevents,
+  An pointer called getinfo,
+  An pointer called setoutput,
+  An pointer called getoutputobjecttoken,
+  An pointer called getoutputstream,
+  An pointer called pause,
+  An pointer called resume,
+  An pointer called setvoice,
+  An pointer called getvoice,
+  An pointer called speak, \ in this:pspvoice; pwcs:pwchar; dwflags:number; pulstreamnumber:pnumber out number
+  An pointer called speakstream,
+  An pointer called getstatus,
+  An pointer called skip,
+  An pointer called setpriority,
+  An pointer called getpriority,
+  An pointer called setalertboundary,
+  An pointer called getalertboundary,
+  An pointer called setrate,
+  An pointer called getrate,
+  An pointer called setvolume,
+  An pointer called getvolume,
+  An pointer called waituntildone,
+  An pointer called setsyncspeaktimeout,
+  An pointer called getsyncspeaktimeout,
+  An pointer called speakcompleteevent,
+  An pointer called isuisupported,
+  An pointer called displayui.
+  
+  
+An terminal is an thing with  an box, some quoras, an output color, an input color, and an reply string.
+  
+  
+An text is an thing with 
+  An box,
+  An origin,
+  An pen color,
+  An font,
+  An alignment,
+  Some rows,
+  An margin,
+  An scale fraction,
+  An wrap flag,
+  An horizontal scroll flag,
+  An vertical scroll flag,
+  An selection,
+  An modified flag,
+  An last operation,
+  Some texts called undos,
+  Some texts called redos.
+  
+  
+An textmetric is an record with
+  An number called tmheight,
+  An number called tmascent,
+  An number called tmdescent,
+  An number called tminternalleading,
+  An number called tmexternalleading,
+  An number called tmavecharwidth,
+  An number called tmmaxcharwidth,
+  An number called tmweight,
+  An number called tmoverhang,
+  An number called tmdigitizedaspectx,
+  An number called tmdigitizedaspecty,
+  An byte called tmfirstchar,
+  An byte called tmlastchar,
+  An byte called tmdefaultchar,
+  An byte called tmbreakchar,
+  An byte called tmitalic,
+  An byte called tmunderlined,
+  An byte called tmstruckout,
+  An byte called tmpitchandfamily,
+  An byte called tmcharset.
+  
+  
+An thing is an pointer to an thing record.
+  
+  
+An thing record has an next thing and an previous thing.
+  
+  
+An thousand is 10 hundreds.
+  
+  
+An tick is an number.
+  
+  
+An timer has an count, some start ticks and some total ticks.
+  
+  
+An token is an string.
+  
+  
+An top is some twips.
+  
+  
+An twip is an number.
+  
+  
+An unit is an number.
+  
+  
+An url is an string.
+  
+  
+An url record has
+  An scheme string,
+  An host name string,
+  An path string,
+  An extra string,
+  An port number.
+  
+  
+An urlcomponents is an record with
+  An number called dwstructsize,
+  An pchar called lpszscheme,
+  An number called dwschemelength,
+  An number called nscheme,
+  An pchar called lpszhostname,
+  An number called dwhostnamelength,
+  An number called nport, \ this is typed as an wyrd in windows documentation, but dosen't work
+  An pchar called lpszusername,
+  An number called dwusernamelength,
+  An pchar called lpszpassword,
+  An number called dwpasswordlength,
+  An pchar called lpszurlpath,
+  An number called dwurlpathlength,
+  An pchar called lpszextrainfo,
+  An number called dwextrainfolength.  
+  
+  
+An uuid is an record with
+  An number called d1,
+  An wyrd called d2,
+  An wyrd called d3,
+  8 bytes called d4.
+  
+  
+An vertex array is an pointer to an vertex array record.
+  
+  
+An vertex array record has an count and an spot pointer.
+  
+  
+An vertex is an thing with an x coord, an y coord, an spot at the x.
+  
+  
+An very dark color is an color.
+  
+  
+An very light color is an color.
+  
+  
+An very very dark color is an color.
+  
+  
+An very very light color is an color.
+  
+  
+An wave file is an path.
+  
+  
+An wave is an hex string.
+  
+  
+An wide string is an string.
+  
+  
+An width is some twips.
+  
+  
+An win32finddata is an record with
+  An number called dwfileattributes,
+  An filetime called ftcreationtime,
+  An filetime called ftlastaccesstime,
+  An filetime called ftlastwritetime,
+  An number called nfilesizehigh,
+  An number called nfilesizelow,
+  An number called dwreserved0,
+  An number called dwreserved1,
+  260 bytes called cfilename,
+  14 bytes called calternatefilename.
+  
+  
+An window class is an record with
+  An number called cbsize,
+  An number called style,
+  An pointer called lpfnwndproc,
+  An number called cbclsextra,
+  An number called cbwndextra,
+  An handle called hinstance,
+  An hicon called hicon,
+  An cursor called hcursor,
+  An hbrush called hbrbackground,
+  An pointer called lpszmenuname,
+  An pointer called lpszclassname,
+  An hicon called hiconsm.
+  
+  
+An window is an handle.
+  
+  
+An winhttp request is an thing with
+  An session handle,
+  An connection handle,
+  An request handle.
+  
+  
+An word is an substring.
+  
+  
+An w-param is an number.
+  
+  
+An wsadata is an record with
+  An wyrd called wversion,
+  An wyrd called whighversion,
+  257 bytes called szdescription,
+  127 bytes called szsystemstatus,
+  An wyrd [unsigned] called imaxsockets,
+  An wyrd [unsigned] called imaxudpdg,
+  An pointer called lpvendorinfo.
+  
+  
+An wyrd has an low byte and an high byte.
+  
+  
+An abc is an record with an number called abca, an number called abcb, an number called abcc.
+  
+  
+An abc pointer is an pointer to an abc.
+  
+  
+An abca is an number.
+  
+  
+An abcc is an number.
+  
+  
+An absolute position is an number.
+  
+  
+An addrinfo is an record with
+  An number called ai_flags,
+  An number called ai_family,
+  An number called ai_sockettype,
+  An number called ai_protocol,
+  An number called ai_addrlen,
+  An pchar called ai_canonname,
+  An sockaddrptr called ai_addr,
+  An addrinfoptr called ai_next.
+  
+  
+An addrinfoptr is an pointer to an addrinfo.
+  
+  
+An alignment is an string [center, left, or right].
+  
+  
+An amount is an number.
+  
+  
+An anchor is an position.
+  
+  
+An and-mask is an mask.
+  
+  
+An angle is some precise degrees [0 to 3599].
+  
+  
+An ellipse has an box.
+  
+  
+An email has
+  An smtp server,
+  An sender,
+  An recipient,
+  An subject,
+  An message.
+  
+  
+An event is an thing with
+  An kind,
+  An shift flag,
+  An ctrl flag,
+  An alt flag,
+  An spot,
+  An key, an byte.
+  
+  
+An event queue is some events.
+  
+  
+An extension is an string. \ last dot to end of path = .ext
+  
+  
+An hbitmap is an handle.
+  
+  
+An hbrush is an handle.
+  
+  
+An hdc is an handle.
+  
+  
+An hfont is an handle.
+  
+  
+An hicon is an handle.
+  
+  
+An hour is 60 minutes.
+  
+  
+An hpen is an handle.
+  
+  
+An hrgn is an handle.
+  
+  
+An inch is 1440 twips.
+  
+  
+An indent is an count. \ *** an count?
+  
+  
+An index is an thing with
+  An bucket count,
+  An first bucket and an last bucket.
+  
+  
+An input is an event.
+  
+  
+An ip address has
+  An number,
+  An string.
+  
+  
+An istream is an pointer to an istream object.
+  
+  
+An istream object is an record with an istream vtable called vtable.
+  
+  
+An istream vtable is an pointer to an istream vtable record.
+  
+  
+An istream vtable record is an record with
+  \ iunknown
+  An pointer called queryinterface,
+  An pointer called addref,
+  An pointer called release, \ function(this:istream):number; stdcall;
+  \ istream
+  An pointer called read,
+  An pointer called write,
+  An pointer called seek,
+  An pointer called setsize,
+  An pointer called copyto,
+  An pointer called commit,
+  An pointer called revert,
+  An pointer called lockregion,
+  An pointer called unlockregion,
+  An pointer called stat,
+  An pointer called clone.
+  
+  
+An item has
+  An kind,
+  An path, an directory, an designator, an extension,
+  An size,
+  An win32finddata and an handle.
+  
+  
+An lcm is an number.
+  
+  
+An offset is an number.
+  
+  
+An operation is an string.
+  
+  
+An origin is an spot.
+  
+  
+An outdent is an number.
+  
+  
+An pen is an color.
+  
+  
+An smtp server is an string.
+  
+  
+An xor-mask is an mask.
+  
+  
+Some addrinfo routines is an record with
+  An getaddrinfo pointer,
+  An freeaddrinfo pointer.
+  
+  
+Some extra points are some points.
+  
+  
+Some font widths is an thing with \ used for pdf conversion
+  An font,
+  An count,
+  An number pointer called data.
+  
+  
+Some things has an first thing and an last thing.
+  
+  
+Some times is an number. \ this is an fluke, I think -- see "smooth an polygon some times"
+  
+  

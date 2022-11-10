@@ -1,0 +1,45 @@
+To show error an string:
+  Create the dialog.
+  Put "error" into the dialog's kind.
+  Put the red color into the dialog's pen.
+  Put the string into the dialog's prompt.
+  Add an button to the dialog given "M'kay".
+  Cluck.
+  Handle the dialog.
+  Destroy the dialog.
+  
+  
+To show status an number and an string or another string:
+  Format the number and the string or the other string into an third string.
+  Show status the third string.
+  
+  
+To show status an string:
+  Put the string into the status' string.
+  Show the status.
+  
+  
+To show the desktop with an string:
+  Put the string into the status' string.
+  Show the desktop.
+  
+  
+To show the desktop with status:
+  Clear the status' string.
+  If the current tab's mode is "finder", get the status for the current tab's node.
+  If the current tab's mode is "editor", get the status for the current tab's node's source.
+  If the current tab's mode is "docster", get the status for the current tab's node's document.
+  If the current tab's mode is "writer", get the status for the current tab's node's page.
+  Show the desktop.
+  
+  
+To show the desktop:
+  Draw the desktop.
+  Refresh the screen.
+  
+  
+To show the status:
+  Draw the status.
+  Refresh the screen given the status' roundy box.
+  
+  

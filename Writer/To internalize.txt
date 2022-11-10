@@ -1,0 +1,246 @@
+To internalize an box given an rider:
+  If the i/o error is not blank, exit.
+  Internalize the box's left given the rider.
+  Internalize the box's top given the rider.
+  Internalize the box's right given the rider.
+  Internalize the box's bottom given the rider.
+  
+  
+To internalize an color given an rider:
+  If the i/o error is not blank, exit.
+  Internalize the color's hue given the rider.
+  Internalize the color's saturation given the rider.
+  Internalize the color's lightness given the rider.
+  
+  
+To internalize an document given an rider:
+  If the i/o error is not blank, exit.
+  If the rider's token is not "ream", fail with "Invalid document - ""ream"" not found"; exit.
+  Move the rider (document rules).
+  If the rider's token is not the document version, fail with "Invalid document version"; exit.
+  Move the rider (document rules).
+  Create the document.
+  Internalize the document's pages given the rider.
+  If the rider's token is not "end", fail with "Invalid document - ""end"" not found"; exit.
+  Move the rider (document rules).
+  If the rider's token is not blank, fail with "Invalid document"; exit.
+  Adjust the edge of every page in the document.
+  
+  
+To internalize an flag given an rider:
+  If the i/o error is not blank, exit.
+  If the rider's token is not any flag literal, fail with "Invalid document - expected flag"; exit.
+  Convert the rider's token to the flag.
+  Move the rider (document rules).
+  
+  
+To internalize an font given an rider:
+  If the i/o error is not blank, exit.
+  Internalize the font's name given the rider.
+  Internalize the font's height given the rider.
+  
+  
+To internalize an hex string given an rider:
+  If the i/o error is not blank, exit.
+  Internalize an nibble string given the rider.
+  Convert the nibble string to the hex string.
+  
+  
+To internalize an number given an rider:
+  If the i/o error is not blank, exit.
+  If the rider's token is not any integer literal, fail with "Invalid document - expected number"; exit.
+  Convert the rider's token to the number.
+  Move the rider (document rules).
+  
+  
+To internalize an page given an rider:
+  If the i/o error is not blank, exit.
+  If the rider's token is not "page", fail with "Invalid document - ""page"" not found"; exit.
+  Move the rider (document rules).
+  Create the page.
+  Internalize the page's width given the rider.
+  Internalize the page's height given the rider.
+  Internalize the page's measure given the rider.
+  Internalize the page's shapes given the rider.
+  Adjust the page.
+  If the rider's token is not "end", fail with "Invalid document - ""end"" not found"; exit.
+  Move the rider (document rules).
+  
+  
+To internalize an paragraph given an rider:
+  If the i/o error is not blank, exit.
+  Create the paragraph.
+  Internalize the paragraph's string given the rider.
+  
+  
+To internalize an picture given an rider:
+  Create the picture.
+  Internalize the picture's box given the rider.
+  Internalize the picture's uncropped box given the rider.
+  Internalize the picture's grayscale flag given the rider.
+  Internalize the picture's mirror flag given the rider.
+  Internalize the picture's rotate angle given the rider.
+  Internalize the picture's data given the rider.
+  Create the picture's gpbitmap given the picture's data.
+  Rotate the picture's gpbitmap given the picture's rotate angle.
+  If the picture's mirror flag is set, mirror the picture's gpbitmap.
+  
+  
+To internalize an polygon given an rider:
+  If the i/o error is not blank, exit.
+  Create the polygon.
+  Internalize an count given the rider.
+  Loop.
+    If the i/o error is not blank, exit.
+    If the count is 0, exit.
+    Internalize an spot given the rider.
+    Append the spot to the polygon.
+    Subtract 1 from the count.
+  Repeat.
+  
+  
+To internalize an ratio given an rider:
+  If the i/o error is not blank, exit.
+  Internalize the ratio's numerator given the rider.
+  Internalize the ratio's denominator given the rider.
+  
+  
+To internalize an rect given an rider:
+  If the i/o error is not blank, exit.
+  Internalize the rect as an box given the rider.
+  Internalize the rect's radius given the rider.
+  
+  
+To internalize an shape given an rider (ellipse):
+  Create the shape.
+  Put the rider's token into the shape's kind.
+  Move the rider (document rules).
+  Internalize the shape's border given the rider.
+  Internalize the shape's fill given the rider.
+  Internalize the shape's ellipse given the rider.
+  Adjust the shape.
+  
+  
+To internalize an shape given an rider (group):
+  Create the shape.
+  Put the rider's token into the shape's kind.
+  Move the rider (document rules).
+  Internalize the shape's shapes given the rider.
+  Adjust the shape.
+  If the rider's token is not "end", fail with "Invalid document - invalid group"; exit.
+  Move the rider (document rules).
+  
+  
+To internalize an shape given an rider (picture):
+  Create the shape.
+  Put the rider's token into the shape's kind.
+  Move the rider (document rules).
+  Internalize the shape's border given the rider.
+  Internalize the shape's picture given the rider.
+  Adjust the shape.
+  
+  
+To internalize an shape given an rider (polygon):
+  Create the shape.
+  Put the rider's token into the shape's kind.
+  Move the rider (document rules).
+  Internalize the shape's border given the rider.
+  Internalize the shape's fill given the rider.
+  Internalize the shape's polygon given the rider.
+  Adjust the shape.
+  
+  
+To internalize an shape given an rider (rectangle):
+  Create the shape.
+  Put the rider's token into the shape's kind.
+  Move the rider (document rules).
+  Internalize the shape's border given the rider.
+  Internalize the shape's fill given the rider.
+  Internalize the shape's rect given the rider.
+  Adjust the shape.
+  
+  
+To internalize an shape given an rider (text):
+  Create the shape.
+  Put the rider's token into the shape's kind.
+  Move the rider (document rules).
+  Internalize the shape's border given the rider.
+  Internalize the shape's fill given the rider.
+  Internalize the shape's text rect given the rider.
+  Internalize the shape's label given the rider.
+  Internalize the shape's text given the rider.
+  If the shape's text is nil, exit.
+  Adjust the text in the shape.
+  Adjust the shape.
+  If the rider's token is not "end", fail with "Invalid document - invalid text"; exit.
+  Move the rider (document rules).
+  
+  
+To internalize an shape given an rider:
+  Void the shape.
+  If the i/o error is not blank, exit.
+  If the rider's token is "ellipse", internalize the shape given the rider (ellipse); exit.
+  If the rider's token is "group", internalize the shape given the rider (group); exit.
+  If the rider's token is "picture", internalize the shape given the rider (picture); exit.
+  If the rider's token is "polygon", internalize the shape given the rider (polygon); exit.
+  If the rider's token is "rectangle", internalize the shape given the rider (rectangle); exit.
+  If the rider's token is "text", internalize the shape given the rider (text); exit.
+  Fail with "Invalid document - invalid shape".
+  
+  
+To internalize an spot given an rider:
+  If the i/o error is not blank, exit.
+  Internalize the spot's x given the rider.
+  Internalize the spot's y given the rider.
+  
+  
+To internalize an string given an rider:
+  If the i/o error is not blank, exit.
+  If the rider's token does not start with the double-quote byte, fail with "Invalid document - expected string"; exit.
+  Put the rider's token into the string.
+  Move the rider (document rules).
+  Unquote the string.
+  
+  
+To internalize an text given an rider:
+  If the i/o error is not blank, exit.
+  Create the text.
+  Internalize the text's font given the rider.
+  Internalize the text's alignment given the rider.
+  Internalize the text's pen given the rider.
+  Internalize the text's wrap flag given the rider.
+  Internalize some paragraphs given the rider.
+  Convert the paragraphs to the text's rows.
+  Guarantee one row in the text.
+  Destroy the paragraphs.
+  
+  
+To internalize an ellipse given an rider:
+  Internalize the ellipse's box given the rider.
+  
+  
+To internalize some pages given an rider:
+    If the i/o error is not blank, exit.
+    If the rider's token is not "page", exit.
+    Internalize an page given the rider.
+    Append the page to the pages.
+  Repeat.
+  
+  
+To internalize some paragraphs given an rider:
+    If the i/o error is not blank, exit.
+    If the rider's token is "end", exit.
+    Internalize an paragraph given the rider.
+    Append the paragraph to the paragraphs.
+  Repeat.
+  
+  
+To internalize some shapes given an rider:
+    If the i/o error is not blank, exit.
+    If the rider's token is blank, exit.
+    If the rider's token is "end", exit.
+    Internalize an shape given the rider.
+    Append the shape to the shapes.
+  Repeat.
+  
+  

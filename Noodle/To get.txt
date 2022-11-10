@@ -1,0 +1,604 @@
+To get an box for an line:
+  Put the line's start into the box's left-top.
+  Put the line's end into the box's right-bottom.
+  Normalize the box.
+  
+  
+To get an box for the caret in an text:
+  If the text is nil, zero the box; exit.
+  Get an spot given the text's caret and the text.
+  Put the spot and the spot into the box.
+  Add the text's row height to the box's bottom.
+  Adjust the box given 0 and the tpp and 0 and - the tpp.
+  Put the text's globalized origin into an origin.
+  If the box's left is less than the origin's x, put the origin's x into the box's left; put the origin's x into the box's right.
+  If the text's wrap flag is not set, exit.
+  Limit the box's left to the text's left and the text's right.
+  Limit the box's right to the text's left and the text's right.
+  
+  
+To get an box given an row and an text:
+  If the text is nil, zero the box; exit.
+  If the row is nil, zero the box; exit.
+  Put the text's globalized origin into the box's left-top.
+  Add the row's row# minus 1 times the text's row height to the box's top.
+  Put the text's right into the box's right.
+  Put the box's top plus the text's row height into the box's bottom.
+  
+  
+To get an bucket given an bucket# and an index:
+  \  if the index is nil, void the bucket; exit. \ to make compiler faster
+  Put the index's first bucket into the bucket.
+  Add the bucket# times an bucket record's magnitude to the bucket.
+  
+  
+To get an bucket given an string and an index:
+  \  if the index is nil, void the bucket; exit. \ to make compiler faster
+  Get an bucket# given the string and the index.
+  Get the bucket given the bucket# and the index.
+  
+  
+To get an bucket given an index:
+  \  if the index is nil, void the bucket; exit. \ to make compiler faster
+  If the bucket is nil, put the index's first bucket into the bucket; exit.
+  If the bucket is the index's last bucket, void the bucket; exit.
+  Add an bucket record's magnitude to the bucket.
+  
+  
+To get an bucket# given an string and an index: \ based on the djb2 algorithm
+  \  if the index is nil, put 0 into the bucket#; exit. \ to make compiler faster
+  Put the string's length into the bucket#.
+  If the bucket# is 0, exit.
+  Add 5381 to the bucket#.
+  Slap an substring on the string.
+  Loop.
+    Put the substring's first's target into an byte.
+    Lowercase the byte.
+    Put the bucket# into an number.
+    Shift the bucket# left 5 bits.
+    Add the number to the bucket#.
+    Add the byte to the bucket#.
+    Add 3 to the substring's first.
+    If the substring is blank, break.
+  Repeat.
+  Bitwise and the bucket# with the largest number.
+  Divide the bucket# by the index's bucket count giving an quotient and the bucket#.
+  
+  
+To get an byte from an string (backwards):
+  If the string is blank, put the null byte into the byte; exit.
+  Put the string's last's target into the byte.
+  Remove the last byte from the string.
+  
+  
+To get an byte from an string:
+  If the string is blank, put the null byte into the byte; exit.
+  Put the string's first's target into the byte.
+  Remove the first byte from the string.
+  
+  
+To get an center spot given an spot and another spot:
+  Put the spot and the other spot into an line.
+  Put the line's center into the center.
+  
+  
+To get an color given an spot:
+  Call "gdi32.dll" "GetPixel" with the current canvas and the spot's x and the spot's y returning an colorref.
+  Convert the colorref to the color.
+  
+  
+To get an column# given an row and an spot and an text:
+  Put 0 into the column#.
+  If the text is nil, exit.
+  If the row is nil, exit.
+  Get an box given the row and the text.
+  If the spot's y is greater than the box's bottom, put the row's string's length into the column#; exit. \ only happens on last row of text
+  Create the hfont of the memory canvas given the text's font.
+  Get an start width and an substring given the row and the spot and the text (for "get an column# given an row...").
+  Loop.
+    If the substring's last is the row's string's last, break.
+    Get an width given the substring and the memory canvas.
+    Add the start width to the width.
+    Get another width given the substring's last's target and the memory canvas.
+    Divide the other width by 2.
+    Subtract the other width from the width.
+    If the spot's x is less than the width, break.
+    Add 1 to the substring's last.
+  Repeat.
+  Put the substring's last minus the row's string's first plus 1 into the column#.
+  Destroy the hfont of the memory canvas.
+  
+  
+To get an count of items in an path in the file system:
+  Put 0 into the count.
+  Loop.
+    Get an item from the path.
+    If the item is not found, exit.
+    Add 1 to the count.
+  Repeat.
+  
+  
+To get an description for an path:
+  Clear the description.
+  Get an drive kind for the path.
+  Put the drive kind into the description.
+  Get an drive name for the path.
+  If the drive name is not blank, put the drive name into the description.
+  Lowercase the description.
+  
+  
+To get an difference between an pair and another pair given an grid pair:
+  Get the difference between the pair and the other pair.
+  Round the difference to the grid.
+  
+  
+To get an difference between an pair and another pair:
+  Put the pair into the difference.
+  Subtract the other pair from the difference.
+  
+  
+To get an distance between an spot and another spot (approximate):
+  Put the spot's x minus the other spot's x into an number.
+  De-sign the number.
+  Put the spot's y minus the other spot's y into another number.
+  De-sign the other number.
+  Put the number times the number into the distance.
+  Add the other number times the other number to the distance.
+  Find an square root of the distance.
+  Put the square root into the distance.
+  If the d-key is down, debug the distance.
+  
+  
+To get an distance between an spot and another spot (chessboard):
+  Put the spot's x minus the other spot's x into an number.
+  De-sign the number.
+  Put the spot's y minus the other spot's y into another number.
+  De-sign the other number.
+  Put the number into the distance.
+  If the other number is greater than the number, put the other number into the distance.
+  
+  
+To get an drive kind for an path:
+  Privatize the path.
+  Null terminate the path.
+  Call "kernel32.dll" "GetDriveTypeA" with the path's first returning an number.
+  If the number is 2 [drive_removable], put "removable drive" into the drive kind; exit.
+  If the number is 3 [drive_fixed], put "hard disk / flash drive" into the drive kind; exit.
+  If the number is 4 [drive_remote], put "network drive" into the drive kind; exit.
+  If the number is 5 [drive_cdrom], put "cd-rom / dvd drive" into the drive kind; exit.
+  If the number is 6 [drive_ramdisk], put "virtual drive in memory" into the drive kind; exit.
+  Put "" into the drive kind.
+  
+  
+To get an drive name for an path:
+  Privatize the path.
+  Null terminate the path.
+  Put 512 into an length.
+  Reassign an buffer's first given the length.
+  Call "kernel32.dll" "GetVolumeInformationA" with the path's first and the buffer's first and the length and 0 and 0 and 0 and 0 and 0 returning an number.
+  If the number is 0, clear the drive name; exit.
+  Convert the buffer's first as an pchar to the drive name.
+  
+  
+To get an gcd given an number and another number:
+  Put the number into an dividend number.
+  Put the other number into the gcd.
+  De-sign the dividend number.
+  De-sign the gcd.
+  If the dividend is less than the gcd, swap the dividend with the gcd.
+  If the gcd is 0, put 1 into the gcd; exit.
+  Loop.
+    Divide the dividend by the gcd giving an quotient and an remainder.
+    If the remainder is 0, exit.
+    Put the gcd into the dividend.
+    Put the remainder into the gcd.
+  Repeat.
+  
+  
+To get an letter from the alphabet:
+  Put the next letter into the letter.
+  Bump the next letter limiting it to the big-an byte and the big-z byte.
+  Add 1 to the next letter.
+  If the next letter is greater than the big-z byte, put the big-an byte into the next letter.
+  
+  
+To get an number from the stack:
+  Put 0 into the number.
+  Get an stack entry from the stack.
+  If the stack entry is nil, exit.
+  Convert the stack entry's string to the number.
+  Remove the stack entry from the stack.
+  Destroy the stack entry.
+  
+  
+To get an position given an spot and an text:
+  If the text is nil, clear the position; exit.
+  Get an row given the spot and the text.
+  Put the row's row# into the position's row#.
+  Get the position's column# given the row and the spot and the text.
+  
+  
+To get an rgb pointer from an bitmapdata at an row# and an column#: \ 1 based
+  Put the bitmapdata's scan0 into the rgb pointer.
+  Add the row# minus 1 times the bitmapdata's stride to the rgb pointer.
+  Add the column# minus 1 times an rgb's magnitude to the rgb pointer.
+  
+  
+To get an rise and an run given an heading: \ see Madhava's Numbers
+    Privatize the heading.
+    Normalize the heading.
+    Normalize the original heading.
+    If the heading is not evenly divisible by 20, estimate the rise and the run given the heading; exit.
+    \ special cases
+    If the heading is 0, put -10000 in the rise; put -0 in the run; exit. \ 0 degrees
+    If the heading is 960, put 10000 in the run; put -0 in the rise; exit. \ 90 degrees
+    If the heading is 1920, put 10000 in the rise; put 0 in the run; exit. \ 180 degrees
+    If the heading is 2880, put -10000 in the run; put 0 in the rise; exit. \ 270 degrees
+    If the heading is 3840, debug "invalid heading"; debug the heading; debug the original heading.
+    \ force it into the first eighth of the circle
+    Get the first-eighth equivalent of the heading.
+    \ find the first eighth of the circle unsigned values
+    If the heading is 20, put 0327 in the run; put 9995 in the rise; break. \ 1.875 degrees
+    If the heading is 40, put 0654 in the run; put 9979 in the rise; break. \ 3.75 degrees
+    If the heading is 60, put 0980 in the run; put 9952 in the rise; break. \ 5.625 degrees = 1/64 of the way
+    If the heading is 80, put 1305 in the run; put 9914 in the rise; break. \7.5 degrees
+    If the heading is 100, put 1629 in the run; put 9866 in the rise; break. \ 9.375 degrees
+    If the heading is 120, put 1951 in the run; put 9808 in the rise; break. \ 11.25 degrees = 2/64 of the way
+    If the heading is 140, put 2271 in the run; put 9739 in the rise; break. \ 13.125 degrees
+    If the heading is 160, put 2588 in the run; put 9659 in the rise; break. \ 15 degrees
+    If the heading is 180, put 2903 in the run; put 9569 in the rise; break. \ 16.875 degrees = 3/64 of the way
+    If the heading is 200, put 3214 in the run; put 9469 in the rise; break. \ 18.75 degrees
+    If the heading is 220, put 3523 in the run; put 9359 in the rise; break. \ 20.625 degrees
+    If the heading is 240, put 3827 in the run; put 9239 in the rise; break. \ 22.5 degrees = 4/64 of the way
+    If the heading is 260, put 4127 in the run; put 9109 in the rise; break. \ 24.375 degrees
+    If the heading is 280, put 4423 in the run; put 8969 in the rise; break. \ 26.25 degrees
+    If the heading is 300, put 4714 in the run; put 8819 in the rise; break. \ 28.125 degrees = 5/64 of the way
+    If the heading is 320, put 5000 in the run; put 8660 in the rise; break. \ 30 degrees
+    If the heading is 340, put 5281 in the run; put 8492 in the rise; break. \ 31.875 degrees
+    If the heading is 360, put 5556 in the run; put 8315 in the rise; break. \ 33.75 degrees = 6/64 of the way
+    If the heading is 380, put 5825 in the run; put 8128 in the rise; break. \ 35.625 degrees
+    If the heading is 400, put 6088 in the run; put 7934 in the rise; break. \ 37.5 degrees
+    If the heading is 420, put 6344 in the run; put 7730 in the rise; break. \ 39.375 degrees = 7/64 of the way
+    If the heading is 440, put 6593 in the run; put 7518 in the rise; break. \ 41.25 degrees
+    If the heading is 460, put 6836 in the run; put 7299 in the rise; break. \ 43.125 degrees
+    If the heading is 480, put 7071 in the run; put 7071 in the rise; break. \ 45 degrees = 8/64 of the way
+  Repeat. \ not really an repeat, just an label for the above breaks.
+  \ adjust for other eighths of the circle
+  If the original heading is between 0 and 480, negate the rise; exit. \ 1st eighth (12:00 to 1:30)
+  If the original heading is between 480 and 960, swap the run with the rise; negate the rise; exit. \ 2nd eighth (1:30 to 3:00)
+  If the original heading is between 960 and 1440, swap the run with the rise; exit. \ 3rd eighth (3:00 to 4:30)
+  If the original heading is between 1440 and 1920, exit. \ 4th eighth (4:30 to 6:00)
+  If the original heading is between 1920 and 2400, negate the run; exit. \ 5th eighth (6:00 to 7:30)
+  If the original heading is between 2400 and 2880, swap the run with the rise; negate the run; exit. \ 6th eighth (7:30 to 9:00)
+  If the original heading is between 2880 and 3360, swap the run with the rise; negate the run; negate the rise; exit. \ 7th eighth (9:00 to 10:30)
+  If the original heading is between 3360 and 3840, negate the run; negate the rise; exit. \ 8th eighth (10:30 to 12:00)
+  
+  
+To get an row given an row# and an text:
+  Void the row.
+  If the text is nil, exit.
+  Loop.
+    Get the row from the text's rows.
+    If the row is nil, exit.
+    If the row's row# is the row#, exit.
+  Repeat.
+  
+  
+To get an row given an spot and an text:
+  If the text is nil, void the row; exit.
+  Put the spot's y into an y coord.
+  Limit the y to the text's top and the text's bottom.
+  Put the y minus the text's globalized origin's y divided by the text's row height plus 1 into an row#.
+  Limit the row# to 1 and the text's row count.
+  Get the row given the row# and the text.
+  
+  
+To get an selection box given an row and an text (left side):
+  Put the text's normalized selection into an selection.
+  Put the text's globalized origin's x into the selection box's left.
+  If the selection's anchor row# is the row's row#, get an spot given the selection's anchor and the text; put the spot's x into the selection box's left.
+  Limit the selection box's left to the text's left and the text's right.
+  
+  
+To get an selection box given an row and an text (right side):
+  Put the text's normalized selection into an selection.
+  Put the text's right into the selection box's right.
+  If the selection's caret row# is the row's row#, get an spot given the selection's caret and the text; put the spot's x into the selection box's right.
+  Limit the selection box's right to the text's left and the text's right.
+  
+  
+To get an selection box given an row and an text:
+  Clear the selection box.
+  If the text is nil, exit.
+  If the row is nil, exit.
+  Get an box given the row and the text.
+  Put the box into the selection box.
+  Get the selection box given the row and the text (left side).
+  Get the selection box given the row and the text (right side).
+  
+  
+To get an size given an path in the file system (directory):
+  Put 0 into the size.
+  Loop.
+    Get an item from the path.
+    If the item is not found, exit.
+    If the item's kind is "file", add the item's size to the size; repeat.
+    Put the path into another path.
+    Append the item's designator to the other path.
+    Get another size given the other path in the file system.
+    Add the other size to the size.
+  Repeat.
+  
+  
+To get an size given an path in the file system (file):
+  Privatize the path.
+  Null terminate the path.
+  Call "kernel32.dll" "GetFileAttributesExA" with the path's first and 0 and an win32finddata's whereabouts.
+  Put the win32finddata's nfilesizelow into the size.
+  
+  
+To get an size given an path in the file system:
+  If the path is directory-format, get the size given the path in the file system (directory).
+  If the path is file-format, get the size given the path in the file system (file).
+  
+  
+To get an sockaddr given an host string:
+  Clear the i/o error.
+  \ prepare strings
+  Privatize the host string.
+  Null terminate the host string.
+  \ get the function addresses
+  Get some addrinfo routines.
+  If the i/o error is not blank, exit.
+  \ get the sockaddr
+  Put 2 [af_inet] into an addrinfo's ai_family.
+  Put 1 [sock_stream] into the addrinfo's ai_sockettype.
+  Put 6 [ipproto_tcp] into the addrinfo's ai_protocol.
+  Call the addrinfo routines' getaddrinfo with the host string's first and 0 and the addrinfo's whereabouts and an addrinfoptr's whereabouts returning an result number.
+  If the result number is not 0, put "Could not resolve host name '" then the host then "'." into the i/o error; exit.
+  If the addrinfoptr is nil, put "Could not resolve host name '" then the host then "'." into the i/o error; exit.
+  Put the addrinfoptr's ai_addr's target into the sockaddr.
+  Call the addrinfo routines' freeaddrinfo with the addrinfoptr.
+  
+  
+To get an spot given an position and an text:
+  Clear the spot.
+  If the text is nil, exit.
+  Get an row given the position's row# and the text.
+  Get an box given the row and the text.
+  Put the box's top into the spot's y.
+  Put the row's string's first into an substring's first.
+  Put the substring's first plus the position's column# minus 2 into the substring's last.
+  Get an width given the substring and the memory canvas and the text's font.
+  Put the box's left plus the width into the spot's x.
+  Get an offset pair given the row's working string and the box and the text's font and the text's alignment.
+  Add the offset pair's x to the spot's x.
+  
+  
+To get an start width and an substring given an row and an spot and an text (for "get an column# given an row..."):
+  Clear the start width.
+  Clear the substring.
+  If the text is nil, exit.
+  If the row is nil, exit.
+  Get an box given the row and the text.
+  Slap the substring on the row's working string.
+  Get an offset pair given the substring and the box and the text's font and the text's alignment (fast).
+  Put the text's globalized origin's x plus the offset pair's x into the start width.
+  Put the substring's first plus the text cutoff minus 1 into the substring's last.
+  Loop.
+    If the substring's last is greater than or equal to the row's string's last, break.
+    Get an width given the substring and the memory canvas.
+    Put the start width plus the width into another width.
+    If the spot's x is less than or equal to the other width, break.
+    Add the width to the start width.
+    Move the substring given the text cutoff.
+  Repeat.
+  Put the substring's first into the substring's last.
+  
+  
+To get an string from the stack:
+  Clear the string.
+  Get an stack entry from the stack.
+  If the stack entry is nil, put "ERROR" into the string; exit.
+  Put the stack entry's string to the string.
+  Remove the stack entry from the stack.
+  Destroy the stack entry.
+  
+  
+To get an string from the windows clipboard:
+  Clear the string.
+  Call "user32.dll" "OpenClipboard" with the main window.
+  Call "user32.dll" "GetClipboardData" with 1 [cf_text] returning an handle.
+  If the handle is 0, call "user32.dll" "CloseClipboard"; exit.
+  Call "kernel32.dll" "GlobalLock" with the handle returning an pchar.
+  Convert the pchar to the string.
+  Call "kernel32.dll" "GlobalUnlock" with the handle.
+  Call "user32.dll" "CloseClipboard".
+  
+  
+To get an thing from some things (backwards):
+  If the things are empty, void the thing; exit.
+  If the thing is nil, put the things' last into the thing; exit.
+  Put the thing's previous into the thing.
+  
+  
+To get an thing from some things:
+  If the things are empty, void the thing; exit.
+  If the thing is nil, put the things' first into the thing; exit.
+  Put the thing's next into the thing.
+  
+  
+To get an token from an reply:
+  Remove any leading noise from the reply.
+  Clear the token.
+  Loop.
+    If the reply is blank, exit.
+    Get an byte from the reply.
+    If the byte is the space byte, exit.
+    Append the byte to the token.
+  Repeat.
+  
+  
+To get an width given an byte and an canvas:
+  Call "gdi32.dll" "GetTextExtentPoint32A" with the canvas and the byte's whereabouts and 1 and an pair's whereabouts.
+  Put the pair's x into the width.
+  
+  
+To get an width given an byte and some font widths:
+  Put the byte into an number.
+  Get the width given the number and the font widths.
+  
+  
+To get an width given an number and some font widths: \ indexes are 0 based
+  If the font widths are nil, clear the width; exit.
+  Put the font widths' data into an number pointer.
+  Add the number times the number's magnitude to the number pointer.
+  Put the number pointer's target into the width.
+  
+  
+To get an width given an string and an canvas: \ assumes font is already selected in canvas
+  Call "gdi32.dll" "GetTextExtentPoint32A" with the canvas and the string's first and the string's length and an pair's whereabouts.
+  Put the pair's x into the width.
+  
+  
+To get an width given an string and an canvas and an font:
+  Create the hfont of the canvas given the font.
+  Get the width given the string and the canvas.
+  Destroy the hfont of the canvas.
+  
+  
+To get an width given an string and an font: \ assumes memory canvas
+  Get the width given the string and the memory canvas and the font.
+  
+  
+To get an abca and an abcc given an string and an canvas:
+  Put 0 into the abca.
+  Put 0 into the abcc.
+  If the string's length is less than 1, exit.
+  Call "gdi32.dll" "GetCharABCWidthsA" with the canvas and the string's first's target and the string's first's target and an abc's whereabouts.
+  Put the abc's abca into the abca.
+  Call "gdi32.dll" "GetCharABCWidthsA" with the canvas and the string's last's target and the string's last's target and another abc's whereabouts.
+  Put the other abc's abcc into the abcc.
+  
+  
+To get an abca given an string and an canvas:
+  Put 0 into the abca.
+  If the string's length is less than 1, exit.
+  Call "gdi32.dll" "GetCharABCWidthsA" with the canvas and the string's first's target and the string's first's target and an abc's whereabouts.
+  Put the abc's abca into the abca.
+  
+  
+To get an ip address given an host string:
+  Clear the ip address.
+  Get an sockaddr given the host string.
+  If the i/o error is not blank, exit.
+  Put the sockaddr's sin_addr's s_addr into the ip address' number.
+  Call "ws2_32.dll" "inet_ntoa" with the ip address' number returning an pchar.
+  Convert the pchar to the ip address' string.
+  
+  
+To get an item (not first time):
+  Clear the i/o error.
+  Call "kernel32.dll" "FindNextFileA" with the item's handle and the item's win32finddata's whereabouts returning an number.
+  If the number is not 0, adjust the item; exit.
+  Clear the item's kind.
+  Call "kernel32.dll" "FindClose" with the item's handle.
+  
+  
+To get an item from an path (first time):
+  Clear the i/o error.
+  Privatize the path.
+  Append "*.*" to the path.
+  Null terminate the path.
+  Clear the item's kind.
+  Call "kernel32.dll" "FindFirstFileA" with the path's first and the item's win32finddata's whereabouts returning the item's handle.
+  If the item's handle is -1 [invalid_handle_value], exit.
+  Adjust the item.
+  
+  
+To get an item from an path:
+  If the path is not directory-format, exit.
+  Put the path into the item's directory.
+  If the item's kind is blank, get the item from the path (first time); exit.
+  Get the item (not first time).
+  
+  
+To get an lcm given an number and another number:
+  Get an gcd given the number and the other number.
+  Call "kernel32.dll" "MulDiv" with the number and the other number and the gcd returning the lcm.
+  
+  
+To get an offset pair given an string and an box and an font and an alignment (fast):
+  If the alignment is "left", get the offset pair's x given the string and the box (fast - left).
+  If the alignment is "right", get the offset pair's x given the string and the box  (fast - right).
+  If the alignment is "center", get the offset pair's x given the string and the box (fast - center).
+  Call "gdi32.dll" "GetTextMetricsA" with the memory canvas and an textmetric's whereabouts.
+  Add the box's height minus the textmetric's tmheight divided by 2 to the offset pair's y.
+  
+  
+To get an offset pair given an string and an box and an font and an alignment:
+  Create the hfont of the memory canvas given the font.
+  Get the offset pair given the string and the box and the font and the alignment (fast).
+  Destroy the hfont of the memory canvas.
+  
+  
+To get an outlinetextmetric given an font:
+  Create the hfont of the memory canvas given the font.
+  Call "gdi32.dll" "GetOutlineTextMetricsA" with the memory canvas and 0 and 0 returning an result number.
+  Assign an poutlinetextmetric given the result.
+  Call "gdi32.dll" "GetOutlineTextMetricsA" with the memory canvas and the result and the poutlinetextmetric.
+  Put the poutlinetextmetric's target into the outlinetextmetric.
+  Destroy the hfont of the current canvas.
+  Unassign the poutlinetextmetric.
+  
+  
+To get an x coord given an string and an box (fast - center):
+  Get an width given the string and the memory canvas.
+  Get an abca and an abcc given the string and the memory canvas.
+  Put the width minus the abca minus the abcc into the width.
+  Put the box's width minus the width divided by 2 minus the abca into the x.
+  
+  
+To get an x coord given an string and an box (fast - left):
+  Get an abca given the string and the memory canvas.
+  Put - the abca into the x.
+  
+  
+To get an x coord given an string and an box (fast - right):
+  Get an abca and an abcc given the string and the memory canvas.
+  Get an width given the string and the memory canvas.
+  Put the width minus the abca minus the abcc into the width.
+  Put the box's width minus the width minus the abca into the x.
+  
+  
+To get fresh random numbers;
+To get new random numbers;
+To seed the random number generator:
+  Put the system's tick count into the seed.
+  
+  
+To get some addrinfo routines:
+  Clear the i/o error.
+  Call "kernel32.dll" "LoadLibraryA" with "ws2_32.dll"'s first returning an handle.
+  If the handle is 0, put "Could not load ws2_32.dll" into the i/o error; exit.
+  Call "kernel32.dll" "GetProcAddress" with the handle and "getaddrinfo"'s first returning an pointer.
+  If the pointer is nil, put "Sorry these routines only work on Windows XP and up." into the i/o error; exit.
+  Put the pointer into the addrinfo routines' getaddrinfo pointer.
+  Call "kernel32.dll" "GetProcAddress" with the handle and "freeaddrinfo"'s first returning the pointer.
+  If the pointer is nil, put "Sorry these routines only work on Windows XP and up." into the i/o error; exit.
+  Put the pointer into the addrinfo routines' freeaddrinfo pointer.
+  
+  
+To get the first-eighth equivalent of an heading:
+  Get the first-quarter equivalent of the heading.
+  If the heading is less than 480, exit.
+  Subtract 960 from the heading.
+  De-sign the heading.
+  
+  
+To get the first-quarter equivalent of an heading:
+    If the heading is less than 960, exit.
+    Subtract 960 from the heading.
+  Repeat.
+  
+  

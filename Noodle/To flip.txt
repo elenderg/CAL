@@ -1,0 +1,35 @@
+To flip an fraction:
+  Swap the fraction's numerator with the fraction's denominator.
+  
+  
+To flip an gpimage:
+  Call "gdiplus.dll" "GdipImageRotateFlip" with the gpimage and 6 [rotatenoneflipy aka rotate180flipx].
+  
+  
+To flip an picture:
+  If the picture is nil, exit.
+  Put the picture's box's center's y minus the picture's uncropped box's center's y into an pair's y.
+  Multiply the pair's y by 2.
+  Move the picture's uncropped box given the pair.
+  Flip the gpbitmap in the picture.
+  
+  
+To flip an polygon:
+  If the polygon is nil, exit.
+  Put the polygon's box into an box.
+  Loop.
+    Get an vertex from the polygon's vertices.
+    If the vertex is nil, exit.
+    Subtract the box's top from the vertex's y.
+    Put the box's bottom minus the vertex's y into the vertex's y.
+  Repeat.
+  
+  
+To flip the gpbitmap in an picture:
+  If the picture is nil, exit.
+  Reverse the picture's mirror flag.
+  Add 1800 to the picture's rotate angle.
+  Normalize the picture's rotate angle.
+  Flip the picture's gpbitmap.
+  
+  

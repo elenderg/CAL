@@ -1,0 +1,26 @@
+To convert an nibble substring to an string: employ convert an nibble string to an hex string.
+  
+  
+To convert an term for concatenation given an rider: \ used for right-side THEN operand
+  If the term's variable is nil, abort with "I don't understand the variable '" then the term's phrase then "'." and the rider; exit.
+  If the term's type can be reduced to "string", exit.
+  Add an intermediate given "string" and the rider's token's first.
+  Add the put or convert fragments given the term's variable and the intermediate and the rider's token's first.
+  Put the intermediate into the term's variable.
+  Clear the term's phrase.
+  
+  
+To convert some monikettes to an moniker given an monikette:
+  Clear the moniker.
+  Loop.
+    Get an current monikette from the monikettes.
+    If the current monikette is nil, exit.
+    Append the current monikette to the moniker.
+    If the current monikette is the monikette, exit.
+  Repeat.
+  
+  
+To convert some monikettes to an moniker:
+  Convert the monikettes to the moniker given the monikettes' last.
+  
+  

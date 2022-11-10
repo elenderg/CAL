@@ -1,6 +1,0 @@
-To extract an directory name from an path:
-  Clear the directory name.
-  If the path is not directory-format, exit.
-  Extract the directory name as an designator from the path.
-  
-  

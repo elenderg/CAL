@@ -1,0 +1,30 @@
+To sort definitions given an source:
+  If the source is nil, exit.
+  Create some blocks given the source's text's rows.
+  Scrub the blocks.
+  Name the blocks.
+  Sort the blocks.
+  Destroy the source's text's rows.
+  Append the blocks to the source's text's rows.
+  Reset the origin of the source's text.
+  Reset the caret of the source's text.
+  Deselect the source's text.
+  Renumber the source's text's rows.
+  Destroy the blocks.
+  
+  
+To sort some blocks:
+  If the blocks' first is the blocks' last, exit.
+  Split the blocks into some left blocks and some right blocks.
+  Sort the left blocks.
+  Sort the right blocks.
+  Loop.
+    Put the left blocks' first into an left block.
+    Put the right blocks' first into an right block.
+    If the left block is nil, append the right blocks to the blocks; exit.
+    If the right block is nil, append the left blocks to the blocks; exit.
+    If the left block's name is greater than the right block's name, move the right block from the right blocks to the blocks; repeat.
+    Move the left block from the left blocks to the blocks.
+  Repeat.
+  
+  

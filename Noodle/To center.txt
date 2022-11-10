@@ -1,0 +1,97 @@
+To center an box at the bottom of another box:
+  Center the box in the other box (horizontally).
+  Put the box's height into an height.
+  Put the other box's bottom into the box's bottom.
+  Put the box's bottom minus the height into the box's top.
+  
+  
+To center an box in another box (horizontally):
+  Put the other box's center's x minus the box's center's x into an number.
+  Round the number to the nearest multiple of the tpp.
+  Move the box given the number and 0.
+  
+  
+To center an box in another box (vertically):
+  Put the other box's center's y minus the box's center's y into an number.
+  Round the number to the nearest multiple of the tpp.
+  Move the box given 0 and the number.
+  
+  
+To center an dot on the current spot:
+  Center the dot on the context's spot.
+  
+  
+To center an line in an box (horizontally):
+  Put the box's center's x minus the line's center's x into an number.
+  Round the number to the nearest multiple of the tpp.
+  Move the line given the number and 0.
+  
+  
+To center an line in an box (vertically):
+  Put the box's center's y minus the line's center's y into an number.
+  Round the number to the nearest multiple of the tpp.
+  Move the line given 0 and the number.
+  
+  
+To center an picture in an box (horizontally):
+  If the picture is nil, exit.
+  Put the box's center's x minus the picture's box's center's x into an number.
+  Round the number to the nearest multiple of the tpp.
+  Move the picture given the number and 0.
+  
+  
+To center an picture in an box (vertically):
+  If the picture is nil, exit.
+  Put the box's center's y minus the picture's box's center's y into an number.
+  Round the number to the nearest multiple of the tpp.
+  Move the picture given 0 and the number.
+  
+  
+To center an polygon in an box (horizontally):
+  If the polygon is nil, exit.
+  Put the box's center's x minus the polygon's box's center's x into an number.
+  Round the number to the nearest multiple of the tpp.
+  Move the polygon given the number and 0.
+  
+  
+To center an polygon in an box (vertically):
+  If the polygon is nil, exit.
+  Put the box's center's y minus the polygon's box's center's y into an number.
+  Round the number to the nearest multiple of the tpp.
+  Move the polygon given 0 and the number.
+  
+  
+To center an spot in an box (horizontally):
+  Put the box's center's x minus the spot's x into an number.
+  Round the number to the nearest multiple of the tpp.
+  Move the spot given the number and 0.
+  
+  
+To center an spot in an box (vertically):
+  Put the box's center's y minus the spot's y into an number.
+  Round the number to the nearest multiple of the tpp.
+  Move the spot given 0 and the number.
+  
+  
+To center an text in an box (horizontally):
+  If the text is nil, exit.
+  Put the box's center's x minus the text's box's center's x into an number.
+  Round the number to the nearest multiple of the tpp.
+  Move the text given the number and 0.
+  
+  
+To center an text in an box (vertically):
+  If the text is nil, exit.
+  Put the box's center's y minus the text's box's center's y into an number.
+  Round the number to the nearest multiple of the tpp.
+  Move the text given 0 and the number.
+  
+  
+To center an ellipse in an box (horizontally):
+  Center the ellipse's box in the box (horizontally).
+  
+  
+To center an ellipse in an box (vertically):
+  Center the ellipse's box in the box (vertically).
+  
+  

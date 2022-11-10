@@ -1,9 +1,0 @@
-To find an path and an row# given an byte pointer:
-  Clear the path.
-  Put 0 into the row#.
-  Find an source file given the byte pointer.
-  If the source file is nil, exit.
-  Put the source file's path into the path.
-  Find the row# given the source file and the byte pointer.
-  
-  

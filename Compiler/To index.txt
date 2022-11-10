@@ -1,0 +1,78 @@
+To index an global:
+  If the compiler's abort flag is set, exit.
+  If the global is nil, exit.
+  If the global's name is in the global index, abort with "'" then the global's name then "' is an duplicate global variable." and the global's locus; exit.
+  Index the global given the global's name and the global index.
+  
+  
+To index an literal:
+  If the compiler's abort flag is set, exit.
+  If the literal is nil, exit.
+  If the literal's name is in the literal index, abort with "Internal error - index an literal" and the literal's locus; exit.
+  Index the literal given the literal's name and the literal index.
+  
+  
+To index an partial moniker given an index (special):
+  Find an refer given the partial moniker and the index.
+  If the refer is not nil, exit.
+  Index the partial moniker in the index.
+  
+  
+To index an routine for utility use:
+  If the compiler's abort flag is set, exit.
+  If the routine is nil, exit.
+  If the routine's function flag is set, exit.
+  If the routine's parameters' count is 0, exit.
+  Copy the routine's monikettes into some monikettes.
+  Reduce the monikettes for utility use.
+  Convert the monikettes to an moniker.
+  Destroy the monikettes.
+  If the moniker is in the routine index, exit.
+  Find an refer given the moniker and the utility index.
+  If the refer is not nil, put nil into the refer's pointer; exit.
+  Index the routine given the moniker and the utility index.
+  
+  
+To index an routine given an moniker and an index (special):
+  Find an refer given the moniker and the index.
+  If the refer is not nil, put the routine into the refer's pointer; exit.
+  Index the routine given the moniker and the index.
+  
+  
+To index an routine given some monikettes and an index:
+  If the routine is nil, exit.
+  Clear an partial moniker.
+  Loop.
+    Get an monikette from the monikettes.
+    If the monikette is nil, exit.
+    Append the monikette to the partial moniker.
+    If the monikette is the monikettes' last, break.
+    Index the partial moniker given the index (special).
+  Repeat.
+  Index the routine given the partial moniker as an moniker and the index (special).
+  
+  
+To index an type given an name:
+  If the type is nil, exit.
+  If the compiler's abort flag is set, exit.
+  Find an existing type given the name and the type index.
+  If the existing type is nil, index the type given the name and the type index; exit.
+  Put the type's locus into an locus.
+  If the locus is nil, put the existing type's locus into the locus. \ point the error to an type in the source code, not an generated type
+  Abort with "I think I've seen this '" then the name then "' type somewhere before; it must be an duplicate." and the locus.
+  
+  
+To index an type:
+  If the type is nil, exit.
+  If the compiler's abort flag is set, exit.
+  Index the type given the type's name.
+  
+  
+To index some routines for utility use:
+    If the compiler's abort flag is set, exit.
+    Get an routine from the routines.
+    If the routine is nil, exit.
+    Index the routine for utility use.
+  Repeat.
+  
+  

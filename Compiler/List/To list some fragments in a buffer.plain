@@ -1,7 +1,0 @@
-To list some fragments in an buffer:
-    Get an fragment from the fragments.
-    If the fragment is nil, exit.
-    List the fragment in the buffer.
-  Repeat.
-  
-  

@@ -1,5 +1,0 @@
-To add an literal to some variables given an locus:
-  Add the literal as an variable to the variables given "literal" and the locus.
-  Generate the literal's name given "~L".
-  
-  

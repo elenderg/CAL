@@ -1,4 +1,0 @@
-To blurt an dos header into an buffer:
-  Blurt bytes given the dos header's whereabouts and the dos header's magnitude and the buffer and 0.
-  
-  

@@ -1,5 +1,0 @@
-To create an picture given an url:
-  Read the url into an buffer.
-  Create the picture given the buffer.
-  
-  

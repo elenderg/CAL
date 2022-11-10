@@ -1,0 +1,212 @@
+To end an sheet (pdf style - finish the current contents):
+  Put the pdf state's current contents into an content pdf object.
+  Put the content's data into an buffer.
+  Clear the content's data.
+  Append the content's number then " 0 obj" to the content.
+  Append "<</Length " then the buffer's length then " >>" to the content.
+  Append "stream" to the content.
+  Append the buffer to the content's data.
+  Append "endstream" to the content.
+  Append "endobj" to the content.
+  Clear the pdf state's page flag.
+  
+  
+To end an sheet (pdf style - finish the current page - font resources):
+  Put the pdf state's current page into an page pdf object.
+  If the page's font strings are empty, exit.
+  Append "/Font <<" to the page without advancing.
+  Loop.
+    Get an string thing from the page's font strings.
+    If the string thing is nil, break.
+    If an flag is set, append " " to the page without advancing.
+    Append the string thing's string to the page without advancing.
+  Set the flag.
+  Repeat.
+  Append ">>" to the page.
+  
+  
+To end an sheet (pdf style - finish the current page - image resources):
+  Put the pdf state's current page into an page pdf object.
+  If the page's image strings are empty, exit.
+  Append "/XObject <<" to the page without advancing.
+  Loop.
+    Get an string thing from the page's image strings.
+    If the string thing is nil, break.
+    If an flag is set, append " " to the page without advancing.
+    Append the string thing's string to the page without advancing.
+    Set the flag.
+  Repeat.
+  Append ">>" to the page.
+  
+  
+To end an sheet (pdf style - finish the current page):
+  Put the pdf state's current page into an page pdf object.
+  Append "/Resources" to the page.
+  Append "<<" to the page.
+  Append "/ProcSet [/PDF /Text /ImageC]" to the page.
+  End the sheet (pdf style - finish the current page - font resources).
+  End the sheet (pdf style - finish the current page - image resources).
+  Append ">>" to the page. \ end resources
+  Append ">>" to the page. \ end page
+  Append "endobj" to the page.
+  
+  
+To end an sheet (pdf style):
+  End the sheet (pdf style - finish the current page).
+  End the sheet (pdf style - finish the current contents).
+  
+  
+To end an sheet:
+  If the pdf state's document flag is set, end the sheet (pdf style); exit.
+  Call "gdi32.dll" "EndPage" with the printer canvas.
+  Put the memory canvas into the current canvas.
+  Put the saved tpp into the tpp.
+  
+  
+To end printing (pdf style):
+  If the pdf state's document flag is not set, exit.
+  End printing the pdf state's pdf pointer's target.
+  
+  
+To end printing an pdf (append footer):
+  Append "startxref" then the crlf string to the pdf.
+  Append the pdf state's xref offset then the crlf string to the pdf.
+  Append "%%EOF" to the pdf.
+  
+  
+To end printing an pdf (append header):
+  Append "%PDF-1.3" then the crlf string to the pdf.
+  Append "%‚„œ”" then the crlf string to the pdf.
+  Append the crlf string to the pdf.
+  
+  
+To end printing an pdf (append the outline entries - create the objects):
+    Get an pdf outline entry from the pdf state's outline entries.
+    If the pdf outline entry is nil, exit.
+    Add an entry pdf object given "outline entry".
+    Put the entry into the pdf outline entry's pdf object.
+  Repeat.
+  
+  
+To end printing an pdf (append the outline entries):
+  If the pdf state's outline entries are empty, exit.
+  End printing the pdf (append the outline entries - create the objects).
+  Loop.
+    Get an pdf outline entry from the pdf state's outline entries.
+    If the pdf outline entry is nil, exit.
+    Put the pdf outline entry's pdf object into an object pdf object.
+    Append the object's number then " 0 obj" to the object.
+    Append "<<" to the object.
+    Convert the pdf outline entry's title to an pdf string.
+    Append "/Title " then the pdf string to the object.
+    Append "/Parent " then the pdf state's outline's number then " 0 R" to the object.
+    If the pdf outline entry's next is not nil, append "/Next " then the pdf outline entry's next's pdf object's number then " 0 R" to the object.
+    If the pdf outline entry's previous is not nil, append "/Prev " then the pdf outline entry's previous' pdf object's number then " 0 R" to the object.
+    Append "/Dest [" then the pdf outline entry's destination then " 0 R /XYZ null " then the pdf outline entry's  page height then " null]" to the object.
+    Append ">>" to the object.
+    Append "endobj" to the object.
+  Repeat.
+  
+  
+To end printing an pdf (append the outline):
+  Void the pdf state's outline.
+  If the pdf state's outline entries are empty, exit.
+  Add an outline pdf object given "outline".
+  Put the outline into the pdf state's outline.
+  End printing the pdf (append the outline entries).
+  Append the outline's number then " 0 obj" to the outline.
+  Append "<<" to the outline.
+  Append "/Type /Outlines" to the outline.
+  Append "/First " then the pdf state's outline entries' first's pdf object's number then " 0 R" to the outline.
+  Append "/Last " then the pdf state's outline entries' last's pdf object's number then " 0 R" to the outline.
+  Append "/Count " then the pdf state's outline entries' count to the outline.
+  Append ">>" to the outline.
+  Append "endobj" to the outline.
+  
+  
+To end printing an pdf (append trailer):
+  Append "trailer" then the crlf string to the pdf.
+  Append "<<" then the crlf string to the pdf.
+  Put the pdf state's objects' count plus 1 into an count.
+  Append "/Size " then the count then the crlf string to the pdf.
+  Append "/Root " then the pdf state's root's number then " 0 R" then the crlf string to the pdf.
+  Append ">>" then the crlf string to the pdf.
+  Append the crlf string to the pdf.
+  
+  
+To end printing an pdf (append xref table):
+  Put the pdf's length into the pdf state's xref offset.
+  Append "xref" then the crlf string to the pdf.
+  Put the pdf state's objects' count plus 1 into an count.
+  Append "0 " then the count then the crlf string to the pdf.
+  Append "0000000000 65535 f" then the crlf string to the pdf.
+  Loop.
+  Get an pdf object from the pdf state's objects.
+  If the pdf object is nil, break.
+  Zero fill the pdf object's offset given 10 and append it to the pdf.
+  Append " 00000 n" then the crlf string to the pdf.
+  Repeat.
+  Append the crlf string to the pdf.
+  
+  
+To end printing an pdf (finish the parent):
+  Put the pdf state's parent into an parent pdf object.
+  Append "/Kids [" to the parent without advancing.
+  Loop.
+    Get an pdf object from the pdf state's objects.
+    If the pdf object is nil, break.
+    If the pdf object's kind is not "page", repeat.
+    If an flag is set, append " " to the parent without advancing.
+    Append the pdf object's number then " 0 R" to the parent without advancing.
+    Set the flag.
+    Add 1 to an count.
+    If the count is evenly divisible by 20, append the crlf string then "  " to the parent without advancing.
+  Repeat.
+  Append "]" to the parent.
+  Append "/Count " then the count to the parent.
+  Append ">>" to the parent.
+  Append "endobj" to the parent.
+  
+  
+To end printing an pdf (finish the root):
+  Put the pdf state's root into an root pdf object.
+  Append "/Pages " then the pdf state's parent's number then " 0 R" to the root.
+  Find an pdf object given "page".
+  Append "/OpenAction [" then the pdf object's number then " 0 R /XYZ null null 1]" to the root.
+  Append "/PageMode /UseNone" to the root.
+  If the pdf state's outline is not nil, append "/Outlines " then the pdf state's outline's number then " 0 R" to the root.
+  Append ">>" to the root.
+  Append "endobj" to the root.
+  
+  
+To end printing an pdf (offset and append objects):
+    Get an pdf object from the pdf state's objects.
+    If the pdf object is nil, break.
+    Put the pdf's length into the pdf object's offset.
+    Append the pdf object's data to the pdf.
+    Append the crlf string to the pdf.
+  Repeat.
+  
+  
+To end printing an pdf:
+  End printing the pdf (finish the parent).
+  End printing the pdf (append the outline).
+  End printing the pdf (finish the root).
+  Clear the pdf.
+  End printing the pdf (append header).
+  End printing the pdf (offset and append objects).
+  End printing the pdf (append xref table).
+  End printing the pdf (append trailer).
+  End printing the pdf (append footer).
+  Destroy the pdf state's font index.
+  Destroy the pdf state's outline entries.
+  Destroy the pdf state's objects.
+  Clear the pdf state's document flag.
+  
+  
+To end printing:
+  If the pdf state's document flag is set, end printing (pdf style); exit.
+  Call "gdi32.dll" "EndDoc" with the printer canvas.
+  Finalize the printer canvas.
+  
+  

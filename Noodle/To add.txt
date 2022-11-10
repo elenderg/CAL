@@ -1,0 +1,103 @@
+To add an byte to an number:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the byte
+  Intel $0FB600. \ movzx eax,[eax]
+  Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the number
+  Intel $0103. \ add [ebx],eax
+  
+  
+To add an byte to another byte:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the byte
+  Intel $0FB600. \ movzx eax,[eax]
+  Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the other byte
+  Intel $0003. \ add [ebx],al
+  
+  
+To add an fraction to another fraction:
+  Privatize the fraction.
+  Normalize the fraction and the other fraction.
+  Add the fraction's numerator to the other fraction's numerator.
+  Reduce the other fraction.
+  
+  
+To add an line to an figure:
+  If the figure is nil, create the figure; append the figure to the figures.
+  Add the line's start to the figure.
+  Add the line's end to the figure.
+  
+  
+To add an name to some choices:
+  Allocate memory for an choice.
+  Put the name into the choice's name.
+  Put the choice at the end of the choices.
+  
+  
+To add an number and another number to an pair:
+  Add the number to the pair's x.
+  Add the other number to the pair's y.
+  
+  
+To add an number to an byte:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the number
+  Intel $8B00. \ mov eax,[eax]
+  Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the byte
+  Intel $0FB60B. \ movzx ecx,[ebx]
+  Intel $03C8. \ add ecx,eax
+  Intel $880B. \ mov [ebx],cl
+  
+  
+To add an number to an fraction:
+  Add the number / 1 to the fraction.
+  
+  
+To add an number to an pair:
+  Add the number to the pair's x.
+  Add the number to the pair's y.
+  
+  
+To add an number to an pointer;
+To add an number to another number:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the number
+  Intel $8B00. \ mov eax,[eax]
+  Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the other number
+  Intel $0103. \ add [ebx],eax
+  
+  
+To add an number to another number and an third number to an fourth number:
+  Add the number to the other number.
+  Add the third number to the fourth number.
+  
+  
+To add an pair to another pair:
+  Add the pair's x to the other pair's x.
+  Add the pair's y to the other pair's y.
+  
+  
+To add an pdf object given an kind:
+  Create the pdf object given the kind.
+  Append the pdf object to the pdf state's objects.
+  Add 1 to the pdf state's object number.
+  Put the pdf state's object number into the pdf object's number.
+  
+  
+To add an quora to an terminal:
+  Create the quora.
+  Append the quora to the terminal's quoras.
+  If the terminal is not full, exit.
+  Put the terminal's quoras' first into an doomed quora.
+  Remove the doomed quora from the terminal's quoras.
+  Destroy the doomed quora.
+  
+  
+To add an spot to an figure: append the spot to the figure.
+  
+  
+To add an string to some string things:
+  Create an string thing given the string.
+  Append the string thing to the string things.
+  
+  
+To add some horizontal twips and some vertical twips to the current spot:
+  Add the horizontal twips to the context's spot's x.
+  Add the vertical twips to the context's spot's y.
+  
+  

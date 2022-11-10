@@ -1,6 +1,0 @@
-To add an source file to some source files given an path:
-  Create the source file.
-  Append the source file to the source files.
-  Put the path into the source file's path.
-  
-  

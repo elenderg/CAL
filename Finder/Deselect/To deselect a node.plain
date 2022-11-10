@@ -1,5 +1,0 @@
-To deselect an node:
-  If the node is nil, exit.
-  Clear the node's selected flag.
-  
-  

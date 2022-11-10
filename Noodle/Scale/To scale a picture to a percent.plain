@@ -1,6 +1,0 @@
-To scale an picture to an percent:
-  If the picture is nil, exit.
-  Put the percent / 100 into an fraction.
-  Scale the picture given the fraction.
-  
-  

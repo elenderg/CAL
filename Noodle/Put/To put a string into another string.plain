@@ -1,9 +1,0 @@
-To put an string into another string:
-  Put the string's length into an saved length.
-  Assign an pointer given the saved length.
-  Copy bytes from the string's first to the pointer for the saved length.
-  Unassign the other string's first.
-  Put the pointer into the other string's first.
-  Put the other string's first plus the saved length minus 1 into the other string's last.
-  
-  

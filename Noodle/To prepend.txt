@@ -1,0 +1,36 @@
+To prepend an byte to an string:
+  Put the string's length into an saved length.
+  Reassign the string's first given the string's length plus 1.
+  Copy bytes from the string's first to the string's first plus 1 for the saved length.
+  Put the string's first plus the saved length into the string's last.
+  Put the byte into the string's first's target.
+  
+  
+To prepend an string to another string:
+  Put the other string's length plus the string's length into an combined length.
+  Reassign an pointer given the combined length.
+  Put the pointer into an substring's first.
+  Copy bytes from the string's first to the substring's first for the string's length.
+  Add the string's length to the substring's first.
+  Copy bytes from the other string's first to the substring's first for the other string's length.
+  Unassign the other string's first. \ to avoid extra allocates and copies
+  Put the pointer into the other string's first.
+  Put the other string's first plus the combined length minus 1 into the other string's last.
+  
+  
+To prepend an thing to some things:
+  If the thing is nil, exit.
+  Put the things' first into the thing's next.
+  If the things is not empty, put the thing into the things' first's previous.
+  If the things are empty, put the thing into the things' last.
+  Put the thing into the things' first.
+  
+  
+To prepend some things to some other things:
+    Get an thing from the things (backwards).
+    If the thing is nil, exit.
+    Remove the thing from the things.
+    Prepend the thing to the other things.
+  Repeat.
+  
+  

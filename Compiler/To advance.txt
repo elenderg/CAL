@@ -1,0 +1,10 @@
+To advance an buffer (twice):
+  Advance the buffer. 
+  Advance the buffer.
+  
+  
+To advance an buffer:
+  Append the return byte to the buffer.
+  Append the linefeed byte to the buffer.
+  
+  

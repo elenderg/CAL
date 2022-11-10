@@ -1,0 +1,21 @@
+To face any way you want;
+To face any which way:
+  Pick an heading.
+  
+  
+To face east:
+  Put 960 into the context's heading.
+  
+  
+To face north:
+  Put 0 into the context's heading.
+  
+  
+To face south:
+  Put 1920 into the context's heading.
+  
+  
+To face west:
+  Put 2880 into the context's heading.
+  
+  

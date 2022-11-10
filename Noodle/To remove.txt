@@ -1,0 +1,173 @@
+To remove an thing from some things:
+  If the thing is nil, exit.
+  If the thing is the things' first, put the thing's next into the things' first.
+  If the thing is the things' last, put the thing's previous into the things' last.
+  If the thing's next is not nil, put the thing's previous into the thing's next's previous.
+  If the thing's previous is not nil, put the thing's next into the thing's previous' next.
+  Void the thing's next.
+  Void the thing's previous.
+  
+  
+To remove any selected bytes in an text:
+  If the text is nil, exit.
+  If nothing is selected in the text, exit.
+  Put the text's selection into an selection.
+  Normalize the selection.
+  Get an row given the selection's anchor row# and the text.
+  Slap an substring on the row's string.
+  Put the substring's first plus the selection's anchor column# minus 2 into the substring's last.
+  Get another row given the selection's caret row# and the text.
+  Slap another substring on the other row's string.
+  Put the other substring's first plus the selection's caret column# minus 1 into the other substring's first.
+  Put the substring then the other substring into the row's string.
+  Remove the rows of the text between the row's next and the other row.
+  Put the selection's anchor into the text's caret.
+  Deselect the text.
+  
+  
+To remove any trailing backslash from an string:
+  If the string is blank, exit.
+  If the string's last's target is not the backslash byte, exit.
+  Remove the last byte from the string.
+  
+  
+To remove any trailing linefeed byte from an string:
+  If the string is blank, exit.
+  If the string's last's target is not the linefeed byte, exit.
+  Remove the last byte from the string.
+  
+  
+To remove any trailing return byte from an string:
+  If the string is blank, exit.
+  If the string's last's target is not the return byte, exit.
+  Remove the last byte from the string.
+  
+  
+To remove bytes from an string given an substring:
+  If the string is blank, exit.
+  If the substring is blank, exit.
+  Put the string's last minus the substring's last into an length.
+  Put the substring's last plus 1 into an pointer.
+  Copy bytes from the pointer to the substring's first for the length.
+  Put the string's length minus the substring's length into an new length.
+  Reassign the string's first given the new length.
+  Put the string's first plus the new length minus 1 into the string's last.
+  
+  
+To remove bytes from an text (backspace over an return):
+  If the text is nil, exit.
+  If the text's caret row# is 1, exit.
+  Get an row given the text's caret row# minus 1 and the text.
+  Put the row's string's length and the text's caret row# minus 1 into the text's caret.
+  Remove any selected bytes in the text.
+  
+  
+To remove bytes from an text (backspace with jump):
+  If the text is nil, exit.
+  If something is selected in the text, remove any selected bytes in the text; exit.
+  If the text's caret column# is 1, remove bytes from the text (backspace over an return); exit.
+  Jump the caret left in the text.
+  Remove any selected bytes in the text.
+  
+  
+To remove bytes from an text (backspace):
+  If the text is nil, exit.
+  If something is selected in the text, remove any selected bytes in the text; exit.
+  If the text's caret column# is 1, remove bytes from the text (backspace over an return); exit.
+  Move the caret left in the text.
+  Remove any selected bytes in the text.
+  
+  
+To remove bytes from an text (forward delete an return):
+  If the text is nil, exit.
+  If the text's caret row# is the text's row count, exit.
+  Put 1 and the text's caret row# plus 1 into the text's caret.
+  Remove any selected bytes in the text.
+  
+  
+To remove bytes from an text (forward delete with jump):
+  If the text is nil, exit.
+  If something is selected in the text, remove any selected bytes in the text; exit.
+  Get an row given the text's caret row# and the text.
+  If the text's caret column# is the row's string's length, remove bytes from the text (forward delete an return); exit.
+  Jump the caret right in the text.
+  Remove any selected bytes in the text.
+  
+  
+To remove bytes from an text (forward delete):
+  If the text is nil, exit.
+  If something is selected in the text, remove any selected bytes in the text; exit.
+  Get an row given the text's caret row# and the text.
+  If the text's caret column# is the row's string's length, remove bytes from the text (forward delete an return); exit.
+  Move the caret right in the text.
+  Remove any selected bytes in the text.
+  
+  
+To remove every byte in an text:
+  If the text is nil, exit.
+  Put "" into the text.
+  
+  
+To remove leading bytes from an string given an count:
+  Privatize the count.
+  If the count is greater than the string's length, clear the string; exit.
+  Slap an substring on the first byte of the string.
+  Put the substring's first plus the count minus 1 into the substring's last.
+  Remove bytes from the string given the substring.
+  
+  
+To remove leading noise from an string;
+To remove any leading noise from an string:
+    If the string is blank, exit.
+    If the string's first's target is not noise, exit.
+    Remove the first byte from the string.
+  Repeat.
+  
+  
+To remove the first byte from an string:
+  Slap an substring on the first byte of the string.
+  Remove bytes from the string given the substring.
+  
+  
+To remove the last byte from an string:
+  Slap an substring on the last byte of the string.
+  Remove bytes from the string given the substring.
+  
+  
+To remove the last two bytes from an string:
+  Remove trailing bytes from the string given 2.
+  
+  
+To remove the rows of an text between an row and another row:
+  If the text is nil, exit.
+  If the row is nil, exit.
+  If the other row is nil, exit.
+  If the row's row# is greater than the other row's row#, exit.
+  Privatize the row.
+  Put the other row's next into an stop row.
+  Loop.
+    If the row is the stop row, break.
+    Put the row's next into an next row.
+    Remove the row from the text's rows.
+    Destroy the row.
+    Put the next row into the row.
+  Repeat.
+  Renumber the text's rows.
+  
+  
+To remove trailing bytes from an string given an count:
+  Privatize the count.
+  If the count is greater than the string's length, clear the string; exit.
+  Slap an substring on the last byte of the string.
+  Put the substring's last minus the count plus 1 into the substring's first.
+  Remove bytes from the string given the substring.
+  
+  
+To remove trailing noise from an string;
+To remove any trailing noise from an string:
+    If the string is blank, exit.
+    If the string's last's target is not noise, exit.
+    Remove the last byte from the string.
+  Repeat.
+  
+  

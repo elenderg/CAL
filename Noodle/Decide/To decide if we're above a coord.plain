@@ -1,5 +1,0 @@
-To decide if we're above an coord:
-  If the context's y is less than the coord, say yes.
-  Say no.
-  
-  

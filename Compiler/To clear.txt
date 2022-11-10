@@ -1,0 +1,9 @@
+To clear an field term:
+  Fill bytes with the null byte starting at the field term's whereabouts for the field term's magnitude.
+  
+  
+To clear an term:
+  Void the term's variable.
+  Clear the term's phrase.
+  
+  

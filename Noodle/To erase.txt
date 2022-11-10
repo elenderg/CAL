@@ -1,0 +1,16 @@
+To erase the insides of an box;
+To erase inside an box;
+To clear inside an box:
+  Draw the box with the clear color and the black color.
+  
+  
+To erase the screen;
+To blank out the screen;
+To wipe off the screen;
+To clear the screen:
+  Unmask everything.
+  Draw the screen's box with the black color and the black color.
+  Refresh the screen.
+  Put the screen's box into the context's box.
+  
+  

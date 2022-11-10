@@ -1,0 +1,105 @@
+To output an color without advancing:
+  Convert the color to an rgb.
+  Put the rgb's red byte / 255 into an fraction.
+  Convert the fraction to an red string given 4.
+  Put the rgb's green byte / 255 into the fraction.
+  Convert the fraction to an green string given 4.
+  Put the rgb's blue byte / 255 into the fraction.
+  Convert the fraction to an blue string given 4.
+  Output the red string then " " then the green string then " " then the blue string without advancing.
+  
+  
+To output an number without advancing:
+  Convert the number to an string.
+  Output the string without advancing.
+  Output " " without advancing.
+  
+  
+To output an spot without advancing:
+  Output the spot's x without advancing.
+  Output the pdf state's current height minus the spot's y without advancing.
+  
+  
+To output an string without advancing:
+  Append the string to the pdf state's current contents without advancing.
+  
+  
+To output an string:
+  Append the string to the pdf state's current contents.
+  
+  
+To output lineto given an spot:
+  Output the spot without advancing.
+  Output "l".
+  
+  
+To output lineto given an x number and an y number:
+  Put the x and the y into an spot.
+  Output lineto given the spot.
+  
+  
+To output moveto given an spot:
+  Output the spot without advancing.
+  Output "m".
+  
+  
+To output moveto given an x number and an y number:
+  Put the x and the y into an spot.
+  Output moveto given the spot.
+  
+  
+To output setcolor given an border color and an fill color:
+  If the fill is not clear, output the pdf fill given the fill.
+  If the border is not clear, output the pdf border given the border.
+  
+  
+To output stroke and fill given an border color and an fill color:
+  Put "B" into an string. \ stroke and fill
+  If the fill is clear, put "S" into the string. \ stroke
+  If the border is clear, put "f" into the string. \ fill
+  Output the string.
+  
+  
+To output the arc of an ellipse given an string:
+  Put 2761/10000 into an fraction. \ 2/3*(sqrt(2)-1)
+  Put the ellipse's center into an center spot.
+  Put the ellipse's x-extent divided by 2 into an half width.
+  Put the ellipse's y-extent divided by 2 into an half height.
+  Put the ellipse's x-extent times the fraction into an x offset.
+  Put the ellipse's y-extent times the fraction into an y offset.
+  \ control point 1
+  If the string is "left-top", put the ellipse's left and the center's y minus the y offset into an first control spot. 
+  If the string is "right-top", put the center's x plus the x offset and the ellipse's top into the first control spot.
+  If the string is "right-bottom", put the ellipse's right and the center's y plus the y offset into the first control spot.
+  If the string is "left-bottom", put the center's x minus the x offset and the ellipse's bottom into the first control spot.
+  \ control point 2
+  If the string is "left-top", put the center's x minus the x offset and the ellipse's top into an second control spot.
+  If the string is "right-top", put the ellipse's right and the center's y minus the y offset into the second control spot.
+  If the string is "right-bottom", put the center's x plus the x offset and the ellipse's bottom into the second control spot.
+  If the string is "left-bottom", put the ellipse's left and the center's y plus the y offset into the second control spot.
+  \ ending point
+  If the string is "left-top", put the ellipse's left plus the half width and the ellipse's top into an ending spot.
+  If the string is "right-top", put the ellipse's right and the ellipse's top plus the half height into the ending spot.
+  If the string is "right-bottom", put the ellipse's right minus the half width and the ellipse's bottom into the ending spot.
+  If the string is "left-bottom", put the ellipse's left and the ellipse's bottom minus the half height into the ending spot.
+  \ spit it out
+  Output the first control spot without advancing.
+  Output the second control spot without advancing.
+  Output the ending spot without advancing.
+  Output "c".
+  
+  
+To output the pdf border given an color:
+  If the color is the pdf state's current border, exit.
+  Output the color without advancing.
+  Output " RG".
+  Put the color into the pdf state's current border.
+  
+  
+To output the pdf fill given an color:
+  If the color is the pdf state's current fill, exit.
+  Output the color without advancing.
+  Output " rg".
+  Put the color into the pdf state's current fill.
+  
+  

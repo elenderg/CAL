@@ -1,6 +1,0 @@
-To append zeros to an string until its length is an number:
-    If the string's length is greater than or equal to the number, exit.
-    Append "0" to the string.
-  Repeat.
-  
-  

@@ -1,5 +1,0 @@
-To draw an shape on an page (text):
-  If the shape is the page's edit shape, draw the shape on the page (text - editing); exit.
-  Draw the shape on the page (text - not editing).
-  
-  

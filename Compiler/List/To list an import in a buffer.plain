@@ -1,9 +1,0 @@
-To list an import in an buffer:
-  If the import is nil, exit.
-  Append "/import" to the buffer (with separator).
-  Append the import's name to the buffer (with separator).
-  Advance the buffer.
-  List the import's entries in the buffer.
-  Advance the buffer.
-  
-  

@@ -1,7 +1,0 @@
-To blurt some routines into an buffer:
-    Get an routine from the routines.
-    If the routine is nil, exit.
-    Blurt the routine into the buffer.
-  Repeat.
-  
-  

@@ -1,0 +1,47 @@
+To reverse an color:
+  If the color is the black color, put the white color into the color; exit.
+  If the color is the white color, put the black color into the color; exit.
+  Put 1000 minus the color's lightness into the color's lightness.
+  \Put 1000 minus the color's saturation into the color's saturation.
+  Add 1800 to the color's hue. Normalize the color's hue.
+  
+  
+To reverse an flag:
+  If the flag is yes, put no into the flag; exit.
+  Put yes into the flag.
+  
+  
+To reverse an number;
+To invert an number:
+  Multiply the number by -1.
+  
+  
+To reverse an string: \ could be more efficient
+  Privatize the string.
+  Clear the original string.
+  Loop.
+    If the string is blank, break.
+    Get an character from the string (backwards).
+    Append the character to the original string.
+  Repeat.
+  
+  
+To reverse any selected rows of an text:
+  If the text is nil, exit.
+  Split the rows of the text into some rows and some selected rows and some other rows.
+  Reverse the selected rows.
+  Append the rows to the text's rows.
+  Append the selected rows to the text's rows.
+  Append the other rows to the text's rows.
+  Renumber the text's rows.
+  
+  
+To reverse some things:
+  Swap the things with some other things.
+  Loop.
+    Put the other things' last into an thing.
+    If the thing is nil, exit.
+    Move the thing from the other things to the things.
+  Repeat.
+  
+  

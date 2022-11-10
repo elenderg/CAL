@@ -1,0 +1,24 @@
+To bump an byte limiting it to another byte and an third byte:
+  Add 1 to the byte.
+  If the byte is greater than the third byte, put the other byte into the byte.
+  
+  
+To bump an number: add 1 to the number.
+  
+  
+To bump an number limiting it to another number and an third number:
+  Add 1 to the number.
+  If the number is greater than the third number, put the other number into the number.
+  
+  
+To bump an rider by an number:
+  Add the number to the rider's token's last.
+  Add the number to the rider's source's first.  
+  
+  
+To bump an rider:
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the rider
+  Intel $FF8314000000. \ inc [ebx+20] \ the rider's token's last
+  Intel $FF8308000000. \ inc [ebx+8] \ the rider's source's first
+  
+  

@@ -1,7 +1,0 @@
-To create an pdf outline entry given an title string and an page height and an destination number:
-  Allocate memory for the pdf outline entry.
-  Put the title string into the pdf outline entry's title.
-  Put the page height into the pdf outline entry's page height.
-  Put the destination into the pdf outline entry's destination.
-  
-  

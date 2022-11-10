@@ -1,0 +1,681 @@
+To move an box close to the left side of another box;
+To move an box close to the left of another box:
+  Move the box to the left of the other box.
+  Pick an length between 0 and the box's width times 3/4.
+  Move the box right the length.
+  
+  
+To move an box down some twips:
+  Move the box given 0 and the twips.
+  
+  
+To move an box given an pair:
+  Move the box given the pair's x and the pair's y.
+  
+  
+To move an box given an ratio pair and an spot;
+To move an box given an fraction pair and an spot:
+  Get an difference between the box's left-top and the spot.
+  Put the difference into another difference.
+  Scale the other difference given the fraction pair.
+  Subtract the difference from the other difference.
+  Move the box given the other difference.
+  
+  
+To move an box given some x twips and some y twips:
+  Add the x twips to the box's left.
+  Add the y twips to the box's top.
+  Add the x twips to the box's right.
+  Add the y twips to the box's bottom.
+  
+  
+To move an box left some twips:
+  Move the box given - the twips and 0.
+  
+  
+To move an box left to an coord:
+  Move the box left the box's left minus the coord.
+  
+  
+To move an box right some twips:
+  Move the box given the twips and 0.
+  
+  
+To move an box to an spot:
+  Get an difference between the spot and the box's left-top.
+  Move the box given the difference.
+  
+  
+To move an box to the bottom of another box:
+  Move the box down the other box's bottom minus the box's bottom.
+  
+  
+To move an box to the left side of another box;
+To move an box to the left of another box:
+  Move the box left the box's left minus the other box's left.
+  
+  
+To move an box to the right side of another box;
+To move an box to the right of another box:
+  Move the box right the other box's right minus the box's right.
+  
+  
+To move an box to the top left corner of another box:
+  Move the box to the other box's left-top.
+  
+  
+To move an box to the top of another box:
+  Move the box up the box's top minus the other box's top.
+  
+  
+To move an box up some twips:
+  Move the box given 0 and - the twips.
+  
+  
+To move an finger over an number:
+  If the finger is nil, exit.
+  Add 1 to the finger.
+  
+  
+To move an line down some twips:
+  Move the line given 0 and the twips.
+  
+  
+To move an line given an pair:
+  Move the line given the pair's x and the pair's y.
+  
+  
+To move an line given some x twips and some y twips:
+  Add the x twips to the line's start's x.
+  Add the y twips to the line's start's y.
+  Add the x twips to the line's end's x.
+  Add the y twips to the line's end's y.
+  
+  
+To move an line left some twips:
+  Move the line given - the twips and 0.
+  
+  
+To move an line some twips to the right;
+To move an line right some twips:
+  Move the line given the twips and 0.
+  
+  
+To move an line to an spot:
+  Get an difference between the spot and the line's start.
+  Move the line given the difference.
+  
+  
+To move an line up some twips:
+  Move the line given 0 and - the twips.
+  
+  
+To move an picture down some twips:
+  Move the picture given 0 and the twips.
+  
+  
+To move an picture given an pair:
+  Move the picture given the pair's x and the pair's y.
+  
+  
+To move an picture given some x twips and some y twips:
+  If the picture is nil, exit.
+  Move the picture's box given the x twips and the y twips.
+  Move the picture's uncropped box given the x twips and the y twips.
+  
+  
+To move an picture left some twips:
+  Move the picture given - the twips and 0.
+  
+  
+To move an picture right some twips:
+  Move the picture given the twips and 0.
+  
+  
+To move an picture to an spot:
+  If the picture is nil, exit.
+  Get an difference between the spot and the picture's left-top.
+  Move the picture given the difference.
+  
+  
+To move an picture up some twips:
+  Move the picture given 0 and - the twips.
+  
+  
+To move an polygon down some twips:
+  Move the polygon given 0 and the twips.
+  
+  
+To move an polygon given an pair:
+  Move the polygon given the pair's x and the pair's y.
+  
+  
+To move an polygon given some x twips and some y twips:
+  If the polygon is nil, exit.
+  Loop.
+    Get an vertex from the polygon's vertices.
+    If the vertex is nil, exit.
+    Move the vertex given the x twips and the y twips.
+  Repeat.
+  
+  
+To move an polygon left some twips and up down other twips:
+  Move the polygon left the twips.
+  Move the polygon down the other twips.
+  
+  
+To move an polygon left some twips and up some other twips:
+  Move the polygon left the twips.
+  Move the polygon up the other twips.
+  
+  
+To move an polygon left some twips:
+  Move the polygon given - the twips and 0.
+  
+  
+To move an polygon right some twips and up down other twips:
+  Move the polygon right the twips.
+  Move the polygon down the other twips.
+  
+  
+To move an polygon right some twips and up some other twips:
+  Move the polygon right the twips.
+  Move the polygon up the other twips.
+  
+  
+To move an polygon right some twips:
+  Move the polygon given the twips and 0.
+  
+  
+To move an polygon to an spot:
+  If the polygon is nil, exit.
+  Get an difference between the spot and the polygon's box's left-top.
+  Move the polygon given the difference.
+  
+  
+To move an polygon up some twips:
+  Move the polygon given 0 and - the twips.
+  
+  
+To move an rider (index lexicon rules):
+  Skip any leading noise in the rider's source.
+  Position the rider's token on the rider's source.
+  Loop.
+    If the rider's source is blank, exit.
+    Bump the rider.
+    If the rider's source's first's target is noise, exit.
+  Repeat.
+  
+  
+To move an rider (quoted string rules):
+    Bump the rider.
+    If the rider's source is blank, exit.
+    If the rider's source's first's target is not the double-quote byte, repeat.
+    If the rider's source's first is the rider's source's last, bump the rider; exit.
+    Bump the rider.
+    If the rider's source's first's target is not the double-quote byte, exit.
+  Repeat.
+  
+  
+To move an rider (spell checking rules):
+  Skip any non-alphanumeric bytes in the rider's source.
+  Position the rider's token on the rider's source.
+  Loop.
+    If the rider's source is blank, exit.
+    Bump the rider.
+    If the rider's source is on any contraction, bump the rider; repeat.
+    If the rider's source's first's target is not alphanumeric, exit.
+  Repeat.
+  
+  
+To move an rider (text file rules):
+  Position the rider's token on the rider's source.
+  Loop.
+    If the rider's source is blank, exit.
+    If the rider's source's first's target is the return byte, bump the rider; break.
+    If the rider's source's first's target is the linefeed byte, bump the rider; exit. \ *dahn new to handle lines terminated by just linefeed
+    Bump the rider.
+  Repeat.
+  If the rider's source is blank, exit.
+  If the rider's source's first's target is the linefeed byte, add 1 to the rider's source's first.
+  
+  
+To move an rider (word wrapping rules):
+  Position the rider's token on the rider's source.
+  If the rider's source is blank, exit.
+  If the rider's source's first's target is the return byte, bump the rider; exit.
+  Loop.
+    If the rider's source is blank, exit.
+    If the rider's source's first's target is the return byte, exit.
+    If the rider's token is blank, bump the rider; repeat.
+    If the rider's source's first's target is like the rider's token's last's target, bump the rider; repeat.
+    
+  
+To move an rider given an box (word wrapping rules):
+  Skip any leading linefeed byte in the rider's source.
+  Position the rider's token on the rider's source.
+  If the rider's source is blank, exit.
+  Slap another rider on the rider.
+  Loop.
+      If the rider's source is blank, exit.
+      Move the other rider (word wrapping rules).
+      If the other rider's token is blank, exit.
+      If the other rider's token's first's target is the return byte, bump the rider; exit.
+      If the other rider's token's first's target is whitespace, bump the rider by the other rider's token's length; repeat.
+      If the rider's token is blank, bump the rider by the other rider's token's length; repeat.
+      If the rider's token then the other rider's token is wider than the box, exit.
+      Bump the rider by the other rider's token's length.
+  Repeat.
+  
+  
+To move an rider given an separator byte:
+  Position the rider's token on the rider's source.
+  Loop.
+    If the rider's source is blank, exit.
+    If the rider's source's first's target is the separator byte, add 1 to the rider's source's first; exit.
+    Bump the rider.
+  Repeat.
+  
+  
+To move an spot about some twips in any direction:
+  Pick another spot within the twips of the spot.
+  Put the other spot into the spot.
+  
+  
+To move an spot given an pair:
+  Move the spot given the pair's x and the pair's y.
+  
+  
+To move an spot given some x twips and some y twips:
+  Add the x twips to the spot's x.
+  Add the y twips to the spot's y.
+  
+  
+To move an spot some twips down;
+To move an spot down some twips:
+  Move the spot given 0 and the twips.
+  
+  
+To move an spot some twips right;
+To move an spot some twips to the right;
+To move an spot right some twips:
+  Move the spot given the twips and 0.
+  
+  
+To move an spot some twips to the left;
+To move an spot some twips left;
+To move an spot left some twips:
+  Move the spot given - the twips and 0.
+  
+  
+To move an spot some twips to the right and some other twips down;
+To move an spot some twips right and some other twips down:
+  Add the twips to the spot's x.
+  Add the other twips to the spot's y.
+  
+  
+To move an spot some twips up;
+To move an spot up some twips:
+  Move the spot given 0 and - the twips.
+  
+  
+To move an spot to another spot:
+  Put the other spot into the spot.
+  
+  
+To move an substring given an number:
+  Add the number to the substring's first.
+  Add the number to the substring's last.
+  
+  
+To move an text down some twips:
+  Move the text given 0 and the twips.
+  
+  
+To move an text given an pair:
+  Move the text given the pair's x and the pair's y.
+  
+  
+To move an text given some x twips and some y twips:
+  If the text is nil, exit.
+  Move the text's box given the x twips and the y twips.
+  
+  
+To move an text left some twips:
+  Move the text given - the twips and 0.
+  
+  
+To move an text right some twips:
+  Move the text given the twips and 0.
+  
+  
+To move an text to an spot:
+  If the text is nil, exit.
+  Get an difference between the spot and the text's left-top.
+  Move the text given the difference.
+  
+  
+To move an text up some twips:
+  Move the text given 0 and - the twips.
+  
+  
+To move an thing from some things to some other things:
+  If the thing is nil, exit.
+  Privatize the thing.
+  Remove the thing from the things.
+  Append the thing to the other things.
+  
+  
+To move an vertex down some twips:
+  Move the vertex given 0 and the twips.
+  
+  
+To move an vertex given an pair:
+  Move the vertex given the pair's x and the pair's y.
+  
+  
+To move an vertex given some x twips and some y twips:
+  If the vertex is nil, exit.
+  Add the x twips to the vertex's x.
+  Add the y twips to the vertex's y.
+  
+  
+To move an vertex left some twips:
+  Move the vertex given - the twips and 0.
+  
+  
+To move an vertex right some twips:
+  Move the vertex given the twips and 0.
+  
+  
+To move an vertex to an spot:
+  If the vertex is nil, exit.
+  Put the spot into the vertex's spot.
+  
+  
+To move an vertex up some twips:
+  Move the vertex given 0 and - the twips.
+  
+  
+To move an window left:
+  Call "user32.dll" "GetWindowRect" with the main window and an box's whereabouts.
+  Subtract the screen's pixel width from the box's left.
+  Call "user32.dll" "MoveWindow" with the window and the box's left and the box's top and the screen's pixel width and the screen's pixel height and 1.
+  
+  
+To move an window right:
+  Call "user32.dll" "GetWindowRect" with the main window and an box's whereabouts.
+  Add the screen's pixel width to the box's left.
+  Call "user32.dll" "MoveWindow" with the window and the box's left and the box's top and the screen's pixel width and the screen's pixel height and 1.
+  
+  
+To move an ellipse down some twips:
+  Move the ellipse given 0 and the twips.
+  
+  
+To move an ellipse given an pair:
+  Move the ellipse given the pair's x and the pair's y.
+  
+  
+To move an ellipse given some x twips and some y twips:
+  Move the ellipse's box given the x twips and the y twips.
+  
+  
+To move an ellipse left some twips:
+  Move the ellipse given - the twips and 0.
+  
+  
+To move an ellipse right some twips:
+  Move the ellipse given the twips and 0.
+  
+  
+To move an ellipse to an spot:
+  Get an difference between the spot and the ellipse's left-top.
+  Move the ellipse given the difference.
+  
+  
+To move an ellipse up some twips:
+  Move the ellipse given 0 and - the twips.
+  
+  
+To move back some twips:
+  Turn around.
+  Move the twips.
+  Turn around.
+  
+  
+To move some squares diagonally;
+To move some squares slantways:
+  Move the square size times the squares times the squirt o' two divided by 1 square. \ squares are scaled up for precision hence the division at the end
+  
+  
+To move some squares:
+  Move the square size times the squares divided by 1 square. \ squares are scaled up for precision hence the division at the end
+  
+  
+To move some things to some other things:
+  Put the things' first into the other things' first.
+  Put the things' last into the other things' last.
+  Clear the things.
+  
+  
+To move some twips down;
+To move down some twips:
+  Add the twips to the context's y.
+  
+  
+To move some twips to the left;
+To move some twips left;
+To move left some twips:
+  Subtract the twips from the context's x.
+  
+  
+To move some twips to the right;
+To move some twips right;
+To move right some twips: 
+  Add the twips to the context's x.
+  
+  
+To move some twips up;
+To move up some twips: 
+  Subtract the twips from the context's y.
+  
+  
+To move some twips:
+  \Wait for the delay. ***
+  Put the context's spot into an line's start.
+  Put the context's spot into the line's end.
+  Get an rise and an run given the context's heading.
+  Add the run times the twips divided by 10000 to the line's end's x.
+  Add the rise times the twips divided by 10000 to the line's end's y.
+  Put the line's end into the context's spot.
+  
+  
+To move the anchor left to any non-alphanumeric byte in an text:
+  If the text is nil, exit.
+  Get an row given the text's anchor row# and the text.
+  Loop.
+    If the text's anchor column# is 1, exit.
+    Put the row's string's first plus the text's anchor column# minus 2 into an byte pointer.
+    If the byte pointer's target is not alphanumeric, exit.
+    Subtract 1 from the text's anchor column#.
+  Repeat.
+  
+  
+To move the caret down in an text:
+  If the text is nil, exit.
+  Add 1 to the text's caret row#.
+  Limit the caret in the text.
+  
+  
+To move the caret down one page in an text:
+  If the text is nil, exit.
+  Add the text's rows/box to the text's caret row#.
+  Subtract 1 from the text's caret row#.
+  Limit the caret in the text.
+  
+  
+To move the caret left in an text:
+  If the text is nil, exit.
+  Subtract 1 from the text's caret column#.
+  Limit the caret in the text.
+  
+  
+To move the caret left to any non-alphanumeric byte in an text:
+  If the text is nil, exit.
+  Get an row given the text's caret row# and the text.
+  Loop.
+    If the text's caret column# is 1, exit.
+    Put the row's string's first plus the text's caret column# minus 2 into an byte pointer.
+    If the byte pointer's target is not alphanumeric, exit.
+    Subtract 1 from the text's caret column#.
+  Repeat.
+  
+  
+To move the caret left to any non-noise byte in an text:
+  If the text is nil, exit.
+  Get an row given the text's caret row# and the text.
+  Loop.
+    If the text's caret column# is 1, exit.
+    Put the row's string's first plus the text's caret column# minus 2 into an byte pointer.
+    If the byte pointer's target is not noise, exit.
+    Subtract 1 from the text's caret column#.
+  Repeat.
+  
+  
+To move the caret left to any non-symbolic byte in an text:
+  If the text is nil, exit.
+  Get an row given the text's caret row# and the text.
+  Loop.
+    If the text's caret column# is 1, exit.
+    Put the row's string's first plus the text's caret column# minus 2 into an byte pointer.
+    If the byte pointer's target is not symbolic, exit.
+    Subtract 1 from the text's caret column#.
+  Repeat.
+  
+  
+To move the caret right in an text:
+  If the text is nil, exit.
+  Add 1 to the text's caret column#.
+  Limit the caret in the text.
+  
+  
+To move the caret right to any non-alphanumeric byte in an text:
+  If the text is nil, exit.
+  Get an row given the text's caret row# and the text.
+  Loop.
+    If the text's caret column# is the row's string's length, exit.
+    Put the row's string's first plus the text's caret column# minus 1 into an byte pointer.
+    If the byte pointer's target is not alphanumeric, exit.
+    Add 1 to the text's caret column#.
+  Repeat.
+  
+  
+To move the caret right to any non-noise byte in an text:
+  If the text is nil, exit.
+  Get an row given the text's caret row# and the text.
+  Loop.
+    If the text's caret column# is the row's string's length, exit.
+    Put the row's string's first plus the text's caret column# minus 1 into an byte pointer.
+    If the byte pointer's target is not noise, exit.
+    Add 1 to the text's caret column#.
+  Repeat.
+  
+  
+To move the caret right to any non-symbolic byte in an text:
+  If the text is nil, exit.
+  Get an row given the text's caret row# and the text.
+  Loop.
+    If the text's caret column# is the row's string's length, exit.
+    Put the row's string's first plus the text's caret column# minus 1 into an byte pointer.
+    If the byte pointer's target is not symbolic, exit.
+    Add 1 to the text's caret column#.
+  Repeat.
+  
+  
+To move the caret to the first byte of an text:
+  If the text is nil, exit.
+  Put 1 and 1 into the text's caret.
+  
+  
+To move the caret to the first byte of the current row of an text:
+  If the text is nil, exit.
+  Put 1 into the text's caret column#.
+  
+  
+To move the caret to the last byte of an text:
+  If the text is nil, exit.
+  Put the text's row count into the text's caret row#.
+  Get an row given the text's caret row# and the text.
+  Put the row's string's length into the text's caret column#.
+  
+  
+To move the caret to the last byte of the current row of an text:
+  If the text is nil, exit.
+  Get an row given the text's caret row# and the text.
+  Put the row's string's length into the text's caret column#.
+  
+  
+To move the caret up in an text:
+  If the text is nil, exit.
+  Subtract 1 from the text's caret row#.
+  Limit the caret in the text.
+  
+  
+To move the caret up one page in an text:
+  If the text is nil, exit.
+  Subtract the text's rows/box from the text's caret row#.
+  Add 1 to the text's caret row#.
+  Limit the caret in the text.
+  
+  
+To move to an spot:
+  Put the spot into the context's spot.
+  
+  
+To move to the left some twips and down some other twips;
+To move left some twips and down some other twips:
+  To move some twips to the left and some other twips down;
+To move some twips left and some other twips down:
+  Move the context's spot left the twips.
+  Move the context's spot down the other twips.
+  
+  
+To move to the left some twips and up some other twips;
+To move left some twips and up some other twips;
+To move some twips to the left and some other twips up;
+To move some twips left and some other twips up:
+  Move the context's spot left the twips.
+  Move the context's spot up the other twips.
+  
+  
+To move to the middle of an box;
+To start in the middle of an box;
+To move to the center of an box;
+To start in the center of an box:
+  Put the box's center into the context's spot.
+  
+  
+To move to the middle;
+To start in the middle;
+To move to the center;
+To start in the center:
+  Put the context's box's center into the context's spot.
+  
+  
+To move to the right some twips and down some other twips;
+To move right some twips and down some other twips;
+To move some twips to the right and some other twips down;
+To move some twips right and some other twips down:
+  Move the context's spot right the twips.
+  Move the context's spot down the other twips.
+  
+  
+To move to the right some twips and up some other twips;
+To move right some twips and up some other twips;
+To move some twips to the right and some other twips up;
+To move some twips right and some other twips up:
+  Move the context's spot right the twips.
+  Move the context's spot up the other twips.
+  
+  

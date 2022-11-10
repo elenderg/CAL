@@ -1,0 +1,19 @@
+To load an source file:
+  If the source file is nil, exit.
+  Load the source file's path into the source file's buffer.
+  If the i/o error is not blank, abort with "Could not load the file named '" then the source file's path then "'."; exit.
+  
+  
+To load some source files:
+  Loop.
+    If the compiler's abort flag is set, exit.
+    Get an item from the compiler's directory.
+    If the item is not found, break.
+    If the item's kind is not "file", repeat.
+    If the item's extension is not blank, repeat.
+    If the item looks reamish, repeat.
+    Add an source file to the source files given the item's path.
+    Load the source file.
+  Repeat.
+  
+  

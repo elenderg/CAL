@@ -1,0 +1,298 @@
+To write an byte to stdout:
+  Call "kernel32.dll" "WriteFile" with the stdout handle and the byte's whereabouts and 1 and an number's whereabouts and nil.
+  
+  
+To write an byte without advancing:
+  Put the byte into an string.
+  Write the string without advancing.
+  
+  
+To write an byte:
+  Put the byte into an string.
+  Write the string.
+  
+  
+To write an flag without advancing:
+  Convert the flag to an string.
+  Write the string without advancing.
+  
+  
+To write an flag:
+  Convert the flag to an string.
+  Write the string.
+  
+  
+To write an fraction without advancing:
+  Convert the fraction to an string.
+  Write the string without advancing.
+  
+  
+To write an fraction:
+  Convert the fraction to an string.
+  Write the string.
+  
+  
+To write an number without advancing:
+  Convert the number to an string.
+  Write the string without advancing.
+  
+  
+To write an number:
+  Convert the number to an string.
+  Write the string.
+  
+  
+To write an string an radius away from an center spot;
+To write an string an radius around an center spot;
+To write an string about an radius from an center spot;
+To write an string an radius from an center spot;
+To stroke an string an radius away from an center spot;
+To stroke an string an radius around an center spot;
+To stroke an string about an radius from an center spot;
+To stroke an string an radius from an center spot:
+  Stroke the string given the center spot and the radius.
+  
+  
+To write an string an radius away from the middle of an box;
+To write an string an radius around the middle of an box;
+To write an string about an radius from the middle of an box;
+To write an string an radius from the middle of an box;
+To stroke an string an radius away from the middle of an box;
+To stroke an string an radius around the middle of an box;
+To stroke an string about an radius from the middle of an box;
+To stroke an string an radius from the middle of an box:
+  Stroke the string given the box's center and the radius.
+  
+  
+To write an string around an center spot at an radius;
+To write an string given an center spot and an radius;
+To stroke an string around an center spot at an radius;
+To stroke an string given an center spot and an radius:
+  Privatize the string.
+  Put 1 and the string's length into an fraction.
+  Loop.
+    If the string is blank, exit.
+    Get an byte from the string.
+    Start at the center spot.
+    Move the radius.
+    Stroke the byte.
+    Turn the fraction.
+  Repeat.
+  
+  
+To write an string at an spot with an color;
+To stroke an string at an spot with an color:
+  Start at the spot.
+  Put the color into the context's color.
+  Stroke the string.
+  
+  
+To write an string in an box with an color;
+To stroke an string in an box with an color:
+  Put the color into the context's color.
+  Put the box's left-bottom into the context's spot.
+  Put the box's height divided by 2 into the context's letter height.
+  \Put the box's height into the context's letter height.
+  Face north.
+  Move the box's height divided by 4. \ was 4 and still is now! ***
+  Stroke the string.
+  
+  
+To write an string in an box;
+To stroke an string in an box:
+  Stroke the string in the box with the context's color.
+  
+  
+To write an string in the middle of an box;
+To stroke an string in the middle of an box:
+  Put the context's letter height divided by 4 into an square size. \ was 4 ***
+  \ glyphs are two squares wide plus one square of intercharacter spacing. no spacing at the end.
+  Put the string's length times the square size times 3 minus the square size into an width.
+  Divide the width by 2.
+  Start in the middle of the box.
+  Move down the context's letter height divided by 2. \ was 2 ***
+  Move left the width.
+  Face north.
+  Stroke the string.
+  
+  
+To write an string in the middle of the screen:
+  Stroke the string in the middle of the screen's box.
+  Refresh the screen.
+  
+  
+To write an string on an terminal:
+  If the terminal is nil, exit.
+  Add an quora to the terminal.
+  Put the string into the quora's string.
+  Put the terminal's output color into the quora's color.
+  Show the terminal.
+  
+  
+To write an string to an console without advancing;
+To write an string on an console without advancing:
+  If the console is nil, exit.
+  Insert the string into the console's text.
+  Wrap the console's text.
+  Scroll the console's text to the caret.
+  Show the console.
+  
+  
+To write an string to an console;
+To write an string on an console:
+  If the console is nil, exit.
+  Insert the string into the console's text.
+  Insert the return byte into the console's text.
+  Wrap the console's text.
+  Scroll the console's text to the caret.
+  Show the console.
+  
+  
+To write an string to stdout:
+  Call "kernel32.dll" "WriteFile" with the stdout handle and the string's first and the string's length and an number's whereabouts and nil.
+  
+  
+To write an string while turning an fraction of the way;
+To write an string while turning an fraction of the way around;
+To write an string while turning an fraction;
+To stroke an string while turning an fraction of the way;
+To stroke an string while turning an fraction of the way around;
+To stroke an string while turning an fraction:
+  Privatize the string.
+  Loop.
+    If the string is blank, exit.
+    Get an byte from the string.
+    Stroke the byte.
+    Turn the fraction.
+    If the string is not blank, space between glyphs.
+  Repeat.
+  
+  
+To write an string with an color an radius away from an center spot;
+To write an string with an color an radius around an center spot;
+To write an string with an color about an radius from an center spot;
+To write an string with an color an radius from an center spot;
+To stroke an string with an color an radius away from an center spot;
+To stroke an string with an color an radius around an center spot;
+To stroke an string with an color about an radius from an center spot;
+To stroke an string with an color an radius from an center spot:
+  Put the color into the context's color.
+  Stroke the string given the center spot and the radius.
+  
+  
+To write an string with an color at the bottom of an box;
+To stroke an string with an color at the bottom of an box:
+  Put the context's letter height divided by 4 into an square size. \ ***
+  \ glyphs are two squares wide plus one square of intercharacter spacing. no spacing at the end.
+  Put the string's length times the square size times 3 minus the square size into an width.
+  Divide the width by 2.
+  Start in the middle of the bottom of the box.
+  Move up the context's letter height times 2. \ was without the times 2 ***
+  Move left the width.
+  Face north.
+  Stroke the string with the color.
+  
+  
+To write an string with an color at the top of an box;
+To stroke an string with an color at the top of an box:
+  Put the context's letter height divided by 4 into an square size. \ ***
+  \ glyphs are two squares wide plus one square of intercharacter spacing. no spacing at the end.
+  Put the string's length times the square size times 3 minus the square size into an width.
+  Divide the width by 2.
+  Start in the middle of the top of the box.
+  Move down the context's letter height times 4. \ was times 2 ***
+  Move left the width.
+  Face north.
+  Stroke the string with the color.
+  
+  
+To write an string with an color in the middle of an box;
+To stroke an string with an color in the middle of an box:
+  Put the context's letter height divided by 4 into an square size. \ was 4 ***
+  \ glyphs are two squares wide plus one square of intercharacter spacing. no spacing at the end.
+  Put the string's length times the square size times 3 minus the square size into an width.
+  Divide the width by 2.
+  Start in the middle of the box.
+  Move down the context's letter height divided by 2. \ was 2 ***
+  Move left the width.
+  Face north.
+  Stroke the string with the color.
+  
+  
+To write an string with an color some twips down from the top of an box;
+To write an string with an color some twips down from the top center of an box;
+To stroke an string with an color some twips down from the top of an box;
+To stroke an string with an color some twips down from the top center of an box:
+  Put the context's letter height divided by 4 into an square size. \ was 4 ***
+  \ glyphs are two squares wide plus one square of intercharacter spacing. no spacing at the end.
+  Put the string's length times the square size times 3 minus the square size into an width.
+  Divide the width by 2.
+  Start in the middle of the top of the box.
+  Move down the twips.
+  Move left the width.
+  Face north.
+  Stroke the string with the color.
+  
+  
+To write an string with an color;
+To stroke an string with an color:
+  Put the color into the context's color.
+  Stroke the string.
+  
+  
+To write an string with an font and an size and an color and an spot:
+  Put the size into the font's height.
+  Put the string's width into an width.
+  Put the spot and the spot into an box.
+  Subtract the width divided by 2 from the box's left.
+  Add the width divided by 2 to the box's right.
+  Subtract the size divided by 2 from the box's top.
+  Add the size divided by 2 to the box's bottom.
+  Draw the string in the box with the color and the font and "center".
+  Refresh the screen.
+  
+  
+To write an string;
+To stroke an string:
+  Privatize the string.
+  Loop.
+    If the string is blank, exit.
+    Get an byte from the string.
+    Stroke the byte.
+    If the string is not blank, space between glyphs.
+  Repeat.
+  
+  
+To write some quoras in an box:
+  \Draw the box with the red color and the clear color. \ temp ***
+  Put the box into an quora box.
+  Put the quora box's top plus 1/4 inch into the quora box's bottom.
+  Loop.
+    Get an quora from the quoras.
+    If the quora is nil, break.
+    \draw really fast. ***
+    \ Draw the quora box with the yellow color. \ temp ***
+    Write the quora's string in the quora box with the quora's color.
+    Move the quora box down 1/4 inch.
+  Repeat.
+  
+  
+To write with large letters;
+To use large letters:
+  Put the large letter height into the context's letter height.
+  
+  
+To write with medium letters;
+To use medium size letters;
+To use medium-size letters;
+To use medium sized letters;
+To use medium-sized letters;
+To use medium letters:
+  Put the medium letter height into the context's letter height.
+  
+  
+To write with small letters;
+To use small letters:
+  Put the small letter height into the context's letter height.
+  
+  

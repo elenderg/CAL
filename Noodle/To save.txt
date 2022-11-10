@@ -1,0 +1,14 @@
+To save an canvas:
+  Call "gdi32.dll" "SaveDC" with the canvas.
+  
+  
+To save an context:
+  Allocate memory for an saved context.
+  Put the context's spot into the saved context's spot.
+  Put the context's heading into the saved context's heading.
+  Put the context's letter height into the saved context's letter height.
+  Put the context's color into the saved context's color.
+  Put the context's number into the saved context's number.
+  Prepend the saved context to the context stack.
+  
+  

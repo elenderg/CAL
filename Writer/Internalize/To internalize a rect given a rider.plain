@@ -1,6 +1,0 @@
-To internalize an rect given an rider:
-  If the i/o error is not blank, exit.
-  Internalize the rect as an box given the rider.
-  Internalize the rect's radius given the rider.
-  
-  

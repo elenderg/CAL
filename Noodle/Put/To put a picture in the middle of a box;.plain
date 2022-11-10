@@ -1,7 +1,0 @@
-To put an picture in the middle of an box;
-To center an picture in an box:
-  If the picture is nil, exit.
-  Center the picture in the box (horizontally).
-  Center the picture in the box (vertically).
-  
-  

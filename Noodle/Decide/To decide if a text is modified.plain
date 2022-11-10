@@ -1,6 +1,0 @@
-To decide if an text is modified:
-  If the text is nil, say no.
-  If the text's modified flag is set, say yes.
-  Say no.
-  
-  

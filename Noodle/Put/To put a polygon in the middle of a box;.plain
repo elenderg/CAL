@@ -1,7 +1,0 @@
-To put an polygon in the middle of an box;
-To center an polygon in an box:
-  If the polygon is nil, exit.
-  Center the polygon in the box (horizontally).
-  Center the polygon in the box (vertically).
-  
-  

@@ -1,5 +1,0 @@
-To decide if we could find an pointer:
-  If the pointer is nil, say no.
-  Say yes.
-  
-  

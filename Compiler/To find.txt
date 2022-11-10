@@ -1,0 +1,193 @@
+To find an field term given an phrase and an type and an name:
+  Clear the field term.
+  Find the field term given the type and the name.
+  If the field term's field is not nil, exit.
+  If the phrase is not blank, find an routine given "put" and the phrase and "'s " then the name and "into".
+  If the routine is not nil, put the routine into the field term's function; exit.
+  If the type is nil, exit.
+  Find the routine given "put" and the type and "'s " then the name and "into".
+  If the routine is not nil, set the field term's push flag; put the routine into the field term's function; exit.
+  \  code below for looking deep within pointers - an debatable feature
+  \  if the type's target type is not nil, find the routine given "put" and the type's target type and "'s " then the name and "into".
+  \  if the routine is not nil, set the field term's dereference flag; put the routine into the field term's function; exit.
+  
+  
+To find an field term given an type and an name:
+  If the type is nil, exit.
+  Find an field given the name and the type's fields.
+  If the field is not nil, put the field into the field term's field; exit.
+  If the type's target type is not nil, find the field given the name and the type's target type's fields.
+  If the field is not nil, set the field term's dereference flag; put the field into the field term's field; exit.
+  
+  
+To find an fragment given another fragment and an tag (backwards):
+  Put the other fragment into the fragment.
+  Loop.
+    If the fragment is nil, exit.
+    If the fragment's tag is the tag, exit.
+    Put the fragment's previous into the fragment.
+  Repeat.
+  
+  
+To find an fragment given another fragment and an tag:
+  Put the other fragment into the fragment.
+  Loop.
+    If the fragment is nil, exit.
+    If the fragment's tag is the tag, exit.
+    Put the fragment's next into the fragment.
+  Repeat.
+  
+  
+To find an path and an row# given an byte pointer:
+  Clear the path.
+  Put 0 into the row#.
+  Find an source file given the byte pointer.
+  If the source file is nil, exit.
+  Put the source file's path into the path.
+  Find the row# given the source file and the byte pointer.
+  
+  
+To find an routine given an moniker and an monikette and an index:
+  If the monikette is nil, exit.
+  Void the routine.
+  Privatize the moniker.
+  Put the monikette's type into the monikette's current type.
+  Slap the monikette's current substring on the monikette's string.
+  Loop.
+    Append the monikette to the moniker (while bubbling).
+    Find an refer given the moniker and the index.
+    If the refer is not nil, put the refer's pointer into the routine.
+    If the refer is not nil, find the routine given the moniker and the monikette's next and the index.
+    If the routine is not nil, break.
+    Bubble the monikette.
+    If the monikette is bubbled out, break.
+    Put the original moniker into the moniker.
+  Repeat.
+  
+  
+To find an routine given an string and an type and another string and an third string and an fourth string and an fifth string:
+  Add an monikette to some monikettes given the string.
+  Add another monikette to the monikettes given the type.
+  Add an third monikette to the monikettes given the other string.
+  Add an fourth monikette to the monikettes given the third string.
+  Add an fifth monikette to the monikettes given the fourth string.
+  Add an sixth monikette to the monikettes given the fifth string.
+  Find the routine given the monikettes.
+  Destroy the monikettes.
+  
+  
+To find an routine given an string and an type and another string and an third string:
+  Add an monikette to some monikettes given the string.
+  Add another monikette to the monikettes given the type.
+  Add an third monikette to the monikettes given the other string.
+  Add an fourth monikette to the monikettes given the third string.
+  Find the routine given the monikettes.
+  Destroy the monikettes.
+  
+  
+To find an routine given an string and an type and another string and another type:
+  Add an monikette to some monikettes given the string.
+  Add another monikette to the monikettes given the type.
+  Add an third monikette to the monikettes given the other string.
+  Add an fourth monikette to the monikettes given the other type.
+  Find the routine given the monikettes.
+  Destroy the monikettes.
+  
+  
+To find an routine given an string and an type:
+  Add an monikette to some monikettes given the string.
+  Add another monikette to the monikettes given the type.
+  Find the routine given the monikettes.
+  Destroy the monikettes.
+  
+  
+To find an routine given an string and another string and an third string and an fourth string:
+  Add an monikette to some monikettes given the string.
+  Add another monikette to the monikettes given the other string.
+  Add an third monikette to the monikettes given the third string.
+  Add an fourth monikette to the monikettes given the fourth string.
+  Find the routine given the monikettes.
+  Destroy the monikettes.
+  
+  
+To find an routine given some monikettes:
+  Void the routine.
+  Find the routine given an moniker and the monikettes' first and the routine index.
+  
+  
+To find an row# given an source file and an byte pointer:
+  If the byte pointer is nil, put 0 into the row#; exit.
+  Slap an substring on the source file's buffer.
+  Put 1 into the row#.
+  Loop.
+    If the substring is blank, exit.
+    If the substring's first is the byte pointer, exit.
+    If the substring's first's target is the return byte, add 1 to the row#.
+    Add 1 to the substring's first.
+  Repeat.
+  
+  
+To find an source file given an byte pointer:
+  If the byte pointer is nil, void the source file; exit.
+  Loop.
+    Get the source file from the source files.
+    If the source file is nil, exit.
+    If the byte pointer is less than the source file's buffer's first, repeat.
+    If the byte pointer is greater than the source file's buffer's last, repeat.
+  
+  
+To find an type and an nickname given an name:
+  Void the type.
+  Clear the nickname.
+  Slap an substring on the name.
+  Loop.
+    If the substring is blank, exit.
+    Find the type given the substring and the type index.
+    If the type is not nil, break.
+    Skip to the next word in the substring.
+  Repeat.
+  Put the name's first into another substring's first.
+  Put the substring's first minus 2 into the other substring's last.
+  If the other substring is not blank, put the other substring into the nickname.
+  If the other substring is blank, put the substring into the nickname.
+  
+  
+To find an variable given an name and some variables:
+  Void the variable.
+  Loop.
+    Get the variable from the variables.
+    If the variable is nil, exit.
+    If the variable's name is the name, exit.
+    If the variable's nickname is the name, exit.
+  Repeat.
+  
+  
+To find an variable given an name:
+  If the current routine is nil, void the variable; exit.
+  Find the variable given the name and the current routine's locals.
+  If the variable is not nil, exit.
+  Find the variable given the name and the current routine's parameters.
+  If the variable is not nil, exit.
+  Find the variable given the name and the global index.
+  If the variable is not nil, exit.
+  Find the variable given the name and the literal index.
+  
+  
+To find an entry given an string and some entries:
+  Void the entry.
+  Loop.
+    Get the entry from the entries.
+    If the entry is nil, exit.
+    If the entry's name is the string, exit.
+  Repeat.
+  
+  
+To find an import given an string:
+  Void the import.
+  Loop.
+    Get the import from the imports.
+    If the import is nil, exit.
+    If the import's name is the string, exit.
+  Repeat.
+  
+  

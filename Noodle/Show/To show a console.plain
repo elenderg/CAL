@@ -1,8 +1,0 @@
-To show an console:
-  If the console is nil, exit.
-  Save the current canvas.
-  Draw the console.
-  Refresh the screen given the console's box.
-  Restore the current canvas.
-  
-  

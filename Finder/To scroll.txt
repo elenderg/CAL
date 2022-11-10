@@ -1,0 +1,44 @@
+To scroll an node down one page:
+  If the node is nil, exit.
+  Put the finder's y-extent minus the node height into an difference's y.
+  Negate the difference's y.
+  Scroll the node given the difference.
+  
+  
+To scroll an node given an difference:
+  If the node is nil, exit.
+  Add the difference to the node's origin.
+  Limit the origin in the node.
+  
+  
+To scroll an node given an event:
+  If the node is nil, exit.
+  Find an sector given the finder's grid and the event's spot.
+  Loop.
+    If the mouse's right button is up, exit.
+    Find another sector given the finder's grid and the mouse's spot.
+    Get an difference between the other sector and the sector.
+    If the difference is 0, repeat.
+    Scroll the node given the difference.
+    Show the desktop.
+    Add the difference to the sector.
+  Repeat.
+  
+  
+To scroll an node up one page:
+  If the node is nil, exit.
+  Put the finder's y-extent minus the node height into an difference's y.
+  Scroll the node given the difference.
+  
+  
+To scroll to an nodette given an node:
+  If the node is nil, exit.
+  If the nodette is nil, exit.
+  If the nodette is visible in the node, exit.
+  Put the nodette's box into an box.
+  Globalize the box given the node's origin.
+  If the box's bottom is less than or equal to the finder's top, put the finder's top minus the box's top into an difference's y.
+  If the box's top is greater than or equal to the finder's bottom, put the finder's bottom minus the box's top minus the edge height into the difference's y.
+  Scroll the node given the difference.
+  
+  

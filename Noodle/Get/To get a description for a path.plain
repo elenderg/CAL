@@ -1,9 +1,0 @@
-To get an description for an path:
-  Clear the description.
-  Get an drive kind for the path.
-  Put the drive kind into the description.
-  Get an drive name for the path.
-  If the drive name is not blank, put the drive name into the description.
-  Lowercase the description.
-  
-  

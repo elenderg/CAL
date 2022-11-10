@@ -1,0 +1,86 @@
+To decide if an node is empty:
+  If the node is nil, say yes.
+  If the node's first nodette is nil, say yes.
+  Say no.
+  
+  
+To decide if an node is modified:
+  If the node is nil, say no.
+  If the node's source is modified, say yes.
+  If the node's document is modified, say yes.
+  Say no.
+  
+  
+To decide if an node is root-level:
+  If the node is nil, say no.
+  If the node's parent node is nil, say yes.
+  Say no.
+  
+  
+To decide if an node is savable:
+  If the node is nil, say no.
+  If the node's kind is not "file", say no.
+  If the node's source is read-only, say no.
+  If the node's document is read-only, say no.
+  Say yes.
+  
+  
+To decide if an nodette is selected:
+  If the nodette is nil, say no.
+  If the nodette's selected flag is set, say yes.
+  Say no.
+  
+  
+To decide if an nodette is visible in an node:
+  If the nodette is nil, say no.
+  Put the nodette's box into an box.
+  Globalize the box given the node's origin.
+  If the box's top is less than the finder's top, say no.
+  If the box's bottom is greater than the finder's bottom, say no.
+  Say yes.
+  
+  
+To decide if an spot is in an node:
+  If the node is nil, say no.
+  If the spot is not in the pad, say no.
+  Privatize the spot.
+  Localize the spot given the node's origin.
+  Find an nodette given the node and the spot.
+  If the nodette is nil, say no.
+  Say yes.
+  
+  
+To decide if an spot is in an nodette:
+  If the nodette is nil, say no.
+  If the spot is in the nodette's box, say yes.
+  Say no.
+  
+  
+To decide if something is selected in an node:
+  If the node is nil, say no.
+  Loop.
+    Get an nodette from the node's nodettes.
+    If the nodette is nil, say no.
+    If the nodette is selected, say yes.
+  Repeat.
+  
+  
+To decide if the user does want to overwrite an path;
+To decide if the user wants to overwrite an path:
+  If the path is not in the file system, say yes.
+  Extract an designator from the path.
+  Quote the designator.
+  Ask "Overwrite " then the designator then "?" with choices "Yes" and "No".
+  If the answer is "yes", say yes.
+  Say no.
+  
+  
+To decide if the user does want to overwrite an item in an node;
+To decide if the user wants to overwrite an item in an node:
+  If the node is nil, say no.
+  Put the node's path into an path.
+  Append the item's designator to the path.
+  If the user wants to overwrite the path, say yes.
+  Say no.
+  
+  

@@ -1,6 +1,0 @@
-To normalize an heading:
-  Divide the heading by 3840 giving an quotient and an remainder.
-  Put the remainder into the heading.
-  If the heading is less than 0, add 3840 to the heading.
-  
-  

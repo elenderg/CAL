@@ -1,0 +1,76 @@
+To turn an fraction equal to an number over another number:
+  Put the number into the fraction's top.
+  Put the other number into the fraction's bottom.
+  Turn the fraction.
+  
+  
+To turn an fraction of the way;
+To turn an fraction of the way around;
+To turn an fraction:
+  If the fraction is 1/1, exit.
+  Put 3840 times the fraction plus the context's heading into the context's heading.
+  Normalize the context's heading.
+  
+  
+To turn around:
+  Turn right 1/2.
+  
+  
+To turn left an fraction equal to an number over another number:
+  Put the number into the fraction's top.
+  Put the other number into the fraction's bottom.
+  Turn left the fraction.
+  
+  
+To turn left an fraction of the way;
+To turn left an fraction of the way around;
+To turn left an fraction:
+  Privatize the fraction.
+  Negate the fraction.
+  Turn the fraction.
+  
+  
+To turn left some points:
+  Put the points and 3840 into an fraction.
+  Turn left the fraction.
+  
+  
+To turn left:
+  Turn -1/4.
+  
+  
+To turn right an fraction equal to an number over another number:
+  Put the number into the fraction's top.
+  Put the other number into the fraction's bottom.
+  Turn right the fraction.
+  
+  
+To turn right an fraction of the way some percent of the time;
+To turn right an fraction about some percent of the time;
+To turn right an fraction of the way about some percent of the time;
+To turn right an fraction some percent of the time:
+  Pick an number between 1 and 100.
+  If the number is greater than the percent, exit.
+  Turn right the fraction.
+  
+  
+To turn right an fraction of the way;
+To turn right an fraction of the way around;
+To turn right an fraction:
+  Turn the fraction.
+  
+  
+To turn right some degrees:
+  Put the degrees times 10 and 3600 into an fraction.
+  Turn right the fraction.
+  
+  
+To turn right some points:
+  Put the points and 3840 into an fraction.
+  Turn right the fraction.
+  
+  
+To turn right:
+  Turn 1/4.
+  
+  

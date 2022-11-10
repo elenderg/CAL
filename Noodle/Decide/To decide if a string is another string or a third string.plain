@@ -1,6 +1,0 @@
-To decide if an string is another string or an third string:
-  If the string is the other string, say yes.
-  If the string is the third string, say yes.
-  Say no.
-  
-  

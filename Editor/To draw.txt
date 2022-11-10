@@ -1,0 +1,38 @@
+To draw an row of an source (colorized):
+  If the source is nil, exit.
+  Get an substring given the row and the source (commented part).
+  If the substring is blank, draw the row of the source's text (editing); exit.
+  Draw the selection box for the row of the source's text.
+  Get an box given the row and the source's text.
+  \ uncommented part
+  Slap another substring on the row's string.
+  Put the substring's first minus 1 into the other substring's last.
+  Draw the other substring in the box with the black color and the source's text's font and the source's text's alignment.
+  \ commented part
+  Get an width given the other substring and the memory canvas and the source's text's font.
+  Add the width to the box's left.
+  Draw the substring in the box with the comment color and the source's text's font and the source's text's alignment.
+  
+  
+To draw an source (colorized):
+  If the source is nil, exit.
+  Get an row from the source's text's rows.
+    If the row is nil, break.
+    If the row of the source's text is not visible, repeat.
+    Draw the row of the source (colorized).
+  Repeat.
+  Draw the caret in the source's text.
+  
+  
+To draw an source (not colorized):
+  If the source is nil, exit.
+  Draw the source's text (editing).
+  
+  
+To draw an source:
+  If the source is nil, exit.
+  Mask only outside the source's text's box.
+  If the source's colorized flag is set, draw the source (colorized); exit.
+  Draw the source (not colorized).
+  
+  

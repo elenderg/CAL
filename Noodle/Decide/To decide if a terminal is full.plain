@@ -1,6 +1,0 @@
-To decide if an terminal is full:
-  Put the terminal's height divided by 1/4 inch into an number.
-  If the terminal's quoras' count is greater than the number, say yes.
-  Say no.
-  
-  

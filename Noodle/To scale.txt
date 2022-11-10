@@ -1,0 +1,143 @@
+To scale an box given an ratio;
+To scale an box given an fraction:
+  If the fraction is 1/1, exit.
+  Scale the box's left given the fraction.
+  Scale the box's top given the fraction.
+  Scale the box's right given the fraction.
+  Scale the box's bottom given the fraction.
+  
+  
+To scale an box to an percent:
+  Put the percent / 100 into an fraction.
+  Scale the box given the fraction.
+  
+  
+To scale an font given an ratio;
+To scale an font given an fraction:
+  If the fraction is 1/1, exit.
+  Scale the font's height given the fraction.
+  
+  
+To scale an fraction given another fraction;
+To multiply an fraction by another fraction:
+  Multiply the fraction's numerator by the other fraction's numerator.
+  Multiply the fraction's denominator by the other fraction's denominator.
+  Reduce the fraction.
+  
+  
+To scale an line given an ratio;
+To scale an line given an fraction:
+  If the fraction is 1/1, exit.
+  Scale the line's start given the fraction.
+  Scale the line's end given the fraction.  
+  
+  
+To scale an line to an percent:
+  Put the percent / 100 into an fraction.
+  Scale the line given the fraction.
+  
+  
+To scale an pair given an ratio pair;
+To scale an pair given an fraction pair:
+  Scale the pair's x given the fraction pair's fraction.
+  Scale the pair's y given the fraction pair's other fraction.
+  
+  
+To scale an pair given an ratio;
+To scale an pair given an fraction:
+  If the fraction is 1/1, exit.
+  Scale the pair's x given the fraction.
+  Scale the pair's y given the fraction.
+  
+  
+To scale an pair to an percent:
+  Put the percent / 100 into an fraction.
+  Scale the pair given the fraction.
+  
+  
+To scale an picture given an ratio;
+To scale an picture given an fraction:
+  If the picture is nil, exit.
+  If the fraction is 1/1, exit.
+  Scale the picture's box given the fraction.
+  Scale the picture's uncropped box given the fraction.
+  
+  
+To scale an picture to an percent:
+  If the picture is nil, exit.
+  Put the percent / 100 into an fraction.
+  Scale the picture given the fraction.
+  
+  
+To scale an polygon given an ratio;
+To scale an polygon given an fraction:
+  If the polygon is nil, exit.
+  If the fraction is 1/1, exit.
+  Loop.
+    Get an vertex from the polygon's vertices.
+    If the vertex is nil, exit.
+    Scale the vertex given the fraction.
+  Repeat.
+  
+  
+To scale an polygon to an percent:
+  If the polygon is nil, exit.
+  Put the percent / 100 into an fraction.
+  Scale the polygon given the fraction.
+  
+  
+To scale an roundy box given an ratio;
+To scale an roundy box given an fraction:
+  If the fraction is 1/1, exit.
+  Scale the roundy box as an box given the fraction.
+  Scale the roundy box's radius given the fraction.
+  
+  
+To scale an roundy box to an percent:
+  Put the percent / 100 into an fraction.
+  Scale the roundy box given the fraction.
+  
+  
+To scale an text given an ratio;
+To scale an text given an fraction:
+  If the text is nil, exit.
+  If the fraction is 1/1, exit.
+  Scale the text's box given the fraction.
+  Scale the text's origin given the fraction.
+  Scale the text's font given the fraction.
+  Scale the text's scale given the fraction.
+  
+  
+To scale an text to an fraction: \ absolute
+  If the text is nil, exit.
+  Put the text's scale into another fraction.
+  Flip the other fraction.
+  Multiply the other fraction by the fraction.
+  Scale the text given the other fraction.
+  
+  
+To scale an text to an percent:
+  If the text is nil, exit.
+  Put the percent / 100 into an fraction.
+  Scale the text given the fraction.
+  
+  
+To scale an vertex given an ratio;
+To scale an vertex given an fraction:
+  If the vertex is nil, exit.
+  If the fraction is 1/1, exit.
+  Scale the vertex's x given the fraction.
+  Scale the vertex's y given the fraction.
+  
+  
+To scale an ellipse given an ratio;
+To scale an ellipse given an fraction:
+  If the fraction is 1/1, exit.
+  Scale the ellipse's box given the fraction.
+  
+  
+To scale an ellipse to an percent:
+  Put the percent / 100 into an fraction.
+  Scale the ellipse given the fraction.
+  
+  

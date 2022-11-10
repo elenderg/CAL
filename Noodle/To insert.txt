@@ -1,0 +1,108 @@
+To insert an byte into an text:
+  If the text is nil, exit.
+  Put the byte into an string.
+  Insert the string into the text.
+  
+  
+To insert an spot into an polygon after an vertex:
+  If the polygon is nil, exit.
+  Create another vertex given the spot.
+  Insert the other vertex into the polygon's vertices after the vertex.
+  
+  
+To insert an string into an text:
+  If the text is nil, exit.
+  Get an row given the text's caret row# and the text.
+  Put the row's string's length minus the text's caret column# into an number.
+  Put the row's string into another string.
+  Insert the string into the other string before the text's caret column#.
+  Convert the other string to some rows.
+  Put the rows' last into another row.
+  Insert the rows into the text's rows before the row.
+  Remove the row from the text's rows.
+  Destroy the row.
+  Renumber the text's rows.
+  Put the other row's row# into the text's caret row#.
+  Put the other row's string's length minus the number into the text's caret column#.
+  Deselect the text.
+  
+  
+To insert an string into another string before an byte#:
+  If the string's length is 0, exit.
+  Privatize the byte#.
+  Limit the byte# to 1 and the other string's length plus 1.
+  Slap an substring on the other string. \ left side
+  Put the substring's first plus the byte# minus 2 into the substring's last.
+  Slap another substring on the other string. \ right side
+  Put the other substring's first plus the byte# minus 1 into the other substring's first.
+  Put the other string's length plus the string's length into an combined length.
+  Reassign an pointer given the combined length.
+  Put the pointer into an third substring's first.
+  Copy bytes from the substring's first to the third substring's first for the substring's length.
+  Add the substring's length to the third substring's first.
+  Copy bytes from the string's first to the third substring's first for the string's length.
+  Add the string's length to the third substring's first.
+  Copy bytes from the other substring's first to the third substring's first for the other substring's length.
+  Unassign the other string's first. \ don't use put an string into an string to prevent extra allocating and copying
+  Put the pointer into the other string's first.
+  Put the other string's first plus the combined length minus 1 into the other string's last.
+  
+  
+To insert an thing into some things after another thing:
+  If the thing is nil, exit.
+  If the other thing is nil, prepend the thing to the things; exit.
+  Insert the thing into the things before the other thing's next.
+  
+  
+To insert an thing into some things before another thing:
+  If the thing is nil, exit.
+  If the things are empty, append the thing to the things; exit.
+  If the other thing is nil, append the thing to the things; exit.
+  If the other thing is the things' first, prepend the thing to the things; exit.
+  Put the thing into an new thing.
+  Put the other thing into an previous thing.
+  Put the new thing into the previous thing's previous' next.
+  Put the previous thing into the new thing's next.
+  Put the previous thing's previous into the new thing's previous.
+  Put the new thing into the previous thing's previous.
+  
+  
+To insert an vertex into an polygon after another vertex:
+  If the polygon is nil, exit.
+  If the vertex is nil, exit.
+  Insert the vertex into the polygon's vertices after the other vertex.
+  
+  
+To insert an vertex into an polygon at an spot:
+  If the polygon is nil, exit.
+  If the vertex is nil, exit.
+  Loop.
+    Get another vertex from the polygon's vertices.
+    If the other vertex is nil, exit.
+    If the other vertex's next is nil, exit.
+    Put the other vertex's spot and the other vertex's next's spot into an line.
+    If the spot is not on the line, repeat.
+  Insert the vertex into the polygon's vertices after the other vertex.
+  
+  
+To insert an vertex into an polygon before another vertex:
+  If the polygon is nil, exit.
+  If the vertex is nil, exit.
+  Insert the vertex into the polygon's vertices before the other vertex.
+  
+  
+To insert some things into some other things after an thing:
+  If the thing is nil, prepend the things to the other things; exit.
+  Insert the things into the other things before the thing's next.
+  
+  
+To insert some things into some other things before an thing:
+  Privatize the thing.
+  Loop.
+    Put the things' first into another thing.
+    If the other thing is nil, exit.
+    Remove the other thing from the things.
+    Insert the other thing into the other things before the thing.
+  Repeat.
+  
+  

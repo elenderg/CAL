@@ -1,5 +1,0 @@
-To put an box's x-extent into an width:
-  Put the box's right into the width.
-  Subtract the box's left from the width.
-  
-  

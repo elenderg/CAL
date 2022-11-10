@@ -1,7 +1,0 @@
-To split an wyrd into an byte and another byte:
-  Privatize the wyrd.
-  Shift the wyrd right 8 bits.
-  Put the wyrd into the byte.
-  Put the original wyrd into the other byte.
-  
-  

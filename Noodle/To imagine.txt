@@ -1,0 +1,191 @@
+To imagine an box some twips by some other twips;
+To make an box some twips by some other twips:
+  Put 0 into the box's left.
+  Put 0 into the box's top.
+  Put the twips into the box's right.
+  Put the other twips into the box's bottom.
+  
+  
+To imagine an box some twips high by some other twips wide;
+To make an box some twips high by some other twips wide:
+  Put 0 and 0 and the other twips and the twips into the box.
+  
+  
+To imagine an box some twips smaller than another box on every side:
+  Put the other box into the box.
+  Indent the box by the twips.
+  
+  
+To imagine an box some twips smaller than another box;
+To make an box some twips smaller than another box:
+  Put the other box into the box.
+  Indent the box by the twips divided by 2.
+  
+  
+To imagine an box some twips wide by some other twips high;
+To make an box some twips wide by some other twips high:
+  Put 0 and 0 and the twips and the other twips into the box.
+  
+  
+To imagine an box with an left coord and an top coord and an right coord and an bottom coord;
+To make an box with an left coord and an top coord and an right coord and an bottom coord:
+  Put the left coord and the top coord and the right coord and the bottom coord into the box.
+  
+  
+To imagine an box with an spot and another spot;
+To make an box with an spot and another spot:
+  Put the spot and the other spot into the box.
+  
+  
+To imagine an color from an hue and an saturation and an lightness;
+To make an color from an hue and an saturation and an lightness:
+  Put the hue and the saturation and the lightness into the color.
+  
+  
+To imagine an dot about some twips wide;
+To make an dot about some twips wide;
+To make an dot some twips wide:
+  Make the dot the twips by the twips.
+  
+  
+To imagine an dot between some twips and some other twips wide;
+To make an dot between some twips and some other twips wide:
+  Pick some third twips between the twips and the other twips.
+  Make the dot the third twips wide.
+  
+  
+To imagine an figure using an string and an spot;
+To make an figure using an string and an spot;
+To create an figure using an string and an center spot:
+  Create the figure.
+  Append the figure to the figures.
+  Privatize the string.
+  Lowercase the string.
+  Slap an substring on the string.
+  Loop.
+    Skip any leading noise in the substring.
+    If the substring's length is less than 2, exit.
+    Put the substring's first's target into an byte.
+    Put the byte minus the little-an byte into an spot's y.
+    Add 1 to the substring's first.
+    Put the substring's first's target into the byte.
+    Put the byte minus the little-an byte into the spot's x.
+    Multiply the spot by 1/4 inch.
+    Add the center spot's x minus 3-1/8 inches plus 1 pixel to the spot's x.
+    Add the center spot's y minus 3-1/8 inches plus 1 pixel to the spot's y.
+    Append the spot to the figure.
+    Add 1 to the substring's first.
+  Repeat.
+  
+  
+To imagine an horizontal line an fraction of the way up from the bottom of an box;
+To make an horizontal line an fraction of the way up from the bottom of an box:
+  Imagine the horizontal line across the box the fraction of the way up from the bottom.
+  
+  
+To imagine an line across an box an fraction of the way up from the bottom;
+To make an line across an box an fraction of the way up from the bottom:
+  Put the box's left into the line's start's x.
+  Put the box's right into the line's end's x.
+  Put the box's bottom times the fraction into some twips.
+  Put the box's bottom minus the twips into the line's start's y.
+  Put the box's bottom minus the twips into the line's end's y.
+  
+  
+To imagine an line across the bottom of an box;
+To make an line across the bottom of an box;
+To imagine an line along the bottom of an box;
+To make an line along the bottom of an box:
+  Put the box's bottom line into the line.
+  
+  
+To imagine an line across the top of an box;
+To make an line across the top of an box;
+To imagine an line along the top of an box;
+To make an line along the top of an box:
+  Put the box's top line into the line.
+  
+  
+To imagine an line in the middle of an box;
+To make an line in the middle of an box;
+To imagine an line across the middle of an box;
+To make an line across the middle of an box;
+To imagine an line in the center of an box;
+To make an line in the center of an box;
+To imagine an line across the center of an box;
+To make an line across the center of an box:
+  Put the box's left into the line's start's x.
+  Put the box's right into the line's end's x.
+  Put the box's center's y into the line's start's y.
+  Put the box's center's y into the line's end's y.
+  
+  
+To imagine an line some twips up from the bottom of an box;
+To make an line some twips up from the bottom of an box:
+  Put the box's left into the line's start's x.
+  Put the box's right into the line's end's x.
+  Put the box's bottom minus the twips into the line's start's y.
+  Put the box's bottom minus the twips into the line's end's y.
+  
+  
+To imagine an line with an spot and another spot;
+To make an line with an spot and another spot:
+  Put the spot and the other spot into the line.
+  
+  
+To imagine an line with an x coord and an y coord and another x coord and another y coord;
+To make an line with an x coord and an y coord and another x coord and another y coord:
+  Put the x coord and the y coord and the other x coord and the other y coord into the line.
+  
+  
+To imagine an roundy box from an box and an radius;
+To make an roundy box from an box and an radius:
+  Put the box and the radius into the roundy box.
+  
+  
+To imagine an roundy box some twips by some other twips;
+To make an roundy box some twips by some other twips:
+  Put 0 into the roundy box's left.
+  Put 0 into the roundy box's top.
+  Put the twips into the roundy box's right.
+  Put the other twips into the roundy box's bottom.
+  
+  
+To imagine an roundy box with an left coord and an top coord and an right coord and an bottom coord and an radius;
+To make an roundy box with an left coord and an top coord and an right coord and an bottom coord and an radius:
+  Put the left coord and the top coord and the right coord and the bottom coord and the radius into the roundy box.
+  
+  
+To imagine an roundy box with an spot and another spot and an radius;
+To make an roundy box with an spot and another spot and an radius:
+  Put the spot and the other spot and the radius into the roundy box.
+  
+  
+To imagine an spot with an x coord and an y coord;
+To make an spot with an x coord and an y coord:
+  Put the x coord and the y coord into the spot.
+  
+  
+To imagine an ellipse given an box;
+To make an ellipse given an box:
+  Put the box into the ellipse's box.
+  
+  
+To imagine an ellipse some twips by some other twips;
+To make an ellipse some twips by some other twips:
+  Put 0 into the ellipse's left.
+  Put 0 into the ellipse's top.
+  Put the twips into the ellipse's right.
+  Put the other twips into the ellipse's bottom.
+  
+  
+To imagine an ellipse with an left coord and an top coord and an right coord and an bottom coord;
+To make an ellipse with an left coord and an top coord and an right coord and an bottom coord:
+  Put the left coord and the top coord and the right coord and the bottom coord into the ellipse.
+  
+  
+To imagine an ellipse with an spot and another spot;
+To make an ellipse with an spot and another spot:
+  Put the spot and the other spot into the ellipse.
+  
+  

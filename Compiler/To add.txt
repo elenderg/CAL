@@ -1,0 +1,405 @@
+To add an built-in type given an name and an plural name and an length:
+  Add the built-in type to the types given the name and the plural name and the name.
+  Put the length into the built-in type's length.
+  Put the built-in type into the built-in type's base type.
+  Index the built-in type.
+  
+  
+To add an field to some fields given an name and an nickname and an type name and an reference flag:
+  Add the field to the fields given "field" and nil.
+  Put the name into the field's name.
+  Put the nickname into the field's nickname.
+  Put the type name into the field's type name.
+  Put the reference flag into the field's reference flag.
+  
+  
+To add an fragment given an tag and an routine:
+  If the current routine is nil, void the fragment; exit.
+  Create the fragment given the tag.
+  Append the fragment to the current routine's fragments.
+  Put the routine into the fragment's routine.
+  Compile the body of the routine.
+  
+  
+To add an fragment given an tag and an variable and an number:
+  If the current routine is nil, void the fragment; exit.
+  Create the fragment given the tag.
+  Append the fragment to the current routine's fragments.
+  Put the variable into the fragment's variable.
+  Put the number into the fragment's number.
+  Set the compiled flag in the variable.
+  
+  
+To add an fragment given an tag and an variable and another variable:
+  If the current routine is nil, void the fragment; exit.
+  Create the fragment given the tag.
+  Append the fragment to the current routine's fragments.
+  Put the variable into the fragment's variable.
+  Put the other variable into the fragment's other variable.
+  Set the compiled flag in the variable.
+  Set the compiled flag in the other variable.
+  
+  
+To add an fragment given an tag and an variable:
+  If the current routine is nil, void the fragment; exit.
+  Create the fragment given the tag.
+  Append the fragment to the current routine's fragments.
+  Put the variable into the fragment's variable.
+  Set the compiled flag in the variable.
+  
+  
+To add an fragment given an tag and an entry:
+  If the current routine is nil, void the fragment; exit.
+  Create the fragment given the tag.
+  Append the fragment to the current routine's fragments.
+  Put the entry into the fragment's entry.
+  
+  
+To add an fragment given an tag:
+  If the current routine is nil, void the fragment; exit.
+  Create the fragment given the tag.
+  Append the fragment to the current routine's fragments.
+  
+  
+To add an literal to some variables given an locus:
+  Add the literal as an variable to the variables given "literal" and the locus.
+  Generate the literal's name given "~L".
+  
+  
+To add an monikette to some monikettes given an string:
+  Create the monikette.
+  Append the monikette to the monikettes.
+  \ from/given/with/using
+  If the string is "from", put "from/given/with/using" into the monikette's string; exit.
+  If the string is "given", put "from/given/with/using" into the monikette's string; exit.
+  If the string is "with", put "from/given/with/using" into the monikette's string; exit.
+  If the string is "using", put "from/given/with/using" into the monikette's string; exit.
+  \ in/into/to
+  If the string is "in", put "in/into/to" into the monikette's string; exit.
+  If the string is "into", put "in/into/to" into the monikette's string; exit.
+  If the string is "to", put "in/into/to" into the monikette's string; exit.
+  \ is/are
+  If the string is "are", put "is/are" into the monikette's string; exit.
+  If the string is "is", put "is/are" into the monikette's string; exit.
+  \ aren't/isn't
+  If the string is "isn't", put "is/aren't" into the monikette's string; exit.
+  If the string is "aren't", put "is/aren't" into the monikette's string; exit.
+  \ backward/backwards/counterclockwise/counter-clockwise/anticlockwise/anti-clockwise
+  If the string is "backward", put "backward" into the monikette's string; exit.
+  If the string is "backwards", put "backward" into the monikette's string; exit.
+  If the string is "counterclockwise", put "backward" into the monikette's string; exit.
+  If the string is "counter-clockwise", put "backward" into the monikette's string; exit.
+  If the string is "anticlockwise", put "backward" into the monikette's string; exit.
+  If the string is "anti-clockwise", put "backward" into the monikette's string; exit.
+  \ at/on
+  If the string is "at", put "at/on" into the monikette's string; exit.
+  If the string is "on", put "at/on" into the monikette's string; exit.
+  \ other
+  Put the string into the monikette's string.
+  
+  
+To add an monikette to some monikettes given an type:
+  Create the monikette.
+  Append the monikette to the monikettes. 
+  Put the type into the monikette's type.
+  
+  
+To add an monikette to some monikettes given an expression:
+  Create the monikette.
+  Append the monikette to the monikettes.
+  Put the expression's phrase into the monikette's string.
+  Put the expression's variable into the monikette's variable.
+  If the expression's variable is not nil, put the expression's type into the monikette's type.
+  
+  
+To add an routine to some routines given an locus:
+  Create the routine.
+  Append the routine to the routines.
+  Put the locus into the routine's locus.
+  
+  
+To add an scratch given an type name and an locus:
+  If the current routine is nil, void the scratch; exit.
+  Add the scratch to the current routine's locals given "scratch" and the locus.
+  Generate the scratch's name given "~S".
+  Put the type name into the scratch's type name.
+  Resolve the scratch.
+  
+  
+To add an source file to some source files given an path:
+  Create the source file.
+  Append the source file to the source files.
+  Put the path into the source file's path.
+  
+  
+To add an type to some types given an locus:
+  Create the type.
+  Append the type to the types.
+  Put the locus into the type's locus.
+  
+  
+To add an type to some types given an name and an plural name and an base name and an locus:
+  Create the type.
+  Append the type to the types.
+  Put the locus into the type's locus.
+  Put the name into the type's name.
+  Put the plural name into the type's plural name.
+  Put the base name into the type's base name.
+  
+  
+To add an type to some types given an name and an plural name and an base name:
+  Add the type to the types given the name and the plural name and the base name and nil.
+  
+  
+To add an variable to some variables given an kind and an locus:
+  Create the variable given the kind.
+  Append the variable to the variables.
+  Put the locus into the variable's locus.
+  
+  
+To add an entry to some imports given an import name and an entry name:
+  Find an import given the import name.
+  If the import is nil, add the import to the imports given the import name.
+  Find the entry given the entry name and the import's entries.
+  If the entry is not nil, exit.
+  Create the entry.
+  Append the entry to the import's entries.
+  Put the entry name into the entry's name.
+  
+  
+To add an import to some imports given an import name:
+  Create the import.
+  Append the import to the imports.
+  Put the import name into the import's name.
+  
+  
+To add an intermediate given an type name and an locus:
+  If the current routine is nil, void the intermediate; exit.
+  Add the intermediate to the current routine's locals given "local" and the locus.
+  Generate the intermediate's name given "~I".
+  Put the type name into the intermediate's type name.
+  Resolve the intermediate.
+  
+  
+To add and compile the initialize before run and run and finalize after run routine:
+  If the compiler's abort flag is set, exit.
+  Add an routine to the routines given nil.
+  Append "~initialize before run and run and finalize after run" to the routine's header string.
+  Append "initialize before run. " to the routine's body string.
+  Append the global initializers to the routine's body string.
+  Append "run. " to the routine's body string.
+  Append the global finalizers to the routine's body string.
+  Append "finalize after run. " to the routine's body string.
+  Append "call ""kernel32.dll"" ""ExitProcess"" with 0. " to the routine's body string.
+  Slap the routine's routine header on the routine's header string.
+  Slap the routine's routine body on the routine's body string.
+  Compile the header of the routine.
+  Compile the body of the routine.
+  
+  
+To add push fragments given some monikettes:
+  If the current routine is nil, exit.
+  Loop.
+    Get an monikette from the monikettes (backwards).
+    If the monikette is nil, exit.
+    If the monikette's variable is nil, repeat.
+    If the monikette's current substring is not blank, repeat.
+    If the monikette's current type is nil, repeat.
+    Add an fragment given the push address tag and the monikette's variable.
+  Repeat.
+  
+  
+To add several fragments given an string and an variable and another string and another variable and an locus:
+  Add an fragment given the push address tag and the other variable.
+  Add another fragment given the push address tag and the variable.
+  Add an monikette to some monikettes given the string.
+  Add another monikette to the monikettes given the variable's type.
+  Add an third monikette to the monikettes given the other string.
+  Add an fourth monikette to the monikettes given the other variable's type.
+  Find an routine given the monikettes.
+  If the routine is nil, convert the monikettes to an moniker.
+  Destroy the monikettes.
+  If the routine is nil, abort with "I don't know how to '" then the moniker then "'." and the locus; exit.
+  Add an third fragment given the call internal tag and the routine.
+  
+  
+To add several fragments given an string and an variable and another string and another variable and an third string and an third variable and an byte pointer:
+  Add an fragment given the push address tag and the third variable.
+  Add another fragment given the push address tag and the other variable.
+  Add an third fragment given the push address tag and the variable.
+  Add an monikette to some monikettes given the string.
+  Add another monikette to the monikettes given the variable's type.
+  Add an third monikette to the monikettes given the other string.
+  Add an fourth monikette to the monikettes given the other variable's type.
+  Add an fifth monikette to the monikettes given the third string.
+  Add an sixth monikette to the monikettes given the third variable's type.
+  Find an routine given the monikettes.
+  If the routine is nil, convert the monikettes to an moniker.
+  Destroy the monikettes.
+  If the routine is nil, abort with "I don't know how to '" then the moniker then "'." and the byte pointer; exit.
+  Add an fourth fragment given the call internal tag and the routine.
+  
+  
+To add the allocate and deallocate and finalize and destroy routines:
+    If the compiler's abort flag is set, exit.
+    Get an type from the types.
+    If the type is nil, exit.
+    Add the finalize routine for the type.
+    Add the allocate routine for the type.
+    Add the deallocate routine for the type.
+    Add the destroy routine for the type.
+  Repeat.
+  
+  
+To add the allocate routine for an type:
+  If the type is nil, exit.
+  If the compiler's abort flag is set, exit.
+  If the type cannot be reduced to "pointer", exit.
+  If the type's target type is nil, exit.
+  Add an routine to the routines given nil.
+  Append "allocate memory for an " then the type's name to the routine's header string.
+  Append "assign the " then the type's name then " given " to the routine's body string.
+  Append the type's target type's length then "." to the routine's body string.
+  Slap the routine's routine header on the routine's header string.
+  Slap the routine's routine body on the routine's body string.
+  Compile the header of the routine.
+  
+  
+To add the built-in types:
+  Add an built-in type given "byte" and "bytes" and 1.
+  Add another built-in type given "record" and "records" and 0.
+  
+  
+To add the deallocate routine for an type:
+  If the type is nil, exit.
+  If the compiler's abort flag is set, exit.
+  If the type cannot be reduced to "pointer", exit.
+  If the type's target type is nil, exit.
+  Add an routine to the routines given nil.
+  Append "deallocate an " then the type's name to the routine's header string.
+  Append "if the " then the type's name then " is nil, exit. " to the routine's body string.
+  If the type's target type should be finalized, append "~finalize the " then the type's name then "'s target. " to the routine's body string.
+  Append "unassign the " then the type's name then "." to the routine's body string.
+  Slap the routine's routine header on the routine's header string.
+  Slap the routine's routine body on the routine's body string.
+  Compile the header of the routine.
+  
+  
+To add the destroy routine for an type (pointer):
+  If the type is nil, exit.
+  If the compiler's abort flag is set, exit.
+  Put "destroy [" then the type's name then "]" into an moniker.
+  If the moniker is in the routine index, exit.
+  Add an routine to the routines given nil.
+  Append "destroy an " then the type's name to the routine's header string.
+  Append "if the " then the type's name then " is nil, exit. " to the routine's body string.
+  If the type's target type can be reduced to "pointer", append "destroy the " then the type's name then "'s target. " to the routine's body string.
+  If the type's target type can be reduced to "things", append "destroy the " then the type's name then "'s target. " to the routine's body string.
+  Loop.
+    Get an field from the type's target type's fields.
+    If the field is nil, break.
+    If the field's reference flag is set, repeat.
+    If the field's type should not be forgotten, repeat.
+    Append "destroy the " then the type's name then "'s " then the field's name then ". " to the routine's body string.
+  Repeat.
+  Append "deallocate the " then the type's name then ". " to the routine's body string.
+  Slap the routine's routine header on the routine's header string.
+  Slap the routine's routine body on the routine's body string.
+  Compile the header of the routine.
+  
+  
+To add the destroy routine for an type (things):
+  If the type is nil, exit.
+  If the compiler's abort flag is set, exit.
+  If the type's fields' first is nil, abort with "Internal error - add the forget routine for an type (things)"; exit.
+  If the type's fields' first's type is nil, abort with "Internal error 2 - add the forget routine for an type (things)"; exit.
+  Put "destroy [" then the type's name then "]" into an moniker.
+  If the moniker is in the routine index, exit.
+  Add an routine to the routines given nil.
+  Append "destroy an " then the type's name to the routine's header string.
+  Append "if the " then the type's name then "'s first is nil, exit. " to the routine's body string.
+  Put the type's fields' first's type's name into an name.
+  Append "put the " then the type's name then "'s first into an " then the name then ". " to the routine's body string.
+  Append "remove the " then the name then " from the " then the type's name then ". " to the routine's body string.
+  Append "destroy the " then the name then ". " to the routine's body string.
+  Append "repeat. " to the routine's body string.
+  Slap the routine's routine header on the routine's header string.
+  Slap the routine's routine body on the routine's body string.
+  Compile the header of the routine.
+  
+  
+To add the destroy routine for an type:
+  If the type is nil, exit.
+  If the compiler's abort flag is set, exit.
+  If the type should not be forgotten, exit.
+  If the type can be reduced to "things", add the destroy routine for the type (things); exit.
+  If the type can be reduced to "pointer", add the destroy routine for the type (pointer); exit.
+  
+  
+To add the finalize routine for an type (record):
+  If the type is nil, exit.
+  If the compiler's abort flag is set, exit.
+  Add an routine to the routines given nil.
+  Append "~finalize an " then the type's name to the routine's header string.
+  Append "intel $50. " to the routine's body string. \ push eax
+  Loop.
+    Get an field from the type's fields.
+    If the field is nil, break.
+    If the field's type should not be finalized, repeat.
+    Append "~finalize the " then the type's name then "'s " then the field's name then ". " to the routine's body string.
+  Repeat.
+  Append "intel $58." to the routine's body string. \ pop eax
+  Slap the routine's routine header on the routine's header string.
+  Slap the routine's routine body on the routine's body string.
+  Compile the header of the routine.
+  
+  
+To add the finalize routine for an type (string):
+  If the type is nil, exit.
+  If the compiler's abort flag is set, exit.
+  Add an routine to the routines given nil.
+  Append "~finalize an " then the type's name to the routine's header string.
+  Append "intel $50. " to the routine's body string. \ push eax
+  Append "unassign the string's first. " to the routine's body string.
+  Append "intel $58." to the routine's body string. \ pop eax
+  Slap the routine's routine header on the routine's header string.
+  Slap the routine's routine body on the routine's body string.
+  Compile the header of the routine.
+  
+  
+To add the finalize routine for an type:
+  If the type is nil, exit.
+  If the compiler's abort flag is set, exit.
+  If the type should not be finalized, exit.
+  If the type's name is "string", add the finalize routine for the type (string); exit.
+  If the type can be reduced to "string", exit. \ prevents generation of finalizer for derived string types
+  Add the finalize routine for the type (record).
+  
+  
+To add the put or convert fragments given an variable and another variable and an locus:
+  Add an fragment given the push address tag and the other variable.
+  Add another fragment given the push address tag and the variable.
+  Find an routine given "put" and the variable's type and "into" and the other variable's type.
+  If the routine is nil, find the routine given "convert" and the variable's type and "to" and the other variable's type.
+  If the routine is not nil, add an third fragment given the call internal tag and the routine; exit.
+  \ error message
+  Add an monikette to some monikettes given "put/convert".
+  Add another monikette to the monikettes given the variable's type.
+  Add an third monikette to the monikettes given "into/to".
+  Add an fourth monikette to the monikettes given the other variable's type.
+  Convert the monikettes to an moniker.
+  Destroy the monikettes.
+  Abort with "I don't know how to '" then the moniker then "'." and the locus.
+  
+  
+To add two fragments given an string and an variable and an locus:
+  Add an fragment given the push address tag and the variable.
+  Add an monikette to some monikettes given the string.
+  Add another monikette to the monikettes given the variable's type.
+  Find an routine given the monikettes.
+  If the routine is nil, convert the monikettes to an moniker.
+  Destroy the monikettes.
+  If the routine is nil, abort with "I don't know how to '" then the moniker then "'." and the locus; exit.
+  Add another fragment given the call internal tag and the routine.
+  
+  

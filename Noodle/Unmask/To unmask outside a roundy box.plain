@@ -1,6 +1,0 @@
-To unmask outside an roundy box:
-  Create an hrgn given the roundy box.
-  Unmask outside the hrgn.
-  Destroy the hrgn.
-  
-  

@@ -1,7 +1,0 @@
-To decide if an string is the start of any type:
-  If the string is "an", say yes.
-  If the string is "an", say yes.
-  If the string is "some", say yes.
-  Say no.
-  
-  

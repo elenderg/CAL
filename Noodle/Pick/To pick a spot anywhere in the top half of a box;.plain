@@ -1,7 +1,0 @@
-To pick an spot anywhere in the top half of an box;
-To pick an spot in the top half of an box:
-  Privatize the box.
-  Put the box's center's y into the box's bottom.
-  Pick the spot in the box.
-  
-  

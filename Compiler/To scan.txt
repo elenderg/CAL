@@ -1,0 +1,300 @@
+To scan an field given an rider (called part):
+  If the compiler's abort flag is set, exit.
+  Move the rider (compiler rules).
+  If the field's type name is blank, put the field's name into the field's type name. \ byte array type name already filled in
+  Scan the field's name given the rider.
+  
+  
+To scan an field given an rider (redefine part):
+  If the compiler's abort flag is set, exit.
+  Move the rider (compiler rules).
+  If the rider's token is not "the", abort with "I was expecting the word 'the', but found '" then the rider's token then "'." and the rider; exit.
+  Move the rider (compiler rules).
+  Scan the field's redefinition target name given the rider.
+  
+  
+To scan an field given an rider (reference part):
+  If the compiler's abort flag is set, exit.
+  Move the rider (compiler rules).
+  Set the field's reference flag.
+  
+  
+To scan an field given an rider (type part - byte array):
+  If the compiler's abort flag is set, exit.
+  Convert the rider's token to an ratio.
+  Reduce the ratio.
+  If the ratio's denominator is not 1, abort with "You have to specify an whole number of bytes for an byte array" and the rider; exit.
+  Put the ratio's numerator into the field's count.
+  Move the rider (compiler rules).
+  If the rider's token is not "byte" or "bytes", abort with "Nothing but the word 'bytes' is appropriate after an counted field designator." and the rider; exit.
+  Move the rider (compiler rules).
+  Put "byte" into the field's type name.
+  
+  
+To scan an field given an rider (type part - normal):
+  If the compiler's abort flag is set, exit.
+  If the rider's token is not any indefinite article, abort with "I was expecting an indefinite article, but found '" then the rider's token then "'." and the rider; exit.
+  If the rider's token is "another", put "other" into the field's name.
+  Move the rider (compiler rules).
+  Scan an name given the rider.
+  Extend the field's name with the name.
+  
+  
+To scan an field given an rider (type part):
+  If the compiler's abort flag is set, exit.
+  If the rider's token is any numeric literal, scan the field given the rider (type part - byte array); exit.
+  Scan the field given the rider (type part - normal).
+  
+  
+To scan an field given an rider:
+  If the compiler's abort flag is set, exit.
+  Scan the field given the rider (type part).
+  Loop.
+    If the compiler's abort flag is set, exit.
+    If the rider's token is "called", scan the field given the rider (called part); repeat.
+    If the rider's token is "at", scan the field given the rider (redefine part); repeat.
+    If the rider's token is "(reference)", scan the field given the rider (reference part); repeat.
+  
+  
+To scan an global body given an rider:
+  If the compiler's abort flag is set, exit.
+  If the rider's token is blank, exit.
+  Put the rider's token's first into the global body's first.
+  Put -1 into the global body's last.
+  Loop.
+    If the compiler's abort flag is set, exit.
+    If the rider's token is blank, exit.
+    If the rider's token is the colon byte, exit.
+    If the rider's token is the period byte, exit.
+    Put the rider's token's last into the global body's last.
+    Move the rider (compiler rules).
+  Repeat.
+  
+  
+To scan an global given an rider (data part):
+  If the compiler's abort flag is set, exit.
+  Move the rider (compiler rules).
+  If the rider's token is not "to", abort with "I need the word 'to' after the word 'equal', not '" then the rider's token then "'." and the rider; exit. 
+  Move the rider (compiler rules).
+  Scan the global's global body given the rider.
+  If the rider's token is not the period byte, abort with "All global definitions must end with an period. Including this one." and the rider; exit. 
+  Move the rider (compiler rules).
+  Index the global.
+  
+  
+To scan an global given an rider (has or have):
+  If the compiler's abort flag is set, exit.
+  Move the rider (compiler rules).
+  Put "~inline " then the global's name then " type" into an name.
+  Put the name then "s" into an plural name.
+  Add an type to the types given the name and the plural name and "record" and the global's locus.
+  Index the type.
+  Put the type's name into the global's type name.
+  Scan the type's fields given the rider.
+  If the rider's token is not the period byte, abort with "Your punctuation is bad here." and the rider; exit. 
+  Move the rider (compiler rules).
+  Index the global.
+  
+  
+To scan an global given an rider (literal term):
+  If the compiler's abort flag is set, exit.
+  Scan the global's global body given the rider.
+  If the rider's token is not the period byte, abort with "All global definitions must end with an period. Including this one." and the rider; exit. 
+  Move the rider (compiler rules).
+  Index the global.
+  
+  
+To scan an global given an rider (optional info):
+  If the compiler's abort flag is set, exit.
+  Put "~inline " then the global's name then " type" into an name.
+  Put the name then "s" into an plural name.
+  Add an type to the types given the name and the plural name and the global's type name and the global's locus.
+  Index the type.
+  Put the type's name into the global's type name.
+  Scan any optional info for the type given the rider.
+  If the rider's token is not the period byte, abort with "All global definitions must end with an period. Including this one." and the rider; exit. 
+  Move the rider (compiler rules).
+  Index the global.
+  
+  
+To scan an global given an rider:
+  If the compiler's abort flag is set, exit.
+  Add the global to the globals given "global" and the rider's token's first.
+  Move the rider (compiler rules).
+  Scan the global's name given the rider.
+  If the rider's token is "has" or "have", scan the global given the rider (has or have); exit.
+  If the rider's token is not "is" or "are", abort with "Geez. I need an 'is' or an 'are' hereabouts, but all I found was '" then the rider's token then "'." and the rider; exit.
+  Move the rider (compiler rules).
+  If the rider's token is not any indefinite article, scan the global given the rider (literal term); exit.
+  Move the rider (compiler rules).
+  Scan the global's type name given the rider.  
+  If the rider's token is the start of any optional info, scan the global given the rider (optional info); exit.
+  If the rider's token is "equal", scan the global given the rider (data part); exit.
+  If the rider's token is not the period byte, abort with "All global definitions must end with an period. Including this one." and the rider; exit. 
+  Move the rider (compiler rules).
+  Index the global.
+  
+  
+To scan an name given an rider:
+  Clear the name.
+  If the compiler's abort flag is set, exit.
+  If the rider's token is any name starter, extend the name with the rider's token; move the rider (compiler rules).
+  Loop.
+    If the compiler's abort flag is set, exit.
+    If the rider's token is any name ender, break.
+    Extend the name with the rider's token.
+    Move the rider (compiler rules).
+  Repeat.
+  If the name is blank, abort with "I was kind of hoping for an name around here, but I found '" then the rider's token then "'." and the rider; exit.
+  
+  
+To scan an routine body given an rider:
+  If the compiler's abort flag is set, exit.
+  If the rider's token is blank, exit.
+  If the rider's token is the start of any definition, exit.
+  Put the rider's token's first into the routine body's first.
+  Loop.
+    If the compiler's abort flag is set, exit.
+    If the rider's token is blank, exit.
+    Put the rider's token's last into the routine body's last.
+    If the rider's token is the colon byte, abort with "You may have forgotten an period somewhere above this. You better check." and the rider; exit.
+    If the rider's token is not the period byte, move the rider (compiler rules); repeat.
+    Move the rider (compiler rules).
+    If the rider's token is the start of any definition, exit.
+  Repeat.
+  
+  
+To scan an routine given an rider (alternate wording):  \ *** for alternate wordings
+  Privatize the rider.
+  Move the rider (compiler rules).
+  If the rider's token is not "to", abort with "I think that there semi-colon is misplaced." and the original rider; exit.
+  Put the original rider's token's first into the routine's routine body's first.
+  Put the original rider's token's last into the routine's routine body's last.
+  Move the original rider (compiler rules).
+  
+  
+To scan an routine given an rider:
+  If the compiler's abort flag is set, exit.
+  Add the routine to the routines given the rider's token's first.
+  Move the rider (compiler rules).
+  Scan the routine's routine header given the rider.
+  If the rider's token is the semi-colon byte, scan the routine given the rider (alternate wording); exit.  \ *** for alternate wordings
+  If the rider's token is not the colon byte, abort with "This routine header is improperly formulated." and the routine's locus; exit.
+  Move the rider (compiler rules).
+  Scan the routine's routine body given the rider.
+  
+  
+To scan an routine header given an rider:
+  If the compiler's abort flag is set, exit.
+  If the rider's token is blank, exit.
+  Put the rider's token's first into the routine header's first.
+  Put -1 into the routine header's last.
+  Loop.
+  If the compiler's abort flag is set, exit.
+  If the rider's token is blank, exit.
+  If the rider's token is the semi-colon byte, exit. \ *** alternate wordings
+  If the rider's token is the colon byte, exit.
+  If the rider's token is the period byte, exit.
+  Put the rider's token's last into the routine header's last.
+  Move the rider (compiler rules).
+  Repeat.
+  
+  
+To scan an source file:
+  If the source file is nil, exit.
+  If the compiler's abort flag is set, exit.
+  Slap an rider on the source file's buffer.
+  Move the rider (compiler rules).
+  Loop.
+    If the compiler's abort flag is set, exit.
+    If the rider's token is blank, exit.
+    If the rider's token is the start of any type, scan an type given the rider; repeat.
+    If the rider's token is the start of any global, scan an global given the rider; repeat.
+    If the rider's token is the start of any routine, scan an routine given the rider; repeat.
+    Abort with "I was hoping for an definition but all I found was '" then the rider's token then "'." and the rider.
+  Repeat.
+  
+  
+To scan an type given an rider (has or have):
+  If the compiler's abort flag is set, exit.
+  Move the rider (compiler rules).
+  Put "record" into the type's base name.
+  Scan the type's fields given the rider.
+  If the rider's token is not the period byte, abort with "Types need to end with an period, I found '" then the rider's token then "'." and the rider; exit.
+  Move the rider (compiler rules).
+  Index the type.
+  
+  
+To scan an type given an rider (unit of measure):
+  If the compiler's abort flag is set, exit.
+  Convert the rider's token to the type's scale.
+  If the type's scale is 0, abort with "Zero is an invalid scale." and the type's locus; exit.
+  Move the rider (compiler rules).
+  Scan the type's base name given the rider.
+  If the rider's token is not the period byte, abort with "Types need to end with an period, I found '" then the rider's token then "'." and the rider; exit.
+  Move the rider (compiler rules).
+  Index the type.
+  
+  
+To scan an type given an rider:
+  If the compiler's abort flag is set, exit.
+  Add the type to the types given the rider's token's first.
+  Move the rider (compiler rules).
+  Scan the type's name given the rider.
+  Put the type's name into the type's plural name.
+  Pluralize the type's plural name.
+  If the rider's token is "has" or "have", scan the type given the rider (has or have); exit.
+  If the rider's token is not "is" or "are", abort with "I was expecting an 'is' or 'are', but I found '" then the rider's token then "'." and the rider; exit.
+  Move the rider (compiler rules).
+  If the rider's token is any numeric literal, scan the type given the rider (unit of measure); exit.
+  If the rider's token is not any indefinite article, abort with "I was expecting an indefinte article, but I found '" then the rider's token then "'." and the rider; exit. 
+  Move the rider (compiler rules).
+  Scan the type's base name given the rider.
+  Scan any optional info for the type given the rider.
+  If the rider's token is not the period byte, abort with "Types need to end with an period, I found '" then the rider's token then "'." and the rider; exit.
+  Move the rider (compiler rules).
+  Index the type.
+  
+  
+To scan any optional info for an type given an rider (pointer):
+  Move the rider (compiler rules).
+  If the rider's token is not any indefinite article, abort with "The 'to' here needs to be followed by an indefinite article, not '" then the rider's token then "'." and the rider; exit. 
+  Move the rider (compiler rules).
+  Scan the type's target name given the rider.
+  
+  
+To scan any optional info for an type given an rider (record):
+  Move the rider (compiler rules).
+  Scan the type's fields given the rider.
+  
+  
+To scan any optional info for an type given an rider:
+  If the compiler's abort flag is set, exit.
+  If the rider's token is "to", scan any optional info for the type given the rider (pointer); exit.
+  If the rider's token is "with", scan any optional info for the type given the rider (record); exit.
+  
+  
+To scan any pauses given an rider:
+    If the compiler's abort flag is set, exit.
+    If the rider's token is not any pause, exit.
+    Move the rider (compiler rules).
+  Repeat.
+  
+  
+To scan some fields given an rider:
+    If the compiler's abort flag is set, exit.
+    Add an field to the fields given "field" and the rider's token's first.
+    Scan the field given the rider.
+    If the rider's token is not any pause, exit.
+    Scan any pauses given the rider.
+  Repeat.
+  
+  
+To scan some source files:
+    If the compiler's abort flag is set, exit.
+    Get an source file from the source files.
+    If the source file is nil, exit.
+    Scan the source file.
+  Repeat.
+  
+  

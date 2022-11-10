@@ -1,6 +1,0 @@
-To scale an font given an ratio;
-To scale an font given an fraction:
-  If the fraction is 1/1, exit.
-  Scale the font's height given the fraction.
-  
-  

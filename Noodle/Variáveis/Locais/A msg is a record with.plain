@@ -1,9 +1,0 @@
-An msg is an record with
-  An window called hwnd,
-  An number called message,
-  An w-param called wparam,
-  An l-param called lparam,
-  An number called time,
-  An spot called pt.
-  
-  

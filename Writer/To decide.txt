@@ -1,0 +1,334 @@
+To decide if an buffer is document-format:
+  Slap an rider on the buffer.
+  Move the rider (document rules).
+  If the rider's token is not "ream", say no.
+  Move the rider (document rules).
+  If the rider's token is not the document version, say no.
+  Say yes.
+  
+  
+To decide if an document is empty:
+  If the document is nil, say yes.
+  If the document's first page is nil, say yes.
+  Say no.
+  
+  
+To decide if an document is modified:
+  If the document is nil, say no.
+  If the document's read-only flag is set, say no.
+  If the document's modified flag is set, say yes.
+  Say no.
+  
+  
+To decide if an document is read-only:
+  If the document is nil, say no.
+  If the document's read-only flag is set, say yes.
+  Say no.
+  
+  
+To decide if an line is another line: \ tracer - should be in noodle
+  If the line's start spot is not the other line's start spot, say no.
+  If the line's end spot is not the other line's end spot, say no.
+  Say yes.
+  
+  
+To decide if an page is being edited:
+  If the page is nil, say no.
+  If the page's edit shape is nil, say no.
+  Say yes.
+  
+  
+To decide if an page is selected:
+  If the page is nil, say no.
+  If the page's selected flag is set, say yes.
+  Say no.
+  
+  
+To decide if an page is too far left:
+  If the page is nil, say no.
+  Put the page's globalized box into an box.
+  Subtract 1/2 inch from the box's right.
+  If the box's right is less than the pad's left, say yes.
+  Say no.
+  
+  
+To decide if an page is too far right:
+  If the page is nil, say no.
+  Put the page's globalized box into an box.
+  Add 1/2 inch to the box's left.
+  If the box's left is greater than the pad's right, say yes.
+  Say no.
+  
+  
+To decide if an page is too high:
+  If the page is nil, say no.
+  Put the page's globalized box into an box.
+  Subtract 1/2 inch from the box's bottom.
+  If the box's bottom is less than the pad's top, say yes.
+  Say no.
+  
+  
+To decide if an page is too low:
+  If the page is nil, say no.
+  Put the page's globalized box into an box.
+  Add 1/2 inch to the box's top.
+  If the box's top is greater than the pad's bottom, say yes.
+  Say no.
+  
+  
+To decide if an shape is clear:
+  If the shape is nil, say no.
+  If the shape's kind is "group", say no.
+  If the shape's kind is "picture", say no.
+  If the shape's kind is "text", say no.
+  If the shape's fill is clear, say yes.
+  Say no.
+  
+  
+To decide if an shape is selected:
+  If the shape is nil, say no.
+  If the shape's selected flag is set, say yes.
+  Say no.
+  
+  
+To decide if an spot is in an cropper of an shape on an page:
+  If the page is nil, say no.
+  Privatize the spot.
+  Localize the spot given the page's origin.
+  Find the shape and the cropper given the page's shapes and the spot.
+  If the shape is nil, say no.
+  Say yes.
+  
+  
+To decide if an spot is in an document:
+  If the document is nil, say no.
+  If the spot is in the document's box, say yes.
+  Say no.
+  
+  
+To decide if an spot is in an knob given an shape and an string:
+  If the shape is nil, say no.
+  Make the knob given the shape and the string and the clear color.
+  If the spot is in the knob, say yes.
+  Say no.
+  
+  
+To decide if an spot is in an knob:
+  Put the knob's box into an box.
+  Outdent the box given the tpp.
+  If the spot is in the box, say yes.
+  Say no.
+  
+  
+To decide if an spot is in an page:
+  If the page is nil, say no.
+  If the spot is in the page's globalized box, say yes.
+  Say no.
+  
+  
+To decide if an spot is in an shape (ellipse):
+  If the shape's kind is not "ellipse", say no.
+  If the shape is clear, say no.
+  If the spot is not in the shape's ellipse, say no.
+  Say yes.
+  
+  
+To decide if an spot is in an shape (group):
+  If the shape's kind is not "group", say no.
+  If the spot is not in the shape's box, say no.
+  Loop.
+    Get another shape from the shape's shapes (backwards).
+    If the other shape is nil, say no.
+    If the spot is in the other shape, say yes.
+  Repeat.
+  
+  
+To decide if an spot is in an shape (picture):
+  If the shape's kind is not "picture", say no.
+  If the spot is not in the shape's picture, say no.
+  Say yes.
+  
+  
+To decide if an spot is in an shape (polygon):
+  If the shape's kind is not "polygon", say no.
+  If the shape is clear, say no.
+  If the spot is not in the shape's polygon, say no.
+  Say yes.
+  
+  
+To decide if an spot is in an shape (rectangle):
+  If the shape's kind is not "rectangle", say no.
+  If the shape is clear, say no.
+  If the spot is not in the shape's rect, say no.
+  Say yes.
+  
+  
+To decide if an spot is in an shape (text):
+  If the shape's kind is not "text", say no.
+  If the spot is not in the shape's text rect, say no. \ text's box may be indented
+  Say yes.
+  
+  
+To decide if an spot is in an shape on an page:
+  If the page is nil, say no.
+  Privatize the spot.
+  Localize the spot given the page's origin.
+  Find the shape given the page's shapes and the spot.
+  If the shape is nil, say no.
+  Say yes.
+  
+  
+To decide if an spot is in an shape:
+  If the shape is nil, say no.
+  If the spot is on the shape, say yes.
+  If the spot is in the shape (picture), say yes.
+  If the spot is in the shape (ellipse), say yes.
+  If the spot is in the shape (group), say yes.
+  If the spot is in the shape (polygon), say yes.
+  If the spot is in the shape (rectangle), say yes.
+  If the spot is in the shape (text), say yes.
+  Say no.
+  
+  
+To decide if an spot is in an sizer of an shape on an page:
+  If the page is nil, say no.
+  Privatize the spot.
+  Localize the spot given the page's origin.
+  Find the shape and the sizer given the page's shapes and the spot.
+  If the shape is nil, say no.
+  Say yes.
+  
+  
+To decide if an spot is in an vertex of an shape on an page:
+  If the page is nil, say no.
+  Privatize the spot.
+  Localize the spot given the page's origin.
+  Find the shape and the vertex given the page's shapes and the spot.
+  If the shape is nil, say no.
+  Say yes.
+  
+  
+To decide if an spot is in the edge of an page:
+  If the page is nil, say no.
+  If the spot is in the page's edge, say yes.
+  Say no.
+  
+  
+To decide if an spot is in the edge of any page in an document:
+  If the document is nil, say no.
+  If the spot is not in the document's box, say no.
+  Privatize the spot.
+  Localize the spot given the document's origin.
+  Find an page given the document and the spot.
+  If the page is nil, say no.
+  Say yes.
+  
+  
+To decide if an spot is in the edit shape on an page:
+  If the page is nil, say no.
+  If the page is not being edited, say no.
+  Privatize the spot.
+  Localize the spot given the page's origin.
+  If the spot is in the page's edit shape, say yes.
+  Say no.
+  
+  
+To decide if an spot is on an shape (ellipse):
+  If the shape's kind is not "ellipse", say no.
+  If the spot is on the shape's ellipse, say yes.
+  Say no.
+  
+  
+To decide if an spot is on an shape (group):
+  If the shape's kind is not "group", say no.
+  Loop.
+    Get another shape from the shape's shapes (backwards).
+    If the other shape is nil, say no.
+    If the spot is on the other shape, say yes.
+  Repeat.
+  
+  
+To decide if an spot is on an shape (picture):
+  If the shape's kind is not "picture", say no.
+  If the spot is on the shape's picture, say yes.
+  Say no.
+  
+  
+To decide if an spot is on an shape (polygon):
+  If the shape's kind is not "polygon", say no.
+  If the spot is on the shape's polygon, say yes.
+  Say no.
+  
+  
+To decide if an spot is on an shape (rectangle):
+  If the shape's kind is not "rectangle", say no.
+  If the spot is on the shape's rect, say yes.
+  Say no.
+  
+  
+To decide if an spot is on an shape (text):
+  If the shape's kind is not "text", say no.
+  If the spot is on the shape's text rect, say yes. \ text's box may be indented
+  Say no.
+  
+  
+To decide if an spot is on an shape on an page:
+  If the page is nil, say no.
+  Privatize the spot.
+  Localize the spot given the page's origin.
+  Find the shape given the page's shapes and the spot.
+  If the shape is nil, say no.
+  If the spot is not on the shape, say no.
+  Say yes.
+  
+  
+To decide if an spot is on an shape:
+  If the shape is nil, say no.
+  If the spot is on the shape (ellipse), say yes.
+  If the spot is on the shape (group), say yes.
+  If the spot is on the shape (picture), say yes.
+  If the spot is on the shape (polygon), say yes.
+  If the spot is on the shape (rectangle), say yes.
+  If the spot is on the shape (text), say yes.
+  Say no.
+  
+  
+To decide if something is selected in an document:
+  If the document is nil, say no.
+  Loop.
+    Get an page from the document's pages.
+    If the page is nil, say no.
+    If the page is selected, say yes.
+  Repeat.
+  
+  
+To decide if something is selected on an page:
+  If the page is nil, say no.
+  If the page is being edited, say yes.
+  Loop.
+    Get an shape from the page's shapes.
+    If the shape is nil, say no.
+    If the shape is selected, say yes.
+  Repeat.
+  
+  
+To decide if the edge of an page is visible in an document:
+  If the page is nil, say no.
+  Put the page's edge into an box.
+  Globalize the box given the document's origin.
+  If the box's top is less than the document's top, say no.
+  If the box's bottom is greater than the document's bottom, say no.
+  Say yes.
+  
+  
+To decide if the superduper of an page should be reset:
+  If the page is nil, say no.
+  Get an box of the selected shapes on the page.
+  Move the box given the page's superduper's pair.
+  Outdent the box given the tpp.
+  Globalize the box given the page's origin.
+  If the box is touching the page's globalized box, say no.
+  If the box is touching the pad's box, say no.
+  Say yes.
+  
+  

@@ -1,0 +1,115 @@
+To initialize an dos header:
+  Put 23117 [$5A4D] into the dos header's signature.
+  Put 64 [$0040] into the dos header's addressofrelocationtableinfile.
+  Put 256 [$00000100] into the dos header's addressofpeheaderinfile.
+  
+  
+To initialize an pe header (code section):
+  Copy bytes from "code  "'s first to the pe header's code section's name's whereabouts for 6.
+  Put the code borough's length into the pe header's code section's sizeinbytes.
+  Put the code borough's base into the pe header's code section's addressinmemory.
+  Put the code borough's length into the pe header's code section's sizeinfile.
+  Put the code borough's base into the pe header's code section's addressinfile.
+  Put -536870880 [$E0000020] into the pe header's code section's characteristics. \ executable, readable, writable, code object
+  
+  
+To initialize an pe header (data section):
+  Copy bytes from "data  "'s first to the pe header's data section's name's whereabouts for 6.
+  Put the data borough's length into the pe header's data section's sizeinbytes.
+  Put the data borough's base into the pe header's data section's addressinmemory.
+  Put the data borough's length into the pe header's data section's sizeinfile.
+  Put the data borough's base into the pe header's data section's addressinfile.
+  Put -1073741760 [$C0000040] into the pe header's data section's characteristics. \ initialized, readable, writable
+  
+  
+To initialize an pe header (directories):
+  Put 16 [$00000010] into the pe header's numberofdirectories.
+  Put the import borough's base into the pe header's imagedirectoryentryimportaddress.
+  Put the import borough's length into the pe header's imagedirectoryentryimportsize.
+  
+  
+To initialize an pe header (import section):
+  Copy bytes from "idata "'s first to the pe header's idata section's name's whereabouts for 6.
+  Put the import borough's length into the pe header's idata section's sizeinbytes.
+  Put the import borough's base into the pe header's idata section's addressinmemory.
+  Put the import borough's length into the pe header's idata section's sizeinfile.
+  Put the import borough's base into the pe header's idata section's addressinfile.
+  Put -1073741760 [$C0000040] into the pe header's idata section's characteristics. \ initialized, readable, writable
+  
+  
+To initialize an pe header (optional header):
+  Put 267 [$010B] into the pe header's magicnumber.
+  Put the code borough's length into the pe header's sizeofcodeinfile.
+  Put the data borough's length into the pe header's sizeofinitializeddatainfile.
+  Put 0 into the pe header's sizeofuninitializeddatainfile.
+  Find an routine given "~initialize before run and run and finalize after run" and the routine index.
+  If the routine is nil, abort with "Internal error: could not find the startup routine"; exit.
+  Put the routine's address minus the image base into the pe header's addressofentrypointinmemory.
+  Put the code borough's base into the pe header's addressofcodeinmemory.
+  Put the data borough's base into the pe header's addressofinitializeddatainmemory.
+  Put the image base into the pe header's imagebase.
+  Put 4096 [$00001000] into the pe header's memoryalignment.
+  Put 4096 [$00001000] into the pe header's filealignment.
+  Put 0 into the pe header's reserved.
+  Put the compiler's exe size into the pe header's sizeofimageinmemory.
+  Put 4096 [section base] into the pe header's sizeofallheadersinfile.
+  Put 0 into the pe header's checksum.
+  Put 0 into the pe header's dllcharacteristics.
+  Put 1048576 [$00100000] into the pe header's maxstack.
+  Put 16384 [$00004000] into the pe header's minstack.
+  Put 1048576 [$00100000] into the pe header's maxheap.
+  Put 16384 [$00004000] into the pe header's minheap.
+  Put 0 into the pe header's loaderflags.
+  
+  
+To initialize an pe header (standard header):
+  Put 17744 [$00004550] into the pe header's signature.
+  Put 332 [$014C] into the pe header's machinetype.
+  Put 3 [$0003] into the pe header's numberofsections.
+  Put 0 into the pe header's timestamp.
+  Put 0 into the pe header's pointertosymboltable.
+  Put 0 into the pe header's numberofsymbols.
+  Put 224 [$00E0] into the pe header's sizeofoptionalheaderinbytes.
+  Put 33166 [$818E] into the pe header's characteristics.
+  
+  
+To initialize an pe header (version information):
+  Put 0 into the pe header's majorlinkerversion.
+  Put 0 into the pe header's minorlinkerversion.
+  Put 4 [$0004] into the pe header's osmajorversion.
+  Put 0 [$0000] into the pe header's osminorversion.
+  Put 0 into the pe header's usermajorversion.
+  Put 0 into the pe header's userminorversion.
+  Put 4 [$0004] into the pe header's subsystemmajorversion.
+  Put 0 [$0000] into the pe header's subsystemminorversion.
+  Put 2 [$0002] into the pe header's subsystem.
+  
+  
+To initialize an pe header:
+  Initialize the pe header (standard header).
+  Initialize the pe header (optional header).
+  Initialize the pe header (version information).
+  Initialize the pe header (directories).
+  Initialize the pe header (import section).
+  Initialize the pe header (data section).
+  Initialize the pe header (code section).
+  
+  
+To initialize the compiler given an directory:
+  Put the directory into the compiler's directory.
+  Put 0 into the compiler's name count.
+  Clear the compiler's abort flag.
+  Clear the compiler's abort message.
+  Clear the compiler's abort path.
+  Put 0 into the compiler's abort row#.
+  Void the current routine.
+  Create the type index with 4027 [buckets].
+  Create the global index with 4027 [buckets].
+  Create the literal index with 4027 [buckets].
+  Create the routine index with 7919 [buckets].
+  Create the utility index with 4027 [buckets].
+  
+  
+To initialize the compiler:
+  
+  

@@ -1,6 +1,0 @@
-To pick an spot anywhere on an horizontal line;
-To pick an spot on an horizontal line:
-  Pick the spot's x between the horizontal line's start's x and the horizontal line's end's x.
-  Put the horizontal line's y into the spot's y.
-  
-  

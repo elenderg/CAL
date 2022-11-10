@@ -1,8 +1,0 @@
-To make an ratio pair given an box and another box;
-To make an fraction pair given an box and another box:
-  Put the box's x-extent into the fraction pair's fraction's numerator.
-  Put the other box's x-extent into the fraction pair's fraction's denominator.
-  Put the box's y-extent into the fraction pair's other fraction's numerator.
-  Put the other box's y-extent into the fraction pair's other fraction's denominator.
-  
-  

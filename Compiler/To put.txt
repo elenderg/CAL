@@ -1,0 +1,24 @@
+To put an term into another term:
+  Put the term's variable into the other term's variable.
+  Put the term's phrase into the other term's phrase.
+  
+  
+To put the compiler's exe path into an path:
+  Extract an designator from the compiler's directory.
+  Remove any trailing backslash from the designator.
+  Put the compiler's directory then the designator then ".exe" into the path.
+  
+  
+To put the compiler's exe size into an size:
+  Put 4096 [section base] into the size.
+  Add the import borough's size to the size.
+  Add the data borough's size to the size.
+  Add the code borough's size to the size.
+  
+  
+To put the compiler's listing path into an path:
+  Extract an designator from the compiler's directory.
+  Remove any trailing backslash from the designator.
+  Put the compiler's directory then the designator then ".lst" into the path.
+  
+  

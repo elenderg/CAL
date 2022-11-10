@@ -1,8 +1,0 @@
-To handle font name given an source:
-  Ask "Name?" with the source's text's font's name.
-  If the answer is blank, exit.
-  Show the desktop.
-  Handle font name given the source's text and the answer.
-  Show the desktop with status.
-  
-  

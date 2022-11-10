@@ -1,9 +1,0 @@
-To move an shape given an ratio pair and an spot:
-  If the shape is nil, exit.
-  Get an difference between the shape's box's left-top and the spot.
-  Put the difference into another difference.
-  Scale the other difference given the ratio pair.
-  Subtract the difference from the other difference.
-  Move the shape given the other difference.
-  
-  

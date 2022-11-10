@@ -1,7 +1,0 @@
-To get an position given an spot and an text:
-  If the text is nil, clear the position; exit.
-  Get an row given the spot and the text.
-  Put the row's row# into the position's row#.
-  Get the position's column# given the row and the spot and the text.
-  
-  

@@ -1,8 +1,0 @@
-To put an picture on an spot;
-To center an picture on an spot:
-  If the picture is nil, exit.
-  Get an difference between the spot and the picture's box's center.
-  Round the difference to the nearest multiple of the tpp.
-  Move the picture given the difference.
-  
-  

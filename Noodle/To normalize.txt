@@ -1,0 +1,67 @@
+To normalize an box:
+  If the box's right is less than the box's left, swap the box's left with the box's right.
+  If the box's bottom is less than the box's top, swap the box's top with the box's bottom.
+  
+  
+To normalize an canvas:
+  Call "gdi32.dll" "SetGraphicsMode" with the canvas and 2 [gm_advanced].
+  Call "gdi32.dll" "SetBkMode" with the canvas and 1 [transparent].
+  Call "gdi32.dll" "SetMapMode" with the canvas and 8 [mm_anisotropic].
+  Call "gdi32.dll" "SetViewportOrgEx" with the canvas and 0 and 0 and nil.
+  Call "gdi32.dll" "SetViewportExtEx" with the canvas and the ppi and the ppi and nil.
+  Call "gdi32.dll" "SetWindowOrgEx" with the canvas and 0 and 0 and nil.
+  Call "gdi32.dll" "SetWindowExtEx" with the canvas and the tpi and the tpi and nil.
+  
+  
+To normalize an fraction and another fraction:
+  Get an lcm given the fraction's denominator and the other fraction's denominator.
+  Multiply the fraction's numerator by the lcm divided by the fraction's denominator.
+  Put the lcm into the fraction's denominator.
+  Multiply the other fraction's numerator by the lcm divided by the other fraction's denominator.
+  Put the lcm into the other fraction's denominator.
+  
+  
+To normalize an heading:
+  Divide the heading by 3840 giving an quotient and an remainder.
+  Put the remainder into the heading.
+  If the heading is less than 0, add 3840 to the heading.
+  
+  
+To normalize an horizontal line:
+  If the line's end is less than the line's start, swap the line's end with the line's start.
+  
+  
+To normalize an hue:
+  Divide the hue by 3600 giving an quotient and an remainder.
+  Put the remainder into the hue.
+  If the hue is less than 0, add 3600 to the hue.
+  
+  
+To normalize an picture:
+  If the picture is nil, exit.
+  Normalize the picture's box.
+  Normalize the picture's uncropped box.
+  
+  
+To normalize an selection:
+  If the selection's anchor row# is less than the selection's caret row#, exit.
+  If the selection's anchor row# is greater than the selection's caret row#, swap the selection's anchor with the selection's caret; exit.
+  If the selection's anchor column# is greater than the selection's caret column#, swap the selection's anchor column# with the selection's caret column#.
+  
+  
+To normalize an text:
+  If the text is nil, exit.
+  Normalize the text's box.
+  
+  
+To normalize an vertical line:
+  If the line's end is less than the line's start, swap the line's end with the line's start.
+  
+  
+To normalize an angle: divide the angle by 3600 giving an quotient and the angle.
+  
+  
+To normalize an ellipse:
+  Normalize the ellipse's box.
+  
+  

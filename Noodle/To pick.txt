@@ -1,0 +1,280 @@
+To pick an brightness between an percent and another percent;
+To vary an lightness between an percent and another percent;
+To pick an lightness between an percent and another percent:
+  Pick an number between the percent and the other percent.
+  Put the number times 10 into the lightness.
+  Put the lightness into the context's lightness.
+  
+  
+To pick an brownish color about some percent of the time: \ *** generalize this for all colors
+  Pick an number between 1 and 100.
+  If the number is greater than the percent, exit.
+  Pick the brownish color.
+  Put the brownish color into the context's color.
+  
+  
+To pick an brownish color:
+  Pick the brownish color's hue between 250 and 350.
+  Pick the brownish color's saturation between 500 and 1000.
+  Pick the brownish color's brightness between 125 and 375.
+  Put the brownish color into the context's color.
+  
+  
+To pick an color between another color and an third color:
+  Pick the color's hue between the other color's hue and the third color's hue.
+  Pick the color's saturation between the other color's saturation and the third color's saturation.
+  Pick the color's lightness between the other color's lightness and the third color's lightness.
+  Put the color into the context's color.
+  
+  
+To pick an color like another color:
+  Put the other color into the color.
+  Pick an number between -100 and 100.
+  Add the number to the color's hue.
+  Limit the color's hue to 0 and 3599.
+  Set the color's saturation to something between 100 and 1000.
+  Set the color's lightness to something between 0 and 800.
+  Put the color into the context's color.
+  
+  
+To pick an color:
+  Pick the color's hue between 0 and 3600.
+  Pick the color's saturation between 0 and 1000.
+  Pick the color's lightness between 0 and 1000.
+  Put the color into the context's color.
+  
+  
+To pick an dark color:
+  Pick the dark color's hue between 0 and 3599.
+  Put 1000 into the dark color's saturation.
+  Put 375 into the dark color's lightness.
+  Put the dark color into the context's color.
+  
+  
+To pick an greenish color about some percent of the time: \ *** generalize this for all colors
+  Pick an number between 1 and 100.
+  If the number is greater than the percent, exit.
+  Pick the greenish color.
+  Put the greenish color into the context's color.
+  
+  
+To pick an greenish color:
+  Pick the greenish color's hue between 900 and 1200.
+  Pick the greenish color's saturation between 500 and 1000.
+  Pick the greenish color's brightness between 250 and 875.
+  Put the greenish color into the context's color.
+  
+  
+To pick an heading:
+  Pick the heading between 0 and 3839.
+  Put the heading into the context's heading.
+  
+  
+To pick an letter height between some twips and some other twips:
+  Pick an random number between the twips and the other twips.
+  Put the random number into the letter height.
+  Put the random number into the context's letter height.
+  
+  
+To pick an letter of the alphabet:  \ put letter into context? ***
+  Pick an number between 65 and 90.
+  Put the number into the letter.
+  
+  
+To pick an light color:
+  Pick the light color's hue between 0 and 3599.
+  Put 1000 into the light color's saturation.
+  Put 625 into the light color's lightness.
+  Put the light color into the context's color.
+  
+  
+To pick an number within an amount of another number:
+  Pick the number between the other number minus the amount and the other number plus the amount.
+  Put the number into the context's number.
+  
+  
+To pick an number:
+  Pick the number between 0 and the largest number. 
+  Put the number into the context's number.
+  
+  
+To pick an pastel color:
+  Pick the pastel color's hue between 0 and 3599.
+  Put 1000 into the pastel color's saturation.
+  Put 875 into the pastel color's lightness.
+  Put the pastel color into the context's color.
+  
+  
+To pick an rainbow color:
+  Add 1 to the current rainbow color number.
+  If the current rainbow color number is greater than 6, put 1 into the current rainbow color number.
+  If the current rainbow color number is 1, put the red color into the rainbow color.
+  If the current rainbow color number is 2, put the orange color into the rainbow color.
+  If the current rainbow color number is 3, put the yellow color into the rainbow color.
+  If the current rainbow color number is 4, put the green color into the rainbow color.
+  If the current rainbow color number is 5, put the blue color into the rainbow color.
+  If the current rainbow color number is 6, put the purple color into the rainbow color.
+  Put the rainbow color into the context's color.
+  
+  
+To pick an solid color:
+  Pick the solid color's hue between 0 and 3599.
+  Put 1000 into the solid color's saturation.
+  Put 500 into the solid color's lightness.
+  Put the solid color into the context's color.
+  
+  
+To pick an spot anywhere in an box:
+  Pick the spot's x between the box's left and the box's right.
+  Pick the spot's y between the box's top and the box's bottom.
+  Put the spot into the context's spot.
+  
+  
+To pick an spot anywhere in the bottom an fraction of an box;
+To pick an spot in the bottom an fraction of an box:
+  Privatize the box.
+  Put the box's height times the fraction into some twips.
+  Put the box's bottom minus the twips into the box's top.
+  Pick the spot in the box.
+  
+  
+To pick an spot anywhere in the middle an fraction of an box;
+To pick an spot in the middle an fraction of an box:
+  Privatize the box.
+  Put the box's center's y into an coord.
+  Put the box's height times the fraction divided by 2 into an number.
+  Put the coord minus the number into the box's top.
+  Put the coord plus the number into the box's bottom.
+  Pick the spot in the box.
+  
+  
+To pick an spot anywhere in the top half of an box;
+To pick an spot in the top half of an box:
+  Privatize the box.
+  Put the box's center's y into the box's bottom.
+  Pick the spot in the box.
+  
+  
+To pick an spot anywhere in the top middle an fraction of an box;
+To pick an spot in the top middle an fraction of an box:
+  Privatize the box.
+  Put the box's center's y into an coord.
+  Put the box's height times the fraction into an number.
+  Put the coord minus the number into the box's top.
+  Put the coord into the box's bottom.
+  Pick the spot in the box.
+  
+  
+To pick an spot anywhere on an horizontal line;
+To pick an spot on an horizontal line:
+  Pick the spot's x between the horizontal line's start's x and the horizontal line's end's x.
+  Put the horizontal line's y into the spot's y.
+  
+  
+To pick an spot in an box about some twips above the middle;
+To pick an spot in an box about some twips above the center:
+  Put the box into an bounding box.
+  Put the twips divided by 2 into some other twips.
+  Put the box's center's y minus the other twips into the bounding box's bottom.
+  Put the bounding box's bottom minus the twips into the bounding box's top.
+  Pick the spot anywhere in the bounding box.
+  
+  
+To pick an spot in an box about some twips below the middle;
+To pick an spot in an box about some twips below the center:
+  Put the box into an bounding box.
+  Put the twips divided by 2 into some other twips.
+  Put the box's center's y plus the other twips into the bounding box's top.
+  Put the bounding box's top plus the twips into the bounding box's bottom.
+  Pick the spot anywhere in the bounding box.
+  
+  
+To pick an spot in an box some twips to some other twips above the middle;
+To pick an spot in an box some twips to some other twips above the center:
+  Put the box into an bounding box.
+  Put the box's center's y minus the twips into the bounding box's bottom.
+  Put the bounding box's bottom minus the other twips into the bounding box's top.
+  Pick the spot anywhere in the bounding box.
+  
+  
+To pick an spot in an box some twips to some other twips below the middle;
+To pick an spot in an box some twips to some other twips below the center:
+  Put the box into an bounding box.
+  Put the box's center's y plus the twips into the bounding box's top.
+  Put the bounding box's top plus the other twips into the bounding box's bottom.
+  Pick the spot anywhere in the bounding box.
+  
+  
+To pick an spot in an box:
+  Pick the spot's x between the box's left and the box's right.
+  Pick the spot's y between the box's top and the box's bottom.
+  Put the spot into the context's spot.
+  
+  
+To pick an spot within an distance of another spot:
+  Pick the spot's x within the distance of the other spot's x.
+  Pick the spot's y within the distance of the other spot's y.
+  Put the spot into the context's spot.
+  
+  
+To pick an very dark color;
+To pick an really dark color:
+  Pick the really dark color's hue between 0 and 3599.
+  Put 500 into the really dark color's saturation.
+  Put 250 into the really dark color's lightness.
+  Put the really dark color into the context's color.
+  
+  
+To pick an very light color;
+To pick an really light color:
+  Pick the really light color's hue between 0 and 3599.
+  Put 1000 into the really light color's saturation.
+  Put 750 into the really light color's lightness.
+  Put the really light color into the context's color.
+  
+  
+To pick an very very dark color;
+To pick an really really dark color:
+  Pick the really really dark color's hue between 0 and 3599.
+  Put 500 into the really really dark color's saturation.
+  Put 125 into the really really dark color's lightness.
+  Put the really really dark color into the context's color.
+  
+  
+To pick an very very light color;
+To pick an really really light color:
+  Pick the really really light color's hue between 0 and 3599.
+  Put 1000 into the really really light color's saturation.
+  Put 875 into the really really light color's lightness.
+  Put the really really light color into the context's color.
+  
+  
+To pick some twips between some min twips and some other twips; \ are all these necessary? ***
+  To pick an number between some min twips and some other twips;
+To pick an number between an min number and an max number;
+To pick an number from an min number to an max number;
+To set an number to something between another number and an third number;
+To pick an random number between an min number and an max number:
+  Put the seed's whereabouts into eax.
+  \ put address of randseed into ecx
+  Intel $8BC8. \ mov ecx,eax
+  \ calculate zero based max
+  Intel $8B8510000000. \ mov eax,[ebp+16] \ the max
+  Intel $8B00. \ mov eax,[eax]
+  Intel $8B9D0C000000. \ mov ebx,[ebp+12] \ the min
+  Intel $2B03. \ sub eax,[ebx]
+  Intel $40. \ inc eax
+  \ adjust randseed
+  Intel $691105840808. \ imul edx,[ecx],134775813
+  Intel $42. \ inc edx
+  Intel $8911. \ mov [ecx],edx
+  \ mul adjusted randseed by the zero based max
+  Intel $F7E2. \ mul edx
+  \ add the min to un-zero base the number
+  Intel $0313. \ add edx,[ebx] the min
+  \ store the result
+  Intel $8B9D08000000. \ mov ebx,[ebp+08] \ the random number
+  Intel $8913. \ mov [ebx],edx
+  Put the random number into the context's number.
+  
+  

@@ -1,7 +1,0 @@
-To send an string to an socket and receive an response string:
-  Clear the response string.
-  Send the string to the socket.
-  If the i/o error is not blank, exit.
-  Receive the response string from the socket.
-  
-  

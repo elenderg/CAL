@@ -1,7 +1,0 @@
-To handle sort definitions given an source:
-  Show status "Sorting...".
-  Remember the source's text with "sort definitions".
-  Sort definitions given the source.
-  Show the desktop with "Sorted".
-  
-  

@@ -1,0 +1,117 @@
+To resize an shape given an pair (ellipse):
+  Resize the shape's ellipse given the pair.
+  Normalize the shape's ellipse.
+  Adjust the shape.
+  
+  
+To resize an shape given an pair (group):
+  Put the shape's box into an box.
+  Resize the box given the pair.
+  Make an ratio pair given the box and the shape's box.
+  Move the shape's shapes given the ratio pair and the shape's left-top.
+  Resize the shape's shapes given the ratio pair.
+  Adjust the shape.
+  
+  
+To resize an shape given an pair (picture):
+  Non-destructively resize the shape's picture given the pair.
+  Normalize the shape's picture.
+  Adjust the shape.
+  
+  
+To resize an shape given an pair (polygon):
+  Resize the shape's polygon given the pair.
+  Adjust the shape.
+  
+  
+To resize an shape given an pair (rectangle):
+  Resize the shape's rect given the pair.
+  Normalize the shape's rect.
+  Adjust the shape.
+  
+  
+To resize an shape given an pair (text):
+  Resize the shape's text rect given the pair.
+  Normalize the shape's text rect.
+  Adjust the text in the shape.
+  Adjust the shape.
+  
+  
+To resize an shape given an pair:
+  If the shape is nil, exit.
+  If the shape's kind is "ellipse", resize the shape given the pair (ellipse); exit.
+  If the shape's kind is "group", resize the shape given the pair (group); exit.
+  If the shape's kind is "picture", resize the shape given the pair (picture); exit.
+  If the shape's kind is "polygon", resize the shape given the pair (polygon); exit.
+  If the shape's kind is "rectangle", resize the shape given the pair (rectangle); exit.
+  If the shape's kind is "text", resize the shape given the pair (text); exit.
+  Debug "resize an shape given an pair: " then the shape's kind.
+  
+  
+To resize an shape given an ratio pair (ellipse):
+  Resize the shape's ellipse given the ratio pair.
+  Normalize the shape's ellipse.
+  Adjust the shape.
+  
+  
+To resize an shape given an ratio pair (group):
+  Put the shape's box into an box.
+  Resize the box given the ratio pair.
+  Make another ratio pair given the box and the shape's box.
+  Move the shape's shapes given the other ratio pair and the shape's left-top.
+  Resize the shape's shapes given the other ratio pair.
+  Adjust the shape.
+  
+  
+To resize an shape given an ratio pair (picture):
+  Non-destructively resize the shape's picture given the ratio pair.
+  Normalize the shape's picture.
+  Adjust the shape.
+  
+  
+To resize an shape given an ratio pair (polygon):
+  Resize the shape's polygon given the ratio pair.
+  Adjust the shape.
+  
+  
+To resize an shape given an ratio pair (rectangle):
+  Resize the shape's rect given the ratio pair.
+  Normalize the shape's rect.
+  Adjust the shape.
+  
+  
+To resize an shape given an ratio pair (text):
+  Resize the shape's text rect given the ratio pair.
+  Normalize the shape's text rect.
+  Adjust the text in the shape.
+  Adjust the shape.
+  
+  
+To resize an shape given an ratio pair:
+  If the shape is nil, exit.
+  If the shape's kind is "ellipse", resize the shape given the ratio pair (ellipse); exit.
+  If the shape's kind is "group", resize the shape given the ratio pair (group); exit.
+  If the shape's kind is "picture", resize the shape given the ratio pair (picture); exit.
+  If the shape's kind is "polygon", resize the shape given the ratio pair (polygon); exit.
+  If the shape's kind is "rectangle", resize the shape given the ratio pair (rectangle); exit.
+  If the shape's kind is "text", resize the shape given the ratio pair (text); exit.
+  Debug "resize an shape by an ratio pair: " then the shape's kind.
+  
+  
+To resize any selected shapes on an page given an pair:
+  If the page is nil, exit.
+  Loop.
+    Get an shape from the page's shapes.
+    If the shape is nil, exit.
+    If the shape is not selected, repeat.
+    Resize the shape given the pair.
+  Repeat.
+  
+  
+To resize some shapes given an ratio pair:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Resize the shape given the ratio pair.
+  Repeat.
+  
+  

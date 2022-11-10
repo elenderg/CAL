@@ -1,9 +1,0 @@
-To put some things' count into an count:
-  Put 0 into the count.
-  Loop.
-    Get an thing from the things.
-    If the thing is nil, exit.
-    Add 1 to the count.
-  Repeat.
-  
-  

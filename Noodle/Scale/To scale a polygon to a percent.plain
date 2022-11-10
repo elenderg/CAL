@@ -1,6 +1,0 @@
-To scale an polygon to an percent:
-  If the polygon is nil, exit.
-  Put the percent / 100 into an fraction.
-  Scale the polygon given the fraction.
-  
-  

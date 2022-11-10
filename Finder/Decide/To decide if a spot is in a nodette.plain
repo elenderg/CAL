@@ -1,6 +1,0 @@
-To decide if an spot is in an nodette:
-  If the nodette is nil, say no.
-  If the spot is in the nodette's box, say yes.
-  Say no.
-  
-  

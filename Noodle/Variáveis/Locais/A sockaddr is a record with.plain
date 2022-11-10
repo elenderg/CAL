@@ -1,7 +1,0 @@
-An sockaddr is an record with
-  An wyrd called sin_family,
-  An big-endian unsigned wyrd called sin_port,
-  An in_addr called sin_addr,
-  8 bytes called sin_zero.
-  
-  

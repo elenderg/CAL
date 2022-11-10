@@ -1,5 +1,0 @@
-To blurt bytes given an pointer and an length and an buffer and an offset:
-  Put the buffer's first plus the offset into another pointer.
-  Copy bytes from the pointer to the other pointer for the length.
-  
-  

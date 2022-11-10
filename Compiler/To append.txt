@@ -1,0 +1,123 @@
+To append an flag to an buffer (with separator):
+  Convert the flag to an string.
+  Append the string to the buffer (with separator).
+  
+  
+To append an monikette to an moniker (while bubbling):
+  If the monikette is nil, exit.
+  If the moniker is not blank, append the space byte to the moniker.
+  If the monikette's current substring is not blank, append the monikette's current substring to the moniker; exit.
+  If the monikette's current type is not nil, append "[" and the monikette's current type's name and "]" to the moniker (fast); exit.
+  
+  
+To append an monikette to an moniker:
+  If the monikette is nil, exit.
+  If the moniker is not blank, append the space byte to the moniker.
+  If the monikette's type is not nil, append "[" and the monikette's type's name and "]" to the moniker (fast); exit.
+  If the monikette's string is not blank, append the monikette's string to the moniker; exit.
+  
+  
+To append an number to an buffer (as hex with separator):
+  Convert the number to an nibble string.
+  Append the nibble string to the buffer (with separator).
+  
+  
+To append an number to an buffer (with separator):
+  Convert the number to an string.
+  Append the string to the buffer (with separator).
+  
+  
+To append an ratio to an buffer (with separator):
+  Convert the ratio to an string.
+  Append the string to the buffer (with separator).
+  
+  
+To append an routine to an buffer (with separator):
+  If the routine is nil, append "" to the buffer (with separator); exit.
+  Append the routine's moniker to the buffer (with separator).
+  
+  
+To append an string and another string and an third string to an fourth string (fast):
+  Put the fourth string's length into an length.
+  Add the string's length to the length.
+  Add the other string's length to the length.
+  Add the third string's length to the length.
+  Reassign an pointer given the length.
+  Put the pointer into an byte pointer.
+  Copy bytes from the fourth string's first to the byte pointer for the fourth string's length.
+  Add the fourth string's length to the byte pointer.
+  Copy bytes from the string's first to the byte pointer for the string's length.
+  Add the string's length to the byte pointer.
+  Copy bytes from the other string's first to the byte pointer for the other string's length.
+  Add the other string's length to the byte pointer.
+  Copy bytes from the third string's first to the byte pointer for the third string's length.
+  Unassign the fourth string's first.
+  Put the pointer into the fourth string's first.
+  Put the pointer plus the length minus 1 into the fourth string's last.
+  
+  
+To append an string to an buffer (with separator):
+  Append the string to the buffer.
+  Append "/" to the buffer.
+  
+  
+To append an tag to an buffer (as an fragment tag string with separator):
+  If the tag is the break tag, append "break" to the buffer (with separator); exit.
+  If the tag is the call external tag, append "call external" to the buffer (with separator); exit.
+  If the tag is the call indirect tag, append "call indirect" to the buffer (with separator); exit.
+  If the tag is the call internal tag, append "call internal" to the buffer (with separator); exit.
+  If the tag is the dereference tag, append "dereference" to the buffer (with separator); exit.
+  If the tag is the end if tag, append "end if" to the buffer (with separator); exit.
+  If the tag is the epilog tag, append "epilog" to the buffer (with separator); exit.
+  If the tag is the exit tag, append "exit" to the buffer (with separator); exit.
+  If the tag is the finalize tag, append "finalize" to the buffer (with separator); exit.
+  If the tag is the increment tag, append "increment" to the buffer (with separator); exit.
+  If the tag is the intel tag, append "intel" to the buffer (with separator); exit.
+  If the tag is the jump false tag, append "jump false" to the buffer (with separator); exit.
+  If the tag is the load address tag, append "load address" to the buffer (with separator); exit.
+  If the tag is the load eax tag, append "load eax" to the buffer (with separator); exit.
+  If the tag is the loop tag, append "loop" to the buffer (with separator); exit.
+  If the tag is the not tag, append "not" to the buffer (with separator); exit.
+  If the tag is the prolog tag, append "prolog" to the buffer (with separator); exit.
+  If the tag is the push address tag, append "push address" to the buffer (with separator); exit.
+  If the tag is the push value tag, append "push value" to the buffer (with separator); exit.
+  If the tag is the save eax tag, append "save eax" to the buffer (with separator); exit.
+  If the tag is the repeat tag, append "repeat" to the buffer (with separator); exit.
+  If the tag is the routine address tag, append "routine address" to the buffer (with separator); exit.
+  Append "?" to the buffer (with separator).
+  
+  
+To append an type to an buffer (with separator):
+  If the type is nil, append "" to the buffer (with separator); exit.
+  Append the type's name to the buffer (with separator).
+  
+  
+To append an variable to an buffer (with separator):
+  If the variable is nil, append "" to the buffer (with separator); exit.
+  Append the variable's name to the buffer (with separator).
+  
+  
+To append an entry to an buffer (with separator):
+  If the entry is nil, append "" to the buffer (with separator); exit.
+  Append the entry's name to the buffer (with separator).
+  
+  
+To append the global finalizers to an string:
+    Get an global from the globals.
+    If the global is nil, exit.
+    If the global's compiled flag is not set, repeat.
+    If the global's type should not be finalized, repeat.
+    Append "~finalize the " then the global's name then ". " to the string.
+  Repeat.
+  
+  
+To append the global initializers to an string:
+    Get an global from the globals.
+    If the global is nil, exit.
+    If the global's literal is nil, repeat.
+    If the global's compiled flag is not set, repeat.
+    Clear an flag.
+    Append the global's initializer string to the string.
+  Repeat.
+  
+  

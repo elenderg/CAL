@@ -1,8 +1,0 @@
-An url record has
-  An scheme string,
-  An host name string,
-  An path string,
-  An extra string,
-  An port number.
-  
-  

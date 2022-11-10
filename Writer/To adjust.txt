@@ -1,0 +1,94 @@
+To adjust an document:
+  If the document is nil, exit.
+  Put the pad's box into an box.
+  Put the box's height divided by the default font's height times the default font's height into an height.
+  Put the box's top plus the height into the box's bottom.
+  Put the box into the document's box.
+  Put 0 and the edge height into the document's grid.
+  Put the document's box's left-top into the document's origin.
+  
+  
+To adjust an page:
+  If the page is nil, exit.
+  Adjust the shape refers given the page.
+  Adjust the title of the page.
+  Adjust the page number of the page.
+  
+  
+To adjust an shape:
+  If the shape is nil, exit.
+  If the shape's kind is "ellipse", put the shape's ellipse's box into the shape's box; exit.
+  If the shape's kind is "group", put the shape's shapes' box into the shape's box; exit.
+  If the shape's kind is "picture", put the shape's picture's box into the shape's box; exit.
+  If the shape's kind is "polygon", put the shape's polygon's box into the shape's box; exit.
+  If the shape's kind is "rectangle", put the shape's rect into the shape's box; exit.
+  If the shape's kind is "text", put the shape's text rect into the shape's box; exit.
+  Debug "adjust an shape: " then the shape's kind.
+  
+  
+To adjust the edge of an page in an document:
+  If the document is nil, exit.
+  If the page is nil, exit.
+  Put 1/12 inch into the page's edge's radius.
+  Put 1/4 inch into the page's edge's left.
+  Put the document's right minus 1/4 inch into the page's edge's right.
+  Put 0 into the page's edge's top.
+  If the page is not the document's first page, put the page's previous' edge's bottom into the page's edge's top.
+  Put the page's edge's top plus the edge height into the page's edge's bottom.
+  
+  
+To adjust the edge of every page in an document:
+  If the document is nil, exit.
+  Loop.
+    Get an page from the document's pages.
+    If the page is nil, break.
+    Adjust the edge of the page in the document.
+  Repeat.
+  Limit the origin in the document.
+  
+  
+To adjust the page number of an page:
+  If the page is nil, exit.
+  Clear the page's page number.
+  Find an shape given the page's shape refers and "page number".
+  If the shape is not nil, put the shape's text's first line into the page's page number; exit.
+  Find another shape given the page's shape refers and "page number (even)".
+  If the other shape is not nil, put the other shape's text's first line into the page's page number; exit.
+  Find an third shape given the page's shape refers and "page number (odd)".
+  If the third shape is not nil, put the third shape's text's first line into the page's page number; exit.
+  
+  
+To adjust the shape refers given an page:
+  If the page is nil, exit.
+  Destroy the page's shape refers.
+  Create the page's shape refers given the page's shapes.
+  Sort the page's shape refers (horizontally).
+  Sort the page's shape refers (vertically).
+  
+  
+To adjust the text in an shape:
+  If the shape is nil, exit.
+  If the shape's kind is not "text", exit.
+  Put the shape's text rect into an box.
+  Put the text margin into an margin.
+  Scale the margin given the shape's scale.
+  If the shape's border is not clear, add the margin to the box's left.
+  If the shape's border is not clear, subtract the margin from the box's right.
+  Change the shape's text given the box.
+  
+  
+To adjust the title of an page:
+  If the page is nil, exit.
+  Put "untitled" into the page's title.
+  Find an shape given the page's shape refers and "title".
+  If the shape is nil, exit.
+  Put the shape's text's first non-blank line into the page's title.
+  \  put the shape's text's first line into the page's title.
+  If the page's title is blank, put "untitled" into the page's title; exit.
+  If the page's title ends with "...", exit.
+  If the page's title ends with "..", append "." to the page's title; exit.
+  If the page's title ends with ".", append ".." to the page's title; exit.
+  If the page's title's last's target is symbolic, exit.
+  Append "..." to the page's title.
+  
+  

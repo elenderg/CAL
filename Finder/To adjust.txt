@@ -1,0 +1,29 @@
+To adjust an node:
+  If the node is nil, exit.
+  Put the finder's left plus the finder's margin into the node's origin's x.
+  Put the finder's top into the node's origin's y.
+  Adjust every nodette in the node.
+  Void the node's caret.
+  Put the node's caret into the node's anchor.
+  
+  
+To adjust an nodette in an node:
+  If the node is nil, exit.
+  If the nodette is nil, exit.
+  Put 0 into the nodette's left.
+  Put 32767 into the nodette's right. \ windows gdi max
+  Put 0 into the nodette's top.
+  If the nodette is not the node's first nodette, put the nodette's previous' bottom into the nodette's top.
+  Put the nodette's top plus the node height into the nodette's bottom.
+  
+  
+To adjust every nodette in an node:
+  If the node is nil, exit.
+  Loop.
+    Get an nodette from the node's nodettes.
+    If the nodette is nil, break.
+    Adjust the nodette in the node.
+  Repeat.
+  Limit the origin in the node.
+  
+  

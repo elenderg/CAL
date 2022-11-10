@@ -1,6 +1,0 @@
-To decide if an spot is within an grid of another spot:
-  Get an difference between the other spot and the spot.
-  If the difference is within the grid, say yes.
-  Say no.
-  
-  

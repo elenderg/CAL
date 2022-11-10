@@ -1,0 +1,24 @@
+To capitalize an shape:
+  If the shape is nil, exit.
+  If the shape's kind is "group", capitalize the shape's shapes; exit.
+  If the shape's kind is not "text", exit.
+  Capitalize the shape's text.
+  
+  
+To capitalize any selected shapes on an page:
+  If the page is nil, exit.
+  Loop.
+    Get an shape from the page's shapes.
+    If the shape is nil, exit.
+    If the shape is not selected, repeat.
+    Capitalize the shape.
+  Repeat.
+  
+  
+To capitalize some shapes:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Capitalize the shape.
+  Repeat.
+  
+  

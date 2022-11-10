@@ -1,8 +1,0 @@
-To put an page's box into an box:
-  If the page is nil, clear the box; exit.
-  Put 0 into the box's left.
-  Put 0 into the box's top.
-  Put the page's width into the box's right.
-  Put the page's height into the box's bottom.
-  
-  

@@ -1,8 +1,0 @@
-To get the status for an box given an measure:
-  Convert the measure times the box's x-extent to an string.
-  Append " W" to the string.
-  Convert the measure times the box's y-extent to another string.
-  Append " H" to the other string.
-  Put the string then "  " then the other string into the status' string.
-  
-  

@@ -1,0 +1,533 @@
+To convert an binary string into an number:
+  Put 0 into the number.
+  Put 1 into an value number.
+  Loop.
+    If the binary string is blank, exit.
+    Get an character from the binary string (backwards). \ was backwards
+    If the character is "1", add the value to the number.
+    Double the value.
+  Repeat.
+  
+  
+To convert an box to an string:
+  Clear the string.
+  Append the box's left to the string.
+  Append " " to the string.
+  Append the box's top to the string.
+  Append " " to the string.
+  Append the box's right to the string.
+  Append " " to the string.
+  Append the box's bottom to the string.
+  
+  
+To convert an byte to an nibble string:
+  Split the byte into an nibble and another nibble.
+  Convert the nibble to the nibble string.
+  Convert the other nibble to another nibble string.
+  Append the other nibble string to the nibble string.
+  
+  
+To convert an byte to an nibble:
+  Put the byte into the nibble as an byte.
+  Uppercase the nibble.
+  If the nibble is greater than the nine byte, subtract 7 from the nibble.
+  Subtract 48 from the nibble.
+  
+  
+To convert an byte to an query byte:
+  If the byte is between 48 and 57, put the byte into the query byte; exit. \ 0-9
+  If the byte is between 65 and 90, put the byte into the query byte; exit. \ An-Z
+  If the byte is between 97 and 122, put the byte into the query byte; exit. \ an-z
+  If the byte is 32, put "+" into the query byte; exit. \ space
+  Convert the byte to an nibble string.
+  Put "%" then the nibble string into the query byte.
+  
+  
+To convert an color to an colorref:
+  If the color is clear, put 16777215 [$00FFFFFF] into the colorref; exit. \ clear pen becomes white
+  Privatize the color.
+  Scale the color's saturation given 240/1000.
+  Limit the color's saturation to 1 and 239.
+  Scale the color's lightness given 240/1000.
+  Limit the color's lightness to 1 and 239.
+  Scale the color's hue given 240/3600.
+  Limit the color's hue to 1 and 239.
+  Call "shlwapi.dll" "ColorHLSToRGB" with the color's hue and the color's lightness and the color's saturation returning the colorref.
+  
+  
+To convert an color to an rgb:
+  Convert the color to an colorref.
+  Convert the colorref to the rgb. 
+  
+  
+To convert an colorref to an color:
+  Call "shlwapi.dll" "ColorRGBToHLS" with the colorref and an wyrd's whereabouts and another wyrd's whereabouts and an third wyrd's whereabouts.
+  Put the wyrd into the color's hue.
+  Put the other wyrd into the color's  lightness.
+  Put the third wyrd into the color's saturation.
+  Scale the color's hue given 3600/240.
+  Limit the color's hue to 0 and 3600.
+  Scale the color's saturation given 1000/240.
+  Limit the color's saturation to 0 and 1000.
+  Scale the color's lightness given 1000/240.
+  Limit the color's lightness to 0 and 1000.
+  
+  
+To convert an colorref to an rgb:
+  Privatize the colorref.
+  Shift the colorref right 0 bits.
+  Put the colorref into the rgb's red byte.
+  Shift the colorref right 8 bits.
+  Put the colorref into the rgb's green byte.
+  Shift the colorref right 8 bits.
+  Put the colorref into the rgb's blue byte.
+  
+  
+To convert an flag to an hex string:
+  Reassign the hex string's first given the flag's magnitude.
+  Copy bytes from the flag's whereabouts to the hex string's first for the flag's magnitude.
+  Put the hex string's first plus the flag's magnitude minus 1 into the hex string's last.
+  
+  
+To convert an font info to pdf em units:
+  If the font info is nil, exit.
+  Convert the font info's internal leading to pdf em units given the font info's emsquare and the font info's font.
+  Convert the font info's ascent to pdf em units given the font info's emsquare and the font info's font.
+  Convert the font info's descent to pdf em units given the font info's emsquare and the font info's font.
+  Convert the font info's capheight to pdf em units given the font info's emsquare and the font info's font.
+  \  convert the font info's italicangle to pdf em units given the font info's emsquare and the font info's font.
+  Convert the font info's stemv to pdf em units given the font info's emsquare and the font info's font.
+  Convert the font info's font box's left to pdf em units given the font info's emsquare and the font info's font.
+  Convert the font info's font box's top to pdf em units given the font info's emsquare and the font info's font.
+  Convert the font info's font box's right to pdf em units given the font info's emsquare and the font info's font.
+  Convert the font info's font box's bottom to pdf em units given the font info's emsquare and the font info's font.
+  Swap the font info's font box's top with the font info's font box's bottom.
+  Convert the font info's font widths to pdf em units.
+  
+  
+To convert an font to an hfont:
+  Privatize the font.
+  Null terminate the font's name.
+  Call "gdi32.dll" "CreateFontA" with - the font's height times 3 divided by 4 and 0 and 0 and 0 and 0 and 0 and 0 and 0 
+  And 1 [default_charset] and 0 and 0 and 5 [cleartype_quality] and 4 [truetype_fonttype] and the font's name's first returning the hfont.
+  
+  
+To convert an fraction to an hex string:
+  Reassign the hex string's first given the fraction's magnitude.
+  Copy bytes from the fraction's whereabouts to the hex string's first for the fraction's magnitude.
+  Put the hex string's first plus the fraction's magnitude minus 1 into the hex string's last.
+  
+  
+To convert an fraction to an mixed:
+  If the fraction's denominator is 0, put 0 into the mixed's whole number; put 0 into the mixed's ratio; exit.
+  Divide the fraction's numerator by the fraction's denominator giving the mixed's whole number and an remainder.
+  Put the remainder and the fraction's denominator into the mixed's fraction.
+  
+  
+To convert an fraction to an string given an number: \ converts to an decimal representation with "the number" of places
+  Clear the string.
+  If the number is less than 1, exit.
+  Put 10 into an value number.
+  Raise the value to the number.
+  Privatize the fraction.
+  If the fraction is negative, set an flag; de-sign the fraction.
+  Multiply the value by the fraction.
+  Zero fill the value given the number and append it to the string.
+  Put the string's length minus the number plus 1 into an byte#.
+  Insert "." into the string before the byte#.
+  If the string's first's target is the period byte, prepend "0" to the string.
+  If the flag is set, prepend "-" to the string.
+  
+  
+To convert an gpbitmap to an buffer (pdf style):
+  Clear the buffer.
+  If the gpbitmap is nil, exit.
+  Lock the gpbitmap given an bitmapdata (24-bit rgb).
+  Put 1 into an row#.
+  Put 1 into an column#.
+  Loop.
+  If the column# is greater than the bitmapdata's width, put 1 into the column#; add 1 to the row#.
+  If the row# is greater than the bitmapdata's height, break.
+  Get an rgb pointer from the bitmapdata at the row# and the column#.
+  Append the rgb pointer's red byte to the buffer.
+  Append the rgb pointer's green byte to the buffer.
+  Append the rgb pointer's blue byte to the buffer.
+  Add 1 to the column#.
+  Repeat.
+  Unlock the gpbitmap given the bitmapdata.
+  
+  
+To convert an hex string to an fraction:
+  If the hex string's length is not the fraction's magnitude, put 0 and 1 into the ratio; exit.
+  Copy bytes from the hex string's first to the fraction's whereabouts for the fraction's magnitude.
+  
+  
+To convert an hex string to an number:
+  If the hex string's length is not the number's magnitude, clear the number; exit.
+  Copy bytes from the hex string's first to the number's whereabouts for the number's magnitude.
+  
+  
+To convert an mixed to an fraction:
+  Put the mixed's fraction into the fraction.
+  Add the mixed's whole number times the fraction's denominator to the fraction's numerator.
+  
+  
+To convert an nibble string to an hex string:
+  Privatize the nibble string.
+  Clear the hex string.
+  If the nibble string's length is odd, prepend the zero byte to the nibble string.
+  Slap an substring on the nibble string.
+  Loop.
+    If the substring is blank, exit.
+    Convert the substring's first's target to an nibble.
+    Shift the nibble left 4 bits.
+    Add 1 to the substring's first.
+    Convert the substring's first's target to another nibble.
+    Bitwise or the nibble with the other nibble.
+    Append the nibble to the hex string.
+    Add 1 to the substring's first.
+  Repeat.
+  
+  
+To convert an nibble to an nibble string:
+  Privatize the nibble.
+  If the nibble is greater than 9, add 7 to the nibble.
+  Add 48 to the nibble.
+  Put the nibble into the nibble string.
+  
+  
+To convert an number to an byte:
+  Put the number into the byte.
+  
+  
+To convert an number to pdf em units given an emsquare number and an font:
+  Multiply the number by the emsquare / the font's adjusted height.
+  Multiply the number by 1000 / the emsquare.
+  
+  
+To convert an pchar to an string:
+  Clear the string.
+  If the pchar is nil, exit.
+  Privatize the pchar.
+  Loop.
+    If the pchar's target is the null byte, exit.
+    Append the pchar's target to the string.
+    Add 1 to the pchar.
+  Repeat.
+  
+  
+To convert an pointer and an length to an string:
+  Clear the string.
+  If the pointer is nil, exit.
+  If the length is 0, exit.
+  Reassign the string's first given the length.
+  Copy bytes from the pointer to the string's first for the length.
+  Put the string's first plus the length minus 1 into the string's last.
+  
+  
+To convert an pointer to an hex string;
+To convert an number to an hex string:
+  Reassign the hex string's first given the number's magnitude.
+  Copy bytes from the number's whereabouts to the hex string's first for the number's magnitude.
+  Put the hex string's first plus the number's magnitude minus 1 into the hex string's last.
+  
+  
+To convert an pointer to an nibble string;
+To convert an number to an nibble string:
+  Split the number into an wyrd and another wyrd.
+  Convert the wyrd to the nibble string.
+  Convert the other wyrd to another nibble string.
+  Append the other nibble string to the nibble string.
+  
+  
+To convert an pointer to an string:
+  Convert the pointer to the string as an nibble string.
+  
+  
+To convert an position to an absolute position given an text:
+  If the text is nil, clear the absolute position; exit.
+  Put 0 into the absolute position.
+  Loop.
+    Get an row from the text's rows.
+    If the row is nil, exit.
+    If the row's row# is less than the position's row#, add the row's string's length to the absolute position; repeat.
+  Add the position's column# to the absolute position.
+  
+  
+To convert an query string to an string:
+  Clear the string.
+  If the query string is blank, exit.
+  Slap an substring on the query string.
+  Loop.
+    If the substring is blank, exit.
+    If the substring's first's target is the cross byte, append " " to the string; add 1 to the substring's first; repeat.
+    If the substring's first's target is not the percent-sign byte, append the substring's first's target to the string; add 1 to the substring's first; repeat.
+    If the substring's length is less than 3, exit.
+    Add 1 to the substring's first.
+    Convert the substring's first's target to an nibble.
+    Shift the nibble left 4 bits.
+    Add 1 to the substring's first.
+    Convert the substring's first's target to another nibble.
+    Bitwise or the nibble with the other nibble.
+    Add 1 to the substring's first.
+    Append the nibble to the string.
+  Repeat.
+  
+  
+To convert an string and an actual font info and an original font info into an buffer for pdf output:
+  Clear the buffer.
+  Put 0 into an current byte#.
+  Slap an substring on the first byte of the string.
+  Loop.
+    If the substring's first is greater than the string's last, break.
+    If the substring's last is the string's last, break.
+    Get an current width given the current byte# and the actual font info's font widths.
+    Get an original width given the substring's last's target and the original font info's font widths.
+    Put the original width minus the current width into an offset.
+    If the offset is 0, add 1 to the substring's last; add 1 to the current byte#; repeat.
+    Convert the substring to an pdf string.
+    Append the pdf string then " " then the offset then " " to the buffer.
+    Put the substring's last plus 1 into the substring's last.
+    Put the substring's last into the substring's first.
+    Add 1 to the current byte#.
+  Repeat.
+  If the substring's first is greater than the string's last, exit.
+  Convert the substring to another pdf string.
+  Append the other pdf string to the buffer.
+  
+  
+To convert an string to an flag:
+  If the string is "y", set the flag; exit.
+  If the string is "yes", set the flag; exit.
+  Clear the flag.
+  
+  
+To convert an string to an fraction:
+  Clear the fraction.
+  If the string is blank, exit.
+  If the string is any integer, convert the string to the fraction's numerator; exit.
+  Slap an substring on the string.
+  If the substring's first's target is any sign, add 1 to the substring's first.
+  If the substring is blank, exit.
+  Split the substring into an integer substring and an fraction substring given the dash byte.
+  If the integer substring is blank, put the substring into the fraction substring.
+  Split the fraction substring into an numerator substring and an denominator substring given the slash byte.
+  Convert the integer substring to an whole number.
+  Convert the numerator substring to an numerator number.
+  Convert the denominator substring to an denominator number.
+  If the whole number is negative, exit.
+  If the numerator number is negative, exit.
+  If the denominator number is negative, exit.
+  If the denominator number is 0, exit.
+  If the whole number is not 0, add the denominator number times the whole number to the numerator number.
+  Put the numerator number into the fraction's numerator.
+  Put the denominator number into the fraction's denominator.
+  If the string's first's target is the dash byte, negate the fraction.
+  
+  
+To convert an string to an nibble string:
+  Clear the nibble string.
+  Slap an substring on the string.
+  Loop.
+    If the substring is blank, exit.
+    Convert the substring's first's target to another nibble string.
+    Append the other nibble string to the nibble string.
+    Add 1 to the substring's first.
+  Repeat.
+  
+  
+To convert an string to an number between another number and an third number:
+  Convert the string to the number.
+  Limit the number to the other number and the third number.
+  
+  
+To convert an string to an number:
+  Put 0 into the number.
+  Slap an substring on the string.
+  If the substring is blank, exit.
+  If the substring's first's target is any sign, add 1 to the substring's first.
+  Loop.
+    If the substring is blank, break.
+    Multiply the number by 10.
+    Put the substring's first's target into another number.
+    Subtract 48 from the other number.
+    Add the other number to the number.
+    Add 1 to the substring's first.
+  Repeat.
+  If the string's first's target is the dash byte, negate the number.
+  
+  
+To convert an string to an pdf string:
+  Put "(" into the pdf string.
+  Slap an substring on the string.
+  Subtract 1 from the substring's first.
+  Loop.
+    Add 1 to the substring's first.
+    If the substring is blank, break.
+    If the substring's first's target is the left-paren byte, append "\(" to the pdf string; repeat.
+    If the substring's first's target is the right-paren byte, append "\)" to the pdf string; repeat.
+    If the substring's first's target is the backslash byte, append "\\" to the pdf string; repeat.
+  Append the substring's first's target to the pdf string.
+  Repeat.
+  Append ")" to the pdf string.
+  
+  
+To convert an string to an pointer: \ assumes pointer is in nibble format
+  Convert the string as an nibble string to an hex string.
+  Void the pointer.
+  Slap an substring on the hex string.
+  Put 24 into an shift count.
+  Loop.
+    If the substring is blank, exit.
+    If the shift count is less than 0, exit.
+    Put the substring's first's target into an number.
+    Shift the number left the shift count.
+    Bitwise or the pointer as an number with the number.
+    Add 1 to the substring's first.
+    Subtract 8 from the shift count.
+  Repeat.
+  
+  
+To convert an string to an query string:
+  Clear the query string.
+  Slap an substring on the string.
+  Loop.
+    If the substring is blank, break.
+    Convert the substring's first's target to an query byte.
+    Append the query byte to the query string.
+    Add 1 to the substring's first.
+  Repeat.
+  
+  
+To convert an string to an uuid:
+  Convert the string to an wide string and null terminate.
+  Call "ole32.dll" "CLSIDFromString" with the wide string's first and the uuid's whereabouts.
+  
+  
+To convert an string to an wide string and null terminate:
+  Convert the string to the wide string.
+  Null terminate the wide string.
+  
+  
+To convert an string to an wide string:
+  Clear the wide string.
+  Slap an substring on the string.
+  Loop.
+    If the substring is blank, exit.
+    Append the substring's first's target to the wide string.
+    Append the null byte to the wide string.
+    Add 1 to the substring's first.
+  Repeat.
+  
+  
+To convert an string to some rows:
+  Slap an rider on the string.
+  Loop.
+    Move the rider (text file rules).
+    If the rider's token is blank, break.
+    Create an row given the rider's token.
+    Append the row to the rows.
+    If the row's string's last's target is the linefeed byte, put the return byte into the row's string's last's target. \ *dahn new to handle lines terminated by just linefeed
+  Repeat.
+  Renumber the rows.
+  
+  
+To convert an url to an url record:
+  Privatize the url.
+  Null terminate the url.
+  Put an urlcomponents' magnitude into the urlcomponents' dwstructsize.
+  Put 1 into the urlcomponents' dwschemelength.
+  Put 1 into the urlcomponents' dwhostnamelength.
+  Put 1 into the urlcomponents' dwurlpathlength.
+  Put 1 into the urlcomponents' dwextrainfolength.
+  Call "wininet.dll" "InternetCrackUrlA" with the url's first and 0 and 0 and the urlcomponents' whereabouts returning an number.
+  Convert the urlcomponents' lpszscheme and the urlcomponents' dwschemelength to the url record's scheme.
+  Convert the urlcomponents' lpszhostname and the urlcomponents' dwhostnamelength to the url record's host name.
+  Convert the urlcomponents' lpszurlpath and the urlcomponents' dwurlpathlength to the url record's path.
+  Convert the urlcomponents' lpszextrainfo and the urlcomponents' dwextrainfolength to the url record's extra.
+  Put the urlcomponents' nport into the url record's port number.
+  
+  
+To convert an wyrd to an nibble string:
+  Split the wyrd into an byte and another byte.
+  Convert the byte to the nibble string.
+  Convert the other byte to another nibble string.
+  Append the other nibble string to the nibble string.
+  
+  
+To convert an absolute position to an position given an text:
+  If the text is nil, clear the position; exit.
+  Privatize the absolute position.
+  Loop.
+    Get an row from the text's rows.
+    If the row is nil, clear the position; exit.
+    Put the row's row# into the position's row#.
+    Put the absolute position into the position's column#.
+    Subtract the row's string's length from the absolute position.
+    If the absolute position is less than 1, exit.
+  Repeat.
+  
+  
+To convert an l-param to an key: \ assumes l-param from wm_char message
+  Put the l-param into the key.
+  Shift the key right 16 bits.
+  Bitwise and the key with 255.
+  Call "user32.dll" "MapVirtualKeyA" with the key and 1 returning the key.
+  If the numlock key was not toggled, exit.
+  If the key is the insert key, put the numpad-zero key into the key; exit.
+  If the key is the delete key, put the numpad-period key into the key; exit.
+  If the key is the home key, put the numpad-seven key into the key; exit.
+  If the key is the end key, put the numpad-one key into the key; exit.
+  If the key is the page-up key, put the numpad-nine key into the key; exit.
+  If the key is the page-down key, put the numpad-three key into the key; exit.
+  If the key is the left-arrow key, put the numpad-four key into the key; exit.
+  If the key is the up-arrow key, put the numpad-eight key into the key; exit.
+  If the key is the right-arrow key, put the numpad-six key into the key; exit.
+  If the key is the down-arrow key, put the numpad-two key into the key; exit.
+  If the key is the clear key, put the numpad-five key into the key; exit.
+  
+  
+To convert an l-param to an spot:
+  Split the l-param into an wyrd and another wyrd.
+  Put the wyrd into the spot's y.
+  Put the other wyrd into the spot's x.
+  Multiply the spot by the tpp.
+  
+  
+To convert some font widths to pdf em units:
+  Get an outlinetextmetric given the font widths' font.
+  Put the font widths' data into an number pointer.
+  Loop.
+    If an counter is past the font widths' count, break.
+    Convert the number pointer's target to pdf em units given the outlinetextmetric's otmemsquare and the font widths' font.
+    Add an number's magnitude to the number pointer.
+  Repeat.
+  
+  
+To convert some points to some precise degrees:
+  Put the points times 3840 divided by 3600 into the precise degrees.
+  
+  
+To convert some precise degrees to some points:
+  Put the precise degrees times 3600 divided by 3840 into the points.
+  
+  
+To convert some rows to an string (no linefeed additions):
+  Clear the string.
+  Loop.
+    Get an row from the rows.
+    If the row is nil, exit.
+    Append the row's string to the string.
+  Repeat.
+  
+  
+To convert some rows to an string:
+  Clear the string.
+  Loop.
+    Get an row from the rows.
+    If the row is nil, exit.
+    Append the row's string to the string.
+    If the string's last's target is the return byte, append the linefeed byte to the string; repeat.
+  Repeat.
+  
+  

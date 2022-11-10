@@ -1,0 +1,151 @@
+To address an fragment given an address (epilog):
+  If the current routine's callback flag is set, add 3 to the address.
+  Add 6 to the address.
+  
+  
+To address an fragment given an address (prolog):
+  Add 3 to the address.
+  If the current routine's local size is not 0, add 10 to the address.
+  If the current routine's callback flag is set, add 3 to the address.
+  
+  
+To address an fragment given an address (push value):
+  Add 6 to the address.
+  If the fragment's variable is nil, abort with "Internal error - address an fragment given an address (push value)"; exit.
+  If the fragment's variable's type is nil, abort with "Internal error 2 - address an fragment given an address (push value)"; exit.
+  Put the fragment's variable's type's length into an length.
+  If the length is 4, add 2 to the address; exit.
+  If the length is 2, add 3 to the address; exit.
+  If the length is 1, add 4 to the address; exit.
+  Abort with "Internal error 3 - address an fragment given an address (push value)".
+  
+  
+To address an fragment given an address (save eax):
+  Add 6 to the address.
+  If the fragment's variable is nil, abort with "Internal error - address an fragment given an address (push value)"; exit.
+  If the fragment's variable's type is nil, abort with "Internal error 2 - address an fragment given an address (push value)"; exit.
+  Put the fragment's variable's type's length into an length.
+  If the length is 4, add 2 to the address; exit.
+  If the length is 2, add 3 to the address; exit.
+  If the length is 1, add 2 to the address; exit.
+  Abort with "Internal error 3 - address an fragment given an address (push value)".
+  
+  
+To address an fragment given an address:
+  If the compiler's abort flag is set, exit.
+  If the fragment is nil, exit.
+  Put the image base plus the address into the fragment's address.
+  If the fragment's tag is the push address tag, add 7 to the address; exit.
+  If the fragment's tag is the call internal tag, add 5 to the address; exit.
+  If the fragment's tag is the load address tag, add 12 to the address; exit.
+  If the fragment's tag is the increment tag, add 10 to the address; exit.
+  If the fragment's tag is the dereference tag, add 14 to the address; exit.
+  If the fragment's tag is the jump false tag, add 9 to the address; exit.
+  If the fragment's tag is the not tag, add 3 to the address; exit.
+  If the fragment's tag is the exit tag, add 5 to the address; exit.
+  If the fragment's tag is the repeat tag, add 5 to the address; exit.
+  If the fragment's tag is the break tag, add 5 to the address; exit.
+  If the fragment's tag is the prolog tag, address the fragment given the address (prolog); exit.
+  If the fragment's tag is the epilog tag, address the fragment given the address (epilog); exit.
+  If the fragment's tag is the intel tag, add the fragment's code's length to the address; exit.
+  If the fragment's tag is the push value tag, address the fragment given the address (push value); exit.
+  If the fragment's tag is the call external tag, add 6 to the address; exit.
+  If the fragment's tag is the load eax tag, add 8 to the address; exit.
+  If the fragment's tag is the save eax tag, address the fragment given the address (save eax); exit.
+  If the fragment's tag is the call indirect tag, add 8 to the address; exit.
+  If the fragment's tag is the routine address tag, add 12 to the address; exit.
+  
+  
+To address an routine given an address:
+  If the compiler's abort flag is set, exit.
+  If the routine is nil, exit.
+  If the routine's employs moniker is not blank, exit. \ employs are addressed later
+  If the routine's compiled flag is not set, exit.
+  Put the routine into the current routine.
+  Put the image base plus the address into the routine's address.
+  Address the routine's fragments given the address.
+  Round the address up to the nearest multiple of 4.
+  
+  
+To address an variable given an address:
+  If the compiler's abort flag is set, exit.
+  If the variable is nil, exit.
+  If the variable's compiled flag is not set, exit.
+  Put the image base plus the address into the variable's address.
+  Add the variable's type's length to the address.
+  If the variable's type can be reduced to "string", add the variable's data's length plus 1 to the address.
+  Round the address up to the nearest multiple of 4.
+  
+  
+To address an entry:
+  Put the current name address into the entry's name address.
+  Put the entry's name's length plus 3 into an number.
+  Round the number up to the nearest multiple of 2.
+  Add the number to the current name address.
+  Put the current thunk address into the entry's thunk address.
+  Put the image base plus the current thunk address into the entry's address.
+  Add 4 to the current thunk address.
+  
+  
+To address an import:
+  Put the current name address into the import's name address.
+  Put the current header address into the import's header address.
+  Put the current name address into the import's import header's name memory address.
+  Put the import's name's length plus 1 into an number.
+  Round the number up to the nearest multiple of 2.
+  Add the number to the current name address.
+  Add an import header's magnitude to the current header address.
+  Put the current thunk address into the import's import header's first thunk memory address.
+  Address the import's entries.
+  Add 4 to the current thunk address.
+  
+  
+To address some entries:
+    Get an entry from the entries.
+    If the entry is nil, exit.
+    Address the entry.
+  Repeat.
+  
+  
+To address some fragments given an address:
+    If the compiler's abort flag is set, exit.
+    Get an fragment from the fragments.
+    If the fragment is nil, exit.
+    Address the fragment given the address.
+  Repeat.
+  
+  
+To address some imports given an address:
+  Put the address into the current header address.
+  Put the imports' count into an count.
+  Add 1 to the count.
+  Multiply the count by an import header's magnitude.
+  Put the address plus the count into the current thunk address.
+  Get another count given the imports (all entries plus markers).
+  Multiply the other count by 4.
+  Put the current thunk address plus the other count into the current name address.
+  Loop.
+    Get an import from the imports.
+    If the import is nil, break.
+    Address the import.
+  Repeat.
+  Put the current name address minus the address into an number.
+  Add the number to the address.
+  
+  
+To address some routines given an address:
+  If the compiler's abort flag is set, exit.
+  Get an routine from the routines.
+  If the routine is nil, break.
+  Address the routine given the address.
+  Repeat.
+  
+  
+To address some variables given an address:
+    If the compiler's abort flag is set, exit.
+    Get an variable from the variables.
+    If the variable is nil, exit.
+    Address the variable given the address.
+  Repeat.
+  
+  

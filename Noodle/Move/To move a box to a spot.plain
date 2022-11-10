@@ -1,5 +1,0 @@
-To move an box to an spot:
-  Get an difference between the spot and the box's left-top.
-  Move the box given the difference.
-  
-  

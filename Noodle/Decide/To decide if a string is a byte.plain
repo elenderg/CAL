@@ -1,6 +1,0 @@
-To decide if an string is an byte:
-  If the string's length is not 1, say no.
-  If the string's first's target is the byte, say yes.
-  Say no.
-  
-  

@@ -1,9 +1,0 @@
-An paintstruct is an record with
-  An hdc called hdc,
-  An number called ferase,
-  An box called rcpaint,
-  An number called frestore,
-  An number called fincupdate,
-  32 bytes.
-  
-  

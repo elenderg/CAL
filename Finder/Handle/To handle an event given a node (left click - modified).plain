@@ -1,6 +1,0 @@
-To handle an event given an node (left click - modified):
-  Snapshot the node's nodettes.
-  Position the selection in the node given the event's spot.
-  Track the node given the event.
-  
-  

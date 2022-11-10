@@ -1,6 +1,0 @@
-To decide if an nodette is selected:
-  If the nodette is nil, say no.
-  If the nodette's selected flag is set, say yes.
-  Say no.
-  
-  

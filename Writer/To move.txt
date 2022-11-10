@@ -1,0 +1,118 @@
+To move an rider (document rules):
+  Skip any leading noise in the rider's source.
+  Position the rider's token on the rider's source.
+  If the rider's source is blank, exit.
+  If the rider's source's first's target is the double-quote byte, move the rider (quoted string rules); exit.
+  Loop.
+    If the rider's source is blank, exit.
+    If the rider's source's first's target is noise, exit.
+    Add 1 to the rider's token's last.
+    Add 1 to the rider's source's first.
+  Repeat.
+  
+  
+To move an shape given an pair (ellipse):
+  Move the shape's ellipse's box given the pair.
+  Adjust the shape.
+  
+  
+To move an shape given an pair (group):
+  Move the shape's shapes given the pair.
+  Adjust the shape.
+  
+  
+To move an shape given an pair (picture):
+  Move the shape's picture given the pair.
+  Adjust the shape.
+  
+  
+To move an shape given an pair (polygon):
+  Move the shape's polygon given the pair.
+  Adjust the shape.
+  
+  
+To move an shape given an pair (rectangle):
+  Move the shape's rect given the pair.
+  Adjust the shape.
+  
+  
+To move an shape given an pair (text):
+  Move the shape's text rect given the pair.
+  Move the shape's text given the pair.
+  Adjust the shape.
+  
+  
+To move an shape given an pair:
+  If the shape is nil, exit.
+  If the shape's kind is "ellipse", move the shape given the pair (ellipse); exit.
+  If the shape's kind is "group", move the shape given the pair (group); exit.
+  If the shape's kind is "picture", move the shape given the pair (picture); exit.
+  If the shape's kind is "polygon", move the shape given the pair (polygon); exit.
+  If the shape's kind is "rectangle", move the shape given the pair (rectangle); exit.
+  If the shape's kind is "text", move the shape given the pair (text); exit.
+  Debug "move an shape given an pair: " then the shape's kind.
+  
+  
+To move an shape given an ratio pair and an spot:
+  If the shape is nil, exit.
+  Get an difference between the shape's box's left-top and the spot.
+  Put the difference into another difference.
+  Scale the other difference given the ratio pair.
+  Subtract the difference from the other difference.
+  Move the shape given the other difference.
+  
+  
+To move any selected shapes on an page given an pair and an sizer:
+  If the page is nil, exit.
+  Privatize the pair.
+  If the sizer's kind is "left-top", negate the pair's x; negate the pair's y.
+  If the sizer's kind is "right-top", clear the pair's x; negate the pair's y.
+  If the sizer's kind is "left-bottom", negate the pair's x; clear the pair's y.
+  If the sizer's kind is "right-bottom", clear the pair's x; clear the pair's y.
+  Move any selected shapes on the page given the pair.
+  
+  
+To move any selected shapes on an page given an pair:
+  If the page is nil, exit.
+  Loop.
+    Get an shape from the page's shapes.
+    If the shape is nil, exit.
+    If the shape is not selected, repeat.
+    Move the shape given the pair.
+  Repeat.
+  
+  
+To move some shapes given an pair:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Move the shape given the pair.
+  Repeat.
+  
+  
+To move some shapes given an ratio pair and an spot:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Move the shape given the ratio pair and the spot.
+  Repeat.
+  
+  
+To move the focus on an page (backwards):
+  If the page is nil, exit.
+  If the page's shape refers are empty, exit.
+  Put the page's shape refers' last selected shape refer into an shape refer.
+  If the shape refer is not nil, put the shape refer's previous into the shape refer.
+  If the shape refer is nil, put the page's shape refers' last into the shape refer.
+  Deselect the page's shapes.
+  Select the shape refer's shape.
+  
+  
+To move the focus on an page (forwards):
+  If the page is nil, exit.
+  If the page's shape refers are empty, exit.
+  Put the page's shape refers' first selected shape refer into an shape refer.
+  If the shape refer is not nil, put the shape refer's next into the shape refer.
+  If the shape refer is nil, put the page's shape refers' first into the shape refer.
+  Deselect the page's shapes.
+  Select the shape refer's shape.
+  
+  

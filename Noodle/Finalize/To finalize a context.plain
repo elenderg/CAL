@@ -1,7 +1,0 @@
-To finalize an context:
-  Destroy the choices.
-  Destroy the figures.
-  Destroy the context stack.
-  Destroy the context.
-  
-  

@@ -1,6 +1,0 @@
-To lowercase the character under an finger and put it into an string:
-  If the finger is nil, exit.
-  Put the finger's target into the string.
-  Lowercase the string.
-  
-  

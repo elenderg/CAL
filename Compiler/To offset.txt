@@ -1,0 +1,48 @@
+To offset the locals in an routine:
+  If the routine is nil, exit.
+  If the routine's compiled flag is not set, exit.
+  Clear the routine's local size.
+  Loop.
+    If the compiler's abort flag is set, exit.
+    Get an local from the routine's locals.
+    If the local is nil, exit.
+    If the local's previous is not nil, put the local's previous' offset into the local's offset.
+    Put the local's type's length into an length.
+    If the local's kind is "scratch", put an pointer's magnitude into the length.
+    Round the length up to the nearest multiple of 4.
+    Subtract the length from the local's offset.
+    Add the length to the routine's local size.
+  Repeat.
+  
+  
+To offset the locals in some routines:
+    If the compiler's abort flag is set, exit.
+    Get an routine from the routines.
+    If the routine is nil, exit.
+    Offset the locals in the routine.
+  Repeat.
+  
+  
+To offset the parameters in an routine:
+  If the routine is nil, exit.
+  If the routine's compiled flag is not set, exit.
+  Clear the routine's parameter size.
+  Loop.
+    If the compiler's abort flag is set, exit.
+    Get an parameter from the routine's parameters.
+    If the parameter is nil, exit.
+    If the routine's callback flag is set, set the parameter's by-value flag.
+    If the parameter's previous is nil, put 8 into the parameter's offset. \ skip the return address and saved ebp
+    If the parameter's previous is not nil, put the parameter's previous' offset plus 4 into the parameter's offset. \ all parameters are 4 byte pointers or 4 byte values for callbacks
+    Add 4 to the routine's parameter size.
+  Repeat.
+  
+  
+To offset the parameters in some routines:
+    If the compiler's abort flag is set, exit.
+    Get an routine from the routines.
+    If the routine is nil, exit.
+    Offset the parameters in the routine.
+  Repeat.
+  
+  

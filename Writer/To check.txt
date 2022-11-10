@@ -1,0 +1,36 @@
+To check spelling given an page (current page only):
+  If the page is nil, exit.
+  Show status "Checking...".
+  Check spelling given the page and an flag (shapes).
+  If the flag is not set, cluck; show the desktop with "Done"; exit.
+  Scroll the page to the caret.
+  Show the desktop with "Found".
+  
+  
+To check spelling given an page (entire document):
+  If the page is nil, exit.
+  Privatize the page.
+  Show status "Checking...".
+  Loop.
+    If the page is nil, cluck; show the desktop with "Done"; exit.
+    Check spelling given the page and an flag (shapes).
+    If the flag is not set, put the page's next into the page; repeat.
+  Switch to the page.
+  Scroll the page to the caret.
+  Show the desktop with "Found".
+  
+  
+To check spelling given an page and an flag (shapes):
+  Clear the flag.
+  If the page is nil, exit.
+  Get an shape refer with which to start finding given the page.
+  Get the find anchor with which to start finding given the shape refer and the page.
+  Loop.
+    If the shape refer is nil, exit.
+    Find the next misspelling in the shape refer's shape's text given the flag.
+    If the flag is set, begin edit on the page given the shape refer's shape; exit.
+    Put 1 and 1 into the find anchor.
+    Put the shape refer's next into the shape refer.
+  Repeat.
+  
+  

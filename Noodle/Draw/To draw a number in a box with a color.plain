@@ -1,5 +1,0 @@
-To draw an number in an box with an color:
-  Put the number into an string.
-  Draw the string in the box with the color and "center".
-  
-  

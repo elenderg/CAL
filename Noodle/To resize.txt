@@ -1,0 +1,95 @@
+To resize an box given an ratio pair;
+To resize an box given an fraction pair:
+  Put the box's x-extent into an width.
+  Put the box's y-extent into an height.
+  Scale the width given the fraction pair's fraction.
+  Scale the height given the fraction pair's other fraction.
+  Put the box's left plus the width into the box's right.
+  Put the box's top plus the height into the box's bottom.
+  
+  
+To resize an box given an twip pair:
+  Add the twip pair's x to the box's right.
+  Add the twip pair's y to the box's bottom.
+  
+  
+To resize an line given an ratio pair;
+To resize an line given an fraction pair:
+  Put the line's box into an box.
+  Subtract the box's left-top from the line's start.
+  Scale the line's start given the fraction pair.
+  Add the box's left-top to the line's start.
+  Subtract the box's left-top from the line's end.
+  Scale the line's end given the fraction pair.
+  Add the box's left-top to the line's end.
+  
+  
+To resize an line given an twip pair:
+  Put the line's box into an box.
+  Put the box into another box.
+  Resize the other box given the twip pair.
+  Make an fraction pair given the other box and the box.
+  Resize the line given the fraction pair.
+  
+  
+To resize an picture to an width by an height:
+  If the picture is nil, exit.
+  Put the width divided by the tpp into an pixel width.
+  Put the height divided by the tpp into an pixel height.
+  Call "gdiplus.dll" "GdipCreateBitmapFromScan0" with the pixel width and the pixel height and 0 and 137224 [pixelformat24bpprgb] and 0 and an gpbitmap's whereabouts.
+  Call "gdiplus.dll" "GdipGetImageGraphicsContext" with the gpbitmap and an gpgraphic's whereabouts.
+  Call "gdiplus.dll" "GdipDrawImageRectRectI" with the gpgraphic and the picture's gpbitmap
+  And 0 and 0 and the pixel width and the pixel height
+  And 0 and 0 and the picture's gpbitmap's width minus 1 and the picture's gpbitmap's height minus 1
+  And 2 [unitpixel] and nil and nil and 0.
+  Call "gdiplus.dll" "GdipDeleteGraphics" with the gpgraphic.
+  Destroy the picture's gpbitmap.
+  Put the gpbitmap into the picture's gpbitmap.
+  Adjust the picture (extract boxes from gpbitmap).
+  Clear the picture's data.
+  
+  
+To resize an polygon given an ratio pair;
+To resize an polygon given an fraction pair:
+  If the polygon is nil, exit.
+  Put the polygon's box into an box.
+  Loop.
+    Get an vertex from the polygon's vertices.
+    If the vertex is nil, exit.
+    Subtract the box's left-top from the vertex's spot.
+    Scale the vertex's spot given the fraction pair.
+    Add the box's left-top to the vertex's spot.
+  Repeat.
+  
+  
+To resize an polygon given an twip pair:
+  If the polygon is nil, exit.
+  Put the polygon's box into an box.
+  Put the box into another box.
+  Resize the other box given the twip pair.
+  Make an fraction pair given the other box and the box.
+  Resize the polygon given the fraction pair.
+  
+  
+To resize an text given an ratio pair;
+To resize an text given an fraction pair:
+  If the text is nil, exit.
+  Resize the text's box given the fraction pair.
+  Wrap the text.
+  
+  
+To resize an text given an twip pair:
+  If the text is nil, exit.
+  Resize the text's box given the twip pair.
+  Wrap the text.
+  
+  
+To resize an ellipse given an ratio pair;
+To resize an ellipse given an fraction pair:
+  Resize the ellipse's box given the fraction pair.
+  
+  
+To resize an ellipse given an twip pair:
+  Resize the ellipse's box given the twip pair.
+  
+  

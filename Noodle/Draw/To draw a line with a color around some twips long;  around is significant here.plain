@@ -1,9 +1,0 @@
-To draw an line with an color around some twips long; \ "around" is significant here
-  To draw an line with an color about some twips long; \ "about" is significant here
-  To stroke an line with an color around some twips long; \ "around" is significant here
-  To stroke an line with an color about some twips long: \ "about" is significant here
-  Put the twips divided by 2 into some other twips.
-  Pick some third twips between the twips minus the other twips and the twips plus the other twips.
-  Stroke the line with the color the third twips long.
-  
-  

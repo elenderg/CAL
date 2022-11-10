@@ -1,0 +1,12 @@
+To localize an box given an pair:
+  Privatize the pair.
+  Negate the pair.
+  Move the box given the pair.
+  
+  
+To localize an spot given an pair:
+  Privatize the pair.
+  Negate the pair.
+  Move the spot given the pair.
+  
+  

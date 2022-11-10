@@ -1,8 +1,0 @@
-To add an field to some fields given an name and an nickname and an type name and an reference flag:
-  Add the field to the fields given "field" and nil.
-  Put the name into the field's name.
-  Put the nickname into the field's nickname.
-  Put the type name into the field's type name.
-  Put the reference flag into the field's reference flag.
-  
-  

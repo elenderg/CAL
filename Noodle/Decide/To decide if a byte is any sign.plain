@@ -1,6 +1,0 @@
-To decide if an byte is any sign:
-  If the byte is the dash byte, say yes.
-  If the byte is the cross byte, say yes.
-  Say no.
-  
-  

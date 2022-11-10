@@ -1,0 +1,123 @@
+To begin an landscape sheet given an title string:
+  If the pdf document flag is not set, clear the landscape sheet; exit.
+  Make the landscape sheet 11 inches by 8-1/2 inches.
+  Begin the sheet given the box and the title (pdf style).
+  
+  
+To begin an landscape sheet:
+  Make the landscape sheet 11 inches by 8-1/2 inches.
+  Begin an sheet with the landscape sheet.
+  
+  
+To begin an portrait sheet given an title string:
+  If the pdf document flag is not set, clear the portrait sheet; exit.
+  Make the portrait sheet 8-1/2 inches by 11 inches.
+  Begin the sheet given the box and the title (pdf style).
+  
+  
+To begin an portrait sheet:
+  Make the portrait sheet 8-1/2 inches by 11 inches.
+  Begin an sheet with the portrait sheet.
+  
+  
+To begin an sheet given an box (pdf style):
+  Begin the sheet given the box and "" (pdf style).
+  
+  
+To begin an sheet given an box and an title string (pdf style - start the current page):
+  Add the pdf state's current page given "page".
+  Append the pdf state's current page's number then " 0 obj" to the pdf state's current page.
+  Append "<<" to the pdf state's current page.  
+  Append "/Type /Page" to the pdf state's current page.
+  Append "/Parent " then the pdf state's parent's number then " 0 R" to the pdf state's current page.
+  Put the box's width minus the tpp times 72 / the tpi into an width.
+  Put the box's height minus the tpp times 72 / the tpi into an height.
+  Append "/MediaBox [0 0 " then the width then " " then the height then "]" to the pdf state's current page.
+  Put the box's height minus the tpp into the pdf state's current height.
+  Add the pdf state's current contents given "contents".
+  Append "/Contents " then the pdf state's current contents' number then " 0 R" to the pdf state's current page.
+  Append "0.05 0 0 0.05 1 1 cm" to the pdf state's current contents. \ set matrix to scale 72/1440
+  Append "13 w 0 J 0 j 0 i" to the pdf state's current contents. \ penwidth, linecap, linejoin, flatness \ 15 w on penwidth comes out to wide
+  
+  
+To begin an sheet given an box and an title string (pdf style):
+  Set the pdf state's page flag.
+  Put the clear color into the pdf state's current border.
+  Put the clear color into the pdf state's current fill.
+  Begin the sheet given the box and the title (pdf style - start the current page).
+  If the title is blank, exit.
+  Create an pdf outline entry given the title and the pdf state's current height and the pdf state's current page's number.
+  Append the pdf outline entry to the pdf state's outline entries.
+  
+  
+To begin an sheet given an box and an title string:
+  Begin the sheet given the box and the title (pdf style).
+  
+  
+To begin an sheet given an box:
+  If the pdf state's document flag is set, begin the sheet given the box (pdf style); exit.
+  Call "kernel32.dll" "GlobalLock" with the printer device mode handle returning an pdevmode.
+  If the pdevmode is nil, exit.
+  Bitwise or the pdevmode's dmfields with 1 [dm_orientation].
+  Put 1 [dmorient_portrait] into the pdevmode's dmorientation.
+  If the box's width is greater than the box's height, put 2 [dmorient_landscape] into the pdevmode's dmorientation.
+  Call "gdi32.dll" "ResetDCA" with the printer canvas and the pdevmode.
+  Call "kernel32.dll" "GlobalUnlock" with the printer device mode handle.
+  Call "gdi32.dll" "SetGraphicsMode" with the printer canvas and 2 [gm_advanced].
+  Call "gdi32.dll" "SetBkMode" with the printer canvas and 1 [transparent].
+  Call "gdi32.dll" "SetMapMode" with the printer canvas and 8 [mm_anisotropic].
+  Call "gdi32.dll" "GetDeviceCaps" with the printer canvas and 112 [physicaloffsetx] returning an pair's x.
+  Call "gdi32.dll" "GetDeviceCaps" with the printer canvas and 113 [physicaloffsety] returning the pair's y.
+  Negate the pair.
+  Call "gdi32.dll" "SetViewportOrgEx" with the printer canvas and the pair's x and the pair's y and nil.
+  Call "gdi32.dll" "GetDeviceCaps" with the printer canvas and 88 [logpixelsx] returning the pair's x.
+  Call "gdi32.dll" "GetDeviceCaps" with the printer canvas and 90 [logpixelsy] returning the pair's y.
+  Call "gdi32.dll" "SetViewportExtEx" with the printer canvas and the pair's x and the pair's y and nil.
+  Call "gdi32.dll" "SetWindowOrgEx" with the printer canvas and 0 and 0 and nil.
+  Call "gdi32.dll" "SetWindowExtEx" with the printer canvas and the tpi and the tpi and nil.
+  Call "gdi32.dll" "StartPage" with the printer canvas.
+  Put the printer canvas into the current canvas.
+  Call "gdi32.dll" "GetDeviceCaps" with the printer canvas and 88 [logpixelsx] returning an number.
+  Put the tpp into the saved tpp.
+  Put the tpi divided by the number into the tpp.
+  
+  
+To begin an sheet given an title string:
+  Begin an portrait sheet given the title.
+  
+  
+To begin an sheet:
+  Begin the sheet as an portrait sheet.
+  
+  
+To begin printing an pdf (start the parent):
+  Add an parent pdf object given "parent".
+  Put the parent into the pdf state's parent.
+  Append the parent's number then " 0 obj" to the parent.
+  Append "<<" to the parent.
+  Append "/Type /Pages" to the parent.
+  
+  
+To begin printing an pdf (start the root):
+  Add an root pdf object given "root".
+  Put the root into the pdf state's root.
+  Append the root's number then " 0 obj" to the root.
+  Append "<<" to the root.
+  Append "/Type /Catalog" to the root.
+  
+  
+To begin printing an pdf:
+  Set the pdf state's document flag.
+  Put 0 into the pdf state's object number.
+  Create the pdf state's font index given 113.
+  Begin printing the pdf (start the root).
+  Begin printing the pdf (start the parent).
+  
+  
+To begin printing:
+  Initialize the printer canvas.
+  Put an docinfo's magnitude into the docinfo's cbsize.
+  Put the module's name's first into the docinfo's lpszdocname.
+  Call "gdi32.dll" "StartDocA" with the printer canvas and the docinfo's whereabouts.
+  
+  

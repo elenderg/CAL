@@ -1,5 +1,0 @@
-To write an byte without advancing:
-  Put the byte into an string.
-  Write the string without advancing.
-  
-  

@@ -1,0 +1,84 @@
+To copy an page into another page:
+  If the page is nil, void the other page; exit.
+  Allocate memory for the other page.
+  Put the page's width into the other page's width.
+  Put the page's height into the other page's height.
+  Copy the page's shapes into the other page's shapes.
+  Put the page's origin into the other page's origin.
+  Put the page's grid into the other page's grid.
+  Put the page's superduper into the other page's superduper.
+  Put the page's scale into the other page's scale.
+  Put the page's measure into the other page's measure.
+  \  don't copy the edit shape
+  \  don't copy shape refers, recreate them
+  Put the page's edge into the other page's edge.
+  Put the page's selected flag into the other page's selected flag.
+  Put the page's previously selected flag into the other page's previously selected flag.
+  Put the page's title into the other page's title.
+  Put the page's page number into the other page's page number.
+  Adjust the other page.
+  
+  
+To copy an page to an page clipboard:
+  If the page is nil, exit.
+  Copy the page into another page.
+  Append the other page to the page clipboard.
+  
+  
+To copy an shape into another shape:
+  If the shape is nil, void the other shape; exit.
+  Allocate memory for the other shape.
+  Put the shape's kind into the other shape's kind.
+  Put the shape's border into the other shape's border.
+  Put the shape's fill into the other shape's fill.
+  Put the shape's ellipse into the other shape's ellipse.
+  Copy the shape's picture into the other shape's picture.
+  Copy the shape's polygon into the other shape's polygon.
+  Put the shape's rect into the other shape's rect.
+  Put the shape's text rect into the other shape's text rect.
+  Put the shape's label into the other shape's label.
+  Copy the shape's text into the other shape's text.
+  Copy the shape's shapes into the other shape's shapes.
+  Put the shape's box into the other shape's box.
+  Put the shape's selected flag into the other shape's selected flag.
+  Put the shape's previously selected flag into the other shape's previously selected flag.
+  Put the shape's scale into the other shape's scale.
+  
+  
+To copy any selected pages in an document to an page clipboard returning an count:
+  Put 0 into the count.
+  If the document is nil, exit.
+  Put the document's selected page count into an total count.
+  Loop.
+    Get an page from the document's pages.
+    If the page is nil, exit.
+    If the page is not selected, repeat.
+    Add 1 to the count.
+    Show status the count then " of " then the total count then "...".
+    Copy the page to the page clipboard.
+  Repeat.
+  
+  
+To copy any selected shapes on an page to an shape clipboard:
+  If the page is nil, exit.
+  Destroy the shape clipboard.
+  Loop.
+    Get an shape from the page's shapes.
+    If the shape is nil, exit.
+    If the shape is not selected, repeat.
+    Copy the shape into another shape.
+    Scale the other shape to 1/1.
+    Append the other shape to the shape clipboard.
+  Repeat.
+  
+  
+To copy some shapes into some other shapes:
+  Destroy the other shapes.
+  Loop.
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Copy the shape into another shape.
+    Append the other shape to the other shapes.
+  Repeat.
+  
+  

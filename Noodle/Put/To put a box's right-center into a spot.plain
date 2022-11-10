@@ -1,5 +1,0 @@
-To put an box's right-center into an spot:
-  Put the box's right into the spot's x.
-  Put the box's center's y into the spot's y.
-  
-  

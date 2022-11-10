@@ -1,5 +1,0 @@
-To put an polygon's x-extent into an width:
-  If the polygon is nil, clear the width; exit.
-  Put the polygon's box's x-extent into the width.
-  
-  

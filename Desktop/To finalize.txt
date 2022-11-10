@@ -1,0 +1,29 @@
+To finalize the bar:
+  Finalize the status.
+  Destroy the menu.
+  
+  
+To finalize the desktop:
+  Finalize the switch.
+  Finalize the pad.
+  Finalize the bar.
+  
+  
+To finalize the pad:
+  
+  
+To finalize the status:
+  
+  
+To finalize the switch:
+  
+  
+To finalize:
+  Destroy the tabs.
+  Finalize the compiler.
+  Finalize the writer.
+  Finalize the editor.
+  Finalize the finder.
+  Finalize the desktop.
+  
+  

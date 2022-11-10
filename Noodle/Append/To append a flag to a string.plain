@@ -1,5 +1,0 @@
-To append an flag to an string:
-  Convert the flag to another string.
-  Append the other string to the string.
-  
-  

@@ -1,5 +1,0 @@
-To put an line's bottom into an coord:
-  Put the line's start's y into the coord.
-  If the line's end's y is greater than the line's start's y, put the line's end's y into the coord.
-  
-  

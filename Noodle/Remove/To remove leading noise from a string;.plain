@@ -1,8 +1,0 @@
-To remove leading noise from an string;
-To remove any leading noise from an string:
-    If the string is blank, exit.
-    If the string's first's target is not noise, exit.
-    Remove the first byte from the string.
-  Repeat.
-  
-  

@@ -1,6 +1,0 @@
-To draw an dot some twips wide on the current spot with an color:
-  Make the dot the twips wide.
-  Center the dot on the context's spot.
-  Draw the dot with the color.
-  
-  

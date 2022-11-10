@@ -1,8 +1,0 @@
-To find an shape given some shape refers and an label:
-    Get an shape refer from the shape refers.
-    If the shape refer is nil, void the shape; exit.
-    If the shape refer's shape's label is the label, break.
-  Repeat.
-  Put the shape refer's shape into the shape.
-  
-  

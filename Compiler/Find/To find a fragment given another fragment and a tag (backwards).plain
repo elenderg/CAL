@@ -1,9 +1,0 @@
-To find an fragment given another fragment and an tag (backwards):
-  Put the other fragment into the fragment.
-  Loop.
-    If the fragment is nil, exit.
-    If the fragment's tag is the tag, exit.
-    Put the fragment's previous into the fragment.
-  Repeat.
-  
-  

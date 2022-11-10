@@ -1,5 +1,0 @@
-To handle an event given an page (key down - backspace key):
-  If the page is being edited, handle the event given the page (key down - backspace key - editing); exit.
-  Handle the event given the page (key down - delete key).
-  
-  

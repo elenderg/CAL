@@ -1,0 +1,1229 @@
+To handle align given an page and an alignment (editing):
+  Show status "Changing...".
+  Set the current tab's node's document's modified flag.
+  Handle align given the page's edit shape's text and the alignment.
+  Show the desktop with status.
+  
+  
+To handle align given an page and an alignment:
+  If the page is being edited, handle align given the page and the alignment (editing); exit.
+  If nothing is selected on the page, cluck; exit.
+  Remember the page.
+  Show status "Changing...".
+  Align any selected shapes on the page given the alignment.
+  Show the desktop with status.
+  
+  
+To handle an event given an document (key down - backspace key):
+  Handle the event given the document (key down - delete key).
+  
+  
+To handle an event given an document (key down - delete key):
+  If nothing is selected in the document, show error "I'm not sure what you want me to delete."; exit.
+  If the user is not sure, exit.
+  Show status "Deleting...".
+  Put the document's last selected page's next into an page.
+  Remove any selected pages in the document returning an count.
+  If the page is nil, put the document's last page into the page.
+  Focus on the page in the document.
+  Show the desktop.
+  Show status the count and "page deleted" or "pages deleted".
+  Flush the event queue.
+  
+  
+To handle an event given an document (key down - down-arrow key - shifted):
+  If the document's caret's next is nil, cluck; exit.
+  Put the document's caret's next into the document's caret.
+  Select the document's pages given the document's selection.
+  Scroll to the edge of the document's caret given the document.
+  Show the desktop with status.
+  
+  
+To handle an event given an document (key down - down-arrow key):
+  If the document is empty, exit.
+  If the document's caret is nil, focus on the document's first page in the document; show the desktop with status; exit.
+  If the event's shift flag is set, handle the event given the document (key down - down-arrow key - shifted); exit.
+  Put the document's caret's next into an page.
+  If the page is nil, put the document's first page into the page.
+  Focus on the page in the document.
+  Show the desktop with status.
+  
+  
+To handle an event given an document (key down - end key):
+  If the event's shift flag is not set, focus on the document's last page in the document; show the desktop; exit.
+  If the document's anchor is nil, put the document's first page into the document's anchor.
+  Put the document's last page into the document's caret.
+  Select the document's pages given the document's selection.
+  Scroll to the edge of the document's caret given the document.
+  Show the desktop with status.
+  
+  
+To handle an event given an document (key down - enter key):
+  Handle open.
+  
+  
+To handle an event given an document (key down - escape key):
+  If nothing is selected in the document, handle close; exit.
+  If the document is empty, exit.
+  Deselect the pages in the document.
+  Show the desktop with status.
+  
+  
+To handle an event given an document (key down - home key):
+  If the document is empty, exit.
+  If the event's shift flag is not set, focus on the document's first page in the document; show the desktop; exit.
+  If the document's anchor is nil, put the document's last page into the document's anchor.
+  Put the document's first page into the document's caret.
+  Select the document's pages given the document's selection.
+  Scroll to the edge of the document's caret given the document.
+  Show the desktop with status.
+  
+  
+To handle an event given an document (key down - page-down key):
+  If the document is empty, exit.
+  Scroll the document down one page.
+  If the event's shift flag is not set, focus on the document's first visible page in the document; show the desktop with status; exit.
+  If the document's anchor is nil, put the document's first page into the document's anchor.
+  Put the document's first visible page into the document's caret.
+  Select the document's pages given the document's selection.
+  Scroll to the edge of the document's caret given the document.
+  Show the desktop with status.
+  
+  
+To handle an event given an document (key down - page-up key):
+  If the document is empty, exit.
+  Scroll the document up one page.
+  If the event's shift flag is not set, focus on the document's first visible page in the document; show the desktop with status; exit.
+  If the document's anchor is nil, put the document's last page into the document's anchor.
+  Put the document's first visible page into the document's caret.
+  Select the document's pages given the document's selection.
+  Scroll to the edge of the document's caret given the document.
+  Show the desktop with status.
+  
+  
+To handle an event given an document (key down - up-arrow key - shifted):
+  If the document's caret's previous is nil, cluck; exit.
+  Put the document's caret's previous into the document's caret.
+  Select the document's pages given the document's selection.
+  Scroll to the edge of the document's caret given the document.
+  Show the desktop with status.
+  
+  
+To handle an event given an document (key down - up-arrow key):
+  If the document is empty, exit.
+  If the document's caret is nil, focus on the document's last page in the document; show the desktop with status; exit.
+  If the event's shift flag is set, handle the event given the document (key down - up-arrow key - shifted); exit.
+  Put the document's caret's previous into an page.
+  If the page is nil, put the document's last page into the page.
+  Focus on the page in the document.
+  Show the desktop with status.
+  
+  
+To handle an event given an document (key down):
+  If the event's key is the backspace key, handle the event given the document (key down - backspace key); exit.
+  If the event's key is the delete key, handle the event given the document (key down - delete key); exit.
+  If the event's key is the enter key, handle the event given the document (key down - enter key); exit.
+  If the event's key is the down-arrow key, handle the event given the document (key down - down-arrow key); exit.
+  If the event's key is the end key, handle the event given the document (key down - end key); exit.
+  If the event's key is the escape key, handle the event given the document (key down - escape key); exit.
+  If the event's key is the home key, handle the event given the document (key down - home key); exit.
+  If the event's key is the page-down key, handle the event given the document (key down - page-down key); exit.
+  If the event's key is the page-up key, handle the event given the document (key down - page-up key); exit.
+  If the event's key is the up-arrow key, handle the event given the document (key down - up-arrow key); exit.
+  
+  
+To handle an event given an document (left click - modified):
+  Snapshot the document's pages.
+  Position the selection in the document given the event's spot.
+  Track the document given the event.
+  
+  
+To handle an event given an document (left click - not in document):
+  Deselect the pages in the document.
+  Show the desktop with status.
+  
+  
+To handle an event given an document (left click - not modified, not shifted):
+  Deselect the document's pages.
+  Snapshot the document's pages.
+  Position the selection in the document given the event's spot.
+  Track the document given the event.
+  
+  
+To handle an event given an document (left click - shifted):
+  Track the document given the event.
+  
+  
+To handle an event given an document (left click):
+  If the event's spot is not in the edge of any page in the document, handle the event given the document (left click - not in document); exit.
+  If the event is modified, handle the event given the document (left click - modified); exit.
+  If the event's shift flag is set, handle the event given the document (left click - shifted); exit.
+  Handle the event given the document (left click - not modified, not shifted).
+  
+  
+To handle an event given an document (left double click):
+  If something is selected in the document, handle open; exit.
+  If the event's spot is not in the edge of any page in the document, handle open; exit.
+  Extend any selection in the document given the event's spot.
+  Show the desktop with status.
+  Handle open.
+  
+  
+To handle an event given an document (right click):
+  If the event's spot is not in the document, exit.
+  If the document is empty, exit.
+  Show the hand cursor.
+  Scroll the document given the event.
+  Show the arrow cursor.
+  
+  
+To handle an event given an document (set cursor):
+  Show the arrow cursor.
+  
+  
+To handle an event given an page (finding - key down - backspace key):
+  If the find string is blank, cluck; exit.
+  Remove the last byte from the find string.
+  Put the find anchor into an anchor.
+  Find given the find page and an flag.
+  Put the anchor into the find anchor.
+  If the flag is not set, cluck.
+  If the find string is not blank, show the desktop with "Finding..."; exit.
+  Switch to the find page.
+  If the find shape is nil, show the desktop with "Finding..."; exit.
+  Begin edit on the find page given the find shape.
+  Put the find anchor into the find shape's text's caret.
+  Deselect the find shape's text.
+  Scroll the find page to the caret.
+  Show the desktop with "Finding...".
+  
+  
+To handle an event given an page (finding - key down - printable key):
+  Append the event's byte to the find string.
+  Put the find anchor into an anchor.
+  Find given the page and an flag.
+  Put the anchor into the find anchor.
+  If the flag is not set, cluck; remove the last byte from the find string; exit.
+  Show the desktop with "Finding...".
+  
+  
+To handle an event given an page (finding - key down):
+  If the event's byte is printable, handle the event given the page (finding - key down - printable key); exit.
+  If the event's key is the backspace key, handle the event given the page (finding - key down - backspace key); exit.
+  If the event's key is the shift key, exit.
+  Relinquish control.
+  
+  
+To handle an event given an page (finding - left click):
+  Relinquish control.
+  
+  
+To handle an event given an page (finding - refresh):
+  Show the desktop with "Finding...".
+  
+  
+To handle an event given an page (finding - right click):
+  Relinquish control.
+  
+  
+To handle an event given an page (finding - set cursor):
+  Show the arrow cursor.
+  
+  
+To handle an event given an page (finding):
+  If the event's kind is "key down", handle the event given the page (finding - key down); exit.
+  If the event's kind is "left click", handle the event given the page (finding - left click); exit.
+  If the event's kind is "refresh", handle the event given the page (finding - refresh); exit.
+  If the event's kind is "right click", handle the event given the page (finding - right click); exit.
+  If the event's kind is "set cursor", handle the event given the page (finding - set cursor); exit.
+  
+  
+To handle an event given an page (key down - backspace key - editing):
+  Hide the cursor.
+  If there is nothing to backspace in the page's edit shape's text, cluck; exit.
+  Set the current tab's node's document's modified flag.
+  Handle the event given the page's edit shape's text (backspace key).
+  Scroll the page to the caret.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down - backspace key):
+  If the page is being edited, handle the event given the page (key down - backspace key - editing); exit.
+  Handle the event given the page (key down - delete key).
+  
+  
+To handle an event given an page (key down - delete key - editing):
+  Hide the cursor.
+  If there is nothing to remove in the page's edit shape's text, cluck; exit.
+  Set the current tab's node's document's modified flag.
+  Handle the event given the page's edit shape's text (delete key).
+  Scroll the page to the caret.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down - delete key):
+  If the page is being edited, handle the event given the page (key down - delete key - editing); exit.
+  If nothing is selected on the page, cluck; exit.
+  Remember the page.
+  Remove any selected shapes on the page.
+  Adjust the page.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down - down-arrow key):
+  If the page is not being edited, cluck; exit.
+  Hide the cursor.
+  Handle the event given the page's edit shape's text (down-arrow key).
+  Scroll the page to the caret.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down - end key - editing):
+  Hide the cursor.
+  Handle the event given the page's edit shape's text (end key).
+  Scroll the page to the caret.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down - end key):
+  If the event is modified, end edit on the page.
+  If the page is being edited, handle the event given the page (key down - end key - editing); exit.
+  If the page's next is nil, cluck; show the desktop with status; exit.
+  Switch to the current tab's node's document's pages' last.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down - enter key):
+  If the page is not being edited, cluck; exit.
+  Hide the cursor.
+  Set the current tab's node's document's modified flag.
+  Handle the event given the page's edit shape's text (enter key).
+  Scroll the page to the caret.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down - escape key - editing):
+  If nothing is selected in the page's edit shape's text, end edit on the page; show the desktop with status; exit.
+  Deselect the page's edit shape's text.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down - escape key):
+  If the page is being edited, handle the event given the page (key down - escape key - editing); exit.
+  If something is selected on the page, deselect the page's shapes; show the desktop with status; exit.
+  Handle close.
+  
+  
+To handle an event given an page (key down - home key - editing):
+  Hide the cursor.
+  Handle the event given the page's edit shape's text (home key).
+  Scroll the page to the caret.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down - home key):
+  If the event is modified, end edit on the page.
+  If the page is being edited, handle the event given the page (key down - home key - editing); exit.
+  If the page's previous is nil, cluck; show the desktop with status; exit.
+  Switch to the current tab's node's document's pages' first.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down - left-arrow key):
+  If the page is not being edited, cluck; exit.
+  Hide the cursor.
+  Handle the event given the page's edit shape's text (left-arrow key).
+  Scroll the page to the caret.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down - page-down key):
+  If the page's next is nil, cluck; exit.
+  Switch to the page's next.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down - page-up key):
+  If the page's previous is nil, cluck; exit.
+  Switch to the page's previous.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down - printable key - editing):
+  Hide the cursor.
+  Set the current tab's node's document's modified flag.
+  Handle the event given the page's edit shape's text (printable key).
+  Scroll the page to the caret.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down - printable key):
+  If the page is being edited, handle the event given the page (key down - printable key - editing); exit.
+  Put the page's shape refers' first selected shape into an shape.
+  If the shape is nil, cluck; exit.
+  If the shape's kind is not "text", cluck; exit.
+  Begin edit on the page given the shape.
+  Select every byte in the shape's text.
+  Handle the event given the page (key down - printable key - editing).
+  
+  
+To handle an event given an page (key down - right-arrow key):
+  If the page is not being edited, cluck; exit.
+  Hide the cursor.
+  Handle the event given the page's edit shape's text (right-arrow key).
+  Scroll the page to the caret.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down - tab key):
+  If the page's shape refers are empty, cluck.
+  If the page is being edited, end edit on the page.
+  If the event's shift flag is not set, move the focus on the page (forwards).
+  If the event's shift flag is set, move the focus on the page (backwards).
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down - up-arrow key):
+  If the page is not being edited, cluck; exit.
+  Hide the cursor.
+  Handle the event given the page's edit shape's text (up-arrow key).
+  Scroll the page to the caret.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (key down):
+  If the event's byte is printable, handle the event given the page (key down - printable key); exit.
+  If the event's key is the backspace key, handle the event given the page (key down - backspace key); exit.
+  If the event's key is the delete key, handle the event given the page (key down - delete key); exit.
+  If the event's key is the enter key, handle the event given the page (key down - enter key); exit.
+  If the event's key is the down-arrow key, handle the event given the page (key down - down-arrow key); exit.
+  If the event's key is the end key, handle the event given the page (key down - end key); exit.
+  If the event's key is the escape key, handle the event given the page (key down - escape key); exit.
+  If the event's key is the home key, handle the event given the page (key down - home key); exit.
+  If the event's key is the left-arrow key, handle the event given the page (key down - left-arrow key); exit.
+  If the event's key is the page-down key, handle the event given the page (key down - page-down key); exit.
+  If the event's key is the page-up key, handle the event given the page (key down - page-up key); exit.
+  If the event's key is the right-arrow key, handle the event given the page (key down - right-arrow key); exit.
+  If the event's key is the tab key, handle the event given the page (key down - tab key); exit.
+  If the event's key is the up-arrow key, handle the event given the page (key down - up-arrow key); exit.
+  
+  
+To handle an event given an page (left click - blank area):
+  If the event's spot is not in the pad, exit.
+  Reset the superduper given the page.
+  Track the rubberband on the page given the event.
+  
+  
+To handle an event given an page (left click - edit shape):
+  Track the page's edit shape on the page given the event (text selection).
+  
+  
+To handle an event given an page (left click):
+  If the event's spot is not in the pad, exit.
+  If the event's spot is in the edit shape on the page, handle the event given the page (left click - edit shape); exit.
+  If the page is being edited, end edit on the page.
+  Void an shape.
+  If the event is modified, handle the event given the page (trace polygon); exit. \ tracer
+  If the event's spot is in an cropper of the shape on the page, handle the event given the page and the shape and the cropper (left click); exit.
+  If the event's spot is in an vertex of the shape on the page, handle the event given the page and the shape and the vertex (left click); exit.
+  If the event's spot is in an sizer of the shape on the page, handle the event given the page and the shape and the sizer (left click); exit.
+  If the event's spot is in the shape on the page, handle the event given the page and the shape (left click); exit.
+  Handle the event given the page (left click - blank area).
+  
+  
+To handle an event given an page (left double click - edit shape):
+  Handle the event given the page's edit shape's text (left double click).
+  Scroll the page to the caret.
+  Show the desktop with status.
+  
+  
+To handle an event given an page (left double click):
+  If the event's spot is not in the pad, exit.
+  If the event's spot is in the edit shape on the page, handle the event given the page (left double click - edit shape); exit.
+  If the event's spot is in an vertex of an shape on the page, handle the event given the page and the shape and the vertex (left double click); exit.
+  If the event's spot is on the shape on the page, handle the event given the page and the shape (left double click); exit.
+  
+  
+To handle an event given an page (right click):
+  If the event's spot is not in the pad, exit.
+  If the event's spot is not in the page, exit.
+  Show the hand cursor.
+  Scroll the page given the event.
+  Show the arrow cursor.
+  
+  
+To handle an event given an page (set cursor):
+  If the event's spot is not in the pad, show the arrow cursor; exit.
+  If the event's spot is in the edit shape on the page, show the i-beam cursor; exit.
+  Show the arrow cursor.
+  
+  
+To handle an event given an page (trace polygon):
+  If the page is nil, exit.
+  If the event is nil, exit.
+  Deselect the page's shapes.
+  Show the desktop with status.
+  Remember the page.
+  Reset the superduper given the page.
+  Put the event's spot into an line's start spot.
+  Localize the line's start spot given the page's origin.
+  Round the line's start spot to the page's yank.
+  Put the page's yank into an grid.
+  Create an shape.
+  Put "polygon" into the shape's kind.
+  Put the tracer color into the shape's border.
+  Create the shape's polygon.
+  Create an vertex given the line's start spot.
+  Append the vertex to the shape's polygon.
+  Append the shape to the page's shapes.
+  Adjust the shape.
+  Loop.
+    Wait for the mouse's left button to be up.
+    Flush all events.
+    If an flag is set, show the desktop with status.
+    If the ctrl key is up, break.
+    Put the mouse's spot into the line's end spot.
+    Autoscroll the page given the line's end spot and the flag.
+    Localize the line's end spot given the page's origin.
+    Round the line's end spot to the page's yank.
+    Set the flag.
+    Put the line into the focus line.
+    Globalize the focus line given the page's origin.
+    If the mouse's left button is up, repeat.
+    Create another vertex given the line's end spot.
+    Append the other vertex to the shape's polygon.
+    Adjust the shape.
+    Put the line's end spot into the line's start spot.
+    Put the line into the focus line.
+    Globalize the focus line given the page's origin.
+  Repeat.
+  Select the shape.
+  Clear the focus line.
+  Show the desktop with status.
+  Flush all events.
+  
+  
+To handle an event given an page and an shape (left click - begin edit):
+  Begin edit on the page given the shape.
+  Put the event's spot into an spot.
+  Localize the spot given the page's origin.
+  Extend any selection in the shape's text given the spot.
+  Deselect the shape's text.
+  Show the desktop with status.
+  
+  
+To handle an event given an page and an shape (left click - dragging):
+  Remember the page.
+  Track the shape on the page given the event.
+  Adjust the page.
+  
+  
+To handle an event given an page and an shape (left click - shifted):
+  Reset the superduper given the page.
+  Reverse the shape's selected flag.
+  Show the desktop with status.
+  
+  
+To handle an event given an page and an shape (left click):
+  If the event's shift flag is set, handle the event given the page and the shape (left click - shifted); exit.
+  Put the shape's selected flag into the shape's previously selected flag.
+  If the shape is not selected, reset the selection on the page given the shape.
+  Get the status for the shape given the page's measure.
+  Show the status.
+  If the mouse has been dragged from the event's spot given the page's yank, handle the event given the page and the shape (left click - dragging); exit.
+  If the shape's previously selected flag is not set, exit.
+  Put the event's spot into an spot.
+  Localize the spot given the page's origin.
+  Get an focus shape given the shape and the spot.
+  If the focus shape's kind is not "text", exit.
+  Handle the event given the page and the focus shape (left click - begin edit).
+  
+  
+To handle an event given an page and an shape (left double click):
+  If the shape's kind is not "polygon", exit.
+  Put the event's spot into an spot.
+  Localize the spot given the page's origin.
+  Remember the page.
+  Reset the superduper given the page.
+  Create an vertex given the spot.
+  Round the vertex's spot to the page's yank.
+  Insert the vertex into the shape's polygon at the spot.
+  Adjust the shape.
+  Show the desktop with status.
+  
+  
+To handle an event given an page and an shape and an cropper (left click):
+  If the mouse has not been dragged from the event's spot given the page's yank, exit.
+  Remember the page.
+  Reset the superduper given the page.
+  Track the cropper on the shape on the page given the event.
+  
+  
+To handle an event given an page and an shape and an sizer (left click):
+  Get the status for the shape's box given the page's measure.
+  Show the status.
+  If the mouse has not been dragged from the event's spot given the page's yank, exit.
+  Remember the page.
+  Reset the superduper given the page.
+  Track the sizer on the shape on the page given the event.
+  Adjust the page.
+  
+  
+To handle an event given an page and an shape and an vertex (left click):
+  If the mouse has not been dragged from the event's spot given the page's yank, exit.
+  Remember the page.
+  Reset the superduper given the page.
+  Track the vertex on the shape on the page given the event.
+  
+  
+To handle an event given an page and an shape and an vertex (left double click):
+  If the shape's polygon's vertices' count is 2, cluck; exit.
+  Remember the page.
+  Reset the superduper given the page.
+  Remove the vertex from the shape's polygon's vertices.
+  Destroy the vertex.
+  Adjust the shape.
+  Show the desktop with status.
+  
+  
+To handle border and fill given an page and an color: \ special menu
+  If the page is being edited, end edit on the page. \ special menu
+  If nothing is selected on the page, cluck; exit. \ special menu
+  Remember the page. \ special menu
+  Show status "Bordering and filling...". \ special menu
+  Border any selected shapes on the page given the color. \ special menu
+  Fill any selected shapes on the page given the color. \ special menu
+  Show the desktop with status. \ special menu
+  
+  
+To handle border given an page and an color:
+  If the page is being edited, end edit on the page.
+  If nothing is selected on the page, cluck; exit.
+  Remember the page.
+  Show status "Bordering...".
+  Border any selected shapes on the page given the color.
+  Show the desktop with status.
+  
+  
+To handle bring to front given an page:
+  If the page is being edited, end edit on the page.
+  If nothing is selected on the page, cluck; exit.
+  Remember the page.
+  Show status "Bringing...".
+  Bring any selected shapes on the page forward.
+  Show the desktop with status.
+  
+  
+To handle capitalize given an page (editing):
+  If nothing is selected in the page's edit shape's text, cluck; exit.
+  Show status "Capitalizing...".
+  Set the current tab's node's document's modified flag.
+  Handle capitalize given the page's edit shape's text.
+  Show the desktop with status.
+  
+  
+To handle capitalize given an page:
+  If the page is being edited, handle capitalize given the page (editing); exit.
+  If nothing is selected on the page, cluck; exit.
+  Show status "Capitalizing...".
+  Remember the page.
+  Capitalize any selected shapes on the page.
+  Show the desktop with status.
+  
+  
+To handle check spelling given an page (current page only):
+  Put "check spelling - current page only" into the find mode.
+  Load the lexicon.
+  If the lexicon is nil, show error "I can't find any lecksicon."; exit.
+  End edit on the page.
+  Deselect the page's shapes.
+  Check spelling given the page (current page only).
+  
+  
+To handle check spelling given an page (entire document):
+  Put "check spelling - entire document" into the find mode.
+  Load the lexicon.
+  If the lexicon is nil, show error "I can't find any lecksicon."; exit.
+  End edit on the page.
+  Deselect the page's shapes.
+  Check spelling given the current tab's node's document's pages' first (entire document).
+  
+  
+To handle copy given an document:
+  If nothing is selected in the document, show error "I'm not sure what you want me to copy."; exit.
+  Show status "Copying...".
+  Destroy the page clipboard.
+  Copy any selected pages in the document to the page clipboard returning an count.
+  Show the desktop.
+  Show status the count and "page copied" or "pages copied".
+  Flush the event queue.
+  
+  
+To handle copy given an page (editing):
+  If nothing is selected in the page's edit shape's text, cluck; exit.
+  Show status "Copying...".
+  Handle copy given the page's edit shape's text.
+  Show the desktop with "Copied".
+  
+  
+To handle copy given an page:
+  If the page is being edited, handle copy given the page (editing); exit.
+  If nothing is selected on the page, cluck; exit.
+  Show status "Copying...".
+  Copy any selected shapes on the page to the shape clipboard.
+  Show the desktop with "Copied".
+  
+  
+To handle cut given an document:
+  If nothing is selected in the document, show error "I'm not sure what you want me to cut."; exit.
+  Show status "Cutting...".
+  Put the document's last selected page's next into an page.
+  Destroy the page clipboard.
+  Cut any selected pages in the document to the page clipboard returning an count.
+  If the page is nil, put the document's last page into the page.
+  Focus on the page in the document.
+  Show the desktop.
+  Show status the count and "page cut" or "pages cut".
+  Flush the event queue.
+  
+  
+To handle cut given an page (editing):
+  If nothing is selected in the page's edit shape's text, cluck; exit.
+  Show status "Cutting...".
+  Set the current tab's node's document's modified flag.
+  Handle cut given the page's edit shape's text.
+  Scroll the page to the caret.
+  Show the desktop with "Cut".
+  
+  
+To handle cut given an page:
+  If the page is being edited, handle cut given the page (editing); exit.
+  If nothing is selected on the page, cluck; exit.
+  Show status "Cutting...".
+  Remember the page.
+  Copy any selected shapes on the page to the shape clipboard.
+  Remove any selected shapes on the page.
+  Adjust the page.
+  Show the desktop with "Cut".
+  
+  
+To handle duplicate given an document:
+  If nothing is selected in the document, show error "I'm not sure what you want me to duplicate."; exit.
+  Show status "Duplicating...".
+  Duplicate any selected pages in the document returning an count.
+  Set the caret and anchor in the document using the selected pages.
+  Show the desktop.
+  Show status the count and "page duplicated" or "pages duplicated".
+  Flush the event queue.
+  
+  
+To handle duplicate given an page:
+  If the page is being edited, end edit on the page.
+  If nothing is selected on the page, cluck; exit.
+  Remember the page.
+  Duplicate any selected shapes on the page.
+  Adjust the page.
+  Show the desktop with status.
+  
+  
+To handle enlarge given an page:
+  If the current tab's node's document's scale is 4/1, cluck; exit.
+  Remember the page.
+  Multiply the current tab's node's document's scale by 2.
+  Scale the page to the current tab's node's document's scale.
+  Center the page.
+  If the page is being edited, scroll the page to the caret.
+  If the page is not being edited, scroll the page to the page's first selected shape.
+  Put the page's scale's numerator then ":" then the page's scale's denominator into the status' string.
+  Show the desktop.
+  
+  
+To handle events given an page (finding):
+    Deque an event.
+    If the event is nil, exit.
+    Handle the event given the page (finding).
+  Repeat.
+  
+  
+To handle fill given an page and an color:
+  If the page is being edited, end edit on the page.
+  If nothing is selected on the page, cluck; exit.
+  Remember the page.
+  Show status "Filling...".
+  Fill any selected shapes on the page given the color.
+  Show the desktop with status.
+  
+  
+To handle find given an page:
+  If the page is being edited, deselect the page's edit shape's text.
+  Scroll the page to the caret.
+  Put the page into the find page.
+  Get an shape refer with which to start finding given the page.
+  If the shape refer is not nil, put the shape refer's shape into the find shape.
+  Get the find anchor with which to start finding given the shape refer and the page.
+  Clear the find string.
+  Put "find" into the find mode.
+  Show the desktop with "Finding...".
+  Hide the cursor.
+  Handle events given the page (finding).
+  Void the find page.
+  Void the find shape.
+  Put 1 and 1 into the find anchor.
+  Show the desktop with status.
+  Refresh the cursor.
+  
+  
+To handle find next given an page (find):
+  Show status "Finding...".
+  Find next given the page and an flag.
+  If the flag is set, show the desktop with "Found"; exit.
+  Cluck.
+  Show the desktop with "Not Found".
+  
+  
+To handle find next given an page:
+  If the find mode is "find", handle find next given the page (find); exit.
+  If the find mode is "check spelling - entire document", check spelling given the page (entire document); exit.
+  If the find mode is "check spelling - current page only", check spelling given the page (current page only); exit.
+  Cluck.
+  
+  
+To handle flip given an page:
+  If the page is being edited, end edit on the page.
+  If nothing is selected on the page, cluck; exit.
+  Remember the page.
+  Show status "Flipping...".
+  Flip any selected shapes on the page.
+  Adjust the page.
+  Show the desktop with status.
+  
+  
+To handle font height given an page and an font height (editing):
+  Show status "Changing...".
+  Set the current tab's node's document's modified flag.
+  Handle font height given the page's edit shape's text and the font height.
+  Show the desktop with status.
+  
+  
+To handle font height given an page and an font height:
+  If the page is being edited, handle font height given the page and the font height (editing); exit.
+  If nothing is selected on the page, cluck; exit.
+  Show status "Changing...".
+  Remember the page.
+  Change any selected shapes on the page given the font height.
+  Show the desktop with status.
+  
+  
+To handle font height other given an page:
+  If nothing is selected on the page, cluck; exit.
+  Get an font height given the page.
+  Put the font height and 1 inch into an ratio.
+  Convert the ratio to an ratio string.
+  Ask "Height (inches)?" with the ratio string.
+  If the answer is blank, exit.
+  Show the desktop.
+  Convert the answer to another ratio.
+  If the other ratio is 0, show error "Invalid font height."; exit.
+  Put 1 inch times the other ratio into another font height.
+  Handle font height given the page and the other font height.
+  
+  
+To handle font name given an page (editing):
+  Get an font name given the page.
+  Ask "Name?" with the font name.
+  If the answer is blank, exit.
+  Show the desktop.
+  Show status "Changing...".
+  Set the current tab's node's document's modified flag.
+  Handle font name given the page's edit shape's text and the answer.
+  Show the desktop with status.
+  
+  
+To handle font name given an page:
+  If the page is being edited, handle font name given the page (editing); exit.
+  If nothing is selected on the page, cluck; exit.
+  Get an font name given the page.
+  Ask "Name?" with the font name.
+  If the answer is blank, exit.
+  Show the desktop.
+  Show status "Changing...".
+  Remember the page.
+  Change any selected shapes on the page given the answer.
+  Show the desktop with status.
+  
+  
+To handle grayscale given an page and an flag:
+  If the page is being edited, end edit on the page.
+  If nothing is selected on the page, cluck; exit.
+  Remember the page.
+  Show status "Grayscaling...".
+  Grayscale any selected shapes on the page given the flag.
+  Show the desktop with status.
+  
+  
+To handle grid given an page and an flag:
+  Put the flag into the current tab's node's document's grid showing flag.
+  Show the desktop with status.
+  
+  
+To handle group given an page:
+  If the page is being edited, end edit on the page.
+  If nothing is selected on the page, cluck; exit.
+  Remember the page.
+  Group any selected shapes on the page.
+  Adjust the page.
+  Show the desktop with status.
+  
+  
+To handle label given an page and an label:
+  If the page is being edited, end edit on the page.
+  If the page's selected shape refer count is not 1, cluck; exit.
+  Remember the page.
+  Show status "Labeling...".
+  Find an shape given the page's shape refers and the label.
+  If the shape is not nil, clear the shape's label.
+  Put the label into the page's shape refers' first selected shape's label.
+  Show the desktop with status.
+  
+  
+To handle lowercase given an page (editing):
+  If nothing is selected in the page's edit shape's text, cluck; exit.
+  Show status "Lowercasing...".
+  Set the current tab's node's document's modified flag.
+  Handle lowercase given the page's edit shape's text.
+  Show the desktop with status.
+  
+  
+To handle lowercase given an page:
+  If the page is being edited, handle lowercase given the page (editing); exit.
+  If nothing is selected on the page, cluck; exit.
+  Show status "Lowercasing...".
+  Remember the page.
+  Lowercase any selected shapes on the page.
+  Show the desktop with status.
+  
+  
+To handle measure given an page:
+  If the page is being edited, end edit on the page.
+  Ask "Measure Ratio?" with the page's measure.
+  If the answer is blank, exit.
+  Convert the answer to an ratio.
+  If the ratio is 0, show error "That is not an valid measure."; exit.
+  Show the desktop with "Changing...".
+  Remember the page.
+  Reduce the ratio.
+  Put the ratio into the page's measure.
+  Divide the page's measure by the page's scale.
+  Show the desktop with status.
+  
+  
+To handle mirror given an page:
+  If the page is being edited, end edit on the page.
+  If nothing is selected on the page, cluck; exit.
+  Remember the page.
+  Show status "Mirroring...".
+  Mirror any selected shapes on the page.
+  Adjust the page.
+  Show the desktop with status.
+  
+  
+To handle new page given an document:
+  If the current tab's node's path is read-only, show error "I'm sorry, but this directory is read only."; exit.
+  Show status "Creating...".
+  Add an page to the document.
+  Focus on the page in the document.
+  Show the desktop with "Page created".
+  Flush the event queue.
+  
+  
+To handle new shape given an page and an kind:
+  If the page is being edited, end edit on the page.
+  Create an shape given the kind (default).
+  If the shape is nil, show the desktop with status; exit.
+  Adjust the shape.
+  Scale the shape given the page's scale.
+  Center the shape in the page's localized visible box.
+  Put 1/2 inch and 1/2 inch into an grid.
+  Scale the grid given the page's scale.
+  Yank the shape to the grid.
+  Remember the page.
+  Deselect the page's shapes.
+  Append the shape to the page's shapes.
+  Select the shape.
+  Reset the superduper given the page.
+  Show the desktop with status.
+  Adjust the page.
+  
+  
+To handle paste given an document:
+  If the page clipboard is empty, cluck; exit.
+  Show status "Pasting...".
+  Paste any pages on the page clipboard into the document returning an count.
+  Set the caret and anchor in the document using the selected pages.
+  Scroll to the edge of the document's last selected page given the document.
+  Show the desktop.
+  Show status the count and "page pasted" or "pages pasted".
+  Flush the event queue.
+  
+  
+To handle paste given an page (editing):
+  If there is not text on the windows clipboard, cluck; exit.
+  Show status "Pasting...".
+  Set the current tab's node's document's modified flag.
+  Handle paste given the page's edit shape's text.
+  Scroll the page to the caret.
+  Show the desktop with "Pasted".
+  
+  
+To handle paste given an page:
+  If the page is being edited, handle paste given the page (editing); exit.
+  If the shape clipboard is empty, cluck; exit.
+  Show status "Pasting...".
+  Remember the page.
+  Paste any shapes on the shape clipboard into the page.
+  Adjust the page.
+  Show the desktop with "Pasted".
+  
+  
+To handle pen given an page and an color (editing):
+  Show status "Penning...".
+  Set the current tab's node's document's modified flag.
+  Handle pen given the page's edit shape's text and the color.
+  Show the desktop with status.
+  
+  
+To handle pen given an page and an color:
+  If the page is being edited, handle pen given the page and the color (editing); exit.
+  If nothing is selected on the page, cluck; exit.
+  Remember the page.
+  Show status "Penning...".
+  Pen any selected shapes on the page given the color.
+  Show the desktop with status.
+  
+  
+To handle print given an document:
+  If nothing is selected in the document, show error "I'm not sure what you want me to print."; exit.
+  Ask "Copies?" with "1".
+  If the answer is blank, exit.
+  Convert the answer to an copy count between 1 and the largest number.
+  Show the desktop with "Printing...".
+  Print the document given the copy count.
+  Show status "Printed".
+  
+  
+To handle print given an page:
+  Ask "Copies?" with "1".
+  If the answer is blank, exit.
+  Convert the answer to an copy count between 1 and the largest number.
+  Show the desktop with "Printing...".
+  Print the page given the copy count.
+  Show status "Printed".
+  
+  
+To handle radius given an page:
+  If the page is being edited, end edit on the page.
+  If nothing is selected on the page, cluck; exit.
+  Get an radius given the page.
+  Convert the radius / 1 inch to an ratio string.
+  Ask "Radius (inches)?" with the ratio string.
+  If the answer is blank, exit.
+  If the answer is not any numeric literal, show error "Invalid radius."; exit.
+  Convert the answer to another ratio.
+  Put 1 inch times the other ratio into another radius.
+  Scale the other radius given the page's scale.
+  Show the desktop with "Changing...".
+  Remember the page.
+  Change any selected shapes on the page given the other radius.
+  Show the desktop with status.
+  
+  
+To handle redo given an page (editing):
+  If the page's edit shape's text cannot be redone, cluck; exit.
+  Set the current tab's node's document's modified flag.
+  Scale the page's edit shape to 1/1.
+  Handle redo given the page's edit shape's text.
+  Scale the page's edit shape to the page's scale.
+  Scroll the page to the caret.
+  Show the desktop with status.
+  
+  
+To handle redo given an page:
+  If the page is being edited, handle redo given the page (editing); exit.
+  Put the current tab's node's document into an document.
+  If the document's page redos are empty, cluck; exit.
+  Put the document's page redos' last into another page.
+  Remove the other page from the document's page redos.
+  Insert the other page into the document's pages before the page.
+  Remove the page from the document's pages.
+  Append the page to the document's page undos.
+  Put the other page into the current tab's node's page.
+  Put the other page's scale into the document's scale.
+  Set the document's modified flag.
+  Show the desktop with status.
+  
+  
+To handle reduce given an page:
+  If the current tab's node's document's scale is 1/2, cluck; exit.
+  Remember the page.
+  Divide the current tab's node's document's scale by 2.
+  Scale the page to the current tab's node's document's scale.
+  Center the page.
+  If the page is being edited, scroll the page to the caret.
+  If the page is not being edited, scroll the page to the page's first selected shape.
+  Put the page's scale's numerator then ":" then the page's scale's denominator into the status' string.
+  Show the desktop.
+  
+  
+To handle renumber pages given an document:
+  Ask "Starting page number?" with the remembered page number.
+  If the answer is blank, exit.
+  Show the desktop with "Renumbering...".
+  Convert the answer to an page number.
+  Put the page number into the remembered page number.
+  Renumber every page in the document starting with the page number and returning an count.
+  Show the desktop.
+  Show status the count and "page renumbered" or "pages renumbered".
+  Flush the event queue.
+  
+  
+To handle rotate page given an page:
+  If the page is being edited, end edit on the page.
+  Show status "Rotating...".
+  Remember the page.
+  Swap the page's width with the page's height.
+  Center the page.
+  Show the desktop with status.
+  
+  
+To handle rotate shape given an page:
+  If the page is being edited, end edit on the page.
+  If nothing is selected on the page, cluck; exit.
+  Remember the page.
+  Show status "Rotating...".
+  Rotate any selected shapes on the page.
+  Adjust the page.
+  Show the desktop with status.
+  
+  
+To handle save as pdf given an document:
+  If nothing is selected in the document, show error "I'm not sure what you want me to save."; exit.
+  Ask "Path?" with the remembered pdf path.
+  If the answer is blank, exit.
+  Put the answer into an path.
+  Put the path into the remembered pdf path.
+  If the user does not want to overwrite the path, exit.
+  Show the desktop with "Saving...".
+  Pdfify the document to an pdf.
+  Write the pdf to the path.
+  If the i/o error is not blank, show error the i/o error; exit.
+  Show status "Saved".
+  
+  
+To handle select all given an document:
+  Deselect the pages in the document.
+  Select the document's pages.
+  Put the document's first page into the document's anchor.
+  Put the document's last page into the document's caret.
+  Show the desktop with status.
+  
+  
+To handle select all given an page (editing):
+  Handle select all given the page's edit shape's text.
+  Show the desktop with status.
+  
+  
+To handle select all given an page:
+  If the page is being edited, handle select all given the page (editing); exit.
+  Select the page's shapes.
+  Show the desktop with status.
+  
+  
+To handle send to back given an page:
+  If the page is being edited, end edit on the page.
+  If nothing is selected on the page, cluck; exit.
+  Remember the page.
+  Show status "Sending...".
+  Send any selected shapes on the page backward.
+  Show the desktop with status.
+  
+  
+To handle smooth given an page:
+  If the page is being edited, end edit on the page.
+  If nothing is selected on the page, cluck; exit.
+  Show the desktop with "Smoothing...".
+  Remember the page.
+  Smooth any selected shapes on the page.
+  Show the desktop with status.
+  
+  
+To handle undo given an page (editing):
+  If the page's edit shape's text cannot be undone, cluck; exit.
+  Set the current tab's node's document's modified flag.
+  Scale the page's edit shape to 1/1.
+  Handle undo given the page's edit shape's text.
+  Scale the page's edit shape to the page's scale.
+  Scroll the page to the caret.
+  Show the desktop with status.
+  
+  
+To handle undo given an page:
+  If the page is being edited, handle undo given the page (editing); exit.
+  Put the current tab's node's document into an document.
+  If the document's page undos are empty, cluck; exit.
+  Put the document's page undos' last into another page.
+  Remove the other page from the document's page undos.
+  Insert the other page into the document's pages before the page.
+  Remove the page from the document's pages.
+  Append the page to the document's page redos.
+  Put the other page into the current tab's node's page.
+  Put the other page's scale into the document's scale.
+  Set the document's modified flag.
+  Show the desktop with status.
+  
+  
+To handle ungroup given an page:
+  If the page is being edited, end edit on the page.
+  If nothing is selected on the page, cluck; exit.
+  Remember the page.
+  Ungroup any selected shapes on the page.
+  Adjust the page.
+  Show the desktop with status.
+  
+  
+To handle unlabel given an page:
+  If the page is being edited, end edit on the page.
+  If nothing is selected on the page, cluck; exit.
+  Remember the page.
+  Show status "Unlabeling...".
+  Unlabel any selected shapes on the page.
+  Show the desktop with status.
+  
+  
+To handle uppercase given an page (editing):
+  If nothing is selected in the page's edit shape's text, cluck; exit.
+  Show status "Uppercasing...".
+  Set the current tab's node's document's modified flag.
+  Handle uppercase given the page's edit shape's text.
+  Show the desktop with status.
+  
+  
+To handle uppercase given an page:
+  If the page is being edited, handle uppercase given the page (editing); exit.
+  If nothing is selected on the page, cluck; exit.
+  Show status "Uppercasing...".
+  Remember the page.
+  Uppercase any selected shapes on the page.
+  Show the desktop with status.
+  
+  
+To handle yank given an page and an number:
+  Put the current tab's node's document into an document.
+  If the document is nil, exit.
+  If the page is being edited, end edit on the page.
+  Reset the superduper given the page.
+  Privatize the number.
+  Put the number into the document's yank.
+  Put "Yank " then the original number / 1440 into an string.
+  Show the desktop with the string.
+  
+  

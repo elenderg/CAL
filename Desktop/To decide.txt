@@ -1,0 +1,92 @@
+To decide if an node should be read-only:
+  If the node is nil, say  no.
+  If the node's kind is not "file", say no.
+  Loop.
+    Get an tab from the tabs.
+    If the tab is nil, say no.
+    If the tab's node is nil, repeat.
+    If the tab's node is the node, repeat.
+    If the tab's node's kind is not "file", repeat.
+    If the tab's node's path is the node's path, say yes.
+  Repeat.
+  
+  
+To decide if an spot is in an button:
+  If the button is nil, say no.
+  If the spot is in the button's roundy box, say yes.
+  Say no.
+  
+  
+To decide if an spot is in an command:
+  If the command is nil, say no.
+  If the spot is in the command's roundy box, say yes.
+  Say no.
+  
+  
+To decide if an spot is in an menu:
+  If the menu is nil, say no.
+  Find an command given the menu and the spot.
+  If the command is nil, say no.
+  Say yes.
+  
+  
+To decide if an spot is in an tab:
+  If the tab is nil, say no.
+  If the spot is in the tab's box, say yes.
+  Say no.
+  
+  
+To decide if an spot is in the bar:
+  If the spot is in the bar's box, say yes.
+  Say no.
+  
+  
+To decide if an spot is in the pad:
+  If the spot is in the pad's box, say yes.
+  Say no.
+  
+  
+To decide if an spot is in the status:
+  If the bar's mode is not "normal", say no.
+  If the spot is in the status' roundy box, say yes.
+  Say no.
+  
+  
+To decide if an spot is in the switch:
+  Find an tab given the spot.
+  If the tab is nil, say no.
+  Say yes.
+  
+  
+To decide if an tab is free:
+  If the tab is nil, say no.
+  If the tab's node is nil, say no.
+  If the tab's node's kind is not "root", say no.
+  Say yes.
+  
+  
+To decide if an event is ctrl-tab:
+  If the event is nil, say no.
+  If the event's kind is not "key down", say no.
+  If the event's key is not the tab key, say no.
+  If the event's ctrl flag is not set, say no.
+  Say yes.
+  
+  
+To decide if the user is sure:
+  Ask "Are you quite sure?" with choices "Yes" and "No".
+  If the answer is "yes", say yes.
+  Say no.
+  
+  
+To decide if the user is willing to close an node:
+  If the node is nil, say yes.
+  If the node is not modified, say yes.
+  Ask "Save?" with choices "Yes" and "No" and "Cancel".
+  If the answer is "cancel", say no.
+  If the answer is "no", say yes.
+  Save the node.
+  If the i/o error is not blank, show error the i/o error; say no.
+  Say yes.
+  
+  

@@ -1,9 +1,0 @@
-An bitmapdata is an record with
-  An width,
-  An height,
-  An number called stride,
-  An number called pixelformat,
-  An pointer called scan0,
-  An number called reserved.
-  
-  

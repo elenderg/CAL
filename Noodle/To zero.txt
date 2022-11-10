@@ -1,0 +1,19 @@
+To zero an box: \ was clear an box, got confounded with "clear an box" (which should draw the box all black as does "clear the screen")
+  Put 0 into the box's left.
+  Put 0 into the box's top.
+  Put 0 into the box's right.
+  Put 0 into the box's bottom.
+  
+  
+To zero fill an number given an count and append it to an string:
+  Convert the number to another string.
+  Zero fill the other string given the count.
+  Append the other string to the string.
+  
+  
+To zero fill an string given an count:
+    If the string's length is greater than or equal to the count, exit.
+    Prepend the zero byte to the string.
+  Repeat.
+  
+  

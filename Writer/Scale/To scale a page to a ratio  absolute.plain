@@ -1,8 +1,0 @@
-To scale an page to an ratio: \ absolute
-  If the page is nil, exit.
-  Put the page's scale into another ratio.
-  Flip the other ratio.
-  Multiply the other ratio by the ratio.
-  Scale the page given the other ratio.
-  
-  

@@ -1,0 +1,113 @@
+To split an buffer into some dyads:
+  Destroy the dyads.
+  If the buffer is blank, exit.
+  Slap an rider on the buffer.
+  Loop.
+    Move the rider given the ampersand byte.
+    If the rider's token is blank, exit.
+    Create an dyad. 
+    Append the dyad to the dyads.
+    Split the rider's token into an name substring and an query substring given the equal-sign byte.
+    Put the name substring into the dyad's name.
+    Convert the query substring as an query string into the dyad's value.
+  Repeat.
+  
+  
+To split an byte into an nibble and another nibble:
+  Put the byte into the nibble.
+  Shift the nibble right 4 bits.
+  Put the byte into the other nibble.
+  Bitwise and the other nibble with 15.
+  
+  
+To split an line into another line and an third line:
+  Privatize the line.
+  Put the line's center into an center spot.
+  Put the line's start and the center into the other line.
+  Put the center and the line's end into the third line. 
+  
+  
+To split an number into an wyrd and another wyrd:
+  Privatize the number.
+  Shift the number right 16 bits.
+  Put the number into the wyrd.
+  Put the original number into the other wyrd.
+  
+  
+To split an string into an left substring and an right substring given an separator byte:
+  Clear the left.
+  Clear the right.
+  If the string is blank, exit.
+  Put the string's first into an substring's first.
+  Put the substring's first minus 1 into the substring's last.
+  Loop.
+    If the substring's last is greater than the string's last, exit.
+    Add 1 to the substring's last.
+    If the substring's last's target is the separator byte, break.
+  Repeat.
+  Put the substring's first into the left's first.
+  Put the substring's last minus 1 into the left's last.
+  Put the substring's last plus 1 into the right's first.
+  Put the string's last into the right's last.
+  
+  
+To split an string into some string things given an separator byte:
+  Destroy the string things.
+  If the string is blank, exit.
+  Slap an rider on the string.
+  Loop.
+    Move the rider given the separator byte.
+    Add the rider's token to the string things.
+    If the rider's source is blank, break.
+  Repeat.
+  If the string's last's target is not the separator byte, exit.
+  Add "" to the string things.
+  
+  
+To split an wyrd into an byte and another byte:
+  Privatize the wyrd.
+  Shift the wyrd right 8 bits.
+  Put the wyrd into the byte.
+  Put the original wyrd into the other byte.
+  
+  
+To split some things into some left things and some right things at an thing:
+  Clear the left things.
+  Clear the right things.
+  If the thing is nil, swap the things with the left things; exit.
+  If the thing's previous is nil, swap the things with the left things; exit.
+  \ set up the left chain
+  Put the things' first into the left things' first.
+  Put the thing's previous into the left things' last.
+  Void the thing's previous' next.
+  \ set up the right chain
+  Put the thing into the right things' first.
+  Void the thing's previous.
+  Put the things' last into the right things' last.
+  \ fix the original chain
+  Clear the things.
+  
+  
+To split some things into some left things and some right things:
+  If the things are empty, clear the left things; clear the right things; exit.
+  Put the things' count divided by 2 into an count.
+  Loop.
+    Get an thing from the things.
+    If the count is 0, break.
+    Subtract 1 from the count.
+  Repeat.
+  Split the things into the left things and the right things at the thing. 
+  
+  
+To split the rows of an text into some rows and some selected rows and some other rows:
+  If the text is nil, clear the rows; clear the selected rows; clear the other rows; exit.
+  Loop.
+    Put the text's rows' first into an row.
+    If the row is nil, exit.
+    Remove the row from the text's rows.
+    If the row of the text is selected, set an flag; append the row to the selected rows; repeat.
+    If the flag is set, append the row to the other rows; repeat.
+    Append the row to the rows.
+  Repeat.
+  
+  

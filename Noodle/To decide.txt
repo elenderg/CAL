@@ -1,0 +1,1517 @@
+To decide if an box is another box:
+  If the box's left is not the other box's left, say no.
+  If the box's top is not the other box's top, say no.
+  If the box's right is not the other box's right, say no.
+  If the box's bottom is not the other box's bottom, say no.
+  Say yes.
+  
+  
+To decide if an box is still in another box;
+To decide if an box is in another box;
+To decide if an box is inside another box:
+  If the box's left is less than the other box's left, say no.
+  If the box's top is less than the other box's top, say no.
+  If the box's right is greater than the other box's right, say no.
+  If the box's bottom is greater than the other box's bottom, say no.
+  Say yes.
+  
+  
+To decide if an box is touching another box:
+  If the other box's right is less than the box's left, say no.
+  If the other box's bottom is less than the box's top, say no.
+  If the other box's left is greater than the box's right, say no.
+  If the other box's top is greater than the box's bottom, say no.
+  Say yes.
+  
+  
+To decide if an byte is an number or another number:
+  If the byte is the number, say yes.
+  If the byte is the other number, say yes.
+  Say no.
+  
+  
+To decide if an byte is an number:
+  Intel $C7C001000000. \ mov eax,1 \ assume true
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the byte
+  Intel $0FB61B. \ movzx ebx,byte ptr [ebx]
+  Intel $8B8D0C000000. \ mov ecx,[ebp+12] \ the number
+  Intel $3B19. \ cmp ebx,[ecx]
+  Intel $0F8406000000. \ je over the next 1 statement
+  Intel $C7C000000000. \ mov eax,0 \ now it's false
+  
+  
+To decide if an byte is an string:
+  If the string's length is not 1, say no.
+  Privatize the byte.
+  Lowercase the byte.
+  Put the string's first's target into another byte.
+  Lowercase the other byte.
+  If the byte is the other byte, say yes.
+  Say no.
+  
+  
+To decide if an byte is alphanumeric:
+  If the byte is any letter, say yes.
+  If the byte is any digit, say yes.
+  Say no.
+  
+  
+To decide if an byte is another byte or an third byte:
+  If the byte is the other byte, say yes.
+  If the byte is the third byte, say yes.
+  Say no.
+  
+  
+To decide if an byte is another byte:
+  Intel $C7C001000000. \ mov eax,1 \ assume true
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the byte
+  Intel $8A1B. \ mov bl,[ebx]
+  Intel $8B8D0C000000. \ mov ecx,[ebp+12] \ the other byte
+  Intel $3A19. \ cmp bl,[ecx]
+  Intel $0F8406000000. \ je over the next 1 statement
+  Intel $C7C000000000. \ mov eax,0 \ now it's false
+  
+  
+To decide if an byte is any consonant:
+  If the byte is in "bcdfghjklmnpqrstvwxyz", say yes.
+  Say no.
+  
+  
+To decide if an byte is any digit:
+  If the byte is less than the zero byte, say no.
+  If the byte is greater than the nine byte, say no.
+  Say yes.
+  
+  
+To decide if an byte is any letter:
+  If the byte is between the big-an byte and the big-z byte, say yes.
+  If the byte is between the little-an byte and the little-z byte, say yes.
+  If the byte is 131 or 138, say yes. 
+  If the byte is 140 or 142, say yes. 
+  If the byte is 154 or 156, say yes. 
+  If the byte is between 158 and 159, say yes.
+  If the byte is between 192 and 214, say yes.
+  If the byte is between 216 and 246, say yes.
+  If the byte is between 248 and 255, say yes.
+  Say no.
+  
+  
+To decide if an byte is any numeric starter:
+  If the byte is any digit, say yes.
+  If the byte is any sign, say yes.
+  Say no.
+  
+  
+To decide if an byte is any punctuation mark: \ *** questionable?
+  If the byte is the space byte, say no.
+  If the byte is not alphanumeric, say yes.
+  Say no.
+  
+  
+To decide if an byte is any sign:
+  If the byte is the dash byte, say yes.
+  If the byte is the cross byte, say yes.
+  Say no.
+  
+  
+To decide if an byte is any valid drive:
+  Put the byte into an path.
+  Append ":\" to the path.
+  Get an drive kind for the path.
+  If the drive kind is "", say no.
+  Say yes.
+  
+  
+To decide if an byte is any vowel:
+  If the byte is in "aeiou", say yes.
+  \  if the byte is "y", say sometimes. \ ha ha ha
+  Say no.
+  
+  
+To decide if an byte is between an number and another number:
+  If the byte is less than the number, say no.
+  If the byte is greater than the other number, say no.
+  Say yes.
+  
+  
+To decide if an byte is between another byte and an third byte:
+  If the byte is less than the other byte, say no.
+  If the byte is greater than the third byte, say no.
+  Say yes.
+  
+  
+To decide if an byte is greater than an number:
+  Intel $C7C001000000. \ mov eax,1 \ assume true
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the byte
+  Intel $0FB61B. \ movzx ebx,byte ptr [ebx]
+  Intel $8B8D0C000000. \ mov ecx,[ebp+12] \ the number
+  Intel $3B19. \ cmp ebx,[ecx]
+  Intel $0F8F06000000. \ jg over the next 1 statement
+  Intel $C7C000000000. \ mov eax,0 \ now it's false
+  
+  
+To decide if an byte is greater than another byte:
+  Intel $C7C001000000. \ mov eax,1 \ assume true
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the byte
+  Intel $8A1B. \ mov bl,[ebx]
+  Intel $8B8D0C000000. \ mov ecx,[ebp+12] \ the other byte
+  Intel $3A19. \ cmp bl,[ecx]
+  Intel $0F8706000000. \ ja over the next 1 statement
+  Intel $C7C000000000. \ mov eax,0 \ now it's false
+  
+  
+To decide if an byte is greater than or equal to another byte:
+  Intel $C7C001000000. \ mov eax,1 \ assume true
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the byte
+  Intel $8A1B. \ mov bl,[ebx]
+  Intel $8B8D0C000000. \ mov ecx,[ebp+12] \ the other byte
+  Intel $3A19. \ cmp bl,[ecx]
+  Intel $0F8306000000. \ ja over the next 1 statement
+  Intel $C7C000000000. \ mov eax,0 \ now it's false
+  
+  
+To decide if an byte is in an string:
+  Privatize the byte.
+  Lowercase the byte.
+  Slap an substring on the string.
+  Loop.
+    If the substring is blank, say no.
+    Put the substring's first's target into another byte.
+    Lowercase the other byte.
+    If the other byte is the byte, say yes.
+    Add 1 to the substring's first.
+  Repeat.
+  
+  
+To decide if an byte is less than an number:
+  Intel $C7C001000000. \ mov eax,1 \ assume true
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the byte
+  Intel $0FB61B. \ movzx ebx,byte ptr [ebx]
+  Intel $8B8D0C000000. \ mov ecx,[ebp+12] \ the number
+  Intel $3B19. \ cmp ebx,[ecx]
+  Intel $0F8C06000000. \ jl over the next 1 statement
+  Intel $C7C000000000. \ mov eax,0 \ now it's false
+  
+  
+To decide if an byte is less than another byte:
+  Intel $C7C001000000. \ mov eax,1 \ assume true
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the byte
+  Intel $8A1B. \ mov bl,[ebx]
+  Intel $8B8D0C000000. \ mov ecx,[ebp+12] \ the other byte
+  Intel $3A19. \ cmp bl,[ecx]
+  Intel $0F8206000000. \ jb over the next 1 statement
+  Intel $C7C000000000. \ mov eax,0 \ now it's false
+  
+  
+To decide if an byte is less than or equal to another byte:
+  Intel $C7C001000000. \ mov eax,1 \ assume true
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the byte
+  Intel $8A1B. \ mov bl,[ebx]
+  Intel $8B8D0C000000. \ mov ecx,[ebp+12] \ the other byte
+  Intel $3A19. \ cmp bl,[ecx]
+  Intel $0F8606000000. \ jbe over the next 1 statement
+  Intel $C7C000000000. \ mov eax,0 \ now it's false
+  
+  
+To decide if an byte is like another byte: \ used internally for word wrap
+  If the byte is whitespace, set an flag.
+  If the other byte is whitespace, set another flag.
+  If the flag is the other flag, say yes.
+  Say no.
+  
+  
+To decide if an byte is noise:
+  If the byte is less than or equal to the space byte, say yes.
+  If the byte is the delete byte, say yes.
+  If the byte is the non-breaking-space byte, say yes.
+  If the byte is 129, say yes.
+  If the byte is 141, say  yes.
+  If the byte is 143, say yes.
+  If the byte is 144, say yes.
+  If the byte is 157, say yes.
+  Say no.
+  
+  
+To decide if an byte is printable:
+  If the byte is less than the space byte, say no.
+  If the byte is the delete byte, say no.
+  If the byte is 129, say no.
+  If the byte is 141, say no.
+  If the byte is 143, say no.
+  If the byte is 144, say no.
+  If the byte is 157, say no.
+  Say yes.
+  
+  
+To decide if an byte is symbolic:
+  If the byte is between the exclamation byte and the slash byte, say yes.
+  If the byte is between the colon byte and the at-sign byte, say yes.
+  If the byte is between the left-bracket byte and the accent byte, say yes.
+  If the byte is between the left-brace byte and the tilde byte, say yes.
+  If the byte is 128, say yes.
+  If the byte is 130, say yes.
+  If the byte is between 132 and 137, say yes.
+  If the byte is 139, say yes.
+  If the byte is between 145 and 153, say yes.
+  If the byte is 155, say yes.
+  If the byte is between 161 and 180, say yes.
+  If the byte is between 183 and 191, say yes.
+  If the byte is 215, say yes.
+  If the byte is 247, say yes.
+  Say no.
+  
+  
+To decide if an byte is whitespace:
+  If the byte is the space byte, say yes.
+  If the byte is the tab byte, say yes.
+  If the byte is the return byte, say yes.
+  If the byte is the linefeed byte, say yes.
+  Say no.
+  
+  
+To decide if an choice is an string:
+  If the choice is nil, say no.
+  If the choice's name is the string, say yes.
+  Say no.
+  
+  
+To decide if an color and another color are clear:
+  If the color is not clear, say no.
+  If the other color is not clear, say no.
+  Say yes.
+  
+  
+To decide if an color is another color:
+  If the color's hue is not the other color's hue, say no.
+  If the color's saturation is not the other color's saturation, say no.
+  If the color's lightness is not the other color's lightness, say no.
+  Say yes.
+  
+  
+To decide if an color is clear:
+  If the color's hue is less than 0, say yes.
+  Say no.
+  
+  
+To decide if an color is dark:
+  If the color's lightness is between 250 and 374, say yes.
+  Say no.
+  
+  
+To decide if an color is light:
+  If the color's lightness is between 625 and 749, say yes.
+  Say no.
+  
+  
+To decide if an color is normal:
+  If the color's lightness is between 375 and 624, say yes.
+  Say no.
+  
+  
+To decide if an color is very dark:
+  If the color's lightness is between 125 and 249, say yes.
+  Say no.
+  
+  
+To decide if an color is very light:
+  If the color's lightness is between 750 and 874, say yes.
+  Say no.
+  
+  
+To decide if an color is very very dark:
+  If the color's lightness is less than or equal to 124, say yes.
+  Say no.
+  
+  
+To decide if an color is very very light:
+  If the color's lightness is greater than or equal to 875, say yes.
+  Say no.
+  
+  
+To decide if an counter is past an number:
+  Add 1 to the counter.
+  If the counter is greater than the number, say yes.
+  Say no.
+  
+  
+To decide if an difference is within an grid:
+  Privatize the difference.
+  De-sign the difference.
+  If the difference's x is greater than or equal to the grid's x, say no.
+  If the difference's y is greater than or equal to the grid's y, say no.
+  Say yes.
+  
+  
+To decide if an finger is past the end of an string:
+  If the finger is nil, say yes.
+  If the finger is greater than the string's last, say yes.
+  Say no.
+  
+  
+To decide if an flag is another flag;
+To decide if an pointer is an number;
+To decide if an pointer is another pointer;
+To decide if an number is another number:
+  Intel $C7C001000000. \ mov eax,1 \ assume true
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the number
+  Intel $8B1B. \ mov ebx,[ebx]
+  Intel $8B8D0C000000. \ mov ecx,[ebp+12] \ the other number
+  Intel $3B19. \ cmp ebx,[ecx]
+  Intel $0F8406000000. \ je over the next 1 statement
+  Intel $C7C000000000. \ mov eax,0 \ now it's false
+  
+  
+To decide if an flag is on: \ switch as another name for flag also ?  ***
+  If the flag is set, say yes.
+  Say no.
+  
+  
+To decide if an flag is set:
+  If the flag is yes, say yes.
+  Say no.
+  
+  
+To decide if an fraction is an number:
+  If the fraction is the number / 1, say yes.
+  Say no.
+  
+  
+To decide if an fraction is another fraction:
+  Privatize the fraction.
+  Privatize the other fraction.
+  Normalize the fraction and the other fraction.
+  If the fraction's numerator is the other fraction's numerator, say yes.
+  Say no.
+  
+  
+To decide if an fraction is greater than another fraction:
+  Privatize the fraction.
+  Privatize the other fraction.
+  Normalize the fraction and the other fraction.
+  If the fraction's numerator is greater than the other fraction's numerator, say yes.
+  Say no.
+  
+  
+To decide if an fraction is greater than or equal to another fraction:
+  Privatize the fraction.
+  Privatize the other fraction.
+  Normalize the fraction and the other fraction.
+  If the fraction's numerator is greater than or equal to the other fraction's numerator, say yes.
+  Say no.
+  
+  
+To decide if an fraction is less than another fraction:
+  Privatize the fraction.
+  Privatize the other fraction.
+  Normalize the fraction and the other fraction.
+  If the fraction's numerator is less than the other fraction's numerator, say yes.
+  Say no.
+  
+  
+To decide if an fraction is less than or equal to another fraction:
+  Privatize the fraction.
+  Privatize the other fraction.
+  Normalize the fraction and the other fraction.
+  If the fraction's numerator is less than or equal to the other fraction's numerator, say yes.
+  Say no.
+  
+  
+To decide if an fraction is negative:
+  If the fraction's numerator is less than 0, reverse an flag.
+  If the fraction's denominator is less than 0, reverse the flag.
+  Say the flag.
+  
+  
+To decide if an key is any digit key:
+  If the key is between 48 and 57, say yes.
+  Say no.
+  
+  
+To decide if an key is any letter key:
+  If the key is between 65 and 90, say yes.
+  Say no.
+  
+  
+To decide if an key is any modifier key:
+  If the key is the alt key, say yes.
+  If the key is the ctrl key, say yes.
+  If the key is the shift key ,say yes.
+  Say no.
+  
+  
+To decide if an key is any pad key:
+  If the key is between 96 and 111, say yes.
+  Say no.
+  
+  
+To decide if an key is any printable key:
+  If the key is the space key, say yes.
+  If the key is any digit key, say yes.
+  If the key is any letter key, say yes.
+  If the key is any pad key, say yes.
+  If the key is any symbol key, say yes.
+  Say no.
+  
+  
+To decide if an key is any symbol key:
+  If the key is between 186 and 192, say yes.
+  If the key is between 219 and 222, say yes.
+  Say no.
+  
+  
+To decide if an key is any wm-char key:
+  If the key is not any printable key , say no.
+  If the alt key was down, say no.
+  If the ctrl key was down, say no.
+  Say yes.
+  
+  
+To decide if an key is down:
+  Call "user32.dll" "GetAsyncKeyState" with the key returning an wyrd.
+  Put the wyrd into an number.
+  If the number is less than 0, say yes.
+  Say no.
+  
+  
+To decide if an key is up:
+  If the key is down, say no.
+  Say yes.
+  
+  
+To decide if an key was down:
+  Call "user32.dll" "GetKeyState" with the key returning an wyrd.
+  Put the wyrd into an number.
+  If the number is less than 0, say yes.
+  Say no.
+  
+  
+To decide if an key was toggled:
+  Call "user32.dll" "GetKeyState" with the key returning an wyrd.
+  Put the wyrd into an number.
+  Bitwise and the number with 1.
+  If the number is 1, say yes.
+  Say no.
+  
+  
+To decide if an key was up:
+  If the key was down, say no.
+  Say yes.
+  
+  
+To decide if an key with an l-param is any repeated escape or modifier key:
+    Put the l-param into an number.
+    Bitwise and the number with 1073741824 [$40000000].
+    If the number is 0, say no.
+    If the key is the escape key, say yes.
+    If the key is any modifier key, say yes.
+  Say no.
+  
+  
+To decide if an line is above an box:
+  If the line's start's y is greater than or equal to the box's top, say no.
+  If the line's end's y is greater than or equal to the box's top, say no.
+  Say yes.
+  
+  
+To decide if an line is above an coord:
+  If the line's start's y is greater than or equal to the coord, say no.
+  If the line's end's y is greater than or equal to the coord, say no.
+  Say yes.
+  
+  
+To decide if an line is below an box:
+  If the line's start's y is less than or equal to the box's bottom, say no.
+  If the line's end's y is less than or equal to the box's bottom, say no.
+  Say yes.
+  
+  
+To decide if an line is below an coord:
+  If the line's start's y is less than or equal to the coord, say no.
+  If the line's end's y is less than or equal to the coord, say no.
+  Say yes.
+  
+  
+To decide if an line is still in an box;
+To decide if an line is in an box:
+  If the line's start is not in the box, say no.
+  If the line's end is not in the box, say no.
+  Say yes.
+  
+  
+To decide if an mixed is an number:
+  Convert the mixed to an fraction.
+  If the fraction is the number, say yes.
+  Say no.
+  
+  
+To decide if an number is an multiple of another number:
+  If the number is evenly divisible by the other number, say yes.
+  Say no.
+  
+  
+To decide if an number is another number and an string is another string:
+  If the number is not the other number, say no.
+  If the string is not the other string, say no.
+  Say yes.
+  
+  
+To decide if an number is between another number and an third number:
+  If the number is less than the other number, say no.
+  If the number is greater than the third number, say no.
+  Say yes.
+  
+  
+To decide if an number is even:
+  If the number is odd, say no.
+  Say yes.
+  
+  
+To decide if an number is evenly divisible by another number:
+  Privatize the number.
+  Divide the number by the other number giving an quotient and an remainder.
+  If the remainder is 0, say yes.
+  Say no.
+  
+  
+To decide if an number is negative:
+  If the number is less than 0, say yes.
+  Say no.
+  
+  
+To decide if an number is odd:
+  Privatize the number.
+  Bitwise and the number with 1.
+  If the number is 0, say no.
+  Say yes.
+  
+  
+To decide if an number is positive:
+  If the number is less than 0, say no.
+  Say yes.
+  
+  
+To decide if an number is prime:
+  If the number is less than 2, say no.
+  If the number is 2, say yes.
+  Put the number minus 1 into another number.
+  Loop.
+    If the number is evenly divisible by the other number, say no.
+    Subtract 1 from the other number.
+    If the other number is greater than 1, repeat.
+  Say yes.
+  
+  
+To decide if an pair is an number and another number:
+  If the pair's x is not the number, say no.
+  If the pair's y is not the other number, say no.
+  Say yes.
+  
+  
+To decide if an pair is an number:
+  If the pair's x is not the number, say no.
+  If the pair's y is not the number, say no.
+  Say yes.
+  
+  
+To decide if an pair is another pair:
+  If the pair's x is not the other pair's x, say no.
+  If the pair's y is not the other pair's y, say no.
+  Say yes.
+  
+  
+To decide if an path is directory-format:
+  If the path is blank, say no.
+  If the path's last's target is the backslash byte, say yes.
+  Say no.
+  
+  
+To decide if an path is drive-format:
+  If the path starts with "\\", say yes.
+  If the path's length is not 3, say no.
+  If the path ends with ":\", say yes.
+  Say no.
+  
+  
+To decide if an path is empty in the file system:
+  If the path is not in the file system, say yes.
+  Get an count of items in the path in the file system.
+  If the count is 0, say yes.
+  Say no.
+  
+  
+To decide if an path is file-format:
+  If the path is blank, say no.
+  If the path's last's target is the colon byte, say no.
+  If the path's last's target is the backslash byte, say no.
+  Say yes.
+  
+  
+To decide if an path is in the file system:
+  Privatize the path.
+  Null terminate the path.
+  Call "kernel32.dll" "GetFileAttributesA" with the path's first returning an number.
+  If the number is less than 0, say no.
+  Say yes.
+  
+  
+To decide if an path is read-only:
+  Privatize the path.
+  Null terminate the path.
+  Call "kernel32.dll" "GetFileAttributesA" with the path's first returning an number.
+  Bitwise and the number with 1 [file_attribute_readonly].
+  If the number is not 0, say yes.
+  Say no.
+  
+  
+To decide if an pointer can be found;
+To decide if an pointer is coming;
+To decide if an pointer is found;
+To decide if an pointer was found;
+To decide if an pointer is there;
+To decide if an pointer does exist:
+  If the pointer is nil, say no.
+  Say yes.
+  
+  
+To decide if an pointer is greater than another pointer;
+To decide if an number is greater than another number:
+  Intel $C7C001000000. \ mov eax,1 \ assume true
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the number
+  Intel $8B1B. \ mov ebx,[ebx]
+  Intel $8B8D0C000000. \ mov ecx,[ebp+12] \ the other number
+  Intel $3B19. \ cmp ebx,[ecx]
+  Intel $0F8F06000000. \ jg over the next 1 statement
+  Intel $C7C000000000. \ mov eax,0 \ now it's false
+  
+  
+To decide if an pointer is greater than or equal to another pointer;
+To decide if an number is another number or more;
+To decide if an number is greater than or equal to another number:
+  Intel $C7C001000000. \ mov eax,1 \ assume true
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the number
+  Intel $8B1B. \ mov ebx,[ebx]
+  Intel $8B8D0C000000. \ mov ecx,[ebp+12] \ the other number
+  Intel $3B19. \ cmp ebx,[ecx]
+  Intel $0F8D06000000. \ jge over the next 1 statement
+  Intel $C7C000000000. \ mov eax,0 \ now it's false
+  
+  
+To decide if an pointer is less than another pointer;
+To decide if an number is less than another number:
+  Intel $C7C001000000. \ mov eax,1 \ assume true
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the number
+  Intel $8B1B. \ mov ebx,[ebx]
+  Intel $8B8D0C000000. \ mov ecx,[ebp+12] \ the other number
+  Intel $3B19. \ cmp ebx,[ecx]
+  Intel $0F8C06000000. \ jl over the next 1 statement
+  Intel $C7C000000000. \ mov eax,0 \ now it's false
+  
+  
+To decide if an pointer is less than or equal to another pointer;
+To decide if an number is another number or less;
+To decide if an number is another number or fewer;
+To decide if an number is less than or equal to another number:
+  Intel $C7C001000000. \ mov eax,1 \ assume true
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the number
+  Intel $8B1B. \ mov ebx,[ebx]
+  Intel $8B8D0C000000. \ mov ecx,[ebp+12] \ the other number
+  Intel $3B19. \ cmp ebx,[ecx]
+  Intel $0F8E06000000. \ jle over the next 1 statement
+  Intel $C7C000000000. \ mov eax,0 \ now it's false
+  
+  
+To decide if an pointer is missing;
+To decide if an pointer is null and void:
+  If the pointer is nil, say yes.
+  Say no.
+  
+  
+To decide if an polygon is closed:
+  If the polygon is nil, say no.
+  If the polygon's vertices' count is less than 3, say no.
+  If the polygon's first vertex's spot is the polygon's last vertex's spot, say yes.
+  Say no.
+  
+  
+To decide if an reply is something like another reply:
+  Privatize the reply.
+  Privatize the other reply.
+  Simplify the reply.
+  Simplify the other reply.
+  If the reply is the other reply, say yes.
+  Say no.
+  
+  
+To decide if an row is blank:
+  If the row is nil, say yes.
+  Slap an substring on the row's string.
+  Loop.
+    If the substring is blank, say yes.
+    If the substring's first's target is not noise, say no.
+    Add 1 to the substring's first.
+  Repeat.
+  
+  
+To decide if an row of an text is selected:
+  If the text is nil, say no.
+  If the row is nil, say no.
+  If nothing is selected in the text, say no.
+  Put the text's normalized selection into an selection.
+  If the row's row# is less than the selection's anchor row#, say no.
+  If the row's row# is greater than the selection's caret row#, say no.
+  If the row's row# is not the selection's caret row#, say yes.
+  If the selection's caret column# is 1, say no.
+  Say yes.
+  
+  
+To decide if an row of an text is visible:
+  If the text is nil, say no.
+  If the row is nil, say  no.
+  Get an box given the row and the text.
+  Put the text's box into another box.
+  Adjust the other box given 0 and the tpp and 0 and - the tpp.
+  If the box is touching the other box, say yes.
+  Say no.
+  
+  
+To decide if an selection is another selection:
+  If the selection's anchor is not the other selection's anchor, say no.
+  If the selection's caret is not the other selection's caret, say no.
+  Say yes.
+  
+  
+To decide if an spot is above an box:
+  If the spot's y is less than the box's top, say yes.
+  Say no.
+  
+  
+To decide if an spot is above an horizontal line:
+  If the spot's y is less than the horizontal line's start's y, say yes.
+  Say no.
+  
+  
+To decide if an spot is above or below an box:
+  If the spot is above the box, say yes.
+  If the spot is below the box, say yes.
+  Say no.
+  
+  
+To decide if an spot is below an box:
+  If the spot's y is greater than the box's bottom, say yes.
+  Say no.
+  
+  
+To decide if an spot is below an horizontal line:
+  If the spot's y is greater than the horizontal line's start's y, say yes.
+  Say no.
+  
+  
+To decide if an spot is in an picture:
+  If the picture is nil, say no.
+  If the spot is in the picture's box, say yes.
+  Say no.
+  
+  
+To decide if an spot is in an polygon:
+  If the polygon is nil, say no.
+  Create an vertex array given the polygon's vertices.
+  Call "gdi32.dll" "CreatePolygonRgn" with the vertex array's spot pointer and the vertex array's count and 2 [winding] returning an hrgn.
+  Call "gdi32.dll" "PtInRegion" with the hrgn and the spot's x and the spot's y returning an number.
+  Call "gdi32.dll" "DeleteObject" with the hrgn.
+  Destroy the vertex array.
+  If the number is 0, say no.
+  Say yes.
+  
+  
+To decide if an spot is in an roundy box:
+  Privatize the roundy box.
+  Add the tpp to the roundy box's right-bottom.
+  Put the roundy box's radius times 2 into an diameter number.
+  Call "gdi32.dll" "CreateRoundRectRgn" with the roundy box's left and the roundy box's top and the roundy box's right and the roundy box's bottom 
+  And the diameter and the diameter returning an hrgn.
+  Call "gdi32.dll" "PtInRegion" with the hrgn and the spot's x and the spot's y returning an number.
+  Call "gdi32.dll" "DeleteObject" with the hrgn.
+  If the number is 0, say no.
+  Say yes.
+  
+  
+To decide if an spot is in an text:
+  If the text is nil, say no.
+  If the spot is in the text's box, say yes.
+  Say no.
+  
+  
+To decide if an spot is in an ellipse:
+  Create an hrgn given the ellipse.
+  Privatize the spot.
+  Divide the spot by the tpp.
+  Call "gdi32.dll" "PtInRegion" with the hrgn and the spot's x and the spot's y returning an number.
+  Destroy the hrgn.
+  If the number is 0, say no.
+  Say yes.
+  
+  
+To decide if an spot is in some polygons:
+    Get an polygon from the polygons.
+    If the polygon is nil, say no.
+    If the spot is in the polygon, say yes.
+  Repeat.
+  
+  
+To decide if an spot is inside an box;
+To decide if an spot is within an box;
+To decide if an spot is in an box:
+  If the spot's x is less than the box's left, say no.
+  If the spot's y is less than the box's top, say no.
+  If the spot's x is greater than the box's right, say no.
+  If the spot's y is greater than the box's bottom, say no.
+  Say yes.
+  
+  
+To decide if an spot is left or right of an box:
+  If the spot is to the left of the box, say yes.
+  If the spot is to the right of the box, say yes.
+  Say no.
+  
+  
+To decide if an spot is on an box:
+  Put the box into another box.
+  Put 2 times the tpp into an number.
+  Outdent the other box given the number.
+  If the spot is not in the other box, say no.
+  Put the box into an third box.
+  Put 3 times the tpp into another number.
+  Indent the third box given the other number.
+  If the spot is in the third box, say no.
+  Say yes.
+  
+  
+To decide if an spot is on an line:
+  Privatize the line.
+  Put 3 times the tpp into an number.
+  Loop.
+    Get an distance between the spot and the line's center (chessboard).
+    If the distance is less than or equal to the number, say yes.
+    Get the distance between the line's start and the line's end (chessboard).
+    If the distance is less than or equal to the tpp, say no.
+    Split the line into the line and another line.
+    Get the distance between the spot and the line's center (chessboard).
+    Get another distance between the spot and the other line's center (chessboard).
+    If the distance is greater than the other distance, put the other line into the line.
+  Repeat.
+  
+  
+To decide if an spot is on an picture:
+  If the picture is nil, say no.
+  If the spot is on the picture's box, say yes.
+  Say no.
+  
+  
+To decide if an spot is on an polygon:
+  If the polygon is nil, say no.
+  Loop.
+    Get an vertex from the polygon's vertices.
+    If the vertex is nil, say no.
+    If the vertex's next is nil, say no.
+    Put the vertex's spot and the vertex's next's spot into an line.
+    If the spot is on the line, say yes.
+  Repeat.
+  
+  
+To decide if an spot is on an roundy box:
+  Put the roundy box into another roundy box.
+  Put 2 times the tpp into an number.
+  Outdent the other roundy box given the number.
+  If the spot is not in the other roundy box, say no.
+  Put the roundy box into an third roundy box.
+  Put 3 times the tpp into another number.
+  Indent the third roundy box given the other number.
+  If the spot is in the third roundy box, say no.
+  Say yes.
+  
+  
+To decide if an spot is on an ellipse:
+  Put the ellipse into another ellipse.
+  Put 2 times the tpp into an number.
+  Outdent the other ellipse's box given the number.
+  If the spot is not in the other ellipse, say no.
+  Put the ellipse into an third ellipse.
+  Put 3 times the tpp into another number.
+  Indent the third ellipse's box given the other number.
+  If the spot is in the third ellipse, say no.
+  Say yes.
+  
+  
+To decide if an spot is outside an box:
+  If the spot is inside the box, say no.
+  Say yes.
+  
+  
+To decide if an spot is to the left of an box:
+  If the spot's x is less than the box's left, say yes.
+  Say no.
+  
+  
+To decide if an spot is to the right of an box:
+  If the spot's x is greater than the box's right, say yes.
+  Say no.
+  
+  
+To decide if an spot is touching an box:
+  If the spot is in the box, say yes.
+  Say no.
+  
+  
+To decide if an spot is within an grid of another spot:
+  Get an difference between the other spot and the spot.
+  If the difference is within the grid, say yes.
+  Say no.
+  
+  
+To decide if an spot is within some twips of an box:
+  Privatize the box.
+  Outdent the box given the twips.
+  If the spot is within the box, say yes.
+  Say no.
+  
+  
+To decide if an spot is within some twips of another spot:
+  Put the twips and the twips into an grid.
+  If the spot is within the grid of the other spot, say yes.
+  Say no.
+  
+  
+To decide if an string does end with another string;
+To decide if an string ends with another string:
+  If the other string's length is greater than the string's length, say no.
+  Slap an substring on the string.
+  Put the substring's last minus the other string's length plus 1 into the substring's first.
+  If the substring is the other string, say yes.
+  Say no.
+  
+  
+To decide if an string does start with an byte;
+To decide if an string starts with an byte:
+  If the string is blank, say no.
+  If the string's first's target is the byte, say yes.
+  Say no.
+  
+  
+To decide if an string does start with another string;
+To decide if an string starts with another string:
+  If the other string's length is greater than the string's length, say no.
+  Slap an substring on the string.
+  Put the substring's first plus the other string's length minus 1 into the substring's last.
+  If the substring is the other string, say yes.
+  Say no.
+  
+  
+To decide if an string is an byte:
+  If the string's length is not 1, say no.
+  If the string's first's target is the byte, say yes.
+  Say no.
+  
+  
+To decide if an string is another string or an third string:
+  If the string is the other string, say yes.
+  If the string is the third string, say yes.
+  Say no.
+  
+  
+To decide if an string is another string:
+  Compare the string to the other string given the string's length and the other string's length (equal only).
+  
+  
+To decide if an string is any fraction literal;
+To decide if an string is any ratio literal:
+  Slap an substring on the string.
+  If the substring is blank, say no.
+  If the substring's first's target is not any numeric starter, say no.
+  If the substring's first's target is any sign, add 1 to the substring's first.
+  Split the substring into an numerator substring and an denominator substring given the slash byte.
+  If the numerator substring is not any integer literal, say no.
+  If the denominator substring is not any integer literal, say no.
+  Say yes.
+  
+  
+To decide if an string is any integer literal:
+  Slap an substring on the string.
+  If the substring is blank, say no.
+  If the substring's first's target is any sign, add 1 to the substring's first.
+  If the substring is blank, say no.
+  Loop.
+    If the substring's first's target is not any digit, say no.
+    Add 1 to the substring's first.
+    If the substring is blank, say yes.
+  Repeat.
+  
+  
+To decide if an string is any integer:
+  Slap an substring on the string.
+  If the substring is blank, say no.
+  If the substring's first's target is any sign, add 1 to the substring's first.
+  If the substring is blank, say no.
+  Loop.
+    If the substring's first's target is not any digit, say no.
+    Add 1 to the substring's first.
+    If the substring is blank, say yes.
+  Repeat.
+  
+  
+To decide if an string is any mixed literal:
+  Slap an substring on the string.
+  If the substring is blank, say no.
+  If the substring's first's target is not any numeric starter, say no.
+  If the substring's first's target is any sign, add 1 to the substring's first.
+  Split the substring into an integer substring and an fraction substring given the dash byte.
+  If the integer substring is not any integer literal, say no.
+  If the fraction substring is not any fraction literal, say no.
+  Say yes.
+  
+  
+To decide if an string is any numeric literal:
+  If the string is blank, say no.
+  If the string's first's target is not any numeric starter, say no.
+  If the string is any integer literal, say yes.
+  If the string is any fraction literal, say yes.
+  If the string is any mixed literal, say yes.
+  Say no.
+  
+  
+To decide if an string is any sign:
+  If the string's length is not 1, say no.
+  If the string's first's target is any sign, say yes.
+  Say no.
+  
+  
+To decide if an string is any word:
+  If the string's length is less than 2, say no.
+  Slap an substring on the string.
+  Subtract 1 from the substring's first.
+  Loop.
+    Add 1 to the substring's first.
+    If the substring is blank, say yes.
+    If the substring's first's target is any letter, repeat.
+    If the substring's first's target is the single-quote byte, repeat.
+  Say no.
+  
+  
+To decide if an string is blank:
+  \ assume true
+  Intel $B801000000. \ mov eax,1
+  Intel $8B9D08000000. \ mov ebx,[ebp+8] \ the string
+  \ if first is 0, exit
+  Intel $833B00. \ cmp [ebx],0
+  Intel $0F8410000000. \ je end
+  \ if last is less than first, exit
+  Intel $8B5304. \ mov edx,[ebx+4] \ last pointer
+  Intel $3B13. \ cmp edx,[ebx]
+  Intel $0F8C05000000. \ jl end
+  \ SAY NO:
+  Intel $B800000000. \ mov eax,0
+  \ END:
+  
+  
+To decide if an string is dos-compatible:
+  If the string is blank, say no.
+  If the string's first's target is the period byte, say no.
+  Slap an substring on the string.
+  Loop.
+    If the substring is blank, say yes.
+    If the substring's first's target is the slash byte, say no.
+    If the substring's first's target is the backslash byte, say no.
+    If the substring's first's target is the colon byte, say no.
+    If the substring's first's target is the asterisk byte, say no.
+    If the substring's first's target is the question-mark byte, say no.
+    If the substring's first's target is the double-quote byte, say no.
+    If the substring's first's target is the left-alligator byte, say no.
+    If the substring's first's target is the right-alligator byte, say no.
+    If the substring's first's target is the bar byte, say no.
+    Add 1 to the substring's first.
+  Repeat.
+  
+  
+To decide if an string is greater than another string:
+  Compare the string to the other string given the string's length and the other string's length returning an number.
+  If the number is greater than 0, say yes.
+  Say no.
+  
+  
+To decide if an string is greater than or equal to another string:
+  Compare the string to the other string given the string's length and the other string's length returning an number.
+  If the number is greater than or equal to 0, say yes.
+  Say no.
+  
+  
+To decide if an string is in an index:
+  \  if the index is nil, say no. \ to make compiler faster
+  If the string is blank, say no.
+  Find an refer given the string and the index.
+  If the refer is nil, say no.
+  Say yes.
+  
+  
+To decide if an string is in another string:
+  Slap an substring on the other string.
+  Put the substring's first plus the string's length minus 1 into the substring's last.
+  Loop.
+    If the substring's last is greater than the other string's last, say no.
+    If the substring is the string, say yes.
+    Move the substring given 1.
+  Repeat.
+  
+  
+To decide if an string is less than another string:
+  Compare the string to the other string given the string's length and the other string's length returning an number.
+  If the number is less than 0, say yes.
+  Say no.
+  
+  
+To decide if an string is less than or equal to another string:
+  Compare the string to the other string given the string's length and the other string's length returning an number.
+  If the number is less than or equal to 0, say yes.
+  Say no.
+  
+  
+To decide if an string is misspelled:
+  If the lexicon is nil, say no.
+  If the string is not any word, say no.
+  Privatize the string.
+  If the string ends with "'s", remove the last two bytes from the string.
+  If the string is in the lexicon's index, say no.
+  Say yes.
+  
+  
+To decide if an string is wider than an box: \ assumes font is selected on memory canvas
+  Get an abca and an abcc given the string and the memory canvas.
+  Get an width given the string and the memory canvas.
+  Subtract the abca from the width.
+  Subtract the abcc from the width.
+  If the width is greater than the box's width, say yes.
+  Say no.
+  
+  
+To decide if an substring is on any contraction:
+  Put the substring's first plus 1 into an byte pointer.
+  If the byte pointer is greater than the substring's last, say no.
+  If the substring's first's target is not the single-quote byte, say no.
+  If the byte pointer's target is not any letter, say no.
+  Say yes.
+  
+  
+To decide if an terminal is full:
+  Put the terminal's height divided by 1/4 inch into an number.
+  If the terminal's quoras' count is greater than the number, say yes.
+  Say no.
+  
+  
+To decide if an text can be redone:
+  If the text is nil, say no.
+  If the text's redos' last is nil, say no.
+  Say yes.
+  
+  
+To decide if an text can be undone:
+  If the text is nil, say no.
+  If the text's undos' last is nil, say no.
+  Say yes.
+  
+  
+To decide if an text is modified:
+  If the text is nil, say no.
+  If the text's modified flag is set, say yes.
+  Say no.
+  
+  
+To decide if an token is numeric:
+  Privatize the token.
+  Remove any leading noise from the token.
+  If the token is blank, say no.
+  Loop.
+    Get an byte from the token.
+    If the byte is not any digit, say no.
+    If the token is blank, say yes.
+  Repeat.
+  
+  
+To decide if an event is any shortcut:
+  If the event is nil, say no.
+  If the event's kind is not "key down", say no.
+  If the event is not modified, say no.
+  If the event's key is between the an-key and the z-key, say yes.
+  Say no.
+  
+  
+To decide if an event is modified:
+  If the event's ctrl flag is set, say yes.
+  If the event's alt flag is set, say yes.
+  Say no.
+  
+  
+To decide if an index is empty:
+  \  if the index is nil, say yes. \ to make compiler faster
+  \Loop.
+    Get an bucket given the index.
+    If the bucket is nil, say yes.
+    If the bucket's refers are not empty, say no.
+  Repeat.
+  
+  
+To decide if an input is an left click:
+  Void the left click.
+  If the input's kind is not "left click", say no.
+  Put the input into the left click.
+  
+  
+To decide if an input is from windows telling us to refresh the cursor;
+To decide if an input is from windows telling us to set the cursor:
+  If the input is nil, say no.
+  If the input's kind is "set cursor", say yes.
+  Say no.
+  
+  
+To decide if an input is from windows telling us to show all our stuff;
+To decide if an input is from windows telling us to show all of our stuff;
+To decide if an input is from windows telling us to redraw all our stuff;
+To decide if an input is from windows telling us to redraw all of our stuff:
+  If the input is nil, say no.
+  If the input's kind is "refresh", say yes.
+  Say no.
+  
+  
+To decide if an input is from windows telling us we're done;
+To decide if an input is from windows telling us that we're done;
+To decide if an input is from windows telling us the user has quit:
+  If the input is nil, say yes.
+  Say no.
+  
+  
+To decide if an item is found:
+  If the item's kind is not blank, say yes.
+  Say no.
+  
+  
+To decide if some things are empty:
+  If the things' first is nil, say yes.
+  Say no.
+  
+  
+To decide if something is selected in an text:
+  If the text's anchor is the text's caret, say no.
+  Say yes.
+  
+  
+To decide if the caret of an text is at the beginning:
+  If the text is nil, say no.
+  If the text's caret row# is not 1, say no.
+  If the text's caret column# is not 1, say no.
+  Say yes.
+  
+  
+To decide if the caret of an text is at the end:
+  If the text is nil, say no.
+  If the text's caret row# is not the text's rows' count, say no.
+  Get an row given the text's caret row# and the text.
+  If the text's caret column# is not the row's string's length, say no.
+  Say yes.
+  
+  
+To decide if the caret of an text is on the first line:
+  If the text is nil, say no.
+  If the text's caret row# is not 1, say no.
+  Say yes.
+  
+  
+To decide if the caret of an text is on the last line:
+  If the text is nil, say  no.
+  If the text's rows are empty, say no.
+  If the text's caret row# is not the text's last row's row#, say no.
+  Say yes.
+  
+  
+To decide if the current spot is above or below an box:
+  If the context's spot is above or below the box, say yes.
+  Say no.
+  
+  
+To decide if the current spot is left or right of an box:
+  If the context's spot is left or right of the box, say yes.
+  Say no.
+  
+  
+To decide if the current spot is to the right of an box:
+  If the context's spot's x is greater than the box's right, say yes.
+  Say no.
+  
+  
+To decide if the current spot is within some twips of an box:
+  If the context's spot is within the twips of the box, say yes.
+  Say no.
+  
+  
+To decide if the left mouse button is down:
+  If the mouse's left button is down, say yes.
+  Say no.
+  
+  
+To decide if the mouse has been dragged from an spot given an grid:
+    If the mouse's left button is up, say no.
+    Put the mouse's spot into another spot.
+    Get an difference between the other spot and the spot.
+  If the difference is within the grid, repeat.
+  Say yes.
+  
+  
+To decide if the mouse is in an box:
+  If the mouse's spot is in the box, say yes.
+  Say no.
+  
+  
+To decide if the stack has just one thing on it:
+  If the stack's count is 1, say yes.
+  Say no.
+  
+  
+To decide if the user is clicking in some choices;
+To decide if the user has clicked in some choices;
+To decide if the user clicked in some choices;
+To decide if the user clicks in some choices;
+To decide if the user is clicking on some choices;
+To decide if the user has clicked on some choices;
+To decide if the user clicked on some choices;
+To decide if the user clicks on some choices:
+  Loop.
+  If the mouse's left button is not down, say no.
+  Find an choice given the mouse's spot.
+  If the choice can't be found, say no.
+  Say yes.
+  
+  
+To decide if there is something to backspace in an text:
+  If the text is nil, say no.
+  If something is selected in the text, say yes.
+  If the text's caret row# is not 1, say yes.
+  If the text's caret column# is not 1, say yes.
+  Say no.
+  
+  
+To decide if there is something to remove in an text:
+  If the text is nil, say no.
+  If something is selected in the text, say yes.
+  If the text's caret row# is not the text's row count, say yes.
+  Get an row given the text's caret row# and the text.
+  If the text's caret column# is not the row's string's length, say yes.
+  Say no.
+  
+  
+To decide if there is text on the windows clipboard:
+  Call "user32.dll" "IsClipboardFormatAvailable" with 1 [cf_text] returning an number.
+  If the number is 0, say no.
+  Say yes.
+  
+  
+To decide if we ca find an pointer: \ should be "can" not "ca", compiler bug
+  If the pointer is nil, say no.
+  Say yes.
+  
+  
+To decide if we could find an pointer:
+  If the pointer is nil, say no.
+  Say yes.
+  
+  
+To decide if we did find an pointer:
+  If the pointer is nil, say no.
+  Say yes.
+  
+  
+To decide if we're above an box:
+  If the context's y is less than the box's top, say yes.
+  Say no.
+  
+  
+To decide if we're above an coord:
+  If the context's y is less than the coord, say yes.
+  Say no.
+  
+  
+To decide if we're above an horizontal line:
+  If the context's spot is above the horizontal line, say yes.
+  Say no.
+  
+  
+To decide if we're above an spot:
+  If the context's y is less than the spot's y, say yes.
+  Say no.
+  
+  
+To decide if we're above or below an box:
+  If the context's y is less than the box's top, say yes.
+  If the context's y is greater than the box's bottom, say yes.
+  Say no.
+  
+  
+To decide if we're below an box:
+  If the context's y is greater than the box's bottom, say yes.
+  Say no.
+  
+  
+To decide if we're below an coord:
+  If the context's y is greater than the coord, say yes.
+  Say no.
+  
+  
+To decide if we're below an horizontal line:
+  If the context's spot is below the horizontal line, say yes.
+  Say no.
+  
+  
+To decide if we're below an spot:
+  If the context's y is greater than the spot's y, say yes.
+  Say no.
+  
+  
+To decide if we're facing north: \ *** need east, south, west
+  Normalize the context's heading.
+  If the context's heading is 0, say yes.
+  Say no.
+  
+  
+To decide if we're left of an box:
+  If the context's x is less than the box's left, say yes.
+  Say no.
+  
+  
+To decide if we're left or right of an box:
+  If the context's x is less than the box's left, say yes.
+  If the context's x is greater than the box's right, say yes.
+  Say no.
+  
+  
+To decide if we're outside an box:
+  If the context's spot is outside the box, say yes.
+  Say no.
+  
+  
+To decide if we're right of an box:
+  If the context's x is greater than the box's right, say yes.
+  Say no.
+  
+  
+To decide if we're still in an box;
+To decide if we're in an box:
+  If the context's spot is in the box, say yes.
+  Say no.
+  
+  
+To decide if we're within some twips of an box:
+  If the context's spot is within the twips of the box, say yes.
+  Say no.
+  
+  
+To decide if you feel like it:
+  Pick an number between 1 and 100.
+  If the number is less than 51, say yes.
+  Say no.
+  
+  

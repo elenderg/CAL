@@ -1,0 +1,30 @@
+To center an page (horizontally):
+  If the page is nil, exit.
+  Put the pad's left into the page's origin's x.
+  Put the pad's box's width into an width.
+  If the page's width is greater than the width, add 1/4 inch to the page's origin's x; exit.
+  Put the width minus the page's width divided by 2 into an offset.
+  Add the offset to the page's origin's x.
+  
+  
+To center an page (vertically):
+  If the page is nil, exit.
+  Put the pad's top into the page's origin's y.
+  Put the pad's box's height into an height.
+  If the page's height is greater than the height, exit.
+  Put the height minus the page's height divided by 2 into an offset.
+  Add the offset to the page's origin's y.
+  
+  
+To center an page:
+  If the page is nil, exit.
+  Center the page (horizontally).
+  Center the page (vertically).
+  
+  
+To center an shape in an box:
+  If the shape is nil, exit.
+  Get an difference between the box's center and the shape's box's center.
+  Move the shape given the difference.
+  
+  

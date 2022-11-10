@@ -1,6 +1,0 @@
-To center an box in another box (horizontally):
-  Put the other box's center's x minus the box's center's x into an number.
-  Round the number to the nearest multiple of the tpp.
-  Move the box given the number and 0.
-  
-  

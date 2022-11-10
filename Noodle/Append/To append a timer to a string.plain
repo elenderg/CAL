@@ -1,5 +1,0 @@
-To append an timer to an string:
-  Convert the timer to another string.
-  Append the other string to the string.
-  
-  

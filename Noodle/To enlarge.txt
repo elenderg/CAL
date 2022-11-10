@@ -1,0 +1,10 @@
+To enlarge an box by some twips:
+  Subtract the twips from the box's left-top.
+  Add the twips to the box's right-bottom.
+  
+  
+To enlarge an ellipse by some twips:
+  Subtract the twips from the ellipse's left-top.
+  Add the twips to the ellipse's right-bottom.
+  
+  

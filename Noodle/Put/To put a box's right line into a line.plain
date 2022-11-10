@@ -1,5 +1,0 @@
-To put an box's right line into an line:
-  Put the box's right and the box's top into the line's start.
-  Put the box's right and the box's bottom into the line's end.
-  
-  

@@ -1,6 +1,0 @@
-To create an shape refer given an shape:
-  If the shape is nil, void the shape refer; exit.
-  Allocate memory for the shape refer.
-  Put the shape into the shape refer's shape.
-  
-  

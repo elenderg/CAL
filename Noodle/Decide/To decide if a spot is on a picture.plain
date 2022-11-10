@@ -1,6 +1,0 @@
-To decide if an spot is on an picture:
-  If the picture is nil, say no.
-  If the spot is on the picture's box, say yes.
-  Say no.
-  
-  

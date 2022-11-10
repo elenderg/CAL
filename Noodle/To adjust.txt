@@ -1,0 +1,50 @@
+To adjust an box given an number and another number and an third number and an fourth number:
+  Add the number to the box's left.
+  Add the other number to the box's top.
+  Add the third number to the box's right.
+  Add the fourth number to the box's bottom.
+  
+  
+To adjust an line with an number and another number and an third number and an fourth number:
+  Add the number to the line's start's x.
+  Add the other number to the line's start's y.
+  Add the third number to the line's end's x.
+  Add the fourth number to the line's end's y.
+  
+  
+To adjust an picture (extract boxes from gpbitmap):
+  If the picture is nil, exit.
+  Put 0 into the picture's box's left.
+  Put 0 into the picture's box's top.
+  Put the picture's gpbitmap's width minus 1 times the tpp into the picture's box's right.
+  Put the picture's gpbitmap's height minus 1 times the tpp into the picture's box's bottom.
+  Put the picture's box into the picture's uncropped box.
+  
+  
+To adjust an item:
+  Put the item's win32finddata's dwfileattributes into an number.
+  Bitwise and the number with 16 [file_attribute_directory].
+  If the number is 0, put "file" into the item's kind.
+  If the number is not 0, put "directory" into the item's kind.
+  Put the item's win32finddata's cfilename's whereabouts into an pchar.
+  Convert the pchar to the item's designator.
+  If the item's kind is "directory", append "\" to the item's designator.
+  Put the item's directory then the item's designator into the item's path.
+  Extract the item's extension from the item's designator as an path.
+  Put the item's win32finddata's nfilesizelow into the item's size.
+  If the item's designator's first's target is not the period byte, exit.
+  Get the item (not first time).
+  
+  
+To adjust spacing given an string:
+  If the current canvas is not the printer canvas, exit.
+  Call "gdi32.dll" "SetTextCharacterExtra" with the printer canvas and 0.
+  Call "gdi32.dll" "GetCurrentObject" with the printer canvas and 6 [obj_font] returning an handle.
+  Call "gdi32.dll" "SelectObject" with the memory canvas and the handle.
+  Get an width given the string and the memory canvas.
+  Call "gdi32.dll" "SelectObject" with the memory canvas and the null hfont.
+  Get another width given the string and the printer canvas.
+  Put the width minus the other width divided by the string's length into an number.
+  Call "gdi32.dll" "SetTextCharacterExtra" with the printer canvas and the number.
+  
+  

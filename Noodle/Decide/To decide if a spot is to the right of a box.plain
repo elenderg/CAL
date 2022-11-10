@@ -1,5 +1,0 @@
-To decide if an spot is to the right of an box:
-  If the spot's x is greater than the box's right, say yes.
-  Say no.
-  
-  

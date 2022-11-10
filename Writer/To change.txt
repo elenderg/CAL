@@ -1,0 +1,72 @@
+To change an shape given an font height:
+  If the shape is nil, exit.
+  If the shape's kind is "group", change the shape's shapes given the font height; exit.
+  If the shape's kind is not "text", exit.
+  Change the shape's text given the font height.
+  
+  
+To change an shape given an font name:
+  If the shape is nil, exit.
+  If the shape's kind is "group", change the shape's shapes given the font name; exit.
+  If the shape's kind is not "text", exit.
+  Change the shape's text given the font name.
+  
+  
+To change an shape given an radius:
+  If the shape is nil, exit.
+  If the shape's kind is "group", change the shape's shapes given the radius; exit.
+  If the shape's kind is "rectangle", change the shape's rect given the radius; exit.
+  If the shape's kind is "text", change the shape's text rect given the radius; exit.
+  
+  
+To change any selected shapes on an page given an font height:
+  If the page is nil, exit.
+  Loop.
+    Get an shape from the page's shapes.
+    If the shape is nil, exit.
+    If the shape is not selected, repeat.
+    Change the shape given the font height.
+  Repeat.
+  
+  
+To change any selected shapes on an page given an font name:
+  If the page is nil, exit.
+  Loop.
+    Get an shape from the page's shapes.
+    If the shape is nil, exit.
+    If the shape is not selected, repeat.
+    Change the shape given the font name.
+  Repeat.
+  
+  
+To change any selected shapes on an page given an radius:
+  If the page is nil, exit.
+  Loop.
+    Get an shape from the page's shapes.
+    If the shape is nil, exit.
+    If the shape is not selected, repeat.
+    Change the shape given the radius.
+  Repeat.
+  
+  
+To change some shapes given an font height:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Change the shape given the font height.
+  Repeat.
+  
+  
+To change some shapes given an font name:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Change the shape given the font name.
+  Repeat.
+  
+  
+To change some shapes given an radius:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Change the shape given the radius.
+  Repeat.
+  
+  

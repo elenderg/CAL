@@ -1,0 +1,452 @@
+To start an process given an path: \ must be called with an global variable
+  Clear the i/o error.
+  If the process is not 0, put "I'm sorry, but that process is already running." into the i/o error; exit.
+  Put an startupinfo's magnitude into the startupinfo's cb.
+  Extract an directory from the path. null terminate the directory.
+  Privatize the path. null terminate the path.
+  Call "kernel32.dll" "CreateProcessA" with the path's first and 0 and 0 and 0 and 0 and 67108904 [create_default_error_mode + normal_priority_class + detached_process] and 0 
+  And the directory's first and the startupinfo's whereabouts and an processinfo's whereabouts returning an number.
+  If the number is 0, put "I'm unable to run the program." into the i/o error; exit.
+  Put the processinfo's hprocess into the process.
+  Call "kernel32.dll" "CloseHandle" with the processinfo's hthread.
+  Point an pointer to routine wait for an process pointer.
+  Call "kernel32.dll" "CreateThread" with 0 and 0 and the pointer and the process's whereabouts and 0 and another number's whereabouts returning an handle.
+  Call "kernel32.dll" "CloseHandle" with the handle. \ does not end the thread, just dumps the handle
+  
+  
+To start an timer:
+  Reset the timer.
+  Restart the timer.
+  
+  
+To start anywhere in an box:
+  Pick the context's spot in the box.
+  
+  
+To start anywhere on an horizontal line:
+  Pick an spot on the horizontal line.
+  Put the spot into the context's spot.
+  
+  
+To start at an spot facing east:
+  Put the spot into the context's spot.
+  Face east.
+  
+  
+To start at an spot facing north:
+  Put the spot into the context's spot.
+  Face north.
+  
+  
+To start at an spot facing south:
+  Put the spot into the context's spot.
+  Face south.
+  
+  
+To start at an spot facing west:
+  Put the spot into the context's spot.
+  Face west.
+  
+  
+To start at an spot:
+  Put the spot into the context's spot.
+  
+  
+To start at the bottom left corner of an box facing east:
+  Put the box's left-bottom into the context's spot.
+  Face east.
+  
+  
+To start at the bottom left corner of an box facing north:
+  Put the box's left-bottom into the context's spot.
+  Face north.
+  
+  
+To start at the bottom left corner of an box facing south:
+  Put the box's left-bottom into the context's spot.
+  Face south.
+  
+  
+To start at the bottom left corner of an box facing west:
+  Put the box's left-bottom into the context's spot.
+  Face west.
+  
+  
+To start at the bottom of an horizontal line:
+  Put the vertical line's end into the context's spot.
+  
+  
+To start at the bottom right corner of an box facing east:
+  Put the box's right-bottom into the context's spot.
+  Face east.
+  
+  
+To start at the bottom right corner of an box facing north:
+  Put the box's right-bottom into the context's spot.
+  Face north.
+  
+  
+To start at the bottom right corner of an box facing south:
+  Put the box's right-bottom into the context's spot.
+  Face south.
+  
+  
+To start at the bottom right corner of an box facing west:
+  Put the box's right-bottom into the context's spot.
+  Face west.
+  
+  
+To start at the left of an horizontal line:
+  Put the horizontal line's start into the context's spot.
+  
+  
+To start at the middle of the bottom of an box facing east;
+To start in the middle of the bottom of an box facing east;
+To start at the center of the bottom of an box facing east;
+To start in the center of the bottom of an box facing east:
+  Put the box's center's x into the context's spot's x.
+  Put the box's bottom into the context's spot's y.
+  Face east.
+  
+  
+To start at the middle of the bottom of an box facing north;
+To start in the middle of the bottom of an box facing north;
+To start at the center of the bottom of an box facing north;
+To start in the center of the bottom of an box facing north:
+  Put the box's center's x into the context's spot's x.
+  Put the box's bottom into the context's spot's y.
+  Face north.
+  
+  
+To start at the middle of the bottom of an box facing south;
+To start in the middle of the bottom of an box facing south;
+To start at the center of the bottom of an box facing south;
+To start in the center of the bottom of an box facing south:
+  Put the box's center's x into the context's spot's x.
+  Put the box's bottom into the context's spot's y.
+  Face south.
+  
+  
+To start at the middle of the bottom of an box facing west;
+To start in the middle of the bottom of an box facing west;
+To start at the center of the bottom of an box facing west;
+To start in the center of the bottom of an box facing west:
+  Put the box's center's x into the context's spot's x.
+  Put the box's bottom into the context's spot's y.
+  Face west.
+  
+  
+To start at the middle of the bottom of an box;
+To start in the middle of the bottom of an box;
+To start at the center of the bottom of an box;
+To start in the center of the bottom of an box:
+  Put the box's center's x into the context's spot's x.
+  Put the box's bottom into the context's spot's y.
+  
+  
+To start at the middle of the left of an box facing east;
+To start in the middle of the left of an box facing east;
+To start at the center of the left of an box facing east;
+To start in the center of the left of an box facing east:
+  Put the box's left into the context's spot's x.
+  Put the box's center's y into the context's spot's y.
+  Face east.
+  
+  
+To start at the middle of the left of an box facing north;
+To start in the middle of the left of an box facing north;
+To start at the center of the left of an box facing north;
+To start in the center of the left of an box facing north:
+  Put the box's left into the context's spot's x.
+  Put the box's center's y into the context's spot's y.
+  Face north.
+  
+  
+To start at the middle of the left of an box facing south;
+To start in the middle of the left of an box facing south;
+To start at the center of the left of an box facing south;
+To start in the center of the left of an box facing south:
+  Put the box's left into the context's spot's x.
+  Put the box's center's y into the context's spot's y.
+  Face south.
+  
+  
+To start at the middle of the left of an box facing west;
+To start in the middle of the left of an box facing west;
+To start at the center of the left of an box facing west;
+To start in the center of the left of an box facing west:
+  Put the box's left into the context's spot's x.
+  Put the box's center's y into the context's spot's y.
+  Face west.
+  
+  
+To start at the middle of the right of an box facing east;
+To start in the middle of the right of an box facing east;
+To start at the center of the right of an box facing east;
+To start in the center of the right of an box facing east:
+  Put the box's right into the context's spot's x.
+  Put the box's center's y into the context's spot's y.
+  Face east.
+  
+  
+To start at the middle of the right of an box facing north;
+To start in the middle of the right of an box facing north;
+To start at the center of the right of an box facing north;
+To start in the center of the right of an box facing north:
+  Put the box's right into the context's spot's x.
+  Put the box's center's y into the context's spot's y.
+  Face north.
+  
+  
+To start at the middle of the right of an box facing south;
+To start in the middle of the right of an box facing south;
+To start at the center of the right of an box facing south;
+To start in the center of the right of an box facing south:
+  Put the box's right into the context's spot's x.
+  Put the box's center's y into the context's spot's y.
+  Face south.
+  
+  
+To start at the middle of the right of an box facing west;
+To start in the middle of the right of an box facing west;
+To start at the center of the right of an box facing west;
+To start in the center of the right of an box facing west:
+  Put the box's right into the context's spot's x.
+  Put the box's center's y into the context's spot's y.
+  Face west.
+  
+  
+To start at the middle of the top of an box facing east;
+To start in the middle of the top of an box facing east;
+To start at the center of the top of an box facing east;
+To start in the center of the top of an box facing east:
+  Put the box's center's x into the context's spot's x.
+  Put the box's top into the context's spot's y.
+  Face east.
+  
+  
+To start at the middle of the top of an box facing north;
+To start in the middle of the top of an box facing north;
+To start at the center of the top of an box facing north;
+To start in the center of the top of an box facing north:
+  Put the box's center's x into the context's spot's x.
+  Put the box's top into the context's spot's y.
+  Face north.
+  
+  
+To start at the middle of the top of an box facing south;
+To start in the middle of the top of an box facing south;
+To start at the center of the top of an box facing south;
+To start in the center of the top of an box facing south:
+  Put the box's center's x into the context's spot's x.
+  Put the box's top into the context's spot's y.
+  Face south.
+  
+  
+To start at the middle of the top of an box facing west;
+To start in the middle of the top of an box facing west;
+To start at the center of the top of an box facing west;
+To start in the center of the top of an box facing west:
+  Put the box's center's x into the context's spot's x.
+  Put the box's top into the context's spot's y.
+  Face west.
+  
+  
+To start at the middle of the top of an box;
+To start in the middle of the top of an box;
+To start at the center of the top of an box;
+To start in the center of the top of an box:
+  Put the box's center's x into the context's spot's x.
+  Put the box's top into the context's spot's y.
+  
+  
+To start at the right of an horizontal line:
+  Put the horizontal line's end into the context's spot.
+  
+  
+To start at the top left corner of an box facing east:
+  Put the box's left-top into the context's spot.
+  Face east.
+  
+  
+To start at the top left corner of an box facing north:
+  Put the box's left-top into the context's spot.
+  Face north.
+  
+  
+To start at the top left corner of an box facing south:
+  Put the box's left-top into the context's spot.
+  Face south.
+  
+  
+To start at the top left corner of an box facing west:
+  Put the box's left-top into the context's spot.
+  Face west.
+  
+  
+To start at the top of an vertical line:
+  Put the vertical line's start into the context's spot.
+  
+  
+To start at the top right corner of an box facing east:
+  Put the box's right-top into the context's spot.
+  Face east.
+  
+  
+To start at the top right corner of an box facing north:
+  Put the box's right-top into the context's spot.
+  Face north.
+  
+  
+To start at the top right corner of an box facing south:
+  Put the box's right-top into the context's spot.
+  Face south.
+  
+  
+To start at the top right corner of an box facing west:
+  Put the box's right-top into the context's spot.
+  Face west.
+  
+  
+To start in the middle of an box facing east;
+To start at the middle of an box facing east;
+To move to the middle of an box facing east;
+To move to the middle of an box and face east;
+To start in the center of an box facing east;
+To start at the center of an box facing east;
+To move to the center of an box facing east;
+To move to the center of an box and face east:
+  Put the box's center into the context's spot.
+  Face east.
+  
+  
+To start in the middle of an box facing north minus some points;
+To start in the center of an box facing north minus some points:
+  Put the box's center into the context's spot.
+  Face north.
+  Turn left the points.
+  
+  
+To start in the middle of an box facing north;
+To start at the middle of an box facing north;
+To move to the middle of an box facing north;
+To move to the middle of an box and face north;
+To start in the center of an box facing north;
+To start at the center of an box facing north;
+To move to the center of an box facing north;
+To move to the center of an box and face north:
+  Put the box's center into the context's spot.
+  Face north.
+  
+  
+To start in the middle of an box facing south;
+To start at the middle of an box facing south;
+To move to the middle of an box facing south:
+  To move to the middle of an box and face south;
+To start in the center of an box facing south;
+To start at the center of an box facing south;
+To move to the center of an box facing south:
+  To move to the center of an box and face south:
+  Put the box's center into the context's spot.
+  Face south.
+  
+  
+To start in the middle of an box facing west;
+To start at the middle of an box facing west;
+To move to the middle of an box facing west;
+To move to the middle of an box and face west;
+To start in the center of an box facing west;
+To start at the center of an box facing west;
+To move to the center of an box facing west;
+To move to the center of an box and face west:
+  Put the box's center into the context's spot.
+  Face west.
+  
+  
+To start some twips above the middle of the bottom of an box: \ incomplete set of these
+  Put the box's center's x into the context's spot's x.
+  Put the box's bottom minus the twips into the context's spot's y.
+  
+  
+To start some twips down from an spot;
+To start some twips below an spot:
+  Put the spot's x into the context's x.
+  Put the spot's y plus the twips into the context's y.
+  
+  
+To start some twips from the center of an box:
+  Put the box's center into the context's spot.
+  Move the twips.
+  
+  
+To start some twips left and some other twips up from an spot:
+  Put the spot's x minus the twips into the context's x.
+  Put the spot's y minus the other twips into the context's y.
+  
+  
+To start some twips to the left and some other twips down from an spot;
+To start some twips left and some other twips down from an spot:
+  Put the spot's x minus the twips into the context's x.
+  Put the spot's y plus the other twips into the context's y.
+  
+  
+To start some twips to the left and some other twips up from an spot;
+To start some twips to the left of an spot;
+To start some twips left of an spot:
+  Put the spot's x minus the twips into the context's x.
+  
+  
+To start some twips to the right and some other twips down from an spot;
+To start some twips right and some other twips down from an spot:
+  Put the spot's x plus the twips into the context's x.
+  Put the spot's y plus the other twips into the context's y.
+  
+  
+To start some twips to the right and some other twips up from an spot;
+To start some twips right and some other twips up from an spot:
+  Put the spot's x plus the twips into the context's x.
+  Put the spot's y minus the other twips into the context's y.
+  
+  
+To start some twips up from an coord:
+  Put the coord minus the twips into the context's y.
+  
+  
+To start some twips up from an spot;
+To start some twips above an spot:
+  Put the spot's y into the context's y.
+  Subtract the twips from the context's y.
+  
+  
+To start up the cgi:
+  Initialize winsock.
+  Initialize the module.
+  Initialize the cgi.
+  
+  
+To start up:
+  Initialize com.
+  Initialize winsock.
+  Initialize gdi+.
+  Initialize the talker.
+  Initialize the module.
+  Initialize the colors.
+  Initialize the screen.
+  Initialize the window.
+  Initialize the fonts.
+  Initialize the cursors.
+  Initialize the mouse.
+  Initialize the canvases.
+  Initialize the context.
+  Initalize the terminal.
+  Create the console.
+  
+  
+To start with an color:
+  Put the color into the context's color.
+  
+  
+To start with nothing in an pointer:
+  Void the pointer.
+  
+  

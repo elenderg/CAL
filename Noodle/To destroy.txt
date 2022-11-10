@@ -1,0 +1,108 @@
+To destroy an crypt session:
+  If the crypt session is nil, exit.
+  Call "advapi32.dll" "CryptDestroyKey" with the crypt session's hcryptkey.
+  Call "advapi32.dll" "CryptDestroyHash" with the crypt session's hcrypthash.
+  Call "advapi32.dll" "CryptReleaseContext" with the crypt session's hcryptprov and 0.
+  Deallocate the crypt session.
+  
+  
+To destroy an gpimage:
+  If the gpimage is nil, exit.
+  Call "gdiplus.dll" "GdipDisposeImage" with the gpimage.
+  Void the gpimage.
+  
+  
+To destroy an gpimageattributes:
+  If the gpimageattributes is nil, exit.
+  Call "gdiplus.dll" "GdipDisposeImageAttributes" with the gpimageattributes.
+  Void the gpimageattributes.
+  
+  
+To destroy an path in the file system (directory):
+  Loop.
+    Get an item from the path.
+    If the item is not found, break.
+    Put the path into another path.
+    Append the item's designator to the other path.
+    Destroy the other path in the file system.
+    If the i/o error is not blank, exit.
+  Repeat.
+  Privatize the path.
+  Null terminate the path.
+  Call "kernel32.dll" "RemoveDirectoryA" with the path's first returning an number.
+  Clear the i/o error.
+  If the number is not 0, exit.
+  Put "Error deleting directory '" then the path then "'." into the i/o error.
+  
+  
+To destroy an path in the file system (file):
+  Privatize the path.
+  Null terminate the path.
+  Call "kernel32.dll" "DeleteFileA" with the path's first returning an number.
+  Clear the i/o error.
+  If the number is not 0, exit.
+  Put "Error deleting file '" then the path then "'." into the i/o error.
+  
+  
+To destroy an path in the file system:
+  Set the path to read-write mode.
+  If the path is directory-format, destroy the path in the file system (directory).
+  If the path is file-format, destroy the path in the file system (file).
+  
+  
+To destroy an picture:
+  If the picture is nil, exit.
+  Destroy the picture's gpbitmap.
+  Deallocate the picture.
+  
+  
+To destroy an socket:
+  Call "ws2_32.dll" "closesocket" with the socket.
+  
+  
+To destroy an vertex given an polygon:
+  If the vertex is nil, exit.
+  If the polygon is nil, exit.
+  Privatize the vertex.
+  Remove the vertex from the polygon's vertices.
+  Destroy the vertex.
+  
+  
+To destroy an winhttp request:
+  If the winhttp request is nil, exit.
+  Call "winhttp.dll" "WinHttpCloseHandle" with the winhttp request's request.
+  Call "winhttp.dll" "WinHttpCloseHandle" with the winhttp request's connection.
+  Call "winhttp.dll" "WinHttpCloseHandle" with the winhttp request's session.
+  Deallocate the winhttp request.
+  
+  
+To destroy an hrgn:
+  Call "gdi32.dll" "DeleteObject" with the hrgn.
+  
+  
+To destroy an index:
+  If the index is nil, exit.
+  Loop.
+    Get an bucket given the index.
+    If the bucket is nil, break.
+    Destroy the bucket's refers.
+  Repeat.
+  Unassign the index's first bucket.
+  Deallocate the index.
+  
+  
+To destroy the hbrush of an canvas:
+  Call "gdi32.dll" "SelectObject" with the canvas and the null hbrush returning an hbrush.
+  Call "gdi32.dll" "DeleteObject" with the hbrush.
+  
+  
+To destroy the hfont of an canvas:
+  Call "gdi32.dll" "SelectObject" with the canvas and the null hfont returning an hfont.
+  Call "gdi32.dll" "DeleteObject" with the hfont.
+  
+  
+To destroy the hpen of an canvas:
+  Call "gdi32.dll" "SelectObject" with the canvas and the null hpen returning an hpen.
+  Call "gdi32.dll" "DeleteObject" with the hpen.
+  
+  

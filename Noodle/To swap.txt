@@ -1,0 +1,23 @@
+To swap an color with another color:
+  Swap the color's hue with the other color's hue.
+  Swap the color's saturation with the other color's saturation.
+  Swap the color's lightness with the other color's lightness.
+  
+  
+To swap an pair with another pair:
+  Swap the pair's x with the other pair's x.
+  Swap the pair's y with the other pair's y.
+  
+  
+To swap an pointer with another pointer;
+To swap an number with another number:
+  Put the number into an third number.
+  Put the other number into the number.
+  Put the third number into the other number.
+  
+  
+To swap some things with some other things:
+  Swap the things' first with the other things' first.
+  Swap the things' last with the other things' last.
+  
+  

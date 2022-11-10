@@ -1,0 +1,19 @@
+To make an fraction with an number and another number:
+  Put the number into the fraction's numerator.
+  Put the other number into the fraction's denominator.
+  
+  
+To make an ratio pair given an box and another box;
+To make an fraction pair given an box and another box:
+  Put the box's x-extent into the fraction pair's fraction's numerator.
+  Put the other box's x-extent into the fraction pair's fraction's denominator.
+  Put the box's y-extent into the fraction pair's other fraction's numerator.
+  Put the other box's y-extent into the fraction pair's other fraction's denominator.
+  
+  
+To mask inside an box:
+  Create an hrgn given the box.
+  Mask inside the hrgn.
+  Destroy the hrgn.
+  
+  

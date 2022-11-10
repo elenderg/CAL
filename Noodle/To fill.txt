@@ -1,0 +1,26 @@
+To fill an box with an color:
+  Draw the box with the clear color and the color.
+  
+  
+To fill an string with an byte given an count:
+  Reassign the string's first given the count.
+  Fill bytes with the byte starting at the string's first for the count.
+  Put the string's first plus the count minus 1 into the string's last.
+  
+  
+To fill an ellipse on an spot with an color:
+  Center the ellipse on the spot.
+  Draw the ellipse with the clear color and the color.
+  
+  
+To fill bytes with an byte starting at an pointer for an byte count:
+  Intel $8BBD0C000000. \ mov edi,[ebp+12] \ the pointer
+  Intel $8B3F. \ mov edi,[edi]
+  Intel $8B8D10000000. \ mov ecx,[ebp+16] \ the count
+  Intel $8B09. \ mov ecx,[ecx]
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the byte
+  Intel $8A00. \ mov al,[eax]
+  Intel $FC. \ cld
+  Intel $F3AA. \ rep stosb
+  
+  

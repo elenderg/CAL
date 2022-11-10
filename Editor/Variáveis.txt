@@ -1,0 +1,21 @@
+An block is an thing with an name and some rows.
+  
+  
+An rows/sheet is an number.
+  
+  
+An sheet number is an number.
+  
+  
+An sheets/copy is an number.
+  
+  
+An source is an thing with
+  an read-only flag,
+  an colorized flag,
+  an text.
+  
+  
+The comment color is an color.
+  
+  

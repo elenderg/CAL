@@ -1,6 +1,0 @@
-To destroy an gpimageattributes:
-  If the gpimageattributes is nil, exit.
-  Call "gdiplus.dll" "GdipDisposeImageAttributes" with the gpimageattributes.
-  Void the gpimageattributes.
-  
-  

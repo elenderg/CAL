@@ -1,0 +1,130 @@
+To extract an designator from an path:
+  Clear the designator.
+  Extract an drive from the path.
+  Slap an path substring on the path.
+  Add the drive's length to the path substring's first.
+  If the path substring is blank, put the drive into the designator; exit.
+  Slap an substring on the last byte of the path substring.
+  If the substring's first's target is the backslash byte, subtract 1 from the substring's first.
+  Loop.
+    If the substring's first is less than the path substring's first, break.
+    If the substring's first's target is the backslash byte, break.
+    Subtract 1 from the substring's first.
+  Repeat.
+  Add 1 to the substring's first.
+  Put the substring into the designator.
+  
+  
+To extract an directory from an path:
+  Clear the directory.
+  Extract an drive from the path.
+  If the drive is blank, exit.
+  Slap an substring on the path.
+  Add the drive's length to the substring's first.
+  If the substring is blank, exit.
+  If the substring's last's target is the backslash byte, subtract 1 from the substring's last.
+  Loop.
+    If the substring is blank, break.
+    If the substring's last's target is the backslash byte, break.
+    Subtract 1 from the substring's last.
+  Repeat.
+  Put the drive then the substring into the directory.
+  
+  
+To extract an directory name from an path:
+  Clear the directory name.
+  If the path is not directory-format, exit.
+  Extract the directory name as an designator from the path.
+  
+  
+To extract an directory name w/o slash from an path:
+  Extract the directory name w/o slash as an directory name from the path.
+  If the directory name w/o slash is blank, exit.
+  Remove the last byte from the directory name w/o slash.
+  
+  
+To extract an drive from an path:
+  Clear the drive.
+  If the path's length is less than 3, exit.
+  Slap an substring on the first byte of the path.
+  Add 2 to the substring's last.
+  If the substring ends with ":\", put the substring into the drive; exit.
+  If the substring does not start with "\\", exit.
+  Slap the substring on the first byte of the path.
+  Loop.
+    If the substring's last is greater than the path's last, exit.
+    If the substring's last's target is the backslash byte, add 1 to an count.
+    If the count is 4, break. \ "\\computer\share\"
+    Add 1 to the substring's last.
+  Repeat.
+  Put the substring into the drive.
+  
+  
+To extract an file name from an path:
+  Clear the file name.
+  If the path is not file-format, exit.
+  Extract the file name as an designator from the path.
+  
+  
+To extract an file name w/o extension from an path:
+  Extract the file name w/o extension as an file name from the path.
+  Extract an extension from the path.
+  Remove trailing bytes from the file name w/o extension given the extension's length.
+  
+  
+To extract an picture given an box:
+  Put the box's width divided by the tpp into an width.
+  Put the box's height divided by the tpp into an height.
+  Call "gdiplus.dll" "GdipCreateBitmapFromScan0" with the width and the height and 0 and 137224 [pixelformat24bpprgb] and 0 and an gpbitmap's whereabouts.
+  Call "gdiplus.dll" "GdipGetImageGraphicsContext" with the gpbitmap and an gpgraphic's whereabouts.
+  Call "gdiplus.dll" "GdipGetDC" with the gpgraphic and an bitmap canvas' whereabouts.
+  Normalize the bitmap canvas.
+  Call "gdi32.dll" "BitBlt" with the bitmap canvas and 0 and 0 and the box's width and the box's height
+  And the current canvas and the box's left and the box's top and 13369376 [srccopy].
+  Call "gdiplus.dll" "GdipReleaseDC" with the gpgraphic and the bitmap canvas.
+  Call "gdiplus.dll" "GdipDeleteGraphics" with the gpgraphic.
+  Create the picture given the gpbitmap.
+  Put the box into the picture's box.
+  Put the box into the picture's uncropped box.
+  
+  
+To extract an string from an text (no linefeed additions):
+  If the text is nil, clear the string; exit.
+  Convert the text's rows to the string (no linefeed additions).
+  Remove any trailing return byte from the string.
+  
+  
+To extract an string from an text (selected bytes):
+  Clear the string.
+  If the text is nil, exit.
+  Loop.
+    Get an row from the text's rows.
+    If the row is nil, exit.
+    Slap an substring on any selected bytes in the row of the text.
+    If the substring is blank, repeat.
+    Append the substring to the string.
+    If the substring's last's target is the return byte, append the linefeed byte to the string.
+  Repeat.
+  
+  
+To extract an string from an text:
+  If the text is nil, clear the string; exit.
+  Convert the text's rows to the string.
+  Remove any trailing linefeed byte from the string.
+  Remove any trailing return byte from the string.
+  
+  
+To extract an extension from an path:
+  Clear the extension.
+  If the path is blank, exit.
+  Slap an substring on the last byte of the path.
+  Loop.
+    If the substring's first is less than the path's first, exit.
+    If the substring's first's target is the colon byte, exit.
+    If the substring's first's target is the backslash byte, exit.
+    If the substring's first's target is the period byte, break.
+    Subtract 1 from the substring's first.
+  Repeat.
+  Put the substring into the extension.
+  
+  

@@ -1,5 +1,0 @@
-To append an number to an buffer (as hex with separator):
-  Convert the number to an nibble string.
-  Append the nibble string to the buffer (with separator).
-  
-  

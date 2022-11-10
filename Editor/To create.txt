@@ -1,0 +1,31 @@
+To create an block:
+  Allocate memory for the block.
+  
+  
+To create an source given an buffer:
+  Allocate memory for the source.
+  Put the pad's box into an box.
+  Put the box's height divided by the default font's height times the default font's height into an height.
+  Put the box's top plus the height into the box's bottom.
+  Center the box in the pad's box (vertically).
+  Create the source's text.
+  Put the box into the source's text's box.
+  Put the black color into the source's text's pen.
+  Put the default font into the source's text's font.
+  Put 1/4 inch into the source's text's margin.
+  Put the buffer into the source's text.
+  Set the source's text's horizontal scroll flag.
+  Set the source's text's vertical scroll flag.
+  
+  
+To create some blocks given some rows:
+    Get an row from the rows.
+    If the row is nil, exit.
+    \  if the row's string starts with any definition starter, add to the blocks. \ didn't handle multi-line record definitions
+    If the row's string has neither code nor comment on it, add to the blocks.
+    If the blocks are empty, add to the blocks.
+    Copy the row into another row.
+    Append the other row to the blocks' last's rows.
+  Repeat.
+  
+  

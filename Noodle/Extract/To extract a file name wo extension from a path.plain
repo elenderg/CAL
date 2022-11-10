@@ -1,6 +1,0 @@
-To extract an file name w/o extension from an path:
-  Extract the file name w/o extension as an file name from the path.
-  Extract an extension from the path.
-  Remove trailing bytes from the file name w/o extension given the extension's length.
-  
-  

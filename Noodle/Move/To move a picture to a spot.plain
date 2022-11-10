@@ -1,6 +1,0 @@
-To move an picture to an spot:
-  If the picture is nil, exit.
-  Get an difference between the spot and the picture's left-top.
-  Move the picture given the difference.
-  
-  

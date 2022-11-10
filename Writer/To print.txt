@@ -1,0 +1,47 @@
+To print an copy of an document:
+  If the document is nil, exit.
+  Put the document's selected page count into an count.
+  Loop.
+    Get an page from the document's pages.
+    If the page is nil, exit.
+    If the page is not selected, repeat.
+    Add 1 to an number.
+    Show status the copy then " of " then the number then " of " then the count then "...".
+    Print the page.
+  Repeat.
+  
+  
+To print an document given an copy count:
+  If the document is nil, exit.
+  Begin printing.
+  Loop.
+    Add 1 to an copy.
+    If the copy is greater than the copy count, break.
+    Print the copy of the document.
+  Repeat.
+  End printing.
+  
+  
+To print an page given an copy count:
+  If the page is nil, exit.
+  Begin printing.
+  Loop.
+    Add 1 to an copy.
+    If the copy is greater than the copy count, break.
+    Show status the copy then " of " then the copy count then "...".
+    Print the page.
+  Repeat.
+  End printing.
+  
+  
+To print an page:
+  If the page is nil, exit.
+  Copy the page into another page.
+  End edit on the other page.
+  Scale the other page to 1/1.
+  Begin an sheet given the other page's box.
+  Draw the other page's shapes on the other page.
+  End the sheet.
+  Destroy the other page.
+  
+  

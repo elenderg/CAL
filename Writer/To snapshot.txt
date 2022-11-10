@@ -1,0 +1,14 @@
+To snapshot some pages:
+    Get an page from the pages.
+    If the page is nil, exit.
+    Put the page's selected flag into the page's previously selected flag.
+  Repeat.
+  
+  
+To snapshot some shapes:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Put the shape's selected flag into the shape's previously selected flag.
+  Repeat.
+  
+  

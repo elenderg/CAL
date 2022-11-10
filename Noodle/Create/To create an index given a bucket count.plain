@@ -1,9 +1,0 @@
-To create an index given an bucket count:
-  Allocate memory for the index.
-  Put the bucket count into the index's bucket count.
-  Put an bucket record's magnitude into an width.
-  Put the index's bucket count times the width into an number.
-  Assign the index's first bucket given the number.
-  Put the index's first bucket plus the number minus the width into the index's last bucket.
-  
-  

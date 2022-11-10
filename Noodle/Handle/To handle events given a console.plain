@@ -1,9 +1,0 @@
-To handle events given an console:
-  If the console is nil, exit.
-  Loop.
-    Deque an event.
-    If the event is nil, exit.
-    Handle the event given the console.
-  Repeat.
-  
-  

@@ -1,6 +1,0 @@
-To handle lowercase given an source:
-  If nothing is selected in the source, cluck; exit.
-  Handle lowercase given the source's text.
-  Show the desktop with status.
-  
-  

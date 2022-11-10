@@ -1,0 +1,25 @@
+To sort any selected rows in an text:
+  If the text is nil, exit.
+  Split the rows of the text into some rows and some selected rows and some other rows.
+  Sort the selected rows.
+  Append the rows to the text's rows.
+  Append the selected rows to the text's rows.
+  Append the other rows to the text's rows.
+  Renumber the text's rows.
+  
+  
+To sort some rows:
+  If the rows' first is the rows' last, exit.
+  Split the rows into some left rows and some right rows.
+  Sort the left rows.
+  Sort the right rows.
+  Loop.
+    Put the left rows' first into an left row.
+    Put the right rows' first into an right row.
+    If the left row is nil, append the right rows to the rows; exit.
+    If the right row is nil, append the left rows to the rows; exit.
+    If the left row's string is greater than the right row's string, move the right row from the right rows to the rows; repeat.
+    Move the left row from the left rows to the rows.
+  Repeat.
+  
+  

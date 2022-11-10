@@ -1,6 +1,0 @@
-To compile the next statement given an rider (exit):
-  If the current routine's decider flag is set, abort with "What does 'exit' mean here? Yes? No? Maybe?" and the rider; exit.
-  Add an fragment given the exit tag.
-  Move the rider (compiler rules).
-  
-  

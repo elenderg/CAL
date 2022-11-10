@@ -1,0 +1,14 @@
+To negate an fraction:
+  Negate the fraction's numerator.
+  
+  
+To negate an number:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the number
+  Intel $F718.\ neg [eax]
+  
+  
+To negate an pair:
+  Negate the pair's x.
+  Negate the pair's y.
+  
+  

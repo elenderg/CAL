@@ -1,5 +1,0 @@
-To convert an string to an wide string and null terminate:
-  Convert the string to the wide string.
-  Null terminate the wide string.
-  
-  

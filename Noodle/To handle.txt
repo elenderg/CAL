@@ -1,0 +1,525 @@
+To handle align given an text and an alignment:
+  If the text is nil, exit.
+  Remember the text with "alignment".
+  Align the text given the alignment.
+  
+  
+To handle an event given an console (backspace key):
+  If the console's reply is blank, exit.
+  If the event is modified, exit.
+  Handle the event given the console's text (backspace key).
+  Remove the last byte from the console's reply.
+  Show the console.
+  
+  
+To handle an event given an console (down-arrow key):
+  Scroll the console's text down one line.
+  Show the console.
+  
+  
+To handle an event given an console (end key):
+  Scroll the console's text to the bottom.
+  Show the console.
+  
+  
+To handle an event given an console (enter key):
+  Handle the event given the console's text (enter key).
+  Relinquish control.
+  
+  
+To handle an event given an console (home key):
+  Scroll the console's text to the top.
+  Show the console.
+  
+  
+To handle an event given an console (key down):
+  If the event's key is the backspace key, handle the event given the console (backspace key); exit.
+  If the event's key is the down-arrow key, handle the event given the console (down-arrow key); exit.
+  If the event's key is the end key, handle the event given the console (end key); exit.
+  If the event's key is the enter key, handle the event given the console (enter key); exit.
+  If the event's key is the home key, handle the event given the console (home key); exit.
+  If the event's key is the page-down key, handle the event given the console (page-down key); exit.
+  If the event's key is the page-up key, handle the event given the console (page-up key); exit.
+  If the event's key is the up-arrow key, handle the event given the console (up-arrow key); exit.
+  If the event's byte is not printable, exit.
+  Append the event's byte to the console's reply.
+  Handle the event given the console's text (printable key).
+  Show the console.
+  
+  
+To handle an event given an console (page-down key):
+  Scroll the console's text down one page.
+  Show the console.
+  
+  
+To handle an event given an console (page-up key):
+  Scroll the console's text up one page.
+  Show the console.
+  
+  
+To handle an event given an console (refresh):
+  Show the console.
+  
+  
+To handle an event given an console (right click):
+  Show the hand cursor.
+  Scroll the console given the event.
+  Refresh the cursor.
+  
+  
+To handle an event given an console (set cursor):
+  Show the arrow cursor.
+  
+  
+To handle an event given an console (up-arrow key):
+  Scroll the console's text up one line.
+  Show the console.
+  
+  
+To handle an event given an console:
+  If the console is nil, exit.
+  If the event's kind is "key down", handle the event given the console (key down); exit.
+  If the event's kind is "refresh", handle the event given the console (refresh); exit.
+  If the event's kind is "right click", handle the event given the console (right click); exit.
+  If the event's kind is "set cursor", handle the event given the console (set cursor); exit.
+  
+  
+To handle an event given an terminal (backspace key):
+  If the terminal's reply is blank, exit.
+  If the event is modified, exit.
+  Remove the last byte from the terminal's reply.
+  Remove the last byte from the terminal's quoras' last's string.
+  Show the terminal.
+  
+  
+To handle an event given an terminal (enter key):
+  Relinquish control.
+  
+  
+To handle an event given an terminal (key down):
+  If the event's key is the backspace key, handle the event given the terminal (backspace key); exit.
+  If the event's key is the enter key, handle the event given the terminal (enter key); exit.
+  If the event's byte is not printable, exit.
+  Append the event's byte to the terminal's reply.
+  Append the event's byte to the terminal's quoras' last's string.
+  Show the terminal.
+  
+  
+To handle an event given an terminal (refresh):
+  Show the terminal.
+  
+  
+To handle an event given an terminal (set cursor):
+  Show the arrow cursor.
+  
+  
+To handle an event given an terminal:
+  If the terminal is nil, exit.
+  If the event's kind is "key down", handle the event given the terminal (key down); exit.
+  If the event's kind is "refresh", handle the event given the terminal (refresh); exit.
+  If the event's kind is "set cursor", handle the event given the terminal (set cursor); exit.
+  If the event's kind is "left click", relinquish control. \ *** added for invisible turtle book questionable
+  
+  
+To handle an event given an text (backspace key):
+  If the text is nil, exit.
+  If there is nothing to backspace in the text, exit.
+  Remember the text with "backspace".
+  If the event is modified, remove bytes from the text (backspace with jump).
+  If the event is not modified, remove bytes from the text (backspace).
+  Wrap the text.
+  Scroll the text to the caret.
+  
+  
+To handle an event given an text (delete key):
+  If the text is nil, exit.
+  If there is nothing to remove in the text, exit.
+  Remember the text with "delete".
+  If the event is modified, remove bytes from the text (forward delete with jump).
+  If the event is not modified, remove bytes from the text (forward delete).
+  Wrap the text.
+  Scroll the text to the caret.
+  
+  
+To handle an event given an text (down-arrow key):
+  If the text is nil, exit.
+  If the caret of the text is on the last line, set an flag.
+  If the flag is set, move the caret to the last byte of the text.
+  If the flag is not set, move the caret down in the text.
+  If the event's shift flag is not set, deselect the text.
+  Clear the text's last operation.
+  Scroll the text to the caret.
+  
+  
+To handle an event given an text (end key):
+  If the text is nil, exit.
+  If the event is modified, move the caret to the last byte of the text.
+  If the event is not modified, move the caret to the last byte of the current row of the text.
+  If the event's shift flag is not set, deselect the text.
+  Clear the text's last operation.
+  Scroll the text to the caret.
+  
+  
+To handle an event given an text (enter key):
+  If the text is nil, exit.
+  Remember the text with "insert return".
+  Remove any selected bytes in the text.
+  Insert the return byte into the text.
+  Wrap the text.
+  Scroll the text to the caret.
+  
+  
+To handle an event given an text (escape key):
+  If the text is nil, exit.
+  Deselect the text.
+  
+  
+To handle an event given an text (home key):
+  If the text is nil, exit.
+  If the event is modified, move the caret to the first byte of the text.
+  If the event is not modified, move the caret to the first byte of the current row of the text.
+  If the event's shift flag is not set, deselect the text.
+  Clear the text's last operation.
+  Scroll the text to the caret.
+  
+  
+To handle an event given an text (left double click):
+  If the text is nil, exit.
+  Deselect the text.
+  Move the caret right to any non-alphanumeric byte in the text.
+  Move the anchor left to any non-alphanumeric byte in the text.
+  
+  
+To handle an event given an text (left-arrow key):
+  If the text is nil, exit.
+  If the event is modified, jump the caret left in the text.
+  If the event is not modified, move the caret left in the text.
+  If the event's shift flag is not set, deselect the text.
+  Clear the text's last operation.
+  Scroll the text to the caret.
+  
+  
+To handle an event given an text (page-down key):
+  If the text is nil, exit.
+  Scroll the text down one page.
+  Move the caret down one page in the text.
+  If the event's shift flag is not set, deselect the text.
+  Clear the text's last operation.
+  
+  
+To handle an event given an text (page-up key):
+  If the text is nil, exit.
+  Scroll the text up one page.
+  Move the caret up one page in the text.
+  If the event's shift flag is not set, deselect the text.
+  Clear the text's last operation.
+  
+  
+To handle an event given an text (printable key):
+  Remember the text with "insert".
+  Remove any selected bytes in the text.
+  Insert the event's byte into the text.
+  Wrap the text.
+  Scroll the text to the caret.
+  
+  
+To handle an event given an text (right-arrow key):
+  If the text is nil, exit.
+  If the event is modified, jump the caret right in the text.
+  If the event is not modified, move the caret right in the text.
+  If the event's shift flag is not set, deselect the text.
+  Clear the text's last operation.
+  Scroll the text to the caret.
+  
+  
+To handle an event given an text (tab key):
+  If the text is nil, exit.
+  Remember the text with "insert".
+  Remove any selected bytes in the text.
+  Insert the space byte into the text.
+  Divide the text's caret column# by 2 giving an quotient and an remainder.
+  If the remainder is 0, insert the space byte into the text.
+  Scroll the text to the caret.
+  
+  
+To handle an event given an text (up-arrow key):
+  If the text is nil, exit.
+  Move the caret up in the text.
+  If the event's shift flag is not set, deselect the text.
+  Clear the text's last operation.
+  Scroll the text to the caret.
+  
+  
+To handle any wm-activate with an w-param (activate):
+  Call "user32.dll" "SetFocus" with the main window.
+  Call "user32.dll" "ClipCursor" with 0.
+  \  seterrormode(sem_failcriticalerrors) \ keeps certain disk errors from appearing
+  Create an event.
+  Put "activate" into the event's kind.
+  Enque the event.
+  Call "user32.dll" "PostMessageA" with the main window and 0 [wm_null] and 0 and 0.
+  
+  
+To handle any wm-activate with an w-param (deactivate):
+  Create an event.
+  Put "deactivate" into the event's kind.
+  Enque the event.
+  Call "user32.dll" "PostMessageA" with the main window and 0 [wn_null] and 0 and 0.
+  
+  
+To handle any wm-activate with an w-param:
+  Split the w-param into an wyrd and another wyrd.
+  Put the other wyrd into an number.
+  If the number is 0, handle any wm-activate with the w-param (deactivate); exit.
+  Handle any wm-activate with the w-param (activate).
+  
+  
+To handle any wm-char with an w-param and an l-param:
+  If the alt key was down, exit.
+  If the ctrl key was down, exit.
+  Put the w-param into an byte.
+  If the byte is not printable, exit.
+  Create an event.
+  Put "key down" into the event's kind.
+  If the shift key was down, set the event's shift flag.
+  Put the byte into the event's byte.
+  Convert the l-param to the event's key.
+  Enque the event.
+  
+  
+To handle any wm-create with an window:
+  Put the window into the main window.
+  
+  
+To handle any wm-destroy:
+  Call "user32.dll" "PostQuitMessage" with 0.
+  
+  
+To handle any wm-lbuttondblclk with an l-param:
+  Create an event.
+  Put "left double click" into the event's kind.
+  If the alt key was down, set the event's alt flag.
+  If the ctrl key was down, set the event's ctrl flag.
+  If the shift key was down, set the event's shift flag.
+  Convert the l-param to the event's spot.
+  Enque the event.
+  
+  
+To handle any wm-lbuttondown with an l-param:
+  Create an event.
+  Put "left click" into the event's kind.
+  If the alt key was down, set the event's alt flag.
+  If the ctrl key was down, set the event's ctrl flag.
+  If the shift key was down, set the event's shift flag.
+  Convert the l-param to the event's spot.
+  Enque the event.
+  
+  
+To handle any wm-paint with an window:
+  Call "user32.dll" "BeginPaint" with the window and an paintstruct's whereabouts.
+  Call "user32.dll" "EndPaint" with the window and the paintstruct's whereabouts.
+  Create an event.
+  Put "refresh" into the event's kind.
+  Enque the event.
+  
+  
+To handle any wm-rbuttondblclk with an l-param:
+  Create an event.
+  Put "right double click" into the event's kind.
+  If the alt key was down, set the event's alt flag.
+  If the ctrl key was down, set the event's ctrl flag.
+  If the shift key was down, set the event's shift flag.
+  Convert the l-param to the event's spot.
+  Enque the event.
+  
+  
+To handle any wm-rbuttondown with an l-param:
+  Create an event.
+  Put "right click" into the event's kind.
+  If the alt key was down, set the event's alt flag.
+  If the ctrl key was down, set the event's ctrl flag.
+  If the shift key was down, set the event's shift flag.
+  Convert the l-param to the event's spot.
+  Enque the event.
+  
+  
+To handle any wm-setcursor:
+  Refresh the cursor.
+  
+  
+To handle any wm-syskeydown with an w-param and an l-param;
+To handle any wm-keydown with an w-param and an l-param:
+  Put the w-param into an key.
+  If the key with the l-param is any repeated escape or modifier key, exit.
+  If the key is any wm-char key, exit.
+  Create an event.
+  Put "key down" into the event's kind.
+  If the alt key was down, set the event's alt flag.
+  If the ctrl key was down, set the event's ctrl flag.
+  If the shift key was down, set the event's shift flag.
+  Put the key into the event's key.
+  Enque the event.
+  
+  
+To handle capitalize given an text:
+  If the text is nil, exit.
+  If nothing is selected in the text, exit.
+  Remember the text with "capitalize".
+  Capitalize any selected rows in the text.
+  Square up any selection in the text.
+  Wrap the text.
+  
+  
+To handle copy given an text:
+  If the text is nil, exit.
+  If nothing is selected in the text, exit.
+  Extract an string from the text (selected bytes).
+  Put the string on the windows clipboard.
+  
+  
+To handle cut given an text:
+  If the text is nil, exit.
+  If nothing is selected in the text, exit.
+  Remember the text.
+  Extract an string from the text (selected bytes).
+  Put the string on the windows clipboard.
+  Remove any selected bytes in the text.
+  Wrap the text.
+  Scroll the text to the caret.
+  
+  
+To handle events given an console:
+  If the console is nil, exit.
+  Loop.
+    Deque an event.
+    If the event is nil, exit.
+    Handle the event given the console.
+  Repeat.
+  
+  
+To handle events given an terminal:
+  If the terminal is nil, exit.
+  Loop.
+    Deque an event.
+    If the event is nil, exit.
+    Handle the event given the terminal.
+  Repeat.
+  
+  
+To handle font height given an text and an box and an font height:
+  If the text is nil, exit.
+  Remember the text with "font height".
+  Change the text given the box.
+  Change the text given the font height.
+  
+  
+To handle font height given an text and an font height:
+  If the text is nil, exit.
+  Remember the text with "font height".
+  Change the text given the font height.
+  
+  
+To handle font name given an text and an font name:
+  If the text is nil, exit.
+  Remember the text with "font name".
+  Change the text given the font name.
+  
+  
+To handle indent given an text:
+  If the text is nil, exit.
+  If nothing is selected in the text, exit.
+  Remember the text with "dent".
+  Indent any selected rows in the text.
+  Square up any selection in the text.
+  Wrap the text.
+  
+  
+To handle lowercase given an text:
+  If the text is nil, exit.
+  If nothing is selected in the text, exit.
+  Remember the text with "case".
+  Lowercase any selected bytes in the text.
+  Wrap the text.
+  
+  
+To handle outdent given an text:
+  If the text is nil, exit.
+  If nothing is selected in the text, exit.
+  Remember the text with "dent".
+  Outdent any selected rows in the text.
+  Square up any selection in the text.
+  Wrap the text.
+  
+  
+To handle paste given an text:
+  If the text is nil, exit.
+  If there is not text on the windows clipboard, exit.
+  Remember the text.
+  Remove any selected bytes in the text.
+  Get an string from the windows clipboard.
+  Insert the string into the text.
+  Wrap the text.
+  Scroll the text to the caret.
+  
+  
+To handle pen given an text and an color:
+  If the text is nil, exit.
+  Remember the text with "pen".
+  Put the color into the text's pen.
+  
+  
+To handle redo given an text:
+  If the text is nil, exit.
+  If the text's redos' last is nil, exit.
+  Copy the text into another text.
+  Append the other text to the text's undos.
+  Put the text's redos' last into an third text.
+  Remove the third text from the text's redos.
+  Copy the guts of the third text into the text.
+  Destroy the third text.
+  Set the text's modified flag.
+  
+  
+To handle reverse given an text:
+  If the text is nil, exit.
+  If nothing is selected in the text, exit.
+  Remember the text with "reverse".
+  Reverse any selected rows of the text.
+  Square up any selection in the text.
+  Wrap the text.
+  
+  
+To handle select all given an text:
+  If the text is nil, exit.
+  Select every byte in the text.
+  
+  
+To handle sort any selected rows given an text:
+  If the text is nil, exit.
+  If nothing is selected in the text, exit.
+  Remember the text with "sort selected rows".
+  Sort any selected rows in the text.
+  Square up any selection in the text.
+  Wrap the text.
+  
+  
+To handle undo given an text:
+  If the text is nil, exit.
+  If the text's undos' last is nil, exit.
+  Copy the text into another text.
+  Append the other text to the text's redos.
+  Put the text's undos' last into an third text.
+  Remove the third text from the text's undos.
+  Copy the guts of the third text into the text.
+  Destroy the third text.
+  Set the text's modified flag.
+  
+  
+To handle uppercase given an text:
+  If the text is nil, exit.
+  If nothing is selected in the text, exit.
+  Remember the text with "case".
+  Uppercase any selected bytes in the text.
+  Wrap the text.
+  
+  

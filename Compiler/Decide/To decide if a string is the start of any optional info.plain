@@ -1,6 +1,0 @@
-To decide if an string is the start of any optional info:
-  If the string is "to", say yes.
-  If the string is "with", say yes.
-  Say no.
-  
-  

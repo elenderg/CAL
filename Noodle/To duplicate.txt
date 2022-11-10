@@ -1,0 +1,31 @@
+To duplicate an path to another path in the file system (directory):
+  If the path is in the other path, put "Error duplicating directory '" then the path then "' - invalid recursion." into the i/o error; exit.
+  If the path is not in the file system, put "Error duplicating directory '" then the path then "'." into the i/o error; exit.
+  If the other path is not in the file system, create the other path in the file system.
+  Loop.
+    Get an item from the path.
+    If the item is not found, exit.
+    Put the path into an third path.
+    Append the item's designator to the third path.
+    Put the other path into an fourth path.
+    Append the item's designator to the fourth path.
+    Duplicate the third path to the fourth path in the file system.
+  Repeat.
+  
+  
+To duplicate an path to another path in the file system (file):
+  Privatize the path.
+  Null terminate the path.
+  Privatize the other path.
+  Null terminate the other path.
+  Call "kernel32.dll" "CopyFileA" with the path's first and the other path's first and 0 returning an number.
+  Clear the i/o error.
+  If the number is not 0, set the path to read-write mode; exit.
+  Put "Error duplicating file '" then the path then "'." into the i/o error.
+  
+  
+To duplicate an path to another path in the file system:
+  If the path is directory-format, duplicate the path to the other path in the file system (directory).
+  If the path is file-format, duplicate the path to the other path in the file system (file).
+  
+  

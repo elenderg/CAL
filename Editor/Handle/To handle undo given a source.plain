@@ -1,6 +1,0 @@
-To handle undo given an source:
-  If the source's text cannot be undone, cluck; exit.
-  Handle undo given the source's text.
-  Show the desktop with status.
-  
-  

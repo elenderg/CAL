@@ -1,0 +1,12 @@
+To put an source's rows/sheet into an rows/sheet:
+  If the source is nil, put 0 into the rows/sheet; exit.
+  Put 10 inches divided by the source's text's row height into the rows/sheet.
+  
+  
+To put an source's sheets/copy into an sheets/copy:
+  If the source is nil, put 0 into the sheets/copy; exit.
+  Divide the source's text's selected row count by the source's rows/sheet giving an quotient and an remainder.
+  Put the quotient into the sheets/copy.
+  If the remainder is not 0, add 1 to the sheets/copy.
+  
+  

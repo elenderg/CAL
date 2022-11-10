@@ -1,0 +1,49 @@
+To reset an count:
+  Put 0 into the count.
+  
+  
+To reset an flag:
+  Clear the flag.
+  
+  
+To reset an pointer;
+To reset an pointer for the next time around;
+To void an pointer:
+  Intel $8B8508000000. \ mov eax,[ebp+8] \ the pointer
+  Intel $C70000000000. \ mov [eax],0
+  
+  
+To reset an timer:
+  Put 0 into the timer's count.
+  Put 0 into the timer's start ticks.
+  Put 0 into the timer's total ticks.
+  
+  
+To reset the alphabet:
+  Put the big-an byte into the next letter.
+  
+  
+To reset the caret of an text:
+  If the text is nil, exit.
+  Put 1 and 1 into the text's caret.
+  
+  
+To reset the context:
+  Restore the context.
+  Save the context.
+  
+  
+To reset the drawing origin:
+  Set the drawing origin to the zero spot.
+  
+  
+To reset the origin of an text:
+  If the text is nil, exit.
+  Put the text's margin into the text's x.
+  Put 0 into the text's y.
+  
+  
+To reset the rainbow colors:
+  Put 0 into the current rainbow color number.
+  
+  

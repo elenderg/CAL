@@ -1,5 +1,0 @@
-To put the character under an finger into an character:
-  If the finger is nil, clear the character; exit.
-  Put the finger's target into the character.
-  
-  

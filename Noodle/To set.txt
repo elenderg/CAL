@@ -1,0 +1,28 @@
+To set an flag:
+  Put yes into the flag.
+  
+  
+To set an path to read-write mode:
+  Privatize the path.
+  Null terminate the path.
+  Call "kernel32.dll" "GetFileAttributesA" with the path's first returning an number.
+  Bitwise and the number with -2 [everything except file_attribute_readonly].
+  Call "kernel32.dll" "SetFileAttributesA" with the path's first and the number.
+  
+  
+To set the colorref of an canvas given an color:
+  Convert the color to an colorref.
+  Call "gdi32.dll" "SetTextColor" with the canvas and the colorref.
+  
+  
+To set the drawing origin to an spot:
+  Call "gdi32.dll" "GetDeviceCaps" with the current canvas and 112 [physicaloffsetx] returning an pair's x.
+  Call "gdi32.dll" "GetDeviceCaps" with the current canvas and 113 [physicaloffsety] returning the pair's y.
+  Negate the pair.
+  If the current canvas is not the printer canvas, clear the pair.
+  Call "gdi32.dll" "SetViewportOrgEx" with the current canvas and the pair's x and the pair's y and nil.
+  Privatize the spot.
+  Call "gdi32.dll" "LPtoDP" with the current canvas and the spot's whereabouts and 1.
+  Call "gdi32.dll" "SetViewportOrgEx" with the current canvas and the spot's x and the spot's y and nil.
+  
+  

@@ -1,0 +1,97 @@
+To blurt an dos header into an buffer:
+  Blurt bytes given the dos header's whereabouts and the dos header's magnitude and the buffer and 0.
+  
+  
+To blurt an fragment into an buffer:
+  If the fragment's code is blank, exit.
+  Put the fragment's address minus the image base into an address.
+  Blurt the fragment's code into the buffer at the address.
+  
+  
+To blurt an pe header into an buffer:
+  Blurt bytes given the pe header's whereabouts and the pe header's magnitude and the buffer and 256.
+  
+  
+To blurt an routine into an buffer:
+  If the routine's compiled flag is not set, exit.
+  Blurt the routine's fragments into the buffer.
+  
+  
+To blurt an string into an buffer at an address:
+  Blurt bytes given the string's first and the string's length and the buffer and the address.
+  
+  
+To blurt an variable into an buffer (as an string):
+  Put the variable's address minus the image base into an address.
+  Put the variable's data's length into an length.
+  Put the address into another address.
+  Add an prototype string's magnitude to the other address.
+  Add the image base to the other address.
+  Put 0 into the prototype string's first.
+  Put -1 into the prototype string's last.
+  If the length is not 0, put the other address into the prototype string's first.
+  If the length is not 0, put the prototype string's first plus the length minus 1 into the prototype string's last.
+  Blurt bytes given the prototype string's whereabouts and the prototype string's magnitude and the buffer and the address.
+  Add the prototype string's magnitude to the address.
+  Blurt the variable's data into the buffer at the address.
+  
+  
+To blurt an variable into an buffer:
+  If the variable's compiled flag is not set, exit.
+  If the variable's type can be reduced to "string", blurt the variable into the buffer (as an string); exit.
+  Put the variable's address minus the image base into an address.
+  Blurt the variable's data into the buffer at the address.
+  
+  
+To blurt an entry into an buffer:
+  Blurt bytes given the entry's name address's whereabouts and 4 and the buffer and the entry's thunk address.
+  Put the entry's name address plus 2 into an address.
+  Blurt the entry's name into the buffer at the address.
+  
+  
+To blurt an import into an buffer:
+  Blurt bytes given the import's import header's whereabouts and the import's import header's magnitude and the buffer and the import's header address.
+  Blurt the import's name into the buffer at the import's name address.
+  Blurt the import's entries into the buffer.
+  
+  
+To blurt bytes given an pointer and an length and an buffer and an offset:
+  Put the buffer's first plus the offset into another pointer.
+  Copy bytes from the pointer to the other pointer for the length.
+  
+  
+To blurt some entries into an buffer:
+    Get an entry from the entries.
+    If the entry is nil, exit.
+    Blurt the entry into the buffer.
+  Repeat.
+  
+  
+To blurt some fragments into an buffer:
+    Get an fragment from the fragments.
+    If the fragment is nil, exit.
+    Blurt the fragment into the buffer.
+  Repeat.
+  
+  
+To blurt some imports into an buffer:
+    Get an import from the imports.
+    If the import is nil, exit.
+    Blurt the import into the buffer.
+  Repeat.
+  
+  
+To blurt some routines into an buffer:
+    Get an routine from the routines.
+    If the routine is nil, exit.
+    Blurt the routine into the buffer.
+  Repeat.
+  
+  
+To blurt some variables into an buffer:
+    Get an variable from the variables.
+    If the variable is nil, exit.
+    Blurt the variable into the buffer.
+  Repeat.
+  
+  

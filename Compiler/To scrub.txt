@@ -1,0 +1,19 @@
+To scrub an index:
+    Get an bucket given the index.
+    If the bucket is nil, exit.
+    If the bucket's refers are empty, repeat.
+    Scrub the bucket's refers.
+  Repeat.
+  
+  
+To scrub some refers:
+  Swap the refers with some other refers.
+  Loop.
+    Put the other refers' first into an refer.
+    If the refer is nil, exit.
+    Remove the refer from the other refers.
+    If the refer's pointer is nil, destroy the refer; repeat.
+    Append the refer to the refers.
+  Repeat.
+  
+  

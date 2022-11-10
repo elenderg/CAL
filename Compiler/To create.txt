@@ -1,0 +1,37 @@
+To create an fragment given an tag:
+  Allocate memory for the fragment.
+  Put the tag into the fragment's tag.
+  
+  
+To create an monikette:
+  Allocate memory for the monikette.
+  
+  
+To create an routine:
+  Allocate memory for the routine.
+  
+  
+To create an source file:
+  Allocate memory for the source file.
+  
+  
+To create an type:
+  Allocate memory for the type.
+  Put 0/1 into the type's scale.
+  Put -1 into the type's length.
+  
+  
+To create an variable given an kind:
+  Allocate memory for the variable.
+  Put the kind into the variable's kind.
+  Put 1 into the variable's count.
+  
+  
+To create an entry:
+  Allocate memory for the entry.
+  
+  
+To create an import:
+  Allocate memory for the import.
+  
+  

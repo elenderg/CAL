@@ -1,0 +1,421 @@
+To initalize the terminal:
+  Create the terminal in the screen's box.
+  
+  
+To initialize an context:
+  Allocate memory for the context.
+  Put the screen's center into the context's spot.
+  Put 0 into the context's heading.
+  Put the green color into the context's color.
+  Put the small letter height into the context's letter height.
+  \Put 1/60 second into the delay. ***
+  Seed the random number generator.
+  
+  
+To initialize an talker:
+  Convert "{96749377-3391-11D2-9EE3-00C04F797396}" [clsid_spvoice] to an clsid.
+  Convert "{6C44DF74-72B9-4992-A1EC-EF996E0422D4}" [iid_ispvoice] to an iid.
+  Call "ole32.dll" "CoCreateInstance" with the clsid's whereabouts and 0 and 7 [clsctx_all] and the iid's whereabouts and the talker's whereabouts.
+  
+  
+To initialize before run:
+  Call "user32.dll" "DisableProcessWindowsGhosting".
+  Call "kernel32.dll" "GetProcessHeap" returning the heap pointer.
+  Call "kernel32.dll" "LoadLibraryA" with "kernel32.dll"'s first returning an handle.
+  If the handle is not 0, call "kernel32.dll" "GetProcAddress" with the handle and "HeapSetInformation"'s first returning an pointer.
+  If the pointer is not nil, call the pointer with the heap pointer and 0 and 2's whereabouts and 4.
+  
+  
+To initialize com:
+  Call "ole32.dll" "CoInitializeEx" with 0 and 2 [coinit_apartmentthreaded].
+  
+  
+To initialize gdi+:
+  Put 1 into an gdiplusstartupinput's gdiplusversion.
+  Call "gdiplus.dll" "GdiplusStartup" with the gptoken's whereabouts and the gdiplusstartupinput's whereabouts and 0.
+  
+  
+To initialize the canvases:
+  Initialize the screen canvas.
+  Initialize the memory canvas.
+  Put the memory canvas into the current canvas.
+  
+  
+To initialize the cgi:
+  Call "kernel32.dll" "AllocConsole".
+  Call "kernel32.dll" "GetStdHandle" with -10 [std_input_handle] returning the stdin handle.
+  Call "kernel32.dll" "GetStdHandle" with -11 [std_output_handle] returning the stdout handle.
+  
+  
+To initialize the colors:
+  Put 1 into the pen size.
+  Call "gdi32.dll" "GetStockObject" with 8 [null_pen] returning the null hpen.
+  Call "gdi32.dll" "GetStockObject" with 5 [null_brush] returning the null hbrush.
+  Put -1 and 0 and 0 into the clear color.
+  Put 0 and 0 and 1000 into the white color.
+  Put 0 and 0 and 875 into the lightest gray color.
+  Put 0 and 0 and 750 into the lighter gray color.
+  Put 0 and 0 and 625 into the light gray color.
+  Put 0 and 0 and 500 into the gray color.
+  Put 0 and 0 and 375 into the dark gray color.
+  Put 0 and 0 and 250 into the darker gray color.
+  Put 0 and 0 and 125 into the darkest gray color.
+  Put 0 and 0 and 0 into the black color.
+  Put 0 and 1000 and 875 into the lightest red color.
+  Put 0 and 1000 and 750 into the lighter red color.
+  Put 0 and 1000 and 625 into the light red color.
+  Put 0 and 1000 and 500 into the red color.
+  Put 0 and 1000 and 375 into the dark red color.
+  Put 0 and 1000 and 250 into the darker red color.
+  Put 0 and 1000 and 125 into the darkest red color.
+  Put 300 and 1000 and 875 into the lightest orange color.
+  Put 300 and 1000 and 750 into the lighter orange color.
+  Put 300 and 1000 and 625 into the light orange color.
+  Put 300 and 1000 and 500 into the orange color.
+  Put 300 and 1000 and 375 into the dark orange color.
+  Put 300 and 1000 and 250 into the darker orange color.
+  Put 300 and 1000 and 125 into the darkest orange color.
+  Put 600 and 1000 and 875 into the lightest yellow color.
+  Put 600 and 1000 and 750 into the lighter yellow color.
+  Put 600 and 1000 and 625 into the light yellow color.
+  Put 600 and 1000 and 500 into the yellow color.
+  Put 600 and 1000 and 375 into the dark yellow color.
+  Put 600 and 1000 and 250 into the darker yellow color.
+  Put 600 and 1000 and 125 into the darkest yellow color.
+  Put 900 and 1000 and 875 into the lightest lime color.
+  Put 900 and 1000 and 750 into the lighter lime color.
+  Put 900 and 1000 and 625 into the light lime color.
+  Put 900 and 1000 and 500 into the lime color.
+  Put 900 and 1000 and 375 into the dark lime color.
+  Put 900 and 1000 and 250 into the darker lime color.
+  Put 900 and 1000 and 125 into the darkest lime color.
+  Put 1200 and 1000 and 875 into the lightest green color.
+  Put 1200 and 1000 and 750 into the lighter green color.
+  Put 1200 and 1000 and 625 into the light green color.
+  Put 1200 and 1000 and 500 into the green color.
+  Put 1200 and 1000 and 375 into the dark green color.
+  Put 1200 and 1000 and 250 into the darker green color.
+  Put 1200 and 1000 and 125 into the darkest green color.
+  Put 1500 and 1000 and 875 into the lightest teal color.
+  Put 1500 and 1000 and 750 into the lighter teal color.
+  Put 1500 and 1000 and 625 into the light teal color.
+  Put 1500 and 1000 and 500 into the teal color.
+  Put 1500 and 1000 and 375 into the dark teal color.
+  Put 1500 and 1000 and 250 into the darker teal color.
+  Put 1500 and 1000 and 125 into the darkest teal color.
+  Put 1800 and 1000 and 875 into the lightest cyan color.
+  Put 1800 and 1000 and 750 into the lighter cyan color.
+  Put 1800 and 1000 and 625 into the light cyan color.
+  Put 1800 and 1000 and 500 into the cyan color.
+  Put 1800 and 1000 and 375 into the dark cyan color.
+  Put 1800 and 1000 and 250 into the darker cyan color.
+  Put 1800 and 1000 and 125 into the darkest cyan color.
+  Put 2100 and 1000 and 875 into the lightest sky color.
+  Put 2100 and 1000 and 750 into the lighter sky color.
+  Put 2100 and 1000 and 625 into the light sky color.
+  Put 2100 and 1000 and 500 into the sky color.
+  Put 2100 and 1000 and 375 into the dark sky color.
+  Put 2100 and 1000 and 250 into the darker sky color.
+  Put 2100 and 1000 and 125 into the darkest sky color.
+  Put 2400 and 1000 and 875 into the lightest blue color.
+  Put 2400 and 1000 and 750 into the lighter blue color.
+  Put 2400 and 1000 and 625 into the light blue color.
+  Put 2400 and 1000 and 500 into the blue color.
+  Put 2400 and 1000 and 375 into the dark blue color.
+  Put 2400 and 1000 and 250 into the darker blue color.
+  Put 2400 and 1000 and 125 into the darkest blue color.
+  Put 2700 and 1000 and 875 into the lightest purple color.
+  Put 2700 and 1000 and 750 into the lighter purple color.
+  Put 2700 and 1000 and 625 into the light purple color.
+  Put 2700 and 1000 and 500 into the purple color.
+  Put 2700 and 1000 and 375 into the dark purple color.
+  Put 2700 and 1000 and 250 into the darker purple color.
+  Put 2700 and 1000 and 125 into the darkest purple color.
+  Put 3000 and 1000 and 875 into the lightest magenta color.
+  Put 3000 and 1000 and 750 into the lighter magenta color.
+  Put 3000 and 1000 and 625 into the light magenta color.
+  Put 3000 and 1000 and 500 into the magenta color.
+  Put 3000 and 1000 and 375 into the dark magenta color.
+  Put 3000 and 1000 and 250 into the darker magenta color.
+  Put 3000 and 1000 and 125 into the darkest magenta color.
+  Put 3300 and 1000 and 875 into the lightest violet color.
+  Put 3300 and 1000 and 750 into the lighter violet color.
+  Put 3300 and 1000 and 625 into the light violet color.
+  Put 3300 and 1000 and 500 into the violet color.
+  Put 3300 and 1000 and 375 into the dark violet color.
+  Put 3300 and 1000 and 250 into the darker violet color.
+  Put 3300 and 1000 and 125 into the darkest violet color.
+  Put 0 and 0 and 800 into the hilite color.
+  \ special colors
+  Put the lightest orange color into the tan color.
+  Put the dark orange color into the brown color.
+  Put the darker orange color into the dark brown color.
+  Put the darkest orange color into the darker brown color.
+  Put the darkest orange color into the darkest brown color.
+  Put the lightest red color into the pink color.
+  Put the lighter red color into the dark pink color.
+  Put 500 and 1000 and 500 into the gold color.
+  \ colors as pens
+  Put the clear color into the clear pen.
+  Put the white color into the white pen.
+  Put the black color into the black pen.
+  Put the lightest gray color into the lightest gray pen.
+  Put the lighter gray color into the lighter gray pen.
+  Put the light gray color into the light gray pen.
+  Put the gray color into the gray pen.
+  Put the dark gray color into the dark gray pen.
+  Put the darker gray color into the darker gray pen.
+  Put the darkest gray color into the darkest gray pen.
+  Put the lightest red color into the lightest red pen.
+  Put the lighter red color into the lighter red pen.
+  Put the light red color into the light red pen.
+  Put the red color into the red pen.
+  Put the dark red color into the dark red pen.
+  Put the darker red color into the darker red pen.
+  Put the darkest red color into the darkest red pen.
+  Put the lightest orange color into the lightest orange pen.
+  Put the lighter orange color into the lighter orange pen.
+  Put the light orange color into the light orange pen.
+  Put the orange color into the orange pen.
+  Put the dark orange color into the dark orange pen.
+  Put the darker orange color into the darker orange pen.
+  Put the darkest orange color into the darkest orange pen.
+  Put the lightest yellow color into the lightest yellow pen.
+  Put the lighter yellow color into the lighter yellow pen.
+  Put the light yellow color into the light yellow pen.
+  Put the yellow color into the yellow pen.
+  Put the dark yellow color into the dark yellow pen.
+  Put the darker yellow color into the darker yellow pen.
+  Put the darkest yellow color into the darkest yellow pen.
+  Put the lightest lime color into the lightest lime pen.
+  Put the lighter lime color into the lighter lime pen.
+  Put the light lime color into the light lime pen.
+  Put the lime color into the lime pen.
+  Put the dark lime color into the dark lime pen.
+  Put the darker lime color into the darker lime pen.
+  Put the darkest lime color into the darkest lime pen.
+  Put the lightest green color into the lightest green pen.
+  Put the lighter green color into the lighter green pen.
+  Put the light green color into the light green pen.
+  Put the green color into the green pen.
+  Put the dark green color into the dark green pen.
+  Put the darker green color into the darker green pen.
+  Put the darkest green color into the darkest green pen.
+  Put the lightest teal color into the lightest teal pen.
+  Put the lighter teal color into the lighter teal pen.
+  Put the light teal color into the light teal pen.
+  Put the teal color into the teal pen.
+  Put the dark teal color into the dark teal pen.
+  Put the darker teal color into the darker teal pen.
+  Put the darkest teal color into the darkest teal pen.
+  Put the lightest cyan color into the lightest cyan pen.
+  Put the lighter cyan color into the lighter cyan pen.
+  Put the light cyan color into the light cyan pen.
+  Put the cyan color into the cyan pen.
+  Put the dark cyan color into the dark cyan pen.
+  Put the darker cyan color into the darker cyan pen.
+  Put the darkest cyan color into the darkest cyan pen.
+  Put the lightest sky color into the lightest sky pen.
+  Put the lighter sky color into the lighter sky pen.
+  Put the light sky color into the light sky pen.
+  Put the sky color into the sky pen.
+  Put the dark sky color into the dark sky pen.
+  Put the darker sky color into the darker sky pen.
+  Put the darkest sky color into the darkest sky pen.
+  Put the lightest blue color into the lightest blue pen.
+  Put the lighter blue color into the lighter blue pen.
+  Put the light blue color into the light blue pen.
+  Put the blue color into the blue pen.
+  Put the dark blue color into the dark blue pen.
+  Put the darker blue color into the darker blue pen.
+  Put the darkest blue color into the darkest blue pen.
+  Put the lightest purple color into the lightest purple pen.
+  Put the lighter purple color into the lighter purple pen.
+  Put the light purple color into the light purple pen.
+  Put the purple color into the purple pen.
+  Put the dark purple color into the dark purple pen.
+  Put the darker purple color into the darker purple pen.
+  Put the darkest purple color into the darkest purple pen.
+  Put the lightest magenta color into the lightest magenta pen.
+  Put the lighter magenta color into the lighter magenta pen.
+  Put the light magenta color into the light magenta pen.
+  Put the magenta color into the magenta pen.
+  Put the dark magenta color into the dark magenta pen.
+  Put the darker magenta color into the darker magenta pen.
+  Put the darkest magenta color into the darkest magenta pen.
+  Put the lightest violet color into the lightest violet pen.
+  Put the lighter violet color into the lighter violet pen.
+  Put the light violet color into the light violet pen.
+  Put the violet color into the violet pen.
+  Put the dark violet color into the dark violet pen.
+  Put the darker violet color into the darker violet pen.
+  Put the darkest violet color into the darkest violet pen.
+  \ special color pens
+  Put the tan color into the tan pen.
+  Put the brown color into the brown pen.
+  Put the dark brown color into the dark brown pen.
+  Put the darker brown color into the darker brown pen.
+  Put the darkest brown color into the darkest brown pen.
+  Put the pink color into the pink pen.
+  Put the dark pink color into the dark pink pen.
+  Put the gold color in the gold pen.
+  \ "sky" renamed "sky blue"
+  Put the lightest sky color into the lightest sky blue color.
+  Put the lighter sky color into the lighter sky blue color.
+  Put the light sky color into the light sky blue color.
+  Put the sky color into the sky blue color.
+  Put the dark sky color into the dark sky blue color.
+  Put the darker sky color into the darker sky blue color.
+  Put the darkest sky color into the darkest sky blue color.
+  Put the lightest sky color into the lightest sky blue pen.
+  Put the lighter sky color into the lighter sky blue pen.
+  Put the light sky color into the light sky blue pen.
+  Put the sky color into the sky blue pen.
+  Put the dark sky color into the dark sky blue pen.
+  Put the darker sky color into the darker sky blue pen.
+  Put the darkest sky color into the darkest sky blue pen.
+  
+  
+To initialize the cursors (arrow cursor):
+  Append $00000000000000004000000060000000 to an xor-mask.
+  Append $70000000780000007C0000007E000000 to the xor-mask.
+  Append $7F0000007F8000007C0000006C000000 to the xor-mask.
+  Append $46000000060000000300000003000000 to the xor-mask.
+  Append $01800000018000000000000000000000  to the xor-mask.
+  Append $00 to the xor-mask given 48.
+  Append $7FFFFFFF3FFFFFFF1FFFFFFF0FFFFFFF  to an and-mask.
+  Append $07FFFFFF03FFFFFF01FFFFFF00FFFFFF to the and-mask.
+  Append $007FFFFF003FFFFF001FFFFF01FFFFFF to the and-mask.
+  Append $10FFFFFF30FFFFFF787FFFFFF87FFFFF to the and-mask.
+  Append $FC3FFFFFFC3FFFFFFE7FFFFFFFFFFFFF to the and-mask.
+  Append $FF to the and-mask given 48.
+  Call "user32.dll" "CreateCursor" with the module's handle and 0 and 0 and 32 and 32 and the and-mask's first and the xor-mask's first returning the arrow cursor.
+  
+  
+To initialize the cursors (hand cursor):
+  Append $000000000180000019B0000019B00000 to an xor-mask.
+  Append $0DB200000DB6000007F6000067FE0000 to the xor-mask.
+  Append $7FFC00003FFC00001FFC00001FF80000 to the xor-mask.
+  Append $0FF8000007F0000003F0000003F00000 to the xor-mask.
+  Append $00 to the xor-mask given 64.
+  Append $FE7FFFFFE40FFFFFC007FFFFC005FFFF to an and-mask.
+  Append $E000FFFFE000FFFF9000FFFF0000FFFF to the and-mask.
+  Append $0001FFFF8001FFFFC001FFFFC003FFFF to the and-mask.
+  Append $E003FFFFF007FFFFF807FFFFF807FFFF to the and-mask.
+  Append $FF to the and-mask given 64.
+  Call "user32.dll" "CreateCursor" with the module's handle and 2 and 1 and 32 and 32 and the and-mask's first and the xor-mask's first returning the hand cursor.
+  
+  
+To initialize the cursors (i-beam cursor):
+  Append $EE000000100000001000000010000000  to an xor-mask.
+  Append $10000000100000001000000010000000 to the xor-mask.
+  Append $10000000100000001000000010000000 to the xor-mask.
+  Append $100000001000000010000000EE000000 to the xor-mask.
+  Append $00 to the xor-mask given 64.
+  Append $FF to an and-mask given 128.
+  Call "user32.dll" "CreateCursor" with the module's handle and 3 and 7 and 32 and 32 and the and-mask's first and the xor-mask's first returning the i-beam cursor.
+  
+  
+To initialize the cursors:
+  Initialize the cursors (arrow cursor).
+  Initialize the cursors (hand cursor).
+  Initialize the cursors (i-beam cursor).
+  Hide the cursor.
+  
+  
+To initialize the fonts:
+  Call "gdi32.dll" "GetStockObject" with 11 [ansi_fixed_font] returning the null hfont.
+  Call "gdi32.dll" "AddFontMemResourceEx" with the osmosian font source's first and the osmosian font source's length and 0 and an number's whereabouts
+  Returning the osmosian font resource.
+  Put "osmosian" and 1/4 inch into the default font.
+  \ stroked fonts below
+  Put 1/8 inch into the small letter height.
+  Put 1/4 inch into the medium letter height.
+  Put 1/2 inch into the large letter height.
+  
+  
+To initialize the memory canvas:
+  Call "gdi32.dll" "CreateCompatibleDC" with the screen canvas returning the memory canvas.
+  Call "gdi32.dll" "GetCurrentObject" with the memory canvas and 7 [obj_bitmap] returning the saved memory hbitmap.
+  Call "gdi32.dll" "CreateCompatibleBitmap" with the screen canvas and the screen's pixel width and the screen's pixel height returning an hbitmap.
+  Call "gdi32.dll" "SelectObject" with the memory canvas and the hbitmap.
+  Normalize the memory canvas.
+  
+  
+To initialize the module:
+  \ temp path
+  Put 512 into an length.
+  Reassign the temp path's first given the length.
+  Call "kernel32.dll" "GetTempPathA" with the length and the temp path's first returning the length.
+  Put the temp path's first plus the length minus 1 into the temp path's last.
+  Null terminate the temp path.
+  \ module handle
+  Call "kernel32.dll" "GetModuleHandleA" with 0 returning the module's handle.
+  \ module name
+  Put 512 into the length.
+  Reassign the module's path's first given the length.
+  Call "kernel32.dll" "GetModuleFileNameA" with the module's handle and the module's path's first and the length returning the length.
+  Put the module's path's first plus the length minus 1 into the module's path's last.
+  If the module's path starts with "\\?\", remove leading bytes from the module's path given 4.
+  Lowercase the module's path.
+  Null terminate the module's path.
+  \ module's other path pieces
+  Extract the module's name from the module's path.
+  Null terminate the module's name.
+  Extract the module's directory from the module's path.
+  Null terminate the module's directory.
+  Extract the module's root directory from the module's directory.
+  Null terminate the module's root directory.
+  
+  
+To initialize the mouse:
+  Put 1 into the mouse's left button.
+  Put 2 into the mouse's right button.
+  Call "user32.dll" "GetSystemMetrics" with 23 [sm_swapbutton] returning an number.
+  If the number is 0, exit.
+  Swap the mouse's left button with the mouse's right button.
+  
+  
+To initialize the printer canvas:
+  Put an printdlgex's magnitude into the printdlgex's lstructsize.
+  Put the main window into the printdlgex's hwndowner.
+  Put 1288 [pd_returndc + pd_returndefault + pd_nopageenums] into the printdlgex's flags.
+  Put -1 [start_page_general] into the printdlgex's nstartpage.
+  Call "comdlg32.dll" "PrintDlgExA" with the printdlgex's whereabouts.
+  Call "kernel32.dll" "GlobalFree" with the printdlgex's hdevnames.
+  Put the printdlgex's hdevmode into the printer device mode handle.
+  Put the printdlgex's hdc into the printer canvas.
+  
+  
+To initialize the screen canvas:
+  Call "user32.dll" "GetDC" with the main window returning the screen canvas.
+  Normalize the screen canvas.
+  
+  
+To initialize the screen:
+  Call "user32.dll" "GetSystemMetrics" with 0 [sm_cxscreen] returning the screen's pixel width.
+  Call "user32.dll" "GetSystemMetrics" with 1 [sm_cyscreen] returning the screen's pixel height.
+  Put 96 into the ppi.
+  Put the tpi divided by the ppi into the tpp.
+  Put the screen's pixel width times the tpp into an width.
+  Put the screen's pixel height times the tpp into an height.
+  Put 0 and 0 and the width and the height into the screen's box.
+  Subtract the tpp from the screen's right-bottom.
+  
+  
+To initialize the window:
+  Put an window class's magnitude into the window class' cbsize.
+  Put 40 [cs_owndc + cs_dblclks] into the window class' style.
+  Point the window class' lpfnwndproc to routine handle any message with an window an message number an w-param and an l-param.
+  Put the module's handle into the window class' hinstance.
+  Put the module's name's first into the window class' lpszclassname.
+  Call "user32.dll" "RegisterClassExA" with the window class's whereabouts.
+  Call "user32.dll" "CreateWindowExA" with 0 and the module's name's first and the module's name's first and -2147483648 [ws_popup] 
+  And 0 and 0 and the screen's pixel width and the screen's pixel height and 0 and 0 and the module's handle and 0.
+  Call "user32.dll" "ShowWindow" with the main window and 1 [sw_shownormal].
+  
+  
+To initialize winsock:
+  Call "ws2_32.dll" "WSAStartup" with 2 and an wsadata's whereabouts.
+  
+  

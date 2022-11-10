@@ -1,5 +1,0 @@
-To append an number to an buffer (with separator):
-  Convert the number to an string.
-  Append the string to the buffer (with separator).
-  
-  

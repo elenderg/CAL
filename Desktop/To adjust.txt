@@ -1,0 +1,73 @@
+To adjust an menu given an spot and an width:
+    If the menu is nil, exit.
+    Privatize the spot.
+    Put the spot's x plus the width into an right coord.
+    Loop.
+    Get an command from the menu's commands.
+    If the command is nil, break.
+    If the spot's x plus the command's width is greater than the right, put the original spot's x into the spot's x; add the command height to the spot's y.
+    Put the spot and the spot into the command's roundy box.
+    Add the command's width and the command height to the command's roundy box's right-bottom.
+    Add the command's width to the spot's x.
+  Repeat.
+  
+  
+To adjust some tabs:
+    If the tabs' count is 0, exit.
+    Put the switch's box's width divided by the tabs' count into an width.
+    Round the width to the tpp.
+    Loop.
+    Get an tab from the tabs.
+    If the tab is nil, exit.
+    Put the switch's box into the tab's box.
+    Add 1/4 inch to the tab's top.
+    If the tab is not the tabs' first, put the tab's previous' right into the tab's left.
+    If the tab is not the tabs' last, put the tab's left plus the width into the tab's right.
+  Repeat.
+  
+  
+To adjust the dialog (buttons):
+    Put the bar's display and 1/12 inch into an roundy box.
+    Put the roundy box's right minus the button width into the roundy box's left.
+    Loop.
+    Get an button from the dialog's buttons (backwards).
+    If the button is nil, exit.
+    Put the roundy box into the button's roundy box.
+    Move the roundy box left the button width.
+  Repeat.
+  
+  
+To adjust the dialog (prompt):
+  Put the dialog's roundy box's left plus 1/8 inch into the dialog's prompt box's left.
+  Put the dialog's roundy box's top plus 1/24 inch into the dialog's prompt box's top.
+  Get an width given the dialog's prompt and the default font.
+  Put the dialog's prompt box's left plus the width plus 1/12 inch into the dialog's prompt box's right.
+  Put the dialog's roundy box's bottom minus 1/24 inch into the dialog's prompt box's bottom.
+  
+  
+To adjust the dialog (roundy box):
+  Put the bar's display and 1/12 inch into the dialog's roundy box.
+  If the dialog's buttons are empty, exit.
+  Put the dialog's first button's left into the dialog's roundy box's right.
+  
+  
+To adjust the dialog (text):
+  If the dialog's text is nil, exit.
+  Set the dialog's text's horizontal scroll flag.
+  Select every byte in the dialog's text.
+  Put the dialog's pen into the dialog's text's pen.
+  Put the dialog's prompt box's right into an box's left.
+  Put the dialog's prompt box's top into the box's top.
+  Put the dialog's roundy box's right minus 1/8 inch into the box's right.
+  Put the dialog's prompt box's bottom into the box's bottom.
+  Change the dialog's text given the box.
+  
+  
+To adjust the dialog:
+  If the dialog is nil, exit.
+  Adjust the dialog (buttons).
+  Adjust the dialog (roundy box).
+  Adjust the dialog (prompt).
+  Adjust the dialog (text).
+  
+  

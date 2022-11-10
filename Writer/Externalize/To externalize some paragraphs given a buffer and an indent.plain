@@ -1,7 +1,0 @@
-To externalize some paragraphs given an buffer and an indent:
-    Get an paragraph from the paragraphs.
-    If the paragraph is nil, exit.
-    Externalize the paragraph given the buffer and the indent.
-  Repeat.
-  
-  

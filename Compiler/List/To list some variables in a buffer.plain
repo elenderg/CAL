@@ -1,7 +1,0 @@
-To list some variables in an buffer:
-    Get an variable from the variables.
-    If the variable is nil, exit.
-    List the variable in the buffer.
-  Repeat.
-  
-  

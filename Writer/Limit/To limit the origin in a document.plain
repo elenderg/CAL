@@ -1,8 +1,0 @@
-To limit the origin in an document:
-  If the document is nil, exit.
-  If the document is empty, exit.
-  Put the document's left into the document's origin's x.
-  Put the document's top minus the document's last page's edge's top into an number.
-  Limit the document's origin's y to the number and the document's top.
-  
-  

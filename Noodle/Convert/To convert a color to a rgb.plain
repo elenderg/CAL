@@ -1,5 +1,0 @@
-To convert an color to an rgb:
-  Convert the color to an colorref.
-  Convert the colorref to the rgb. 
-  
-  

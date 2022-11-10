@@ -1,0 +1,41 @@
+To ask an question with an default number:
+  Convert the default to an string.
+  Ask the question with the string.
+  
+  
+To ask an question with an default ratio:
+  Convert the default to an string.
+  Ask the question with the string.
+  
+  
+To ask an question with an default string:
+  Create the dialog.
+  Put "input" into the dialog's kind.
+  Put the question into the dialog's prompt.
+  Add an button to the dialog given "M'Kay".
+  Add another button to the dialog given "Cancel".
+  Create the dialog's text.
+  Put the default into the dialog's text.
+  Handle the dialog.
+  Destroy the dialog.
+  
+  
+To ask an question with choices an string and another string and an third string:
+  Create the dialog.
+  Put "choice" into the dialog's kind.
+  Put the question into the dialog's prompt.
+  Add an button to the dialog given the string.
+  Add another button to the dialog given the other string.
+  Add an third button to the dialog given the third string.
+  Handle the dialog.
+  Destroy the dialog.
+  
+  
+To ask an question with choices an string and another string:
+  Ask the question with choices the string and the other string and "".
+  
+  
+To ask an question:
+  Ask the question with "".
+  
+  

@@ -1,0 +1,64 @@
+To rotate an shape (ellipse):
+  Rotate the shape's ellipse.
+  Adjust the shape.
+  
+  
+To rotate an shape (group):
+  Rotate the shape's box.
+  Put the shape's box's center into an center spot.
+  Loop.
+    Get another shape from the shape's shapes.
+    If the other shape is nil, break.
+    Put the other shape's box's center into another center spot.
+    Put the center's y minus the other center's y plus the center's x into an pair's x.
+    Subtract the other center's x from the pair's x.
+    Put the center's y plus the other center's x minus the center's x into the pair's y.
+    Subtract the other center's y from the pair's y.
+    Move the other shape given the pair.
+    Rotate the other shape.
+  Repeat.
+  Adjust the shape.
+  
+  
+To rotate an shape (picture):
+  Rotate the shape's picture.
+  Adjust the shape.
+  
+  
+To rotate an shape (polygon):
+  Rotate the shape's polygon.
+  Adjust the shape.
+  
+  
+To rotate an shape (rectangle):
+  Rotate the shape's rect.
+  Adjust the shape.
+  
+  
+To rotate an shape (text):
+  Rotate the shape's text rect.
+  Adjust the text in the shape.
+  Adjust the shape.
+  
+  
+To rotate an shape:
+  If the shape is nil, exit.
+  If the shape's kind is "ellipse", rotate the shape (ellipse); exit.
+  If the shape's kind is "group", rotate the shape (group); exit.
+  If the shape's kind is "picture", rotate the shape (picture); exit.
+  If the shape's kind is "polygon", rotate the shape (polygon); exit.
+  If the shape's kind is "rectangle", rotate the shape (rectangle); exit.
+  If the shape's kind is "text", rotate the shape (text); exit.
+  Debug "rotate an shape: " then the shape's kind.
+  
+  
+To rotate any selected shapes on an page:
+  If the page is nil, exit.
+  Loop.
+    Get an shape from the page's shapes.
+    If the shape is nil, exit.
+    If the shape is not selected, repeat.
+    Rotate the shape.
+  Repeat.
+  
+  

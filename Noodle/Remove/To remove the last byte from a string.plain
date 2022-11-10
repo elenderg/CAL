@@ -1,5 +1,0 @@
-To remove the last byte from an string:
-  Slap an substring on the last byte of the string.
-  Remove bytes from the string given the substring.
-  
-  

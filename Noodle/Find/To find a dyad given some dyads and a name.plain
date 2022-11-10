@@ -1,9 +1,0 @@
-To find an dyad given some dyads and an name:
-  Void the dyad.
-  Loop.
-    Get the dyad from the dyads.
-    If the dyad is nil, exit.
-    If the dyad's name is the name, exit.
-  Repeat.
-  
-  

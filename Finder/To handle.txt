@@ -1,0 +1,362 @@
+To handle an event given an node (key down - backspace key):
+  Handle the event given the node (key down - delete key).
+  
+  
+To handle an event given an node (key down - delete key):
+  If the current tab's mode is not "finder", debug "Internal error: handle delete given an node"; exit.
+  If the node is root-level, cluck; exit.
+  If the node's path is read-only, show error "I'm sorry, but this directory is read only."; exit.
+  If nothing is selected in the node, show error "I'm not sure what you want me to delete."; exit.
+  If the user is not sure, exit.
+  Show status "Deleting...".
+  Put the node's last selected nodette's next into an nodette.
+  Remove any selected nodettes in the node and in the file system returning an count.
+  If the nodette is nil, put the node's last nodette into the nodette.
+  Focus on the nodette in the node.
+  Show the desktop.
+  Show status the count and "item deleted" or "items deleted".
+  Flush the event queue.
+  
+  
+To handle an event given an node (key down - down-arrow key - shifted):
+  If the node's caret's next is nil, cluck; exit.
+  Put the node's caret's next into the node's caret.
+  Select the node's nodettes given the node's selection.
+  Scroll to the node's caret given the node.
+  Show the desktop with status.
+  
+  
+To handle an event given an node (key down - down-arrow key):
+  If the node is empty, exit.
+  If the node's caret is nil, focus on the node's first nodette in the node; show the desktop with status; exit.
+  If the event's shift flag is set, handle the event given the node (key down - down-arrow key - shifted); exit.
+  Put the node's caret's next into an nodette.
+  If the nodette is nil, put the node's first nodette into the nodette.
+  Focus on the nodette in the node.
+  Show the desktop with status.
+  
+  
+To handle an event given an node (key down - end key):
+  If the node is empty, exit.
+  If the event's shift flag is not set, focus on the node's last nodette in the node; show the desktop; exit.
+  If the node's anchor is nil, put the node's first nodette into the node's anchor.
+  Put the node's last nodette into the node's caret.
+  Select the node's nodettes given the node's selection.
+  Scroll to the node's caret given the node.
+  Show the desktop with status.
+  
+  
+To handle an event given an node (key down - enter key):
+  Handle open.
+  
+  
+To handle an event given an node (key down - escape key):
+  If nothing is selected in the node, handle close; exit.
+  If the node is empty, exit.
+  Deselect the nodettes in the node.
+  Show the desktop with status.
+  
+  
+To handle an event given an node (key down - home key):
+  If the node is empty, exit.
+  If the event's shift flag is not set, focus on the node's first nodette in the node; show the desktop; exit.
+  If the node's anchor is nil, put the node's last nodette into the node's anchor.
+  Put the node's first nodette into the node's caret.
+  Select the node's nodettes given the node's selection.
+  Scroll to the node's caret given the node.
+  Show the desktop with status.
+  
+  
+To handle an event given an node (key down - page-down key):
+  If the node is empty, exit.
+  Scroll the node down one page.
+  If the event's shift flag is not set, focus on the node's first visible nodette in the node; show the desktop with status; exit.
+  If the node's anchor is nil, put the node's first nodette into the node's anchor.
+  Put the node's first visible nodette into the node's caret.
+  Select the node's nodettes given the node's selection.
+  Scroll to the node's caret given the node.
+  Show the desktop with status.
+  
+  
+To handle an event given an node (key down - page-up key):
+  If the node is empty, exit.
+  Scroll the node up one page.
+  If the event's shift flag is not set, focus on the node's first visible nodette in the node; show the desktop with status; exit.
+  If the node's anchor is nil, put the node's last nodette into the node's anchor.
+  Put the node's first visible nodette into the node's caret.
+  Select the node's nodettes given the node's selection.
+  Scroll to the node's caret given the node.
+  Show the desktop with status.
+  
+  
+To handle an event given an node (key down - up-arrow key - shifted):
+  If the node's caret's previous is nil, cluck; exit.
+  Put the node's caret's previous into the node's caret.
+  Select the node's nodettes given the node's selection.
+  Scroll to the node's caret given the node.
+  Show the desktop with status.
+  
+  
+To handle an event given an node (key down - up-arrow key):
+  If the node is empty, exit.
+  If the node's caret is nil, focus on the node's last nodette in the node; show the desktop with status; exit.
+  If the event's shift flag is set, handle the event given the node (key down - up-arrow key - shifted); exit.
+  Put the node's caret's previous into an nodette.
+  If the nodette is nil, put the node's last nodette into the nodette.
+  Focus on the nodette in the node.
+  Show the desktop with status.
+  
+  
+To handle an event given an node (key down):
+  If the event's key is the backspace key, handle the event given the node (key down - backspace key); exit.
+  If the event's key is the delete key, handle the event given the node (key down - delete key); exit.
+  If the event's key is the enter key, handle the event given the node (key down - enter key); exit.
+  If the event's key is the down-arrow key, handle the event given the node (key down - down-arrow key); exit.
+  If the event's key is the end key, handle the event given the node (key down - end key); exit.
+  If the event's key is the escape key, handle the event given the node (key down - escape key); exit.
+  If the event's key is the home key, handle the event given the node (key down - home key); exit.
+  If the event's key is the page-down key, handle the event given the node (key down - page-down key); exit.
+  If the event's key is the page-up key, handle the event given the node (key down - page-up key); exit.
+  If the event's key is the up-arrow key, handle the event given the node (key down - up-arrow key); exit.
+  
+  
+To handle an event given an node (left click - modified):
+  Snapshot the node's nodettes.
+  Position the selection in the node given the event's spot.
+  Track the node given the event.
+  
+  
+To handle an event given an node (left click - not in node):
+  Deselect the nodettes in the node.
+  Show the desktop with status.
+  
+  
+To handle an event given an node (left click - not modified, not shifted):
+  Deselect the node's nodettes.
+  Snapshot the node's nodettes.
+  Position the selection in the node given the event's spot.
+  Track the node given the event.
+  
+  
+To handle an event given an node (left click - shifted):
+  Track the node given the event.
+  
+  
+To handle an event given an node (left click):
+  If the event's spot is not in the node, handle the event given the node (left click - not in node); exit.
+  If the event is modified, handle the event given the node (left click - modified); exit.
+  If the event's shift flag is set, handle the event given the node (left click - shifted); exit.
+  Handle the event given the node (left click - not modified, not shifted).
+  
+  
+To handle an event given an node (left double click):
+  If something is selected in the node, handle open; exit.
+  If the event's spot is not in the node, handle open; exit.
+  Extend any selection in the node given the event's spot.
+  Show the desktop with status.
+  Handle open.
+  
+  
+To handle an event given an node (right click):
+  If the event's spot is not in the pad, exit.
+  If the node is empty, exit.
+  Show the hand cursor.
+  Scroll the node given the event.
+  Refresh the cursor.
+  
+  
+To handle an event given an node (set cursor):
+  Show the arrow cursor.
+  
+  
+To handle copy given an node:
+  If the node is root-level, cluck; exit.
+  If nothing is selected in the node, show error "I'm not sure what you want me to copy."; exit.
+  Show status "Copying...".
+  Destroy the finder's clipboard in the file system.
+  Create the finder's clipboard in the file system.
+  Copy any selected nodettes in the node returning an count.
+  Show the desktop.
+  Show status the count and "item copied" or "items copied".
+  Flush the event queue.
+  
+  
+To handle cut given an node:
+  If the node is root-level, cluck; exit.
+  If nothing is selected in the node, show error "I'm not sure what you want me to cut."; exit.
+  Show status "Cutting...".
+  Put the node's last selected nodette's next into an nodette.
+  Destroy the finder's clipboard in the file system.
+  Create the finder's clipboard in the file system.
+  Cut any selected nodettes in the node returning an count.
+  If the nodette is nil, put the node's last nodette into the nodette.
+  Focus on the nodette in the node.
+  Show the desktop.
+  Show status the count and "item cut" or "items cut".
+  Flush the event queue.
+  
+  
+To handle duplicate given an node:
+  If the node is root-level, cluck; exit.
+  If the node's path is read-only, show error "I'm sorry, but this directory is read only."; exit.
+  Put the node's first selected nodette into an nodette.
+  If the nodette is nil, show error "I'm not sure what you want me to duplicate."; exit.
+  Ask  "New name?" with the nodette's designator w/o backslash.
+  If the answer is blank, exit.
+  Lowercase the answer.
+  Put the nodette's directory then the answer into an path.
+  If the nodette's kind is "directory", append "\" to the path.
+  If the path is in the file system, show error "I'm sorry, but that name is already in the file system."; exit.
+  Show the desktop with "Duplicating...".
+  Duplicate the nodette in the node and in the file system given the path returning an new nodette.
+  If the i/o error is not blank, show error the i/o error; exit.
+  Focus on the new nodette in the node.
+  Show the desktop with "Duplicated".
+  Flush the event queue.
+  
+  
+To handle extract nibble literal given an node:
+  If the node is root-level, cluck; exit.
+  If the node's selected nodette count is not 1, show error "Select only one file item to extract."; exit.
+  Show status "Copying...".
+  Put the node's first selected nodette into an nodette.
+  If the nodette's kind is not "file", show error "I can only extract files into nibble literals."; exit.
+  Read the nodette's path into an buffer.
+  If  the i/o error is not blank, show error the i/o error; exit.
+  Convert the buffer to an nibble string.
+  Prepend "$" to the nibble string.
+  Put the nibble string on the windows clipboard.
+  Show status "Copied".  
+  
+  
+To handle get size given an node:
+  If the node is root-level, cluck; exit.
+  If nothing is selected in the node, show error "I'm not sure what you want me to get the size of."; exit.
+  Show status "Getting...".
+  Calculate an size of any selected nodettes in the node.
+  Format the size and "byte" or "bytes" into an string.
+  Show the desktop with the string.
+  Flush the event queue.
+  
+  
+To handle new directory given an node:
+  If the node is root-level, cluck; exit.
+  If the node's path is read-only, show error "I'm sorry, but this directory is read only."; exit.
+  Ask "Directory name?".
+  If the answer is blank, exit.
+  If the answer is not dos-compatible, show error "I'm sorry, but that is not an valid name."; exit.
+  Put the node's path then the answer then "\" into an path.
+  If the path is in the file system, show error "I'm sorry, but that name is already in the file system."; exit.
+  Show the desktop with "Creating...".
+  Add an nodette to the node and to the file system given the path.
+  If the i/o error is not blank, show error the i/o error; exit.
+  Focus on the nodette in the node.
+  Show the desktop with "Directory created".
+  Flush the event queue.
+  
+  
+To handle new document given an node:
+  If the node is root-level, cluck; exit.
+  If the node's path is read-only, show error "I'm sorry, but this directory is read only."; exit.
+  Ask "Document name?".
+  If the answer is blank, exit.
+  If the answer is not dos-compatible, show error "I'm sorry, but that is not an valid name."; exit.
+  Put the node's path then the answer into an path.
+  If the path is in the file system, show error "I'm sorry, but that name is already in the file system."; exit.
+  Show the desktop with "Creating...".
+  Put "ream " then the document version into an buffer.
+  Append the return byte to the buffer.
+  Append the linefeed byte to the buffer.
+  Append "end" to the buffer.
+  Add an nodette to the node and to the file system given the path and the buffer.
+  If the i/o error is not blank, show error the i/o error; exit.
+  Focus on the nodette in the node.
+  Show the desktop with "Document created".
+  Flush the event queue.
+  
+  
+To handle new text file given an node:
+  If the node is root-level, cluck; exit.
+  If the node's path is read-only, show error "I'm sorry, but this directory is read only."; exit.
+  Ask "File name?".
+  If the answer is blank, exit.
+  If the answer is not dos-compatible, show error "I'm sorry, but that is not an valid name."; exit.
+  Put the node's path then the answer into an path.
+  If the path is in the file system, show error "I'm sorry, but that name is already in the file system."; exit.
+  Show the desktop with "Creating...".
+  Add an nodette to the node and to the file system given the path.
+  If the i/o error is not blank, show error the i/o error; exit.
+  Focus on the nodette in the node.
+  Show the desktop with "File created".
+  Flush the event queue.
+  
+  
+To handle paste given an node:
+  If the node is root-level, cluck; exit.
+  If the finder's clipboard is empty in the file system, cluck; exit.
+  If the node's path is read-only, show error "I'm sorry, but this directory is read only."; exit.
+  Show status "Pasting...".
+  Paste any copied items into the node and into the file system returning an count.
+  Set the caret and anchor in the node using the selected nodettes.
+  Scroll to the node's caret given the node.
+  Show the desktop.
+  Show status the count and "item pasted" or "items pasted".
+  Flush the event queue.
+  
+  
+To handle rename given an node:
+  If the node is root-level, cluck; exit.
+  If the node's path is read-only, show error "I'm sorry, but this directory is read only."; exit.
+  Put the node's first selected nodette into an nodette.
+  If the nodette is nil, show error "I'm not sure what you want me to rename."; exit.
+  Ask "New name?" with the nodette's designator w/o backslash.
+  If the answer is blank, exit.
+  Lowercase the answer.
+  Put the nodette's directory then the answer into an path.
+  If the nodette's kind is "directory", append "\" to the path.
+  If the path is in the file system, show error "I'm sorry, but that name is already in the file system."; exit.
+  Show the desktop with "Renaming...".
+  Rename the nodette in the node and in the file system given the path.
+  If the i/o error is not blank, show error the i/o error; exit.
+  Focus on the nodette in the node.
+  Show the desktop with "Renamed".
+  Flush the event queue.
+  
+  
+To handle reverse given an node:
+  If the node is root-level, cluck; exit.
+  Reverse the node.
+  Show the desktop with status.
+  Flush the event queue.
+  
+  
+To handle run given an node:
+  If the node is root-level, cluck; exit.
+  Put the node's first selected nodette into an nodette.
+  If the nodette is nil, show error "I'm not sure what you want me to run."; exit.
+  If the nodette's extension is not ".exe", show error "I don't know how to run that kind of file from here."; exit.
+  Show status "Running...".
+  Start the current process given the nodette's path.
+  If the i/o error is not blank, show error the i/o error; exit.
+  Flush the event queue.
+  
+  
+To handle select all given an node:
+  If the node is root-level, cluck; exit.
+  Deselect the nodettes in the node.
+  Select the node's nodettes.
+  Put the node's first nodette into the node's anchor.
+  Put the node's last nodette into the node's caret.
+  Show the desktop with status.
+  
+  
+To handle sort nodettes given an node and an string:
+  If the node is root-level, cluck; exit.
+  If the string is "kind", sort the node by kind.
+  If the string is "name", sort the node by designator.
+  If the string is "extension", sort the node by extension.
+  Show the desktop.
+  Show status the node's nodettes' count and "item sorted" or "items sorted".
+  Flush the event queue.
+  
+  

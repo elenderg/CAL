@@ -1,5 +1,0 @@
-To limit an number to another number and an third number:
-  If the number is less than the other number, put the other number into the number; exit.
-  If the number is greater than the third number, put the third number into the number.
-  
-  

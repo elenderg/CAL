@@ -1,0 +1,154 @@
+An copied page is an page.
+  
+  
+An cropper is an knob.
+  
+  
+An document is an thing with
+  an box,
+  an origin,
+  an grid,
+  an path,
+  an read-only flag,
+  an modified flag,
+  an document selection called selection,
+  some pages,
+  an grid showing flag,
+  an yank grid, [1/8 inch, 1/12 inch, 1/16 inch, 1/24 inch, 1/32 inch, 1/48 inch, 0]
+  an scale ratio,
+  some pages called page undos,
+  some pages called page redos.
+  
+  
+An document selection is an pair with an anchor page, an caret page.
+  
+  
+An focus shape is an shape.
+  
+  
+An group shape is an shape.
+  
+  
+An knob has an kind, an box and an fill color.
+  
+  
+An label is an string.
+  
+  
+An measure is an ratio.
+  
+  
+An page clipboard is some pages.
+  
+  
+An page is an thing with
+  \ page stuff
+  an width, an height,
+  some shapes,
+  \ runtime
+  an origin,
+  an grid,
+  an superduper,
+  an scale ratio,
+  an measure,
+  an edit shape (reference),
+  some shape refers,
+  \ edge stuff - all runtime
+  an edge roundy box,
+  an selected flag, an previously selected flag,
+  an title string,
+  an page number string.
+  
+  
+An page number is an number.
+  
+  
+An paragraph is an thing with an string.
+  
+  
+An rect is an roundy box [that may have an 0 radius].
+  
+  
+An saved page is an page.
+  
+  
+An shape clipboard is some shapes.
+  
+  
+An shape is an thing with
+  an kind [arc, ellipse, group, picture, polygon, rectangle, text],
+  an box,
+  an selected flag, an previously selected flag,
+  an scale ratio,
+  an border color and an fill color,
+  an ellipse [ellipse],
+  an picture [picture],
+  an polygon [polygon],
+  an rect [rectangle],
+  an text rect, an label, and an text [text],
+  some shapes [group].
+  
+  
+An shape refer is an thing with an shape (reference) [text].
+  
+  
+An sizer is an knob.
+  
+  
+An superduper has an flag and an pair.
+  
+  
+Some original pages are some pages.
+  
+  
+Some original shapes are some shapes.
+  
+  
+Some unsorted shape refers are some shape refers.
+  
+  
+The document indent is an number equal to 2.
+  
+  
+The document version is an string equal to "cal-3024".
+  
+  
+The edge height is an height equal to 1/4 inch.
+  
+  
+The find page is an page.
+  
+  
+The find shape is an shape.
+  
+  
+The focus box is an box.
+  
+  
+The focus line is an line. \ tracer
+  
+  
+The grid color is an color.
+  
+  
+The max page undos is an number equal to 32.
+  
+  
+The page clipboard is an page clipboard.
+  
+  
+The remembered page number is an number equal to 1.
+  
+  
+The remembered picture path is an path.
+  
+  
+The shape clipboard is an shape clipboard.
+  
+  
+The text margin is an number equal to 1/24 inch.
+  
+  
+The tracer color is an color. \ tracer - initialized in desktop
+  
+  

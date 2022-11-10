@@ -1,0 +1,113 @@
+To create an document given an buffer:
+  Clear the i/o error.
+  Slap an rider on the buffer.
+  Move the rider (document rules).
+  Internalize the document given the rider.
+  If the i/o error is not blank, destroy the document.
+  
+  
+To create an document:
+  Allocate memory for the document.
+  Put yes into the document's grid showing flag.
+  Put 1/16 inch and 1/16 inch into the document's yank.
+  Put 1/1 into the document's scale.
+  Adjust the document.
+  
+  
+To create an page:
+  Allocate memory for the page.
+  Put 8-1/2 inches into the page's width.
+  Put 11 inches into the page's height.
+  Put 0 and 0 into the page's origin.
+  Put the tpp and the tpp into the page's grid.
+  Put 1/1 into the page's scale.
+  Put 1 / the tpi into the page's measure.
+  Reset the superduper given the page.
+  Adjust the page.
+  
+  
+To create an paragraph:
+  Allocate memory for the paragraph.
+  
+  
+To create an shape given an kind (default - ellipse):
+  Create the shape.
+  Put the kind into the shape's kind.
+  Put 0 and 0 and 1/2 inch and 1/2 inch into the shape's ellipse's box.
+  
+  
+To create an shape given an kind (default - picture):
+  Ask "Path?" with the remembered picture path.
+  If the answer is blank, exit.
+  Put the answer into an path.
+  Put the path into the remembered picture path.
+  Show the desktop with "Loading...".
+  Read the path into an buffer.
+  If the i/o error is not blank, show error the i/o error; exit.
+  Create an picture given the buffer.
+  If the picture is nil, show error the i/o error; exit.
+  Create the shape.
+  Put the kind into the shape's kind.
+  Put the clear color into the shape's border.
+  Put the picture into the shape's picture.
+  
+  
+To create an shape given an kind (default - polygon):
+  Create the shape.
+  Put the kind into the shape's kind.
+  Create the shape's polygon.
+  Append 0 and 0 to the shape's polygon.
+  Append 1/2 inch and 1/2 inch to the shape's polygon.
+  
+  
+To create an shape given an kind (default - rectangle):
+  Create the shape.
+  Put the kind into the shape's kind.
+  Put 0 and 0 and 1/2 inch and 1/2 inch and 0 into the shape's rect.
+  
+  
+To create an shape given an kind (default - text):
+  Create the shape.
+  Put the kind into the shape's kind.
+  Put 0 and 0 and 1/2 inch and 1/2 inch and 0 into the shape's text rect.
+  Create the shape's text.
+  Put the shape's text rect into the shape's text's box.
+  Put the black color into the shape's text's pen.
+  Put the default font into the shape's text's font.
+  Set the shape's text's wrap flag.
+  Adjust the text in the shape.
+  
+  
+To create an shape given an kind (default):
+  Void the shape.
+  If the kind is "ellipse", create the shape given the kind (default - ellipse); exit.
+  If the kind is "picture", create the shape given the kind (default - picture); exit.
+  If the kind is "polygon", create the shape given the kind (default - polygon); exit.
+  If the kind is "rectangle", create the shape given the kind (default - rectangle); exit.
+  If the kind is "text", create the shape given the kind (default - text); exit.
+  Debug "create an shape given an kind: " then the kind.
+  
+  
+To create an shape refer given an shape:
+  If the shape is nil, void the shape refer; exit.
+  Allocate memory for the shape refer.
+  Put the shape into the shape refer's shape.
+  
+  
+To create an shape:
+  Allocate memory for the shape.
+  Put the black color into the shape's border.
+  Put the clear color into the shape's fill.
+  Put 1/1 into the shape's scale.
+  
+  
+To create some shape refers given some shapes:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    If the shape's kind is "group", create the shape refers given the shape's shapes; repeat.
+    If the shape's kind is not "text", repeat.
+    Create an shape refer given the shape.
+    Append the shape refer to the shape refers.
+  Repeat.
+  
+  

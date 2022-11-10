@@ -1,6 +1,0 @@
-To find an pointer given an string and an index:
-  Find an refer given the string and the index.
-  If the refer is not nil, put the refer's pointer into the pointer; exit.
-  Void the pointer.
-  
-  

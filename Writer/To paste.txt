@@ -1,0 +1,32 @@
+To paste any pages on an page clipboard into an document returning an count:
+  Put 0 into the count.
+  If the document is nil, exit.
+  Put the page clipboard's count into an total count.
+  Put the document's first selected page into an first selected page.
+  Deselect the document's pages.
+  Loop.
+    Get an copied page from the page clipboard.
+    If the copied page is nil, break.
+    Add 1 to the count.
+    Show status the count then " of " then the total count then "...".
+    Copy the copied page into another copied page.
+    Insert the other copied page into the document's pages before the first selected page.
+  Select the other copied page.
+  Repeat.
+  Set the document's modified flag.
+  Adjust the edge of every page in the document.
+  
+  
+To paste any shapes on an shape clipboard into an page:
+  If the page is nil, exit.
+  Deselect the page's shapes.
+  Loop.
+    Get an shape from the shape clipboard.
+    If the shape is nil, exit.
+    Copy the shape into another shape.
+    Scale the other shape given the page's scale.
+    Select the other shape.
+    Append the other shape to the page's shapes.
+  Repeat.
+  
+  

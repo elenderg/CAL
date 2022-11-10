@@ -1,5 +1,0 @@
-To write an flag without advancing:
-  Convert the flag to an string.
-  Write the string without advancing.
-  
-  

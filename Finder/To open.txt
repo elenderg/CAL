@@ -1,0 +1,85 @@
+To open an node (disk or directory):
+    Get an item from the node's path.
+    If the item is not found, break.
+    Put the node's path then the item's designator into an path.
+    Create an nodette given the path.
+    Append the nodette to the node's nodettes.
+    Put the node into the nodette's parent node.
+  Repeat.
+  Adjust the node.
+  Sort the node.
+  
+  
+To open an node (file as dump):
+  Read the node's path into an buffer.
+  If the i/o error is not blank, exit.
+  Open the node given the buffer (file as dump).
+  
+  
+To open an node (file as text):
+  Read the node's path into an buffer.
+  If the i/o error is not blank, exit.
+  Open the node given the buffer (file as text).
+  
+  
+To open an node (file):
+  Read the node's path into an buffer.
+  If the i/o error is not blank, exit.
+  If the buffer is document-format, open the node given the buffer (file as document); exit.
+  If the buffer is text-format, open the node given the buffer (file as text); exit.
+  Open the node given the buffer (file as dump).
+  
+  
+To open an node (root):
+  Put the accent byte into an byte.
+  Loop.
+    Add 1 to the byte.
+    If the byte is greater than the little-z byte, break.
+    If the byte is not any valid drive, repeat.
+    Put the byte then ":\" into an path.
+    Create an nodette given the path.
+    Append the nodette to the node's nodettes.
+    Put the node into the nodette's parent node.
+  Repeat.
+  Adjust the node.
+  
+  
+To open an node given an buffer (file as document):
+  Create the node's document given the buffer.
+  
+  
+To open an node given an buffer (file as dump):
+  Dump the buffer into another buffer.
+  Create the node's source given the other buffer.
+  Put "courier new" into an font name.
+  Change the node's source's text given the font name.
+  Set the node's source's read-only flag.
+  Clear the node's source's colorized flag.
+  
+  
+To open an node given an buffer (file as text):
+  Create the node's source given the buffer.
+  Clear the node's source's colorized flag.
+  If the node's extension is blank, set the node's source's colorized flag.
+  
+  
+To open an node given an path:
+  If the node is nil, exit.
+  Extract an directory from the path.
+  If the directory is not blank, open the node given the directory.
+  Extract an designator from the path.
+  Find an nodette given the node's nodettes and the designator.
+  If the nodette is nil, put "directory or file does not exist" into the i/o error; exit.
+  Open the nodette.
+  Focus on the nodette in the node.
+  If the i/o error is blank, put the nodette into the node.
+  
+  
+To open an node:
+  If the node is nil, exit.
+  If the node's kind is "root", open the node (root); exit.
+  If the node's kind is "disk", open the node (disk or directory); exit.
+  If the node's kind is "directory", open the node (disk or directory); exit.
+  If the node's kind is "file", open the node (file); exit.
+  
+  

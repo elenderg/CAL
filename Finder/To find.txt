@@ -1,0 +1,27 @@
+To find an nodette given an node and an spot:
+  Void the nodette.
+  If the node is nil, exit.
+  Loop.
+    Get the nodette from the node's nodettes.
+    If the nodette is nil, exit.
+    If the spot is in the nodette, exit.
+  Repeat.
+  
+  
+To find an nodette given some nodettes and an designator:
+  Void the nodette.
+  Loop.
+    Get the nodette from the nodettes.
+    If the nodette is nil, exit.
+    If the nodette's designator is the designator, exit.
+  Repeat.
+  
+  
+To find an nodette in an node given an spot (limiting):
+  If the node is nil, void the nodette; exit.
+  Put the node's first nodette's box's left-top into an box's left-top.
+  Put the node's last nodette's box's right-bottom into the box's right-bottom.
+  Limit the spot to the box.
+  Find the nodette given the node and the spot.
+  
+  

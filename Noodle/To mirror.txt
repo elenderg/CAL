@@ -1,0 +1,29 @@
+To mirror an gpimage:
+  Call "gdiplus.dll" "GdipImageRotateFlip" with the gpimage and 4 [rotatenoneflipx].
+  
+  
+To mirror an picture:
+  If the picture is nil, exit.
+  Put the picture's box's center's x minus the picture's uncropped box's center's x into an pair's x.
+  Multiply the pair's x by 2.
+  Move the picture's uncropped box given the pair.
+  Mirror the gpbitmap in the picture.
+  
+  
+To mirror an polygon:
+  If the polygon is nil, exit.
+  Put the polygon's box into an box.
+  Loop.
+    Get an vertex from the polygon's vertices.
+    If the vertex is nil, exit.
+    Subtract the box's left from the vertex's x.
+    Put the box's right minus the vertex's x into the vertex's x.
+  Repeat.
+  
+  
+To mirror the gpbitmap in an picture:
+  If the picture is nil, exit.
+  Reverse the picture's mirror flag.
+  Mirror the picture's gpbitmap.
+  
+  

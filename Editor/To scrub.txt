@@ -1,0 +1,51 @@
+To scrub an block (backward):
+    If the block is nil, exit.
+    Put the block's last row into an row.
+    If the row is nil, break.
+    If the row is not blank, break.
+    Remove the row from the block's rows.
+    Destroy the row.
+  Repeat.
+  Create another row given the return byte.
+  Append the other row to the block's rows.
+  
+  
+To scrub an block (forward):
+    If the block is nil, exit.
+    Put the block's first row into an row.
+    If the row is nil, break.
+    If the row is not blank, break.
+    Remove the row from the block's rows.
+    Destroy the row.
+  Repeat.
+  \  create another row given the return byte.
+  \  append the other row to the block's rows.
+  
+  
+To scrub an block for extracting:
+  If the block is nil, exit.
+  Put the block's last row into an row.
+  If the row is nil, break.
+  If the row is blank, remove the row from the block's rows; destroy the row; repeat.
+  If the row's string starts with "\", remove the row from the block's rows; destroy the row; repeat.
+  
+  
+To scrub an block:
+  Scrub the block (forward).
+  Scrub the block (backward).
+  
+  
+To scrub some blocks for extracting:
+    Get an block from the blocks.
+    If the block is nil, exit.
+    Scrub the block for extracting.
+  Repeat.
+  
+  
+To scrub some blocks:
+    Get an block from the blocks.
+    If the block is nil, exit.
+    Scrub the block.
+  Repeat.
+  
+  

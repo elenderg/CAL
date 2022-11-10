@@ -1,8 +1,0 @@
-To prepend some things to some other things:
-    Get an thing from the things (backwards).
-    If the thing is nil, exit.
-    Remove the thing from the things.
-    Prepend the thing to the other things.
-  Repeat.
-  
-  

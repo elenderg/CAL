@@ -1,0 +1,1607 @@
+To stroke an box with an color:
+  Put the color into the context's color.
+  Put the box's left-bottom into the context's spot.
+  Face north.
+  Stroke the box's height.
+  Turn right.
+  Stroke the box's width.
+  Turn right.
+  Stroke the box's height.
+  Turn right.
+  Stroke the box's width.
+  
+  
+To stroke an byte:
+  Put the context's letter height divided by 4 into the square size. \ ***
+  If the byte is the accent byte, stroke the accent glyph.
+  If the byte is the asterisk byte, stroke the asterisk glyph.
+  If the byte is the at-sign byte, stroke the at-sign glyph.
+  If the byte is the backslash byte, stroke the backslash glyph.
+  If the byte is the big-an byte, stroke the big-an glyph.
+  If the byte is the big-b byte, stroke the big-b glyph.
+  If the byte is the big-c byte, stroke the big-c glyph.
+  If the byte is the big-d byte, stroke the big-d glyph.
+  If the byte is the big-e byte, stroke the big-e glyph.
+  If the byte is the big-f byte, stroke the big-f glyph.
+  If the byte is the big-g byte, stroke the big-g glyph.
+  If the byte is the big-h byte, stroke the big-h glyph.
+  If the byte is the big-i byte, stroke the big-i glyph.
+  If the byte is the big-j byte, stroke the big-j glyph.
+  If the byte is the big-k byte, stroke the big-k glyph.
+  If the byte is the big-l byte, stroke the big-l glyph.
+  If the byte is the big-m byte, stroke the big-m glyph.
+  If the byte is the big-n byte, stroke the big-n glyph.
+  If the byte is the big-o byte, stroke the big-o glyph.
+  If the byte is the big-p byte, stroke the big-p glyph.
+  If the byte is the big-q byte, stroke the big-q glyph.
+  If the byte is the big-r byte, stroke the big-r glyph.
+  If the byte is the big-s byte, stroke the big-s glyph.
+  If the byte is the big-t byte, stroke the big-t glyph.
+  If the byte is the big-u byte, stroke the big-u glyph.
+  If the byte is the big-v byte, stroke the big-v glyph.
+  If the byte is the big-w byte, stroke the big-w glyph.
+  If the byte is the big-x byte, stroke the big-x glyph.
+  If the byte is the big-y byte, stroke the big-y glyph.
+  If the byte is the big-z byte, stroke the big-z glyph.
+  If the byte is the caret byte, stroke the caret glyph.
+  If the byte is the colon byte, stroke the colon glyph.
+  If the byte is the comma byte, stroke the comma glyph.
+  If the byte is the dollar-sign byte, stroke the dollar-sign glyph.
+  If the byte is the double-quote byte, stroke the double-quote glyph.
+  If the byte is the eight byte, stroke the eight glyph.
+  If the byte is the equal-sign byte, stroke the equal-sign glyph.
+  If the byte is the exclamation-mark byte, stroke the exclamation-mark glyph.
+  If the byte is the five byte, stroke the five glyph.
+  If the byte is the four byte, stroke the four glyph.
+  If the byte is the left-alligator byte, stroke the left-alligator glyph.
+  If the byte is the left-brace byte, stroke the left-brace glyph.
+  If the byte is the left-bracket byte, stroke the left-bracket glyph.
+  If the byte is the left-paren byte, stroke the left-paren glyph.
+  If the byte is the little-an byte, stroke the little-an glyph.
+  If the byte is the little-b byte, stroke the little-b glyph.
+  If the byte is the little-c byte, stroke the little-c glyph.
+  If the byte is the little-d byte, stroke the little-d glyph.
+  If the byte is the little-e byte, stroke the little-e glyph.
+  If the byte is the little-f byte, stroke the little-f glyph.
+  If the byte is the little-g byte, stroke the little-g glyph.
+  If the byte is the little-h byte, stroke the little-h glyph.
+  If the byte is the little-i byte, stroke the little-i glyph.
+  If the byte is the little-j byte, stroke the little-j glyph.
+  If the byte is the little-k byte, stroke the little-k glyph.
+  If the byte is the little-l byte, stroke the little-l glyph.
+  If the byte is the little-m byte, stroke the little-m glyph.
+  If the byte is the little-n byte, stroke the little-n glyph.
+  If the byte is the little-o byte, stroke the little-o glyph.
+  If the byte is the little-p byte, stroke the little-p glyph.
+  If the byte is the little-q byte, stroke the little-q glyph.
+  If the byte is the little-r byte, stroke the little-r glyph.
+  If the byte is the little-s byte, stroke the little-s glyph.
+  If the byte is the little-t byte, stroke the little-t glyph.
+  If the byte is the little-u byte, stroke the little-u glyph.
+  If the byte is the little-v byte, stroke the little-v glyph.
+  If the byte is the little-w byte, stroke the little-w glyph.
+  If the byte is the little-x byte, stroke the little-x glyph.
+  If the byte is the little-y byte, stroke the little-y glyph.
+  If the byte is the little-z byte, stroke the little-z glyph.
+  If the byte is the minus-sign byte, stroke the minus-sign glyph.
+  If the byte is the nine byte, stroke the nine glyph.
+  If the byte is the number-sign byte, stroke the number-sign glyph.
+  If the byte is the one byte, stroke the one glyph.
+  If the byte is the percent-sign byte, stroke the percent-sign glyph.
+  If the byte is the period byte, stroke the period glyph.
+  If the byte is the plus-sign byte, stroke the plus-sign glyph.
+  If the byte is the question-mark byte, stroke the question-mark glyph.
+  If the byte is the right-alligator byte, stroke the right-alligator glyph.
+  If the byte is the right-brace byte, stroke the right-brace glyph.
+  If the byte is the right-bracket byte, stroke the right-bracket glyph.
+  If the byte is the right-paren byte, stroke the right-paren glyph.
+  If the byte is the semi-colon byte, stroke the semi-colon glyph.
+  If the byte is the seven byte, stroke the seven glyph.
+  If the byte is the single-quote byte, stroke the single-quote glyph.
+  If the byte is the six byte, stroke the six glyph.
+  If the byte is the slash byte, stroke the slash glyph.
+  If the byte is the three byte, stroke the three glyph.
+  If the byte is the tilde byte, stroke the tilde glyph.
+  If the byte is the two byte, stroke the two glyph.
+  If the byte is the underscore byte, stroke the underscore glyph.
+  If the byte is the vertical-bar byte, stroke the vertical-bar glyph.
+  If the byte is the zero byte, stroke the zero glyph.
+  \ Refresh the screen. \ *** questionable doesn't work screws up console.
+  
+  
+To stroke an line as high as an box;
+To stroke an line as tall as an box;
+To draw an line as high as an box;
+To draw an line as tall as an box:
+  Stroke the box's height.
+  
+  
+To stroke an line as wide as an box;
+To draw an line as wide as an box:
+  Stroke the box's width.
+  
+  
+To stroke some squares diagonally;
+To stroke some squares slantways:
+  Stroke the square size times the squares times the squirt o' two divided by 1 square. \ squares are scaled up for precision hence the division at the end
+  
+  
+To stroke some squares:
+  Stroke the square size times the squares divided by 1 square. \ squares are scaled up for precision hence the division at the end
+  
+  
+To stroke some twips:
+  Draw an line the twips long.
+  
+  
+To stroke the accent glyph:
+  Save the context.
+  Move 4 squares.
+  Turn right.
+  Turn right 7/96 of the way.
+  Stroke 9/4 square.
+  Restore the context.
+  
+  
+To stroke the asterisk glyph:
+  Save the context.
+  Move 2 squares.
+  Turn right.
+  Stroke 2 squares.
+  Turn left.
+  Move 1 square.
+  Turn left.
+  Move 1 square.
+  Turn left.
+  Stroke 2 squares.
+  Reset the context.
+  Move 1 square.
+  Turn right 1/8.
+  Stroke 2 squares slantways.
+  Reset the context.
+  Move 3 squares.
+  Turn right 3/8.
+  Stroke 2 squares slantways.
+  Restore the context.
+  
+  
+To stroke the at-sign glyph:
+  Save the context.
+  Turn right.
+  Move 2 squares.
+  Turn around.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 2 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 1 square.
+  Turn right 3/8.
+  Stroke 1/2 square slantways.
+  Turn left.
+  Stroke 1/2 square slantways.
+  Turn left.
+  Stroke 1/2 square slantways.
+  Turn left.
+  Stroke 1/2 square slantways.
+  Restore the context.
+  
+  
+To stroke the backslash glyph:
+  Save the context.
+  Turn right.
+  Move 2 squares.
+  Turn left.
+  Turn left 7/96 of the way.
+  Stroke 9/2 square.
+  Restore the context.
+  
+  
+To stroke the big-an glyph:
+  Save the context.
+  Stroke 3 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 3 squares.
+  Turn around.
+  Move 2 squares.
+  Turn left.
+  Stroke 1 square.
+  Restore the context.
+  
+  
+To stroke the big-b glyph:
+  Save the context.
+  Stroke 4 squares.
+  Turn right.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the big-c glyph:
+  Save the context.
+  Move 2 squares.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Reset the context.
+  Move 2 squares.
+  Turn around.
+  Stroke 1 square.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the big-d glyph:
+  Save the context.
+  Stroke 4 squares.
+  Turn right.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 2 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 1 square.
+  Restore the context.
+  
+  
+To stroke the big-e glyph:
+  Save the context.
+  Stroke 4 squares.
+  Turn right.
+  Stroke 2 squares.
+  Reset the context.
+  Move 2 squares.
+  Turn right.
+  Stroke 1 square.
+  Reset the context.
+  Turn right.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the big-f glyph:
+  Save the context.
+  Stroke 4 squares.
+  Turn right.
+  Stroke 2 squares.
+  Reset the context.
+  Move 2 squares.
+  Turn right.
+  Stroke 1 square.
+  Restore the context.
+  
+  
+To stroke the big-g glyph:
+  Save the context.
+  Move 2 squares.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Reset the context.
+  Move 2 squares.
+  Turn around.
+  Stroke 1 square.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 1 square.
+  Turn left.
+  Stroke 1 square.
+  Restore the context.
+  
+  
+To stroke the big-h glyph:
+  Save the context.
+  Stroke 4 squares.
+  Reset the context.
+  Move 2 squares.
+  Turn right.
+  Stroke 2 squares.
+  Reset the context.
+  Turn right.
+  Move 2 squares.
+  Turn left.
+  Stroke 4 squares.
+  Restore the context.
+  
+  
+To stroke the big-i glyph:
+  Save the context.
+  Turn right.
+  Move 1 square.
+  Turn left.
+  Stroke 4 squares.
+  Reset the context.
+  Turn right.
+  Stroke 2 squares.
+  Reset the context.
+  Move 4 squares.
+  Turn right.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the big-j glyph:
+  Save the context.
+  Move 2 squares.
+  Turn around.
+  Stroke 1 square.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 3 squares.
+  Restore the context.
+  
+  
+To stroke the big-k glyph:
+  Save the context.
+  Stroke 4 squares.
+  Turn around.
+  Move 2 squares.
+  Turn left.
+  Stroke 1 square.
+  Save the context.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 1 square.
+  Restore the context.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 1 square.
+  Restore the context.
+  
+  
+To stroke the big-l glyph:
+  Save the context.
+  Move 4 squares.
+  Turn around.
+  Stroke 4 squares.
+  Turn left.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the big-m glyph:
+  Save the context.
+  Stroke 4 squares.
+  Turn right 41/96.
+  Stroke 9/4 square.
+  Turn right 62/96.
+  Stroke 9/4 square.
+  Turn right 41/96.
+  Stroke 4 squares.
+  Restore the context.
+  
+  
+To stroke the big-n glyph:
+  Save the context.
+  Stroke 4 squares.
+  Turn right 41/96.
+  Stroke 9/2 square.
+  Turn left 41/96.
+  Stroke 4 squares.
+  Restore the context.
+  
+  
+To stroke the big-o glyph:
+  Save the context.
+  Move 1 square.
+  Stroke 2 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right 1/4.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 2 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right 1/4.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the big-p glyph:
+  Save the context.
+  Stroke 4 squares.
+  Turn right.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the big-q glyph:
+  Save the context.
+  Move 1 square.
+  Stroke 2 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right 1/4.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 2 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right 1/4.
+  Stroke 1 square slantways.
+  Reset the context.
+  Move 1 square.
+  Turn right.
+  Move 1 square.
+  Turn right 1/8 of the way.
+  Stroke 1-1/2 square.
+  Restore the context.
+  
+  
+To stroke the big-r glyph:
+  Save the context.
+  Stroke 4 squares.
+  Turn right.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Turn left 7/96.
+  Stroke 7/2 square.
+  Restore the context.
+  
+  
+To stroke the big-s glyph:
+  Save the context.
+  Move 1 square.
+  Turn around.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 2 squares slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the big-t glyph:
+  Save the context.
+  Turn right.
+  Move 1 square.
+  Turn left.
+  Stroke 4 squares.
+  Turn left.
+  Move 1 square.
+  Turn around.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the big-u glyph:
+  Save the context.
+  Move 4 squares.
+  Turn around.
+  Stroke 4 squares.
+  Turn left.
+  Stroke 2 squares.
+  Turn left.
+  Stroke 4 squares.
+  Restore the context.
+  
+  
+To stroke the big-v glyph:
+  Save the context.
+  Move 4 squares.
+  Turn around.
+  Stroke 3 squares.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 3 squares.
+  Restore the context.
+  
+  
+To stroke the big-w glyph:
+  Save the context.
+  Move 4 squares.
+  Turn around.
+  Stroke 4 squares.
+  Turn left 41/96.
+  Stroke 9/4 square.
+  Turn left 61/96.
+  Stroke 9/4 square.
+  Turn left 41/96.
+  Stroke 4 squares.
+  Restore the context.
+  
+  
+To stroke the big-x glyph:
+  Save the context.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 2 squares slantways.
+  Turn left 1/8.
+  Stroke 1 square.
+  Reset the context.
+  Turn right.
+  Move 2 squares.
+  Turn left.
+  Stroke 1 square.
+  Turn left 1/8.
+  Stroke 2 squares slantways.
+  Turn right 1/8.
+  Stroke 1 square.
+  Restore the context.
+  
+  
+To stroke the big-y glyph:
+  Save the context.
+  Move 4 squares.
+  Turn around.
+  Stroke 1 square.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 1 square.
+  Reset the context.
+  Turn right.
+  Move 1 square.
+  Turn left.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the big-z glyph:
+  Save the context.
+  Move 4 squares.
+  Turn right.
+  Stroke 2 squares.
+  Turn right.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 2 squares slantways.
+  Turn left 1/8.
+  Stroke 1 square.
+  Turn left.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the caret glyph:
+  Save the context.
+  Move 3 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the colon glyph:
+  Save the context.
+  Turn right.
+  Move 1 square.
+  Turn left.
+  Stroke 1/2 square.
+  Move 1/2 square.
+  Move 1 square.
+  Stroke 1/2 square.
+  Restore the context.
+  
+  
+To stroke the comma glyph:
+  Save the context.
+  Turn around.
+  Move 1 square.
+  Turn left 3/8.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 1/2 square.
+  Restore the context.
+  
+  
+To stroke the dollar-sign glyph:
+  Save the context.
+  Move 1 square.
+  Turn around.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 2 squares slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Reset the context.
+  Turn right.
+  Move 1 square.
+  Turn right.
+  Move 1/2 square.
+  Turn around.
+  Stroke 5 squares.
+  Restore the context.
+  
+  
+To stroke the double-quote glyph:
+  Save the context.
+  Turn right.
+  Move 1/2 square.
+  Turn left.
+  Move 2-1/2 squares.
+  Stroke 1-1/2 squares.
+  Reset the context.
+  Turn right.
+  Move 1-1/2 squares.
+  Turn left.
+  Move 2-1/2 squares.
+  Stroke 1-1/2 squares.
+  Restore the context.
+  
+  
+To stroke the eight glyph:
+  Save the context.
+  Turn right.
+  Move 1 square.
+  Turn left 3/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 2 squares slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 2 squares slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the equal-sign glyph:
+  Save the context.
+  Move 1-1/2 squares.
+  Turn right.
+  Stroke 2 squares.
+  Turn left.
+  Move 1 square.
+  Turn left.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the exclamation-mark glyph:
+  Save the context.
+  Move 4 squares.
+  Turn right.
+  Move 1 square.
+  Turn right.
+  Stroke 3 squares.
+  Move 1 square.
+  Stroke 1/2 square.
+  Restore the context.
+  
+  
+To stroke the five glyph:
+  Save the context.
+  Turn around.
+  Move 1 square.
+  Turn left 3/8.
+  Stroke 2 squares slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 1 square.
+  Turn right.
+  Stroke 2 squares.
+  Turn right.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the four glyph:
+  Save the context.
+  Turn right.
+  Move 2 squares.
+  Turn left.
+  Stroke 4 squares.
+  Turn left 3/8.
+  Stroke 2 squares slantways.
+  Turn left 3/8.
+  Stroke 1 square.
+  Restore the context.
+  
+  
+To stroke the left-alligator glyph:
+  Save the context.
+  Turn right.
+  Move 2 squares.
+  Turn left.
+  Move 1 square.
+  Turn left 17/96 of the way.
+  Stroke 9/4 square.
+  Turn right 34/96 of the way.
+  Stroke 9/4 square.
+  Restore the context.
+  
+  
+To stroke the left-brace glyph:
+  Save the context.
+  Turn right.
+  Move 2 squares.
+  Turn around.
+  Stroke 1 square.
+  Turn right.
+  Stroke 1 square.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 1 square.
+  Turn right.
+  Stroke 1 square.
+  Restore the context.
+  
+  
+To stroke the left-bracket glyph:
+  Save the context.
+  Turn right.
+  Move 2 squares.
+  Turn around.
+  Stroke 1 square.
+  Turn right.
+  Stroke 4 squares.
+  Turn right.
+  Stroke 1 square.
+  Restore the context.
+  
+  
+To stroke the left-paren glyph:
+  Save the context.
+  Turn right.
+  Move 1-1/2 squares.
+  Turn left 3/8.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 2 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the little-an glyph:
+  Save the context.
+  Turn right.
+  Move 2 squares.
+  Turn left.
+  Stroke 3 squares.
+  Turn around.
+  Move 1 square.
+  Turn right 3/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 1 square.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the little-b glyph:
+  Save the context.
+  Stroke 4 squares.
+  Turn around.
+  Move 2 squares.
+  Turn left 3/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the little-c glyph:
+  Save the context.
+  Turn right.
+  Move 2 squares.
+  Turn left.
+  Move 1 square.
+  Turn left 3/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the little-d glyph:
+  Save the context.
+  Turn right.
+  Move 2 squares.
+  Turn left.
+  Stroke 4 squares.
+  Turn around.
+  Move 2 squares.
+  Turn right 3/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 1 square.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the little-e glyph:
+  Save the context.
+  Turn right.
+  Move 2 squares.
+  Turn around.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 1/2 square.
+  Turn right.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the little-f glyph:
+  Save the context.
+  Turn right.
+  Move 1 square.
+  Turn left.
+  Save the context.
+  Turn around.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Restore the context.
+  Stroke 4 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Reset the context.
+  Move 3 squares.
+  Turn right.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the little-g glyph:
+  Save the context.
+  Turn right.
+  Move 2 squares.
+  Turn left.
+  Move 1 square.
+  Turn left 3/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Reset the context.
+  Move 3 squares.
+  Turn right.
+  Move 2 squares.
+  Turn right.
+  Stroke 3 squares.
+  Turn right 1/8.
+  Stroke 1-1/2 square slantways.
+  Restore the context.
+  
+  
+To stroke the little-h glyph:
+  Save the context.
+  Stroke 4 squares.
+  Turn around.
+  Move 2 squares.
+  Turn left 3/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the little-i glyph:
+  Save the context.
+  Turn right.
+  Stroke 2 squares.
+  Turn around.
+  Move 1 square.
+  Turn right.
+  Stroke 3 squares.
+  Turn left.
+  Stroke 1 square.
+  Turn around.
+  Move 1 square.
+  Turn left.
+  Move 1/2 square.
+  Stroke 1/2 square.
+  Restore the context.
+  
+  
+To stroke the little-j glyph:
+  Save the context.
+  Move 1 square.
+  Turn around.
+  Stroke 1 square.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 3 squares.
+  Move 1/2 square.
+  Stroke 1/2 square.
+  Restore the context.
+  
+  
+To stroke the little-k glyph:
+  Save the context.
+  Stroke 4 squares.
+  Turn around.
+  Move 2 squares.
+  Turn left 1/8.
+  Stroke 2 squares slantways.
+  Reset the context.
+  Move 2 squares.
+  Turn right 17/96.
+  Stroke 9/4 square.
+  Restore the context.
+  
+  
+To stroke the little-l glyph:
+  Save the context.
+  Turn right.
+  Stroke 2 squares.
+  Turn around.
+  Move 1 square.
+  Turn right.
+  Stroke 4 squares.
+  Turn left.
+  Stroke 1 square.
+  Restore the context.
+  
+  
+To stroke the little-m glyph:
+  Save the context.
+  Stroke 3 squares.
+  Turn around.
+  Move 1 square.
+  Turn left 3/8.
+  Stroke 1 square slantways.
+  Turn right 3/8.
+  Stroke 2 squares.
+  Turn around.
+  Move 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right 3/8.
+  Stroke 3 squares.
+  Restore the context.
+  
+  
+To stroke the little-n glyph:
+  Save the context.
+  Stroke 3 squares.
+  Turn around.
+  Move 1 square.
+  Turn left 3/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the little-o glyph:
+  Save the context.
+  Turn right.
+  Move 2 squares.
+  Turn left.
+  Move 1 square.
+  Turn left 3/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 1 square.
+  Restore the context.
+  
+  
+To stroke the little-p glyph:
+  Save the context.
+  Move 3 squares.
+  Turn around.
+  Stroke 4 squares.
+  Turn around.
+  Move 3 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the little-q glyph:
+  Save the context.
+  Turn right.
+  Move 2 squares.
+  Turn left.
+  Move 1 square.
+  Turn left 3/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn left 3/8.
+  Move 1 square.
+  Turn around.
+  Stroke 4 squares.
+  Restore the context.
+  
+  
+To stroke the little-r glyph:
+  Save the context.
+  Stroke 3 squares.
+  Turn around.
+  Move 1 square.
+  Turn left 3/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the little-s glyph:
+  Save the context.
+  Move 1 square.
+  Turn right 3/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Reset the context.
+  Move 2 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Reset the context.
+  Move 2 squares.
+  Turn right 31/96.
+  Stroke 9/4 squares.
+  Restore the context.
+  
+  
+To stroke the little-t glyph:
+  Save the context.
+  Turn right.
+  Move 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Reset the context.
+  Turn right.
+  Move 1 square.
+  Turn left.
+  Stroke 4 squares.
+  Turn around.
+  Move 1 square.
+  Turn right.
+  Move 1 square.
+  Turn around.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the little-u glyph:
+  Save the context.
+  Move 3 squares.
+  Turn around.
+  Stroke 2 squares.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Move 2 squares.
+  Turn around.
+  Stroke 3 squares.
+  Restore the context.
+  
+  
+To stroke the little-v glyph:
+  Save the context.
+  Move 3 squares.
+  Turn around.
+  Stroke 2 squares.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the little-w glyph:
+  Save the context.
+  Move 3 squares.
+  Turn around.
+  Stroke 3 squares.
+  Turn around.
+  Turn right 7/96.
+  Stroke 9/4 squares.
+  Turn right 34/96.
+  Stroke 9/4 squares.
+  Turn left 41/96.
+  Stroke 3 squares.
+  Restore the context.
+  
+  
+To stroke the little-x glyph:
+  Save the context.
+  Stroke 1 square.
+  Turn right 17/96.
+  Stroke 9/4 square.
+  Turn left 17/96.
+  Stroke 1 square.
+  Reset the context.
+  Turn right.
+  Move 2 squares.
+  Turn left.
+  Stroke 1 square.
+  Turn left 17/96.
+  Stroke 9/4 square.
+  Turn right 17/96.
+  Stroke 1 square.
+  Restore the context.
+  
+  
+To stroke the little-y glyph:
+  Save the context.
+  Move 3 squares.
+  Turn around.
+  Stroke 2 squares.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Move 2 squares.
+  Turn around.
+  Stroke 3 squares.
+  Turn right 1/8.
+  Stroke 1-1/2 squares slantways.
+  Restore the context.
+  
+  
+To stroke the little-z glyph:
+  Save the context.
+  Move 3 squares.
+  Turn right.
+  Stroke 2 squares.
+  Turn right.
+  Stroke 1 square.
+  Turn right 17/96.
+  Stroke 9/4 square.
+  Turn left 17/96.
+  Stroke 1 square.
+  Turn left.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the minus-sign glyph:
+  Save the context.
+  Move 2 squares.
+  Turn right.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the nine glyph:
+  Save the context.
+  Move 1 square.
+  Turn right 3/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 2 squares.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the number-sign glyph:
+  Save the context.
+  Move 3 squares.
+  Turn right.
+  Stroke 2 squares.
+  Reset the context.
+  Move 1 square.
+  Turn right.
+  Stroke 2 squares.
+  Reset the context.
+  Turn right.
+  Move 1/2 square.
+  Turn left.
+  Stroke 4 squares.
+  Reset the context.
+  Turn right.
+  Move 1-1/2 squares.
+  Turn left.
+  Stroke 4 squares.
+  Restore the context.
+  
+  
+To stroke the one glyph:
+  Save the context.
+  Turn right.
+  Move 1 square.
+  Turn left.
+  Stroke 4 squares.
+  Reset the context.
+  Turn right.
+  Stroke 2 squares.
+  Reset the context.
+  Move 3 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the percent-sign glyph:
+  Save the context.
+  Turn right 7/96.
+  Stroke 9/2 squares.
+  Reset the context.
+  Move 2-1/2 squares.
+  Stroke 1/2 square.
+  Reset the context.
+  Turn right.
+  Move 2 squares.
+  Turn left.
+  Move 1 square.
+  Stroke 1/2 square.
+  Restore the context.
+  
+  
+To stroke the period glyph:
+  Save the context.
+  Turn right.
+  Move 1 square.
+  Turn left.
+  Stroke 1/2 square.
+  Restore the context.
+  
+  
+To stroke the plus-sign glyph:
+  Save the context.
+  Move 2 squares.
+  Turn right.
+  Stroke 2 squares.
+  Turn left.
+  Move 1 square.
+  Turn left.
+  Move 1 square.
+  Turn left.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the question-mark glyph:
+  Save the context.
+  Move 3 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 1 square.
+  Move 1 square.
+  Stroke 1/2 square.
+  Restore the context.
+  
+  
+To stroke the right-alligator glyph:
+  Save the context.
+  Move 1 square.
+  Turn right 17/96 of the way.
+  Stroke 9/4 square.
+  Turn left 34/96 of the way.
+  Stroke 9/4 square.
+  Restore the context.
+  
+  
+To stroke the right-brace glyph:
+  Save the context.
+  Turn right.
+  Stroke 1 square.
+  Turn left.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 1 square.
+  Turn left.
+  Stroke 1 square.
+  Restore the context.
+  
+  
+To stroke the right-bracket glyph:
+  Save the context.
+  Turn right.
+  Stroke 1 square.
+  Turn left.
+  Stroke 4 squares.
+  Turn left.
+  Stroke 1 square.
+  Restore the context.
+  
+  
+To stroke the right-paren glyph:
+  Save the context.
+  Turn right.
+  Move 1/2 square.
+  Turn left.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 2 squares.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the semi-colon glyph:
+  Save the context.
+  Turn around.
+  Move 1 square.
+  Turn left 3/8.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 1/2 square.
+  Move 1/2 square.
+  Move 1 square.
+  Stroke 1/2 square.
+  Restore the context.
+  
+  
+To stroke the seven glyph:
+  Save the context.
+  Move 3 squares.
+  Stroke 1 square.
+  Turn right.
+  Stroke 2 squares.
+  Turn right.
+  Stroke 1 square.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the single-quote glyph:
+  Save the context.
+  Turn right.
+  Move 1 square.
+  Turn left.
+  Move 2-1/2 squares.
+  Stroke 1-1/2 squares.
+  Restore the context.
+  
+  
+To stroke the six glyph:
+  Save the context.
+  Turn right.
+  Move 2 squares.
+  Turn left.
+  Move 3 squares.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left 1/8.
+  Stroke 2 squares.
+  Turn left 1/8.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the slash glyph:
+  Save the context.
+  Turn right 7/96 of the way.
+  Stroke 9/2 square.
+  Restore the context.
+  
+  
+To stroke the three glyph:
+  Save the context.
+  Move 3 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn left.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Restore the context.
+  
+  
+To stroke the tilde glyph:
+  Save the context.
+  Move 2 squares.
+  Turn right 7/96 of the way.
+  Stroke 9/8 square.
+  Turn right.
+  Stroke 9/6 square.
+  Turn left.
+  Stroke 9/8 square.
+  Restore the context.
+  
+  
+To stroke the two glyph:
+  Save the context.
+  Move 3 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 1 square slantways.
+  Turn right.
+  Stroke 2 squares slantways.
+  Turn left 1/8.
+  Stroke 1 square.
+  Turn left.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the underscore glyph:
+  Save the context.
+  Turn around.
+  Move 1 square.
+  Turn left.
+  Stroke 2 squares.
+  Restore the context.
+  
+  
+To stroke the vertical-bar glyph:
+  Save the context.
+  Turn right.
+  Move 1 square.
+  Turn right.
+  Move 1 square.
+  Turn around.
+  Stroke 5 squares.
+  Restore the context.
+  
+  
+To stroke the zero glyph:
+  Save the context.
+  Move 1 square.
+  Stroke 2 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right 1/4.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Stroke 2 squares.
+  Turn right 1/8.
+  Stroke 1 square slantways.
+  Turn right 1/4.
+  Stroke 1 square slantways.
+  Turn right 1/8.
+  Move 1 square.
+  Turn right.
+  Move 1 square.
+  Stroke 1 pixel.
+  Restore the context.
+  
+  

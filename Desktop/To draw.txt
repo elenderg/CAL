@@ -1,0 +1,132 @@
+To draw an box with an border color and an fill color and an radius (rounding the bottom):
+  Put the box and the radius into an roundy box.
+  Draw the roundy box with the border and the fill.
+  Privatize the box.
+  Put the box's height divided by 2 into an height.
+  Put the box's top plus the height into the box's bottom.
+  Draw the box with the border and the clear color.
+  Add the tpp to the box's bottom.
+  Draw the box with the clear color and the fill.
+  
+  
+To draw an box with an border color and an fill color and an radius (rounding the top):
+  Put the box and the radius into an roundy box.
+  Draw the roundy box with the border and the fill.
+  Privatize the box.
+  Put the box's height divided by 2 into an height.
+  Put the box's bottom minus the height into the box's top.
+  Draw the box with the border and the clear color.
+  Subtract the tpp from the box's top.
+  Draw the box with the clear color and the fill.
+  
+  
+To draw an button:
+  If the button is nil, exit.
+  Unmask everything.
+  Draw the button's roundy box with the black color and the white color.
+  Mask outside the button's roundy box.
+  Draw the button's name in the button's roundy box with the black color and the default font and "center".
+  
+  
+To draw an command:
+  If the command is nil, exit.
+  Unmask everything.
+  Put the command's color into an color.
+  If the color is clear, put the white color into the color.
+  Draw the command's roundy box with the black color and the color.
+  Put the command's roundy box into an box.
+  Adjust the box given 1/8 inch and 0 and -1/8 inch and 0.
+  Mask outside the command's roundy box. \ don't mask to the box, menu letters are too big to fit
+  Draw the command's name in the box with the black color and the command's font and the command's alignment.
+  Draw the command's shortcut at the right of the box with the black color and the command's font.
+  
+  
+To draw an menu:
+  If the menu is nil, exit.
+  Draw the menu's commands.
+  
+  
+To draw an tab:
+  If the tab is nil, exit.
+  Mask only outside the tab's box.
+  Draw the tab's box with the desktop color and the desktop color and 1/8 inch (rounding the bottom).
+  If the tab's previous is not nil, draw the tab's box's left line with the black color.
+  If the tab is not the current tab, draw the tab's box's top line with the black color.
+  Draw the tab's name in the center of the tab's box with the black color and the default font.
+  
+  
+To draw some buttons:
+    Get an button from the buttons.
+    If the button is nil, exit.
+    Draw the button.
+  Repeat.
+  
+  
+To draw some commands:
+    Get an command from the commands.
+    If the command is nil, exit.
+    Draw the command.
+  Repeat.
+  
+  
+To draw some tabs:
+    Get an tab from the tabs.
+    If the tab is nil, exit.
+    Draw the tab.
+  Repeat.
+  
+  
+To draw the bar:
+  Unmask everything.
+  Draw the bar's box with the black color and the black color.
+  Draw the bar's box with the desktop color and the desktop color and 1/8 inch (rounding the top).
+  If the bar's mode is "dialog", draw the dialog; exit.
+  Draw the menu.
+  Draw the status.
+  
+  
+To draw the desktop:
+  Draw the bar.
+  Draw the switch.
+  Draw the pad.
+  Draw the current menu.
+  
+  
+To draw the dialog:
+  If the dialog is nil, exit.
+  Unmask everything.
+  Draw the dialog's roundy box with the black color and the white color.
+  Mask outside the dialog's roundy box.
+  Draw the dialog's prompt in the dialog's prompt box with the dialog's pen and the default font and "left".
+  Draw the dialog's text (editing).
+  Draw the dialog's buttons.
+  
+  
+To draw the pad:
+  Mask only outside the pad's box.
+  Draw the pad's box with the desktop color and the desktop color.
+  If the current tab's mode is "finder", draw the current tab's node; exit.
+  If the current tab's mode is "editor", draw the current tab's node's source; exit.
+  If the current tab's mode is "docster", draw the current tab's node's document; exit.
+  If the current tab's mode is "writer", draw the current tab's node's page; exit.
+  
+  
+To draw the status:
+  Unmask everything.
+  Draw the status' roundy box with the desktop color and the desktop color.
+  Draw the status' roundy box with the black color and the white color.
+  Put the status' roundy box into an box.
+  Adjust the box given 1/8 inch and 0 and -1/8 inch and 0.
+  Mask outside the box.
+  Draw the status' string in the box with the black color and the default font and "right".
+  
+  
+To draw the switch:
+  Mask only outside the switch's box.
+  Draw the switch's box with the black color and the black color.
+  Put the switch's box into an box.
+  Subtract 1/3 inch from the box's bottom.
+  Draw the box with the desktop color and the desktop color.
+  Draw the tabs.
+  
+  

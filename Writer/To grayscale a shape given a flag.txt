@@ -1,0 +1,24 @@
+To grayscale an shape given an flag:
+  If the shape is nil, exit.
+  If the shape's kind is "group", grayscale the shape's shapes given the flag; exit.
+  If the shape's kind is not "picture", exit.
+  Put the flag into the shape's picture's grayscale flag.
+  
+  
+To grayscale any selected shapes on an page given an flag:
+  If the page is nil, exit.
+  Loop.
+    Get an shape from the page's shapes.
+    If the shape is nil, exit.
+    If the shape is not selected, repeat.
+    Grayscale the shape given the flag.
+  Repeat.
+  
+  
+To grayscale some shapes given an flag:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Grayscale the shape given the flag.
+  Repeat.
+  
+  

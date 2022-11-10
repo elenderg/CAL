@@ -1,0 +1,142 @@
+To find an page given an document and an spot:
+  Void the page.
+  If the document is nil, exit.
+  Loop.
+    Get the page from the document's pages.
+    If the page is nil, exit.
+    If the spot is in the edge of the page, exit.
+  Repeat.
+  
+  
+To find an page in an document given an spot (limiting):
+  If the document is nil, void the page; exit.
+  Put the document's first page's edge's left-top into an box's left-top.
+  Put the document's last page's edge's right-bottom into the box's right-bottom.
+  Limit the spot to the box.
+  Find the page given the document and the spot.
+  
+  
+To find an shape and an cropper given some shapes and an spot:
+    Get the shape from the shapes (backwards).
+    If the shape is nil, break.
+    If the shape is not selected, repeat.
+    If the shape's kind is not "picture", repeat.
+    If the spot is in the cropper given the shape and "left", exit.
+    If the spot is in the cropper given the shape and "top", exit.
+    If the spot is in the cropper given the shape and "right", exit.
+    If the spot is in the cropper given the shape and "bottom", exit.
+  Repeat.
+  Clear the cropper.
+  
+  
+To find an shape and an sizer given some shapes and an spot:
+  Get the shape from the shapes (backwards).
+  If the shape is nil, break.
+  If the shape is not selected, repeat.
+  If the spot is in the sizer given the shape and "left-top", exit.
+  If the spot is in the sizer given the shape and "right-top", exit.
+  If the spot is in the sizer given the shape and "left-bottom", exit.
+  If the spot is in the sizer given the shape and "right-bottom", exit.
+  Repeat.
+  Clear the sizer.
+  
+  
+To find an shape and an vertex given some shapes and an spot:
+    Get the shape from the shapes (backwards).
+    If the shape is nil, break.
+    If the shape is not selected, repeat.
+    If the shape's kind is not "polygon", repeat.
+    Find the vertex given the shape's polygon and the spot.
+    If the vertex is not nil, exit.
+  Repeat.
+  Void the vertex.
+  
+  
+To find an shape given some shape refers and an label:
+    Get an shape refer from the shape refers.
+    If the shape refer is nil, void the shape; exit.
+    If the shape refer's shape's label is the label, break.
+  Repeat.
+  Put the shape refer's shape into the shape.
+  
+  
+To find an shape given some shapes and an spot:
+    Get the shape from the shapes (backwards).
+    If the shape is nil, exit.
+    If the spot is in the shape, exit.
+  Repeat.
+  
+  
+To find an shape refer given some shape refers and an shape:
+  Void the shape refer.
+  Loop.
+    Get the shape refer from the shape refers.
+    If the shape refer is nil, exit.
+    If the shape refer's shape is the shape, exit.
+  Repeat.
+  
+  
+To find an vertex given an polygon and an spot: 
+  Void the vertex.
+  If the polygon is nil, exit.
+  Loop.
+    Get the vertex from the polygon's vertices (backwards).
+    If the vertex is nil, exit.
+    Make an knob given the vertex's spot.
+    If the spot is in the knob, exit.
+  Repeat.
+  
+  
+To find given an page and an flag (shapes):
+  Clear the flag.
+  If the page is nil, exit.
+  Put the page's shape refers' first into an shape refer.
+  If the page is not the find page, put 1 and 1 into the find anchor.
+  If the page is the find page, find the shape refer given the page's shape refers and the find shape.
+  Loop.
+    If the shape refer is nil, exit.
+    Find next given the shape refer's shape's text and the flag.
+    If the flag is set, begin edit on the page given the shape refer's shape; exit.
+    Put 1 and 1 into the find anchor.
+    Put the shape refer's next into the shape refer.
+  Repeat.
+  
+  
+To find given an page and an flag:
+  Clear the flag.
+  If the page is nil, exit.
+  Privatize the page.
+  Loop.
+    If the page is nil, exit.
+    Find given the page and the flag (shapes).
+    If the flag is not set, put the page's next into the page; repeat.
+  Switch to the page.
+  Scroll the page to the caret.
+  
+  
+To find next given an page and an flag (shapes):
+  Clear the flag.
+  If the page is nil, exit.
+  Get an shape refer with which to start finding given the page.
+  Get the find anchor with which to start finding given the shape refer and the page.
+  Loop.
+    If the shape refer is nil, exit.
+    Find next given the shape refer's shape's text and the flag.
+    If the flag is set, begin edit on the page given the shape refer's shape; exit.
+    Put 1 and 1 into the find anchor.
+    Put the shape refer's next into the shape refer.
+  Repeat.
+  
+  
+To find next given an page and an flag:
+  Clear the flag.
+  If the page is nil, exit.
+  Privatize the page.
+  Loop.
+    If the page is nil, exit.
+    Find next given the page and the flag (shapes).
+    If the flag is not set, put the page's next into the page; repeat.
+  Switch to the page.
+  Scroll the page to the caret.
+  
+  

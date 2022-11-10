@@ -1,0 +1,72 @@
+To rotate an box:
+  Put the box's center into an center spot.
+  Put the box into another box.
+  Put the center's y minus the other box's top plus the center's x into the box's right.
+  Put the other box's left minus the center's x plus the center's y into the box's top.
+  Put the center's y minus the other box's bottom plus the center's x into the box's left.
+  Put the other box's right minus the center's x plus the center's y into the box's bottom.
+  
+  
+To rotate an gpimage given an angle: \ angle can be 0, 900, 1800, 2700
+  If the gpimage is nil, exit.
+  Put 0 [rotatenoneflipnone] into an number.
+  If the angle is 900, put 1 [rotate90flipnone] into the number.
+  If the angle is 1800, put 2 [rotate180flipnone ] into the number.
+  If the angle is 2700, put 3 [rotate270flipnone ] into the number.
+  Call "gdiplus.dll" "GdipImageRotateFlip" with the gpimage and the number.
+  
+  
+To rotate an gpimage:
+  If the gpimage is nil, exit.
+  Call "gdiplus.dll" "GdipImageRotateFlip" with the gpimage and 1 [rotate90flipnone].
+  
+  
+To rotate an line:
+  Put the line's center into an center spot.
+  Rotate the line's start around the center.
+  Rotate the line's end around the center.
+  
+  
+To rotate an picture:
+  If the picture is nil, exit.
+  Add 900 to the picture's rotate angle.
+  If the picture's mirror flag is set, add 1800 to the picture's rotate angle.
+  Normalize the picture's rotate angle.
+  Rotate the picture's box.
+  Rotate the picture's uncropped box.
+  Put the picture's box's center into an center spot.
+  Put the picture's uncropped box's center into another center spot.
+  Put the center's y minus the other center's y plus the center's x into an twip pair's x.
+  Subtract the other center's x from the twip pair's x.
+  Put the center's y plus the other center's x minus the center's x into the twip pair's y.
+  Subtract the other center's y from the twip pair's y.
+  Move the picture's uncropped box given the twip pair.
+  Rotate the picture's gpbitmap.
+  
+  
+To rotate an polygon:
+  If the polygon is nil, exit.
+  Put the polygon's center into an center spot.
+  Loop.
+    Get an vertex from the polygon's vertices.
+    If the vertex is nil, exit.
+    Rotate the vertex's spot around the center.
+  Repeat.
+  
+  
+To rotate an spot around an center spot:
+  Put the spot into another spot.
+  Put the center's y minus the other spot's y plus the center's x into the spot's x.
+  Put the other spot's x minus the center's x plus the center's y into the spot's y.
+  
+  
+To rotate an text:
+  If the text is nil, exit.
+  Rotate the text's box.
+  Wrap the text.
+  
+  
+To rotate an ellipse:
+  Rotate the ellipse's box.
+  
+  

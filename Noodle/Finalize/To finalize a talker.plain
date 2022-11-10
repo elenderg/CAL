@@ -1,6 +1,0 @@
-To finalize an talker:
-  If the talker is nil, exit.
-  Call the talker's vtable's release with the talker.
-  Put nil into the talker.
-  
-  

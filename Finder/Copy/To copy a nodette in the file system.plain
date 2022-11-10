@@ -1,6 +1,0 @@
-To copy an nodette in the file system:
-  If the nodette is nil, exit.
-  Put the finder's clipboard then the nodette's designator into an path.
-  Duplicate the nodette's path to the path in the file system.
-  
-  

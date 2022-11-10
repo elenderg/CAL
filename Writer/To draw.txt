@@ -1,0 +1,215 @@
+To draw an document:
+  If the document is nil, exit.
+  Mask only outside the document's box.
+  Draw the document's box with the desktop color and the desktop color.
+  Draw the edges of any visible pages in the document.
+  
+  
+To draw an knob on an shape given an string and an fill color:
+  If the shape is nil, exit.
+  Make the knob given the shape and the string and the fill.
+  Draw the knob.
+  
+  
+To draw an knob:
+  Draw the knob's box with the black color and the knob's fill.
+  
+  
+To draw an page:
+  If the page is nil, exit.
+  Mask only outside the pad's box.
+  Draw the pad's box with the desktop color and the desktop color.
+  Set the drawing origin to the page's origin.
+  Draw the page's rect with the white color and the white color.
+  Draw the grid on the page.
+  Draw the page's shapes on the page.
+  If the page is not being edited, draw the sizers on the page's shapes.
+  If the page is not being edited, draw the vertices on the page's shapes.
+  If the page is not being edited, draw the croppers on the page's shapes.
+  Draw the page's rect with the gray color and the clear color.
+  Set the drawing origin to the zero spot.
+  If the focus box is not the zero box, draw the focus box (focus style).
+  If the focus line is not the zero line, draw the focus line with the tracer color. \ tracer
+  
+  
+To draw an shape on an page (ellipse):
+  Draw the shape's ellipse with the shape's border and the shape's fill.
+  
+  
+To draw an shape on an page (group):
+  Draw the shape's shapes on the page.
+  
+  
+To draw an shape on an page (picture):
+  Draw the shape's picture.
+  Draw the shape's box with the shape's border and the clear color.
+  
+  
+To draw an shape on an page (polygon):
+  Draw the shape's polygon with the shape's border and the shape's fill.
+  
+  
+To draw an shape on an page (rectangle):
+  Draw the shape's rect with the shape's border and the shape's fill.
+  
+  
+To draw an shape on an page (text - editing):
+  Draw the shape's text rect with the shape's border and the shape's fill.
+  Save the current canvas.
+  Mask outside the shape's text rect.
+  Draw the shape's text (editing).
+  Restore the current canvas.
+  If the shape's border is not clear, draw the shape's text rect with the shape's border and the clear color.
+  
+  
+To draw an shape on an page (text - not editing):
+  Draw the shape's text rect with the shape's border and the shape's fill.
+  Save the current canvas.
+  Mask outside the shape's text rect.
+  Draw the shape's text.
+  Restore the current canvas.
+  If the shape's border is not clear, draw the shape's text rect with the shape's border and the clear color.
+  
+  
+To draw an shape on an page (text):
+  If the shape is the page's edit shape, draw the shape on the page (text - editing); exit.
+  Draw the shape on the page (text - not editing).
+  
+  
+To draw an shape on an page:
+  If the shape is nil, exit.
+  If the shape's kind is "ellipse", draw the shape on the page (ellipse); exit.
+  If the shape's kind is "group", draw the shape on the page (group); exit.
+  If the shape's kind is "picture", draw the shape on the page (picture); exit.
+  If the shape's kind is "polygon", draw the shape on the page (polygon); exit.
+  If the shape's kind is "rectangle", draw the shape on the page (rectangle); exit.
+  If the shape's kind is "text", draw the shape on the page (text); exit.
+  
+  
+To draw an vertex:
+  If the vertex is nil, exit.
+  Make an knob given the vertex's spot.
+  Put the white color into the knob's fill.
+  Draw the knob.
+  
+  
+To draw some shapes on an page:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Draw the shape on the page.
+  Repeat.
+  
+  
+To draw the croppers on an shape:
+  If the shape is nil, exit.
+  If the shape's kind is not "picture", exit.
+  Draw an cropper on the shape given "left" and the white color.
+  Draw another cropper on the shape given "top" and the white color.
+  Draw an third cropper on the shape given "right" and the white color.
+  Draw an fourth cropper on the shape given "bottom" and the white color.
+  
+  
+To draw the croppers on some shapes:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    If the shape is not selected, repeat.
+    Draw the croppers on the shape.
+  Repeat.
+  
+  
+To draw the edge of an page in an document:
+  If the document is nil, exit.
+  Put the page's edge into an roundy box.
+  Globalize the roundy box given the document's origin.
+  Unmask everything.
+  Put the desktop color into an border color.
+  Put the desktop color into an fill color.
+  If the page's selected flag is set, put the hilite color into the border.
+  If the page's selected flag is set, put the hilite color into the fill.
+  Draw the roundy box with the border and the fill.
+  Put the roundy box into an box.
+  Adjust the box given 1/24 inch and 0 and -1/2 inch and 0.
+  Mask only outside the box.
+  Draw the page's title in the box with the black color and the default font and "left".
+  Put the roundy box into another box.
+  Put the other box's right minus 1/2 inch plus 1/24 inch into the other box's left.
+  Subtract 1/24 inch from the other box's right.
+  Mask only outside the other box.
+  Draw the page's page number in the other box with the black color and the default font and "right".
+  
+  
+To draw the edges of any visible pages in an document:
+  If the document is nil, exit.
+  Loop.
+    Get an page from the document's pages.
+    If the page is nil, exit.
+    If the edge of the page is not visible in the document, repeat.
+    Draw the edge of the page in the document.
+  Repeat.
+  
+  
+To draw the grid on an page (horizontal grid lines):
+  Put 1/2 inch into an number.
+  Scale the number given the page's scale.
+  Put 0 and the number and the page's width and the number into an line.
+  Loop.
+  If the line's start's y is greater than or equal to the page's height, exit.
+  Draw the line with the grid color.
+  Move the line given 0 and the number.
+  Repeat.
+  
+  
+To draw the grid on an page (vertical grid lines):
+  Put 1/2 inch into an number.
+  Scale the number given the page's scale.
+  Put the number and 0 and the number and the page's height into an line.
+  Loop.
+    If the line's start's x is greater than or equal to the page's width, exit.
+    Draw the line with the grid color.
+    Move the line given the number and 0.
+  Repeat.
+  
+  
+To draw the grid on an page:
+  If the page is nil, exit.
+  If the current tab's node's document's grid showing flag is not set, exit.
+  Draw the grid on the page (horizontal grid lines).
+  Draw the grid on the page (vertical grid lines).
+  
+  
+To draw the sizers on an shape:
+  If the shape is nil, exit.
+  Draw an sizer on the shape given "left-top" and the lighter gray color.
+  Draw another sizer on the shape given "right-top" and the lighter gray color.
+  Draw an third sizer on the shape given "left-bottom" and the lighter gray color.
+  Draw an fourth sizer on the shape given "right-bottom" and the lighter gray color.
+  
+  
+To draw the sizers on some shapes:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    If the shape's kind is "group", draw the sizers on the shape's shapes. \ for text in groups
+    If the shape is not selected, repeat.
+    Draw the sizers on the shape.
+  Repeat.
+  
+  
+To draw the vertices on an shape:
+  If the shape is nil, exit.
+  If the shape's kind is not "polygon", exit.
+  Loop.
+    Get an vertex from the shape's polygon's vertices.
+    If the vertex is nil, exit.
+    Draw the vertex.
+    If the vertex is the shape's polygon's vertices' last, draw the vertex's spot with the black color.
+  Repeat.
+  
+  
+To draw the vertices on some shapes:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    If the shape is not selected, repeat.
+    Draw the vertices on the shape.
+  Repeat.
+  
+  

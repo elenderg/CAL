@@ -1,6 +1,0 @@
-To move the caret right in an text:
-  If the text is nil, exit.
-  Add 1 to the text's caret column#.
-  Limit the caret in the text.
-  
-  

@@ -1,0 +1,20 @@
+To add an nodette to an node and to the file system given an path and an buffer:
+  If the node is nil, exit.
+  Write the buffer to the path.
+  If the i/o error is not blank, exit.
+  Create the nodette given the path.
+  Insert the nodette into the node's nodettes before the node's first selected nodette.
+  Put the node into the nodette's parent node.
+  Adjust every nodette in the node.
+  
+  
+To add an nodette to an node and to the file system given an path:
+  If the node is nil, exit.
+  Create the path in the file system.
+  If the i/o error is not blank, exit.
+  Create the nodette given the path.
+  Insert the nodette into the node's nodettes before the node's first selected nodette.
+  Put the node into the nodette's parent node.
+  Adjust every nodette in the node.
+  
+  

@@ -1,6 +1,0 @@
-To scroll an node given an difference:
-  If the node is nil, exit.
-  Add the difference to the node's origin.
-  Limit the origin in the node.
-  
-  

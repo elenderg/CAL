@@ -1,0 +1,58 @@
+To print an copy of an sheet number of an sheets/copy of an source:
+    If the source is nil, exit.
+    Show status the copy then " of " then the sheet number then " of " then the sheets/copy then "...".
+    Get an first row and an last row given the sheet number and the source.
+    Put 1/2 inch and 1/2 inch into an spot.
+    Begin an sheet.
+    Put the first row into an current row.
+    Loop.
+    Print the current row of the source at the spot.
+    If the current row is the last row, break.
+    Put the current row's next into the current row.
+    Add the source's text's row height to the spot's y.
+  Repeat.
+  End the sheet.
+  
+  
+To print an copy of an source:
+    If the source is nil, exit.
+    Put the source's sheets/copy into an sheets/copy.
+    Put 1 into an sheet number.
+    Loop.
+    If the sheet number is greater than the sheets/copy, exit.
+    Print the copy of the sheet number of the sheets/copy of the source.
+    Add 1 to the sheet number.
+  Repeat.
+  
+  
+To print an number of copies of an source:
+    If the source is nil, exit.
+    Begin printing.
+    Loop.
+    Add 1 to an copy.
+    If the copy is greater than the number, break.
+    Print the copy of the source.
+  Repeat.
+  End printing.
+  
+  
+To print an row of an source at an spot:
+  If the source is nil, exit.
+  If the row is nil, exit.
+  Put 0 and 0 and 7-1/2 inches and the source's text's row height into an box.
+  Move the box to the spot.
+  Mask only outside the box.
+  Get an substring given the row and the source (commented part).
+  \ uncommented part
+  Slap another substring on the row's working string.
+  If the substring is not blank, put the substring's first minus 1 into the other substring's last.
+  Draw the other substring in the box with the black color and the source's text's font and the source's text's alignment.
+  \ commented part
+  If the substring is blank, exit.
+  Put the comment color into an color.
+  If the source's colorized flag is not set, put the black color into the color.
+  Get an width given the other substring and the memory canvas and the source's text's font.
+  Add the width to the box's left.
+  Draw the substring in the box with the color and the source's text's font and the source's text's alignment.
+  
+  

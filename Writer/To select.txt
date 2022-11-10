@@ -1,0 +1,59 @@
+To select an page:
+  If the page is nil, exit.
+  Set the page's selected flag.
+  
+  
+To select an shape: set the shape's selected flag.
+  
+  
+To select every shape on an page:
+  If the page is nil, exit.
+  Loop.
+    Get an shape from the page's shapes.
+    If the shape is nil, exit.
+    Select the shape.
+  Repeat.
+  
+  
+To select some pages given an document selection:
+  If the document selection's anchor is nil, exit.
+  If the document selection's caret is nil, exit.
+  Put the document selection's anchor's edge's left-top and the document selection's caret's edge's right-bottom into an box.
+  Add the tpp to the box's top.
+  Subtract the tpp from the box's bottom.
+  Normalize the box.
+  Loop.
+    Get an page from the pages.
+    If the page is nil, exit.
+    Put the page's previously selected flag into the page's selected flag.
+    If the page's edge is not touching the box, repeat.
+    Reverse the page's selected flag.
+  Repeat.
+  
+  
+To select some pages:
+    Get an page from the pages.
+    If the page is nil, exit.
+    Select the page.
+  Repeat.
+  
+  
+To select some shapes given an box:
+  Privatize the box.
+  Normalize the box.
+  Loop.
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Put the shape's previously selected flag into the shape's selected flag.
+    If the shape's box is not inside the box, repeat.
+    Reverse the shape's selected flag.
+  Repeat.
+  
+  
+To select some shapes:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Select the shape.
+  Repeat.
+  
+  

@@ -1,5 +1,0 @@
-To put an polygon's center into an spot:
-  If the polygon is nil, clear the spot; exit.
-  Put the polygon's box's center into the spot.
-  
-  

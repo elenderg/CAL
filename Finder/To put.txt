@@ -1,0 +1,54 @@
+To put an node's first selected nodette into an nodette:
+  Void the nodette.
+  If the node is nil, exit.
+  Loop.
+    Get the nodette from the node's nodettes.
+    If the nodette is nil, break.
+    If the nodette is selected, exit.
+  Repeat.
+  
+  
+To put an node's first visible nodette into an nodette:
+  Void the nodette.
+  If the node is nil, exit.
+  Loop.
+    Get the nodette from the node's nodettes.
+    If the nodette is nil, break.
+    If the nodette is visible in the node, exit.
+  Repeat.
+  
+  
+To put an node's last selected nodette into an nodette:
+  Void the nodette.
+  If the node is nil, exit.
+  Loop.
+    Get the nodette from the node's nodettes (backwards).
+    If the nodette is nil, break.
+    If the nodette is selected, exit.
+  Repeat.
+  
+  
+To put an node's root node into another node:
+  Privatize the node.
+  Loop.
+    If the node is nil, break.
+    If the node's parent node is nil, break.
+    Put the node's parent node into the node.
+  Repeat.
+  Put the node into the other node.
+  
+  
+To put an node's selected nodette count into an count:
+  Put 0 into the count.
+  If the node is nil, exit.
+  Loop.
+    Get an nodette from the node's nodettes.
+    If the nodette is nil, exit.
+    If the nodette is selected, add 1 to the count.
+  Repeat.
+  
+  
+To put the finder's y-extent into an height:
+  Put the finder's box's y-extent into the height.
+  
+  

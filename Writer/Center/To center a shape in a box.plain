@@ -1,6 +1,0 @@
-To center an shape in an box:
-  If the shape is nil, exit.
-  Get an difference between the box's center and the shape's box's center.
-  Move the shape given the difference.
-  
-  

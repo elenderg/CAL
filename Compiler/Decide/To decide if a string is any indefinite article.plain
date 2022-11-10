@@ -1,8 +1,0 @@
-To decide if an string is any indefinite article:
-  If the string is "an", say yes.
-  If the string is "an", say yes.
-  If the string is "another", say yes.
-  If the string is "some", say yes.
-  Say no.
-  
-  

@@ -1,0 +1,438 @@
+A borough has a base address, a length and a size.
+
+
+A built-in type is a type.
+
+
+A dos header is a record with
+A wyrd called signature,
+A wyrd called numberofbytesonlastpage,
+A wyrd called numberofpages,
+A wyrd called relocuss,
+A wyrd called sizeofheaderinparagraphs,
+A wyrd called minimumextraparagraphs,
+A wyrd called maximumextraparagraphs,
+A wyrd called initialrelativess,
+A wyrd called initialsp,
+A wyrd called initialchecksum,
+A wyrd called initialip,
+A wyrd called initialirelativecs,
+A wyrd called addressofrelocationtableinfile,
+A wyrd called overlynumber,
+8 bytes called resveredbytes,
+A wyrd called oemidentifier,
+A wyrd called oeminfo,
+20 bytes called reservedwords,  
+A number called addressofpeheaderinfile.
+
+
+A field is a variable.
+
+
+A field term has
+A dereference flag,
+A field (reference),
+A function routine (reference),
+A push flag.
+
+
+A fragment is a thing with
+A tag [break, call external, call indirect, call internal, dereference, end if, epilog, exit, finalize, increment, intel, jump false, load address, load eax, loop, not, prolog, push address, push value, save eax, repeat, routine address],
+A variable (reference) [call indirect, dereference, increment, load address, load eax, pop, push address, push value, routine address, save eax],
+Another variable (reference) [load address],
+A routine (reference) [call internal, routine address],
+An entry (reference) [call external],
+A number [increment],
+An address,
+A hex string called code.
+
+
+A global body is a substring.
+
+
+A global is a variable.
+
+
+A literal is a variable.
+
+
+A local is a variable.
+
+
+A locus is a byte pointer.
+
+
+A moniker is a string.
+
+
+A monikette is a thing with
+a string,
+a type (reference),
+a variable (reference),
+\ for bubbling
+a current type (reference),
+a current substring.
+
+
+A nibble substring is a substring.
+
+
+A nickname is a name.
+
+
+A parameter is a variable.
+
+
+A partial moniker is a moniker.
+
+
+A pe header is a record with
+A number called signature,
+A wyrd called machinetype,
+A wyrd called numberofsections,
+A number called timestamp,
+A number called pointertosymboltable,
+A number called numberofsymbols,
+A wyrd called sizeofoptionalheaderinbytes,
+A wyrd called characteristics,
+\ optional header
+A wyrd called magicnumber,
+A byte called majorlinkerversion,
+A byte called minorlinkerversion,
+A number called sizeofcodeinfile,
+A number called sizeofinitializeddatainfile,
+A number called sizeofuninitializeddatainfile,
+A number called addressofentrypointinmemory,
+A number called addressofcodeinmemory,
+A number called addressofinitializeddatainmemory,
+A number called imagebase,
+A number called memoryalignment,
+A number called filealignment,
+A wyrd called osmajorversion,
+A wyrd called osminorversion,
+A wyrd called usermajorversion,
+A wyrd called userminorversion,
+A wyrd called subsystemmajorversion,
+A wyrd called subsystemminorversion,
+A number called reserved,
+A number called sizeofimageinmemory,
+A number called sizeofallheadersinfile,
+A number called checksum,
+A wyrd called subsystem,
+A wyrd called dllcharacteristics,
+A number called maxstack,
+A number called minstack,
+A number called maxheap,
+A number called minheap,
+A number called loaderflags,
+\ directories (16 address and size pairs)
+A number called numberofdirectories,
+8 bytes called directory0,
+A number called imagedirectoryentryimportaddress,
+A number called imagedirectoryentryimportsize,
+112 bytes called directories2-15,
+A pe section header called idata section,
+A pe section header called data section,
+A pe section header called code section.
+
+
+A pe section header is a record with
+8 bytes called name,
+A number called sizeinbytes,
+A number called addressinmemory,
+A number called sizeinfile,
+A number called addressinfile,
+12 bytes called reserved,
+A number called characteristics.
+
+
+A phrase is a string.
+
+
+A prototype string has a first byte pointer and a last byte pointer.
+
+
+A routine body is a substring.
+
+
+A routine header is a substring.
+
+
+A routine is a thing with
+A locus (reference),
+A callback flag,
+A decider flag,
+A function flag,
+A compiled flag,
+A nickname index,
+A moniker, some monikettes, some parameters, a parameter size,
+An employs moniker,
+Some locals, a local size,
+A routine header, a header string,
+A routine body, a body string,
+Some fragments,
+An address.
+
+
+A routine reference is some monikettes.
+
+
+A scratch is a local.
+
+
+A source file is a thing with a path and a buffer.
+
+
+A tag is a number.
+
+
+A term has a variable and a phrase.
+
+
+A type is a thing with
+A locus (reference),
+A name, a plural name,
+A partial moniker,
+A length,
+A base name, a base type (reference),
+A target name, a target type (reference) [pointers only],
+A scale ratio,
+Some fields [records only],
+A cooking flag,
+A optional info resolved flag.
+
+
+A type name is a name.
+
+
+A variable is a thing with
+A locus (reference),
+A kind [literal, global, local, parameter, scratch],
+A compiled flag,
+A name, a nickname, a type name,
+A type (reference), \ actual type on literal, global, local; dereferenced type on parameters and scratches
+An address [globals and literals only] or 
+An offset at the address [locals, parameters, and fields only],
+A count [fields only],
+A reference flag [fields only],
+A redefinition target name [fields only],
+A by-value flag [parameters only],
+An global body [globals only],
+An initializer string [globals only],
+A literal (reference) [globals only - constant with which to initalize the global],
+A hex string called data [literals only].
+
+
+An abort message is a string. 
+
+
+An address is a number.
+
+
+An entry is a thing with
+A name address,
+A thunk address,
+A name,
+An address.
+
+
+An expression is a term.
+
+
+An import header is a record with
+An address called original first thunk,
+A number called timestamp,
+An address called forwarder chain,
+An address called name memory address,
+An address called first thunk memory address.
+
+
+An import is a thing with
+A name address,
+A header address,
+A name,
+An import header,
+Some entries.
+
+
+An intermediate is a local.
+
+
+The adding built-in memory routines timer is a timer.
+
+
+The adding built-in startup routine timer is a timer.
+
+
+The addressing timer is a timer.
+
+
+The break tag is a tag equal to 1.
+
+
+The calculating timer is a timer.
+
+
+The call external tag is a tag equal to 2.
+
+
+The call indirect tag is a tag equal to 3.
+
+
+The call internal tag is a tag equal to 4.
+
+
+The code borough is a borough.
+
+
+The compiler has
+A directory,
+A timer,
+An abort flag,
+An abort message,
+An abort path,
+An abort row#,
+A name count,
+A exe buffer,
+A listing buffer.
+
+
+The compiling routine bodies timer is a timer.
+
+
+The compiling routine headers timer is a timer.
+
+
+The current header address is an address.
+
+
+The current name address is an address.
+
+
+The current routine is a routine.
+
+
+The current thunk address is an address.
+
+
+The data borough is a borough.
+
+
+The dereference tag is a tag equal to 5.
+
+
+The end if tag is a tag equal to 6.
+
+
+The epilog tag is a tag equal to 7.
+
+
+The exit tag is a tag equal to 8.
+
+
+The finalize tag is a tag equal to 9.
+
+
+The global index is an index.
+
+
+The globals are some globals.
+
+
+The image base is an address equal to 4194304 [$00400000].
+
+
+The import borough is a borough.
+
+
+The imports are some imports.
+
+
+The increment tag is a tag equal to 10.
+
+
+The indexing utilities timer is a timer.
+
+
+The intel tag is a tag equal to 11.
+
+
+The jump false tag is a tag equal to 12.
+
+
+The linking timer is a timer.
+
+
+The literal index is an index.
+
+
+The literals are some literals.
+
+
+The load address tag is a tag equal to 13.
+
+
+The load eax tag is a tag equal to 14.
+
+
+The loading timer is a timer.
+
+
+The loop tag is a tag equal to 15.
+
+
+The not tag is a tag equal to 16.
+
+
+The offsetting timer is a timer.
+
+
+The prolog tag is a tag equal to 17.
+
+
+The push address tag is a tag equal to 18.
+
+
+The push value tag is a tag equal to 19.
+
+
+The repeat tag is a tag equal to 21.
+
+
+The resolving globals timer is a timer.
+
+
+The resolving types timer is a timer.
+
+
+The routine address tag is a tag equal to 22.
+
+
+The routine index is an index.
+
+
+The routines are some routines.
+
+
+The save eax tag is a tag equal to 20.
+
+
+The scanning timer is a timer.
+
+
+The source files are some source files.
+
+
+The transmogrifying timer is a timer.
+
+
+The type index is an index.
+
+
+The types are some types.
+
+
+The utility index is an index.
+
+
+The writing timer is a timer.

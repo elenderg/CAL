@@ -1,0 +1,24 @@
+To unlabel an shape:
+  If the shape is nil, exit.
+  If the shape's kind is "group", unlabel the shape's shapes; exit.
+  If the shape's kind is not "text", exit.
+  Clear the shape's label.
+  
+  
+To unlabel any selected shapes on an page:
+  If the page is nil, exit.
+  Loop.
+    Get an shape from the page's shapes.
+    If the shape is nil, exit.
+    If the shape is not selected, repeat.
+    Unlabel the shape.
+  Repeat.
+  
+  
+To unlabel some shapes:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Unlabel the shape.
+  Repeat.
+  
+  

@@ -1,5 +1,0 @@
-To scroll an page given an difference:
-  If the page is nil, exit.
-  Add the difference to the page's origin.
-  
-  

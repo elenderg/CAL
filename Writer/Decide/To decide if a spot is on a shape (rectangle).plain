@@ -1,6 +1,0 @@
-To decide if an spot is on an shape (rectangle):
-  If the shape's kind is not "rectangle", say no.
-  If the spot is on the shape's rect, say yes.
-  Say no.
-  
-  

@@ -1,9 +1,0 @@
-To decide if something is selected in an node:
-  If the node is nil, say no.
-  Loop.
-    Get an nodette from the node's nodettes.
-    If the nodette is nil, say no.
-    If the nodette is selected, say yes.
-  Repeat.
-  
-  

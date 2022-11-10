@@ -1,0 +1,155 @@
+To read an byte from an console:
+  Read an string from the console.
+  If the string is blank, put the null byte into the byte; exit.
+  Put the string's first's target into the byte.
+  
+  
+To read an console into an string:
+  If the console is nil, clear the string; exit.
+  Flush all events.
+  Clear the console's reply.
+  Show the console.
+  Handle events given the console.
+  Put the console's reply into the string.
+  Flush all events.
+  Refresh the cursor.
+  
+  
+To read an file into an buffer:
+  Clear the i/o error.
+  Call "kernel32.dll" "GetFileSize" with the file and nil returning an size.
+  Reassign the buffer's first given the size.
+  Put the buffer's first plus the size minus 1 into the buffer's last.
+  Call "kernel32.dll" "ReadFile" with the file and the buffer's first and the size and an number's whereabouts and 0 returning an result number.
+  If the result number is 0, put "Error reading file." into the i/o error; exit.
+  
+  
+To read an flag from an console:
+  Read an string from the console.
+  Convert the string to the flag.
+  
+  
+To read an fraction from an console:
+  Read an string from the console.
+  Convert the string to the fraction.
+  
+  
+To read an number from an console:
+  Read an string from the console.
+  Convert the string to the number.
+  
+  
+To read an reply from an terminal:
+  If the terminal is nil, clear the reply; exit.
+  Flush all events.
+  Clear the terminal's reply.
+  Add an quora to the terminal.
+  Put "> " into the quora's string.
+  Put the terminal's input color into the quora's color.
+  Show the terminal.
+  Handle events given the terminal.
+  \  show the terminal.
+  Put the terminal's reply into the reply.
+  Remove any leading noise from the reply.
+  Remove any trailing noise from the reply.
+  Flush all events.
+  \ questionable below
+  Create an event.
+  Put "left click" into the event's kind.
+  Put the mouse's spot into the event's spot.
+  Enque the event.
+  Refresh the cursor.
+  
+  
+To read an response string from an winhttp request:
+  If the winhttp request is nil, exit.
+  Clear the response.
+  Put 8 kilobytes into an buffer size.
+  Loop.
+    Put 0 into an size.  
+    Call "winhttp.dll" "WinHttpQueryDataAvailable"
+    With the winhttp request's request and the size's whereabouts returning an result number.
+    If the result is 0, put "Unable to query data available." into the i/o error; clear the response; break.
+    Put the response's length into an saved length.
+    Reassign the response's first given the saved length plus the buffer size.
+    Put the response's first plus the saved length into an pointer.
+    Call "winhttp.dll" "WinHttpReadData" with the winhttp request's request and the pointer
+    And the buffer size and an count's whereabouts returning the result number.
+    If the result number is 0, put "Error reading data." into the i/o error; clear the response; break.
+    Put the pointer plus the count minus 1 into the response's last.
+    If the count is 0, break.
+  Repeat.
+  
+  
+To read an string from an console:
+  Read the console into the string.
+  
+  
+To read an url into an buffer:
+  \ prepare
+  Clear the buffer.
+  Clear the i/o error.
+  \ internet open
+  Call "wininet.dll" "InternetOpenA" with the module's name's first and 0 [internet_open_type_preconfig] and nil and nil returning an internet handle.
+  If the internet handle is 0, put "Could not connect to the internet." into the i/o error; exit.
+  \ internet open url
+  Privatize the url.
+  Null terminate the url.
+  Call "wininet.dll" "InternetOpenUrlA" with the internet handle and the url's first and nil and 0 and 0 and 0 returning an url handle.
+  If the url handle is 0, put "Could not connect to url '" then the url then "'." into the i/o error; call "wininet.dll" "InternetCloseHandle" with the internet handle; exit.
+  \ read the file
+  Put 64 kilobytes into an buffer size.
+  Loop.
+    Put the buffer's length into an saved length.
+    Reassign the buffer's first given the saved length plus the buffer size.
+    Put the buffer's first plus the saved length into an  pointer.
+    Call "wininet.dll" "InternetReadFile" with the url handle and the pointer and the buffer size and an count's whereabouts returning an result number.
+    If the result number is 0, put "Error reading url '" then the url then "'." into the i/o error; break.
+    Put the pointer plus the count minus 1 into the buffer's last.
+    If the count is 0, break.
+  Repeat.
+  \ clean up
+  Call "wininet.dll" "InternetCloseHandle" with the url handle.
+  Call "wininet.dll" "InternetCloseHandle" with the internet handle.
+  
+  
+To read stdin into an buffer:
+  Clear the i/o error.
+  Clear the buffer.
+  Find an string given the environment variables and "CONTENT_LENGTH".
+  If the string is blank, put "Error getting content_length" into the i/o error; exit.
+  Convert the string into an length.
+  If the length is 0, exit.
+  Reassign the buffer's first given the length.
+  Call "kernel32.dll" "ReadFile" with the stdin handle and the buffer's first and the length and an number's whereabouts and nil.
+  If the number is not the length, put "Error reading stdin data" into the i/o error; clear the buffer; exit.
+  Put the buffer's first plus the length minus 1 into the buffer's last.
+  
+  
+To read the bible given an path:
+  If the bible is not nil, exit.
+  Read the path into an buffer.
+  If the i/o error is not blank, exit.
+  Allocate memory for the Bible.
+  Slap an rider on the buffer.
+  Loop.
+    If the rider's source is blank, exit.
+    Allocate memory for an verse. Append the verse to the Bible's verses.
+    Move the rider (text file rules).
+    Put the rider's token into the verse's string.
+    Remove any leading noise from the verse's string. 
+    Remove any trailing noise from the verse's string.
+  Repeat.
+  
+  
+To read the bible:
+  If the bible is not nil, exit.
+  Extract an directory from the module's path.
+  Loop.
+    If the directory is blank, exit.
+    Put the directory then "bible.txt" into an path.
+    If the path is in the file system, read the bible given the path; exit.
+    Extract the directory from the directory.
+  Repeat.
+  
+  

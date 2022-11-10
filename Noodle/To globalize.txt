@@ -1,0 +1,8 @@
+To globalize an box given an pair:
+  Move the box given the pair.
+  
+  
+To globalize an spot given an pair:
+  Move the spot given the pair.
+  
+  

@@ -1,0 +1,28 @@
+To select an nodette:
+  If the nodette is nil, exit.
+  Set the nodette's selected flag.
+  
+  
+To select some nodettes given an node selection:
+  If the node selection's anchor is nil, exit.
+  If the node selection's caret is nil, exit.
+  Put the node selection's anchor's box's left-top and the node selection's caret's box's right-bottom into an box.
+  Add the tpp to the box's top.
+  Subtract the tpp from the box's bottom.
+  Normalize the box.
+  Loop.
+    Get an nodette from the nodettes.
+    If the nodette is nil, exit.
+    Put the nodette's previously selected flag into the nodette's selected flag.
+    If the nodette's box is not touching the box, repeat.
+    Reverse the nodette's selected flag.
+  Repeat.
+  
+  
+To select some nodettes:
+    Get an nodette from the nodettes.
+    If the nodette is nil, exit.
+    Select the nodette.
+  Repeat.
+  
+  

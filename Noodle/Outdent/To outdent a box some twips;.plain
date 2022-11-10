@@ -1,8 +1,0 @@
-To outdent an box some twips;
-To outdent an box given some twips:
-  Subtract the twips from the box's left.
-  Subtract the twips from the box's top.
-  Add the twips to the box's right.
-  Add the twips to the box's bottom.
-  
-  

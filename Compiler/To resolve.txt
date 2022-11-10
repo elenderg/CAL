@@ -1,0 +1,183 @@
+To resolve an field:
+  If the compiler's abort flag is set, exit.
+  If the field is nil, exit.
+  Resolve the field as an variable.
+  If the field's nickname is not any valid field name, clear the field's nickname.
+  If the field's name is not any valid field name, abort with "'" then the field's name then "' is not an valid field name." and the field's locus; exit.
+  
+  
+To resolve an global (compile body):
+  If the global is nil, exit.
+  If the compiler's abort flag is set, exit.
+  Slap an rider on the global's global body.
+  Move the rider (compiler rules).
+  If the rider's token is not any literal, abort with "I need an literal here, but I found '" then the rider's token then "'." and the rider; exit.
+  Compile an literal given the rider.
+  If the compiler's abort flag is set, exit.
+  If the rider's token is not blank, abort with "Is an period missing around here?" and the rider; exit.
+  If the global's type name is blank, put the literal's type's name into the global's type name.
+  Put the literal into the global's literal.
+  Index the literal.
+  
+  
+To resolve an global:
+  If the global is nil, exit.
+  If the compiler's abort flag is set, exit.
+  If the global's global body is not blank, resolve the global (compile body).
+  If the global's type name is blank, abort with "Invalid global '" then the global's name then "'." and the global's locus; exit.
+  Resolve the global as an variable.
+  
+  
+To resolve an type (base type):
+  If the compiler's abort flag is set, exit.
+  If the type is nil, exit.
+  If the type's base type is not nil, exit.
+  Find the type's base type given the type's base name and the type index.
+  If the type's base type is nil, abort with "Invalid base type '" then the type's base name then "'." and the type's locus; exit.
+  Set the type's cooking flag.
+  If the type's base type's cooking flag is set, abort with "Recursive definition with '" then the type's base name then "'." and the type's locus; exit.
+  Resolve the type's base type (base type).
+  Clear the type's cooking flag.
+  
+  
+To resolve an type (expand thing): \ type's base type is not resolved yet
+  If the compiler's abort flag is set, exit.
+  If the type is nil, exit.
+  If the type's base type is not nil, exit.
+  If the type's name is "thing", exit.
+  If the type cannot be reduced to "thing" using the base name, exit.
+  Find an base type given the type's base name and the type index.
+  \  add thing record
+  Put the type's name then " record" into an name.
+  Put the type's name then " records" into an plural name.
+  Put the base type's name then " record" into an base name.
+  Add an record type to the types given the name and the plural name and the base name.
+  Add an field to the record type's fields given "next " then the type's name and "next" and the type's name and yes.
+  Add another field to the record type's fields given "previous " then the type's name and "previous" and the type's name and yes.
+  If the type's fields are not empty, append the type's fields to the record type's fields.
+  Index the record type.
+  \ fix up original type to look like an pointer
+  Put the record type's name into the type's target name.
+  \ add chain type
+  Add an chain type to the types given the type's plural name and "" and the base type's plural name.
+  Add an third field to the chain type's fields given "first " then the type's name and "first" and the type's name and yes.
+  Add an fourth field to the chain type's fields given "last " then the type's name and "last" and the type's name and yes.
+  Index the chain type.
+  
+  
+To resolve an type (index plural):
+  If the compiler's abort flag is set, exit.
+  If the type is nil, exit.
+  If the type's plural name is blank, exit.
+  If the type can be reduced to "thing" using the base name, exit.
+  Index the type given the type's plural name.
+  
+  
+To resolve an type (optional info - pointer):
+  If the compiler's abort flag is set, exit.
+  If the type's target type is not nil, exit.
+  If the type's target name is blank, put the type's base type's target type into the type's target type; exit.
+  Find the type's target type given the type's target name and the type index.
+  If the type's target type is nil, abort with "I can't quite see what you're pointing at. Please clarify." and the type's locus; exit.
+  
+  
+To resolve an type (optional info - record):
+  If the compiler's abort flag is set, exit.
+  If the type's fields are empty, copy the type's base type's fields into the type's fields; exit.
+  Loop.
+    If the compiler's abort flag is set, exit.
+    Get an field from the type's fields (backwards).
+    If the field is nil, break.
+    If the field is duplicated in the type's fields, abort with "The '" then the field's name then "' field is defined more than once." and the field's locus; exit.
+    Resolve the field.
+    If the compiler's abort flag is set, exit.
+    If the field's type's cooking flag is set, abort with "Recursive definition with '" then the field's type's name then "'." and the field's locus; exit.
+    Resolve the field's type (optional info).
+    If the field's reference flag is not set, repeat.
+    If the field's type cannot be reduced to "pointer", abort with "Exactly what do you mean by '(reference)' here on this '" then the field's name then "'?" and the field's locus; exit.
+  Repeat.
+  Eliminate duplicate nicknames from the type's fields.
+  If the type cannot be reduced to "thing record", exit.
+  If the type's fields' count is greater than 2, exit.
+  Copy the type's base type's fields into the type's fields (data fields only).
+  
+  
+To resolve an type (optional info - scale):
+  If the compiler's abort flag is set, exit.
+  Put the type's base type into an base type.
+  If the type's scale is 0, put the type's base type's scale into the type's scale; exit.
+  If the base type's scale is 0, exit.
+  Multiply the type's scale by the base type's scale.
+  Put the base type's base type into the type's base type.
+  
+  
+To resolve an type (optional info):
+  If the compiler's abort flag is set, exit.
+  If the type is nil, exit.
+  If the type's optional info resolved flag is set, exit.
+  If the type's base type is the type, exit. \ for built in types
+  Check for invalid optional info on the type.
+  Set the type's cooking flag.
+  Resolve the type's base type (optional info).
+  If the type can be reduced to "pointer", resolve the type (optional info - pointer).
+  If the type can be reduced to "record", resolve the type (optional info - record).
+  If the type can be reduced to "number", resolve the type (optional info - scale).
+  Clear the type's cooking flag.
+  Set the type's optional info resolved flag.
+  
+  
+To resolve an variable (explicit type name):
+  Find the variable's type given the variable's type name and the type index.
+  If the variable's type is nil, abort with "I can't find the '" then the variable's type name then "' type." and the variable's locus; exit.
+  
+  
+To resolve an variable:
+  If the compiler's abort flag is set, exit.
+  If the variable is nil, exit.
+  If the variable's type is not nil, exit.
+  If the variable's type name is not blank, resolve the variable (explicit type name); exit.
+  Find the variable's type and the variable's nickname given the variable's name.
+  If the variable's type is not nil, put the variable's type's name into the variable's type name; exit.
+  Abort with "I can't find the '" then the variable's name then "' type." and the variable's locus.
+  
+  
+To resolve some globals:
+    If the compiler's abort flag is set, exit.
+    Get an global from the globals.
+    If the global is nil, exit.
+    Resolve the global.
+  Repeat.
+  
+  
+To resolve some types (base types):
+    If the compiler's abort flag is set, exit.
+    Get an type from the types.
+    If the type is nil, exit.
+    Resolve the type (base type).
+  Repeat.
+  
+  
+To resolve some types (expand things):
+    If the compiler's abort flag is set, exit.
+    Get an type from the types.
+    If the type is nil, exit.
+    Resolve the type (expand thing).
+  Repeat.
+  
+  
+To resolve some types (index plurals):
+    If the compiler's abort flag is set, exit.
+    Get an type from the types.
+    If the type is nil, exit.
+    Resolve the type (index plural).
+  Repeat.
+  
+  
+To resolve some types (optional info):
+    If the compiler's abort flag is set, exit.
+    Get an type from the types.
+    If the type is nil, exit.
+    Resolve the type (optional info).
+  Repeat.
+  
+  

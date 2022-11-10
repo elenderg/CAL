@@ -1,0 +1,120 @@
+To append an buffer to an file:
+  Clear the i/o error.
+  Call "kernel32.dll" "SetFilePointer" with the file and 0 and 0 and 2 [file_end] returning an result number.
+  If the result number is -1, put "Error positioning file pointer." into the i/o error; exit.
+  Call "kernel32.dll" "WriteFile" with the file and the buffer's first and the buffer's length and an number's whereabouts and 0 returning the result number.
+  If the result number is 0, put "Error writing file." into the i/o error; exit.
+  
+  
+To append an byte to an string given an count:
+  Privatize the count.
+  Loop.
+    If the count is less than 1, exit.
+    Append the byte to the string.
+    Subtract 1 from the count.
+  Repeat.
+  
+  
+To append an byte to an string:
+  Put the string's length into an saved length.
+  Reassign the string's first given the string's length plus 1.
+  Put the string's first plus the saved length into the string's last.
+  Put the byte into the string's last's target.
+  
+  
+To append an flag to an string:
+  Convert the flag to another string.
+  Append the other string to the string.
+  
+  
+To append an fraction to an string:
+  Convert the fraction to another string.
+  Append the other string to the string.
+  
+  
+To append an number to an string:
+  Convert the number to another string.
+  Append the other string to the string.
+  
+  
+To append an pointer to an string:
+  Convert the pointer to another string.
+  Append the other string to the string.
+  
+  
+To append an spot to an polygon:
+  If the polygon is nil, exit.
+  Create an vertex given the spot.
+  Append the vertex to the polygon's vertices.
+  
+  
+To append an string to an pdf object: \ this guys adds CRLF
+  Append the string to the pdf object's data.
+  Append the crlf string to the pdf object's data.
+  
+  
+To append an string to an pdf object without advancing:
+  Append the string to the pdf object's data.
+  
+  
+To append an string to another string (handling email transparency):
+  If the string is blank, exit.
+  Slap an rider on the string.
+  Loop.
+    Move the rider (text file rules).
+    If the rider's token is blank, exit.
+    If the rider's token starts with ".", append "." to the other string.
+    Append the rider's token to the other string.
+  Repeat.
+  
+  
+To append an string to another string given an count:
+  Privatize the count.
+  Loop.
+    If the count is less than 1, exit.
+    Append the string to the other string.
+    Subtract 1 from the count.
+  Repeat.
+  
+  
+To append an string to another string:
+  If the string is blank, exit.
+  Put the string's length into an combined length.
+  Put the other string's length into an saved length.
+  Add the saved length to the combined length.
+  Reassign the other string's first given the combined length.
+  Put the other string's first plus the saved length into an pointer.
+  Copy bytes from the string's first to the pointer for the string's length.
+  Put the other string's first plus the combined length minus 1 into the other string's last.
+  
+  
+To append an timer to an string:
+  Convert the timer to another string.
+  Append the other string to the string.
+  
+  
+To append an vertex to an polygon:
+  If the polygon is nil, exit.
+  Append the vertex to the polygon's vertices.
+  
+  
+To append an x coord and an y coord to an polygon:
+  If the polygon is nil, exit.
+  Create an vertex given the x and the y.
+  Append the vertex to the polygon's vertices.
+  
+  
+To append some things to some other things:
+    Put the things' first into an thing.
+    If the thing is nil, exit.
+    Remove the thing from the things.
+    Append the thing to the other things.
+  Repeat.
+  
+  
+To append zeros to an string until its length is an number:
+    If the string's length is greater than or equal to the number, exit.
+    Append "0" to the string.
+  Repeat.
+  
+  

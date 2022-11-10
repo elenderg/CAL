@@ -1,0 +1,90 @@
+To decide if an buffer is text-format:
+  Slap an substring on the buffer.
+  Loop.
+    If the substring's first is greater than the substring's last, say yes.
+    If the substring's first's target is not any text byte, say no.
+    Add 1 to the substring's first.
+  Repeat.
+  
+  
+To decide if an byte is any text byte:
+  If the byte is printable, say yes.
+  If the byte is the tab byte, say yes.
+  If the byte is the linefeed byte, say yes.
+  If the byte is the return byte, say yes.
+  Say no.
+  
+  
+To decide if an row is any comment:
+  If the row is nil, say no.
+  Slap an substring on the row's string.
+  Loop.
+    If the substring is blank, say no.
+    If the substring's first's target is the backslash byte, say yes.
+    If the substring's first's target is noise, add 1 to the substring's first; repeat.
+  Say no.
+  
+  
+To decide if an source is modified:
+  If the source is nil, say no.
+  If the source's read-only flag is set, say no.
+  If the source's text is modified, say yes.
+  Say no.
+  
+  
+To decide if an source is read-only:
+  If the source is nil, say no.
+  If the source's read-only flag is set, say yes.
+  Say no.
+  
+  
+To decide if an spot is in an source:
+  If the source is nil, say no.
+  If the spot is in the source's text, say yes.
+  Say no.
+  
+  
+To decide if an string does start with any definite article;
+To decide if an string starts with any definite article:
+  If the string starts with "the ", say yes.
+  Say no.
+  
+  
+To decide if an string does start with any definition starter;
+To decide if an string starts with any definition starter:
+  If the string starts with "an ", say yes.
+  If the string starts with "an ", say yes.
+  If the string starts with "some ", say yes.
+  If the string starts with "to ", say yes.
+  If the string starts with "the ", say yes.
+  Say no.
+  
+  
+To decide if an string does start with any indefinite article;
+To decide if an string starts with any indefinite article:
+  If the string starts with "an ", say yes.
+  If the string starts with "an ", say yes.
+  If the string starts with "some ", say yes.
+  Say no.
+  
+  
+To decide if an string does start with any routine starter;
+To decide if an string starts with any routine starter:
+  If the string starts with "to ", say yes.
+  Say no.
+  
+  
+To decide if an string has neither code nor comment on it:
+  Privatize the string.
+  Remove any leading noise from the string.
+  Remove any trailing noise from the string.
+  If the string is blank, say yes.
+  Say no.
+  
+  
+To decide if something is selected in an source:
+  If the source is nil, say no.
+  If something is selected in the source's text, say yes.
+  Say no.
+  
+  

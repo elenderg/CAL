@@ -1,4 +1,0 @@
-To flip an gpimage:
-  Call "gdiplus.dll" "GdipImageRotateFlip" with the gpimage and 6 [rotatenoneflipy aka rotate180flipx].
-  
-  

@@ -1,7 +1,0 @@
-To select some nodettes:
-    Get an nodette from the nodettes.
-    If the nodette is nil, exit.
-    Select the nodette.
-  Repeat.
-  
-  

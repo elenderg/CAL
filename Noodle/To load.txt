@@ -1,0 +1,57 @@
+To load an path into an buffer;
+To read an path into an buffer:
+  Clear the i/o error.
+  Privatize the path.
+  Null terminate the path.
+  If the path is not in the file system, put "File '" then the path then "' doesn't exist." into the i/o error; exit.
+  \  set the path to read-write mode.
+  Call "kernel32.dll" "CreateFileA" with the path's first and -2147483648 [generic_read] and 3 [file_share_read+file_share_write] and 0 
+  And 3 [open_existing] and 0 and 0 returning an handle.
+  If the handle is -1 [invalid_handle_value], put "Error opening file '" then the path then "'." into the i/o error; exit.
+  Call "kernel32.dll" "GetFileSize" with the handle and nil returning an size.
+  Reassign the buffer's first given the size.
+  Put the buffer's first plus the size minus 1 into the buffer's last.
+  Call "kernel32.dll" "ReadFile" with the handle and the buffer's first and the size and an number's whereabouts and 0 returning the number.
+  Call "kernel32.dll" "CloseHandle" with the handle.
+  If the number is not 0, exit.
+  Put "Error reading file '" then the path then "'." into the i/o error.
+  
+  
+To load an path into an picture:
+  To read an path into an picture:
+  Read the path into an buffer.
+  If the i/o error is not blank, void the picture; exit.
+  Create the picture given the buffer.
+  
+  
+To load the lexicon given an buffer:
+  If the lexicon is nil, create the lexicon.
+  Slap an rider on the buffer.
+  Loop.
+    Move the rider (index lexicon rules).
+    If the rider's token is blank, exit.
+    Index the rider's token in the lexicon's index.
+  Repeat.
+  
+  
+To load the lexicon given an path:
+    Get an item from the path.
+    If the item is not found, exit.
+    If the item's kind is not "file", repeat.
+    Read the item's path into an buffer.
+    If the i/o error is not blank, repeat.
+    Load the lexicon given the buffer.
+  Repeat.
+  
+  
+To load the lexicon:
+  If the lexicon is not nil, exit.
+  Extract an directory from the module's path.
+  Loop.
+    If the directory is blank, exit.
+    Put the directory then "lexicon\" into an path.
+    If the path is in the file system, load the lexicon given the path; exit.
+    Extract the directory from the directory.
+  Repeat.
+  
+  

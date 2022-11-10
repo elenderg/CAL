@@ -1,4 +1,0 @@
-To clear an field term:
-  Fill bytes with the null byte starting at the field term's whereabouts for the field term's magnitude.
-  
-  

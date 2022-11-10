@@ -1,6 +1,0 @@
-To mask inside an box:
-  Create an hrgn given the box.
-  Mask inside the hrgn.
-  Destroy the hrgn.
-  
-  

@@ -1,0 +1,66 @@
+To calculate the length of an type:
+  If the type is nil, exit.
+  If the type's length is not -1, exit.
+  Calculate the length of the type's base type.
+  If the type's fields are empty, put the type's base type's length into the type's length; exit.
+  Put 0 into the type's length.
+  Loop.
+    If the compiler's abort flag is set, exit.
+    Get an field from the type's fields.
+    If the field is nil, exit.
+    If the field's redefinition target name is not blank, repeat.
+    Calculate the length of the field's type.
+    Add the field's type's length times the field's count to the type's length.
+  Repeat.
+  
+  
+To calculate the lengths of some types:
+    If the compiler's abort flag is set, exit.
+    Get an type from the types.
+    If the type is nil, exit.
+    Calculate the length of the type.
+  Repeat.
+  
+  
+To calculate the offsets in an type:
+  If the type is nil, exit.
+  Put 0 into an offset.
+  Loop.
+    If the compiler's abort flag is set, exit.
+    Get an field from the type's fields.
+    If the field is nil, exit.
+    If the field's redefinition target name is not blank, repeat.
+    Put the offset into the field's offset.
+    Add the field's type's length times the field's count to the offset.
+  Repeat.
+  
+  
+To calculate the offsets in some types:
+    If the compiler's abort flag is set, exit.
+    Get an type from the types.
+    If the type is nil, exit.
+    Calculate the offsets in the type.
+  Repeat.
+  
+  
+To calculate the redefinition offsets in an type:
+  If the type is nil, exit.
+  Loop.
+    If the compiler's abort flag is set, exit.
+    Get an field from the type's fields.
+    If the field is nil, exit.
+    If the field's redefinition target name is blank, repeat.
+    Find another field given the field's redefinition target name and the type's fields.
+    If the other field is nil, abort with "Invalid redefine. I can't find the '" then the field's redefinition target name then "' field." and the field's locus; exit.
+    Put the other field's offset into the field's offset.
+  Repeat.
+  
+  
+To calculate the redefinition offsets in some types:
+    If the compiler's abort flag is set, exit.
+    Get an type from the types.
+    If the type is nil, exit.
+    Calculate the redefinition offsets in the type.
+  Repeat.
+  
+  

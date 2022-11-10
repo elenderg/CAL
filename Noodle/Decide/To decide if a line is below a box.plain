@@ -1,6 +1,0 @@
-To decide if an line is below an box:
-  If the line's start's y is less than or equal to the box's bottom, say no.
-  If the line's end's y is less than or equal to the box's bottom, say no.
-  Say yes.
-  
-  

@@ -1,6 +1,0 @@
-To transmogrify an fragment (increment):
-  If the fragment's variable is nil, abort with "Internal error - transmogrify an fragment (increment)"; exit.
-  If the fragment's variable's kind is not "scratch", abort with "Internal error 2 - transmogrify an fragment (increment)"; exit.
-  Attach $8185 and the fragment's variable's offset and the fragment's number to the fragment's code. \ add [ebp+the fragment's variable's offset],the fragment's number
-  
-  

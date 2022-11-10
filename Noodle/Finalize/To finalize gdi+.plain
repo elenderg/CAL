@@ -1,4 +1,0 @@
-To finalize gdi+:
-  Call "gdiplus.dll" "GdiplusShutdown" with the gptoken.
-  
-  

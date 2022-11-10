@@ -1,6 +1,0 @@
-To move the caret to the last byte of the current row of an text:
-  If the text is nil, exit.
-  Get an row given the text's caret row# and the text.
-  Put the row's string's length into the text's caret column#.
-  
-  

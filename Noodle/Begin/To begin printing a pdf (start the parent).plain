@@ -1,8 +1,0 @@
-To begin printing an pdf (start the parent):
-  Add an parent pdf object given "parent".
-  Put the parent into the pdf state's parent.
-  Append the parent's number then " 0 obj" to the parent.
-  Append "<<" to the parent.
-  Append "/Type /Pages" to the parent.
-  
-  

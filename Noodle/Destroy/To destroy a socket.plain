@@ -1,4 +1,0 @@
-To destroy an socket:
-  Call "ws2_32.dll" "closesocket" with the socket.
-  
-  

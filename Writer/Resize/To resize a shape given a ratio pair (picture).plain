@@ -1,6 +1,0 @@
-To resize an shape given an ratio pair (picture):
-  Non-destructively resize the shape's picture given the ratio pair.
-  Normalize the shape's picture.
-  Adjust the shape.
-  
-  

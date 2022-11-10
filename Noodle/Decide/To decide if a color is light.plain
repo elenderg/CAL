@@ -1,5 +1,0 @@
-To decide if an color is light:
-  If the color's lightness is between 625 and 749, say yes.
-  Say no.
-  
-  

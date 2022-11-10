@@ -1,0 +1,34 @@
+An node is an thing with
+  an parent node (reference),
+  an box,
+  an origin,
+  an node selection called selection,
+  an kind,
+  an path, an directory, an designator, an designator called designator w/o backslash, an extension,
+  an selected flag, an previously selected flag,
+  some nodettes,
+  an source, or 
+  an document and an page (reference).
+  
+  
+An node selection is an pair with an anchor nodette, an caret nodette.
+  
+  
+An nodette is an node.
+  
+  
+An path link is an string thing.
+  
+  
+An total count is an count.
+  
+  
+Some selected path links are some path links.
+  
+  
+The finder has an box, an grid, an margin and an clipboard path.
+  
+  
+The node height is 360.
+  
+  

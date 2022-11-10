@@ -1,0 +1,22 @@
+To flush all input;
+To flush all inputs;
+To flush all events:
+  Flush any messages.
+  Flush the event queue.
+  
+  
+To flush an event queue:
+    Get an event from the event queue.
+    If the event is nil, exit.
+    Remove the event from the event queue.
+    Destroy the event.
+  Repeat.
+  
+  
+To flush any messages:
+    Call "user32.dll" "PeekMessageA" with an msg's whereabouts and 0 and 0 and 0 and 1 [pm_remove] returning an number.
+    If the number is 0, exit.
+    If the msg's message is 15 [wm_paint], call "user32.dll" "ValidateRect" with the main window and 0.
+  Repeat.
+  
+  

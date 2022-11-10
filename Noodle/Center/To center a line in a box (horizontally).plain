@@ -1,6 +1,0 @@
-To center an line in an box (horizontally):
-  Put the box's center's x minus the line's center's x into an number.
-  Round the number to the nearest multiple of the tpp.
-  Move the line given the number and 0.
-  
-  

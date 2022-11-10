@@ -1,6 +1,0 @@
-To pick an spot within an distance of another spot:
-  Pick the spot's x within the distance of the other spot's x.
-  Pick the spot's y within the distance of the other spot's y.
-  Put the spot into the context's spot.
-  
-  

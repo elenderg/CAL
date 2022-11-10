@@ -1,7 +1,0 @@
-To resize an text given an ratio pair;
-To resize an text given an fraction pair:
-  If the text is nil, exit.
-  Resize the text's box given the fraction pair.
-  Wrap the text.
-  
-  

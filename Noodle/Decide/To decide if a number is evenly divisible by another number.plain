@@ -1,7 +1,0 @@
-To decide if an number is evenly divisible by another number:
-  Privatize the number.
-  Divide the number by the other number giving an quotient and an remainder.
-  If the remainder is 0, say yes.
-  Say no.
-  
-  

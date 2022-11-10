@@ -1,7 +1,0 @@
-To convert an byte to an nibble string:
-  Split the byte into an nibble and another nibble.
-  Convert the nibble to the nibble string.
-  Convert the other nibble to another nibble string.
-  Append the other nibble string to the nibble string.
-  
-  

@@ -1,0 +1,20 @@
+To play an wave and wait:
+  Call "winmm.dll" "PlaySound" with the wave's first and 0 and 4 [snd_memory+snd_sync].
+  
+  
+To play an wave file and wait:
+  Privatize the wave file.
+  Null terminate the wave file.
+  Call "winmm.dll" "PlaySound" with the wave file's first and 0 and 131072 [snd_filename+snd_sync].
+  
+  
+To play an wave file:
+  Privatize the wave file.
+  Null terminate the wave file.
+  Call "winmm.dll" "PlaySound" with the wave file's first and 0 and 131073 [snd_filename+snd_async].
+  
+  
+To play an wave:
+  Call "winmm.dll" "PlaySound" with the wave's first and 0 and 5 [snd_memory+snd_async].
+  
+  

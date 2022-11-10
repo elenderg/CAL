@@ -1,5 +1,0 @@
-To handle select all given an text:
-  If the text is nil, exit.
-  Select every byte in the text.
-  
-  

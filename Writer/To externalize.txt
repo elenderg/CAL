@@ -1,0 +1,231 @@
+To externalize an box given an buffer and an indent:
+  Externalize the box's left given the buffer and the indent.
+  Externalize the box's top given the buffer and the indent.
+  Externalize the box's right given the buffer and the indent.
+  Externalize the box's bottom given the buffer and the indent.
+  
+  
+To externalize an color given an buffer and an indent:
+  Externalize the color's hue given the buffer and the indent.
+  Externalize the color's saturation given the buffer and the indent.
+  Externalize the color's lightness given the buffer and the indent.
+  
+  
+To externalize an document into an buffer:
+  If the document is nil, exit.
+  Put 0 into an indent.
+  Clear the buffer.
+  Append "ream " to the buffer.
+  Append the document version to the buffer.
+  Advance the buffer.
+  Add the document indent to the indent.
+  Externalize the document's pages given the buffer and the indent.
+  Subtract the document indent from the indent.
+  Append "end" to the buffer.
+  Advance the buffer.
+  
+  
+To externalize an flag given an buffer and an indent:
+  Append the space byte to the buffer.
+  Append the flag to the buffer.
+  
+  
+To externalize an font given an buffer and an indent:
+  Externalize the font's name given the buffer and the indent.
+  Externalize the font's height given the buffer and the indent.
+  
+  
+To externalize an nibble string given an buffer and an indent:
+  Append the space byte to the buffer.
+  Append the double-quote byte to the buffer.
+  Append the nibble string to the buffer.
+  Append the double-quote byte to the buffer.
+  
+  
+To externalize an number given an buffer and an indent:
+  Append the space byte to the buffer.
+  Append the number to the buffer.
+  
+  
+To externalize an page given an buffer and an indent:
+  If the page is nil, exit.
+  Put the page's scale into an saved ratio.
+  Scale the page to 1/1.
+  Append the space byte to the buffer given the indent.
+  Append "page" to the buffer.
+  Externalize the page's width given the buffer and the indent.
+  Externalize the page's height given the buffer and the indent.
+  Externalize the page's measure given the buffer and the indent.
+  Advance the buffer.
+  Add the document indent to the indent.
+  Externalize the page's shapes given the buffer and the indent.
+  Subtract the document indent from the indent.
+  Append the space byte to the buffer given the indent.
+  Append "end" to the buffer.
+  Advance the buffer.
+  Scale the page given the saved ratio.
+  
+  
+To externalize an paragraph given an buffer and an indent:
+  If the paragraph is nil, exit.
+  Append the space byte to the buffer given the indent.
+  Externalize the paragraph's string given the buffer and the indent.
+  Advance the buffer.
+  
+  
+To externalize an picture given an buffer and an indent:
+  If the picture is nil, exit.
+  Externalize the picture's box given the buffer and the indent.
+  Externalize the picture's uncropped box given the buffer and the indent.
+  Externalize the picture's grayscale flag given the buffer and the indent.
+  Externalize the picture's mirror flag given the buffer and the indent.
+  Externalize the picture's rotate angle given the buffer and the indent.
+  Convert the picture's data to an nibble string.
+  Externalize the nibble string given the buffer and the indent.
+  
+  
+To externalize an polygon given an buffer and an indent:
+  If the polygon is nil, exit.
+  Externalize the polygon's vertices' count given the buffer and the indent.
+  Loop.
+    Get an vertex from the polygon's vertices.
+    If the vertex is nil, exit.
+    Externalize the vertex's spot given the buffer and the indent.
+  Repeat.
+  
+  
+To externalize an ratio given an buffer and an indent:
+  Externalize the ratio's numerator given the buffer and the indent.
+  Externalize the ratio's denominator given the buffer and the indent.
+  
+  
+To externalize an rect given an buffer and an indent:
+  Externalize the rect's left given the buffer and the indent.
+  Externalize the rect's top given the buffer and the indent.
+  Externalize the rect's right given the buffer and the indent.
+  Externalize the rect's bottom given the buffer and the indent.
+  Externalize the rect's radius given the buffer and the indent.
+  
+  
+To externalize an shape given an buffer and an indent (ellipse):
+  Append the space byte to the buffer given the indent.
+  Append "ellipse" to the buffer.
+  Externalize the shape's border given the buffer and the indent.
+  Externalize the shape's fill given the buffer and the indent.
+  Externalize the shape's ellipse given the buffer and the indent.
+  Advance the buffer.
+  
+  
+To externalize an shape given an buffer and an indent (group):
+  Append the space byte to the buffer given the indent.
+  Append "group" to the buffer.
+  Advance the buffer.
+  Add the document indent to the indent.
+  Externalize the shape's shapes given the buffer and the indent.
+  Subtract the document indent from the indent.
+  Append the space byte to the buffer given the indent.
+  Append "end" to the buffer.
+  Advance the buffer.
+  
+  
+To externalize an shape given an buffer and an indent (picture):
+  Append the space byte to the buffer given the indent.
+  Append "picture" to the buffer.
+  Externalize the shape's border given the buffer and the indent.
+  Externalize the shape's picture given the buffer and the indent.
+  Advance the buffer.
+  
+  
+To externalize an shape given an buffer and an indent (polygon):
+  Append the space byte to the buffer given the indent.
+  Append "polygon" to the buffer.
+  Externalize the shape's border given the buffer and the indent.
+  Externalize the shape's fill given the buffer and the indent.
+  Externalize the shape's polygon given the buffer and the indent.
+  Advance the buffer.
+  
+  
+To externalize an shape given an buffer and an indent (rectangle):
+  Append the space byte to the buffer given the indent.
+  Append "rectangle" to the buffer.
+  Externalize the shape's border given the buffer and the indent.
+  Externalize the shape's fill given the buffer and the indent.
+  Externalize the shape's rect given the buffer and the indent.
+  Advance the buffer.
+  
+  
+To externalize an shape given an buffer and an indent (text):
+  Append the space byte to the buffer given the indent.
+  Append "text" to the buffer.
+  Externalize the shape's border given the buffer and the indent.
+  Externalize the shape's fill given the buffer and the indent.
+  Externalize the shape's text rect given the buffer and the indent.
+  Externalize the shape's label given the buffer and the indent.
+  Externalize the shape's text given the buffer and the indent.
+  Append the space byte to the buffer given the indent.
+  Append "end" to the buffer.
+  Advance the buffer.
+  
+  
+To externalize an shape given an buffer and an indent:
+  If the shape is nil, exit.
+  If the shape's kind is "ellipse", externalize the shape given the buffer and the indent (ellipse); exit.
+  If the shape's kind is "group", externalize the shape given the buffer and the indent (group); exit.
+  If the shape's kind is "picture", externalize the shape given the buffer and the indent (picture); exit.
+  If the shape's kind is "polygon", externalize the shape given the buffer and the indent (polygon); exit.
+  If the shape's kind is "rectangle", externalize the shape given the buffer and the indent (rectangle); exit.
+  If the shape's kind is "text", externalize the shape given the buffer and the indent (text); exit.
+  Debug "externalize an shape given an string: " then the shape's kind.
+  
+  
+To externalize an spot given an buffer and an indent:
+  Externalize the spot's x given the buffer and the indent.
+  Externalize the spot's y given the buffer and the indent.
+  
+  
+To externalize an string given an buffer and an indent:
+  Append the space byte to the buffer.
+  Privatize the string.
+  Quote the string.
+  Append the string to the buffer.
+  
+  
+To externalize an text given an buffer and an indent:
+  If the text is nil, exit.
+  Externalize the text's font given the buffer and the indent.
+  Externalize the text's alignment given the buffer and the indent.
+  Externalize the text's pen given the buffer and the indent.
+  Externalize the text's wrap flag given the buffer and the indent.
+  Advance the buffer.
+  Add the document indent to the indent.
+  Convert the text's rows to some paragraphs.
+  Externalize the paragraphs given the buffer and the indent.
+  Destroy the paragraphs.
+  Subtract the document indent from the indent.
+  
+  
+To externalize an ellipse given an buffer and an indent:
+  Externalize the ellipse's box given the buffer and the indent.
+  
+  
+To externalize some pages given an buffer and an indent:
+    Get an page from the pages.
+    If the page is nil, exit.
+    Externalize the page given the buffer and the indent.
+  Repeat.
+  
+  
+To externalize some paragraphs given an buffer and an indent:
+    Get an paragraph from the paragraphs.
+    If the paragraph is nil, exit.
+    Externalize the paragraph given the buffer and the indent.
+  Repeat.
+  
+  
+To externalize some shapes given an buffer and an indent:
+    Get an shape from the shapes.
+    If the shape is nil, exit.
+    Externalize the shape given the buffer and the indent.
+  Repeat.
+  
+  

@@ -1,8 +1,0 @@
-To convert an pointer to an nibble string;
-To convert an number to an nibble string:
-  Split the number into an wyrd and another wyrd.
-  Convert the wyrd to the nibble string.
-  Convert the other wyrd to another nibble string.
-  Append the other nibble string to the nibble string.
-  
-  

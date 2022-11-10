@@ -1,5 +1,0 @@
-To create an string thing given an string:
-  Allocate memory for the string thing.
-  Put the string into the string thing's string.
-  
-  

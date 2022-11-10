@@ -1,7 +1,0 @@
-To put the right of an box into an vertical line;
-To put the right edge of an box into an vertical line;
-To put the right side of an box into an vertical line:
-  Put the box's right-top into the vertical line's start.
-  Put the box's right-bottom into the vertical line's end.
-  
-  

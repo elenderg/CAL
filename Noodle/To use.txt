@@ -1,0 +1,29 @@
+To use an color:
+  Put the color into the context's color.
+  
+  
+To use an letter height of some twips:
+  Put the twips into the letter height.
+  Put the twips into the context's letter height.
+  
+  
+To use an letter height:
+  Put the letter height into the context's letter height.
+  
+  
+To use an pen:
+  Put the pen into the context's pen.
+  
+  
+To use small pointy letters: \ as opposed to "roundy letters" not yet implemented
+  Use small letters.
+  
+  
+To use the fat pen:
+  Put 3 into the pen size.
+  
+  
+To use the skinny pen:
+  Put 1 into the pen size.
+  
+  

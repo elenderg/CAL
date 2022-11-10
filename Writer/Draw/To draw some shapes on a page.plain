@@ -1,7 +1,0 @@
-To draw some shapes on an page:
-    Get an shape from the shapes.
-    If the shape is nil, exit.
-    Draw the shape on the page.
-  Repeat.
-  
-  

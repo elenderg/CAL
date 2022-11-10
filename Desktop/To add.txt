@@ -1,0 +1,80 @@
+To add an button to the dialog given an string:
+  If the string is blank, void the button; exit.
+  If the dialog is nil, exit.
+  Create the button.
+  Append the button to the dialog's buttons.
+  Put the string into the button's name.
+  
+  
+To add an color and an handler to an menu:
+  If the menu is nil, exit.
+  Create an command.
+  Append the command to the menu's commands.
+  Put the swatch width into the command's width.
+  Put the handler into the command's handler.
+  Put the color into the command's color.
+  
+  
+To add an name and an handler to an menu:
+  If the menu is nil, exit.
+  Create an command.
+  Append the command to the menu's commands.
+  Put the command height into the command's width.
+  Put the name into the command's name.
+  Put the handler into the command's handler.
+  Put the white color into the command's color.
+  Put "left" into the command's alignment.
+  
+  
+To add an name and an handler to an submenu:
+  Add the name and "" and the handler to the submenu.
+  
+  
+To add an name and an shortcut and an handler to an submenu:
+  If the submenu is nil, exit.
+  Create an command.
+  Append the command to the submenu's commands.
+  Put the submenu width into the command's width.
+  Put the name into the command's name.
+  Put the shortcut into the command's shortcut.
+  Put the handler into the command's handler.
+  Put the white color into the command's color.
+  Put "left" into the command's alignment.
+  
+  
+To add swatches to an submenu given an handler and an color:
+    If the submenu is nil, exit.
+    Privatize the color.
+    Put 875 into the color's lightness.
+    Loop.
+    Add the color and the handler to the submenu.
+    Subtract 125 from the color's lightness.
+    If the color's lightness is less than 125, exit.
+  Repeat.
+  
+  
+To add swatches to an submenu given an handler:
+  If the submenu is nil, exit.
+  Add the clear color and the handler to the submenu.
+  Put the palette width divided by 3 into the submenu's commands' last's width.
+  Put "clear" into the submenu's commands' last's name.
+  Put "center" into the submenu's commands' last's alignment.
+  Add the white color and the handler to the submenu.
+  Put the palette width divided by 3 into the submenu's commands' last's width.
+  Add the black color and the handler to the submenu.
+  Put the palette width divided by 3 into the submenu's commands' last's width.
+  Add swatches to the submenu given the handler and the gray color.
+  Add swatches to the submenu given the handler and the red color.
+  Add swatches to the submenu given the handler and the orange color.
+  Add swatches to the submenu given the handler and the yellow color.
+  Add swatches to the submenu given the handler and the lime color.
+  Add swatches to the submenu given the handler and the green color.
+  Add swatches to the submenu given the handler and the teal color.
+  Add swatches to the submenu given the handler and the cyan color.
+  Add swatches to the submenu given the handler and the sky color.
+  Add swatches to the submenu given the handler and the blue color.
+  Add swatches to the submenu given the handler and the purple color.
+  Add swatches to the submenu given the handler and the magenta color.
+  Add swatches to the submenu given the handler and the violet color.
+  
+  

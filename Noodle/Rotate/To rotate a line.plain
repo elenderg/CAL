@@ -1,6 +1,0 @@
-To rotate an line:
-  Put the line's center into an center spot.
-  Rotate the line's start around the center.
-  Rotate the line's end around the center.
-  
-  

@@ -1,7 +1,0 @@
-To move some shapes given an ratio pair and an spot:
-    Get an shape from the shapes.
-    If the shape is nil, exit.
-    Move the shape given the ratio pair and the spot.
-  Repeat.
-  
-  

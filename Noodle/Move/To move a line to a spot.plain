@@ -1,5 +1,0 @@
-To move an line to an spot:
-  Get an difference between the spot and the line's start.
-  Move the line given the difference.
-  
-  

@@ -1,4 +1,0 @@
-To play an wave:
-  Call "winmm.dll" "PlaySound" with the wave's first and 0 and 5 [snd_memory+snd_async].
-  
-  

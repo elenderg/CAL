@@ -1,6 +1,0 @@
-To add an line to an figure:
-  If the figure is nil, create the figure; append the figure to the figures.
-  Add the line's start to the figure.
-  Add the line's end to the figure.
-  
-  

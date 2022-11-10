@@ -1,9 +1,0 @@
-To get an ip address given an host string:
-  Clear the ip address.
-  Get an sockaddr given the host string.
-  If the i/o error is not blank, exit.
-  Put the sockaddr's sin_addr's s_addr into the ip address' number.
-  Call "ws2_32.dll" "inet_ntoa" with the ip address' number returning an pchar.
-  Convert the pchar to the ip address' string.
-  
-  

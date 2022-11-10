@@ -1,7 +1,0 @@
-To handle an command (grid...):
-  Create an submenu.
-  Add "Hide" and "handle grid given no" to the submenu.
-  Add "Show" and "handle grid given yes" to the submenu.
-  Handle the command given the submenu.
-  
-  

@@ -1,7 +1,0 @@
-To decide if an spot is within some twips of an box:
-  Privatize the box.
-  Outdent the box given the twips.
-  If the spot is within the box, say yes.
-  Say no.
-  
-  

@@ -1,5 +1,0 @@
-To put an box's center-top into an spot:
-  Put the box's center's x into the spot's x.
-  Put the box's top into the spot's y.
-  
-  

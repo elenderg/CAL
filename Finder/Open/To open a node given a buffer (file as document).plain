@@ -1,4 +1,0 @@
-To open an node given an buffer (file as document):
-  Create the node's document given the buffer.
-  
-  

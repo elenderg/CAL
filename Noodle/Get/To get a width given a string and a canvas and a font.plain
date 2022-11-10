@@ -1,6 +1,0 @@
-To get an width given an string and an canvas and an font:
-  Create the hfont of the canvas given the font.
-  Get the width given the string and the canvas.
-  Destroy the hfont of the canvas.
-  
-  

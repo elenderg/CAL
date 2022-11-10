@@ -1,0 +1,27 @@
+To lighten an color by an amount:
+  Add the amount to the color's lightness.
+  Limit the color's lightness to 0 and 1000.
+  
+  
+To lighten an color by some percent;
+To lighten an color about some percent;
+To lighten an color by about some percent;
+To lighten an color some percent:
+  Put the color's lightness plus the percent into the color's lightness.
+  Limit the color's lightness to 0 and 1000.
+  
+  
+To lighten an hue by some degrees:
+  Add the degrees to the hue.
+  
+  
+To lighten an hue by some points:
+  Convert the hue to some other points.
+  Add the points to the other points.
+  Convert the other points to the hue.
+  
+  
+To lighten the current color about some percent:
+  Lighten the context's color by the percent.
+  
+  

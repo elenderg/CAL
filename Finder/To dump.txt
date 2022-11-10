@@ -1,0 +1,55 @@
+To dump an buffer into another buffer:
+  Clear the other buffer.
+  If the buffer's length is 0, exit.
+  Slap an substring on the buffer.
+  Put the substring's first plus 16 minus 1 into the substring's last.
+  Loop.
+    If the substring's first is greater than the buffer's last, break.
+    If the substring's last is greater than the buffer's last, put the buffer's last into the substring's last.
+    Dump the substring of the buffer into the other buffer.
+    Move the substring given 16.
+  Repeat.
+  
+  
+To dump an substring of an buffer into another buffer (address bytes):
+  Put the substring's first minus the buffer's first into an address.
+  Convert the address to an nibble string.
+  Append the nibble string to the other buffer.
+  Append the space byte to the other buffer.
+  Append the space byte to the other buffer.
+  
+  
+To dump an substring of an buffer into another buffer (ascii bytes):
+  Slap another substring on the substring.
+  Loop.
+    If the other substring is blank, break.
+    Put the other substring's first's target into an byte.
+    If the byte is not printable, put the period byte into the byte.
+    If the byte is the space byte, put the period byte into the byte.
+    Append the byte to the other buffer.
+    Add 1 to the other substring's first.
+  Repeat.
+  
+  
+To dump an substring of an buffer into another buffer (hex bytes):
+  Slap another substring on the substring.
+  Loop.
+    If the other substring is blank, break.
+    Convert the other substring's first's target to an nibble string.
+    Append the nibble string to the other buffer.
+    Append the space byte to the other buffer.
+    Add 1 to the other substring's first.
+  Repeat.
+  Append the space byte to the other buffer.
+  Put 16 minus the substring's length times 3 into an count.
+  Append the space byte to the other buffer given the count.    
+  
+  
+To dump an substring of an buffer into another buffer:
+  Dump the substring of the buffer into the other buffer (address bytes).
+  Dump the substring of the buffer into the other buffer (hex bytes).
+  Dump the substring of the buffer into the other buffer (ascii bytes).
+  Append the return byte to the other buffer.
+  Append the linefeed byte to the other buffer.
+  
+  

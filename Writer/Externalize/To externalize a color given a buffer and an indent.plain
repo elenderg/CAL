@@ -1,6 +1,0 @@
-To externalize an color given an buffer and an indent:
-  Externalize the color's hue given the buffer and the indent.
-  Externalize the color's saturation given the buffer and the indent.
-  Externalize the color's lightness given the buffer and the indent.
-  
-  

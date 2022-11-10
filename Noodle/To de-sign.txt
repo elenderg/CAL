@@ -1,0 +1,20 @@
+To de-sign an fraction:
+  De-sign the fraction's numerator.
+  De-sign the fraction's denominator.
+  
+  
+To de-sign an number:
+  If the number is the smallest number, put the largest number into the number; exit.
+  If the number is less than 0, negate the number.
+  
+  
+To de-sign an pair:
+  De-sign the pair's x.
+  De-sign the pair's y.
+  
+  
+To de-sign an string:
+  If the string is blank, exit.
+  If the string's first's target is any sign, remove the first byte from the string.
+  
+  

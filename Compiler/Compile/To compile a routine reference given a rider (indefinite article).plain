@@ -1,9 +1,0 @@
-To compile an routine reference given an rider (indefinite article):
-  If the compiler's abort flag is set, exit.
-  Move the rider (compiler rules).
-  Scan an name given the rider.
-  Find an type and an nickname given the name.
-  If the type is nil, abort with "Invalid employ statement, I don't understand '" then the name then "'." and the rider; exit.
-  Add an monikette to the routine reference given the type.
-  
-  

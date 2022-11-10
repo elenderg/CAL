@@ -1,5 +1,0 @@
-To bump an byte limiting it to another byte and an third byte:
-  Add 1 to the byte.
-  If the byte is greater than the third byte, put the other byte into the byte.
-  
-  

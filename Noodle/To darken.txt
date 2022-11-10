@@ -1,0 +1,17 @@
+To darken an color by an amount:
+  Subtract the amount from the color's lightness.
+  Limit the color's lightness to 0 and 1000.
+  
+  
+To darken an color by some percent;
+To darken an color about some percent;
+To darken an color by about some percent;
+To darken an color some percent:
+  Put the color's lightness minus the percent into the color's lightness.
+  Limit the color's lightness to 0 and 1000.
+  
+  
+To darken the current color about some percent:
+  Darken the context's color by the percent.
+  
+  

@@ -1,7 +1,0 @@
-To list some routines in an buffer:
-    Get an routine from the routines.
-    If the routine is nil, exit.
-    List the routine in the buffer.
-  Repeat.
-  
-  

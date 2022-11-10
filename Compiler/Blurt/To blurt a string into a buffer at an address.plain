@@ -1,4 +1,0 @@
-To blurt an string into an buffer at an address:
-  Blurt bytes given the string's first and the string's length and the buffer and the address.
-  
-  

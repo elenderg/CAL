@@ -1,7 +1,0 @@
-To put the top of an box into an horizontal line;
-To put the top edge of an box into an horizontal line;
-To put the top side of an box into an horizontal line:
-  Put the box's left-top into the horizontal line's start.
-  Put the box's right-top into the horizontal line's end.
-  
-  

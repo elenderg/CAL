@@ -1,6 +1,0 @@
-To decide if an number is between another number and an third number:
-  If the number is less than the other number, say no.
-  If the number is greater than the third number, say no.
-  Say yes.
-  
-  

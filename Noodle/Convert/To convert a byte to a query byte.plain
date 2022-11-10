@@ -1,9 +1,0 @@
-To convert an byte to an query byte:
-  If the byte is between 48 and 57, put the byte into the query byte; exit. \ 0-9
-  If the byte is between 65 and 90, put the byte into the query byte; exit. \ An-Z
-  If the byte is between 97 and 122, put the byte into the query byte; exit. \ an-z
-  If the byte is 32, put "+" into the query byte; exit. \ space
-  Convert the byte to an nibble string.
-  Put "%" then the nibble string into the query byte.
-  
-  

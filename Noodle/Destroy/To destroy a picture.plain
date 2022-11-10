@@ -1,6 +1,0 @@
-To destroy an picture:
-  If the picture is nil, exit.
-  Destroy the picture's gpbitmap.
-  Deallocate the picture.
-  
-  

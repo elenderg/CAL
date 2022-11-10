@@ -1,9 +1,0 @@
-To find an tab given an spot:
-  Void the tab.
-  Loop.
-    Get the tab from the tabs.
-    If the tab is nil, exit.
-    If the spot is in the tab, exit.
-  Repeat.
-  
-  

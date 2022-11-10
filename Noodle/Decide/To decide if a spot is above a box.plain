@@ -1,5 +1,0 @@
-To decide if an spot is above an box:
-  If the spot's y is less than the box's top, say yes.
-  Say no.
-  
-  
